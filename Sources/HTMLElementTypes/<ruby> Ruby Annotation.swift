@@ -1,0 +1,53 @@
+///
+/// <ruby> Ruby Annotation.swift
+/// swift-html
+///
+/// Represents the HTML Ruby Annotation element.
+///
+/// Created by Coen ten Thije Boonkkamp on 05/04/2025.
+///
+
+import Foundation
+import HTMLAttributeTypes
+
+/// Represents an HTML Ruby Annotation element (`<ruby>`), which displays small annotations above, below, or next to text, 
+/// commonly used for showing pronunciation of East Asian characters.
+///
+/// The `Ruby` struct provides a type-safe way to create ruby annotations with various attributes.
+///
+/// ## Example
+///
+/// ```swift
+/// ruby {
+///     "漢"
+///     rp { "(" }
+///     rt { "Kan" }
+///     rp { ")" }
+///     "字"
+///     rp { "(" }
+///     rt { "ji" }
+///     rp { ")" }
+/// }
+/// ```
+///
+/// ## Best Practices
+///
+/// - Use ruby annotations to provide pronunciation guides for characters
+/// - Include fallback parentheses using `<rp>` elements for browsers that don't support ruby
+/// - Keep annotations concise and directly related to the base text
+/// - For complex ruby annotations, consider using `<rb>` (Ruby Base) and `<rtc>` (Ruby Text Container) elements
+///
+public struct Ruby: Element {
+    /// The HTML tag name
+    public static var tag: String { "ruby" }
+    
+    /// Creates a new Ruby element with the specified attributes.
+    public init(
+        
+    ) {
+        
+    }
+}
+
+/// Lowercase typealias for creating Ruby elements with a more HTML-like syntax.
+public typealias ruby = Ruby

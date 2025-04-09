@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "8AA7C941-5E56-4D4B-8724-4FA661597682",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "HTMLAttributeTypes Tests",
+        "name" : "HTMLAttributeTypes Tests"
+      }
+    }
+  ],
+  "version" : 1
+}
