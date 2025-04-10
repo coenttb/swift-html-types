@@ -70,8 +70,11 @@ extension Input {
 
 extension Input {
     /// Creates a new date input element
+    public static let date: Self = .date()
+    
+    /// Creates a new date input element
     public static func date(
-        name: Name,
+        name: Name? = nil,
         value: String? = nil,
         min: Min? = nil,
         max: Max? = nil,

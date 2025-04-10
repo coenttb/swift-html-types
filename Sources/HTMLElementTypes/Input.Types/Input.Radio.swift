@@ -63,8 +63,11 @@ extension Input {
 
 extension Input {
     /// Creates a new radio input element
+    public static let radio: Self = .radio()
+    
+    /// Creates a new radio input element
     public static func radio(
-        name: Name,
+        name: Name? = nil,
         value: String? = nil,
         checked: Checked? = nil,
         required: Required? = nil,

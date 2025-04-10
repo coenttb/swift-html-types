@@ -42,8 +42,11 @@ extension Input {
 
 extension Input {
     /// Creates a new hidden input element
+    public static let hidden: Self = .hidden()
+    
+    /// Creates a new hidden input element
     public static func hidden(
-        name: Name,
+        name: Name? = nil,
         value: String? = nil,
         disabled: Disabled? = nil,
         form: HTMLAttributeTypes.Form.ID? = nil

@@ -62,8 +62,11 @@ extension Input.Time {
 
 extension Input {
     /// Creates a new time input element
+    public static let time: Self = .time()
+    
+    /// Creates a new time input element
     public static func time(
-        name: Name,
+        name: Name? = nil,
         value: String? = nil,
         list: List? = nil,
         min: Min? = nil,

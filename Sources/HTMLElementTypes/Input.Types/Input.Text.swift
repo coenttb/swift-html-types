@@ -70,8 +70,11 @@ extension Input {
 
 extension Input {
     /// Creates a new text input element
+    public static let text: Self = .text()
+    
+    /// Creates a new text input element
     public static func text(
-        name: Name,
+        name: Name? = nil,
         value: String? = nil,
         list: List? = nil,
         maxlength: Maxlength? = nil,

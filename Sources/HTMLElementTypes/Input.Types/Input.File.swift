@@ -36,8 +36,6 @@ extension Input {
         
         public var required: Required?
         
-        
-        
         /// Creates a new file input configuration
         public init(
             accept: Accept? = nil,
@@ -65,8 +63,11 @@ extension Input.File {
 
 extension Input {
     /// Creates a new file input element
+    public static let file: Self = .file()
+    
+    /// Creates a new file input element
     public static func file(
-        name: Name,
+        name: Name? = nil,
         accept: Accept? = nil,
         capture: Capture? = nil,
         multiple: Multiple? = nil,

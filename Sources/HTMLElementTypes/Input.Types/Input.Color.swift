@@ -41,8 +41,11 @@ extension Input {
 
 extension Input {
     /// Creates a new color input element
+    public static let color: Self = .color()
+    
+    /// Creates a new color input element
     public static func color(
-        name: Name,
+        name: Name? = nil,
         value: String? = nil,
         disabled: Disabled? = nil,
         form: HTMLAttributeTypes.Form.ID? = nil

@@ -69,8 +69,11 @@ extension Input {
 }
 
 extension Input {
+    /// Creates a new button input element
+    public static let button: Self = .button()
+    
     public static func button(
-        name: Name,
+        name: Name? = nil,
         value: String? = nil,
         disabled: Disabled? = nil,
         form: HTMLAttributeTypes.Form.ID? = nil,

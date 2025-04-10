@@ -70,9 +70,13 @@ extension Input {
 //
 
 extension Input {
+    
+    /// Creates a new datetimeLocal input element
+    public static let datetimeLocal: Self = .datetimeLocal()
+    
     /// Creates a new datetime-local input element
     public static func datetimeLocal(
-        name: Name,
+        name: Name? = nil,
         value: String? = nil,
         min: Min? = nil,
         max: Max? = nil,

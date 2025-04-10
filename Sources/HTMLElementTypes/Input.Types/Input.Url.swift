@@ -70,9 +70,12 @@ extension Input {
 }
 
 extension Input {
+    /// Creates a new url input element
+    public static let url: Self = .url()
+    
     /// Creates a new URL input element
     public static func url(
-        name: Name,
+        name: Name? = nil,
         value: String? = nil,
         list: List? = nil,
         maxlength: Maxlength? = nil,

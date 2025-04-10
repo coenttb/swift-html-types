@@ -93,8 +93,11 @@ extension Input.Number {
 
 extension Input {
     /// Creates a new number input element
+    public static let number: Self = .number()
+    
+    /// Creates a new number input element
     public static func number(
-        name: Name,
+        name: Name? = nil,
         value: String? = nil,
         min: Min? = nil,
         max: Max? = nil,

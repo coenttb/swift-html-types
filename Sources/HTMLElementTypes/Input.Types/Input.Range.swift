@@ -88,8 +88,11 @@ extension Input.Range {
 
 extension Input {
     /// Creates a new range input element
+    public static let range: Self = .range()
+    
+    /// Creates a new range input element
     public static func range(
-        name: Name,
+        name: Name? = nil,
         value: String? = nil,
         min: Min? = nil,
         max: Max? = nil,

@@ -96,8 +96,11 @@ extension Input {
 
 extension Input {
     /// Creates a new password input element
+    public static let password: Self = .password()
+    
+    /// Creates a new password input element
     public static func password(
-        name: Name,
+        name: Name? = nil,
         value: String? = nil,
         maxlength: Maxlength? = nil,
         minlength: Minlength? = nil,

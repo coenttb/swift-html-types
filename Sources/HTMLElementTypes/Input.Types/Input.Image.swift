@@ -73,9 +73,10 @@ extension Input.Image {
 }
 
 extension Input {
+    
     /// Creates a new image input element (graphical submit button)
     public static func image(
-        name: Name,
+        name: Name? = nil,
         src: Src,
         alt: Alt? = nil,
         height: Height? = nil,

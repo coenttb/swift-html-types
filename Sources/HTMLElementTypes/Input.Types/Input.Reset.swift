@@ -43,8 +43,11 @@ extension Input {
 
 extension Input {
     /// Creates a new reset input element
+    public static let reset: Self = .reset()
+    
+    /// Creates a new reset input element
     public static func reset(
-        name: Name,
+        name: Name? = nil,
         value: String? = nil,
         disabled: Disabled? = nil,
         form: HTMLAttributeTypes.Form.ID? = nil

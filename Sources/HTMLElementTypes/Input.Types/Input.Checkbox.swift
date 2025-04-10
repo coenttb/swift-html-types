@@ -46,8 +46,11 @@ extension Input {
 
 extension Input {
     /// Creates a new checkbox input element
+    public static let checkbox: Self = .checkbox()
+    
+    /// Creates a new checkbox input element
     public static func checkbox(
-        name: Name,
+        name: Name? = nil,
         value: String? = nil,
         checked: Checked? = nil,
         required: Required? = nil,

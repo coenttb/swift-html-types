@@ -76,9 +76,12 @@ public typealias Telephone = Input.Tel
 //Baseline Widely available
 
 extension Input {
+    /// Creates a new tel input element
+    public static let tel: Self = .tel()
+    
     /// Creates a new telephone input element
     public static func tel(
-        name: Name,
+        name: Name? = nil,
         value: String? = nil,
         list: List? = nil,
         maxlength: Maxlength? = nil,
