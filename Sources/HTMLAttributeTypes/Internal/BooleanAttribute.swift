@@ -6,7 +6,7 @@
 //
 
 
-package protocol BooleanAttribute: Attribute, ExpressibleByBooleanLiteral {
+package protocol BooleanAttribute: Attribute, ExpressibleByBooleanLiteral, CustomStringConvertible {
     var value: Bool { get }
     
     init(value: Bool)
@@ -15,5 +15,11 @@ package protocol BooleanAttribute: Attribute, ExpressibleByBooleanLiteral {
 extension BooleanAttribute {
     public init(booleanLiteral value: Bool) {
         self = .init(value: value)
+    }
+}
+
+extension BooleanAttribute  {
+    public var description: String {
+        value ? "true" : "false"
     }
 }
