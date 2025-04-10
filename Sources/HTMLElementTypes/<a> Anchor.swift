@@ -195,4 +195,4 @@ public struct Anchor: Element {
 ///     "Visit Example Website"
 /// }
 /// ```
-public typealias anchor = Anchor
+public typealias a = Anchor
