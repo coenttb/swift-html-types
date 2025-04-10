@@ -38,7 +38,7 @@
 /// - `<link>`: For prioritizing preloaded resources
 /// - `<script>`: For prioritizing script loading
 /// - `<iframe>`: For prioritizing iframe content loading
-public enum FetchPriority: String, Sendable, Equatable, Attribute {
+public enum FetchPriority: String, Attribute {
     /// The name of the HTML attribute
     public static let attribute: String = "fetchpriority"
     

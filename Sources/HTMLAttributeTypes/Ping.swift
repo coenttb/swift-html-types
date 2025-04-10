@@ -9,6 +9,7 @@
 //ping
 //A space-separated list of URLs. When the link is followed, the browser will send POST requests with the body PING to the URLs. Typically for tracking.
 
-public struct Ping {
+public struct Ping: Attribute {
+    public static let attribute: String = "ping"
     
 }

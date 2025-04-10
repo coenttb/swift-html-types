@@ -45,7 +45,8 @@
 /// ```html
 /// <link rel="manifest" href="/app.webmanifest" crossorigin="use-credentials">
 /// ```
-public enum Crossorigin: String, Sendable, Equatable, CustomStringConvertible {
+public enum Crossorigin: String, Attribute, CustomStringConvertible {
+
     /// A cross-origin request is performed, but no credentials are sent
     case anonymous
     

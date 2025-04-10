@@ -13,7 +13,9 @@
 ///
 /// It specifies the type of content being loaded, which is necessary for request matching,
 /// application of correct content security policy, and setting of correct Accept request header.
-public enum As: String, Sendable, Equatable {
+public enum As: String, Attribute {
+    public static let attribute: String = "as"
+    
     /// For `<audio>` elements
     case audio
     /// For `<iframe>` and `<frame>` elements
