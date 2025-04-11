@@ -83,7 +83,7 @@ public struct Button: Element {
     public var formnovalidate: HTMLAttributeTypes.FormNovalidate?
     
     /// Where to display the response after form submission (for submit buttons)
-    public var formtarget: HTMLAttributeTypes.Target?
+    public var formtarget: HTMLAttributeTypes.FormTarget?
     
     /// The ID of the popover element to control (for popover control buttons)
     public var popovertarget: HTMLAttributeTypes.PopoverTarget?
@@ -118,7 +118,7 @@ public struct Button: Element {
         formenctype: HTMLAttributeTypes.FormEncType? = nil,
         formmethod: HTMLAttributeTypes.FormMethod? = nil,
         formnovalidate: HTMLAttributeTypes.FormNovalidate? = nil,
-        formtarget: HTMLAttributeTypes.Target? = nil,
+        formtarget: HTMLAttributeTypes.FormTarget? = nil,
         popovertarget: HTMLAttributeTypes.PopoverTarget? = nil,
         popovertargetaction: HTMLAttributeTypes.PopoverTargetAction? = nil
     ) {
