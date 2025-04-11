@@ -54,7 +54,7 @@ public struct InlineFrame: Element {
     public var allowfullscreen: HTMLAttributeTypes.Allowfullscreen?
     
     /// Specifies a Permissions Policy for the iframe
-    public var allow: String?
+    public var allow: Allow?
     
     /// The width of the frame in CSS pixels (default is 300)
     public var width: HTMLAttributeTypes.Width?
@@ -87,7 +87,7 @@ public struct InlineFrame: Element {
         name: HTMLAttributeTypes.Name? = nil,
         sandbox: String? = nil,
         allowfullscreen: HTMLAttributeTypes.Allowfullscreen? = nil,
-        allow: String? = nil,
+        allow: Allow? = nil,
         width: HTMLAttributeTypes.Width? = nil,
         height: HTMLAttributeTypes.Height? = nil,
         loading: Loading? = nil,
