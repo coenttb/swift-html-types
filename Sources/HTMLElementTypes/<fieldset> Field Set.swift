@@ -48,7 +48,7 @@ public struct FieldSet: Element {
     public var disabled: HTMLAttributeTypes.Disabled?
     
     /// Associates the fieldset with a form element using the form's ID
-    public var form: HTMLAttributeTypes.Form?
+    public var form: HTMLAttributeTypes.Form.ID?
     
     /// The name associated with the fieldset group
     public var name: HTMLAttributeTypes.Name?
@@ -61,7 +61,7 @@ public struct FieldSet: Element {
     ///   - name: The name associated with the fieldset group
     public init(
         disabled: HTMLAttributeTypes.Disabled? = nil,
-        form: HTMLAttributeTypes.Form? = nil,
+        form: HTMLAttributeTypes.Form.ID? = nil,
         name: HTMLAttributeTypes.Name? = nil
     ) {
         self.disabled = disabled

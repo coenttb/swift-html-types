@@ -56,7 +56,7 @@ public struct Select: Element {
     public var disabled: HTMLAttributeTypes.Disabled?
     
     /// Specifies a form to which the select belongs
-    public var form: HTMLAttributeTypes.Form?
+    public var form: HTMLAttributeTypes.Form.ID?
     
     /// Automatically focuses the select when the page loads
     public var autofocus: HTMLAttributeTypes.Autofocus?
@@ -77,7 +77,7 @@ public struct Select: Element {
         required: HTMLAttributeTypes.Required? = nil,
         size: HTMLAttributeTypes.Size? = nil,
         disabled: HTMLAttributeTypes.Disabled? = nil,
-        form: HTMLAttributeTypes.Form? = nil,
+        form: HTMLAttributeTypes.Form.ID? = nil,
         autofocus: HTMLAttributeTypes.Autofocus? = nil
     ) {
         self.multiple = multiple
