@@ -63,7 +63,7 @@ public struct InlineFrame: Element {
     public var height: HTMLAttributeTypes.Height?
     
     /// Indicates how the browser should load the iframe (eager or lazy)
-    public var loading: String?
+    public var loading: Loading?
     
     /// Controls referrer policy when fetching the frame's resource
     public var referrerpolicy: HTMLAttributeTypes.ReferrerPolicy?
@@ -90,7 +90,7 @@ public struct InlineFrame: Element {
         allow: String? = nil,
         width: HTMLAttributeTypes.Width? = nil,
         height: HTMLAttributeTypes.Height? = nil,
-        loading: String? = nil,
+        loading: Loading? = nil,
         referrerpolicy: HTMLAttributeTypes.ReferrerPolicy? = nil
     ) {
         self.src = src
