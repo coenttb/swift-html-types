@@ -48,7 +48,7 @@ public struct Source: Element {
     public static var tag: String { "source" }
     
     /// The MIME media type of the resource
-    public var type: String?
+    public var type: SourceType?
     
     /// The URL of the media resource (used with `<audio>` and `<video>`)
     public var src: HTMLAttributeTypes.Src?
@@ -79,7 +79,7 @@ public struct Source: Element {
     ///   - height: The intrinsic height of the image in pixels (for `<picture>`)
     ///   - width: The intrinsic width of the image in pixels (for `<picture>`)
     public init(
-        type: String? = nil,
+        type: SourceType? = nil,
         src: HTMLAttributeTypes.Src? = nil,
         srcset: HTMLAttributeTypes.ImageSrcSet? = nil,
         sizes: HTMLAttributeTypes.Sizes? = nil,
