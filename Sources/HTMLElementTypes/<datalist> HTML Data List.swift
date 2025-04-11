@@ -64,18 +64,12 @@ public struct DataList: Element {
     /// The HTML tag name
     public static var tag: String { "datalist" }
     
-    /// The ID of the datalist, used to associate it with an input element
-    public var id: HTMLAttributeTypes.Id?
-    
     /// Creates a new DataList element with the specified attributes and content.
     ///
     /// - Parameters:
     ///   - id: The ID attribute, used to associate the datalist with an input element
     public init(
-        id: HTMLAttributeTypes.Id? = nil
-    ) {
-        self.id = id
-        
+    ) {        
     }
 }
 

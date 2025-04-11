@@ -63,9 +63,6 @@ public struct Textarea: Element {
     /// Associates the control with a form element
     public var form: HTMLAttributeTypes.Form.ID?
     
-    /// The element's ID
-    public var id: HTMLAttributeTypes.Id?
-    
     /// Maximum number of characters allowed
     public var maxlength: HTMLAttributeTypes.Maxlength?
     
@@ -104,7 +101,6 @@ public struct Textarea: Element {
     ///   - dirname: For text directionality
     ///   - disabled: Whether the control is disabled
     ///   - form: ID of the form this element belongs to
-    ///   - id: Unique identifier for the element
     ///   - maxlength: Maximum allowed character count
     ///   - minlength: Minimum required character count
     ///   - name: Name of the control for form submission
@@ -123,7 +119,6 @@ public struct Textarea: Element {
         dirname: HTMLAttributeTypes.Dirname? = nil,
         disabled: HTMLAttributeTypes.Disabled? = nil,
         form: HTMLAttributeTypes.Form.ID? = nil,
-        id: HTMLAttributeTypes.Id? = nil,
         maxlength: HTMLAttributeTypes.Maxlength? = nil,
         minlength: HTMLAttributeTypes.Minlength? = nil,
         name: HTMLAttributeTypes.Name? = nil,
@@ -142,7 +137,6 @@ public struct Textarea: Element {
         self.dirname = dirname
         self.disabled = disabled
         self.form = form
-        self.id = id
         self.maxlength = maxlength
         self.minlength = minlength
         self.name = name
