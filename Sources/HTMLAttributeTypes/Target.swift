@@ -92,7 +92,22 @@ public struct Target: Attribute {
     public init(_ value: String) {
         self.value = value
     }
+}
 
+extension Target: ExpressibleByStringLiteral {
+    public init(stringLiteral value: StringLiteralType) {
+        self.value = value
+    }
+}
+
+extension Target: CustomStringConvertible {
+    /// Returns the string representation of the target value
+    public var description: String {
+        return self.value
+    }
+}
+
+extension Target {
     /// Opens the response in the current browsing context (default)
     public static let `self`: Self = "_self"
     
@@ -107,22 +122,4 @@ public struct Target: Attribute {
     
     /// Allows embedded fenced frames to navigate the top-level frame
     public static let unfencedTop: Self = "_unfencedTop"
-    
-    /// Creates a target for a specific named browsing context (e.g., an iframe's name)
-    public static func named(_ name: String) -> Target {
-        return Target(name)
-    }
-}
-
-extension Target: ExpressibleByStringLiteral {
-    public init(stringLiteral value: StringLiteralType) {
-        self.value = value
-    }
-}
-
-extension Target: CustomStringConvertible {
-    /// Returns the string representation of the target value
-    public var description: String {
-        return self.value
-    }
 }
