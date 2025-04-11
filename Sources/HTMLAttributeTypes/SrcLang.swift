@@ -6,8 +6,8 @@
 //
 
 
-public struct SrcLang: Attribute, ExpressibleByStringLiteral, ExpressibleByStringInterpolation, CustomStringConvertible {
-    public static let attribute: String = "srclang"
+public struct Src: Attribute, ExpressibleByStringLiteral, ExpressibleByStringInterpolation, CustomStringConvertible {
+    public static let attribute: String = "src"
     
     public var value: String
     

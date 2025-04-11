@@ -45,16 +45,16 @@ public struct Track: Element {
     public var `default`: HTMLAttributeTypes.Default?
     
     /// How the text track is meant to be used (subtitles, captions, chapters, or metadata)
-    public var kind: Kind?
+    public var kind: HTMLAttributeTypes.Kind?
     
     /// A user-readable title of the text track which is used by the browser when listing available text tracks
-    public var label: Label?
+    public var label: HTMLAttributeTypes.Label?
     
     /// Address of the track (.vtt file)
     public var src: HTMLAttributeTypes.Src
     
     /// Language of the track text data (BCP 47 language tag)
-    public var srclang: String?
+    public var srclang: HTMLAttributeTypes.SrcLang?
     
     /// Creates a new Track element.
     ///
@@ -68,8 +68,8 @@ public struct Track: Element {
         default: HTMLAttributeTypes.Default? = nil,
         kind: HTMLAttributeTypes.Kind? = nil,
         src: HTMLAttributeTypes.Src,
-        srclang: String? = nil,
-        label: Label? = nil,
+        srclang: HTMLAttributeTypes.SrcLang? = nil,
+        label: HTMLAttributeTypes.Label? = nil,
     ) {
         self.default = `default`
         self.kind = kind

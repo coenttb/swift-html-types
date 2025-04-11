@@ -49,7 +49,7 @@ public struct Option: Element {
     
     /// Text for the label indicating the meaning of the option.
     /// If not defined, the element's text content is used.
-    public var label: Label?
+    public var label: HTMLAttributeTypes.Label?
     
     /// If present, indicates that the option is initially selected.
     /// In a single-select control, only one option can be selected at a time.
@@ -68,7 +68,7 @@ public struct Option: Element {
     ///   - value: The value to be submitted if this option is selected
     public init(
         disabled: Disabled? = nil,
-        label: Label? = nil,
+        label: HTMLAttributeTypes.Label? = nil,
         selected: Selected? = nil,
         value: Value<String>
     ) {
