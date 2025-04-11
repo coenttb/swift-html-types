@@ -63,7 +63,7 @@ public struct Meta: Element {
     ///
     /// The format and meaning of this attribute depends on which attribute
     /// it's paired with (name, http-equiv, or itemprop).
-    public var content: String?
+    public var content: Content?
     
     /// Defines a pragma directive.
     ///
@@ -74,12 +74,12 @@ public struct Meta: Element {
     /// Defines the media for which the theme color applies.
     ///
     /// Only used with `name="theme-color"`. Accepts a media query.
-    public var media: String?
+    public var media: Media?
     
     /// Provides document-level metadata in terms of name-value pairs.
     ///
     /// Uses the Name enum for type-safe value selection of common metadata types.
-    public var name: Name?
+    public var name: Meta.Name?
            
     /// Creates a new Meta element with custom attributes.
     ///
@@ -93,10 +93,10 @@ public struct Meta: Element {
     ///   - name: Metadata name
     public init(
         charset: CharSet? = nil,
-        content: String? = nil,
+        content: Content? = nil,
         httpEquiv: HttpEquiv? = nil,
-        media: String? = nil,
-        name: Name? = nil,
+        media: Media? = nil,
+        name: Meta.Name? = nil,
     ) {
         self.charset = charset
         self.content = content
@@ -115,9 +115,9 @@ public struct Meta: Element {
     ///   - content: The metadata value
     ///   - media: Optional media query (only for theme-color)
     public init(
-        name: Name,
-        content: String,
-        media: String? = nil
+        name: Meta.Name,
+        content: Content,
+        media: Media? = nil
     ) {
         self.name = name
         self.content = content
@@ -133,8 +133,8 @@ public struct Meta: Element {
     ///   - content: The metadata value
     ///   - media: Optional media query
     public init(
-        content: String,
-        media: String? = nil
+        content: Content,
+        media: Media? = nil
     ) {
         self.content = content
         self.media = media
@@ -149,7 +149,7 @@ public struct Meta: Element {
     ///   - content: The directive value
     public init(
         httpEquiv: HttpEquiv,
-        content: String
+        content: Content
     ) {
         self.httpEquiv = httpEquiv
         self.content = content
@@ -167,46 +167,46 @@ extension Meta {
         name: .viewport,
         content: "width=device-width, initial-scale=1"
     )
-    
-    /// Creates a description meta element.
-    ///
-    /// - Parameter description: The page description (recommended 150-160 characters)
-    /// - Returns: A meta element with name="description"
-    public static func description(_ description: String) -> Meta {
-        return Meta(name: .description, content: description)
-    }
-    
-    /// Creates a theme-color meta element.
-    ///
-    /// - Parameters:
-    ///   - color: The theme color (CSS color value)
-    ///   - media: Optional media query for when the color applies
-    /// - Returns: A meta element with name="theme-color"
-    public static func themeColor(_ color: String, media: String? = nil) -> Meta {
-        return Meta(name: .themeColor, content: color, media: media)
-    }
-    
-    /// Creates a refresh meta element for redirecting to another URL.
-    ///
-    /// - Parameters:
-    ///   - seconds: The number of seconds before redirecting
-    ///   - url: The URL to redirect to
-    /// - Returns: A meta element with http-equiv="refresh"
-    ///
-    /// - Warning: This method should be used with caution for accessibility reasons.
-    ///   People using assistive technology may not have enough time to read the content
-    ///   before being redirected.
-    public static func redirect(after seconds: Int, to url: String) -> Meta {
-        return Meta(httpEquiv: .refresh, content: "\(seconds);url=\(url)")
-    }
-    
+//    
+//    /// Creates a description meta element.
+//    ///
+//    /// - Parameter description: The page description (recommended 150-160 characters)
+//    /// - Returns: A meta element with name="description"
+//    public static func description(_ description: String) -> Meta {
+//        return Meta(name: Name.description, content: description)
+//    }
+//    
+//    /// Creates a theme-color meta element.
+//    ///
+//    /// - Parameters:
+//    ///   - color: The theme color (CSS color value)
+//    ///   - media: Optional media query for when the color applies
+//    /// - Returns: A meta element with name="theme-color"
+//    public static func themeColor(_ color: String, media: Media? = nil) -> Meta {
+//        return Meta(name: .themeColor, content: color, media: media)
+//    }
+//    
+//    /// Creates a refresh meta element for redirecting to another URL.
+//    ///
+//    /// - Parameters:
+//    ///   - seconds: The number of seconds before redirecting
+//    ///   - url: The URL to redirect to
+//    /// - Returns: A meta element with http-equiv="refresh"
+//    ///
+//    /// - Warning: This method should be used with caution for accessibility reasons.
+//    ///   People using assistive technology may not have enough time to read the content
+//    ///   before being redirected.
+//    public static func redirect(after seconds: Int, to url: String) -> Meta {
+//        return Meta(httpEquiv: .refresh, content: "\(seconds);url=\(url)")
+//    }
+//    
     /// Creates a meta element for Open Graph protocol.
     ///
     /// - Parameters:
     ///   - property: The Open Graph property (e.g., "og:title", "og:description")
     ///   - content: The property value
     /// - Returns: A meta element with property and content attributes
-    public static func openGraph(property: String, content: String) -> Meta {
+    public static func openGraph(property: String, content: Content) -> Meta {
         return Meta(name: .init(stringLiteral: property), content: content)
     }
 }
