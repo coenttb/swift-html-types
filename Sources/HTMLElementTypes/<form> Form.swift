@@ -143,7 +143,7 @@ public struct Form: Element {
     /// - `_blank`: New tab or window
     /// - `_parent`: Parent browsing context
     /// - `_top`: Top-level browsing context
-    public var target: HTMLAttributeTypes.FormTarget?
+    public var target: HTMLAttributeTypes.Target?
     
     /// Creates a new HTML form element with the specified attributes and content.
     ///
@@ -166,7 +166,7 @@ public struct Form: Element {
         enctype: HTMLAttributeTypes.EncType? = nil,
         method: HTMLAttributeTypes.Method? = nil,
         novalidate: HTMLAttributeTypes.Novalidate? = nil,
-        target: HTMLAttributeTypes.FormTarget? = nil
+        target: HTMLAttributeTypes.Target? = nil
     ) {
         self.autocapitalize = autocapitalize
         self.autocomplete = autocomplete
