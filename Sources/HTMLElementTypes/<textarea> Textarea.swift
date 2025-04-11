@@ -52,7 +52,7 @@ public struct Textarea: Element {
     public var autofocus: HTMLAttributeTypes.Autofocus?
     
     /// The visible width of the text control, in average character widths
-    public var cols: Int?
+    public var cols: Cols?
     
     /// Indicates the text directionality of the element contents
     public var dirname: HTMLAttributeTypes.Dirname?
@@ -82,7 +82,7 @@ public struct Textarea: Element {
     public var required: HTMLAttributeTypes.Required?
     
     /// The number of visible text lines
-    public var rows: Int?
+    public var rows: Rows?
     
     /// Whether the textarea is subject to spell-checking
     public var spellcheck: HTMLAttributeTypes.Spellcheck?
@@ -115,7 +115,7 @@ public struct Textarea: Element {
         autocomplete: HTMLAttributeTypes.Autocomplete? = nil,
         autocorrect: HTMLAttributeTypes.Autocorrect? = nil,
         autofocus: HTMLAttributeTypes.Autofocus? = nil,
-        cols: Int? = nil,
+        cols: Cols? = nil,
         dirname: HTMLAttributeTypes.Dirname? = nil,
         disabled: HTMLAttributeTypes.Disabled? = nil,
         form: HTMLAttributeTypes.Form.ID? = nil,
@@ -125,7 +125,7 @@ public struct Textarea: Element {
         placeholder: HTMLAttributeTypes.Placeholder? = nil,
         readonly: HTMLAttributeTypes.Readonly? = nil,
         required: HTMLAttributeTypes.Required? = nil,
-        rows: Int? = nil,
+        rows: Rows? = nil,
         spellcheck: HTMLAttributeTypes.Spellcheck? = nil,
         wrap: TextareaWrap? = nil
     ) {
