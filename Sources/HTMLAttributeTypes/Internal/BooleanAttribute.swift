@@ -6,7 +6,7 @@
 //
 
 
-package protocol BooleanAttribute: Attribute, ExpressibleByBooleanLiteral, CustomStringConvertible {
+public protocol BooleanAttribute: Attribute, ExpressibleByBooleanLiteral, CustomStringConvertible {
     var value: Bool { get }
     
     init(value: Bool)

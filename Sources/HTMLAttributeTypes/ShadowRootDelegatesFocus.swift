@@ -6,7 +6,7 @@
 //
 
 public struct ShadowRootDelegatesFocus: BooleanAttribute {
-    package let value: Bool
+    public let value: Bool
     
     public init(value: Bool) {
         self.value = value

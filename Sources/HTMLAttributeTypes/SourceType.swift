@@ -48,7 +48,7 @@ public struct SourceType: Attribute {
     package let codecs: Codecs?
     
     public struct Codecs: Sendable, Equatable, ExpressibleByBooleanLiteral {
-        package let value: Bool
+        public let value: Bool
         
         public init(_ value: Bool){
             self.value = value

@@ -27,7 +27,7 @@ public struct NoResize: BooleanAttribute {
     public static let attribute: String = "noresize"
     
     /// The attribute value
-    package let value: Bool
+    public let value: Bool
     
     /// Creates a new NoResize attribute.
     public init(value: Bool = true) {
