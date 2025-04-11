@@ -1,5 +1,5 @@
 ///
-/// Enctype.swift
+/// EncType.swift
 /// swift-html
 ///
 /// Created by Coen ten Thije Boonkkamp on 03/04/2025.
@@ -62,7 +62,7 @@
 /// // Using string value
 /// HTML.form.enctype("multipart/form-data")
 /// ```
-public struct Enctype: Attribute {
+public struct EncType: Attribute {
     /// The name of the HTML attribute
     public static let attribute: String = "enctype"
     
@@ -73,43 +73,28 @@ public struct Enctype: Attribute {
     public init(_ value: String) {
         self.value = value
     }
-    
-    /// Initialize with a predefined encoding type
-    public init(_ type: EncodingType) {
-        self.value = type.rawValue
-    }
-    
-    /// Predefined form encoding types
-    public enum EncodingType: String {
-        /// Standard form encoding (default)
-        case urlEncoded = "application/x-www-form-urlencoded"
-        
-        /// Required for file uploads
-        case multipartFormData = "multipart/form-data"
-        
-        /// Minimal encoding, useful for debugging
-        case textPlain = "text/plain"
-    }
-    
-    /// Standard form encoding (default)
-    public static let urlEncoded: Self = Self(.urlEncoded)
-    
-    /// Required for file uploads
-    public static let multipartFormData: Self = Self(.multipartFormData)
-    
-    /// Minimal encoding, useful for debugging
-    public static let textPlain: Self = Self(.textPlain)
 }
 
-extension Enctype: ExpressibleByStringLiteral {
+extension EncType: ExpressibleByStringLiteral {
     public init(stringLiteral value: StringLiteralType) {
         self.value = value
     }
 }
 
-extension Enctype: CustomStringConvertible {
+extension EncType: CustomStringConvertible {
     /// Returns the string representation of the encoding type
     public var description: String {
         return self.value
     }
+}
+
+extension EncType {
+    /// Standard form encoding (default)
+    public static let urlEncoded: Self = "application/x-www-form-urlencoded"
+    
+    /// Required for file uploads
+    public static let multipartFormData: Self = "multipart/form-data"
+    
+    /// Minimal encoding, useful for debugging
+    public static let textPlain: Self = "text/plain"
 }

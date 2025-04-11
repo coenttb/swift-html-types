@@ -30,3 +30,14 @@ extension FormEncType: CustomStringConvertible {
         return self.value
     }
 }
+
+extension FormEncType {
+    /// Standard form encoding (default)
+    public static let urlEncoded: Self = "application/x-www-form-urlencoded"
+    
+    /// Required for file uploads
+    public static let multipartFormData: Self = "multipart/form-data"
+    
+    /// Minimal encoding, useful for debugging
+    public static let textPlain: Self = "text/plain"
+}

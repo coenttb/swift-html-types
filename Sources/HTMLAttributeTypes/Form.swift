@@ -62,7 +62,7 @@ extension Form {
 
 extension Form {
     public typealias ID = String
-//    public typealias Enctype = HTMLAttributeTypes.Enctype
+//    public typealias EncType = HTMLAttributeTypes.EncType
 //    public typealias Target = HTMLAttributeTypes.Target
 //    public typealias Action = HTMLAttributeTypes.Action
 //    public typealias Method = HTMLAttributeTypes.Method

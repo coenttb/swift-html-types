@@ -116,7 +116,7 @@ public struct Form: Element {
     /// - `application/x-www-form-urlencoded` (default)
     /// - `multipart/form-data` (required for file uploads)
     /// - `text/plain` (for debugging)
-    public var enctype: HTMLAttributeTypes.Enctype?
+    public var enctype: HTMLAttributeTypes.EncType?
     
     /// The HTTP method to use when submitting the form.
     ///
@@ -163,7 +163,7 @@ public struct Form: Element {
         name: Name? = nil,
         rel: Rel? = nil,
         action: HTMLAttributeTypes.Action? = nil,
-        enctype: HTMLAttributeTypes.Enctype? = nil,
+        enctype: HTMLAttributeTypes.EncType? = nil,
         method: HTMLAttributeTypes.Method? = nil,
         novalidate: HTMLAttributeTypes.Novalidate? = nil,
         target: HTMLAttributeTypes.FormTarget? = nil
