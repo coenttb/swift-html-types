@@ -48,7 +48,7 @@ public struct OptionGroup: Element {
     
     /// The name of the group of options, which the browser can use when labeling
     /// the options in the user interface. This attribute is mandatory if this element is used.
-    public var label: String?
+    public var label: Label?
     
     /// Creates a new OptionGroup element with the specified attributes.
     ///
@@ -57,7 +57,7 @@ public struct OptionGroup: Element {
     ///   - label: The name of the group of options (mandatory) (typically `<option>` elements)
     public init(
         disabled: Disabled? = nil,
-        label: String? = nil
+        label: Label? = nil
     ) {
         self.disabled = disabled
         self.label = label

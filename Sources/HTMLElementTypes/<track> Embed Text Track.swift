@@ -48,7 +48,7 @@ public struct Track: Element {
     public var kind: Kind?
     
     /// A user-readable title of the text track which is used by the browser when listing available text tracks
-    public var label: String?
+    public var label: Label?
     
     /// Address of the track (.vtt file)
     public var src: HTMLAttributeTypes.Src
@@ -69,7 +69,7 @@ public struct Track: Element {
         kind: HTMLAttributeTypes.Kind? = nil,
         src: HTMLAttributeTypes.Src,
         srclang: String? = nil,
-        label: String? = nil,
+        label: Label? = nil,
     ) {
         self.default = `default`
         self.kind = kind
