@@ -95,6 +95,12 @@ public enum Hidden: String, Attribute, CaseIterable {
     case untilFound = "until-found"
 }
 
+extension Hidden: ExpressibleByBooleanLiteral {
+    public init(booleanLiteral value: BooleanLiteralType) {
+        self = .hidden
+    }
+}
+
 extension Hidden: CustomStringConvertible {
     /// Returns the string representation of the hidden value
     public var description: String {

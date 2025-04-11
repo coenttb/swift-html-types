@@ -84,3 +84,12 @@ extension Contenteditable {
         return self.rawValue
     }
 }
+
+extension Contenteditable: ExpressibleByBooleanLiteral {
+    public init(booleanLiteral value: BooleanLiteralType) {
+        switch value {
+        case true: self = .true
+        case false: self = .false
+        }
+    }
+}

@@ -7,10 +7,14 @@
 
 
 /// Represents the playsinline attribute for the video element.
-public struct Playsinline: Attribute {
+public struct Playsinline: BooleanAttribute {
+    package let value: Bool
+    
+    public init(value: Bool) {
+        self.value = value
+    }
+    
     /// The name of the HTML attribute
     public static let attribute: String = "playsinline"
-    
-    /// Initialize the attribute
-    public init() {}
+
 }

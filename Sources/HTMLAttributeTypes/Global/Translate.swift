@@ -96,3 +96,12 @@ extension Translate: CustomStringConvertible {
         }
     }
 }
+
+extension Translate: ExpressibleByBooleanLiteral {
+    public init(booleanLiteral value: BooleanLiteralType) {
+        switch value {
+        case true: self = .yes
+        case false: self = .no
+        }
+    }
+}
