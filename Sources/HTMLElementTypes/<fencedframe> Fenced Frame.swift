@@ -40,7 +40,7 @@ public struct FencedFrame: Element {
     public static var tag: String { "fencedframe" }
     
     /// Specifies a Permissions Policy for the fencedframe
-    public var allow: FencedFrame.Allow?
+    public var allow: HTMLAttributeTypes.Allow?
     
     /// Height of the fencedframe in CSS pixels (default is 150)
     public var height: HTMLAttributeTypes.Height?
@@ -55,7 +55,7 @@ public struct FencedFrame: Element {
     ///   - height: Height in CSS pixels
     ///   - width: Width in CSS pixels
     public init(
-        allow: FencedFrame.Allow? = nil,
+        allow: HTMLAttributeTypes.Allow? = nil,
         height: HTMLAttributeTypes.Height? = nil,
         width: HTMLAttributeTypes.Width? = nil
     ) {
