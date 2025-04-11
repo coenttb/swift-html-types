@@ -34,20 +34,13 @@ import HTMLAttributeTypes
 /// The presence of the mark element is not announced by most screen reading technology by default.
 /// Consider using CSS ::before and ::after pseudo-elements to make it more accessible if necessary.
 ///
-public struct Mark<HTML>: Element {
+public struct Mark: Element {
     /// The HTML tag name
     public static var tag: String { "mark" }
     
-    /// The element's content
-    public let content: () -> HTML
-    
     /// Creates a new Mark element with the specified content.
-    ///
-    /// - Parameter content: The content to be highlighted
     public init(
-        content: @escaping () -> HTML
     ) {
-        self.content = content
     }
 }
 
