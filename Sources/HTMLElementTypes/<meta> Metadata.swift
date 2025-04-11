@@ -79,7 +79,7 @@ public struct Meta: Element {
     /// Provides document-level metadata in terms of name-value pairs.
     ///
     /// Uses the Name enum for type-safe value selection of common metadata types.
-    public var name: Meta.Name?
+    public var name: MetaName?
            
     /// Creates a new Meta element with custom attributes.
     ///
@@ -96,7 +96,7 @@ public struct Meta: Element {
         content: Content? = nil,
         httpEquiv: HttpEquiv? = nil,
         media: Media? = nil,
-        name: Meta.Name? = nil,
+        name: MetaName? = nil,
     ) {
         self.charset = charset
         self.content = content
@@ -115,7 +115,7 @@ public struct Meta: Element {
     ///   - content: The metadata value
     ///   - media: Optional media query (only for theme-color)
     public init(
-        name: Meta.Name,
+        name: MetaName,
         content: Content,
         media: Media? = nil
     ) {
@@ -223,50 +223,6 @@ extension Meta {
 public typealias meta = Meta
 
 
-extension Meta {
-
-    /// Standard metadata names for the name attribute.
-    ///
-    /// These values are commonly used with the name attribute to provide
-    /// various types of document-level metadata.
-    public struct Name: Sendable, Equatable, ExpressibleByStringLiteral, CustomStringConvertible {
-        
-        package let value: String
-        
-        /// Name of the application that generated the document.
-        public static let application: Self = "application-name"
-        
-        /// Name of the document's author.
-        public static let author: Self = "author"
-        
-        /// Summary of the page's content.
-        public static let description: Self = "description"
-        
-        /// Software that generated the document.
-        public static let generator: Self = "generator"
-        
-        /// Comma-separated list of keywords relevant to the page.
-        public static let keywords: Self = "keywords"
-        
-        /// Referrer policy for links away from the document.
-        public static let referrer: Self = "referrer"
-        
-        /// Suggested color for customizing browser UI elements.
-        public static let themeColor: Self = "theme-color"
-        
-        /// Instructions for search engine crawlers.
-        public static let robots: Self = "robots"
-        
-        /// Settings for the visual viewport on mobile devices.
-        public static let viewport: Self = "viewport"
-        
-        public var description: String { value }
-        
-        public init(stringLiteral value: String) {
-            self.value = value
-        }
-    }
-}
 
 
 /* MDN Documentation
