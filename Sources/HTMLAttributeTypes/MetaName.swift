@@ -12,7 +12,7 @@ import Foundation
 /// These values are commonly used with the name attribute to provide
 /// various types of document-level metadata.
 public struct MetaName: Attribute {
-    public static var attribute: String = "name"
+    public static let attribute: String = "name"
     
     package let value: String
     
