@@ -56,7 +56,7 @@ public struct ExternalObject: Element {
     public var type: HTMLAttributeTypes.ObjectType?
     
     /// The form element that the object is associated with
-    public var form: HTMLAttributeTypes.ObjectForm?
+    public var form: HTMLAttributeTypes.Form.ID?
     
     /// The name of the browsing context or control
     public var name: HTMLAttributeTypes.Name?
@@ -83,7 +83,7 @@ public struct ExternalObject: Element {
     public init(
         data: HTMLAttributeTypes.ObjectData? = nil,
         type: HTMLAttributeTypes.ObjectType? = nil,
-        form: HTMLAttributeTypes.ObjectForm? = nil,
+        form: HTMLAttributeTypes.Form.ID? = nil,
         name: HTMLAttributeTypes.Name? = nil,
         height: HTMLAttributeTypes.Height? = nil,
         width: HTMLAttributeTypes.Width? = nil,
