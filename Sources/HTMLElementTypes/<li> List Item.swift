@@ -54,14 +54,14 @@ public struct ListItem: Element {
     /// The ordinal value of the list item (only meaningful within `<ol>` elements).
     /// This integer attribute indicates the current ordinal value as defined by the
     /// parent `<ol>` element. List items that follow this one continue numbering from this value.
-    public var value: Int?
+    public var value: Value<Int>?
     
     /// Creates a new list item element with the specified value.
     ///
     /// - Parameters:
     ///   - value: The ordinal value of the list item (only meaningful within `<ol>` elements)
     public init(
-        value: Int? = nil
+        value: Value<Int>? = nil
     ) {
         self.value = value
         
