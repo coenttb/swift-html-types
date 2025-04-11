@@ -51,16 +51,16 @@ public struct TableHeader: Element {
     public static var tag: String { "th" }
     
     /// A short, abbreviated description of the header cell's content
-    public var abbr: String?
+    public var abbr: HTMLAttributeTypes.Abbr?
     
     /// Number of columns this header cell spans
-    public var colspan: Int?
+    public var colspan: HTMLAttributeTypes.ColSpan?
     
     /// Space-separated list of IDs of other header cells that provide headers for this cell
-    public var headers: String?
+    public var headers: HTMLAttributeTypes.Headers?
     
     /// Number of rows this header cell spans
-    public var rowspan: Int?
+    public var rowspan: HTMLAttributeTypes.RowSpan?
     
     /// Defines which cells this header relates to (row, col, rowgroup, colgroup)
     public var scope: Scope?
@@ -74,10 +74,10 @@ public struct TableHeader: Element {
     ///   - rowspan: Number of rows this cell spans (default is 1)
     ///   - scope: Defines which cells this header relates to
     public init(
-        abbr: String? = nil,
-        colspan: Int? = nil,
-        headers: String? = nil,
-        rowspan: Int? = nil,
+        abbr: HTMLAttributeTypes.Abbr? = nil,
+        colspan: HTMLAttributeTypes.ColSpan? = nil,
+        headers: HTMLAttributeTypes.Headers? = nil,
+        rowspan: HTMLAttributeTypes.RowSpan? = nil,
         scope: Scope? = nil
     ) {
         self.abbr = abbr

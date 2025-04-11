@@ -62,7 +62,22 @@ public struct Action: Attribute {
     public init(_ value: String) {
         self.value = value
     }
-    
+}
+
+extension Action: ExpressibleByStringLiteral {
+    public init(stringLiteral value: StringLiteralType) {
+        self.value = value
+    }
+}
+
+extension Action: CustomStringConvertible {
+    /// Returns the string representation of the action URL
+    public var description: String {
+        return self.value
+    }
+}
+
+extension Action {
     /// Creates a relative URL action within the same domain
     public static func relative(_ path: String) -> Action {
         // Make sure the path starts with a slash if it's not already
@@ -80,20 +95,4 @@ public struct Action: Attribute {
     
     /// Creates an action for client-side handling (no server submission)
     public static let clientSide: Action = Action("#")
-
 }
-
-extension Action: ExpressibleByStringLiteral {
-    public init(stringLiteral value: StringLiteralType) {
-        self.value = value
-    }
-}
-
-extension Action: CustomStringConvertible {
-    /// Returns the string representation of the action URL
-    public var description: String {
-        return self.value
-    }
-}
-
-
