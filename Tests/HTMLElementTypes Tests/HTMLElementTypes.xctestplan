@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "B609C290-A9A0-4B80-9932-49461B601F70",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "HTMLElementTypes Tests",
+        "name" : "HTMLElementTypes Tests"
+      }
+    }
+  ],
+  "version" : 1
+}
