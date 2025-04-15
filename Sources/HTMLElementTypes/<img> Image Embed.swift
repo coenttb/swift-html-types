@@ -30,3 +30,4 @@ public struct Image: Element {
     }
 }
 
+public typealias img = Image
