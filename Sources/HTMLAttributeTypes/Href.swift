@@ -10,6 +10,7 @@
 //
 //===----------------------------------------------------------------------===//
 
+import Foundation
 
 /// An attribute that specifies the URL that a hyperlink points to.
 ///
@@ -75,3 +76,156 @@ public struct Href: StringAttribute {
     }
 }
 
+extension Href {
+    /// Create an Href from a Foundation.URL
+    /// - Parameter url: The URL to convert to an Href
+    /// - Returns: An Href with the URL's absolute string representation
+    public static func url(_ url: URL) -> Href {
+        return Href(value: url.absoluteString)
+    }
+    
+    /// Create an Href for a telephone number
+    /// - Parameter phoneNumber: The phone number (can include country code, dashes, spaces, etc.)
+    /// - Returns: An Href with a tel: scheme
+    public static func tel(_ phoneNumber: String) -> Href {
+        return Href(value: "tel:\(phoneNumber)")
+    }
+    
+    /// Create an Href for an email address
+    /// - Parameter email: The email address
+    /// - Returns: An Href with a mailto: scheme
+    public static func mailto(_ email: String) -> Href {
+        return Href(value: "mailto:\(email)")
+    }
+    
+    /// Create an Href for an email address with subject and body
+    /// - Parameters:
+    ///   - email: The email address
+    ///   - subject: Optional email subject
+    ///   - body: Optional email body
+    /// - Returns: An Href with a mailto: scheme and query parameters
+    public static func mailto(_ email: String, subject: String? = nil, body: String? = nil) -> Href {
+        var components = URLComponents()
+        components.scheme = "mailto"
+        components.path = email
+        
+        var queryItems: [URLQueryItem] = []
+        if let subject = subject {
+            queryItems.append(URLQueryItem(name: "subject", value: subject))
+        }
+        if let body = body {
+            queryItems.append(URLQueryItem(name: "body", value: body))
+        }
+        
+        if !queryItems.isEmpty {
+            components.queryItems = queryItems
+        }
+        
+        return Href(value: components.string ?? "mailto:\(email)")
+    }
+    
+    /// Create an Href for SMS
+    /// - Parameter phoneNumber: The phone number to send SMS to
+    /// - Returns: An Href with an sms: scheme
+    public static func sms(_ phoneNumber: String) -> Href {
+        return Href(value: "sms:\(phoneNumber)")
+    }
+    
+    /// Create an Href for SMS with body text
+    /// - Parameters:
+    ///   - phoneNumber: The phone number to send SMS to
+    ///   - body: The message body
+    /// - Returns: An Href with an sms: scheme and body parameter
+    public static func sms(_ phoneNumber: String, body: String) -> Href {
+        var components = URLComponents()
+        components.scheme = "sms"
+        components.path = phoneNumber
+        components.queryItems = [URLQueryItem(name: "body", value: body)]
+        
+        return Href(value: components.string ?? "sms:\(phoneNumber)")
+    }
+    
+    /// Create an Href for a file URL
+    /// - Parameter path: The file path
+    /// - Returns: An Href with a file: scheme
+    public static func file(_ path: String) -> Href {
+        return Href(value: "file://\(path)")
+    }
+    
+    /// Create an Href for a file URL from a file URL
+    /// - Parameter fileURL: A file URL
+    /// - Returns: An Href with the file URL's absolute string
+    public static func file(_ fileURL: URL) -> Href {
+        return Href(value: fileURL.absoluteString)
+    }
+    
+    /// Create an Href for a fragment (anchor) within the current page
+    /// - Parameter fragment: The fragment identifier (without the # symbol)
+    /// - Returns: An Href with just the fragment
+    public static func fragment(_ fragment: String) -> Href {
+        return Href(value: "#\(fragment)")
+    }
+    
+    /// Create an Href for WhatsApp
+    /// - Parameter phoneNumber: The phone number (with country code)
+    /// - Returns: An Href with a WhatsApp URL scheme
+    public static func whatsapp(_ phoneNumber: String) -> Href {
+        return Href(value: "https://wa.me/\(phoneNumber)")
+    }
+    
+    /// Create an Href for WhatsApp with message
+    /// - Parameters:
+    ///   - phoneNumber: The phone number (with country code)
+    ///   - message: Pre-filled message text
+    /// - Returns: An Href with a WhatsApp URL scheme and message
+    public static func whatsapp(_ phoneNumber: String, message: String) -> Href {
+        let encodedMessage = message.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? message
+        return Href(value: "https://wa.me/\(phoneNumber)?text=\(encodedMessage)")
+    }
+    
+    /// Create an Href for FaceTime
+    /// - Parameter contact: Phone number or email address
+    /// - Returns: An Href with a facetime: scheme
+    public static func facetime(_ contact: String) -> Href {
+        return Href(value: "facetime:\(contact)")
+    }
+    
+    /// Create an Href for FaceTime video call
+    /// - Parameter contact: Phone number or email address
+    /// - Returns: An Href with a facetime-video: scheme
+    public static func facetimeVideo(_ contact: String) -> Href {
+        return Href(value: "facetime-video:\(contact)")
+    }
+}
+
+// MARK: - Usage Examples
+/*
+// Foundation.URL
+let websiteURL = URL(string: "https://example.com")!
+let link1 = Link(href: Href.url(websiteURL), rel: "external")
+
+// Telephone
+let phoneLink = Link(href: Href.tel("+1-555-123-4567"), rel: "nofollow")
+
+// Email
+let emailLink = Link(href: Href.mailto("contact@example.com"), rel: "nofollow")
+let emailWithSubject = Link(href: Href.mailto("support@example.com", subject: "Help Request"), rel: "nofollow")
+
+// SMS
+let smsLink = Link(href: Href.sms("+1-555-123-4567"), rel: "nofollow")
+let smsWithBody = Link(href: Href.sms("+1-555-123-4567", body: "Hello there!"), rel: "nofollow")
+
+// Fragment/Anchor
+let anchorLink = Link(href: Href.fragment("section-1"), rel: "bookmark")
+
+// WhatsApp
+let whatsappLink = Link(href: Href.whatsapp("+1234567890"), rel: "nofollow")
+let whatsappWithMessage = Link(href: Href.whatsapp("+1234567890", message: "Hello!"), rel: "nofollow")
+
+// File
+let fileLink = Link(href: Href.file("/path/to/document.pdf"), rel: "nofollow")
+
+// FaceTime
+let facetimeLink = Link(href: Href.facetime("user@example.com"), rel: "nofollow")
+let facetimeVideoLink = Link(href: Href.facetimeVideo("+1-555-123-4567"), rel: "nofollow")
+*/
