@@ -13,7 +13,7 @@
 import HTMLAttributeTypes
 
 public struct Image: Element {
-    public static var tag: String { "image" }
+    public static var tag: String { "img" }
     
     public var src: Src?
     public var alt: Alt?
