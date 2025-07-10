@@ -7,7 +7,9 @@ A comprehensive, accurate, and type-safe domain model of HTML elements and attri
 This package is currently in active development and is subject to changes. Features and APIs may change without prior notice until a stable release is available.
 
 > [!NOTE]
-> This package serves as a foundational type system for other packages to depend on. Consequently, this package provides the type definitions only and does not include HTML rendering functionality. Implementers will need to build their own rendering logic on top of these types. For a concrete example, see `swift-html`'s integration in [swift-html-css-pointfree](https://github.com/coenttb/swift-html-css-pointfree).
+> `swift-html-types` is part of a modular ecosystem for HTML generation in Swift. Rather than building one monolithic package, I created focused packages that compose together: `swift-html-types` provides the foundational types, while other packages handle rendering, styling, and developer experience.
+>
+> [Read about the architectural decisions behind this approach →](https://coenttb.com/blog/4)
 
 ## Examples
 
@@ -60,12 +62,6 @@ let input = input.color(
   form: Form.ID?
 )
 ```
-
-## About the Project
-
-`swift-html-types` is part of a modular ecosystem for HTML generation in Swift. Rather than building one monolithic package, I created focused packages that compose together: `swift-html-types` provides the foundational types, while other packages handle rendering, styling, and developer experience.
-
-[Read about the architectural decisions behind this approach →](https://coenttb.com/blog/4)
 
 ## Showcases
 
