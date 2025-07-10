@@ -71,4 +71,5 @@ fastlane/test_output
 Packages/*
 .swiftpm
 
-CLAUDE.mdscripts/
+CLAUDE.md
+scripts/

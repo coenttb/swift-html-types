@@ -10,7 +10,7 @@
 //
 //===----------------------------------------------------------------------===//
 
-
+/// Represents the label attribute used in HTML elements like <optgroup>, <option>, and <track>.
 public struct Label: StringAttribute {
     /// The name of the HTML attribute
     public static let attribute: String = "label"
