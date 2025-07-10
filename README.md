@@ -2,9 +2,6 @@
 
 A comprehensive, accurate, and type-safe domain model of HTML elements and attributes in Swift.
 
-`swift-html-types` resulted from my efforts to build a Swift HTML DSL, which became an exploration of how to architect Swift libraries for maximum modularity and reusability. Instead of building one monolithic package, I created an ecosystem of carefully designed packages that compose together: `swift-html-types` and `swift-css-types` provide standards-compliant Swift APIs, while `swift-html-css-pointfree` integrates these domain models with HTML-printing capabilities. `coenttb/swift-html` layers on functionality that completes the developer experience at point of use.
-
-
 ![Development Status](https://img.shields.io/badge/status-active--development-blue.svg)
 
 This package is currently in active development and is subject to changes. Features and APIs may change without prior notice until a stable release is available.
@@ -18,20 +15,24 @@ This package is currently in active development and is subject to changes. Featu
 import HTMLTypes
 
 // Create elements with appropriate attributes
-let anchor = Anchor(href: "https://example.com")
-let anchor = a(href: "https://example.com")
+let anchor = Anchor(href: "https://example.com") // or just use the shorthand: a(href: "https://example.com")
+let input = input.search(name: "query", placeholder: "Search...")
+```
 
-or 
+### Foundation integration for URL safety
 
+```
 import HTMLTypesFoundation
 
 let url: Foundation.URL = .init(...)
 
-let anchor = Anchor(url: url)
-let anchor = a(url: url)
+let anchor = Anchor(url: url) // or just use the shorthand: a(url: url)
 ```
 
-This package improves discoverability of available attributes for each HTML element, for example invoking the search static func on input reveals the available attributes (except global attributes, which should be applied via methods):
+## Motivation
+
+A domain model for HTML brings many benefits. In particular, this package improves discoverability of available attributes for each HTML element, for example invoking the search static func on input reveals the available attributes (except global attributes, which should be applied via methods):
+
 ```swift
 let input = input.search(
   name: Name?,
@@ -60,6 +61,12 @@ let input = input.color(
 )
 ```
 
+## About the Project
+
+`swift-html-types` is part of a modular ecosystem for HTML generation in Swift. Rather than building one monolithic package, I created focused packages that compose together: `swift-html-types` provides the foundational types, while other packages handle rendering, styling, and developer experience.
+
+[Read about the architectural decisions behind this approach →](https://coenttb.com/blog/4)
+
 ## Showcases
 
 - [coenttb/swift-html](https://github.com/coenttb/swift-html) - A Swift DSL for domain-accurate and type-safe HTML & CSS.
@@ -74,7 +81,7 @@ Add the dependency in your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/coenttb/swift-html-types", branch: "0.0.1")
+    .package(url: "https://github.com/coenttb/swift-html-types", branch: "main")
 ]
 ```
 
