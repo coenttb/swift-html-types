@@ -23,7 +23,7 @@ let input = input.search(name: "query", placeholder: "Search...")
 
 ### Foundation integration for URL safety
 
-```
+```swift
 import HTMLTypesFoundation
 
 let url: Foundation.URL = .init(...)
