@@ -103,6 +103,9 @@ extension Input {
     }
 }
 
+
+
+
 extension Input.Variant {
     /// Returns the string value used for the HTML input's "type" attribute.
     ///
