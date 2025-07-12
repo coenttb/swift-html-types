@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -37,13 +36,12 @@ import HTMLAttributeTypes
 public struct NoBr: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "nobr" }
-    
+
     /// Creates a new NoBr element with the specified content.
     @available(*, deprecated, message: "Although this element is widely supported, it was never standard HTML. Use CSS property `white-space: nowrap` instead.")
     public init(
-        
+
     ) {
-        
+
     }
 }
-

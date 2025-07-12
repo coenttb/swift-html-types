@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the HTML usemap attribute.
 ///
@@ -47,10 +46,10 @@
 public struct Usemap: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "usemap" }
-    
+
     /// The map name value (with or without '#')
     public var rawValue: String
-    
+
     /// Initialize with a string value
     public init(value: String) {
         // Ensure the value starts with '#'
@@ -60,7 +59,7 @@ public struct Usemap: StringAttribute, CustomStringConvertible {
             self.rawValue = "#" + value
         }
     }
-    
+
     /// Initialize with a map name
     /// - Parameter value: The map name (with or without '#')
     public init(_ value: String) {

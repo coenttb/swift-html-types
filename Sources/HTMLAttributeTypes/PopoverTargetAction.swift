@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Specifies the action to be performed on a popover element being controlled by a button.
 ///
@@ -31,16 +30,15 @@
 public struct PopoverTargetAction: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "popovertargetaction" }
-    
+
     /// The action to perform on the popover
     public var rawValue: String
-    
+
     /// Initialize with a popover action
     public init(value: String) {
         self.rawValue = value
     }
 }
-
 
 extension PopoverTargetAction {
     @inlinable public static var show: Self { "show" }

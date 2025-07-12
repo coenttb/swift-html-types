@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -29,13 +28,13 @@ extension Input {
         /// Note: If a checkbox is unchecked when its form is submitted, neither the name nor the value is
         /// submitted to the server.
         public var value: Value<String>?
-        
+
         /// A boolean attribute indicating whether this checkbox is checked by default (when the page loads).
         public var checked: Checked?
-        
+
         /// A boolean attribute indicating whether this checkbox is checked by default (when the page loads).
         public var required: Required?
-        
+
         /// Creates a new checkbox input configuration
         public init(
             value: Value<String>? = nil,
@@ -52,7 +51,7 @@ extension Input {
 extension Input {
     /// Creates a new checkbox input element
     public static let checkbox: Self = .checkbox()
-    
+
     /// Creates a new checkbox input element
     public static func checkbox(
         name: Name? = nil,
@@ -76,4 +75,3 @@ extension Input {
         )
     }
 }
-

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -54,46 +53,46 @@ import HTMLAttributeTypes
 public struct Button: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "button" }
-    
+
     /// The button type (submit, reset, or button)
     public var type: HTMLAttributeTypes.ButtonType?
-    
+
     /// Whether the button is disabled
     public var disabled: HTMLAttributeTypes.Disabled?
-    
+
     /// The ID of the form this button is associated with
     public var form: HTMLAttributeTypes.Form.ID?
-    
+
     /// The name of the button, used when submitting forms
     public var name: HTMLAttributeTypes.Name?
-    
+
     /// The value associated with the button, used when submitting forms
     public var value: HTMLAttributeTypes.Value<String>?
-    
+
     /// Whether the button should automatically get focus on page load
     public var autofocus: HTMLAttributeTypes.Autofocus?
-    
+
     /// The URL that processes the form submission (for submit buttons)
     public var formaction: HTMLAttributeTypes.FormAction?
-    
+
     /// How form data should be encoded before submission (for submit buttons)
     public var formenctype: HTMLAttributeTypes.FormEncType?
-    
+
     /// The HTTP method used for form submission (for submit buttons)
     public var formmethod: HTMLAttributeTypes.FormMethod?
-    
+
     /// Whether to skip form validation on submission (for submit buttons)
     public var formnovalidate: HTMLAttributeTypes.FormNovalidate?
-    
+
     /// Where to display the response after form submission (for submit buttons)
     public var formtarget: HTMLAttributeTypes.FormTarget?
-    
+
     /// The ID of the popover element to control (for popover control buttons)
     public var popovertarget: HTMLAttributeTypes.PopoverTarget?
-    
+
     /// The action to perform on the popover (show, hide, or toggle)
     public var popovertargetaction: HTMLAttributeTypes.PopoverTargetAction?
-    
+
     /// Creates a new Button element with the specified attributes and content.
     ///
     /// - Parameters:
@@ -137,8 +136,6 @@ public struct Button: HTMLElement {
         self.formnovalidate = formnovalidate
         self.formtarget = formtarget
         self.popovertarget = popovertarget
-        self.popovertargetaction = popovertargetaction        
+        self.popovertargetaction = popovertargetaction
     }
 }
-
-

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -45,13 +44,13 @@ import HTMLAttributeTypes
 public struct Del: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "del" }
-    
+
     /// A URI for a resource that explains the change (for example, meeting minutes).
     public var cite: HTMLAttributeTypes.Cite?
-    
+
     /// The time and date of the change as a valid date string with an optional time.
     public var datetime: HTMLAttributeTypes.DateTime?
-    
+
     /// Creates a new Del element to mark deleted text.
     ///
     /// - Parameters:
@@ -65,4 +64,3 @@ public struct Del: HTMLElement {
         self.datetime = datetime
     }
 }
-

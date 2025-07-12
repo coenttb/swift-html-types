@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the HTML `poster` attribute, which is used with the `<video>` element to
 /// specify an image to be shown while the video is downloading or until the user
@@ -42,10 +41,10 @@
 public struct Poster: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "poster" }
-    
+
     /// The URL of the poster image
     public var rawValue: String
-    
+
     /// Initialize with a poster image URL
     ///
     /// - Parameter value: The URL pointing to the poster image

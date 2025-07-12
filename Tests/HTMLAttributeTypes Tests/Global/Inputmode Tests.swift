@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,11 +8,11 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 import Foundation
-import Testing
 import HTMLAttributeTypes
+import Testing
 
 @Suite("Inputmode Test")
 struct InputmodeTests {
@@ -20,7 +20,7 @@ struct InputmodeTests {
     func attribute() {
         #expect(Inputmode.attribute == "inputmode")
     }
-    
+
     @Test(
         "Inputmode cases description should match the spec",
         arguments: Inputmode.allCases
@@ -38,7 +38,7 @@ struct InputmodeTests {
         default: ()
         }
     }
-    
+
     @Test("Inputmode should conform to CaseIterable")
     func conformsToCaseIterable() {
         #expect(Inputmode.allCases.count == 8)
@@ -51,7 +51,7 @@ struct InputmodeTests {
         #expect(Inputmode.allCases.contains(.email))
         #expect(Inputmode.allCases.contains(.url))
     }
-    
+
     @Test(
         "Inputmode rawValue should match description",
         arguments: Inputmode.allCases
@@ -59,7 +59,7 @@ struct InputmodeTests {
     func rawValueMatchesDescription(inputmode: Inputmode) {
         #expect(inputmode.rawValue == inputmode.description)
     }
-    
+
     @Test(
         "Inputmode should be initializable from rawValue",
         arguments: [
@@ -70,7 +70,7 @@ struct InputmodeTests {
             ("tel", Inputmode.tel),
             ("search", Inputmode.search),
             ("email", Inputmode.email),
-            ("url", Inputmode.url),
+            ("url", Inputmode.url)
         ]
     )
     func initializableFromRawValue(input: String, expected: Inputmode?) {

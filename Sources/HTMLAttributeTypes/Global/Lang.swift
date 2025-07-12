@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Defines the language of the content within an element.
 ///
@@ -81,65 +80,64 @@
 public struct Lang: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "lang" }
-    
+
     /// The language tag value
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
 }
 
 extension Lang {
-    
+
     /// Initialize with separate language, script, and region components
     public init(language: String, script: String? = nil, region: String? = nil) {
         var value = language
-        
+
         if let script = script {
             value += "-\(script)"
         }
-        
+
         if let region = region {
             value += "-\(region)"
         }
-        
+
         self = .init(value: value)
     }
 }
- 
+
 extension Lang {
     /// Common language code for English
     @inlinable public static var english: Self { "en" }
-    
+
     /// Common language code for French
     @inlinable public static var french: Self { "fr" }
-    
+
     /// Common language code for German
     @inlinable public static var german: Self { "de" }
-    
+
     /// Common language code for Spanish
     @inlinable public static var spanish: Self { "es" }
-    
+
     /// Common language code for Italian
     @inlinable public static var italian: Self { "it" }
-    
+
     /// Common language code for Japanese
     @inlinable public static var japanese: Self { "ja" }
-    
+
     /// Common language code for Chinese
     @inlinable public static var chinese: Self { "zh" }
-    
+
     /// Common language code for Russian
     @inlinable public static var russian: Self { "ru" }
-    
+
     /// Common language code for Arabic
     @inlinable public static var arabic: Self { "ar" }
-    
+
     /// Common language code for American English
     @inlinable public static var americanEnglish: Self { "en-US" }
-    
+
     /// Common language code for British English
     @inlinable public static var britishEnglish: Self { "en-GB" }
 }
-

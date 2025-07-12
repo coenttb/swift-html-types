@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// An enumeration that controls how the element handles cross-origin requests.
 ///
@@ -50,12 +49,12 @@
 /// <link rel="manifest" href="/app.webmanifest" crossorigin="use-credentials">
 /// ```
 public struct Crossorigin: StringAttribute {
-    
+
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "crossorigin" }
-    
+
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
@@ -64,7 +63,7 @@ public struct Crossorigin: StringAttribute {
 extension Crossorigin {
     /// A cross-origin request is performed, but no credentials are sent
     @inlinable public static var anonymous: Self { "anonymous" }
-    
+
     /// A cross-origin request is performed along with credentials
     @inlinable public static var useCredentials: Self { "use-credentials" }
 }

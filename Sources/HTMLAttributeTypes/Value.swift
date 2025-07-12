@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// An attribute that specifies the value of an HTML element, primarily used with form controls.
 ///
@@ -77,16 +76,16 @@
 public struct Value<Element: Sendable & Equatable>: Attribute {
     /// The name of the HTML attribute
     public static var attribute: String { "value" }
-    
+
     /// The value
     public var value: Element
-    
+
     public init(_ value: Element) {
         self.value = value
     }
 }
 
-extension Value:LosslessStringConvertible where Element == String {
+extension Value: LosslessStringConvertible where Element == String {
     public init?(_ description: String) {
         self = .init(description)
     }
@@ -94,7 +93,7 @@ extension Value:LosslessStringConvertible where Element == String {
 
 extension Value: ExpressibleByStringLiteral where Element: ExpressibleByStringLiteral {
     public typealias StringLiteralType = Element.StringLiteralType
-    
+
     public init(stringLiteral value: StringLiteralType) {
         self.value = Element(stringLiteral: value)
     }
@@ -102,7 +101,7 @@ extension Value: ExpressibleByStringLiteral where Element: ExpressibleByStringLi
 
 extension Value: ExpressibleByExtendedGraphemeClusterLiteral where Element: ExpressibleByExtendedGraphemeClusterLiteral {
     public typealias ExtendedGraphemeClusterLiteralType = Element.ExtendedGraphemeClusterLiteralType
-    
+
     public init(extendedGraphemeClusterLiteral value: ExtendedGraphemeClusterLiteralType) {
         self.value = Element(extendedGraphemeClusterLiteral: value)
     }
@@ -110,7 +109,7 @@ extension Value: ExpressibleByExtendedGraphemeClusterLiteral where Element: Expr
 
 extension Value: ExpressibleByUnicodeScalarLiteral where Element: ExpressibleByUnicodeScalarLiteral {
     public typealias UnicodeScalarLiteralType = Element.UnicodeScalarLiteralType
-    
+
     public init(unicodeScalarLiteral value: UnicodeScalarLiteralType) {
         self.value = Element(unicodeScalarLiteral: value)
     }
@@ -118,7 +117,7 @@ extension Value: ExpressibleByUnicodeScalarLiteral where Element: ExpressibleByU
 
 extension Value: ExpressibleByIntegerLiteral where Element: ExpressibleByIntegerLiteral {
     public typealias IntLiteralType = Element.IntegerLiteralType
-    
+
     public init(integerLiteral value: IntLiteralType) {
         self.value = Element(integerLiteral: value)
     }
@@ -126,7 +125,7 @@ extension Value: ExpressibleByIntegerLiteral where Element: ExpressibleByInteger
 
 extension Value: ExpressibleByFloatLiteral where Element: ExpressibleByFloatLiteral {
     public typealias FloatLiteralType = Element.FloatLiteralType
-    
+
     public init(floatLiteral value: FloatLiteralType) {
         self.value = Element(floatLiteral: value)
     }

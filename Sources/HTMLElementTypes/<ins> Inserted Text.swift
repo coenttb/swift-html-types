@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -40,13 +39,13 @@ import HTMLAttributeTypes
 public struct InsertedText: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "ins" }
-    
+
     /// The URI of a resource that explains the change, such as a link to meeting minutes or a ticket.
     public var cite: HTMLAttributeTypes.Cite?
-    
+
     /// Indicates the time and date of the change.
     public var datetime: HTMLAttributeTypes.DateTime?
-    
+
     /// Creates a new InsertedText element with the specified attributes.
     ///
     /// - Parameters:
@@ -58,7 +57,6 @@ public struct InsertedText: HTMLElement {
     ) {
         self.cite = cite
         self.datetime = datetime
-        
+
     }
 }
-

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// An attribute that specifies a regular expression pattern for form input validation.
 ///
@@ -54,10 +53,10 @@
 public struct Pattern: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "pattern" }
-    
+
     /// The attribute value
     public let rawValue: String
-    
+
     /// Initialize with a value for the pattern attribute
     public init(value: String) {
         self.rawValue = value
@@ -67,16 +66,16 @@ public struct Pattern: StringAttribute {
 extension Pattern {
     /// Common regex pattern for a username (alphanumeric, 3-16 characters)
     public static let username = Pattern("[a-zA-Z0-9]{3,16}")
-    
+
     /// Common regex pattern for a US phone number (###-###-####)
     public static let usPhone = Pattern("[0-9]{3}-[0-9]{3}-[0-9]{4}")
-    
+
     /// Common regex pattern for a US zip code (5 digits, optional 4-digit extension)
     public static let usZipCode = Pattern("[0-9]{5}(-[0-9]{4})?")
-    
+
     /// Common regex pattern for a positive integer
     public static let integer = Pattern("[0-9]+")
-    
+
     /// Common regex pattern for an alphanumeric string
     public static let alphanumeric = Pattern("[a-zA-Z0-9]+")
 }

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -54,11 +53,11 @@ import HTMLAttributeTypes
 public struct Definition: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "dfn" }
-    
+
     /// Title attribute that has special meaning with the `<dfn>` element.
     /// If present, its value is considered to be the term being defined.
     public var title: HTMLAttributeTypes.Title?
-    
+
     /// Creates a new Definition element with the specified content.
     ///
     /// - Parameters:
@@ -67,7 +66,6 @@ public struct Definition: HTMLElement {
         title: HTMLAttributeTypes.Title? = nil
     ) {
         self.title = title
-        
+
     }
 }
-

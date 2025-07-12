@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -42,19 +41,19 @@ import HTMLAttributeTypes
 public struct Style: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "style" }
-    
+
     /// Defines which media the style should be applied to. Its value is a media query, which defaults to "all" if the attribute is missing.
     public var media: HTMLAttributeTypes.Media?
-    
+
     /// Explicitly indicates that certain operations should be blocked on the fetching of critical subresources.
     public var blocking: HTMLAttributeTypes.Blocking?
-    
+
     /// A cryptographic nonce (number used once) used to allow inline styles in a style-src Content-Security-Policy.
     public var nonce: HTMLAttributeTypes.Nonce?
-    
+
     /// Specifies alternative style sheet sets.
     public var title: HTMLAttributeTypes.Title?
-    
+
     /// Creates a new Style element with the specified attributes.
     ///
     /// - Parameters:
@@ -74,4 +73,3 @@ public struct Style: HTMLElement {
         self.title = title
     }
 }
-

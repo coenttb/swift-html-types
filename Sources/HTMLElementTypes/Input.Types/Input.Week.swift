@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -20,28 +19,28 @@ extension Input {
         /// A string representing the value of the week/year entered into the input
         /// in the format "yyyy-Www" (e.g., "2017-W01").
         public var value: Value<String>?
-        
+
         /// The id of a datalist element that provides a list of suggested values.
         public var list: List?
-        
+
         /// The earliest year and week to accept,
         /// in the format "yyyy-Www" (e.g., "2017-W01").
         public var min: Min?
-        
+
         /// The latest (time-wise) year and week number to accept,
         /// in the format "yyyy-Www" (e.g., "2017-W52").
         public var max: Max?
-        
+
         /// A Boolean attribute which, if present, means this field cannot be edited by the user.
         public var readonly: Readonly?
-        
+
         /// Specifies the granularity of week increments in weeks.
         /// Default is 1, indicating 1 week.
         public var step: Step?
-        
+
         /// Whether the input field is required to have a value before form submission.
         public var required: Required?
-        
+
         /// Creates a new week input configuration
         public init(
             value: Value<String>? = nil,
@@ -66,7 +65,7 @@ extension Input {
 extension Input {
     /// Creates a new week input element
     public static let week: Self = .week()
-    
+
     /// Creates a new week input element
     public static func week(
         name: Name? = nil,

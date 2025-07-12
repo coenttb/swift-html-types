@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -36,10 +35,10 @@ import HTMLAttributeTypes
 public struct Directory: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "dir" }
-    
+
     /// Boolean attribute that hints the list should be rendered in a compact style
     public var compact: HTMLAttributeTypes.Compact?
-    
+
     /// Creates a new Directory element with the specified attributes.
     ///
     /// - Parameters:
@@ -48,7 +47,6 @@ public struct Directory: HTMLElement {
         compact: HTMLAttributeTypes.Compact? = nil
     ) {
         self.compact = compact
-        
+
     }
 }
-

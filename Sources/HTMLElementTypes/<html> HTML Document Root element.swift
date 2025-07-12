@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -40,10 +39,10 @@ import HTMLAttributeTypes
 public struct HtmlRoot: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "html" }
-   
+
     /// The XML namespace of the document (required for XHTML)
     public var xmlns: Xmlns?
-    
+
     /// Creates a new HTML root element with the specified attributes.
     ///
     /// - Parameters:
@@ -52,7 +51,6 @@ public struct HtmlRoot: HTMLElement {
         xmlns: Xmlns? = nil
     ) {
         self.xmlns = xmlns
-        
+
     }
 }
-

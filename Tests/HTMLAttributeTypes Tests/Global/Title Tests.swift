@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,11 +8,11 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 import Foundation
-import Testing
 import HTMLAttributeTypes
+import Testing
 
 @Suite("Title Test")
 struct TitleTests {
@@ -20,19 +20,19 @@ struct TitleTests {
     func attribute() {
         #expect(Title.attribute == "title")
     }
-    
+
     @Test("Title should store and return its value")
     func valueStorage() {
         let title = Title("Helpful information")
         #expect(title.rawValue == "Helpful information")
     }
-    
+
     @Test("Title description should return its value")
     func description() {
         let title = Title("Click to submit the form")
         #expect(title.description == "Click to submit the form")
     }
-    
+
     @Test("Title should be initializable with string literal")
     func stringLiteralInitialization() {
         let title: Title = "Hover for more details"

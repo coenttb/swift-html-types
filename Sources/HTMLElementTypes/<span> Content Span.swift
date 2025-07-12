@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -45,13 +44,11 @@ import HTMLAttributeTypes
 public struct ContentSpan: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "span" }
-    
+
     /// Creates a new span element with the specified attributes.
     public init(
-        
+
     ) {
-        
+
     }
 }
-
-

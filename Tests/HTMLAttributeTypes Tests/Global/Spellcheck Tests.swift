@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,11 +8,11 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 import Foundation
-import Testing
 import HTMLAttributeTypes
+import Testing
 
 @Suite("Spellcheck Test")
 struct SpellcheckTests {
@@ -20,7 +20,7 @@ struct SpellcheckTests {
     func attribute() {
         #expect(Spellcheck.attribute == "spellcheck")
     }
-    
+
     @Test(
         "Spellcheck cases description should match the spec",
         arguments: Spellcheck.allCases
@@ -31,7 +31,7 @@ struct SpellcheckTests {
         case false: #expect(spellcheck.description == "false")
         }
     }
-    
+
     @Test("Spellcheck should conform to CaseIterable")
     func conformsToCaseIterable() {
         #expect(Spellcheck.allCases.count == 2)

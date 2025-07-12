@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -34,7 +33,7 @@ extension Input {
         /// Note: Setting the value to anything that isn't a valid, fully-opaque, RGB color in hexadecimal notation
         /// will result in the value being set to #000000. Colors with an alpha channel are not supported.
         public var value: Value<String>?
-        
+
         /// Creates a new color input configuration
         public init(
             value: Value<String>? = nil
@@ -47,7 +46,7 @@ extension Input {
 extension Input {
     /// Creates a new color input element
     public static let color: Self = .color()
-    
+
     /// Creates a new color input element
     public static func color(
         name: Name? = nil,

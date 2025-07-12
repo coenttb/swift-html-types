@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,11 +8,11 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 import Foundation
-import Testing
 import HTMLAttributeTypes
+import Testing
 
 @Suite("Hidden Test")
 struct HiddenTests {
@@ -20,7 +20,7 @@ struct HiddenTests {
     func attribute() {
         #expect(Hidden.attribute == "hidden")
     }
-    
+
     @Test(
         "Hidden cases description should match the spec",
         arguments: Hidden.allCases
@@ -33,14 +33,14 @@ struct HiddenTests {
         default: ()
         }
     }
-    
+
     @Test("Hidden should conform to CaseIterable")
     func conformsToCaseIterable() {
         #expect(Hidden.allCases.count == 3)
         #expect(Hidden.allCases.contains(.hidden))
         #expect(Hidden.allCases.contains(.untilFound))
     }
-    
+
     @Test(
         "Hidden rawValue should match description",
         arguments: Hidden.allCases
@@ -48,19 +48,19 @@ struct HiddenTests {
     func rawValueMatchesDescription(hidden: Hidden) {
         #expect(hidden.rawValue == hidden.description)
     }
-    
+
     @Test(
         "Hidden should be initializable from rawValue",
         arguments: [
             ("hidden", Hidden.hidden),
-            ("until-found", Hidden.untilFound),
+            ("until-found", Hidden.untilFound)
 
         ]
     )
     func initializableFromRawValue(input: String, expected: Hidden?) {
         #expect(Hidden(rawValue: input) == expected)
     }
-    
+
     @Test("Empty Hidden should use default mode")
     func emptyInitialization() {
         let hiddenDefault = Hidden()

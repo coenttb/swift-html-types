@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -27,20 +26,20 @@ extension Input {
         /// - "image/*" — Accept any file with an image/* MIME type.
         /// - ".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" — accept anything that is an MS Word document.
         public var accept: Accept?
-        
+
         /// The capture attribute value is a string that specifies which camera to use for capture of
         /// image or video data, if the accept attribute indicates that the input should be of one of those types.
         ///
         /// - "user" indicates that the user-facing camera and/or microphone should be used.
         /// - "environment" specifies that the outward-facing camera and/or microphone should be used.
         public var capture: Capture?
-        
+
         /// When the multiple Boolean attribute is specified, the file input allows the user to select
         /// more than one file.
         public var multiple: Multiple?
-        
+
         public var required: Required?
-        
+
         /// Creates a new file input configuration
         public init(
             accept: Accept? = nil,
@@ -59,7 +58,7 @@ extension Input {
 extension Input {
     /// Creates a new file input element
     public static let file: Self = .file()
-    
+
     /// Creates a new file input element
     public static func file(
         name: Name? = nil,

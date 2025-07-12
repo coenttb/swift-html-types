@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Controls virtual keyboard behavior for editable elements on touch devices.
 ///
@@ -77,9 +76,9 @@
 public struct Virtualkeyboardpolicy: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "virtualkeyboardpolicy" }
-    
+
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
@@ -88,7 +87,7 @@ public struct Virtualkeyboardpolicy: StringAttribute {
 extension Virtualkeyboardpolicy {
     /// Automatically shows the virtual keyboard when element is focused or tapped
     @inlinable public static var auto: Self { "auto" }
-    
+
     /// Decouples focus and tap on the element from the virtual keyboard's state
     @inlinable public static var manual: Self { "manual" }
 }

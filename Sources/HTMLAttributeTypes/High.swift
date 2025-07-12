@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the `high` attribute, which specifies the range that is considered to be high for a given range on a meter element.
 ///
@@ -29,10 +28,10 @@
 public struct High: Attribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "high" }
-    
+
     /// The attribute value
     public let value: Double
-    
+
     /// Initialize with a value
     public init(_ value: Double) {
         self.value = value

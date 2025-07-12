@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Assigns an element to a specific slot in a shadow DOM.
 ///
@@ -85,12 +84,11 @@
 public struct Slot: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "slot" }
-    
+
     /// The name of the slot to assign the element to
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
 }
-

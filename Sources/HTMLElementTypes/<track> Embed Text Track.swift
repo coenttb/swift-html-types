@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -43,22 +42,22 @@ import HTMLAttributeTypes
 public struct Track: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "track" }
-    
+
     /// Indicates that the track should be enabled by default unless the user's preferences indicate otherwise
     public var `default`: HTMLAttributeTypes.Default?
-    
+
     /// How the text track is meant to be used (subtitles, captions, chapters, or metadata)
     public var kind: HTMLAttributeTypes.Kind?
-    
+
     /// A user-readable title of the text track which is used by the browser when listing available text tracks
     public var label: HTMLAttributeTypes.Label?
-    
+
     /// Address of the track (.vtt file)
     public var src: HTMLAttributeTypes.Src
-    
+
     /// Language of the track text data (BCP 47 language tag)
     public var srclang: HTMLAttributeTypes.SrcLang?
-    
+
     /// Creates a new Track element.
     ///
     /// - Parameters:
@@ -81,4 +80,3 @@ public struct Track: HTMLElement {
         self.label = label
     }
 }
-

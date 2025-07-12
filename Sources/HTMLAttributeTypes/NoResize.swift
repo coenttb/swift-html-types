@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// The `noresize` attribute prevents users from resizing a frame or iframe element.
 ///
@@ -30,10 +29,10 @@
 public struct NoResize: BooleanAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "noresize" }
-    
+
     /// The attribute value
     public var rawValue: Bool
-    
+
     /// Creates a new NoResize attribute.
     public init(value: Bool = true) {
         self.rawValue = value

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,11 +8,11 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 public protocol BooleanAttribute: Attribute, ExpressibleByBooleanLiteral, CaseIterable, RawRepresentable {
     var rawValue: Bool { get }
-    
+
     init(value: Bool)
 }
 
@@ -28,7 +28,7 @@ extension BooleanAttribute {
     }
 }
 
-extension BooleanAttribute  {
+extension BooleanAttribute {
     public var description: String {
         rawValue ? "true" : "false"
     }

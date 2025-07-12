@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// An attribute that provides a hint about the expected content of a form control.
 ///
@@ -49,10 +48,10 @@
 public struct Placeholder: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "placeholder" }
-    
+
     /// The attribute value
     public let rawValue: String
-    
+
     /// Initialize with a value for the placeholder attribute
     public init(value: String) {
         self.rawValue = value
@@ -62,16 +61,16 @@ public struct Placeholder: StringAttribute {
 extension Placeholder {
     /// Example email address placeholder
     @inlinable public static var email: Self { "email" }
-    
+
     /// Example phone number placeholder
     @inlinable public static var phone: Self { "phone" }
-    
+
     /// Example name placeholder
     @inlinable public static var name: Self { "name" }
-    
+
     /// Example search placeholder
     @inlinable public static var search: Self { "search" }
-    
+
     /// Example URL placeholder
     @inlinable public static var url: Self { "url" }
 }

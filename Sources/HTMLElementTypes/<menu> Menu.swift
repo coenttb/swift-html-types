@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents an HTML `<menu>` element, which is a semantic alternative to `<ul>` for representing a list of commands/tools.
 ///
@@ -42,12 +41,11 @@
 public struct Menu: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "menu" }
-    
+
     /// Creates a new Menu element with the specified content.
     public init(
-        
+
     ) {
-        
+
     }
 }
-

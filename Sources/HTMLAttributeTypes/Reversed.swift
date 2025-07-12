@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the HTML `reversed` attribute, which specifies that the items of a list are in reverse order.
 ///
@@ -29,13 +28,12 @@
 public struct Reversed: BooleanAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "reversed" }
-    
+
     /// The attribute value
     public var rawValue: Bool
-  
+
     /// Initialize with a boolean value
     public init(value: Bool = true) {
         self.rawValue = value
     }
 }
-

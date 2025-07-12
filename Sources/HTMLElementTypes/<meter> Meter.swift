@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -43,28 +42,28 @@ import HTMLAttributeTypes
 public struct Meter: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "meter" }
-    
+
     /// The current numeric value, which must be between the minimum and maximum values
     public var value: Value<Double>
-    
+
     /// The lower numeric bound of the measured range (defaults to 0)
     public var min: Min?
-    
+
     /// The upper numeric bound of the measured range (defaults to 1)
     public var max: Max?
-    
+
     /// The upper numeric bound of the low end of the measured range
     public var low: Low?
-    
+
     /// The lower numeric bound of the high end of the measured range
     public var high: High?
-    
+
     /// The optimal numeric value, which must be within the range
     public var optimum: Optimum?
-    
+
     /// The ID of the form element that the meter is associated with
     public var form: HTMLAttributeTypes.Form.ID?
-    
+
     /// Creates a new meter element with the specified attributes.
     ///
     /// - Parameters:
@@ -91,7 +90,6 @@ public struct Meter: HTMLElement {
         self.high = high
         self.optimum = optimum
         self.form = form
-        
+
     }
 }
-

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,18 +8,18 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 public struct CharSet: Sendable, Equatable, ExpressibleByStringLiteral, CustomStringConvertible {
-    
+
     public var value: String
-    
+
     public var description: String { value }
-    
+
     public init(stringLiteral value: String) {
         self.value = value
     }
-    
+
     @inlinable public static var utf8: Self { "utf-8" }
 
     @available(*, deprecated, message: "UTF-16 is rarely used in HTML and may cause compatibility issues. Use utf8 instead.")

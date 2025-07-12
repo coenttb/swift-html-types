@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -52,7 +51,7 @@ import HTMLAttributeTypes
 /// - Note: When rendered, this generates an HTML `<label>` element that improves form accessibility.
 public struct Label: HTMLElement {
     public static var tag: String { "label" }
-    
+
     /// Associates the label with a form control using its ID.
     ///
     /// When specified, this attribute creates an explicit relationship between
@@ -60,7 +59,7 @@ public struct Label: HTMLElement {
     /// A label can only be associated with one form control, but a form control
     /// can have multiple associated labels.
     public var `for`: For?
-    
+
     /// Creates a new Label element with optional explicit association.
     ///
     /// - Parameters:
@@ -69,7 +68,6 @@ public struct Label: HTMLElement {
         for: For? = nil
     ) {
         self.for = `for`
-        
+
     }
 }
-

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -43,16 +42,15 @@ import HTMLAttributeTypes
 public struct RubyText: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "rt" }
-    
+
     /// Creates a new RubyText element with the specified attributes.
     ///
     /// - Parameters:
     ///   - id: The unique identifier for this element
     ///   - class: The CSS classes for this element, typically the pronunciation or meaning of the base text
     public init(
-        
+
     ) {
-        
+
     }
 }
-

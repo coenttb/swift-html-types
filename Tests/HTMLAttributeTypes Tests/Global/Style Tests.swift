@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,11 +8,11 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 import Foundation
-import Testing
 import HTMLAttributeTypes
+import Testing
 
 @Suite("Style Test")
 struct StyleTests {
@@ -20,32 +20,32 @@ struct StyleTests {
     func attribute() {
         #expect(Style.attribute == "style")
     }
-    
+
     @Test("Style should store and return its value")
     func valueStorage() {
         let style = Style("color: red; font-size: 14px;")
         #expect(style.rawValue == "color: red; font-size: 14px;")
     }
-    
+
     @Test("Style description should return its value")
     func description() {
         let style = Style("margin: 10px; padding: 5px;")
         #expect(style.description == "margin: 10px; padding: 5px;")
     }
-    
+
     @Test("Style should be initializable with string literal")
     func stringLiteralInitialization() {
         let style: Style = "background-color: blue;"
         #expect(style.rawValue == "background-color: blue;")
     }
-    
+
     @Test("Style should support dictionary-based initialization")
     func dictionaryInitialization() {
         let style = Style([
             "color": "red",
             "font-size": "14px"
         ])
-        
+
         #expect(style.description.contains("color: red"))
         #expect(style.description.contains("font-size: 14px"))
     }

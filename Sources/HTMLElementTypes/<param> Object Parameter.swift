@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -39,13 +38,13 @@ import HTMLAttributeTypes
 public struct Param: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "param" }
-    
+
     /// Name of the parameter
     public var name: HTMLAttributeTypes.Name?
-    
+
     /// Value of the parameter
     public var value: HTMLAttributeTypes.Value<String>?
-    
+
     /// Creates a new Param element with the specified attributes.
     ///
     /// - Parameters:
@@ -59,4 +58,3 @@ public struct Param: HTMLElement {
         self.value = value
     }
 }
-

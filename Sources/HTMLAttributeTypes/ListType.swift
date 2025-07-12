@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the HTML `type` attribute for ordered lists.
 ///
@@ -27,29 +26,29 @@
 public struct ListType: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "type" }
-    
+
     /// The attribute value
     public let rawValue: String
-    
+
     /// Initialize with a value for the type attribute
     public init(value: String) {
         self.rawValue = value
     }
 }
- 
+
 extension ListType {
     /// Lowercase letters (a, b, c, ...)
     @inlinable public static var lowerAlpha: Self { "a" }
-    
+
     /// Uppercase letters (A, B, C, ...)
     @inlinable public static var upperAlpha: Self { "A" }
-    
+
     /// Lowercase Roman numerals (i, ii, iii, ...)
     @inlinable public static var lowerRoman: Self { "i" }
-    
+
     /// Uppercase Roman numerals (I, II, III, ...)
     @inlinable public static var upperRoman: Self { "I" }
-    
+
     /// Numbers (1, 2, 3, ...) - default
     @inlinable public static var decimal: Self { "1" }
 }

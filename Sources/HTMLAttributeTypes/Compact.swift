@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// The `compact` attribute is a boolean attribute that, if present, indicates that the list should be rendered in a compact style.
 ///
@@ -28,9 +27,9 @@
 public struct Compact: BooleanAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "compact" }
-    
+
     public var rawValue: Bool
-  
+
     public init(value: Bool = true) {
         self.rawValue = value
     }

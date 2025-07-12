@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,7 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 /// Represents an HTML variable element (`<var>`), which represents the name of a variable in a mathematical 
 /// expression or a programming context.
@@ -69,12 +69,11 @@
 public struct Variable: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "var" }
-    
+
     /// Creates a new Variable element.
     public init(
-        
+
     ) {
-        
+
     }
 }
-

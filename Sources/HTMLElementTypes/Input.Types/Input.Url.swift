@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -19,34 +18,34 @@ extension Input {
     public struct Url: Sendable, Equatable {
         /// A string representing a URL, or empty.
         public var value: Value<String>?
-        
+
         /// The id of a datalist element that provides a list of predefined values to suggest to the user.
         public var list: List?
-        
+
         /// The maximum string length that the user can enter.
         public var maxlength: Maxlength?
-        
+
         /// The minimum string length that the user can enter.
         public var minlength: Minlength?
-        
+
         /// A regular expression that the input's value must match to be valid.
         public var pattern: Pattern?
-        
+
         /// A brief hint displayed in the input field when it is empty.
         public var placeholder: Placeholder?
-        
+
         /// A Boolean attribute which, if present, means this field cannot be edited by the user.
         public var readonly: Readonly?
-        
+
         /// The visible width of the input field in characters.
         public var size: Size?
-        
+
         /// Enable or disable spell-checking for this element.
         public var spellcheck: Spellcheck?
-        
+
         /// Whether the input field is required to have a value before form submission.
         public var required: Required?
-        
+
         /// Creates a new URL input configuration
         public init(
             value: Value<String>? = nil,
@@ -77,7 +76,7 @@ extension Input {
 extension Input {
     /// Creates a new url input element
     public static let url: Self = .url()
-    
+
     /// Creates a new URL input element
     public static func url(
         name: Name? = nil,

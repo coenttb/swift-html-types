@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,24 +8,24 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 import Foundation
-import Testing
 import HTMLAttributeTypes
+import Testing
 
 @Suite("Autocapitalize Test")
 struct AutocapitalizeTests {
     @Test("Autocapitalize attribute should be autocapitalize")
-    func attribute(){
+    func attribute() {
         #expect(Autocapitalize.attribute == "autocapitalize")
     }
-    
+
     @Test(
         "Autocapitalize cases description should match the spec",
         arguments: Autocapitalize.allCases
     )
-    func cases(autocapitalize: Autocapitalize){
+    func cases(autocapitalize: Autocapitalize) {
         switch autocapitalize {
         case .none: #expect(autocapitalize.description == "none")
         case .off: #expect(autocapitalize.description == "off")
@@ -36,7 +36,7 @@ struct AutocapitalizeTests {
         default: ()
         }
     }
-    
+
     @Test("Autocapitalize should conform to CaseIterable")
     func conformsToCaseIterable() {
         #expect(Autocapitalize.allCases.count == 6)
@@ -47,7 +47,7 @@ struct AutocapitalizeTests {
         #expect(Autocapitalize.allCases.contains(.words))
         #expect(Autocapitalize.allCases.contains(.characters))
     }
-    
+
     @Test(
         "Autocapitalize rawValue should match description",
         arguments: Autocapitalize.allCases
@@ -55,7 +55,7 @@ struct AutocapitalizeTests {
     func rawValueMatchesDescription(autocapitalize: Autocapitalize) {
         #expect(autocapitalize.rawValue == autocapitalize.description)
     }
-    
+
     @Test(
         "Autocapitalize should be initializable from rawValue",
         arguments: [
@@ -64,7 +64,7 @@ struct AutocapitalizeTests {
             ("sentences", .sentences),
             ("on", .on),
             ("words", .words),
-            ("characters", .characters),
+            ("characters", .characters)
         ]
     )
     func initializableFromRawValue(input: String, expected: Autocapitalize?) {

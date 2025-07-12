@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -36,12 +35,12 @@ import HTMLAttributeTypes
 public struct WebComponentSlot: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "slot" }
-    
+
     /// The slot's name. 
     /// When the slot's containing component gets rendered, the slot is rendered with the 
     /// custom element's child that has a matching slot attribute.
     public var name: Name?
-    
+
     /// Creates a new WebComponentSlot element with the specified attributes.
     ///
     /// - Parameters:
@@ -50,7 +49,6 @@ public struct WebComponentSlot: HTMLElement {
         name: Name? = nil
     ) {
         self.name = name
-        
+
     }
 }
-

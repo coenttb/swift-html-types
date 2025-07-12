@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -45,13 +44,12 @@ import HTMLAttributeTypes
 public struct PlainText: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "plaintext" }
-    
+
     /// Creates a new plaintext element.
     @available(*, deprecated, message: "The <plaintext> element is deprecated. Use <pre> or <code> instead.")
     public init(
-        
+
     ) {
-        
+
     }
 }
-

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -38,13 +37,11 @@ import HTMLAttributeTypes
 public struct Subscript: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "sub" }
-    
+
     /// Creates a new subscript element.
     public init(
-        
+
     ) {
-        
+
     }
 }
-
-

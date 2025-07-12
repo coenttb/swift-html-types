@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -20,26 +19,26 @@ extension Input {
         /// A string representing a time in 24-hour format (HH:mm or HH:mm:ss).
         /// Example: "13:30" for 1:30 PM.
         public var value: Value<String>?
-        
+
         /// The id of a datalist element providing suggested times.
         public var list: List?
-        
+
         /// A string indicating the earliest time to accept (e.g., "09:00").
         public var min: Min?
-        
+
         /// A string indicating the latest time to accept (e.g., "18:00").
         public var max: Max?
-        
+
         /// A Boolean attribute which, if present, means this field cannot be edited by the user.
         public var readonly: Readonly?
-        
+
         /// Specifies the granularity of time increments in seconds.
         /// Default is 60 (1 minute), but can be set to other values to show seconds.
         public var step: Step?
-        
+
         /// Whether the input field is required to have a value before form submission.
         public var required: Required?
-        
+
         /// Creates a new time input configuration
         public init(
             value: Value<String>? = nil,
@@ -64,7 +63,7 @@ extension Input {
 extension Input {
     /// Creates a new time input element
     public static let time: Self = .time()
-    
+
     /// Creates a new time input element
     public static func time(
         name: Name? = nil,

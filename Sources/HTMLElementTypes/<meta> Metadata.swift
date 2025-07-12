@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -55,35 +54,35 @@ import HTMLAttributeTypes
 ///   attributes based on the metadata type.
 public struct Meta: HTMLElement {
     public static var tag: String { "meta" }
-    
+
     /// Declares the document's character encoding.
     ///
     /// In HTML5, the only valid value is "utf-8". The charset meta element
     /// should be placed as early as possible within the head element.
     public var charset: CharSet?
-    
+
     /// Contains the value for the http-equiv or name attribute.
     ///
     /// The format and meaning of this attribute depends on which attribute
     /// it's paired with (name, http-equiv, or itemprop).
     public var content: Content?
-    
+
     /// Defines a pragma directive.
     ///
     /// Provides information equivalent to what can be given by a similarly named HTTP header.
     /// Uses the HttpEquiv enum for type-safe value selection.
     public var httpEquiv: HttpEquiv?
-    
+
     /// Defines the media for which the theme color applies.
     ///
     /// Only used with `name="theme-color"`. Accepts a media query.
     public var media: Media?
-    
+
     /// Provides document-level metadata in terms of name-value pairs.
     ///
     /// Uses the Name enum for type-safe value selection of common metadata types.
     public var name: MetaName?
-           
+
     /// Creates a new Meta element with custom attributes.
     ///
     /// Use this initializer when you need to set multiple or custom attributes.
@@ -107,7 +106,7 @@ public struct Meta: HTMLElement {
         self.media = media
         self.name = name
     }
-        
+
     /// Creates a new Meta element with name and content.
     ///
     /// Use this initializer for document-level metadata like viewport settings,
@@ -126,7 +125,7 @@ public struct Meta: HTMLElement {
         self.content = content
         self.media = media
     }
-    
+
     /// Creates a new Meta element with custom name and content.
     ///
     /// Use this initializer for document-level metadata using non-standard names.
@@ -142,7 +141,7 @@ public struct Meta: HTMLElement {
         self.content = content
         self.media = media
     }
-    
+
     /// Creates a new Meta element with http-equiv and content.
     ///
     /// Use this initializer for pragma directives like refresh, content-security-policy, etc.
@@ -164,7 +163,7 @@ public struct Meta: HTMLElement {
 extension Meta {
     /// Creates a meta element for UTF-8 character encoding.
     public static let utf8 = Meta(charset: "utf-8")
-    
+
     /// Creates a meta element for responsive viewport.
     public static let viewport = Meta(
         name: .viewport,
@@ -213,7 +212,3 @@ extension Meta {
         return Meta(name: .init(stringLiteral: property), content: content)
     }
 }
-
-
-
-

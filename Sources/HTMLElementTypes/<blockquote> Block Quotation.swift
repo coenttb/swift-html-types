@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -39,10 +38,10 @@ import HTMLAttributeTypes
 public struct BlockQuote: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "blockquote" }
-    
+
     /// A URL that designates a source document or message for the quoted information
     public var cite: HTMLAttributeTypes.Cite?
-    
+
     /// Creates a new BlockQuote element with the specified citation source and content.
     ///
     /// - Parameters:
@@ -53,4 +52,3 @@ public struct BlockQuote: HTMLElement {
         self.cite = cite
     }
 }
-

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -46,8 +45,7 @@ import HTMLAttributeTypes
 ///   attributes based on the configuration.
 public struct Aside: HTMLElement {
     public static var tag: String { "aside" }
-    
-    /// Creates a new Aside element with the specified content.
-    public init(){}
-}
 
+    /// Creates a new Aside element with the specified content.
+    public init() {}
+}

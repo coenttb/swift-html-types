@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,11 +8,11 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 import Foundation
-import Testing
 import HTMLAttributeTypes
+import Testing
 
 @Suite("Itemref Test")
 struct ItemrefTests {
@@ -20,25 +20,25 @@ struct ItemrefTests {
     func attribute() {
         #expect(Itemref.attribute == "itemref")
     }
-    
+
     @Test("Itemref should store and return its value")
     func valueStorage() {
         let itemref = Itemref("details contact")
         #expect(itemref.rawValue == "details contact")
     }
-    
+
     @Test("Itemref description should return its value")
     func description() {
         let itemref = Itemref("name address")
         #expect(itemref.description == "name address")
     }
-    
+
     @Test("Itemref should be initializable with string literal")
     func stringLiteralInitialization() {
         let itemref: Itemref = "profile contact"
         #expect(itemref.rawValue == "profile contact")
     }
-    
+
     @Test("Itemref should be initializable with array literal")
     func arrayLiteralInitialization() {
         let itemref: Itemref = ["name", "address", "contact"]

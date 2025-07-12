@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,17 +8,17 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
 public struct Image: HTMLElement {
     public static var tag: String { "img" }
-    
+
     public var src: Src?
     public var alt: Alt?
     public var loading: Loading?
-    
+
     public init(
         src: Src? = nil,
         alt: Alt? = nil,
@@ -29,5 +29,3 @@ public struct Image: HTMLElement {
         self.loading = loading
     }
 }
-
-

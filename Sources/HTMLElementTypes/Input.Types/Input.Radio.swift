@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -31,7 +30,7 @@ extension Input {
         /// and the reported value is the value of the value attribute. If the value is not otherwise specified,
         /// it is the string "on" by default.
         public var value: Value<String>?
-        
+
         /// A Boolean attribute which, if present, indicates that this radio button is the default
         /// selected one in the group.
         ///
@@ -39,12 +38,12 @@ extension Input {
         /// later instances will override earlier ones; that is, the last checked radio button
         /// will be the one that is selected.
         public var checked: Checked?
-        
+
         /// The required attribute is one which most `<input>`s share. If any radio button in a
         /// same-named group of radio buttons has the required attribute, a radio button in that
         /// group must be checked, although it doesn't have to be the one with the attribute applied.
         public var required: Required?
-        
+
         /// Creates a new radio input configuration
         public init(
             value: Value<String>? = nil,
@@ -61,7 +60,7 @@ extension Input {
 extension Input {
     /// Creates a new radio input element
     public static let radio: Self = .radio()
-    
+
     /// Creates a new radio input element
     public static func radio(
         name: Name? = nil,

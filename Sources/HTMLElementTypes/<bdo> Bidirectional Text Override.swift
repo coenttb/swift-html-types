@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -50,10 +49,10 @@ import HTMLAttributeTypes
 public struct BidirectionalTextOverride: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "bdo" }
-    
+
     /// The required direction attribute for the bidirectional text override element
     public let dir: HTMLAttributeTypes.Dir
-    
+
     /// Creates a new BidirectionalTextOverride element with the specified direction and content.
     ///
     /// - Parameters:
@@ -64,4 +63,3 @@ public struct BidirectionalTextOverride: HTMLElement {
         self.dir = dir
     }
 }
-

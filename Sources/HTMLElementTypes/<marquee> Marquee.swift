@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -42,40 +41,40 @@ import HTMLAttributeTypes
 public struct Marquee: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "marquee" }
-    
+
     /// Sets how the text is scrolled within the marquee.
     public var behavior: HTMLAttributeTypes.Behavior?
-    
+
     /// Sets the background color through color name or hexadecimal value.
     public var bgcolor: String?
-    
+
     /// Sets the direction of the scrolling within the marquee.
     public var direction: HTMLAttributeTypes.Direction?
-    
+
     /// Sets the height in pixels or percentage value.
     public var height: HTMLAttributeTypes.Height?
-    
+
     /// Sets the horizontal margin
     public var hspace: String?
-    
+
     /// Sets the number of times the marquee will scroll.
     public var loop: HTMLAttributeTypes.Loop?
-    
+
     /// Sets the amount of scrolling at each interval in pixels.
     public var scrollamount: String?
-    
+
     /// Sets the interval between each scroll movement in milliseconds.
     public var scrolldelay: String?
-    
+
     /// By default, scrolldelay values lower than 60 are ignored. If truespeed is present, those values are not ignored.
     public var truespeed: HTMLAttributeTypes.Truespeed?
-    
+
     /// Sets the vertical margin in pixels or percentage value.
     public var vspace: String?
-    
+
     /// Sets the width in pixels or percentage value.
     public var width: HTMLAttributeTypes.Width?
-    
+
     /// Creates a new Marquee element with the specified attributes.
     ///
     /// - Parameters:
@@ -114,7 +113,6 @@ public struct Marquee: HTMLElement {
         self.truespeed = truespeed
         self.vspace = vspace
         self.width = width
-        
+
     }
 }
-

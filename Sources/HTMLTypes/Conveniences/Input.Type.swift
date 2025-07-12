@@ -34,19 +34,18 @@ extension Input.Variant {
     public static let week: Self = .week(.init())
 }
 
-
 extension Input.Variant {
     public static func button(
         value: Value<String>?
     ) -> Self {
         .button(.init(value: value))
     }
-    
+
     public static func checkbox(
         value: Value<String>?,
         checked: Checked?,
         required: Required?
-    )-> Self {
+    ) -> Self {
         .checkbox(
             .init(
                 value: value,
@@ -55,7 +54,7 @@ extension Input.Variant {
             )
         )
     }
-    
+
     public static func color(
         value: Value<String>? = nil
     ) -> Self {
@@ -65,7 +64,7 @@ extension Input.Variant {
             )
         )
     }
-    
+
     public static func date(
         value: Value<String>? = nil,
         min: Min? = nil,
@@ -83,7 +82,7 @@ extension Input.Variant {
             )
         )
     }
-    
+
     public static func datetimeLocal(
         value: Value<String>? = nil,
         min: Min? = nil,
@@ -101,7 +100,7 @@ extension Input.Variant {
             )
         )
     }
-    
+
     public static func email(
         value: Value<String>? = nil,
         maxlength: Maxlength? = nil,
@@ -127,7 +126,7 @@ extension Input.Variant {
             )
         )
     }
-    
+
     public static func file(
         accept: Accept? = nil,
         capture: Capture? = nil,
@@ -143,7 +142,7 @@ extension Input.Variant {
             )
         )
     }
-    
+
     public static func hidden(
         value: Value<String>? = nil
     ) -> Self {
@@ -153,7 +152,7 @@ extension Input.Variant {
             )
         )
     }
-    
+
     // Note: image must have a src parameter - it's required
     public static func image(
         src: Src,
@@ -174,7 +173,7 @@ extension Input.Variant {
             )
         )
     }
-    
+
     public static func month(
         value: Value<String>? = nil,
         list: List? = nil,
@@ -196,7 +195,7 @@ extension Input.Variant {
             )
         )
     }
-    
+
     public static func number(
         value: Value<String>? = nil,
         min: Min? = nil,
@@ -218,7 +217,7 @@ extension Input.Variant {
             )
         )
     }
-    
+
     public static func password(
         value: Value<String>? = nil,
         maxlength: Maxlength? = nil,
@@ -244,7 +243,7 @@ extension Input.Variant {
             )
         )
     }
-    
+
     public static func radio(
         value: Value<String>? = nil,
         checked: Checked? = nil,
@@ -258,7 +257,7 @@ extension Input.Variant {
             )
         )
     }
-    
+
     public static func range(
         value: Value<String>? = nil,
         min: Min? = nil,
@@ -276,7 +275,7 @@ extension Input.Variant {
             )
         )
     }
-    
+
     public static func reset(
         value: Value<String>? = nil,
         required: Required? = nil
@@ -288,7 +287,7 @@ extension Input.Variant {
             )
         )
     }
-    
+
     public static func search(
         value: Value<String>? = nil,
         list: List? = nil,
@@ -316,7 +315,7 @@ extension Input.Variant {
             )
         )
     }
-    
+
     public static func submit(
         value: Value<String>? = nil,
         formaction: FormAction? = nil,
@@ -338,7 +337,7 @@ extension Input.Variant {
             )
         )
     }
-    
+
     public static func tel(
         value: Value<String>? = nil,
         list: List? = nil,
@@ -364,7 +363,7 @@ extension Input.Variant {
             )
         )
     }
-    
+
     public static func text(
         value: Value<String>? = nil,
         list: List? = nil,
@@ -392,7 +391,7 @@ extension Input.Variant {
             )
         )
     }
-    
+
     public static func time(
         value: Value<String>? = nil,
         list: List? = nil,
@@ -414,7 +413,7 @@ extension Input.Variant {
             )
         )
     }
-    
+
     public static func url(
         value: Value<String>? = nil,
         list: List? = nil,
@@ -442,7 +441,7 @@ extension Input.Variant {
             )
         )
     }
-    
+
     public static func week(
         value: Value<String>? = nil,
         list: List? = nil,

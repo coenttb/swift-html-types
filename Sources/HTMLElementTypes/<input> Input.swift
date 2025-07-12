@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -36,23 +35,23 @@ import HTMLAttributeTypes
 ///   attributes based on the input type.
 public struct Input: HTMLElement {
     public static var tag: String { "input" }
-    
+
     /// Name of the form control. Submitted with the form as part of a name/value pair.
     public var name: Name?
-    
+
     /// Whether the form control is disabled.
     /// When set, the input element is disabled and cannot be interacted with or submitted.
     public var disabled: Disabled?
-    
+
     /// Associates the control with a form element.
     /// When specified, this overrides the form's `id` attribute if the input is outside the form.
-    public var form: HTMLAttributeTypes.Form.ID? = nil
-    
+    public var form: HTMLAttributeTypes.Form.ID?
+
     /// Type of form control.
     /// Determines the appearance and behavior of the input element.
     /// See `Input.Variant` for all available input types.
     public var type: Input.Variant
-    
+
     /// Creates a new Input element with the specified attributes.
     ///
     /// - Parameters:
@@ -72,4 +71,3 @@ public struct Input: HTMLElement {
         self.type = type
     }
 }
-

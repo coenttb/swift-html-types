@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -46,16 +45,16 @@ import HTMLAttributeTypes
 public struct FieldSet: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "fieldset" }
-    
+
     /// Disables all form controls that are descendants of the fieldset
     public var disabled: HTMLAttributeTypes.Disabled?
-    
+
     /// Associates the fieldset with a form element using the form's ID
     public var form: HTMLAttributeTypes.Form.ID?
-    
+
     /// The name associated with the fieldset group
     public var name: HTMLAttributeTypes.Name?
-    
+
     /// Creates a new FieldSet element with the specified attributes.
     ///
     /// - Parameters:
@@ -72,4 +71,3 @@ public struct FieldSet: HTMLElement {
         self.name = name
     }
 }
-

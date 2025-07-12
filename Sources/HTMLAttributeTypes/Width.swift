@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// An attribute that specifies the width of an element.
 ///
@@ -53,15 +52,15 @@
 public struct Width: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "width" }
-    
+
     /// The width value as a string
     public var rawValue: String
-    
+
     /// Initialize with a string value
     public init(value: String) {
         self.rawValue = value
     }
-    
+
     /// Initialize with a width value in pixels
     public init(_ value: Int) {
         self.rawValue = String(value)

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -35,7 +34,7 @@ extension Input {
         /// If an attempt is made to set the value lower than the minimum, it is set to the minimum.
         /// Similarly, an attempt to set the value higher than the maximum results in it being set to the maximum.
         public var value: Value<String>?
-        
+
         /// The greatest value in the range of permitted values. If the value entered into the element
         /// exceeds this, the element fails constraint validation. If the value of the max attribute isn't
         /// a number, then the element has no maximum value.
@@ -43,7 +42,7 @@ extension Input {
         /// This value must be greater than or equal to the value of the min attribute.
         /// Default value is 100.
         public var max: Max?
-        
+
         /// The lowest value in the range of permitted values. If the value of the element is less than this,
         /// the element fails constraint validation. If a value is specified for min that isn't a valid number,
         /// the input has no minimum value.
@@ -51,19 +50,19 @@ extension Input {
         /// This value must be less than or equal to the value of the max attribute.
         /// Default value is 0.
         public var min: Min?
-        
+
         /// The step attribute is a number that specifies the granularity that the value must adhere to.
         /// Only values that match the specified stepping interval are valid.
         ///
         /// The default stepping value for range inputs is 1, allowing only integers to be entered—unless
         /// the stepping base is not an integer.
         public var step: Step?
-        
+
         /// The value of the list attribute is the id of a <datalist> element located in the same document.
         /// The <datalist> provides tick marks on the range control. Each point is represented using an <option>
         /// element with its value attribute set to the range's value at which a mark should be drawn.
         public var list: List?
-        
+
         /// Creates a new range input configuration
         public init(
             value: Value<String>? = nil,
@@ -84,7 +83,7 @@ extension Input {
 extension Input {
     /// Creates a new range input element
     public static let range: Self = .range()
-    
+
     /// Creates a new range input element
     public static func range(
         name: Name? = nil,

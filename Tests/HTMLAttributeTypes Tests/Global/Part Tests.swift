@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,11 +8,11 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 import Foundation
-import Testing
 import HTMLAttributeTypes
+import Testing
 
 @Suite("Part Test")
 struct PartTests {
@@ -20,25 +20,25 @@ struct PartTests {
     func attribute() {
         #expect(Part.attribute == "part")
     }
-    
+
     @Test("Part description should reflect the initialized values")
     func description() {
         let singlePart = Part("header")
         #expect(singlePart.description == "header")
-        
+
         let multipleParts: Part = ["header", "title"]
         #expect(multipleParts.description == "header title")
-        
+
         let emptyPart = Part("")
         #expect(emptyPart.description == "")
     }
-    
+
     @Test("Part can be initialized with single string or array of strings")
     func initialization() {
         let singlePart: Part = "header"
         let arrayPart: Part = "header"
         #expect(singlePart.description == arrayPart.description)
-        
+
         let multipleParts: Part = ["header", "title"]
         #expect(multipleParts.description == "header title")
     }

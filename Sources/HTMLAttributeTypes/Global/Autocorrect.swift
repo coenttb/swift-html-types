@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Controls whether automatic correction of spelling and punctuation errors is enabled for editable text.
 ///
@@ -49,9 +48,9 @@
 public struct Autocorrect: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "autocorrect" }
-    
+
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
@@ -65,7 +64,7 @@ extension Autocorrect {
     /// <input type="text" autocorrect="on" />
     /// ```
     @inlinable public static var on: Self { "on" }
-    
+
     /// Enable automatic correction of spelling and punctuation errors (equivalent to "on")
     ///
     /// Example:
@@ -73,7 +72,7 @@ extension Autocorrect {
     /// <input type="text" autocorrect="" />
     /// ```
     @inlinable public static var empty: Self { "\"\"" }
-    
+
     /// Disable automatic correction of editable text
     ///
     /// Example:

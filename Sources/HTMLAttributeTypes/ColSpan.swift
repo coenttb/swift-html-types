@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the HTML `colspan` attribute, which specifies the number of columns a table cell should span.
 ///
@@ -27,14 +26,13 @@
 public struct ColSpan: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "colspan" }
-    
+
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
 }
-
 
 extension ColSpan: ExpressibleByIntegerLiteral {
     public init(integerLiteral value: IntegerLiteralType) {

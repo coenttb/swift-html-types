@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Provides advisory information related to an element.
 ///
@@ -80,10 +79,10 @@
 public struct Title: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "title" }
-    
+
     /// The title text
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }

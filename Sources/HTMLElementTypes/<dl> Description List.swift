@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents an HTML Description List (`<dl>`) element, which encloses a list of groups of terms
 /// and descriptions.
@@ -50,12 +49,11 @@
 public struct DescriptionList: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "dl" }
-    
+
     /// Creates a new Description List element.
     public init(
-        
+
     ) {
-        
+
     }
 }
-

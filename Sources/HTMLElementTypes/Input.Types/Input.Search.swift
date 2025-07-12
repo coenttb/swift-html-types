@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -25,45 +24,45 @@ extension Input {
         /// If no validation constraints are in place for the input, the value can be any text string
         /// or an empty string ("").
         public var value: Value<String>?
-        
+
         /// The list attribute is the id of a <datalist> element located in the same document.
         /// The <datalist> provides a list of predefined values to suggest to the user for this input.
         public var list: List?
-        
+
         /// The maximum string length (measured in UTF-16 code units) that the user can enter into
         /// the search field. This must be an integer value of 0 or higher. If no maxlength is specified,
         /// or an invalid value is specified, the search field has no maximum length.
         public var maxlength: Maxlength?
-        
+
         /// The minimum string length (measured in UTF-16 code units) that the user can enter into
         /// the search field. This must be a non-negative integer value smaller than or equal to the
         /// value specified by maxlength.
         public var minlength: Minlength?
-        
+
         /// The pattern attribute is a regular expression that the input's value must match for the value
         /// to pass constraint validation. It must be a valid JavaScript regular expression.
         public var pattern: Pattern?
-        
+
         /// The placeholder attribute is a string that provides a brief hint to the user as to what kind
         /// of information is expected in the field. It should be a word or short phrase that demonstrates
         /// the expected type of data, rather than an explanatory message.
         public var placeholder: Placeholder?
-        
+
         /// A Boolean attribute which, if present, means this field cannot be edited by the user.
         public var readonly: Readonly?
-        
+
         /// The size attribute is a numeric value indicating how many characters wide the input field should be.
         /// The value must be a number greater than zero, and the default value is 20.
         public var size: Size?
-        
+
         /// The spellcheck attribute is used to indicate whether to enable spell-checking for an element.
         /// The permitted values are true (enable spell-checking), false (disable spell-checking),
         /// and an empty string or no value (follow the element's default behavior).
         public var spellcheck: Spellcheck?
-        
+
         /// Indicates if the field is required to be filled in before the form can be submitted.
         public var required: Required?
-        
+
         /// Creates a new search input configuration
         public init(
             value: Value<String>? = nil,
@@ -94,7 +93,7 @@ extension Input {
 extension Input {
     /// Creates a new search input element
     public static let search: Self = .search()
-    
+
     /// Creates a new search input element
     public static func search(
         name: Name? = nil,

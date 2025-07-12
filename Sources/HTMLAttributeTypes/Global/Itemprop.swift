@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Defines a property of an item in microdata.
 ///
@@ -78,10 +77,10 @@
 public struct Itemprop: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "itemprop" }
-    
+
     /// The property name or space-separated list of property names
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
@@ -89,7 +88,7 @@ public struct Itemprop: StringAttribute {
 
 extension Itemprop: ExpressibleByArrayLiteral {
     public typealias ArrayLiteralElement = String
-    
+
     public init(arrayLiteral elements: String...) {
         self.rawValue = elements.joined(separator: " ")
     }

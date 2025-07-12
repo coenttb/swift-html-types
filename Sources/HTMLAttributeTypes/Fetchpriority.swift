@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the HTML `fetchpriority` attribute, which provides a hint of the relative
 /// priority to use when fetching a resource of a particular type.
@@ -43,10 +42,10 @@
 public struct FetchPriority: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "fetchpriority" }
-    
+
     /// The attribute value
     public let rawValue: String
-    
+
     /// Initialize with a value for the size attribute
     public init(value: String) {
         self.rawValue = value
@@ -61,7 +60,7 @@ extension FetchPriority {
     /// - Critical CSS required for initial render
     /// - Important scripts needed early in the page lifecycle
     @inlinable public static var high: Self { "high" }
-    
+
     /// Fetch the resource at a low priority relative to other resources of the same type.
     ///
     /// Use for non-critical resources that don't significantly impact initial user experience, such as:
@@ -69,7 +68,7 @@ extension FetchPriority {
     /// - Non-critical scripts
     /// - Analytics and tracking code
     @inlinable public static var low: Self { "low" }
-    
+
     /// Don't set a preference for the fetch priority (default).
     ///
     /// This is used if no value is explicitly set or if an invalid value is set.

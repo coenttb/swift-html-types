@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -61,19 +60,19 @@ import HTMLAttributeTypes
 ///   attributes and content based on the configuration.
 public struct Audio: HTMLElement {
     public static var tag: String { "audio" }
-    
+
     /// The URL of the audio file to embed.
-    ///w
+    /// w
     /// This attribute is subject to HTTP access controls. You can either use this
     /// attribute or provide `<source>` elements as children of the audio element.
     public var src: Src?
-    
+
     /// Indicates whether the browser should show playback controls.
     ///
     /// When present, the browser will offer controls to allow the user to control
     /// audio playback, including volume, seeking, and pause/resume playback.
     public var controls: Controls?
-    
+
     /// Indicates whether the audio should automatically begin playback.
     ///
     /// When present, the audio will automatically begin playback as soon as it can,
@@ -82,41 +81,41 @@ public struct Audio: HTMLElement {
     /// - Note: Use autoplay with caution as it can create an unpleasant user experience.
     /// Many browsers now block autoplay by default unless the audio is muted.
     public var autoplay: Autoplay?
-    
+
     /// Indicates whether the audio will loop.
     ///
     /// When present, the audio player will automatically seek back to the start
     /// upon reaching the end of the audio.
     public var loop: Loop?
-    
+
     /// Indicates whether the audio should be initially muted.
     ///
     /// When present, the audio will be initially silenced. Its default value is false.
     public var muted: Muted?
-    
+
     /// Provides a hint to the browser about preloading strategy.
     ///
     /// This attribute tells the browser what the author thinks will lead to the best
     /// user experience regarding resource preloading.
     public var preload: Preload?
-    
+
     /// Indicates whether to use CORS to fetch the related audio file.
     ///
     /// This is particularly important if you intend to use the audio in a canvas element.
     public var crossorigin: Crossorigin?
-    
+
     /// Specifies which controls to show in the audio player.
     ///
     /// Only relevant when the controls attribute is present. Helps the browser select
     /// what controls to show for the audio element.
     public var controlslist: ControlsList?
-    
+
     /// Disables remote playback of the audio stream.
     ///
     /// When present, disables the capability of remote playback in devices that are
     /// attached using wired or wireless technologies.
     public var disableremoteplayback: DisableRemotePlayback?
-    
+
     /// Creates a new Audio element with the specified attributes and content.
     ///
     /// - Parameters:
@@ -149,7 +148,7 @@ public struct Audio: HTMLElement {
         self.crossorigin = crossorigin
         self.controlslist = controlslist
         self.disableremoteplayback = disableremoteplayback
-        
+
     }
 }
 
@@ -163,15 +162,15 @@ extension Audio {
     public enum Preload: String, Sendable {
         /// Indicates that the audio should not be preloaded.
         case none
-        
+
         /// Indicates that only audio metadata (e.g., length) is fetched.
         case metadata
-        
+
         /// Indicates that the whole audio file can be downloaded, even if the user
         /// is not expected to use it.
         case auto
     }
-    
+
     /// Controlslist options for the audio element.
     ///
     /// These values help the browser select what controls to show for the audio element
@@ -179,13 +178,13 @@ extension Audio {
     public struct ControlsList: Sendable, Equatable {
         /// Hides the download button.
         public var nodownload: Bool
-        
+
         /// Hides the fullscreen button.
         public var nofullscreen: Bool
-        
+
         /// Disables the capability to perform remote playback of the audio.
         public var noremoteplayback: Bool
-        
+
         /// Creates a controlslist with the specified options.
         ///
         /// - Parameters:
@@ -201,17 +200,16 @@ extension Audio {
             self.nofullscreen = nofullscreen
             self.noremoteplayback = noremoteplayback
         }
-        
+
         /// Returns the string representation of the controlslist.
         public var description: String {
             var values: [String] = []
-            
+
             if nodownload { values.append("nodownload") }
             if nofullscreen { values.append("nofullscreen") }
             if noremoteplayback { values.append("noremoteplayback") }
-            
+
             return values.joined(separator: " ")
         }
     }
 }
-

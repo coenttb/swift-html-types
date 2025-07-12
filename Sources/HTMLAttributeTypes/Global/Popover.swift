@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Designates an element as a popover element that appears above other page content.
 ///
@@ -76,12 +75,12 @@
 /// <div popover="hint" id="help-popover">Click this button for help</div>
 /// ```
 public struct Popover: StringAttribute {
-    
+
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "popover" }
-    
+
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
@@ -90,10 +89,10 @@ public struct Popover: StringAttribute {
 extension Popover {
     /// Auto popover that can be light dismissed and will close other auto popovers
     @inlinable public static var auto: Self { "auto" }
-    
+
     /// Manual popover that cannot be light dismissed and won't close other popovers
     @inlinable public static var manual: Self { "manual" }
-    
+
     /// Hint popover that can be light dismissed but won't close auto popovers
     @inlinable public static var hint: Self { "hint" }
 }

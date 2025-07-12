@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Defines which media the style or link should be applied to.
 ///
@@ -25,10 +24,10 @@
 public struct Media: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "media" }
-    
+
     /// The attribute value
     public let rawValue: String
-    
+
     /// Initialize with a value for the media attribute
     public init(value: String) {
         self.rawValue = value

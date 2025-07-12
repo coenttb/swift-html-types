@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -65,12 +64,11 @@ import HTMLAttributeTypes
 public struct TableColumnGroup: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "colgroup" }
-    
+
     /// The number of consecutive columns this column group spans
     /// Note: Cannot be used if the column group contains col elements
     public var span: HTMLAttributeTypes.Span?
 
-    
     /// Creates a new TableColumnGroup element with an optional span attribute and content.
     ///
     /// - Parameters:
@@ -83,7 +81,6 @@ public struct TableColumnGroup: HTMLElement {
         span: HTMLAttributeTypes.Span? = nil
     ) {
         self.span = span
-        
+
     }
 }
-

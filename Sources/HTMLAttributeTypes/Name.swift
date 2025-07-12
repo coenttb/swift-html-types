@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// An attribute that specifies the name of an HTML element, primarily used with form controls.
 ///
@@ -64,10 +63,10 @@
 public struct Name: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "name" }
-    
+
     /// The attribute value
     public let rawValue: String
-    
+
     /// Initialize with a value for the name attribute
     public init(value: String) {
         self.rawValue = value

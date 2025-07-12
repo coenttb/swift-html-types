@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Specifies that an element should be focused when the page loads or when a dialog containing
 /// the element is displayed.
@@ -57,9 +56,9 @@
 public struct Autofocus: BooleanAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "autofocus" }
-    
+
     public var rawValue: Bool
-  
+
     public init(value: Bool = true) {
         self.rawValue = value
     }

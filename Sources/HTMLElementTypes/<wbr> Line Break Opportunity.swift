@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents an HTML word break opportunity element (`<wbr>`), which indicates a position within text 
 /// where the browser may optionally break a line, though its line-breaking rules would not otherwise 
@@ -60,12 +59,11 @@
 public struct LineBreakOpportunity: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "wbr" }
-    
+
     /// Creates a new LineBreakOpportunity element.
     public init(
-        
+
     ) {
-        
+
     }
 }
-

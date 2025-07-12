@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// An attribute that establishes a relationship between elements.
 ///
@@ -52,15 +51,15 @@
 public struct For: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "for" }
-    
+
     /// The value of the for attribute (ID or space-separated list of IDs)
     public let rawValue: String
-    
+
     /// Initialize with a value for the for attribute
     public init(value: String) {
         self.rawValue = value
     }
-    
+
     /// Initialize with an ID or space-separated list of IDs
     public init(_ value: String) {
         self.rawValue = value
@@ -69,7 +68,7 @@ public struct For: StringAttribute {
 
 extension For: ExpressibleByArrayLiteral {
     public typealias ArrayLiteralElement = String
-    
+
     public init(arrayLiteral elements: String...) {
         self.rawValue = elements.joined(separator: " ")
     }

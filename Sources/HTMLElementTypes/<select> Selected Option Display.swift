@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -42,28 +41,28 @@ import HTMLAttributeTypes
 public struct Select: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "select" }
-    
+
     /// Specifies that multiple options can be selected
     public var multiple: HTMLAttributeTypes.Multiple?
-    
+
     /// Specifies the name of the control
     public var name: HTMLAttributeTypes.Name?
-    
+
     /// Specifies that the control is required
     public var required: HTMLAttributeTypes.Required?
-    
+
     /// Specifies the number of visible options
     public var size: HTMLAttributeTypes.Size?
-    
+
     /// Specifies that the select should be disabled
     public var disabled: HTMLAttributeTypes.Disabled?
-    
+
     /// Specifies a form to which the select belongs
     public var form: HTMLAttributeTypes.Form.ID?
-    
+
     /// Automatically focuses the select when the page loads
     public var autofocus: HTMLAttributeTypes.Autofocus?
-    
+
     /// Creates a new Select element with the specified attributes.
     ///
     /// - Parameters:
@@ -92,4 +91,3 @@ public struct Select: HTMLElement {
         self.autofocus = autofocus
     }
 }
-

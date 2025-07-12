@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -58,13 +57,13 @@ import HTMLAttributeTypes
 public struct TableColumn: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "col" }
-    
+
     /// The number of consecutive columns this column element spans
     public var span: HTMLAttributeTypes.Span?
-    
+
     /// The width for the column
     public var width: HTMLAttributeTypes.Width?
-    
+
     /// Creates a new TableColumn element with optional span and width attributes.
     ///
     /// The TableColumn element is a void element (has no content) that defines styling
@@ -81,4 +80,3 @@ public struct TableColumn: HTMLElement {
         self.width = width
     }
 }
-

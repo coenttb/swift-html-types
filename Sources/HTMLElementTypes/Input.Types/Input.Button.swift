@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -64,7 +63,7 @@ extension Input {
         /// A string that is used as the button's label. The value provides the accessible description for the button.
         /// If not specified, you get an empty button.
         public var value: Value<String>?
-        
+
         public init(
             value: Value<String>? = nil
         ) {
@@ -76,7 +75,7 @@ extension Input {
 extension Input {
     /// Creates a new button input element
     public static let button: Self = .button()
-    
+
     public static func button(
         name: Name? = nil,
         value: Value<String>? = nil,

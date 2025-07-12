@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the HTML "download" attribute, which causes the browser to treat
 /// a linked URL as a download rather than navigating to it.
@@ -67,31 +66,31 @@
 public struct Download: Attribute, CustomStringConvertible {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "download" }
-    
+
     /// The type of attribute value
     public enum Value: Sendable, Equatable {
         /// Boolean form (presence/absence of the attribute)
         case boolean(Bool)
-        
+
         /// Value form (with a suggested filename)
         case withFilename(String)
     }
-    
+
     /// The internal value representation
     public var value: Value
-    
+
     /// Create a boolean download attribute (browser chooses filename)
     public init() {
         self.value = .boolean(true)
     }
-    
+
     /// Create a download attribute with a specific boolean value
     ///
     /// - Parameter include: Whether to include the attribute
     public init(_ include: Bool) {
         self.value = .boolean(include)
     }
-    
+
     /// Create a download attribute with a suggested filename
     ///
     /// - Parameter filename: The suggested filename for the downloaded file.
@@ -99,7 +98,7 @@ public struct Download: Attribute, CustomStringConvertible {
     public init(_ filename: String) {
         self.value = .withFilename(filename)
     }
-    
+
     /// String representation of the download attribute
     public var description: String {
         switch value {
@@ -109,7 +108,7 @@ public struct Download: Attribute, CustomStringConvertible {
             return filename
         }
     }
-    
+
     /// Whether the attribute should be included in HTML rendering
     public var shouldInclude: Bool {
         switch value {

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the `cite` attribute, which contains a URL that designates a source document or message for the information quoted.
 ///
@@ -28,12 +27,11 @@
 public struct Cite: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "cite" }
-    
+
     /// The attribute value (URL to the source document)
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
 }
-

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -37,10 +36,10 @@ import HTMLAttributeTypes
 public struct Data: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "data" }
-    
+
     /// The machine-readable translation of the content
     public var value: Value<String>
-    
+
     /// Creates a new Data element with the specified value.
     ///
     /// - Parameters:
@@ -49,7 +48,6 @@ public struct Data: HTMLElement {
         value: Value<String>
     ) {
         self.value = value
-        
+
     }
 }
-

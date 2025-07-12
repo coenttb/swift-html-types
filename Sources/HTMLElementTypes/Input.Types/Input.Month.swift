@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -20,26 +19,26 @@ extension Input {
         /// A string representing the value of the month and year entered into the input,
         /// in the form YYYY-MM (e.g., "2023-07").
         public var value: Value<String>?
-        
+
         /// The id of a datalist element that provides a list of suggested values.
         public var list: List?
-        
+
         /// The earliest year and month to accept (e.g., "2000-01").
         public var min: Min?
-        
+
         /// The latest year and month to accept (e.g., "2023-12").
         public var max: Max?
-        
+
         /// A Boolean attribute which, if present, means this field cannot be edited by the user.
         public var readonly: Readonly?
-        
+
         /// Specifies the granularity of month increments.
         /// Default is 1, indicating 1 month.
         public var step: Step?
-        
+
         /// Whether the input field is required to have a value before form submission.
         public var required: Required?
-        
+
         /// Creates a new month input configuration
         public init(
             value: Value<String>? = nil,
@@ -64,7 +63,7 @@ extension Input {
 extension Input {
     /// Creates a new month input element
     public static let month: Self = .month()
-    
+
     /// Creates a new month input element
     public static func month(
         name: Name? = nil,

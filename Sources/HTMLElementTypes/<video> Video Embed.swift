@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -62,49 +61,49 @@ import HTMLAttributeTypes
 public struct Video: HTMLElement {
     /// The HTML tag name for the video element
     public static var tag: String { "video" }
-    
+
     /// The URL of the video to embed
     public var src: HTMLAttributeTypes.Src?
-    
+
     /// Whether to display playback controls
     public var controls: HTMLAttributeTypes.Controls?
-    
+
     /// Whether to automatically begin playback
     public var autoplay: HTMLAttributeTypes.Autoplay?
-    
+
     /// URL for an image to be shown while the video is downloading
     public var poster: HTMLAttributeTypes.Poster?
-    
+
     /// Whether to automatically seek back to the start after reaching the end
     public var loop: HTMLAttributeTypes.Loop?
-    
+
     /// Whether to initially silence the audio
     public var muted: HTMLAttributeTypes.Muted?
-    
+
     /// The width of the video's display area in CSS pixels
     public var width: HTMLAttributeTypes.Width?
-    
+
     /// The height of the video's display area in CSS pixels
     public var height: HTMLAttributeTypes.Height?
-    
+
     /// Provides a hint about what content to preload
     public var preload: HTMLAttributeTypes.Preload?
-    
+
     /// Whether to play the video inline rather than fullscreen (especially important for iOS)
     public var playsinline: HTMLAttributeTypes.Playsinline?
-    
+
     /// How to handle cross-origin requests
     public var crossorigin: HTMLAttributeTypes.Crossorigin?
-    
+
     /// Helps the browser select what controls to show when controls are enabled
     public var controlslist: HTMLAttributeTypes.ControlsList?
-    
+
     /// Prevents the browser from suggesting Picture-in-Picture
     public var disablepictureinpicture: HTMLAttributeTypes.DisablePictureInPicture?
-    
+
     /// Disables remote playback capabilities
     public var disableremoteplayback: HTMLAttributeTypes.DisableRemotePlayback?
-    
+
     /// Creates a new Video element with the specified attributes.
     ///
     /// - Parameters:
@@ -152,7 +151,6 @@ public struct Video: HTMLElement {
         self.controlslist = controlslist
         self.disablepictureinpicture = disablepictureinpicture
         self.disableremoteplayback = disableremoteplayback
-        
+
     }
 }
-

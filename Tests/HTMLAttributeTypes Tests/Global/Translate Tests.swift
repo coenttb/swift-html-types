@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,11 +8,11 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 import Foundation
-import Testing
 import HTMLAttributeTypes
+import Testing
 
 @Suite("Translate Test")
 struct TranslateTests {
@@ -20,18 +20,18 @@ struct TranslateTests {
     func attribute() {
         #expect(Translate.attribute == "translate")
     }
-    
+
     @Test("Translate description should match the spec")
     func description() {
         #expect(Translate.yes.description == "yes")
         #expect(Translate.no.description == "no")
     }
-    
+
     @Test("Translate should be initializable with boolean literals")
     func booleanLiteralInitialization() {
         let yesTranslate: Translate = true
         let noTranslate: Translate = false
-        
+
         #expect(yesTranslate == .yes)
         #expect(noTranslate == .no)
     }

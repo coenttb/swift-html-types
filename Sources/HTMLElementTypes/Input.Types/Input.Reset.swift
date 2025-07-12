@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -26,9 +25,9 @@ extension Input {
         /// a button with the default label (typically "Reset," but this will vary depending
         /// on the user agent).
         public var value: Value<String>?
-        
+
         public var required: Required?
-        
+
         /// Creates a new reset input configuration
         public init(
             value: Value<String>? = nil,
@@ -43,7 +42,7 @@ extension Input {
 extension Input {
     /// Creates a new reset input element
     public static let reset: Self = .reset()
-    
+
     /// Creates a new reset input element
     public static func reset(
         name: Name? = nil,

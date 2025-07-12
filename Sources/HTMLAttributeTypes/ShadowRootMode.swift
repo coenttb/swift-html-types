@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Specifies the mode for a shadow root created using declarative shadow DOM.
 ///
@@ -41,10 +40,10 @@
 public struct ShadowRootMode: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "shadowrootmode" }
-    
+
     /// The shadow root mode value
     public var rawValue: String
-    
+
     /// Initialize with a string value
     public init(value: String) {
         self.rawValue = value
@@ -54,7 +53,7 @@ public struct ShadowRootMode: StringAttribute, CustomStringConvertible {
 extension ShadowRootMode {
     /// Exposes the internal shadow root DOM for JavaScript access
     @inlinable public static var open: Self { "open" }
-    
+
     /// Hides the internal shadow root DOM from JavaScript access
     @inlinable public static var closed: Self { "closed" }
 }

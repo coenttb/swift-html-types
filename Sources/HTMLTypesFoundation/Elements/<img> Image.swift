@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,7 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 import Foundation
 import HTMLElementTypes
@@ -19,13 +19,13 @@ extension Image {
             let imageData = try? Foundation.Data(contentsOf: url) else {
             return nil
         }
-        
+
         let base64String = imageData.base64EncodedString()
         let mimeType = Image.mimeTypeForImage(relativeURL: url.relativeString)
-        
+
         self.init(src: "data:\(mimeType);base64,\(base64String)", alt: .init(description))
     }
-    
+
     private static func mimeTypeForImage(relativeURL: String) -> String {
         let pathExtension = (relativeURL as NSString).pathExtension.lowercased()
         switch pathExtension {
@@ -48,7 +48,7 @@ extension Image {
         guard let fullURL = URL(string: relativeURL, relativeTo: baseURL) else {
             return nil
         }
-        
+
         self.init(base64EncodedFromURL: fullURL, description: description)
     }
 }

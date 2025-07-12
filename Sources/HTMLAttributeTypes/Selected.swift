@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the HTML `selected` attribute, which indicates that an option is pre-selected when the page loads.
 ///
@@ -37,11 +36,10 @@
 public struct Selected: BooleanAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "selected" }
-    
+
     public var rawValue: Bool
-  
+
     public init(value: Bool = true) {
         self.rawValue = value
     }
 }
-

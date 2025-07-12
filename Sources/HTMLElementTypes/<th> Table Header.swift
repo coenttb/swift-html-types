@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -52,19 +51,19 @@ import HTMLAttributeTypes
 public struct TableHeader: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "th" }
-    
+
     /// A short, abbreviated description of the header cell's content
     public var abbr: HTMLAttributeTypes.Abbr?
-    
+
     /// Number of columns this header cell spans
     public var colspan: HTMLAttributeTypes.ColSpan?
-    
+
     /// Space-separated list of IDs of other header cells that provide headers for this cell
     public var headers: HTMLAttributeTypes.Headers?
-    
+
     /// Number of rows this header cell spans
     public var rowspan: HTMLAttributeTypes.RowSpan?
-    
+
     /// Defines which cells this header relates to (row, col, rowgroup, colgroup)
     public var scope: Scope?
 
@@ -88,7 +87,6 @@ public struct TableHeader: HTMLElement {
         self.headers = headers
         self.rowspan = rowspan
         self.scope = scope
-        
+
     }
 }
-

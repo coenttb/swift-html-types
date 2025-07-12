@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Defines the direction of scrolling within a marquee element.
 ///
@@ -27,10 +26,10 @@
 public struct Direction: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "direction" }
-    
+
     /// The attribute value
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
@@ -39,13 +38,13 @@ public struct Direction: StringAttribute {
 extension Direction {
     /// Preset for left-to-right scrolling (default)
     @inlinable public static var left: Self { "left" }
-    
+
     /// Preset for right-to-left scrolling
     @inlinable public static var right: Self { "right" }
-    
+
     /// Preset for bottom-to-top scrolling
     @inlinable public static var up: Self { "up" }
-    
+
     /// Preset for top-to-bottom scrolling
     @inlinable public static var down: Self { "down" }
 }

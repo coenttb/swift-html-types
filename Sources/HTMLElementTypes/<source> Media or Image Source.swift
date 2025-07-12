@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -49,28 +48,28 @@ import HTMLAttributeTypes
 public struct Source: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "source" }
-    
+
     /// The MIME media type of the resource
     public var type: SourceType?
-    
+
     /// The URL of the media resource (used with `<audio>` and `<video>`)
     public var src: HTMLAttributeTypes.Src?
-    
+
     /// A comma-separated list of image URLs and their descriptors (used with `<picture>`)
     public var srcset: HTMLAttributeTypes.ImageSrcSet?
-    
+
     /// A list of source sizes that describe the final rendered width of the image
     public var sizes: HTMLAttributeTypes.Sizes?
-    
+
     /// A media query for the resource's intended media
     public var media: HTMLAttributeTypes.Media?
-    
+
     /// The intrinsic height of the image in pixels (for `<picture>`)
     public var height: HTMLAttributeTypes.Height?
-    
+
     /// The intrinsic width of the image in pixels (for `<picture>`)
     public var width: HTMLAttributeTypes.Width?
-    
+
     /// Creates a new Source element with the specified attributes.
     ///
     /// - Parameters:
@@ -99,4 +98,3 @@ public struct Source: HTMLElement {
         self.width = width
     }
 }
-

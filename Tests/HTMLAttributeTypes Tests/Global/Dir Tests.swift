@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,11 +8,11 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 import Foundation
-import Testing
 import HTMLAttributeTypes
+import Testing
 
 @Suite("Dir Test")
 struct DirTests {
@@ -20,7 +20,7 @@ struct DirTests {
     func attribute() {
         #expect(Dir.attribute == "dir")
     }
-    
+
     @Test(
         "Dir cases description should match the spec",
         arguments: Dir.allCases
@@ -33,7 +33,7 @@ struct DirTests {
         default: ()
         }
     }
-    
+
     @Test("Dir should conform to CaseIterable")
     func conformsToCaseIterable() {
         #expect(Dir.allCases.count == 3)
@@ -41,7 +41,7 @@ struct DirTests {
         #expect(Dir.allCases.contains(.rtl))
         #expect(Dir.allCases.contains(.auto))
     }
-    
+
     @Test(
         "Dir rawValue should match description",
         arguments: Dir.allCases
@@ -49,13 +49,13 @@ struct DirTests {
     func rawValueMatchesDescription(dir: Dir) {
         #expect(dir.rawValue == dir.description)
     }
-    
+
     @Test(
         "Dir should be initializable from rawValue",
         arguments: [
             ("ltr", Dir.ltr),
             ("rtl", Dir.rtl),
-            ("auto", Dir.auto),
+            ("auto", Dir.auto)
         ]
     )
     func initializableFromRawValue(input: String, expected: Dir?) {

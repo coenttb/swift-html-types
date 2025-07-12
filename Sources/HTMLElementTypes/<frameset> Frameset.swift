@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -37,13 +36,13 @@ import HTMLAttributeTypes
 public struct Frameset: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "frameset" }
-    
+
     /// Specifies the number and size of horizontal spaces in a frameset
     public var cols: String?
-    
+
     /// Specifies the number and size of vertical spaces in a frameset
     public var rows: String?
-    
+
     /// Creates a new Frameset element with the specified attributes.
     ///
     /// - Parameters:
@@ -55,7 +54,6 @@ public struct Frameset: HTMLElement {
     ) {
         self.cols = cols
         self.rows = rows
-        
+
     }
 }
-

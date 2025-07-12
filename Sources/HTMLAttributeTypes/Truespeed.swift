@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the HTML `truespeed` attribute for the deprecated `<marquee>` element.
 ///
@@ -34,13 +33,12 @@
 public struct Truespeed: BooleanAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "truespeed" }
-    
+
     /// The attribute value
     public var rawValue: Bool
-  
+
     /// Initialize with a boolean value (defaults to true)
     public init(value: Bool = true) {
         self.rawValue = value
     }
 }
-

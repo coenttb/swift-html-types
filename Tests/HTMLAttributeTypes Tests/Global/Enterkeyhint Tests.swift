@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,11 +8,11 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 import Foundation
-import Testing
 import HTMLAttributeTypes
+import Testing
 
 @Suite("Enterkeyhint Test")
 struct EnterkeyhintTests {
@@ -20,7 +20,7 @@ struct EnterkeyhintTests {
     func attribute() {
         #expect(Enterkeyhint.attribute == "enterkeyhint")
     }
-    
+
     @Test(
         "Enterkeyhint cases description should match the spec",
         arguments: Enterkeyhint.allCases
@@ -37,7 +37,7 @@ struct EnterkeyhintTests {
         default: ()
         }
     }
-    
+
     @Test("Enterkeyhint should conform to CaseIterable")
     func conformsToCaseIterable() {
         #expect(Enterkeyhint.allCases.count == 7)
@@ -49,7 +49,7 @@ struct EnterkeyhintTests {
         #expect(Enterkeyhint.allCases.contains(.search))
         #expect(Enterkeyhint.allCases.contains(.send))
     }
-    
+
     @Test(
         "Enterkeyhint rawValue should match description",
         arguments: Enterkeyhint.allCases
@@ -57,7 +57,7 @@ struct EnterkeyhintTests {
     func rawValueMatchesDescription(enterkeyhint: Enterkeyhint) {
         #expect(enterkeyhint.rawValue == enterkeyhint.description)
     }
-    
+
     @Test(
         "Enterkeyhint should be initializable from rawValue",
         arguments: [
@@ -67,7 +67,7 @@ struct EnterkeyhintTests {
             ("next", Enterkeyhint.next),
             ("previous", Enterkeyhint.previous),
             ("search", Enterkeyhint.search),
-            ("send", Enterkeyhint.send),
+            ("send", Enterkeyhint.send)
         ]
     )
     func initializableFromRawValue(input: String, expected: Enterkeyhint?) {

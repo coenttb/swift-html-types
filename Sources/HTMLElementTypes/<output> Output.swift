@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -35,18 +34,18 @@ import HTMLAttributeTypes
 public struct Output: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "output" }
-    
+
     /// A space-separated list of other elements' IDs, indicating that those elements contributed 
     /// input values to (or otherwise affected) the calculation.
     public var `for`: For?
-    
+
     /// The form element to associate the output with (its form owner). 
     /// Allows associating the output with a form anywhere in the document.
     public var form: HTMLAttributeTypes.Form.ID?
-    
+
     /// The element's name. Used in the form.elements API.
     public var name: Name?
-    
+
     /// Creates a new Output element with the specified attributes.
     ///
     /// - Parameters:
@@ -61,7 +60,6 @@ public struct Output: HTMLElement {
         self.`for` = `for`
         self.form = form
         self.name = name
-        
+
     }
 }
-

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Hints at the type of data that might be entered by the user, helping browsers display appropriate virtual keyboards.
 ///
@@ -55,9 +54,9 @@
 public struct Inputmode: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "inputmode" }
-    
+
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
@@ -73,7 +72,7 @@ extension Inputmode {
     /// <input inputmode="none">
     /// ```
     @inlinable public static var none: Self { "none" }
-    
+
     /// Standard text input keyboard for the user's locale (default)
     ///
     /// The standard keyboard layout for the user's current locale.
@@ -83,7 +82,7 @@ extension Inputmode {
     /// <input inputmode="text">
     /// ```
     @inlinable public static var text: Self { "text" }
-    
+
     /// Fractional numeric input keyboard
     ///
     /// Contains digits and the decimal separator appropriate for the user's locale
@@ -94,7 +93,7 @@ extension Inputmode {
     /// <input inputmode="decimal" placeholder="Enter an amount">
     /// ```
     @inlinable public static var decimal: Self { "decimal" }
-    
+
     /// Numeric input keyboard (digits only)
     ///
     /// Only includes the digits 0-9. Devices may or may not show a minus key.
@@ -105,7 +104,7 @@ extension Inputmode {
     /// <input inputmode="numeric" pattern="[0-9]*" placeholder="PIN">
     /// ```
     @inlinable public static var numeric: Self { "numeric" }
-    
+
     /// Telephone keypad
     ///
     /// Includes digits, asterisk (*), and pound/hash (#) key.
@@ -116,7 +115,7 @@ extension Inputmode {
     /// <input inputmode="tel" placeholder="Phone number">
     /// ```
     @inlinable public static var tel: Self { "tel" }
-    
+
     /// Search-optimized keyboard
     ///
     /// May include a different label for the return/submit key (e.g., "Search").
@@ -127,7 +126,7 @@ extension Inputmode {
     /// <input inputmode="search" placeholder="Search...">
     /// ```
     @inlinable public static var search: Self { "search" }
-    
+
     /// Email keyboard
     ///
     /// Includes the @ character and possibly other email-specific optimizations.
@@ -138,7 +137,7 @@ extension Inputmode {
     /// <input inputmode="email" placeholder="Email address">
     /// ```
     @inlinable public static var email: Self { "email" }
-    
+
     /// URL keyboard
     ///
     /// May have the / key more prominently displayed and include other URL-specific features.
@@ -160,6 +159,6 @@ extension Inputmode: CaseIterable {
         .tel,
         .search,
         .email,
-        .url,
+        .url
     ]
 }

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -37,11 +36,11 @@ import HTMLAttributeTypes
 public struct Map: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "map" }
-    
+
     /// The name attribute gives the map a unique name so that it can be referenced.
     /// The name must be non-empty with no space characters and must be unique across all maps in the document.
     public var name: Name?
-    
+
     /// Creates a new Map element with the specified attributes.
     ///
     /// - Parameters:
@@ -50,7 +49,6 @@ public struct Map: HTMLElement {
         name: Name? = nil
     ) {
         self.name = name
-        
+
     }
 }
-

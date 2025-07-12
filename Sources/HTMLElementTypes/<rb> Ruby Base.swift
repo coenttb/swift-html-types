@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -42,14 +41,13 @@ import HTMLAttributeTypes
 public struct RubyBase: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "rb" }
-    
+
     /// Creates a new RubyBase element with the specified attributes.
     ///
     /// - Parameters:, typically the base text to be annotated
     public init(
-        
+
     ) {
-        
+
     }
 }
-

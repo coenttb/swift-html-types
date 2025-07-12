@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the HTML `referrerpolicy` attribute, which controls how much referrer information
 /// is included when following links, loading images, or submitting forms.
@@ -42,9 +41,9 @@
 /// `<script>`, and `<link>` elements.
 public struct ReferrerPolicy: StringAttribute {
     @inlinable public static var attribute: String { "referrerpolicy" }
-    
+
     public var rawValue: String
-    
+
     /// Initialize with a value
     public init(value: String) {
         self.rawValue = value
@@ -54,25 +53,25 @@ public struct ReferrerPolicy: StringAttribute {
 extension ReferrerPolicy {
     /// No referrer information is sent
     @inlinable public static var noReferrer: Self { "no-referrer" }
-    
+
     /// No referrer sent when navigating from HTTPS to HTTP
     @inlinable public static var noReferrerWhenDowngrade: Self { "no-referrer-when-downgrade" }
-    
+
     /// Only send the origin (scheme, host, port) as the referrer
     @inlinable public static var origin: Self { "origin" }
-    
+
     /// Full URL for same-origin requests, just origin for cross-origin
     @inlinable public static var originWhenCrossOrigin: Self { "origin-when-cross-origin" }
-    
+
     /// Send referrer for same-origin requests only
     @inlinable public static var sameOrigin: Self { "same-origin" }
-    
+
     /// Send origin as referrer only when security level stays the same
     @inlinable public static var strictOrigin: Self { "strict-origin" }
-    
+
     /// Default behavior if none specified
     @inlinable public static var strictOriginWhenCrossOrigin: Self { "strict-origin-when-cross-origin" }
-    
+
     /// Send full URL as referrer (not recommended for security reasons)
     @inlinable public static var unsafeUrl: Self { "unsafe-url" }
 }

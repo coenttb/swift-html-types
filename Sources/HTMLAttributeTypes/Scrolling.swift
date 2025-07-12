@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the scrolling attribute for frame and iframe elements.
 ///
@@ -30,9 +29,9 @@
 public struct Scrolling: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "scrolling" }
-    
+
     public var rawValue: String
-    
+
     /// Initialize with a string value
     public init(value: String) {
         self.rawValue = value
@@ -42,10 +41,10 @@ public struct Scrolling: StringAttribute, CustomStringConvertible {
 extension Scrolling {
     /// Force scrollbars to appear even when not needed
     @inlinable public static var yes: Self { "yes" }
-    
+
     /// Prevent scrollbars from appearing even when needed
     @inlinable public static var no: Self { "no" }
-    
+
     /// Allow browser to add scrollbars when necessary (default)
     @inlinable public static var auto: Self { "auto" }
 }

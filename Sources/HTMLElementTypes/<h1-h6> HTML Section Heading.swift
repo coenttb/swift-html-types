@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// <h1>–<h6>: The HTML Section Heading elements
 ///
@@ -23,53 +22,41 @@
 // MARK: - H1 Element
 public struct H1: HTMLElement {
     public static var tag: String { "h1" }
-    
-    public init(){}
+
+    public init() {}
 }
-
-
 
 // MARK: - H2 Element
 public struct H2: HTMLElement {
     public static var tag: String { "h2" }
-    
-    public init(){}
+
+    public init() {}
 }
-
-
 
 // MARK: - H3 Element
 public struct H3: HTMLElement {
     public static var tag: String { "h3" }
-    
-    public init(){}
+
+    public init() {}
 }
-
-
 
 // MARK: - H4 Element
 public struct H4: HTMLElement {
     public static var tag: String { "h4" }
-    
-    public init(){}
+
+    public init() {}
 }
-
-
 
 // MARK: - H5 Element
 public struct H5: HTMLElement {
     public static var tag: String { "h5" }
-    
-    public init(){}
+
+    public init() {}
 }
-
-
 
 // MARK: - H6 Element
 public struct H6: HTMLElement {
     public static var tag: String { "h6" }
-    
-    public init(){}
+
+    public init() {}
 }
-
-

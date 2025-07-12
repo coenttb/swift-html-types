@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// An attribute that specifies the width or height of form controls.
 ///
@@ -60,10 +59,10 @@
 public struct Size: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "size" }
-    
+
     /// The size value as a string
     public var rawValue: String
-    
+
     /// Initialize with a string value
     public init(value: String) {
         self.rawValue = value
@@ -73,13 +72,13 @@ public struct Size: StringAttribute, CustomStringConvertible {
 extension Size {
     /// Create a size attribute for a standard text field (width for about 30 characters)
     public static let standardTextField = Size(30)
-    
+
     /// Create a size attribute for a small text field (width for about 10 characters)
     public static let smallTextField = Size(10)
-    
+
     /// Create a size attribute for a large text field (width for about 50 characters)
     public static let largeTextField = Size(50)
-    
+
     /// Create a size attribute for a listbox showing multiple options (5 options visible)
     public static let standardListbox = Size(5)
 }

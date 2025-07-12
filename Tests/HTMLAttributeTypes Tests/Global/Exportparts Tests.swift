@@ -1,4 +1,4 @@
-////===----------------------------------------------------------------------===//
+//// ===----------------------------------------------------------------------===//
 ////
 //// Copyright (c) 2025 Coen ten Thije Boonkkamp
 //// Licensed under Apache License v2.0
@@ -8,14 +8,14 @@
 ////
 //// SPDX-License-Identifier: Apache-2.0
 ////
-////===----------------------------------------------------------------------===//
+//// ===----------------------------------------------------------------------===//
 //
-//import Foundation
-//import Testing
-//import HTMLAttributeTypes
+// import Foundation
+// import Testing
+// import HTMLAttributeTypes
 //
-//@Suite("Exportparts Test")
-//struct ExportpartsTests {
+// @Suite("Exportparts Test")
+// struct ExportpartsTests {
 //    @Test("Exportparts attribute should be exportparts")
 //    func attribute() {
 //        #expect(Exportparts.attribute == "exportparts")
@@ -42,4 +42,4 @@
 //        let multipleParts = Exportparts(["header", "footer"])
 //        #expect(multipleParts.description == "header footer")
 //    }
-//}
+// }

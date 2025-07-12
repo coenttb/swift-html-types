@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// An attribute that specifies the maximum number of characters allowed in a text input.
 ///
@@ -54,10 +53,10 @@
 public struct Maxlength: Attribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "maxlength" }
-    
+
     /// The maximum length value
     public var value: Int
-    
+
     /// Initialize with a maximum length value
     public init(_ value: Int) {
         // Ensure value is non-negative

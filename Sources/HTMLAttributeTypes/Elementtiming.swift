@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// An attribute that marks an element for performance timing measurement.
 ///
@@ -64,66 +63,66 @@
 public struct Elementtiming: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "elementtiming" }
-    
+
     /// The attribute value
     public let rawValue: String
-    
+
     /// Initialize with a value for the elementtiming attribute
     public init(value: String) {
         self.rawValue = value
     }
 }
-   
+
 extension Elementtiming {
     /// Create an elementtiming value with a prefixed category for organization
     public init(category: String, name: String, separator: String = "-") {
         self.rawValue = "\(category)\(separator)\(name)"
     }
-    
+
     /// Common predefined timing categories for semantic naming
     public struct Category: Sendable, Equatable, ExpressibleByStringLiteral, CustomStringConvertible {
         public var value: String
-        
-        public init(_ value: String){
+
+        public init(_ value: String) {
             self.value = value
         }
-        
+
         public init(stringLiteral value: StringLiteralType) {
             self.value = value
         }
         /// Main page hero or feature element
         @inlinable public static var hero: Self { "hero" }
-        
+
         /// Primary content elements
         @inlinable public static var main: Self { "main" }
-        
+
         /// Header elements
         @inlinable public static var header: Self { "header" }
-        
+
         /// Navigation elements
         @inlinable public static var nav: Self { "nav" }
-        
+
         /// Footer elements
         @inlinable public static var footer: Self { "footer" }
-        
+
         /// Image elements
         @inlinable public static var image: Self { "image" }
-        
+
         /// Text content elements
         @inlinable public static var text: Self { "text" }
-        
+
         /// Interactive elements
         @inlinable public static var interactive: Self { "interactive" }
-        
+
         /// Layout or structural elements
         @inlinable public static var layout: Self { "layout" }
-        
+
         /// Custom category
         @inlinable public static var custom: Self { "custom" }
-        
+
         public var description: String { self.value }
     }
-    
+
     /// Create an elementtiming value with a predefined category
     public init(category: Category, name: String, separator: String = "-") {
         if category == .custom {

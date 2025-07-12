@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// An attribute that provides alternative text for images or other non-text content.
 ///
@@ -59,10 +58,10 @@
 public struct Alt: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "alt" }
-    
+
     /// The alternative text value
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }

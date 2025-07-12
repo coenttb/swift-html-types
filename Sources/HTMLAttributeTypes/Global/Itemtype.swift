@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Specifies the vocabulary URL for microdata items.
 ///
@@ -75,10 +74,10 @@
 public struct Itemtype: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "itemtype" }
-    
+
     /// The URL or space-separated list of URLs defining the vocabulary
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
@@ -93,7 +92,7 @@ extension Itemtype {
 
 extension Itemtype: ExpressibleByArrayLiteral {
     public typealias ArrayLiteralElement = String
-    
+
     public init(arrayLiteral elements: String...) {
         self = .init(elements.joined(separator: " "))
     }

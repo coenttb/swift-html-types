@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Specifies whether an element is draggable or not.
 ///
@@ -53,9 +52,9 @@
 public struct Draggable: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "draggable" }
-    
+
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
@@ -69,7 +68,7 @@ extension Draggable {
     /// <div draggable="true">Drag me</div>
     /// ```
     @inlinable public static var `true`: Self { "true" }
-    
+
     /// Element cannot be dragged
     ///
     /// Example:
@@ -77,7 +76,7 @@ extension Draggable {
     /// <img src="image.png" draggable="false" alt="Non-draggable image" />
     /// ```
     @inlinable public static var `false`: Self { "false" }
-    
+
     /// Browser default dragging behavior
     ///
     /// This is the default if the attribute is not specified. 

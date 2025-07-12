@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -57,13 +56,13 @@ import HTMLAttributeTypes
 ///   appropriate attributes based on the configuration.
 public struct Area: HTMLElement {
     public static var tag: String { "area" }
-    
+
     /// The shape of the associated hot spot.
     ///
     /// This defines the geometry of the clickable area. The coordinate format
     /// in the `coords` attribute depends on which shape is selected.
     public var shape: Shape?
-    
+
     /// The coordinates that define the shape.
     ///
     /// The format depends on the shape:
@@ -79,47 +78,47 @@ public struct Area: HTMLElement {
         default: return nil
         }
     }
-    
+
     /// Alternative text for the area.
     ///
     /// This text provides an alternative description when images are not displayed
     /// or for screen readers. Required when href is present for accessibility.
     public var alt: Alt?
-    
+
     /// The URL for the hyperlink target.
     ///
     /// Defines the destination that will be loaded when the area is clicked.
     /// If omitted, the area does not represent a hyperlink.
     public var href: Href?
-    
+
     /// Indicates that the linked resource should be downloaded rather than displayed.
     ///
     /// When present, suggests to the browser that the linked resource is intended to be
     /// downloaded rather than displayed in the browser.
     public var download: Download?
-    
+
     /// A space-separated list of URLs to be notified if the link is followed.
     ///
     /// When the hyperlink is followed, the browser sends POST requests with the body PING
     /// to the URLs in this list (in the background). Typically used for tracking.
     public var ping: Ping?
-    
+
     /// Indicates which referrer information to include when navigating to the target.
     ///
     /// Controls the `Referer` HTTP header attached to the request when following the link.
     public var referrerpolicy: ReferrerPolicy?
-    
+
     /// Defines the relationship between the linked resource and the current document.
     ///
     /// A space-separated list of link relation types (e.g., "nofollow", "noopener").
     /// Only meaningful when href is present.
     public var rel: String?
-    
+
     /// Defines where to display the linked resource.
     ///
     /// Specifies the browsing context (tab, window, iframe) where the linked URL will open.
     public var target: Target?
-    
+
     /// Creates a new Area element with the specified attributes.
     ///
     /// - Parameters:
@@ -151,7 +150,7 @@ public struct Area: HTMLElement {
         self.rel = rel
         self.target = target
     }
-    
+
     /// Creates a new Area element with a link.
     ///
     /// - Parameters:
@@ -179,16 +178,16 @@ public struct Area: HTMLElement {
 public enum Shape: Sendable, Equatable {
     /// Rectangular region defined by two corner points.
     case rect(coords: String)
-    
+
     /// Circular region defined by center point and radius.
     case circle(coords: String)
-    
+
     /// Polygon region defined by a series of points.
     case poly(coords: String)
-    
+
     /// The entire region beyond any defined shapes.
     case `default`
-    
+
     public var label: String {
         switch self {
         case .rect: return "rect"
@@ -227,7 +226,7 @@ extension Area {
             target: target
         )
     }
-    
+
     /// Creates a circular area in an image map.
     ///
     /// - Parameters:
@@ -252,7 +251,7 @@ extension Area {
             target: target
         )
     }
-    
+
     /// Creates a polygon area in an image map.
     ///
     /// - Parameters:
@@ -275,7 +274,7 @@ extension Area {
             target: target
         )
     }
-    
+
     /// Creates a default area in an image map (entire region beyond defined shapes).
     ///
     /// - Parameters:
@@ -296,4 +295,3 @@ extension Area {
         )
     }
 }
-

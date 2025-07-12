@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -41,58 +40,58 @@ import HTMLAttributeTypes
 public struct Textarea: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "textarea" }
-    
+
     /// Controls whether inputted text is automatically capitalized
     public var autocapitalize: HTMLAttributeTypes.Autocapitalize?
-    
+
     /// Controls whether entered text can be automatically completed by the browser
     public var autocomplete: HTMLAttributeTypes.Autocomplete?
-    
+
     /// Controls automatic spelling correction while editing
     public var autocorrect: HTMLAttributeTypes.Autocorrect?
-    
+
     /// Automatically focus the control when page loads
     public var autofocus: HTMLAttributeTypes.Autofocus?
-    
+
     /// The visible width of the text control, in average character widths
     public var cols: Cols?
-    
+
     /// Indicates the text directionality of the element contents
     public var dirname: HTMLAttributeTypes.Dirname?
-    
+
     /// Whether the control is disabled
     public var disabled: HTMLAttributeTypes.Disabled?
-    
+
     /// Associates the control with a form element
     public var form: HTMLAttributeTypes.Form.ID?
-    
+
     /// Maximum number of characters allowed
     public var maxlength: HTMLAttributeTypes.Maxlength?
-    
+
     /// Minimum number of characters required
     public var minlength: HTMLAttributeTypes.Minlength?
-    
+
     /// Name of the control
     public var name: HTMLAttributeTypes.Name?
-    
+
     /// Hint to the user of what can be entered
     public var placeholder: HTMLAttributeTypes.Placeholder?
-    
+
     /// Whether the control is read-only
     public var readonly: HTMLAttributeTypes.Readonly?
-    
+
     /// Whether the control is required
     public var required: HTMLAttributeTypes.Required?
-    
+
     /// The number of visible text lines
     public var rows: Rows?
-    
+
     /// Whether the textarea is subject to spell-checking
     public var spellcheck: HTMLAttributeTypes.Spellcheck?
-    
+
     /// Indicates how the control wraps text for form submission
     public var wrap: TextareaWrap?
-    
+
     /// Creates a new Textarea element with the specified attributes.
     ///
     /// - Parameters:
@@ -149,7 +148,6 @@ public struct Textarea: HTMLElement {
         self.rows = rows
         self.spellcheck = spellcheck
         self.wrap = wrap
-        
+
     }
 }
-

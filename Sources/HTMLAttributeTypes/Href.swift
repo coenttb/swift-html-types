@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,7 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 import Foundation
 
@@ -66,10 +66,10 @@ import Foundation
 public struct Href: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "href" }
-    
+
     /// The attribute value
     public let rawValue: String
-    
+
     /// Initialize with a value for the href attribute
     public init(value: String) {
         self.rawValue = value
@@ -83,21 +83,21 @@ extension Href {
     public static func url(_ url: URL) -> Href {
         return Href(value: url.absoluteString)
     }
-    
+
     /// Create an Href for a telephone number
     /// - Parameter phoneNumber: The phone number (can include country code, dashes, spaces, etc.)
     /// - Returns: An Href with a tel: scheme
     public static func tel(_ phoneNumber: String) -> Href {
         return Href(value: "tel:\(phoneNumber)")
     }
-    
+
     /// Create an Href for an email address
     /// - Parameter email: The email address
     /// - Returns: An Href with a mailto: scheme
     public static func mailto(_ email: String) -> Href {
         return Href(value: "mailto:\(email)")
     }
-    
+
     /// Create an Href for an email address with subject and body
     /// - Parameters:
     ///   - email: The email address
@@ -108,7 +108,7 @@ extension Href {
         var components = URLComponents()
         components.scheme = "mailto"
         components.path = email
-        
+
         var queryItems: [URLQueryItem] = []
         if let subject = subject {
             queryItems.append(URLQueryItem(name: "subject", value: subject))
@@ -116,21 +116,21 @@ extension Href {
         if let body = body {
             queryItems.append(URLQueryItem(name: "body", value: body))
         }
-        
+
         if !queryItems.isEmpty {
             components.queryItems = queryItems
         }
-        
+
         return Href(value: components.string ?? "mailto:\(email)")
     }
-    
+
     /// Create an Href for SMS
     /// - Parameter phoneNumber: The phone number to send SMS to
     /// - Returns: An Href with an sms: scheme
     public static func sms(_ phoneNumber: String) -> Href {
         return Href(value: "sms:\(phoneNumber)")
     }
-    
+
     /// Create an Href for SMS with body text
     /// - Parameters:
     ///   - phoneNumber: The phone number to send SMS to
@@ -141,38 +141,38 @@ extension Href {
         components.scheme = "sms"
         components.path = phoneNumber
         components.queryItems = [URLQueryItem(name: "body", value: body)]
-        
+
         return Href(value: components.string ?? "sms:\(phoneNumber)")
     }
-    
+
     /// Create an Href for a file URL
     /// - Parameter path: The file path
     /// - Returns: An Href with a file: scheme
     public static func file(_ path: String) -> Href {
         return Href(value: "file://\(path)")
     }
-    
+
     /// Create an Href for a file URL from a file URL
     /// - Parameter fileURL: A file URL
     /// - Returns: An Href with the file URL's absolute string
     public static func file(_ fileURL: URL) -> Href {
         return Href(value: fileURL.absoluteString)
     }
-    
+
     /// Create an Href for a fragment (anchor) within the current page
     /// - Parameter fragment: The fragment identifier (without the # symbol)
     /// - Returns: An Href with just the fragment
     public static func fragment(_ fragment: String) -> Href {
         return Href(value: "#\(fragment)")
     }
-    
+
     /// Create an Href for WhatsApp
     /// - Parameter phoneNumber: The phone number (with country code)
     /// - Returns: An Href with a WhatsApp URL scheme
     public static func whatsapp(_ phoneNumber: String) -> Href {
         return Href(value: "https://wa.me/\(phoneNumber)")
     }
-    
+
     /// Create an Href for WhatsApp with message
     /// - Parameters:
     ///   - phoneNumber: The phone number (with country code)
@@ -182,14 +182,14 @@ extension Href {
         let encodedMessage = message.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? message
         return Href(value: "https://wa.me/\(phoneNumber)?text=\(encodedMessage)")
     }
-    
+
     /// Create an Href for FaceTime
     /// - Parameter contact: Phone number or email address
     /// - Returns: An Href with a facetime: scheme
     public static func facetime(_ contact: String) -> Href {
         return Href(value: "facetime:\(contact)")
     }
-    
+
     /// Create an Href for FaceTime video call
     /// - Parameter contact: Phone number or email address
     /// - Returns: An Href with a facetime-video: scheme

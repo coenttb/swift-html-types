@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// An attribute that specifies the URL for form submission.
 ///
@@ -59,15 +58,14 @@
 public struct Action: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "action" }
-    
+
     /// The URL for form submission
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
 }
-
 
 extension Action {
     /// Creates a relative URL action within the same domain
@@ -76,15 +74,15 @@ extension Action {
         let formattedPath = path.hasPrefix("/") ? path : "/\(path)"
         return Action(formattedPath)
     }
-    
+
     /// Creates an absolute URL action to an external service
     public static func absolute(_ url: String) -> Action {
         return Action(url)
     }
-    
+
     /// Creates an action pointing to the current page
     public static let current: Action = Action(".")
-    
+
     /// Creates an action for client-side handling (no server submission)
     public static let clientSide: Action = Action("#")
 }

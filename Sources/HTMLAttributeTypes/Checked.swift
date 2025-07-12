@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// A Boolean attribute that indicates whether a form control is checked or selected.
 ///
@@ -47,9 +46,9 @@
 public struct Checked: BooleanAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "checked" }
-    
+
     public var rawValue: Bool
-  
+
     public init(value: Bool = true) {
         self.rawValue = value
     }

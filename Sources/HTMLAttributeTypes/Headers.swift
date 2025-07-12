@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the `headers` attribute, which identifies the header cell(s) 
 /// that apply to a table data or header cell.
@@ -34,10 +33,10 @@
 public struct Headers: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "headers" }
-    
+
     /// Contains a list of space-separated strings, each corresponding to the id attribute of the <th> elements that provide headings for this table cell.
     public let rawValue: String
-    
+
     /// Initialize with a value for the headers attribute
     public init(value: String) {
         self.rawValue = value

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the HTML `optimum` attribute, which specifies the optimum value for a `<meter>` element.
 ///
@@ -32,10 +31,10 @@
 public struct Optimum: Attribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "optimum" }
-    
+
     /// The attribute value
     public var value: Double
-    
+
     /// Initialize with a value
     public init(_ value: Double) {
         self.value = value

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// An attribute that specifies the minimum number of characters required in a text input.
 ///
@@ -55,21 +54,21 @@
 public struct Minlength: Attribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "minlength" }
-    
+
     /// The minimum length value
     public var value: Int
-    
+
     /// Initialize with a minimum length value
     public init(_ value: Int) {
         // Ensure value is non-negative
         self.value = max(0, value)
     }
-    
+
     /// Create a minlength attribute with the given number of characters 
     public static func characters(_ count: Int) -> Minlength {
         return Minlength(count)
     }
-    
+
     /// Minimum length of zero (effectively no minimum)
     public static let none = Minlength(0)
 }

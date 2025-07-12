@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -40,13 +39,11 @@ import HTMLAttributeTypes
 public struct Section: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "section" }
-    
+
     /// Creates a new Section element with the specified attributes.
     public init(
-        
+
     ) {
-        
+
     }
 }
-
-

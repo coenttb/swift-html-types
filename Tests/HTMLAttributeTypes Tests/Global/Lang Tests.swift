@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,11 +8,11 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 import Foundation
-import Testing
 import HTMLAttributeTypes
+import Testing
 
 @Suite("Lang Test")
 struct LangTests {
@@ -20,19 +20,19 @@ struct LangTests {
     func attribute() {
         #expect(Lang.attribute == "lang")
     }
-    
+
     @Test("Lang should store and return its value")
     func valueStorage() {
         let lang = Lang("en-US")
         #expect(lang.rawValue == "en-US")
     }
-    
+
     @Test("Lang description should return its value")
     func description() {
         let lang = Lang("es")
         #expect(lang.description == "es")
     }
-    
+
     @Test("Lang should be initializable with string literal")
     func stringLiteralInitialization() {
         let lang: Lang = "fr-CA"

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,11 +8,11 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 import Foundation
-import Testing
 import HTMLAttributeTypes
+import Testing
 
 @Suite("Virtualkeyboardpolicy Test")
 struct VirtualkeyboardpolicyTests {
@@ -20,7 +20,7 @@ struct VirtualkeyboardpolicyTests {
     func attribute() {
         #expect(Virtualkeyboardpolicy.attribute == "virtualkeyboardpolicy")
     }
-    
+
     @Test("Virtualkeyboardpolicy description should match the spec")
     func description() {
         #expect(Virtualkeyboardpolicy.auto.description == "auto")

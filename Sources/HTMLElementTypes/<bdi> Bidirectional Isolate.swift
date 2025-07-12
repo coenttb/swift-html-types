@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -59,8 +58,7 @@ import HTMLAttributeTypes
 public struct BidirectionalIsolate: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "bdi" }
-    
-    /// Creates a new BidirectionalIsolate element with the specified content.
-    public init(){}
-}
 
+    /// Creates a new BidirectionalIsolate element with the specified content.
+    public init() {}
+}

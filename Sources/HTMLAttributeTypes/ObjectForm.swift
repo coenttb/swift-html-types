@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the HTML form attribute for the `<object>` element.
 ///
@@ -38,10 +37,10 @@
 public struct ObjectForm: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "form" }
-    
+
     /// The attribute value
     public let rawValue: String
-    
+
     /// Initialize with a value for the form attribute
     public init(value: String) {
         self.rawValue = value

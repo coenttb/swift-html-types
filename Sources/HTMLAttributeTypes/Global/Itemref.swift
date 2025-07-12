@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// References elements that are not direct descendants of an item in microdata.
 ///
@@ -79,10 +78,10 @@
 public struct Itemref: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "itemref" }
-    
+
     /// The space-separated list of element IDs
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
@@ -90,7 +89,7 @@ public struct Itemref: StringAttribute {
 
 extension Itemref: ExpressibleByArrayLiteral {
     public typealias ArrayLiteralElement = String
-    
+
     public init(arrayLiteral elements: String...) {
         self = .init(value: elements.joined(separator: " "))
     }

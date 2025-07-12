@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the CSS `loading` attribute that specifies how the browser should load an image.
 ///
@@ -55,7 +54,7 @@ public struct Loading: StringAttribute, Sendable, Equatable {
 
     /// The attribute value
     public let rawValue: String
-    
+
     /// Initialize with a value for the marginheight attribute
     public init(value: String) {
         self.rawValue = value

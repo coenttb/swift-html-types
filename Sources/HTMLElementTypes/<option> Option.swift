@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -45,23 +44,23 @@ import HTMLAttributeTypes
 public struct Option: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "option" }
-    
+
     /// If set, this option is not checkable. Often browsers grey out such control
     /// and it won't receive browsing events like mouse clicks or focus-related ones.
     public var disabled: Disabled?
-    
+
     /// Text for the label indicating the meaning of the option.
     /// If not defined, the element's text content is used.
     public var label: HTMLAttributeTypes.Label?
-    
+
     /// If present, indicates that the option is initially selected.
     /// In a single-select control, only one option can be selected at a time.
     public var selected: Selected?
-    
+
     /// The value to be submitted with the form, should this option be selected.
     /// If omitted, the value is taken from the text content of the option element.
     public var value: Value<String>
-    
+
     /// Creates a new Option element with the specified attributes.
     ///
     /// - Parameters:
@@ -81,4 +80,3 @@ public struct Option: HTMLElement {
         self.value = value
     }
 }
-

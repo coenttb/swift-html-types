@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents an HTML `<noscript>` element, which defines content to be inserted if a script type on the page 
 /// is unsupported or if scripting is currently turned off in the browser.
@@ -36,12 +35,11 @@
 public struct Noscript: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "noscript" }
-    
+
     /// Creates a new Noscript element with the specified content.
     public init(
-        
+
     ) {
-        
+
     }
 }
-

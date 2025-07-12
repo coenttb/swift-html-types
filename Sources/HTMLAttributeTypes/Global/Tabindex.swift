@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Controls an element's participation in sequential keyboard navigation.
 ///
@@ -68,10 +67,10 @@
 public struct Tabindex: Attribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "tabindex" }
-    
+
     /// The tabindex value
     public var value: Int
-    
+
     /// Initialize with a tabindex value
     public init(_ value: Int) {
         self.value = value
@@ -81,7 +80,7 @@ public struct Tabindex: Attribute {
 extension Tabindex {
     /// A constant for the common -1 value (not in tab order but focusable via script)
     public static let notTabbable = Tabindex(-1)
-    
+
     /// A constant for the common 0 value (in natural tab order)
     public static let inDocumentOrder = Tabindex(0)
 }

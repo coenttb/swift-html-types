@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Indicates that the browser should not render the contents of the element.
 ///
@@ -68,16 +67,16 @@
 public struct Hidden: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "hidden" }
-    
+
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
 }
 
 extension Hidden {
-    public init(){
+    public init() {
         self = .hidden
     }
 }
@@ -90,7 +89,7 @@ extension Hidden {
     /// <div hidden="">Hidden content</div>
     /// ```
     @inlinable public static var empty: Self { "" }
-    
+
     /// Content is completely hidden
     ///
     /// Example:
@@ -98,7 +97,7 @@ extension Hidden {
     /// <div hidden="hidden">Hidden content</div>
     /// ```
     @inlinable public static var hidden: Self { "hidden" }
-    
+
     /// Content is hidden but discoverable by search or fragment navigation (experimental)
     ///
     /// When the browser's "find in page" feature or fragment navigation targets an element
@@ -114,7 +113,6 @@ extension Hidden {
     @inlinable public static var untilFound: Self { "until-found" }
 }
 
-
 extension Hidden: CaseIterable {
-    public static let allCases: [Hidden] = [ .empty, .hidden, .untilFound, ]
+    public static let allCases: [Hidden] = [ .empty, .hidden, .untilFound ]
 }

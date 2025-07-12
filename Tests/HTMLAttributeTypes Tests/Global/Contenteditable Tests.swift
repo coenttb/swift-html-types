@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,11 +8,11 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 import Foundation
-import Testing
 import HTMLAttributeTypes
+import Testing
 
 @Suite("Contenteditable Test")
 struct ContenteditableTests {
@@ -20,7 +20,7 @@ struct ContenteditableTests {
     func attribute() {
         #expect(Contenteditable.attribute == "contenteditable")
     }
-    
+
     @Test(
         "Contenteditable cases description should match the spec",
         arguments: Contenteditable.allCases
@@ -34,7 +34,7 @@ struct ContenteditableTests {
         default: ()
         }
     }
-    
+
     @Test("Contenteditable should conform to CaseIterable")
     func conformsToCaseIterable() {
         #expect(Contenteditable.allCases.count == 4)
@@ -43,7 +43,7 @@ struct ContenteditableTests {
         #expect(Contenteditable.allCases.contains(.plaintextOnly))
         #expect(Contenteditable.allCases.contains(.empty))
     }
-    
+
     @Test(
         "Contenteditable rawValue should match description",
         arguments: Contenteditable.allCases
@@ -51,13 +51,13 @@ struct ContenteditableTests {
     func rawValueMatchesDescription(contenteditable: Contenteditable) {
         #expect(contenteditable.rawValue == contenteditable.description)
     }
-    
+
     @Test(
         "Contenteditable should be initializable from rawValue",
         arguments: [
             ("true", Contenteditable.true),
             ("false", Contenteditable.false),
-            ("plaintext-only", Contenteditable.plaintextOnly),
+            ("plaintext-only", Contenteditable.plaintextOnly)
         ]
     )
     func initializableFromRawValue(input: String, expected: Contenteditable?) {

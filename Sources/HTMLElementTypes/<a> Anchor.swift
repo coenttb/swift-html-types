@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -69,7 +68,7 @@ import HTMLAttributeTypes
 ///   attributes based on the link configuration.
 public struct Anchor: HTMLElement {
     public static var tag: String { "a" }
-    
+
     /// Indicates that Attribution-Reporting-Eligible header should be sent.
     ///
     /// Used to register a navigation-based attribution source for the Attribution Reporting API.
@@ -77,7 +76,7 @@ public struct Anchor: HTMLElement {
     /// 
     /// - Note: Still experimental as of 2025
     public var attributionsrc: HTMLAttributeTypes.AttributionSrc?
-    
+
     /// Causes the browser to treat the linked URL as a download.
     ///
     /// This attribute can be used with or without a filename value:
@@ -105,7 +104,7 @@ public struct Anchor: HTMLElement {
     /// - If the header specifies a disposition of inline, modern browsers prioritize
     ///   this attribute and treat it as a download.
     public var download: HTMLAttributeTypes.Download?
-    
+
     /// The URL that the hyperlink points to.
     ///
     /// This can be an absolute URL, relative URL, or special URL schemes like:
@@ -114,25 +113,25 @@ public struct Anchor: HTMLElement {
     /// - `sms:` for text messages
     /// - Document fragments starting with `#` for in-page navigation
     public var href: HTMLAttributeTypes.Href?
-    
+
     /// Hints at the human language of the linked URL.
     ///
     /// This attribute indicates the language of the linked resource.
     /// Values are language codes like "en", "fr", "ja", etc.
     public var hreflang: HTMLAttributeTypes.Hreflang?
-    
+
     /// A space-separated list of URLs to ping when the link is followed.
     ///
     /// When the link is followed, the browser will send POST requests with the body PING to the URLs.
     /// Typically used for tracking.
     public var ping: HTMLAttributeTypes.Ping?
-    
+
     /// How much of the referrer to send when following the link.
     ///
     /// Controls the information included in the Referer header when navigating to the linked resource.
     /// Options include no-referrer, origin, same-origin, strict-origin, etc.
     public var referrerpolicy: HTMLAttributeTypes.ReferrerPolicy?
-    
+
     /// The relationship of the linked URL as space-separated link types.
     ///
     /// Common values include:
@@ -141,7 +140,7 @@ public struct Anchor: HTMLElement {
     /// - `noreferrer` - Prevents passing the referrer information to the linked page
     /// - `alternate`, `author`, `help`, `license`, etc.
     public var rel: HTMLAttributeTypes.Rel?
-    
+
     /// Where to display the linked URL, as the name for a browsing context.
     ///
     /// Specifies where to open the linked document:
@@ -154,7 +153,7 @@ public struct Anchor: HTMLElement {
     /// Note: Setting `target="_blank"` on anchor elements implicitly provides the same 
     /// behavior as setting `rel="noopener"` in modern browsers.
     public var target: HTMLAttributeTypes.Target?
-    
+
     /// Creates a new Anchor element with the specified attributes.
     ///
     /// - Parameters:
@@ -186,4 +185,3 @@ public struct Anchor: HTMLElement {
         self.target = target
     }
 }
-

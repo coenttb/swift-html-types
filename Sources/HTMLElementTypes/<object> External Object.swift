@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -51,28 +50,28 @@ import HTMLAttributeTypes
 public struct ExternalObject: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "object" }
-    
+
     /// The URL of the resource to embed
     public var data: HTMLAttributeTypes.ObjectData?
-    
+
     /// The content type (MIME type) of the embedded resource
     public var type: HTMLAttributeTypes.ObjectType?
-    
+
     /// The form element that the object is associated with
     public var form: HTMLAttributeTypes.Form.ID?
-    
+
     /// The name of the browsing context or control
     public var name: HTMLAttributeTypes.Name?
-    
+
     /// The height of the object in pixels
     public var height: HTMLAttributeTypes.Height?
-    
+
     /// The width of the object in pixels
     public var width: HTMLAttributeTypes.Width?
-    
+
     /// Specifies an image map for the object
     public var usemap: HTMLAttributeTypes.Usemap?
-    
+
     /// Creates a new object element with the specified attributes.
     ///
     /// - Parameters:
@@ -99,7 +98,6 @@ public struct ExternalObject: HTMLElement {
         self.height = height
         self.width = width
         self.usemap = usemap
-        
+
     }
 }
-

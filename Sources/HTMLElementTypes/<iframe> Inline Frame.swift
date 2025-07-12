@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -40,37 +39,37 @@ import HTMLAttributeTypes
 public struct InlineFrame: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "iframe" }
-    
+
     /// The URL of the page to embed
     public var src: HTMLAttributeTypes.Src?
-    
+
     /// Inline HTML to embed, overriding the src attribute
     public var srcdoc: String?
-    
+
     /// A targetable name for the embedded browsing context
     public var name: HTMLAttributeTypes.Name?
-    
+
     /// Controls restrictions applied to the content embedded in the iframe
     public var sandbox: String?
-    
+
     /// Set to true if the iframe can activate fullscreen mode
     public var allowfullscreen: HTMLAttributeTypes.Allowfullscreen?
-    
+
     /// Specifies a Permissions Policy for the iframe
     public var allow: Allow?
-    
+
     /// The width of the frame in CSS pixels (default is 300)
     public var width: HTMLAttributeTypes.Width?
-    
+
     /// The height of the frame in CSS pixels (default is 150)
     public var height: HTMLAttributeTypes.Height?
-    
+
     /// Indicates how the browser should load the iframe (eager or lazy)
     public var loading: Loading?
-    
+
     /// Controls referrer policy when fetching the frame's resource
     public var referrerpolicy: HTMLAttributeTypes.ReferrerPolicy?
-        
+
     /// Creates a new InlineFrame element with the specified attributes.
     ///
     /// - Parameters:
@@ -106,7 +105,6 @@ public struct InlineFrame: HTMLElement {
         self.height = height
         self.loading = loading
         self.referrerpolicy = referrerpolicy
-        
+
     }
 }
-

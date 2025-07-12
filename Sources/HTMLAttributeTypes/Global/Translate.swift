@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Controls whether an element's content should be translated.
 ///
@@ -82,9 +81,9 @@
 public struct Translate: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "translate" }
-    
+
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
@@ -93,7 +92,7 @@ public struct Translate: StringAttribute {
 extension Translate {
     /// Content should be translated
     @inlinable public static var yes: Self { "yes" }
-    
+
     /// Content should not be translated
     @inlinable public static var no: Self { "no" }
 }

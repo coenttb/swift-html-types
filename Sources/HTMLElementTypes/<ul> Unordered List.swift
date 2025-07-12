@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents an HTML unordered list element (`<ul>`), which is used to group a collection of items 
 /// that do not have a numerical ordering, typically rendered as a bulleted list.
@@ -69,12 +68,11 @@
 public struct UnorderedList: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "ul" }
-    
+
     /// Creates a new UnorderedList element.
     public init(
-        
+
     ) {
-        
+
     }
 }
-

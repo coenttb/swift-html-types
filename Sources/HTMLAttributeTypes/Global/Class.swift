@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// A global attribute that specifies one or more class names for an HTML element.
 ///
@@ -48,9 +47,9 @@
 public struct Class: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "class" }
-    
+
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
@@ -58,7 +57,7 @@ public struct Class: StringAttribute {
 
 extension Class: ExpressibleByArrayLiteral {
     public typealias ArrayLiteralElement = String
-    
+
     public init(arrayLiteral elements: String...) {
         self = .init(value: elements.joined(separator: " "))
     }

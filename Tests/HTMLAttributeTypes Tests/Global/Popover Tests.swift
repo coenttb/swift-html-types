@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,11 +8,11 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 import Foundation
-import Testing
 import HTMLAttributeTypes
+import Testing
 
 @Suite("Popover Test")
 struct PopoverTests {
@@ -20,7 +20,7 @@ struct PopoverTests {
     func attribute() {
         #expect(Popover.attribute == "popover")
     }
-    
+
     @Test(
         "Popover cases description should match the spec",
         arguments: Popover.allCases
@@ -33,7 +33,7 @@ struct PopoverTests {
         default: ()
         }
     }
-    
+
     @Test("Popover should conform to CaseIterable")
     func conformsToCaseIterable() {
         #expect(Popover.allCases.count == 3)
@@ -41,7 +41,7 @@ struct PopoverTests {
         #expect(Popover.allCases.contains(.manual))
         #expect(Popover.allCases.contains(.hint))
     }
-    
+
     @Test(
         "Popover rawValue should match description",
         arguments: Popover.allCases
@@ -49,12 +49,12 @@ struct PopoverTests {
     func rawValueMatchesDescription(popover: Popover) {
         #expect(popover.rawValue == popover.description)
     }
-    
+
     @Test(
         "Popover should be initializable from rawValue",
         arguments: [
             ("auto", Popover.auto),
-            ("manual", Popover.manual),
+            ("manual", Popover.manual)
         ]
     )
     func initializableFromRawValue(input: String, expected: Popover?) {

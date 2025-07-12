@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the HTML `attributionsrc` attribute, which is used in the Attribution Reporting API
 /// to send an Attribution-Reporting-Eligible header.
@@ -64,31 +63,31 @@
 public struct AttributionSrc: Attribute, CustomStringConvertible {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "attributionsrc" }
-    
+
     /// The type of attribute value
     public enum Value: Sendable, Equatable {
         /// Boolean form (presence/absence of the attribute)
         case boolean(Bool)
-        
+
         /// URL value (one or more URLs where the header should be sent)
         case urls(String)
     }
-    
+
     /// The internal value representation
     public var value: Value
-    
+
     /// Create a boolean attributionsrc attribute
     public init() {
         self.value = .boolean(true)
     }
-    
+
     /// Create an attributionsrc attribute with a specific boolean value
     ///
     /// - Parameter include: Whether to include the attribute
     public init(_ include: Bool) {
         self.value = .boolean(include)
     }
-    
+
     /// Create an attributionsrc attribute with one or more URLs
     ///
     /// - Parameter urls: A single URL or space-separated list of URLs where
@@ -96,7 +95,7 @@ public struct AttributionSrc: Attribute, CustomStringConvertible {
     public init(_ urls: String) {
         self.value = .urls(urls)
     }
-    
+
     /// String representation of the attributionsrc attribute
     public var description: String {
         switch value {
@@ -106,7 +105,7 @@ public struct AttributionSrc: Attribute, CustomStringConvertible {
             return urls
         }
     }
-    
+
     /// Whether the attribute should be included in HTML rendering
     public var shouldInclude: Bool {
         switch value {

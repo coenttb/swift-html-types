@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -66,13 +65,12 @@ import HTMLAttributeTypes
 public struct DataList: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "datalist" }
-    
+
     /// Creates a new DataList element with the specified attributes and content.
     ///
     /// - Parameters:
     ///   - id: The ID attribute, used to associate the datalist with an input element
     public init(
-    ) {        
+    ) {
     }
 }
-

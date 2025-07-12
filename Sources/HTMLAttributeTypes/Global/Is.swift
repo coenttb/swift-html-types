@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Specifies that a standard HTML element should behave like a defined custom built-in element.
 ///
@@ -69,10 +68,10 @@
 public struct Is: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "is" }
-    
+
     /// The name of the custom element
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }

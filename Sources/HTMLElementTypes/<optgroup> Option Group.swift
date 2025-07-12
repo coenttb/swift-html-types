@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -43,16 +42,16 @@ import HTMLAttributeTypes
 public struct OptionGroup: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "optgroup" }
-    
+
     /// If set, none of the items in this option group is selectable.
     /// Often browsers grey out such control and it won't receive any browsing events,
     /// like mouse clicks or focus-related ones.
     public var disabled: Disabled?
-    
+
     /// The name of the group of options, which the browser can use when labeling
     /// the options in the user interface. This attribute is mandatory if this element is used.
     public var label: HTMLAttributeTypes.Label?
-    
+
     /// Creates a new OptionGroup element with the specified attributes.
     ///
     /// - Parameters:
@@ -64,7 +63,6 @@ public struct OptionGroup: HTMLElement {
     ) {
         self.disabled = disabled
         self.label = label
-        
+
     }
 }
-

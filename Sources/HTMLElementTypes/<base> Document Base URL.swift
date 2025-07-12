@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -37,10 +36,10 @@ import HTMLAttributeTypes
 ///   It is a void element and does not have a closing tag.
 public struct Base: HTMLElement {
     public static var tag: String { "base" }
-    
+
     /// The configuration for the base element, which must include an href, a target, or both.
     public var configuration: Configuration
-    
+
     /// The possible configurations for a base element.
     ///
     /// According to the HTML specification, a base element must have either an href attribute,
@@ -48,14 +47,14 @@ public struct Base: HTMLElement {
     public enum Configuration: Sendable, Equatable {
         /// A base element with only an href attribute.
         case href(HTMLAttributeTypes.Href)
-        
+
         /// A base element with only a target attribute.
         case target(HTMLAttributeTypes.Target)
-        
+
         /// A base element with both href and target attributes.
         case both(href: HTMLAttributeTypes.Href, target: HTMLAttributeTypes.Target)
     }
-    
+
     /// The base URL to be used throughout the document for relative URLs, if specified.
     ///
     /// This attribute specifies the base URL that will be used for all relative
@@ -73,7 +72,7 @@ public struct Base: HTMLElement {
             return nil
         }
     }
-    
+
     /// The default browsing context for navigations from elements without explicit targets, if specified.
     ///
     /// This attribute specifies the default browsing context (window, tab, or frame)
@@ -97,7 +96,7 @@ public struct Base: HTMLElement {
             return nil
         }
     }
-    
+
     /// Creates a new Base element with the specified configuration.
     ///
     /// - Parameter configuration: The configuration for the base element, which must include
@@ -105,21 +104,21 @@ public struct Base: HTMLElement {
     public init(configuration: Configuration) {
         self.configuration = configuration
     }
-    
+
     /// Creates a new Base element with an href attribute.
     ///
     /// - Parameter href: The base URL to be used for all relative URLs in the document.
     public init(href: HTMLAttributeTypes.Href) {
         self.configuration = .href(href)
     }
-    
+
     /// Creates a new Base element with a target attribute.
     ///
     /// - Parameter target: The default browsing context for navigation.
     public init(target: HTMLAttributeTypes.Target) {
         self.configuration = .target(target)
     }
-    
+
     /// Creates a new Base element with both href and target attributes.
     ///
     /// - Parameters:
@@ -129,4 +128,3 @@ public struct Base: HTMLElement {
         self.configuration = .both(href: href, target: target)
     }
 }
-

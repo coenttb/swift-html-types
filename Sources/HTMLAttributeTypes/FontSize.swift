@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Deprecated attribute that specifies the font size as either a numeric or relative value.
 ///
@@ -30,10 +29,10 @@
 public struct FontSize: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "size" }
-    
+
     /// The attribute value
     public let rawValue: String
-    
+
     /// Initialize with a value for the size attribute
     public init(value: String) {
         self.rawValue = value
@@ -45,14 +44,14 @@ extension FontSize: ExpressibleByIntegerLiteral {
         self.init(numericValue: value)
     }
 }
-   
+
 extension FontSize {
     /// Initialize with a numeric value (1-7)
     public init(numericValue: Int) {
         precondition(numericValue >= 1 && numericValue <= 7, "Font size must be between 1 and 7")
         self.rawValue = String(numericValue)
     }
-    
+
     /// Initialize with a relative value
     public init(relativeValue: Int) {
         if relativeValue > 0 {
@@ -62,4 +61,3 @@ extension FontSize {
         }
     }
 }
-

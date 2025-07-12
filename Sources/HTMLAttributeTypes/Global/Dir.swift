@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Specifies the text direction for the content in an element.
 ///
@@ -54,9 +53,9 @@
 public struct Dir: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "dir" }
-    
+
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
@@ -73,7 +72,7 @@ extension Dir {
     /// <p dir="ltr">This is English text</p>
     /// ```
     @inlinable public static var ltr: Self { "ltr" }
-    
+
     /// Right-to-left text direction
     ///
     /// Used for languages that are written from right to left, such as Arabic, Hebrew, and Persian.
@@ -83,7 +82,7 @@ extension Dir {
     /// <p dir="rtl">هذه الفقرة باللغة العربية</p>
     /// ```
     @inlinable public static var rtl: Self { "rtl" }
-    
+
     /// Let the user agent determine direction based on content
     ///
     /// The browser parses characters inside the element until it finds a character with strong 

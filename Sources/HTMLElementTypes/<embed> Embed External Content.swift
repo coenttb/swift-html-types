@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -39,19 +38,19 @@ import HTMLAttributeTypes
 public struct Embed: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "embed" }
-    
+
     /// The URL of the resource being embedded
     public var src: HTMLAttributeTypes.Src?
-    
+
     /// The MIME type to use to select the plug-in to instantiate
     public var type: HTMLAttributeTypes.ScriptType?
-    
+
     /// The displayed height of the resource in CSS pixels
     public var height: HTMLAttributeTypes.Height?
-    
+
     /// The displayed width of the resource in CSS pixels
     public var width: HTMLAttributeTypes.Width?
-    
+
     /// Creates a new Embed element with the specified attributes.
     ///
     /// - Parameters:
@@ -71,5 +70,3 @@ public struct Embed: HTMLElement {
         self.height = height
     }
 }
-
-

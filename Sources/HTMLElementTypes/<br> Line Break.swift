@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -53,11 +52,10 @@ import HTMLAttributeTypes
 public struct BR: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "br" }
-    
+
     /// Creates a new BR element.
     ///
     /// Since the `<br>` element is a void element with no attributes beyond global ones,
     /// this initializer takes no parameters.
     public init() { }
 }
-

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -51,12 +50,11 @@ import HTMLAttributeTypes
 public struct TableRow: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "tr" }
-    
+
     /// Creates a new TableRow element.
     public init(
-        
+
     ) {
-        
+
     }
 }
-

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the HTML `integrity` attribute, which contains inline metadata 
 /// for verifying subresource integrity (SRI).
@@ -52,13 +51,13 @@
 /// - Ensures resource integrity even when served from untrusted sources
 /// - Provides defense against compromised third-party resources
 ///
-public struct Integrity: StringAttribute {    
+public struct Integrity: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "integrity" }
-    
+
     /// The attribute value
     public let rawValue: String
-    
+
     /// Initialize with a value for the integrity attribute
     public init(value: String) {
         self.rawValue = value
@@ -70,15 +69,14 @@ extension Integrity {
     public static func sha256(_ hash: String) -> Integrity {
         return Integrity("sha256-\(hash)")
     }
-    
+
     /// Creates an integrity hash using the SHA-384 algorithm
     public static func sha384(_ hash: String) -> Integrity {
         return Integrity("sha384-\(hash)")
     }
-    
+
     /// Creates an integrity hash using the SHA-512 algorithm
     public static func sha512(_ hash: String) -> Integrity {
         return Integrity("sha512-\(hash)")
     }
 }
-

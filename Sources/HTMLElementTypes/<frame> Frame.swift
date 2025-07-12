@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -39,28 +38,28 @@ import HTMLAttributeTypes
 public struct Frame: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "frame" }
-    
+
     /// The URL of the document to be displayed in the frame
     public var src: Src?
-    
+
     /// A name for the frame, used for targeting links
     public var name: Name?
-    
+
     /// Prevents user from resizing the frame
     public var noresize: NoResize?
-    
+
     /// Controls scrollbar appearance
     public var scrolling: Scrolling?
-    
+
     /// Margins between frames (height)
     public var marginheight: MarginHeight?
-    
+
     /// Margins between frames (width)
     public var marginwidth: MarginWidth?
-    
+
     /// Controls frame border appearance
     public var frameborder: FrameBorder?
-    
+
     /// Creates a new Frame element with the specified attributes.
     ///
     /// - Parameters:
@@ -89,4 +88,3 @@ public struct Frame: HTMLElement {
         self.frameborder = frameborder
     }
 }
-

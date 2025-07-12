@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,28 +8,27 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 public struct Form: Sendable, Equatable {
-    
+
     /// A string indicating the URL to which to submit the data. This takes precedence over the action attribute on the `<form>` element that owns the `<input>`.
     ///
     /// This attribute is also available on `<input type="submit">` and `<button>` elements.
     public var action: HTMLAttributeTypes.FormAction?
-    
+
     /// A string that identifies the encoding method to use when submitting the form data to the server.
     public var enctype: HTMLAttributeTypes.FormEncType?
-    
+
     /// A string indicating the HTTP method to use when submitting the form's data; this value overrides any method attribute given on the owning form.
     public var method: HTMLAttributeTypes.FormMethod?
-    
+
     /// A Boolean attribute which, if present, specifies that the form should not be validated before submission to the server. This overrides the value of the novalidate attribute on the element's owning form.
     public var novalidate: HTMLAttributeTypes.FormNovalidate?
-    
+
     /// A string which specifies a name or keyword that indicates where to display the response received after submitting the form. The string must be the name of a browsing context (that is, a tab, window, or `<iframe>`. A value specified here overrides any target given by the target attribute on the `<form>` that owns this input.
     public var target: HTMLAttributeTypes.FormTarget?
-    
+
     /// Create a new form override configuration
     public init(
         action: HTMLAttributeTypes.FormAction? = nil,
@@ -50,7 +49,7 @@ extension Form {
     public mutating func action(_ value: HTMLAttributeTypes.FormAction?) {
         self.action = value
     }
-    
+
     public mutating func enctype(_ value: HTMLAttributeTypes.FormEncType?) {
         self.enctype = value
     }
@@ -68,4 +67,3 @@ extension Form {
 extension Form {
     public typealias ID = HTMLAttributeTypes.Id
 }
-

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -35,16 +34,16 @@ import HTMLAttributeTypes
 public struct Font: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "font" }
-    
+
     /// The color of the text
     public var color: HTMLAttributeTypes.Color?
-    
+
     /// The font face to use
     public var face: HTMLAttributeTypes.Face?
-    
+
     /// The font size
     public var size: HTMLAttributeTypes.FontSize?
-    
+
     /// Creates a new Font element with the specified attributes.
     ///
     /// - Parameters:
@@ -59,7 +58,6 @@ public struct Font: HTMLElement {
         self.color = color
         self.face = face
         self.size = size
-        
+
     }
 }
-

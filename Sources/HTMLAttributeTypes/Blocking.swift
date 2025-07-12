@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Explicitly indicates that certain operations should be blocked on the fetching of critical subresources.
 ///
@@ -30,10 +29,10 @@
 public struct Blocking: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "blocking" }
-    
+
     /// The attribute value
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }

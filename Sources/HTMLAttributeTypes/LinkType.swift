@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the HTML type attribute for the `<link>` element.
 ///
@@ -45,10 +44,10 @@
 public struct LinkType: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "type" }
-    
+
     /// The attribute value
     public let rawValue: String
-    
+
     /// Initialize with a value for the type attribute
     public init(value: String) {
         self.rawValue = value
@@ -58,28 +57,28 @@ public struct LinkType: StringAttribute {
 extension LinkType {
     /// CSS stylesheet
     public static let css = LinkType("text/css")
-    
+
     /// JavaScript
     public static let javascript = LinkType("text/javascript")
-    
+
     /// Favicon
     public static let icon = LinkType("image/x-icon")
-    
+
     /// SVG image
     public static let svg = LinkType("image/svg+xml")
-    
+
     /// PNG image
     public static let png = LinkType("image/png")
-    
+
     /// Web app manifest
     public static let manifest = LinkType("application/manifest+json")
-    
+
     /// RSS feed
     public static let rss = LinkType("application/rss+xml")
-    
+
     /// Atom feed
     public static let atom = LinkType("application/atom+xml")
-    
+
     /// JSON data
     public static let json = LinkType("application/json")
 }

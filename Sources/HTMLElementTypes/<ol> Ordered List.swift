@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -39,16 +38,16 @@ import HTMLAttributeTypes
 public struct OrderedList: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "ol" }
-    
+
     /// Boolean attribute specifying that the list's items are in reverse order (high to low)
     public var reversed: HTMLAttributeTypes.Reversed?
-    
+
     /// Specifies the starting number for the list items
     public var start: HTMLAttributeTypes.Start?
-    
+
     /// Specifies the numbering type (1, a, A, i, I)
     public var type: HTMLAttributeTypes.ListType?
-    
+
     /// Creates a new OrderedList element with the specified attributes.
     ///
     /// - Parameters:
@@ -63,7 +62,6 @@ public struct OrderedList: HTMLElement {
         self.reversed = reversed
         self.start = start
         self.type = type
-        
+
     }
 }
-

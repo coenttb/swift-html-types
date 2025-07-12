@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// An attribute that specifies the HTTP method for form submission.
 ///
@@ -70,10 +69,10 @@
 public struct FormMethod: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "formmethod" }
-    
+
     /// The attribute value
     public let rawValue: String
-    
+
     /// Initialize with a value for the formmethod attribute
     public init(value: String) {
         self.rawValue = value.lowercased()
@@ -81,13 +80,13 @@ public struct FormMethod: StringAttribute {
 }
 
 extension FormMethod {
-        
+
     /// GET method: data appended to the URL
     @inlinable public static var get: Self { "get" }
-    
+
     /// POST method: data sent in the request body
     @inlinable public static var post: Self { "post" }
-    
+
     /// DIALOG method: for forms inside a dialog element
     @inlinable public static var dialog: Self { "dialog" }
 }

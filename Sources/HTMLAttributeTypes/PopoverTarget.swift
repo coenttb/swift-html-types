@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Specifies the ID of a popover element to be controlled by a button.
 ///
@@ -31,10 +30,10 @@
 public struct PopoverTarget: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "popovertarget" }
-    
+
     /// The ID of the popover element to control
     public var rawValue: String
-    
+
     /// Initialize with a popover element ID
     public init(value: String) {
         self.rawValue = value

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Controls browser-provided writing suggestions in editable elements.
 ///
@@ -63,13 +62,13 @@
 /// </div>
 /// ```
 public struct Writingsuggestions: StringAttribute {
-    
+
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "writingsuggestions" }
-    
+
     /// The URL for form submission
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
@@ -78,7 +77,7 @@ public struct Writingsuggestions: StringAttribute {
 extension Writingsuggestions {
     /// Enables browser-provided writing suggestions
     @inlinable public static var `true`: Self { "true" }
-    
+
     /// Disables browser-provided writing suggestions
     @inlinable public static var `false`: Self { "false" }
 }

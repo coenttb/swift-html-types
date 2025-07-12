@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -37,11 +36,11 @@ import HTMLAttributeTypes
 public struct InlineQuotation: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "q" }
-    
+
     /// The URL that designates a source document or message for the information quoted
     /// This attribute is intended to point to information explaining the context or the reference for the quote
     public var cite: HTMLAttributeTypes.Cite?
-    
+
     /// Creates a new InlineQuotation element with the specified attributes.
     ///
     /// - Parameters:
@@ -50,7 +49,6 @@ public struct InlineQuotation: HTMLElement {
         cite: HTMLAttributeTypes.Cite? = nil
     ) {
         self.cite = cite
-        
+
     }
 }
-

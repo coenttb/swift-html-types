@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -21,31 +20,31 @@ extension Input {
     public struct Tel: Sendable, Equatable {
         /// A string representing a telephone number, or empty.
         public var value: Value<String>?
-        
+
         /// The ID of a datalist element that provides a list of suggested telephone numbers.
         public var list: List?
-        
+
         /// The maximum number of characters the input should accept.
         public var maxlength: Maxlength?
-        
+
         /// The minimum number of characters required for the input to be valid.
         public var minlength: Minlength?
-        
+
         /// A regular expression the input's value must match to be valid.
         public var pattern: Pattern?
-        
+
         /// A hint displayed when the input is empty, to guide the user on the expected format.
         public var placeholder: Placeholder?
-        
+
         /// Whether the input field should be read-only.
         public var readonly: Readonly?
-        
+
         /// The visible width of the input field in characters.
         public var size: Size?
-        
+
         /// Whether the input field is required to have a value before form submission.
         public var required: Required?
-        
+
         /// Creates a new telephone input configuration
         public init(
             value: Value<String>? = nil,
@@ -74,7 +73,7 @@ extension Input {
 extension Input {
     /// Creates a new tel input element
     public static let tel: Self = .tel()
-    
+
     /// Creates a new telephone input element
     public static func tel(
         name: Name? = nil,

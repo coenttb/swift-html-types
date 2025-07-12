@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -29,7 +28,7 @@ extension Input {
         /// the form is submitted to the server. This specifically can't be edited or seen by the user
         /// via the user interface, although it could be edited via browser developer tools.
         public var value: Value<String>?
-        
+
         /// Creates a new hidden input configuration
         public init(
             value: Value<String>? = nil
@@ -42,7 +41,7 @@ extension Input {
 extension Input {
     /// Creates a new hidden input element
     public static let hidden: Self = .hidden()
-    
+
     /// Creates a new hidden input element
     public static func hidden(
         name: Name? = nil,

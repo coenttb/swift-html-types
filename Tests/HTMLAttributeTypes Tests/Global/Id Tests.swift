@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,11 +8,11 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 import Foundation
-import Testing
 import HTMLAttributeTypes
+import Testing
 
 @Suite("Id Test")
 struct IdTests {
@@ -20,19 +20,19 @@ struct IdTests {
     func attribute() {
         #expect(Id.attribute == "id")
     }
-    
+
     @Test("Id should store and return its value")
     func valueStorage() {
         let id = Id("header-section")
         #expect(id.rawValue == "header-section")
     }
-    
+
     @Test("Id description should return its value")
     func description() {
         let id = Id("main-content")
         #expect(id.description == "main-content")
     }
-    
+
     @Test("Id should be initializable with string literal")
     func stringLiteralInitialization() {
         let id: Id = "footer"

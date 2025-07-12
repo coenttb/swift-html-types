@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -54,13 +53,13 @@ import HTMLAttributeTypes
 public struct Canvas: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "canvas" }
-    
+
     /// The width of the canvas in CSS pixels (defaults to 300 if not specified)
     public var width: HTMLAttributeTypes.Width?
-    
+
     /// The height of the canvas in CSS pixels (defaults to 150 if not specified)
     public var height: HTMLAttributeTypes.Height?
-    
+
     /// Creates a new Canvas element with the specified dimensions and fallback content.
     ///
     /// - Parameters:
@@ -74,4 +73,3 @@ public struct Canvas: HTMLElement {
         self.height = height
     }
 }
-

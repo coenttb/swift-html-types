@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -52,14 +51,14 @@ import HTMLAttributeTypes
 public struct Dialog: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "dialog" }
-    
+
     /// Indicates that the dialog box is active and available for interaction
     ///
     /// When the `open` attribute is not set, the dialog box will not be visible.
     /// It is recommended to use JavaScript's `showModal()` or `show()` methods
     /// rather than this attribute to display dialogs.
     public var open: Open?
-    
+
     /// Creates a new Dialog element with the specified attributes.
     ///
     /// - Parameters:
@@ -68,7 +67,6 @@ public struct Dialog: HTMLElement {
         open: Open? = nil
     ) {
         self.open = open
-        
+
     }
 }
-

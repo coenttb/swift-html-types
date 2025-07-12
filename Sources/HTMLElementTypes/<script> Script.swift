@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -64,43 +63,43 @@ import HTMLAttributeTypes
 public struct Script: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "script" }
-    
+
     /// The URL of an external script file
     public var src: HTMLAttributeTypes.Src?
-    
+
     /// Indicates that the script should be executed asynchronously
     public var async: HTMLAttributeTypes.Async?
-    
+
     /// Indicates that the script should be executed after the document has been parsed
     public var `defer`: HTMLAttributeTypes.Defer?
-    
+
     /// Indicates the type of script represented
     public var type: HTMLAttributeTypes.ScriptType?
-    
+
     /// Indicates integrity metadata for the script
     public var integrity: HTMLAttributeTypes.Integrity?
-    
+
     /// Indicates which referrer to send when fetching the script
     public var referrerpolicy: HTMLAttributeTypes.ReferrerPolicy?
-    
+
     /// Indicates that the script should not be executed in browsers that support ES modules
     public var nomodule: HTMLAttributeTypes.Nomodule?
-    
+
     /// Provides a hint of the relative priority to use when fetching the script
     public var fetchpriority: HTMLAttributeTypes.FetchPriority?
-    
+
     /// Explicitly indicates that certain operations should be blocked on the fetching of the script
     public var blocking: HTMLAttributeTypes.Blocking?
-    
+
     /// Indicates how the element handles crossorigin requests
     public var crossorigin: HTMLAttributeTypes.Crossorigin?
-    
+
     /// A cryptographic nonce for Content-Security-Policy
     public var nonce: HTMLAttributeTypes.Nonce?
-    
+
     /// For registration with the Attribution Reporting API
     public var attributionsrc: HTMLAttributeTypes.AttributionSrc?
-    
+
     /// Creates a new Script element with the specified attributes.
     ///
     /// - Parameters:
@@ -142,7 +141,6 @@ public struct Script: HTMLElement {
         self.crossorigin = crossorigin
         self.nonce = nonce
         self.attributionsrc = attributionsrc
-        
+
     }
 }
-

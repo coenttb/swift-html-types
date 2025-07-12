@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -37,13 +36,12 @@ import HTMLAttributeTypes
 public struct EmbedFallback: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "noembed" }
-    
+
     /// Creates a new EmbedFallback element with the specified content.
     @available(*, deprecated, message: "The <noembed> element is deprecated in HTML standards. Use <object> with fallback content instead.")
     public init(
-        
+
     ) {
-        
+
     }
 }
-

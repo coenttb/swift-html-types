@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the HTML type attribute for the `<script>` element.
 ///
@@ -46,10 +45,10 @@
 public struct ScriptType: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "type" }
-    
+
     /// The script type value
     public var rawValue: String
-    
+
     /// Initialize with a string value
     public init(value: String) {
         self.rawValue = value
@@ -57,19 +56,19 @@ public struct ScriptType: StringAttribute, CustomStringConvertible {
 }
 
 extension ScriptType {
-    
+
     /// JavaScript module
     public static let module = ScriptType("module")
-    
+
     /// Import map
     public static let importmap = ScriptType("importmap")
-    
+
     /// Speculation rules
     public static let speculationrules = ScriptType("speculationrules")
-    
+
     /// JSON data
     public static let json = ScriptType("application/json")
-    
+
     /// Text data
     public static let text = ScriptType("text/plain")
 }

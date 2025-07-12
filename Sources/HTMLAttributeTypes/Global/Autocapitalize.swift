@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // This source file is part of the Swift open source project
 //
@@ -10,8 +10,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Controls whether and how user input should be automatically capitalized as it is entered by the user.
 ///
@@ -64,9 +63,9 @@
 public struct Autocapitalize: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "autocapitalize" }
-    
+
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
@@ -80,7 +79,7 @@ extension Autocapitalize {
     /// <input type="text" autocapitalize="none" />
     /// ```
     @inlinable public static var none: Self { "none" }
-    
+
     /// Do not automatically capitalize any text (alias for `none`)
     ///
     /// Example:
@@ -88,7 +87,7 @@ extension Autocapitalize {
     /// <input type="text" autocapitalize="off" />
     /// ```
     @inlinable public static var off: Self { "off" }
-    
+
     /// Automatically capitalize the first character of each sentence
     ///
     /// Example:
@@ -96,7 +95,7 @@ extension Autocapitalize {
     /// <input type="text" autocapitalize="sentences" />
     /// ```
     @inlinable public static var sentences: Self { "sentences" }
-    
+
     /// Automatically capitalize the first character of each sentence (alias for `sentences`)
     ///
     /// Example:
@@ -104,7 +103,7 @@ extension Autocapitalize {
     /// <input type="text" autocapitalize="on" />
     /// ```
     @inlinable public static var on: Self { "on" }
-    
+
     /// Automatically capitalize the first character of each word
     ///
     /// Example:
@@ -112,7 +111,7 @@ extension Autocapitalize {
     /// <input type="text" autocapitalize="words" />
     /// ```
     @inlinable public static var words: Self { "words" }
-    
+
     /// Automatically capitalize every character
     ///
     /// Example:

@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -46,16 +45,16 @@ import HTMLAttributeTypes
 public struct TableDataCell: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "td" }
-    
+
     /// Number of columns this cell spans
     public var colspan: ColSpan?
-    
+
     /// Space-separated list of IDs of header cells that provide headers for this cell
     public var headers: Headers?
-    
+
     /// Number of rows this cell spans
     public var rowspan: RowSpan?
-    
+
     /// Creates a new TableDataCell element with the specified attributes.
     ///
     /// - Parameters:
@@ -72,4 +71,3 @@ public struct TableDataCell: HTMLElement {
         self.rowspan = rowspan
     }
 }
-

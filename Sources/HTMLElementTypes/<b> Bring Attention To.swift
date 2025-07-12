@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,7 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -47,8 +47,7 @@ import HTMLAttributeTypes
 ///   additional semantic weight beyond bringing attention to the text.
 public struct B: HTMLElement {
     public static var tag: String { "b" }
-    
-    /// Creates a new B element with the specified content.
-    public init(){}
-}
 
+    /// Creates a new B element with the specified content.
+    public init() {}
+}

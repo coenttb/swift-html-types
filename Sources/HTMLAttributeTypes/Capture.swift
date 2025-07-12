@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// An attribute that specifies which camera or device should be used for capturing media.
 ///
@@ -49,10 +48,10 @@
 public struct Capture: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "capture" }
-    
+
     /// The capture device value
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
@@ -61,7 +60,7 @@ public struct Capture: StringAttribute {
 extension Capture {
     /// Convenience initializer for "user" value (front-facing camera)
     public static let user: Capture = "user"
-    
+
     /// Convenience initializer for "environment" value (back-facing camera)
     public static let environment: Capture = "environment"
 }

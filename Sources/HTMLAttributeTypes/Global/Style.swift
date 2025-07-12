@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Defines inline CSS styles for an HTML element.
 ///
@@ -65,10 +64,10 @@
 public struct Style: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "style" }
-    
+
     /// The CSS declarations
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }
@@ -80,10 +79,10 @@ extension Style {
         let formattedDeclarations = declarations.map { key, value in
             "\(key): \(value)"
         }.joined(separator: "; ")
-        
+
         self = .init(formattedDeclarations)
     }
-    
+
     /// Initialize with a dictionary of CSS properties and values
     public init(properties: [String: String]) {
         self.init(properties)

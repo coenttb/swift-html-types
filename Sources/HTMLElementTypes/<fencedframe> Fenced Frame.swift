@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -41,16 +40,16 @@ import HTMLAttributeTypes
 public struct FencedFrame: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "fencedframe" }
-    
+
     /// Specifies a Permissions Policy for the fencedframe
     public var allow: HTMLAttributeTypes.Allow?
-    
+
     /// Height of the fencedframe in CSS pixels (default is 150)
     public var height: HTMLAttributeTypes.Height?
-    
+
     /// Width of the fencedframe in CSS pixels (default is 300)
     public var width: HTMLAttributeTypes.Width?
-    
+
     /// Creates a new FencedFrame element with the specified attributes.
     ///
     /// - Parameters:
@@ -65,12 +64,10 @@ public struct FencedFrame: HTMLElement {
         self.allow = allow
         self.height = height
         self.width = width
-        
+
     }
 }
-
 
 extension FencedFrame {
     public typealias Allow = String
 }
-

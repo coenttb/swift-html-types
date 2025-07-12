@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -34,8 +33,7 @@ import HTMLAttributeTypes
 public struct Big: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "big" }
-    
-    /// Creates a new Big element.
-    public init(){}
-}
 
+    /// Creates a new Big element.
+    public init() {}
+}

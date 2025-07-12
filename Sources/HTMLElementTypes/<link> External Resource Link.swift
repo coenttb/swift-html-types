@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -47,49 +46,49 @@ import HTMLAttributeTypes
 ///   It is a void element and does not have a closing tag.
 public struct Link: HTMLElement {
     public static var tag: String { "link" }
-    
+
     /// The type of resource being loaded (for preload/modulepreload).
     public var `as`: As?
-    
+
     /// Indicates which operations should be blocked on fetching the resource.
     ///
     /// Can only be used with rel="stylesheet" or rel="expect".
     public var blocking: HTMLAttributeTypes.Blocking?
-    
+
     /// Indicates whether CORS must be used when fetching the resource.
     public var crossorigin: HTMLAttributeTypes.Crossorigin?
-    
+
     /// For stylesheets, indicates whether the stylesheet should be loaded and applied.
     public var disabled: HTMLAttributeTypes.Disabled?
-    
+
     /// Provides a hint of the relative priority for fetching this resource.
     public var fetchpriority: HTMLAttributeTypes.FetchPriority?
-    
+
     /// Specifies the URL of the linked resource.
     public var href: HTMLAttributeTypes.Href?
-    
+
     /// Indicates the language of the linked resource.
     public var hreflang: HTMLAttributeTypes.Hreflang?
-    
+
     /// For preloaded images, has similar syntax and semantics as the sizes attribute.
     public var imagesizes: HTMLAttributeTypes.ImageSizes?
-    
+
     /// For preloaded images, has similar syntax and semantics as the srcset attribute.
     public var imagesrcset: HTMLAttributeTypes.ImageSrcSet?
-    
+
     /// Contains inline metadata for verifying the integrity of the resource.
     ///
     /// A base64-encoded cryptographic hash of the resource for subresource integrity.
     public var integrity: HTMLAttributeTypes.Integrity?
-    
+
     /// Specifies the media that the linked resource applies to.
     ///
     /// Used primarily for stylesheets to target specific media types/queries.
     public var media: HTMLAttributeTypes.Media?
-    
+
     /// Controls which referrer is sent when fetching the resource.
     public var referrerpolicy: HTMLAttributeTypes.ReferrerPolicy?
-    
+
     /// Defines the relationship of the linked document to the current document.
     ///
     /// This is a required attribute and must be a space-separated list of link types.
@@ -100,21 +99,21 @@ public struct Link: HTMLElement {
     /// - alternate: Alternative version of the document
     /// - manifest: Web app manifest
     public var rel: HTMLAttributeTypes.Rel?
-    
+
     /// Defines the sizes of the icons for visual media contained in the resource.
     ///
     /// Must be present only if the rel contains "icon" or similar types.
     /// Format is either "any" for vector formats, or space-separated pairs like "16x16 32x32".
     public var sizes: HTMLAttributeTypes.Sizes?
-    
+
     /// Special semantics for stylesheet links to define default or alternate stylesheets.
     public var title: HTMLAttributeTypes.Title?
-    
+
     /// Defines the MIME type of the linked resource.
     ///
     /// Examples include "text/css" for stylesheets or "image/x-icon" for icons.
     public var type: HTMLAttributeTypes.LinkType?
-    
+
     /// Creates a new Link element with the specified attributes.
     ///
     /// - Parameters:
@@ -170,4 +169,3 @@ public struct Link: HTMLElement {
         self.type = type
     }
 }
-

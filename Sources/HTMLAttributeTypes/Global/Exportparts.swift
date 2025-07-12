@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Allows selection and styling of elements within nested shadow trees by exporting their part names.
 ///
@@ -65,39 +64,39 @@
 public struct Exportparts: Attribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "exportparts" }
-    
+
     /// The part mappings to export
     private let partMappings: [PartMapping]
-    
+
     /// Initialize with part names to export
     public init(_ partNames: [String]) {
         self.partMappings = partNames.map { PartMapping(originalName: $0, exposedName: $0) }
     }
-    
+
     /// Initialize with part names to export as variadic parameters
     public init(_ partNames: String...) {
         self.partMappings = partNames.map { PartMapping(originalName: $0, exposedName: $0) }
     }
-    
+
     /// Initialize with explicit part name mappings
     public init(_ mappings: [PartMapping]) {
         self.partMappings = mappings
     }
-    
+
     /// A mapping from original part name to exposed part name
     public struct PartMapping: Sendable, Equatable {
         /// The original part name in the shadow DOM
         public let originalName: String
-        
+
         /// The name to expose to ancestor DOMs
         public let exposedName: String
-        
+
         /// Initialize with original and exposed part names
         public init(originalName: String, exposedName: String) {
             self.originalName = originalName
             self.exposedName = exposedName
         }
-        
+
         /// The string representation of this mapping
         public var description: String {
             if originalName == exposedName {

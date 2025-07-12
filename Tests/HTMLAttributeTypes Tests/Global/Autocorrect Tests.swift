@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,11 +8,11 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 
 import Foundation
-import Testing
 import HTMLAttributeTypes
+import Testing
 
 @Suite("Autocorrect Test")
 struct AutocorrectTests {
@@ -20,7 +20,7 @@ struct AutocorrectTests {
     func attribute() {
         #expect(Autocorrect.attribute == "autocorrect")
     }
-    
+
     @Test(
         "Autocorrect cases description should match the spec",
         arguments: Autocorrect.allCases
@@ -33,7 +33,7 @@ struct AutocorrectTests {
         default: ()
         }
     }
-    
+
     @Test("Autocorrect should conform to CaseIterable")
     func conformsToCaseIterable() {
         #expect(Autocorrect.allCases.count == 3)
@@ -41,7 +41,7 @@ struct AutocorrectTests {
         #expect(Autocorrect.allCases.contains(.empty))
         #expect(Autocorrect.allCases.contains(.off))
     }
-    
+
     @Test(
         "Autocorrect rawValue should match description",
         arguments: Autocorrect.allCases
@@ -49,19 +49,19 @@ struct AutocorrectTests {
     func rawValueMatchesDescription(autocorrect: Autocorrect) {
         #expect(autocorrect.rawValue == autocorrect.description)
     }
-    
+
     @Test(
         "Autocorrect should be initializable from rawValue",
         arguments: [
             ("on", Autocorrect.on),
             ("\"\"", Autocorrect.empty),
-            ("off", Autocorrect.off),
+            ("off", Autocorrect.off)
         ]
     )
     func initializableFromRawValue(input: String, expected: Autocorrect?) {
         #expect(Autocorrect(rawValue: input) == expected)
     }
-    
+
     @Test("Autocorrect empty case should have the correct raw value")
     func emptyCaseRawValue() {
         #expect(Autocorrect.empty.rawValue == "\"\"")

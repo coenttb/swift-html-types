@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// An attribute that specifies the increment granularity for numeric or date/time inputs.
 ///
@@ -64,7 +63,7 @@
 /// ```html
 /// <input type="number" step="any">
 /// ```
-//public struct Step: Attribute {
+// public struct Step: Attribute {
 //    /// The name of the HTML attribute
 //    @inlinable public static var attribute: String { "step" }
 //
@@ -114,7 +113,7 @@
 //
 //    /// Any valid value (no stepping)
 //    public static let any = Step(special: .any)
-//}
+// }
 
 /// An attribute that specifies the increment granularity for numeric or date/time inputs.
 ///
@@ -149,17 +148,17 @@
 /// ```
 public enum Step: StringAttribute, Sendable, Equatable, ExpressibleByFloatLiteral, ExpressibleByIntegerLiteral {
     @inlinable public static var attribute: String { "step" }
-    
+
     /// A specific numeric step value.
     case value(Double)
-    
+
     /// No stepping is implied, and any value is allowed in the specified range.
     case any
-    
+
     public var rawValue: String {
         description
     }
-    
+
     public init(value: String) {
         if value == "any" {
             self = .any
@@ -170,15 +169,15 @@ public enum Step: StringAttribute, Sendable, Equatable, ExpressibleByFloatLitera
             self = .any
         }
     }
-    
+
     public init(floatLiteral value: Double) {
         self = .value(value)
     }
-    
+
     public init(integerLiteral value: IntegerLiteralType) {
         self = .value(Double(value))
     }
-    
+
     public var description: String {
         switch self {
         case .value(let value):
@@ -187,22 +186,22 @@ public enum Step: StringAttribute, Sendable, Equatable, ExpressibleByFloatLitera
             return "any"
         }
     }
-    
+
     /// Step of 1 (integer values only, default for number/range)
     public static let integer: Self = 1
-    
+
     /// Step of 0.1 (tenth precision)
     public static let tenth: Self = 0.1
-    
+
     /// Step of 0.01 (hundredth precision)
     public static let hundredth: Self = 0.01
-    
+
     /// Step of 0.001 (thousandth precision)
     public static let thousandth: Self = 0.001
-    
+
     /// Step for money values (cents precision)
     public static let money: Self = 0.01
-    
+
     /// Step of 7 days (weekly)
     public static let weekly: Self = 7
 }

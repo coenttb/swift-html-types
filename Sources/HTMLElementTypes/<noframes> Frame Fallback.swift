@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents an HTML noframes element (`<noframes>`), which provides content for browsers 
 /// that don't support frames.
@@ -38,12 +37,11 @@
 public struct FrameFallback: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "noframes" }
-    
+
     /// Creates a new FrameFallback element with the specified content.
     public init(
-        
+
     ) {
-        
+
     }
 }
-

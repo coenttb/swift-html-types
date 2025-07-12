@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,16 +8,15 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 public struct Cols: StringAttribute {
     /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "cols" } 
-    
+    @inlinable public static var attribute: String { "cols" }
+
     /// The attribute value
     public let rawValue: String
-    
+
     public init(value: String) {
         self.rawValue = value
     }

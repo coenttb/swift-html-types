@@ -23,7 +23,7 @@ let package = Package(
         .library(name: .htmlTypes, targets: [.htmlTypes]),
         .library(name: .htmlTypesFoundation, targets: [.htmlTypesFoundation]),
         .library(name: .htmlAttributes, targets: [.htmlAttributes]),
-        .library(name: .htmlElements, targets: [.htmlElements]),
+        .library(name: .htmlElements, targets: [.htmlElements])
     ],
     dependencies: [],
     targets: [
@@ -31,7 +31,7 @@ let package = Package(
             name: .htmlTypes,
             dependencies: [
                 .htmlAttributes,
-                .htmlElements,
+                .htmlElements
             ]
         ),
         .target(
@@ -47,7 +47,7 @@ let package = Package(
         .target(
             name: .htmlElements,
             dependencies: [
-                .htmlAttributes,
+                .htmlAttributes
             ]
         ),
         .testTarget(
@@ -59,7 +59,7 @@ let package = Package(
         .target(
             name: .htmlTypesFoundation,
             dependencies: [
-                .htmlTypes,
+                .htmlTypes
             ]
         ),
         .testTarget(
@@ -67,7 +67,7 @@ let package = Package(
             dependencies: [
                 .htmlElements
             ]
-        ),
+        )
     ]
 )
 

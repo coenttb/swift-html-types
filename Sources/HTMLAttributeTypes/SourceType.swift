@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// Represents the HTML type attribute for the `<link>` and `<source>` elements.
 ///
@@ -40,18 +39,18 @@
 public struct SourceType: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "type" }
-    
+
     /// The MIME type value as a string
     public var rawValue: String
-    
+
     public let codecs: Codecs?
-    
+
     /// Initialize with a string value
     public init(value: String) {
         self.rawValue = value
         self.codecs = nil
     }
-    
+
     /// Initialize with a string value
     public init(value: String, codecs: Codecs? = nil) {
         self.rawValue = value
@@ -62,16 +61,16 @@ public struct SourceType: StringAttribute, CustomStringConvertible {
 extension SourceType {
     public struct Codecs: Sendable, Equatable, ExpressibleByBooleanLiteral {
         public var rawValue: Bool
-        
-        public init(_ value: Bool){
+
+        public init(_ value: Bool) {
             self.rawValue = value
         }
-        
+
         public init(booleanLiteral value: BooleanLiteralType) {
             self = .init(value)
         }
     }
-        
+
     /// Returns the string representation of the type value
     public var description: String {
         if codecs == true {
@@ -91,28 +90,28 @@ extension SourceType: ExpressibleByStringLiteral {
 extension SourceType {
     /// CSS stylesheet
     public static let css = SourceType("text/css")
-    
+
     /// JavaScript
     public static let javascript = SourceType("text/javascript")
-    
+
     /// Favicon
     public static let icon = SourceType("image/x-icon")
-    
+
     /// SVG image
     public static let svg = SourceType("image/svg+xml")
-    
+
     /// PNG image
     public static let png = SourceType("image/png")
-    
+
     /// Web app manifest
     public static let manifest = SourceType("application/manifest+json")
-    
+
     /// RSS feed
     public static let rss = SourceType("application/rss+xml")
-    
+
     /// Atom feed
     public static let atom = SourceType("application/atom+xml")
-    
+
     /// JSON data
     public static let json = SourceType("application/json")
 }

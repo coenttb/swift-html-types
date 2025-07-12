@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -53,12 +52,12 @@ import HTMLAttributeTypes
 public struct ListItem: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "li" }
-    
+
     /// The ordinal value of the list item (only meaningful within `<ol>` elements).
     /// This integer attribute indicates the current ordinal value as defined by the
     /// parent `<ol>` element. List items that follow this one continue numbering from this value.
     public var value: Value<Int>?
-    
+
     /// Creates a new list item element with the specified value.
     ///
     /// - Parameters:
@@ -67,7 +66,6 @@ public struct ListItem: HTMLElement {
         value: Value<Int>? = nil
     ) {
         self.value = value
-        
+
     }
 }
-

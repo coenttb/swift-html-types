@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// An attribute that defines the relationship between the current document and a linked resource.
 ///
@@ -68,10 +67,10 @@
 public struct Rel: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "rel" }
-    
+
     /// The link relation values as a space-separated string
     public var rawValue: String
-    
+
     /// Initialize with a single link relation value
     public init(value: String) {
         self.rawValue = value
@@ -80,7 +79,7 @@ public struct Rel: StringAttribute, CustomStringConvertible {
 
 extension Rel: ExpressibleByArrayLiteral {
     public typealias ArrayLiteralElement = String
-    
+
     public init(arrayLiteral elements: String...) {
         self.rawValue = elements.joined(separator: " ")
     }
@@ -105,7 +104,7 @@ extension Rel {
     @inlinable public static var next: Self { "next" }
     @inlinable public static var prev: Self { "prev" }
     @inlinable public static var search: Self { "search" }
-    
+
     // Link-specific types
     @inlinable public static var canonical: Self { "canonical" }
     @inlinable public static var stylesheet: Self { "stylesheet" }
@@ -116,7 +115,7 @@ extension Rel {
     @inlinable public static var prefetch: Self { "prefetch" }
     @inlinable public static var preconnect: Self { "preconnect" }
     @inlinable public static var dns_prefetch: Self { "dns-prefetch" }
-    
+
     // Anchor-specific types
     @inlinable public static var bookmark: Self { "bookmark" }
     @inlinable public static var external: Self { "external" }
@@ -125,9 +124,8 @@ extension Rel {
     @inlinable public static var noreferrer: Self { "noreferrer" }
     @inlinable public static var tag: Self { "tag" }
     @inlinable public static var me: Self { "me" }
-    
+
     // Security/privacy related types
     @inlinable public static var privacy_policy: Self { "privacy-policy" }
     @inlinable public static var terms_of_service: Self { "terms-of-service" }
 }
-

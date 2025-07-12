@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 import HTMLAttributeTypes
 
@@ -63,15 +62,15 @@ import HTMLAttributeTypes
 public struct Details: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "details" }
-    
+
     /// Boolean attribute that indicates whether the details are currently visible.
     /// When present, the details are shown; when absent, the details are hidden.
     public var open: Open?
-    
+
     /// Specifies a group name for multiple connected details elements.
     /// When multiple details elements have the same name value, only one can be open at a time.
     public var name: Name?
-    
+
     /// Creates a new Details element with the specified attributes.
     ///
     /// - Parameters:
@@ -83,7 +82,6 @@ public struct Details: HTMLElement {
     ) {
         self.open = open
         self.name = name
-        
+
     }
 }
-

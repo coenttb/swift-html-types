@@ -1,4 +1,4 @@
-//===----------------------------------------------------------------------===//
+// ===----------------------------------------------------------------------===//
 //
 // Copyright (c) 2025 Coen ten Thije Boonkkamp
 // Licensed under Apache License v2.0
@@ -8,8 +8,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-//===----------------------------------------------------------------------===//
-
+// ===----------------------------------------------------------------------===//
 
 /// An attribute that specifies the minimum value allowed for an input element or other form controls.
 ///
@@ -72,10 +71,10 @@
 public struct Min: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "min" }
-    
+
     /// The attribute value
     public let rawValue: String
-    
+
     /// Initialize with a value for the min attribute
     public init(value: String) {
         self.rawValue = value
@@ -87,20 +86,20 @@ extension Min {
     public enum DateFormat {
         /// Full date (yyyy-MM-dd)
         case fullDate
-        
+
         /// Month only (yyyy-MM)
         case month
-        
+
         /// Week (yyyy-Www)
         case week
-        
+
         /// Time (HH:mm)
         case time
-        
+
         /// Local date and time (yyyy-MM-ddTHH:mm)
         case dateTimeLocal
     }
-    
+
     /// Zero value for numeric inputs
     public static let zero = Min(0)
 }
@@ -116,4 +115,3 @@ extension Min: ExpressibleByFloatLiteral {
         self.rawValue = String(value)
     }
 }
-
