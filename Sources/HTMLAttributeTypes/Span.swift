@@ -49,7 +49,7 @@
 /// ```
 public struct Span: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "span"
+    @inlinable public static var attribute: String { "span" }
     
     /// The span value
     public var rawValue: String

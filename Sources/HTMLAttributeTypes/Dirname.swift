@@ -55,7 +55,7 @@
 /// ```
 public struct Dirname: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "dirname"
+    @inlinable public static var attribute: String { "dirname" }
     
     /// The attribute value
     public let rawValue: String

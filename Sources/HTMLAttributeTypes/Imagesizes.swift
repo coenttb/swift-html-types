@@ -13,7 +13,7 @@
 
 public struct ImageSizes: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "imagesizes"
+    @inlinable public static var attribute: String { "imagesizes" }
     
     /// The attribute value
     public let rawValue: String

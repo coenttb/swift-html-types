@@ -59,7 +59,7 @@
 /// ```
 public struct DataAttribute: Attribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "data"
+    @inlinable public static var attribute: String { "data" }
     public static let prefix: String = "data-"
     
     /// The data attribute name (without the "data-" prefix)

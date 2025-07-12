@@ -14,7 +14,7 @@
 @dynamicMemberLookup
 public struct Default: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "default"
+    @inlinable public static var attribute: String { "default" }
     
     public var rawValue: Bool
   

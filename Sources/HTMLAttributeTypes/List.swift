@@ -67,7 +67,7 @@
 /// ```
 public struct List: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "list"
+    @inlinable public static var attribute: String { "list" }
     
     /// The attribute value
     public let rawValue: String

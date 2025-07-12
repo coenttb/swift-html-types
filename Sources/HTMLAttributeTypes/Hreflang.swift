@@ -13,7 +13,7 @@
 
 public struct Hreflang: StringAttribute {
     
-    public static let attribute: String = "hreflang"
+    @inlinable public static var attribute: String { "hreflang" }
     
     public let rawValue: String
     

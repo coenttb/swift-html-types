@@ -78,7 +78,7 @@
 /// ```
 public struct Itemref: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "itemref"
+    @inlinable public static var attribute: String { "itemref" }
     
     /// The space-separated list of element IDs
     public let rawValue: String

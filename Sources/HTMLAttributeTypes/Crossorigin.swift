@@ -52,7 +52,7 @@
 public struct Crossorigin: StringAttribute {
     
     /// The name of the HTML attribute
-    public static let attribute: String = "crossorigin"
+    @inlinable public static var attribute: String { "crossorigin" }
     
     public let rawValue: String
     

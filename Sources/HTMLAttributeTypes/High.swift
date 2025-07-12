@@ -28,7 +28,7 @@
 /// ```
 public struct High: Attribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "high"
+    @inlinable public static var attribute: String { "high" }
     
     /// The attribute value
     public let value: Double

@@ -67,7 +67,7 @@
 /// ```
 public struct Rel: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "rel"
+    @inlinable public static var attribute: String { "rel" }
     
     /// The link relation values as a space-separated string
     public var rawValue: String

@@ -56,7 +56,7 @@
 /// ```
 public struct Itemid: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "itemid"
+    @inlinable public static var attribute: String { "itemid" }
     
     /// The global identifier value (URL or URN)
     public let rawValue: String

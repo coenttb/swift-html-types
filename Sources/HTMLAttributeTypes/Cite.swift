@@ -27,7 +27,7 @@
 /// ```
 public struct Cite: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "cite"
+    @inlinable public static var attribute: String { "cite" }
     
     /// The attribute value (URL to the source document)
     public let rawValue: String

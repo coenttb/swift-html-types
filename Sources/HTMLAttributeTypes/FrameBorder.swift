@@ -14,7 +14,7 @@
 /// Represents the frameborder attribute for frame elements.
 public struct FrameBorder: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "frameborder"
+    @inlinable public static var attribute: String { "frameborder" }
     
     /// The attribute value
     public let rawValue: String

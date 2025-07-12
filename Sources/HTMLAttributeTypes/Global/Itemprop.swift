@@ -77,7 +77,7 @@
 /// ```
 public struct Itemprop: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "itemprop"
+    @inlinable public static var attribute: String { "itemprop" }
     
     /// The property name or space-separated list of property names
     public let rawValue: String

@@ -29,7 +29,7 @@
 /// ```
 public struct Face: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "face"
+    @inlinable public static var attribute: String { "face" }
     
     /// The attribute value
     public let rawValue: String

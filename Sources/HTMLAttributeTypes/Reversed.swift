@@ -28,7 +28,7 @@
 @dynamicMemberLookup
 public struct Reversed: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "reversed"
+    @inlinable public static var attribute: String { "reversed" }
     
     /// The attribute value
     public var rawValue: Bool

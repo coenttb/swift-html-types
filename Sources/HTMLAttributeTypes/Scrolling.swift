@@ -29,7 +29,7 @@
 /// ```
 public struct Scrolling: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "scrolling"
+    @inlinable public static var attribute: String { "scrolling" }
     
     public var rawValue: String
     

@@ -44,7 +44,7 @@
 /// ```
 public struct Enterkeyhint: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "enterkeyhint"
+    @inlinable public static var attribute: String { "enterkeyhint" }
     
     public let rawValue: String
     

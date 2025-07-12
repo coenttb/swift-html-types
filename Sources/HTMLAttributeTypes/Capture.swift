@@ -48,7 +48,7 @@
 /// ```
 public struct Capture: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "capture"
+    @inlinable public static var attribute: String { "capture" }
     
     /// The capture device value
     public let rawValue: String

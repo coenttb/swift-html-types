@@ -16,7 +16,7 @@
 /// These values are commonly used with the name attribute to provide
 /// various types of document-level metadata.
 public struct MetaName: StringAttribute {
-    public static let attribute: String = "name"
+    @inlinable public static var attribute: String { "name" }
     
     public let rawValue: String
     

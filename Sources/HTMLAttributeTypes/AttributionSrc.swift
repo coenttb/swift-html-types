@@ -63,7 +63,7 @@
 ///   in all browsers.
 public struct AttributionSrc: Attribute, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "attributionsrc"
+    @inlinable public static var attribute: String { "attributionsrc" }
     
     /// The type of attribute value
     public enum Value: Sendable, Equatable {

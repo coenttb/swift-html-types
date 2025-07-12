@@ -53,7 +53,7 @@
 /// ```
 public struct Maxlength: Attribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "maxlength"
+    @inlinable public static var attribute: String { "maxlength" }
     
     /// The maximum length value
     public var value: Int

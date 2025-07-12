@@ -81,7 +81,7 @@
 /// ```
 public struct Translate: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "translate"
+    @inlinable public static var attribute: String { "translate" }
     
     public let rawValue: String
     

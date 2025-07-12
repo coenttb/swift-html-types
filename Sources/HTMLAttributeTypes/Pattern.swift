@@ -53,7 +53,7 @@
 /// ```
 public struct Pattern: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "pattern"
+    @inlinable public static var attribute: String { "pattern" }
     
     /// The attribute value
     public let rawValue: String

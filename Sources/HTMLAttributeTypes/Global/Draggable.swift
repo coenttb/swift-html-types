@@ -52,7 +52,7 @@
 /// ```
 public struct Draggable: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "draggable"
+    @inlinable public static var attribute: String { "draggable" }
     
     public let rawValue: String
     

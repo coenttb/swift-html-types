@@ -63,7 +63,7 @@
 @dynamicMemberLookup
 public struct Readonly: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "readonly"
+    @inlinable public static var attribute: String { "readonly" }
     
     public var rawValue: Bool
   

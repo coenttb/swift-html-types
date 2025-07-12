@@ -14,7 +14,7 @@
 @dynamicMemberLookup
 public struct Open: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "open"
+    @inlinable public static var attribute: String { "open" }
     
     public var rawValue: Bool
   

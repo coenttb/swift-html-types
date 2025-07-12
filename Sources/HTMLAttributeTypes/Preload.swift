@@ -14,7 +14,7 @@
 /// Represents the preload attribute values for the video element.
 public struct Preload: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "preload"
+    @inlinable public static var attribute: String { "preload" }
     
     /// The attribute value
     public var rawValue: String

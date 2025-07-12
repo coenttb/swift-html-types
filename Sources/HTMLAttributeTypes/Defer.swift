@@ -14,7 +14,7 @@
 @dynamicMemberLookup
 public struct Defer: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "defer"
+    @inlinable public static var attribute: String { "defer" }
     
     public var rawValue: Bool
   

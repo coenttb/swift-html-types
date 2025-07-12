@@ -13,7 +13,7 @@
 
 public struct ImageSrcSet: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "imagesrcset"
+    @inlinable public static var attribute: String { "imagesrcset" }
     
     /// The attribute value
     public let rawValue: String

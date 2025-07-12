@@ -14,7 +14,7 @@
 @dynamicMemberLookup
 public struct Loop: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "loop"
+    @inlinable public static var attribute: String { "loop" }
     
     public var rawValue: Bool
   

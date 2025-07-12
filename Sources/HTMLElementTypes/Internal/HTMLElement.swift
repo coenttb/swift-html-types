@@ -15,6 +15,12 @@ public protocol HTMLElement: Sendable, Equatable {
     static var tag: String { get }
 }
 
+extension HTMLElement {
+    @inlinable public static var isVoid: Bool {
+        Self.self is HTMLVoidElement.Type
+    }
+}
+
 public protocol HTMLVoidElement {}
 
 extension Area: HTMLVoidElement {}

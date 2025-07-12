@@ -19,7 +19,7 @@
 /// It specifies the type of content being loaded, which is necessary for request matching,
 /// application of correct content security policy, and setting of correct Accept request header.
 public struct As: StringAttribute {
-    public static let attribute: String = "as"
+    @inlinable public static var attribute: String { "as" }
     
     public let rawValue: String
     

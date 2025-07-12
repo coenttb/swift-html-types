@@ -54,7 +54,7 @@
 /// ```
 public struct Inputmode: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "inputmode"
+    @inlinable public static var attribute: String { "inputmode" }
     
     public let rawValue: String
     

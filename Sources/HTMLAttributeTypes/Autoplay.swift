@@ -13,7 +13,7 @@
 @dynamicMemberLookup
 public struct Autoplay: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "autoplay"
+    @inlinable public static var attribute: String { "autoplay" }
     
     public var rawValue: Bool
   

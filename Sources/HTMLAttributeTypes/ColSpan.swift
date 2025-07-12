@@ -26,7 +26,7 @@
 /// ```
 public struct ColSpan: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "colspan"
+    @inlinable public static var attribute: String { "colspan" }
     
     public let rawValue: String
     

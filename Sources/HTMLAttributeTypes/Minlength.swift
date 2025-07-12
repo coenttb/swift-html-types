@@ -54,7 +54,7 @@
 /// ```
 public struct Minlength: Attribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "minlength"
+    @inlinable public static var attribute: String { "minlength" }
     
     /// The minimum length value
     public var value: Int

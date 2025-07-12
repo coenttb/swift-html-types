@@ -51,7 +51,7 @@
 /// ```
 public struct For: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "for"
+    @inlinable public static var attribute: String { "for" }
     
     /// The value of the for attribute (ID or space-separated list of IDs)
     public let rawValue: String

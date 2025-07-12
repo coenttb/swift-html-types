@@ -80,7 +80,7 @@
 /// - "zh" - Chinese
 public struct Lang: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "lang"
+    @inlinable public static var attribute: String { "lang" }
     
     /// The language tag value
     public let rawValue: String

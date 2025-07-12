@@ -17,7 +17,7 @@
 /// the http-equiv attribute to provide document-level directives.
 public struct HttpEquiv: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "http-equiv"
+    @inlinable public static var attribute: String { "http-equiv" }
     
     /// The attribute value
     public let rawValue: String

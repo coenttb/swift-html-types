@@ -14,7 +14,7 @@
 /// Represents the marginwidth attribute for frame elements.
 public struct MarginWidth: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "marginwidth"
+    @inlinable public static var attribute: String { "marginwidth" }
     
     /// The attribute value
     public let rawValue: String

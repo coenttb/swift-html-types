@@ -13,7 +13,7 @@
 
 public struct FormEncType: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "formenctype"
+    @inlinable public static var attribute: String { "formenctype" }
     
     /// The attribute value
     public let rawValue: String

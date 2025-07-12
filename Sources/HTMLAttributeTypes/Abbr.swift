@@ -13,7 +13,7 @@
 
 public struct Abbr: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "abbr"
+    @inlinable public static var attribute: String { "abbr" }
     
     /// The URL for form submission
     public let rawValue: String

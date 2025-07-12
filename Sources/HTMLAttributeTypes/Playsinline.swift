@@ -15,7 +15,7 @@
 @dynamicMemberLookup
 public struct Playsinline: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "playsinline"
+    @inlinable public static var attribute: String { "playsinline" }
     
     public var rawValue: Bool
     

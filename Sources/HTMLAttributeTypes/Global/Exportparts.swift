@@ -64,7 +64,7 @@
 /// ```
 public struct Exportparts: Attribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "exportparts"
+    @inlinable public static var attribute: String { "exportparts" }
     
     /// The part mappings to export
     private let partMappings: [PartMapping]

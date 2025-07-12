@@ -45,7 +45,7 @@
 /// ```
 public struct ScriptType: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "type"
+    @inlinable public static var attribute: String { "type" }
     
     /// The script type value
     public var rawValue: String

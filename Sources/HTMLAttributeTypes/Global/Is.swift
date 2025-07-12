@@ -68,7 +68,7 @@
 /// ```
 public struct Is: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "is"
+    @inlinable public static var attribute: String { "is" }
     
     /// The name of the custom element
     public let rawValue: String

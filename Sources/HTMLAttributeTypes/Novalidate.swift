@@ -70,7 +70,7 @@
 @dynamicMemberLookup
 public struct Novalidate: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "novalidate"
+    @inlinable public static var attribute: String { "novalidate" }
     
     public var rawValue: Bool
   

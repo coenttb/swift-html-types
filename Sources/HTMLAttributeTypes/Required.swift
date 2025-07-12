@@ -67,7 +67,7 @@
 @dynamicMemberLookup
 public struct Required: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "required"
+    @inlinable public static var attribute: String { "required" }
     
     public var rawValue: Bool
   

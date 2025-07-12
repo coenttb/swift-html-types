@@ -31,7 +31,7 @@
 /// - **Token lists**: Space-separated tokens that describe expected data types (e.g., "email", "name", "street-address")
 public struct Autocomplete: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "autocomplete"
+    @inlinable public static var attribute: String { "autocomplete" }
     
     /// The autocomplete value
     public let rawValue: String

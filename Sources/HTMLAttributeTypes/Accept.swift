@@ -48,7 +48,7 @@
 /// ```
 public struct Accept: Attribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "accept"
+    @inlinable public static var attribute: String { "accept" }
     
     /// The accepted file types
     private let fileTypes: [FileType]

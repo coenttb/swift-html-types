@@ -14,7 +14,7 @@
 @dynamicMemberLookup
 public struct DisableRemotePlayback: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "disableremoteplayback"
+    @inlinable public static var attribute: String { "disableremoteplayback" }
     
     public var rawValue: Bool
   

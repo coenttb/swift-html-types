@@ -24,7 +24,7 @@
 /// ```
 public struct Media: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "media"
+    @inlinable public static var attribute: String { "media" }
     
     /// The attribute value
     public let rawValue: String

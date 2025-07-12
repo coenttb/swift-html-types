@@ -44,7 +44,7 @@
 /// ```
 public struct LinkType: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "type"
+    @inlinable public static var attribute: String { "type" }
     
     /// The attribute value
     public let rawValue: String

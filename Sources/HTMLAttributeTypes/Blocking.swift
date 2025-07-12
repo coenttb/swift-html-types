@@ -29,7 +29,7 @@
 /// ```
 public struct Blocking: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "blocking"
+    @inlinable public static var attribute: String { "blocking" }
     
     /// The attribute value
     public let rawValue: String

@@ -33,7 +33,7 @@
 /// ```
 public struct DateTime: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "datetime"
+    @inlinable public static var attribute: String { "datetime" }
     
     /// The attribute value
     public let rawValue: String

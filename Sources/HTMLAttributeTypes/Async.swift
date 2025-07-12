@@ -13,7 +13,7 @@
 @dynamicMemberLookup
 public struct Async: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "async"
+    @inlinable public static var attribute: String { "async" }
     
     public var rawValue: Bool
   

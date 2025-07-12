@@ -69,7 +69,7 @@
 /// ```
 public struct FormMethod: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "formmethod"
+    @inlinable public static var attribute: String { "formmethod" }
     
     /// The attribute value
     public let rawValue: String

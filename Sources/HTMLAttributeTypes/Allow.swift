@@ -13,7 +13,7 @@
 @dynamicMemberLookup
 public struct Allow: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "allow"
+    @inlinable public static var attribute: String { "allow" }
     
     public var rawValue: Bool
   

@@ -43,7 +43,7 @@
 /// ```
 public struct TextareaWrap: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "wrap"
+    @inlinable public static var attribute: String { "wrap" }
     
     /// The wrap value
     public var rawValue: String

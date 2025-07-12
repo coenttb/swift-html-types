@@ -33,7 +33,7 @@
 /// ```
 public struct SrcLang: StringAttribute, ExpressibleByStringInterpolation, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "srclang"
+    @inlinable public static var attribute: String { "srclang" }
     
     /// The language code
     public var rawValue: String

@@ -14,7 +14,7 @@
 @dynamicMemberLookup
 public struct Controls: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "controls"
+    @inlinable public static var attribute: String { "controls" }
     
     public var rawValue: Bool
   

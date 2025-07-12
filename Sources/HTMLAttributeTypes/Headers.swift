@@ -33,7 +33,7 @@
 /// ```
 public struct Headers: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "headers"
+    @inlinable public static var attribute: String { "headers" }
     
     /// Contains a list of space-separated strings, each corresponding to the id attribute of the <th> elements that provide headings for this table cell.
     public let rawValue: String

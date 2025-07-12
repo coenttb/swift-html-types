@@ -66,7 +66,7 @@
 /// ```
 //public struct Step: Attribute {
 //    /// The name of the HTML attribute
-//    public static let attribute: String = "step"
+//    @inlinable public static var attribute: String { "step" }
 //
 //    /// The step value as a string
 //    public var value: String
@@ -148,7 +148,7 @@
 /// <input type="number" step="any">
 /// ```
 public enum Step: StringAttribute, Sendable, Equatable, ExpressibleByFloatLiteral, ExpressibleByIntegerLiteral {
-    public static let attribute: String = "step"
+    @inlinable public static var attribute: String { "step" }
     
     /// A specific numeric step value.
     case value(Double)

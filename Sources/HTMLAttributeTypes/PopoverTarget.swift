@@ -30,7 +30,7 @@
 /// ```
 public struct PopoverTarget: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "popovertarget"
+    @inlinable public static var attribute: String { "popovertarget" }
     
     /// The ID of the popover element to control
     public var rawValue: String

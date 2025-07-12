@@ -84,7 +84,7 @@
 /// ```
 public struct Slot: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "slot"
+    @inlinable public static var attribute: String { "slot" }
     
     /// The name of the slot to assign the element to
     public let rawValue: String

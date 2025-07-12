@@ -65,7 +65,7 @@
 /// ```
 public struct Id: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "id"
+    @inlinable public static var attribute: String { "id" }
     
     /// The ID value
     public let rawValue: String

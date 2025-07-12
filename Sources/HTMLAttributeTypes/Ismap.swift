@@ -14,7 +14,7 @@
 @dynamicMemberLookup
 public struct Ismap: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "ismap"
+    @inlinable public static var attribute: String { "ismap" }
     
     public var rawValue: Bool
   

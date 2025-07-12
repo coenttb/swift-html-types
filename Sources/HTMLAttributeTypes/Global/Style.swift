@@ -64,7 +64,7 @@
 /// - Remember that inline styles override external styles due to CSS specificity rules
 public struct Style: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "style"
+    @inlinable public static var attribute: String { "style" }
     
     /// The CSS declarations
     public let rawValue: String

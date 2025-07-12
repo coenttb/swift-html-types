@@ -78,7 +78,7 @@
 public struct Popover: StringAttribute {
     
     /// The name of the HTML attribute
-    public static let attribute: String = "popover"
+    @inlinable public static var attribute: String { "popover" }
     
     public let rawValue: String
     

@@ -46,7 +46,7 @@
 @dynamicMemberLookup
 public struct Checked: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "checked"
+    @inlinable public static var attribute: String { "checked" }
     
     public var rawValue: Bool
   

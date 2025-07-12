@@ -79,7 +79,7 @@
 @dynamicMemberLookup
 public struct Inert: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "inert"
+    @inlinable public static var attribute: String { "inert" }
     
     public var rawValue: Bool
   

@@ -46,7 +46,7 @@
 /// ```
 public struct Usemap: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "usemap"
+    @inlinable public static var attribute: String { "usemap" }
     
     /// The map name value (with or without '#')
     public var rawValue: String

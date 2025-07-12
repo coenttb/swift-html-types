@@ -33,7 +33,7 @@
 @dynamicMemberLookup
 public struct Truespeed: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "truespeed"
+    @inlinable public static var attribute: String { "truespeed" }
     
     /// The attribute value
     public var rawValue: Bool

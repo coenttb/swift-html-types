@@ -14,7 +14,7 @@
 @dynamicMemberLookup
 public struct Nomodule: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "nomodule"
+    @inlinable public static var attribute: String { "nomodule" }
     
     public var rawValue: Bool
   

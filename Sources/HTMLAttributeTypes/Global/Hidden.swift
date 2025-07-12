@@ -67,7 +67,7 @@
 /// ```
 public struct Hidden: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "hidden"
+    @inlinable public static var attribute: String { "hidden" }
     
     public let rawValue: String
     

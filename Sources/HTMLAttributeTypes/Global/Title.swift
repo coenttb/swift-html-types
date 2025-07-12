@@ -79,7 +79,7 @@
 /// ```
 public struct Title: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "title"
+    @inlinable public static var attribute: String { "title" }
     
     /// The title text
     public let rawValue: String

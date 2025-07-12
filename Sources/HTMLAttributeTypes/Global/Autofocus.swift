@@ -56,7 +56,7 @@
 @dynamicMemberLookup
 public struct Autofocus: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "autofocus"
+    @inlinable public static var attribute: String { "autofocus" }
     
     public var rawValue: Bool
   

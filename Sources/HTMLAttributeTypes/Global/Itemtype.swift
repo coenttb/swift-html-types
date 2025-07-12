@@ -74,7 +74,7 @@
 /// ```
 public struct Itemtype: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "itemtype"
+    @inlinable public static var attribute: String { "itemtype" }
     
     /// The URL or space-separated list of URLs defining the vocabulary
     public let rawValue: String

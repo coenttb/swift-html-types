@@ -63,7 +63,7 @@
 /// ```
 public struct Elementtiming: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "elementtiming"
+    @inlinable public static var attribute: String { "elementtiming" }
     
     /// The attribute value
     public let rawValue: String

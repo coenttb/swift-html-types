@@ -13,7 +13,7 @@
 @dynamicMemberLookup
 public struct FormNovalidate: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "formnovalidate"
+    @inlinable public static var attribute: String { "formnovalidate" }
     
     public var rawValue: Bool
   

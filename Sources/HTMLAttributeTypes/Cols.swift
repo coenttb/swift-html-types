@@ -13,7 +13,7 @@
 
 public struct Cols: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "cols"
+    @inlinable public static var attribute: String { "cols" } 
     
     /// The attribute value
     public let rawValue: String

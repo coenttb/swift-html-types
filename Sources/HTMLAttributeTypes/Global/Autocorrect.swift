@@ -48,7 +48,7 @@
 /// ```
 public struct Autocorrect: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "autocorrect"
+    @inlinable public static var attribute: String { "autocorrect" }
     
     public let rawValue: String
     
@@ -64,7 +64,7 @@ extension Autocorrect {
     /// ```html
     /// <input type="text" autocorrect="on" />
     /// ```
-    public static let on: Self = "on"
+    @inlinable public static var on: Self { "on" }
     
     /// Enable automatic correction of spelling and punctuation errors (equivalent to "on")
     ///
@@ -72,7 +72,7 @@ extension Autocorrect {
     /// ```html
     /// <input type="text" autocorrect="" />
     /// ```
-    public static let empty: Self = "\"\""
+    @inlinable public static var empty: Self { "\"\"" }
     
     /// Disable automatic correction of editable text
     ///
@@ -81,9 +81,9 @@ extension Autocorrect {
     /// <input type="text" autocorrect="off" />
     /// <textarea autocorrect="off"></textarea>
     /// ```
-    public static let off: Self = "off"
+    @inlinable public static var off: Self { "off" }
 }
 
 extension Autocorrect: CaseIterable {
-    public static let allCases: [Autocorrect] = [.on, .off, .empty]
+    public static var allCases: [Autocorrect] { [.on, .off, .empty] }
 }

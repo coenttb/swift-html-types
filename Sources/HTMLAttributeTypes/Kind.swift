@@ -14,7 +14,7 @@
 /// Represents the kind attribute values for the track element.
 public struct Kind: StringAttribute  {
     /// The name of the HTML attribute
-    public static let attribute: String = "kind"
+    @inlinable public static var attribute: String { "kind" }
     
     /// The attribute value
     public let rawValue: String

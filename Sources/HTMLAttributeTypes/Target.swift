@@ -88,7 +88,7 @@
 /// ```
 public struct Target: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "target"
+    @inlinable public static var attribute: String { "target" }
     
     /// The target value
     public var rawValue: String

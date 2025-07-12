@@ -14,7 +14,7 @@
 /// Button types that define how a button behaves
 public struct ButtonType: StringAttribute {
     
-    public static let attribute: String = "type"
+    @inlinable public static var attribute: String { "type" }
     
     public let rawValue: String
     

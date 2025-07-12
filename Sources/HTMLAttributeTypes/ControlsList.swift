@@ -14,7 +14,7 @@
 /// Represents the controlslist attribute for the video element.
 public struct ControlsList: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "controlslist"
+    @inlinable public static var attribute: String { "controlslist" }
     
     /// The attribute value
     public let rawValue: String

@@ -27,7 +27,7 @@
 /// ```
 public struct Rows: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "rows"
+    @inlinable public static var attribute: String { "rows" }
     
     /// The attribute value
     public var rawValue: String

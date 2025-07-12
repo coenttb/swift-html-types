@@ -54,7 +54,7 @@
 ///
 public struct Integrity: StringAttribute {    
     /// The name of the HTML attribute
-    public static let attribute: String = "integrity"
+    @inlinable public static var attribute: String { "integrity" }
     
     /// The attribute value
     public let rawValue: String

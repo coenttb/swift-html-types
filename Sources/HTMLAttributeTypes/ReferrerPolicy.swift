@@ -41,7 +41,7 @@
 /// This attribute is supported on various elements including `<a>`, `<area>`, `<img>`, `<iframe>`,
 /// `<script>`, and `<link>` elements.
 public struct ReferrerPolicy: StringAttribute {
-    public static let attribute: String = "referrerpolicy"
+    @inlinable public static var attribute: String { "referrerpolicy" }
     
     public var rawValue: String
     

@@ -71,7 +71,7 @@
 /// ```
 public struct Part: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "part"
+    @inlinable public static var attribute: String { "part" }
     
     /// The space-separated list of part names
     /// The language tag value

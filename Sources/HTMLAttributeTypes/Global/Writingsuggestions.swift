@@ -65,7 +65,7 @@
 public struct Writingsuggestions: StringAttribute {
     
     /// The name of the HTML attribute
-    public static let attribute: String = "writingsuggestions"
+    @inlinable public static var attribute: String { "writingsuggestions" }
     
     /// The URL for form submission
     public let rawValue: String

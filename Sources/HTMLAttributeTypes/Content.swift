@@ -13,7 +13,7 @@
 
 public struct Content: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "content"
+    @inlinable public static var attribute: String { "content" }
     
     /// The field name that will contain the directionality information
     public let rawValue: String

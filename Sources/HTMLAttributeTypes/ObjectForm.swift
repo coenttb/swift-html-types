@@ -37,7 +37,7 @@
 /// ```
 public struct ObjectForm: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "form"
+    @inlinable public static var attribute: String { "form" }
     
     /// The attribute value
     public let rawValue: String

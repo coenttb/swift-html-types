@@ -34,7 +34,7 @@
 @dynamicMemberLookup
 public struct ShadowRootDelegatesFocus: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "shadowrootdelegatesfocus"
+    @inlinable public static var attribute: String { "shadowrootdelegatesfocus" }
     
     /// The attribute value
     public var rawValue: Bool

@@ -64,7 +64,7 @@
 @dynamicMemberLookup
 public struct Spellcheck: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "spellcheck"
+    @inlinable public static var attribute: String { "spellcheck" }
     
     public var rawValue: Bool
   

@@ -59,7 +59,7 @@
 /// ```
 public struct Size: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "size"
+    @inlinable public static var attribute: String { "size" }
     
     /// The size value as a string
     public var rawValue: String

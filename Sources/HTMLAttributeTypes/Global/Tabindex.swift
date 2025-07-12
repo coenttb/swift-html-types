@@ -67,7 +67,7 @@
 /// ```
 public struct Tabindex: Attribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "tabindex"
+    @inlinable public static var attribute: String { "tabindex" }
     
     /// The tabindex value
     public var value: Int

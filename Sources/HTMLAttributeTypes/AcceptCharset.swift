@@ -30,7 +30,7 @@
 /// ```
 public struct AcceptCharset: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "accept-charset"
+    @inlinable public static var attribute: String { "accept-charset" }
     
     /// The URL for form submission
     public let rawValue: String

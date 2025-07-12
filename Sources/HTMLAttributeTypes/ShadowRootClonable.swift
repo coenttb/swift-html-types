@@ -27,7 +27,7 @@
 /// ```
 public struct ShadowRootClonable: BooleanAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "shadowrootclonable"
+    @inlinable public static var attribute: String { "shadowrootclonable" }
     
     public var rawValue: Bool
   

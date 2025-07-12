@@ -42,7 +42,7 @@
 /// - `<iframe>`: For prioritizing iframe content loading
 public struct FetchPriority: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "fetchpriority"
+    @inlinable public static var attribute: String { "fetchpriority" }
     
     /// The attribute value
     public let rawValue: String

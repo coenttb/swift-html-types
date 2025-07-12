@@ -64,7 +64,7 @@
 /// ```
 public struct Max: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "max"
+    @inlinable public static var attribute: String { "max" }
     
     /// The attribute value
     public let rawValue: String

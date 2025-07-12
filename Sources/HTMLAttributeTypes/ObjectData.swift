@@ -39,7 +39,7 @@
 /// ```
 public struct ObjectData: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "data"
+    @inlinable public static var attribute: String { "data" }
     
     /// The attribute value
     public let rawValue: String

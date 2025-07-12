@@ -33,7 +33,7 @@
 /// ```
 public struct Src: StringAttribute, ExpressibleByStringInterpolation, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "src"
+    @inlinable public static var attribute: String { "src" } 
     
     /// The source URL
     public var rawValue: String

@@ -51,7 +51,7 @@
 ///
 /// - SeeAlso: [MDN Web Docs: loading attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading)
 public struct Loading: StringAttribute, Sendable, Equatable {
-    public static let attribute: String = "loading"
+    @inlinable public static var attribute: String { "loading" }
 
     /// The attribute value
     public let rawValue: String

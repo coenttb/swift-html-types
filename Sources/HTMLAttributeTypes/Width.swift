@@ -52,7 +52,7 @@
 /// ```
 public struct Width: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "width"
+    @inlinable public static var attribute: String { "width" }
     
     /// The width value as a string
     public var rawValue: String

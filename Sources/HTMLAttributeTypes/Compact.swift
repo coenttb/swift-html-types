@@ -27,7 +27,7 @@
 @dynamicMemberLookup
 public struct Compact: BooleanAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "compact"
+    @inlinable public static var attribute: String { "compact" }
     
     public var rawValue: Bool
   

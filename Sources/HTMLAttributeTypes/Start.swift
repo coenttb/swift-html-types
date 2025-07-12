@@ -37,7 +37,7 @@
 /// ```
 public struct Start: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "start"
+    @inlinable public static var attribute: String { "start" }
     
     /// The attribute value
     public var rawValue: String

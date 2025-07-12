@@ -66,7 +66,7 @@
 ///   or URLs using the blob: or data: schemes.
 public struct Download: Attribute, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "download"
+    @inlinable public static var attribute: String { "download" }
     
     /// The type of attribute value
     public enum Value: Sendable, Equatable {

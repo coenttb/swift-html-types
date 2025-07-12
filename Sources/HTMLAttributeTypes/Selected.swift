@@ -36,7 +36,7 @@
 @dynamicMemberLookup
 public struct Selected: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "selected"
+    @inlinable public static var attribute: String { "selected" }
     
     public var rawValue: Bool
   

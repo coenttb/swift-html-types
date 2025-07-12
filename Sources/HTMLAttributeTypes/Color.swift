@@ -26,7 +26,7 @@
 /// ```
 public struct Color: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "color"
+    @inlinable public static var attribute: String { "color" }
     
     /// The attribute value
     public let rawValue: String

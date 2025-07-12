@@ -63,7 +63,7 @@
 /// ```
 public struct Autocapitalize: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "autocapitalize"
+    @inlinable public static var attribute: String { "autocapitalize" }
     
     public let rawValue: String
     
@@ -79,7 +79,7 @@ extension Autocapitalize {
     /// ```html
     /// <input type="text" autocapitalize="none" />
     /// ```
-    public static let none: Self = "none"
+    @inlinable public static var none: Self { "none" }
     
     /// Do not automatically capitalize any text (alias for `none`)
     ///
@@ -87,7 +87,7 @@ extension Autocapitalize {
     /// ```html
     /// <input type="text" autocapitalize="off" />
     /// ```
-    public static let off: Self = "off"
+    @inlinable public static var off: Self { "off" }
     
     /// Automatically capitalize the first character of each sentence
     ///
@@ -95,7 +95,7 @@ extension Autocapitalize {
     /// ```html
     /// <input type="text" autocapitalize="sentences" />
     /// ```
-    public static let sentences: Self = "sentences"
+    @inlinable public static var sentences: Self { "sentences" }
     
     /// Automatically capitalize the first character of each sentence (alias for `sentences`)
     ///
@@ -103,7 +103,7 @@ extension Autocapitalize {
     /// ```html
     /// <input type="text" autocapitalize="on" />
     /// ```
-    public static let on: Self = "on"
+    @inlinable public static var on: Self { "on" }
     
     /// Automatically capitalize the first character of each word
     ///
@@ -111,7 +111,7 @@ extension Autocapitalize {
     /// ```html
     /// <input type="text" autocapitalize="words" />
     /// ```
-    public static let words: Self = "words"
+    @inlinable public static var words: Self { "words" }
     
     /// Automatically capitalize every character
     ///
@@ -120,9 +120,9 @@ extension Autocapitalize {
     /// <input type="text" autocapitalize="characters" />
     /// <p contenteditable autocapitalize="characters">Editable content</p>
     /// ```
-    public static let characters: Self = "characters"
+    @inlinable public static var characters: Self { "characters" }
 }
 
 extension Autocapitalize: CaseIterable {
-    public static let allCases: [Autocapitalize] = [.none, .off, .sentences, .on, .words, .characters]
+    @inlinable public static var allCases: [Autocapitalize] { [.none, .off, .sentences, .on, .words, .characters] }
 }

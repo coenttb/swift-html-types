@@ -32,7 +32,7 @@
 /// ```
 public struct Scope: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "scope"
+    @inlinable public static var attribute: String { "scope" }
     
     /// The scope value
     public var rawValue: String

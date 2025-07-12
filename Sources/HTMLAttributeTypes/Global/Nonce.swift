@@ -70,7 +70,7 @@
 /// ```
 public struct Nonce: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "nonce"
+    @inlinable public static var attribute: String { "nonce" }
     
     /// The cryptographic nonce value
     /// The language tag value

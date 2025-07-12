@@ -65,7 +65,7 @@ import Foundation
 /// ```
 public struct Href: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "href"
+    @inlinable public static var attribute: String { "href" }
     
     /// The attribute value
     public let rawValue: String

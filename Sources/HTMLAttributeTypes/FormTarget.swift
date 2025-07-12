@@ -13,7 +13,7 @@
 
 public struct FormTarget: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "formtarget"
+    @inlinable public static var attribute: String { "formtarget" }
     
     /// The attribute value
     public let rawValue: String

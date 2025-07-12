@@ -67,7 +67,7 @@
 @dynamicMemberLookup
 public struct Multiple: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "multiple"
+    @inlinable public static var attribute: String { "multiple" }
     
     public var rawValue: Bool
   

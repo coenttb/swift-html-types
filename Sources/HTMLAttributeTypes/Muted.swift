@@ -14,7 +14,7 @@
 @dynamicMemberLookup
 public struct Muted: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "muted"
+    @inlinable public static var attribute: String { "muted" }
     
     public var rawValue: Bool
   

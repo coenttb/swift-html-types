@@ -76,7 +76,7 @@
 /// ```
 public struct Virtualkeyboardpolicy: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "virtualkeyboardpolicy"
+    @inlinable public static var attribute: String { "virtualkeyboardpolicy" }
     
     public let rawValue: String
     

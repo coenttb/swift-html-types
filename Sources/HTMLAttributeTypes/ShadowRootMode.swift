@@ -40,7 +40,7 @@
 /// ```
 public struct ShadowRootMode: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "shadowrootmode"
+    @inlinable public static var attribute: String { "shadowrootmode" }
     
     /// The shadow root mode value
     public var rawValue: String

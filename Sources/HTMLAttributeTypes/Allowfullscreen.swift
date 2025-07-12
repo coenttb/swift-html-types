@@ -13,7 +13,7 @@
 @dynamicMemberLookup
 public struct Allowfullscreen: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "allowfullscreen"
+    @inlinable public static var attribute: String { "allowfullscreen" }
     
     public var rawValue: Bool
   

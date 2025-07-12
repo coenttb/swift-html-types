@@ -31,7 +31,7 @@
 /// ```
 public struct Optimum: Attribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "optimum"
+    @inlinable public static var attribute: String { "optimum" }
     
     /// The attribute value
     public var value: Double

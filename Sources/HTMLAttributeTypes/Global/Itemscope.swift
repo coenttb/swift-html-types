@@ -72,7 +72,7 @@
 @dynamicMemberLookup
 public struct Itemscope: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "itemscope"
+    @inlinable public static var attribute: String { "itemscope" }
     
     public var rawValue: Bool
   

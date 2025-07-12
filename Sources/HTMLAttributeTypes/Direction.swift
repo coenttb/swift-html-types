@@ -26,7 +26,7 @@
 /// ```
 public struct Direction: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "direction"
+    @inlinable public static var attribute: String { "direction" }
     
     /// The attribute value
     public let rawValue: String

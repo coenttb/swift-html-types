@@ -69,7 +69,7 @@
 /// ```
 public struct EncType: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "enctype"
+    @inlinable public static var attribute: String { "enctype" }
     
     /// The attribute value
     public let rawValue: String

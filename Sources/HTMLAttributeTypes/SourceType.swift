@@ -39,7 +39,7 @@
 /// ```
 public struct SourceType: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "type"
+    @inlinable public static var attribute: String { "type" }
     
     /// The MIME type value as a string
     public var rawValue: String

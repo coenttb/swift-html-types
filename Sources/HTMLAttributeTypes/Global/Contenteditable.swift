@@ -48,7 +48,7 @@
 /// ```
 public struct Contenteditable: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "contenteditable"
+    @inlinable public static var attribute: String { "contenteditable" }
     
     public let rawValue: String
     

@@ -41,7 +41,7 @@
 ///
 public struct Poster: StringAttribute, CustomStringConvertible {
     /// The name of the HTML attribute
-    public static let attribute: String = "poster"
+    @inlinable public static var attribute: String { "poster" }
     
     /// The URL of the poster image
     public var rawValue: String

@@ -15,7 +15,7 @@
 @dynamicMemberLookup
 public struct DisablePictureInPicture: BooleanAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "disablepictureinpicture"
+    @inlinable public static var attribute: String { "disablepictureinpicture" }
     
     public var rawValue: Bool
   

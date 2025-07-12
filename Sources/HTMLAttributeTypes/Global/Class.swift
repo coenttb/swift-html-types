@@ -47,7 +47,7 @@
 /// ```
 public struct Class: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "class"
+    @inlinable public static var attribute: String { "class" }
     
     public let rawValue: String
     

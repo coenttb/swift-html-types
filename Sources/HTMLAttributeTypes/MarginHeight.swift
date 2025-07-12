@@ -14,7 +14,7 @@
 /// Represents the marginheight attribute for frame elements.
 public struct MarginHeight: StringAttribute {
     /// The name of the HTML attribute
-    public static let attribute: String = "marginheight"
+    @inlinable public static var attribute: String { "marginheight" }
     
     /// The attribute value
     public let rawValue: String
