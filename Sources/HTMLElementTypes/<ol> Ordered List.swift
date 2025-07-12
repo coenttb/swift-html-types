@@ -67,5 +67,3 @@ public struct OrderedList: Element {
     }
 }
 
-/// Lowercase typealias for creating OrderedList elements with a more HTML-like syntax.
-public typealias ol = OrderedList

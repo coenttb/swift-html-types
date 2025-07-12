@@ -59,5 +59,3 @@ public struct RubyTextContainer: Element {
     }
 }
 
-/// Lowercase typealias for creating RubyTextContainer elements with a more HTML-like syntax.
-public typealias rtc = RubyTextContainer

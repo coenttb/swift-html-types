@@ -82,6 +82,3 @@ public struct Track: Element {
     }
 }
 
-/// Lowercase typealias for creating Track elements with a more HTML-like syntax.
-public typealias track = Track
-

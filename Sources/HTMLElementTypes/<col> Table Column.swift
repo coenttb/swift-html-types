@@ -82,13 +82,3 @@ public struct TableColumn: Element {
     }
 }
 
-/// Lowercase typealias for creating TableColumn elements with a more HTML-like syntax.
-///
-/// This typealias allows you to use the lowercase `col` identifier when creating
-/// HTML column elements, which more closely matches HTML syntax.
-///
-/// Example:
-/// ```swift
-/// col(span: 2, width: "100px")
-/// ```
-public typealias col = TableColumn

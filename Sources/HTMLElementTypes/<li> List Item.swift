@@ -71,5 +71,3 @@ public struct ListItem: Element {
     }
 }
 
-/// Lowercase typealias for creating ListItem elements with a more HTML-like syntax.
-public typealias li = ListItem

@@ -53,5 +53,3 @@ public struct Header: Element {
     }
 }
 
-/// Lowercase typealias for creating Header elements with a more HTML-like syntax.
-public typealias header = Header

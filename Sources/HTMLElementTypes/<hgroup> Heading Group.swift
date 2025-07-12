@@ -51,5 +51,3 @@ public struct HeadingGroup: Element {
     }
 }
 
-/// Lowercase typealias for creating HeadingGroup elements with a more HTML-like syntax.
-public typealias hgroup = HeadingGroup

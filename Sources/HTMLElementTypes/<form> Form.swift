@@ -183,16 +183,3 @@ public struct Form: Element {
     }
 }
 
-/// Lowercase typealias for creating Form elements with a more HTML-like syntax.
-///
-/// This typealias allows you to use the lowercase `form` identifier when creating
-/// HTML form elements, which more closely matches HTML syntax.
-///
-/// Example:
-/// ```swift
-/// form(name: "login", action: "/login", method: .post) {
-///     // Form controls
-/// }
-/// ```
-public typealias form = Form
-

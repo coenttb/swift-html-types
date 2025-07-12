@@ -60,5 +60,3 @@ public struct Param: Element {
     }
 }
 
-/// Lowercase typealias for creating Param elements with a more HTML-like syntax.
-public typealias param = Param

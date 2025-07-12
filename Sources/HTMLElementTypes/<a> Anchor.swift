@@ -187,15 +187,3 @@ public struct Anchor: Element {
     }
 }
 
-/// Lowercase typealias for creating Anchor elements with a more HTML-like syntax.
-///
-/// This typealias allows you to use the lowercase `anchor` identifier when creating
-/// HTML anchor elements, which more closely matches HTML syntax.
-///
-/// Example:
-/// ```swift
-/// anchor(href: "https://example.com") {
-///     "Visit Example Website"
-/// }
-/// ```
-public typealias a = Anchor

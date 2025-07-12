@@ -51,5 +51,3 @@ public struct ContentDivision: Element {
     }
 }
 
-/// Lowercase typealias for creating ContentDivision elements with a more HTML-like syntax.
-public typealias div = ContentDivision

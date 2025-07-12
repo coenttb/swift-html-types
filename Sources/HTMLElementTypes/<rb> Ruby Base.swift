@@ -53,5 +53,3 @@ public struct RubyBase: Element {
     }
 }
 
-/// Lowercase typealias for creating RubyBase elements with a more HTML-like syntax.
-public typealias rb = RubyBase

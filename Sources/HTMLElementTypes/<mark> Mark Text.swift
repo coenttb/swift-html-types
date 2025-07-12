@@ -47,5 +47,3 @@ public struct Mark: Element {
     }
 }
 
-/// Lowercase typealias for creating Mark elements with a more HTML-like syntax.
-public typealias mark = Mark

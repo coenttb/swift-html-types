@@ -100,5 +100,3 @@ public struct Source: Element {
     }
 }
 
-/// Lowercase typealias for creating Source elements with a more HTML-like syntax.
-public typealias source = Source

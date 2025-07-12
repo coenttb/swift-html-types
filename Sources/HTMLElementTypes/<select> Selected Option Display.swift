@@ -93,5 +93,3 @@ public struct Select: Element {
     }
 }
 
-/// Lowercase typealias for creating Select elements with a more HTML-like syntax.
-public typealias select = Select

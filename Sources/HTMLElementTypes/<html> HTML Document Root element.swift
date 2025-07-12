@@ -56,5 +56,3 @@ public struct HtmlRoot: Element {
     }
 }
 
-/// Lowercase typealias for creating HtmlRoot elements with a more HTML-like syntax.
-public typealias html = HtmlRoot

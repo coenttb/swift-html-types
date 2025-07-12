@@ -65,6 +65,3 @@ public struct Output: Element {
     }
 }
 
-/// Lowercase typealias for creating Output elements with a more HTML-like syntax.
-public typealias output = Output
-

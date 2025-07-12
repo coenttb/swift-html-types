@@ -54,5 +54,3 @@ public struct InlineQuotation: Element {
     }
 }
 
-/// Lowercase typealias for creating InlineQuotation elements with a more HTML-like syntax.
-public typealias q = InlineQuotation

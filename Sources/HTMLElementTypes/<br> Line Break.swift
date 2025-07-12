@@ -61,17 +61,3 @@ public struct BR: Element {
     public init() { }
 }
 
-/// Lowercase typealias for creating BR elements with a more HTML-like syntax.
-///
-/// This typealias allows you to use the lowercase `br` identifier when creating
-/// HTML br elements, which more closely matches HTML syntax.
-///
-/// Example:
-/// ```swift
-/// p {
-///     "First line"
-///     br()
-///     "Second line"
-/// }
-/// ```
-public typealias br = BR

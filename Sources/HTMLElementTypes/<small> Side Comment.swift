@@ -53,5 +53,3 @@ public struct Small: Element {
     }
 }
 
-/// Lowercase typealias for creating Small elements with a more HTML-like syntax.
-public typealias small = Small

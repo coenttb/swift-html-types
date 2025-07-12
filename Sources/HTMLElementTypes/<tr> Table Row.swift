@@ -60,5 +60,3 @@ public struct TableRow: Element {
     }
 }
 
-/// Lowercase typealias for creating TableRow elements with a more HTML-like syntax.
-public typealias tr = TableRow

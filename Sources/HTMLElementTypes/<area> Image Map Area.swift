@@ -297,17 +297,3 @@ extension Area {
     }
 }
 
-/// Lowercase typealias for creating Area elements with a more HTML-like syntax.
-///
-/// This typealias allows you to use the lowercase `area` identifier when creating
-/// HTML area elements, which more closely matches HTML syntax.
-///
-/// Example:
-/// ```swift
-/// area(
-///   shape: .circle(coords: "75,75,75"),
-///   href: "section.html",
-///   alt: "Go to section"
-/// )
-/// ```
-public typealias area = Area

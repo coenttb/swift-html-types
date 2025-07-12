@@ -47,5 +47,3 @@ public struct EmbedFallback: Element {
     }
 }
 
-/// Lowercase typealias for creating EmbedFallback elements with a more HTML-like syntax.
-public typealias noembed = EmbedFallback

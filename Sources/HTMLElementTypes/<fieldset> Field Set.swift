@@ -73,5 +73,3 @@ public struct FieldSet: Element {
     }
 }
 
-/// Lowercase typealias for creating FieldSet elements with a more HTML-like syntax.
-public typealias fieldset = FieldSet

@@ -51,15 +51,3 @@ public struct Aside: Element {
     public init(){}
 }
 
-/// Lowercase typealias for creating Aside elements with a more HTML-like syntax.
-///
-/// This typealias allows you to use the lowercase `aside` identifier when creating
-/// HTML aside elements, which more closely matches HTML syntax.
-///
-/// Example:
-/// ```swift
-/// aside {
-///   paragraph { "This is supplementary information that enhances the main content." }
-/// }
-/// ```
-public typealias aside = Aside

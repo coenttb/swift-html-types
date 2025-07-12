@@ -69,8 +69,6 @@ public struct FencedFrame: Element {
     }
 }
 
-/// Lowercase typealias for creating FencedFrame elements with a more HTML-like syntax.
-public typealias fencedframe = FencedFrame
 
 extension FencedFrame {
     public typealias Allow = String

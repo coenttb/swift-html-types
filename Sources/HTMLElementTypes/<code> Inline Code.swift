@@ -49,5 +49,3 @@ public struct Code: Element {
     }
 }
 
-/// Lowercase typealias for creating Code elements with a more HTML-like syntax.
-public typealias code = Code

@@ -59,5 +59,3 @@ public struct DescriptionTerm: Element {
     }
 }
 
-/// Lowercase typealias for creating DescriptionTerm elements with a more HTML-like syntax.
-public typealias dt = DescriptionTerm

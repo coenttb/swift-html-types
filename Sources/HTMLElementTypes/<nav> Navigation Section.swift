@@ -49,5 +49,3 @@ public struct NavigationSection: Element {
     }
 }
 
-/// Lowercase typealias for creating NavigationSection elements with a more HTML-like syntax.
-public typealias nav = NavigationSection

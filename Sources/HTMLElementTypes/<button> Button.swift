@@ -142,16 +142,3 @@ public struct Button: Element {
 }
 
 
-/// Lowercase typealias for creating Button elements with a more HTML-like syntax.
-///
-/// This typealias allows you to use the lowercase `button` identifier when creating
-/// HTML button elements, which more closely matches HTML syntax.
-///
-/// Example:
-/// ```swift
-/// button {
-///     "Click me"
-/// }
-/// ```
-public typealias button = Button
-

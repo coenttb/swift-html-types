@@ -72,5 +72,4 @@ public struct Embed: Element {
     }
 }
 
-/// Lowercase typealias for creating Embed elements with a more HTML-like syntax.
-public typealias embed = Embed
+

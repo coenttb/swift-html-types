@@ -57,5 +57,3 @@ public struct KeyboardInput: Element {
     }
 }
 
-/// Lowercase typealias for creating KeyboardInput elements with a more HTML-like syntax.
-public typealias kbd = KeyboardInput

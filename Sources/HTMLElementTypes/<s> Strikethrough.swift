@@ -50,5 +50,3 @@ public struct Strikethrough: Element {
     }
 }
 
-/// Lowercase typealias for creating Strikethrough elements with a more HTML-like syntax.
-public typealias s = Strikethrough

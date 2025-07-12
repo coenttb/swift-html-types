@@ -87,20 +87,3 @@ public struct TableColumnGroup: Element {
     }
 }
 
-/// Lowercase typealias for creating TableColumnGroup elements with a more HTML-like syntax.
-///
-/// This typealias allows you to use the lowercase `colgroup` identifier when creating
-/// HTML column group elements, which more closely matches HTML syntax.
-///
-/// Example:
-/// ```swift
-/// colgroup(span: 5, class: "weekdays")
-/// ```
-/// Or:
-/// ```swift
-/// colgroup {
-///   col()
-///   col(span: 2)
-/// }
-/// ```
-public typealias colgroup = TableColumnGroup

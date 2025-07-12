@@ -72,5 +72,3 @@ public struct Dialog: Element {
     }
 }
 
-/// Lowercase typealias for creating Dialog elements with a more HTML-like syntax.
-public typealias dialog = Dialog

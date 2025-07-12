@@ -55,6 +55,3 @@ public struct PlainText: Element {
     }
 }
 
-/// Lowercase typealias for creating PlainText elements with a more HTML-like syntax.
-@available(*, deprecated, message: "The <plaintext> element is deprecated. Use <pre> or <code> instead.")
-public typealias plaintext = PlainText

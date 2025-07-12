@@ -64,15 +64,3 @@ public struct BidirectionalIsolate: Element {
     public init(){}
 }
 
-/// Lowercase typealias for creating BidirectionalIsolate elements with a more HTML-like syntax.
-///
-/// This typealias allows you to use the lowercase `bdi` identifier when creating
-/// HTML bidirectional isolate elements, which more closely matches HTML syntax.
-///
-/// Example:
-/// ```swift
-/// bdi {
-///     "User-generated content with possibly different directionality"
-/// }
-/// ```
-public typealias bdi = BidirectionalIsolate

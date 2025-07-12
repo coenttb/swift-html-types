@@ -52,5 +52,3 @@ public struct Directory: Element {
     }
 }
 
-/// Lowercase typealias for creating Directory elements with a more HTML-like syntax.
-public typealias dir = Directory

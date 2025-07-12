@@ -62,5 +62,4 @@ public struct TableHead: Element {
     }
 }
 
-/// Lowercase typealias for creating TableHead elements with a more HTML-like syntax.
-public typealias thead = TableHead
+

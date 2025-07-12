@@ -59,5 +59,3 @@ public struct DescriptionList: Element {
     }
 }
 
-/// Lowercase typealias for creating Description List elements with a more HTML-like syntax.
-public typealias dl = DescriptionList

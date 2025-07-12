@@ -27,7 +27,7 @@ public struct H1: Element {
     public init(){}
 }
 
-public typealias h1 = H1
+
 
 // MARK: - H2 Element
 public struct H2: Element {
@@ -36,7 +36,7 @@ public struct H2: Element {
     public init(){}
 }
 
-public typealias h2 = H2
+
 
 // MARK: - H3 Element
 public struct H3: Element {
@@ -45,7 +45,7 @@ public struct H3: Element {
     public init(){}
 }
 
-public typealias h3 = H3
+
 
 // MARK: - H4 Element
 public struct H4: Element {
@@ -54,7 +54,7 @@ public struct H4: Element {
     public init(){}
 }
 
-public typealias h4 = H4
+
 
 // MARK: - H5 Element
 public struct H5: Element {
@@ -63,7 +63,7 @@ public struct H5: Element {
     public init(){}
 }
 
-public typealias h5 = H5
+
 
 // MARK: - H6 Element
 public struct H6: Element {
@@ -72,4 +72,4 @@ public struct H6: Element {
     public init(){}
 }
 
-public typealias h6 = H6
+

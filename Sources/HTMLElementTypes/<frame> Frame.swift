@@ -90,6 +90,3 @@ public struct Frame: Element {
     }
 }
 
-/// Lowercase typealias for creating Frame elements with a more HTML-like syntax.
-public typealias frame = Frame
-

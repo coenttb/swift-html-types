@@ -45,7 +45,3 @@ public struct Strike: Element {
         
     }
 }
-
-/// Lowercase typealias for creating Strike elements with a more HTML-like syntax.
-public typealias strike = Strike
-

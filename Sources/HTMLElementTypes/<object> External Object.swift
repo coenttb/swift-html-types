@@ -103,5 +103,3 @@ public struct ExternalObject: Element {
     }
 }
 
-/// Lowercase typealias for creating Object elements with a more HTML-like syntax.
-public typealias object = ExternalObject

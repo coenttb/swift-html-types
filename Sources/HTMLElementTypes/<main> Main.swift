@@ -61,5 +61,3 @@ public struct Main: Element {
     }
 }
 
-/// Lowercase typealias for creating Main elements with a more HTML-like syntax.
-public typealias main = Main

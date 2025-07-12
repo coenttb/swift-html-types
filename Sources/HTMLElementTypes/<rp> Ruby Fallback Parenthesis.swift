@@ -55,5 +55,3 @@ public struct RubyParenthesis: Element {
     }
 }
 
-/// Lowercase typealias for creating RubyParenthesis elements with a more HTML-like syntax.
-public typealias rp = RubyParenthesis

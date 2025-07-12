@@ -63,5 +63,3 @@ public struct Font: Element {
     }
 }
 
-/// Lowercase typealias for creating Font elements with a more HTML-like syntax.
-public typealias font = Font

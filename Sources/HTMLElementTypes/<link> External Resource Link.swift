@@ -171,13 +171,3 @@ public struct Link: Element {
     }
 }
 
-/// Lowercase typealias for creating Link elements with a more HTML-like syntax.
-///
-/// This typealias allows you to use the lowercase `link` identifier when creating
-/// HTML link elements, which more closely matches HTML syntax.
-///
-/// Example:
-/// ```swift
-/// link(href: "styles.css", rel: "stylesheet")
-/// ```
-public typealias link = Link

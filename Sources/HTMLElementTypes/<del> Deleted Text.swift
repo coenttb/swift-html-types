@@ -66,5 +66,3 @@ public struct Del: Element {
     }
 }
 
-/// Lowercase typealias for creating Del elements with a more HTML-like syntax.
-public typealias del = Del

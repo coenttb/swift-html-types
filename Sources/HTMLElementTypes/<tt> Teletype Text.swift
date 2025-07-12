@@ -49,5 +49,3 @@ public struct TeletypeText: Element {
     }
 }
 
-/// Lowercase typealias for creating TeletypeText elements with a more HTML-like syntax.
-public typealias tt = TeletypeText

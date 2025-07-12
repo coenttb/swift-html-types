@@ -58,5 +58,3 @@ public struct Caption: Element {
     public init(){}
 }
 
-/// Lowercase typealias for creating Caption elements with a more HTML-like syntax.
-public typealias caption = Caption

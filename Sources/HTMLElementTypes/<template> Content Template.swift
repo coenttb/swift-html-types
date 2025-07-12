@@ -71,6 +71,3 @@ public struct ContentTemplate: Element {
     }
 }
 
-/// Lowercase typealias for creating ContentTemplate elements with a more HTML-like syntax.
-public typealias template = ContentTemplate
-

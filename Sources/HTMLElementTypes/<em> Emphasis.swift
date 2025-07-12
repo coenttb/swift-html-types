@@ -51,5 +51,3 @@ public struct Emphasis: Element {
     }
 }
 
-/// Lowercase typealias for creating Emphasis elements with a more HTML-like syntax.
-public typealias em = Emphasis

@@ -53,5 +53,3 @@ public struct Data: Element {
     }
 }
 
-/// Lowercase typealias for creating Data elements with a more HTML-like syntax.
-public typealias data = Data

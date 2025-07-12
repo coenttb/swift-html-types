@@ -64,5 +64,3 @@ public struct Title: Element {
     }
 }
 
-/// Lowercase typealias for creating Title elements with a more HTML-like syntax.
-public typealias title = Title

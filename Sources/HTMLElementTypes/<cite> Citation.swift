@@ -64,5 +64,3 @@ public struct Cite: Element {
     }
 }
 
-/// Lowercase typealias for creating Citation elements with a more HTML-like syntax.
-public typealias cite = Cite

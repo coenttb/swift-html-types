@@ -54,17 +54,3 @@ public struct BlockQuote: Element {
     }
 }
 
-/// Lowercase typealias for creating BlockQuote elements with a more HTML-like syntax.
-///
-/// This typealias allows you to use the lowercase `blockquote` identifier when creating
-/// HTML block quotation elements, which more closely matches HTML syntax.
-///
-/// Example:
-/// ```swift
-/// blockquote(cite: "https://www.example.com/source") {
-///     p {
-///         "This is a block quotation with a citation source."
-///     }
-/// }
-/// ```
-public typealias blockquote = BlockQuote

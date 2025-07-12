@@ -53,8 +53,3 @@ public struct UnarticulatedAnnotation: Element {
     }
 }
 
-/// Lowercase typealias for creating UnarticulatedAnnotation elements with a more HTML-like syntax.
-public typealias u = UnarticulatedAnnotation
-
-/// Alternative lowercase typealias for creating UnarticulatedAnnotation elements.
-public typealias underline = UnarticulatedAnnotation

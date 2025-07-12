@@ -60,5 +60,3 @@ public struct IdiomaticText: Element {
     }
 }
 
-/// Lowercase typealias for creating IdiomaticText elements with a more HTML-like syntax.
-public typealias i = IdiomaticText

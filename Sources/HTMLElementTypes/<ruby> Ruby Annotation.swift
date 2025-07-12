@@ -52,5 +52,3 @@ public struct Ruby: Element {
     }
 }
 
-/// Lowercase typealias for creating Ruby elements with a more HTML-like syntax.
-public typealias ruby = Ruby

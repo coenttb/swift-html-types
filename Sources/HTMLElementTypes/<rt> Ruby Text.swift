@@ -56,5 +56,3 @@ public struct RubyText: Element {
     }
 }
 
-/// Lowercase typealias for creating RubyText elements with a more HTML-like syntax.
-public typealias rt = RubyText

@@ -76,5 +76,3 @@ public struct Table: Element {
     }
 }
 
-/// Lowercase typealias for creating Table elements with a more HTML-like syntax.
-public typealias table = Table

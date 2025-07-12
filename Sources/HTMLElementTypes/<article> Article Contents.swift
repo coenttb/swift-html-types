@@ -54,16 +54,3 @@ public struct Article: Element {
     public init(){}
 }
 
-/// Lowercase typealias for creating Article elements with a more HTML-like syntax.
-///
-/// This typealias allows you to use the lowercase `article` identifier when creating
-/// HTML article elements, which more closely matches HTML syntax.
-///
-/// Example:
-/// ```swift
-/// article {
-///   heading2 { "Blog Post Title" }
-///   paragraph { "Content goes here..." }
-/// }
-/// ```
-public typealias article = Article

@@ -64,15 +64,3 @@ public struct Abbreviation: Element {
     public init(){}
 }
 
-/// Lowercase typealias for creating Abbreviation elements with a more HTML-like syntax.
-///
-/// This typealias allows you to use the lowercase `abbr` identifier when creating
-/// HTML abbreviation elements, which more closely matches HTML syntax.
-///
-/// Example:
-/// ```swift
-/// abbr {
-///     "HTML"
-/// }
-/// ```
-public typealias abbr = Abbreviation

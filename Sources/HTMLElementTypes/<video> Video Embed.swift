@@ -156,5 +156,3 @@ public struct Video: Element {
     }
 }
 
-/// Lowercase typealias for creating Video elements with a more HTML-like syntax.
-public typealias video = Video

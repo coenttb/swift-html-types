@@ -51,5 +51,3 @@ public struct StrongImportance: Element {
     }
 }
 
-/// Lowercase typealias for creating StrongImportance elements with a more HTML-like syntax.
-public typealias strong = StrongImportance

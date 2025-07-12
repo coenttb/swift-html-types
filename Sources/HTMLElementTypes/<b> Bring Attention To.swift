@@ -52,15 +52,3 @@ public struct B: Element {
     public init(){}
 }
 
-/// Lowercase typealias for creating B elements with a more HTML-like syntax.
-///
-/// This typealias allows you to use the lowercase `b` identifier when creating
-/// HTML b elements, which more closely matches HTML syntax.
-///
-/// Example:
-/// ```swift
-/// b {
-///     "This text is bold but semantically neutral."
-/// }
-/// ```
-public typealias b = B

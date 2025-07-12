@@ -118,5 +118,3 @@ public struct Marquee: Element {
     }
 }
 
-/// Lowercase typealias for creating Marquee elements with a more HTML-like syntax.
-public typealias marquee = Marquee

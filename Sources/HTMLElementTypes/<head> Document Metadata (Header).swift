@@ -53,5 +53,3 @@ public struct Head: Element {
     public init(){}
 }
 
-/// Lowercase typealias for creating Head elements with a more HTML-like syntax.
-public typealias head = Head

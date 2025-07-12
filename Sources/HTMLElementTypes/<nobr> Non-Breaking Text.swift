@@ -47,6 +47,3 @@ public struct NoBr: Element {
     }
 }
 
-/// Lowercase typealias for creating NoBr elements with a more HTML-like syntax.
-public typealias nobr = NoBr
-

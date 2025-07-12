@@ -54,5 +54,3 @@ public struct Map: Element {
     }
 }
 
-/// Lowercase typealias for creating Map elements with a more HTML-like syntax.
-public typealias map = Map

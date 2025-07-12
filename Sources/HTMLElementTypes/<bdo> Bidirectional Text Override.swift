@@ -65,15 +65,3 @@ public struct BidirectionalTextOverride: Element {
     }
 }
 
-/// Lowercase typealias for creating BidirectionalTextOverride elements with a more HTML-like syntax.
-///
-/// This typealias allows you to use the lowercase `bdo` identifier when creating
-/// HTML bidirectional text override elements, which more closely matches HTML syntax.
-///
-/// Example:
-/// ```swift
-/// bdo(dir: .rtl) {
-///     "This text will display right-to-left."
-/// }
-/// ```
-public typealias bdo = BidirectionalTextOverride

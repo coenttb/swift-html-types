@@ -54,5 +54,3 @@ public struct Figure: Element {
     }
 }
 
-/// Lowercase typealias for creating Figure elements with a more HTML-like syntax.
-public typealias figure = Figure

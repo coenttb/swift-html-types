@@ -59,5 +59,3 @@ public struct Frameset: Element {
     }
 }
 
-/// Lowercase typealias for creating Frameset elements with a more HTML-like syntax.
-public typealias frameset = Frameset

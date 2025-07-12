@@ -68,5 +68,3 @@ public struct TableBody: Element {
     }
 }
 
-/// Lowercase typealias for creating TableBody elements with a more HTML-like syntax.
-public typealias tbody = TableBody

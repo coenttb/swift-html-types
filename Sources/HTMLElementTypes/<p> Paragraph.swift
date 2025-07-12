@@ -54,5 +54,3 @@ public struct Paragraph: Element {
     }
 }
 
-/// Lowercase typealias for creating Paragraph elements with a more HTML-like syntax.
-public typealias p = Paragraph

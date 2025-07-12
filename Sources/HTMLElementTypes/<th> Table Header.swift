@@ -92,6 +92,3 @@ public struct TableHeader: Element {
     }
 }
 
-/// Lowercase typealias for creating TableHeader elements with a more HTML-like syntax.
-public typealias th = TableHeader
-

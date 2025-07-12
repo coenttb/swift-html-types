@@ -62,5 +62,3 @@ public struct InsertedText: Element {
     }
 }
 
-/// Lowercase typealias for creating InsertedText elements with a more HTML-like syntax.
-public typealias ins = InsertedText

@@ -146,5 +146,3 @@ public struct Script: Element {
     }
 }
 
-/// Lowercase typealias for creating Script elements with a more HTML-like syntax.
-public typealias script = Script

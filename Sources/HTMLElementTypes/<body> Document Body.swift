@@ -238,16 +238,3 @@ public struct Body: Element {
     }
 }
 
-/// Lowercase typealias for creating Body elements with a more HTML-like syntax.
-///
-/// This typealias allows you to use the lowercase `body` identifier when creating
-/// HTML body elements, which more closely matches HTML syntax.
-///
-/// Example:
-/// ```swift
-/// body {
-///   heading1 { "Welcome to My Website" }
-///   paragraph { "This is the content of my webpage." }
-/// }
-/// ```
-public typealias body = Body

@@ -58,6 +58,3 @@ public struct PreformattedText: Element {
     }
 }
 
-/// Lowercase typealias for creating PreformattedText elements with a more HTML-like syntax.
-public typealias pre = PreformattedText
-

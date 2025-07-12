@@ -78,6 +78,3 @@ public struct Variable: Element {
     }
 }
 
-/// Lowercase typealias for creating Variable elements with a more HTML-like syntax.
-/// Note: Backticks are required since `var` is a reserved keyword in Swift.
-public typealias `var` = Variable

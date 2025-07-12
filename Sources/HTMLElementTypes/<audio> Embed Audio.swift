@@ -215,16 +215,3 @@ extension Audio {
     }
 }
 
-/// Lowercase typealias for creating Audio elements with a more HTML-like syntax.
-///
-/// This typealias allows you to use the lowercase `audio` identifier when creating
-/// HTML audio elements, which more closely matches HTML syntax.
-///
-/// Example:
-/// ```swift
-/// audio(controls: true) {
-///     source(src: "audio.mp3", type: "audio/mpeg")
-///     "Your browser does not support the audio element."
-/// }
-/// ```
-public typealias audio = Audio

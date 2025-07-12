@@ -73,5 +73,3 @@ public struct TableDataCell: Element {
     }
 }
 
-/// Lowercase typealias for creating TableDataCell elements with a more HTML-like syntax.
-public typealias td = TableDataCell

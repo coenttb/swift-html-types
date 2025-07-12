@@ -59,15 +59,3 @@ public struct Address: Element {
     public init(){}
 }
 
-/// Lowercase typealias for creating Address elements with a more HTML-like syntax.
-///
-/// This typealias allows you to use the lowercase `address` identifier when creating
-/// HTML address elements, which more closely matches HTML syntax.
-///
-/// Example:
-/// ```swift
-/// address {
-///   "Contact us: contact@example.com"
-/// }
-/// ```
-public typealias address = Address

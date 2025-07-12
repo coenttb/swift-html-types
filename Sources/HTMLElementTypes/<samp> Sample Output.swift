@@ -48,5 +48,3 @@ public struct Samp: Element {
     }
 }
 
-/// Lowercase typealias for creating Sample Output elements with a more HTML-like syntax.
-public typealias samp = Samp

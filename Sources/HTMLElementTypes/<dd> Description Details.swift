@@ -49,5 +49,3 @@ public struct DescriptionDetails: Element {
     }
 }
 
-/// Lowercase typealias for creating DescriptionDetails elements with a more HTML-like syntax.
-public typealias dd = DescriptionDetails

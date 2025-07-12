@@ -76,19 +76,3 @@ public struct DataList: Element {
     }
 }
 
-/// Lowercase typealias for creating DataList elements with a more HTML-like syntax.
-///
-/// This typealias allows you to use the lowercase `datalist` identifier when creating
-/// HTML datalist elements, which more closely matches HTML syntax.
-///
-/// Example:
-/// ```swift
-/// datalist(id: "browsers") {
-///     option(value: "Chrome")
-///     option(value: "Firefox")
-///     option(value: "Safari")
-/// }
-/// ```
-public typealias datalist = DataList
-
-

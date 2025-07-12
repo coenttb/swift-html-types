@@ -73,7 +73,3 @@ public struct Label: Element {
     }
 }
 
-/// Lowercase typealias for creating Label elements with a more HTML-like syntax.
-///
-/// Example: `label(for: "name") { "Your name:" }`
-public typealias label = Label

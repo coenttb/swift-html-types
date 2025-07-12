@@ -82,5 +82,3 @@ public struct Option: Element {
     }
 }
 
-/// Lowercase typealias for creating Option elements with a more HTML-like syntax.
-public typealias option = Option

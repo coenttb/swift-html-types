@@ -110,5 +110,3 @@ public struct InlineFrame: Element {
     }
 }
 
-/// Lowercase typealias for creating InlineFrame elements with a more HTML-like syntax.
-public typealias iframe = InlineFrame

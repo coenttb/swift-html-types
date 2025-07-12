@@ -75,15 +75,3 @@ public struct Canvas: Element {
     }
 }
 
-/// Lowercase typealias for creating Canvas elements with a more HTML-like syntax.
-///
-/// This typealias allows you to use the lowercase `canvas` identifier when creating
-/// HTML canvas elements, which more closely matches HTML syntax.
-///
-/// Example:
-/// ```swift
-/// canvas(width: 300, height: 150) {
-///     "Your browser does not support the canvas element."
-/// }
-/// ```
-public typealias canvas = Canvas

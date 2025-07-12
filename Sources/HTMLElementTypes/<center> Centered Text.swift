@@ -58,5 +58,3 @@ public struct Center: Element {
     }
 }
 
-/// Lowercase typealias for creating Center elements with a more HTML-like syntax.
-public typealias center = Center

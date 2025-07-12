@@ -51,5 +51,3 @@ public struct Superscript: Element {
     }
 }
 
-/// Lowercase typealias for creating Superscript elements with a more HTML-like syntax.
-public typealias sup = Superscript

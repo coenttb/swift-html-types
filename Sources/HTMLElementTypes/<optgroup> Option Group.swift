@@ -68,5 +68,3 @@ public struct OptionGroup: Element {
     }
 }
 
-/// Lowercase typealias for creating OptionGroup elements with a more HTML-like syntax.
-public typealias optgroup = OptionGroup

@@ -52,5 +52,3 @@ public struct Footer: Element {
     }
 }
 
-/// Lowercase typealias for creating Footer elements with a more HTML-like syntax.
-public typealias footer = Footer

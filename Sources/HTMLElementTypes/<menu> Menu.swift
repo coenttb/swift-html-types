@@ -51,5 +51,3 @@ public struct Menu: Element {
     }
 }
 
-/// Lowercase typealias for creating Menu elements with a more HTML-like syntax.
-public typealias menu = Menu

@@ -47,6 +47,3 @@ public struct FrameFallback: Element {
     }
 }
 
-/// Lowercase typealias for creating FrameFallback elements with a more HTML-like syntax.
-@available(*, deprecated, message: "The noframes element is obsolete and shouldn't be used in modern web development")
-public typealias noframes = FrameFallback

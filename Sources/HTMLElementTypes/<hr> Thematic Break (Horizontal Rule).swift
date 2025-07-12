@@ -40,5 +40,3 @@ public struct ThematicBreak: Element {
     public init() {}
 }
 
-/// Lowercase typealias for creating ThematicBreak elements with a more HTML-like syntax.
-public typealias hr = ThematicBreak

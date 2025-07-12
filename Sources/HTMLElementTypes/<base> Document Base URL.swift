@@ -130,13 +130,3 @@ public struct Base: Element {
     }
 }
 
-/// Lowercase typealias for creating Base elements with a more HTML-like syntax.
-///
-/// This typealias allows you to use the lowercase `base` identifier when creating
-/// HTML base elements, which more closely matches HTML syntax.
-///
-/// Example:
-/// ```swift
-/// base(href: "https://example.com/")
-/// ```
-public typealias base = Base

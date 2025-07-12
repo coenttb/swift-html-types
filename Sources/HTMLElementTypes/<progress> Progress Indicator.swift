@@ -67,5 +67,3 @@ public struct ProgressIndicator: Element {
     }
 }
 
-/// Lowercase typealias for creating ProgressIndicator elements with a more HTML-like syntax.
-public typealias progress = ProgressIndicator

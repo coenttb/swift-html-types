@@ -59,5 +59,4 @@ public struct DisclosureSummary: Element {
     }
 }
 
-/// Lowercase typealias for creating DisclosureSummary elements with a more HTML-like syntax.
-public typealias summary = DisclosureSummary
+
