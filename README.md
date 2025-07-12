@@ -17,8 +17,8 @@ This package is currently in active development and is subject to changes. Featu
 import HTMLTypes
 
 // Create elements with appropriate attributes
-let anchor = Anchor(href: "https://example.com") // or just use the shorthand: a(href: "https://example.com")
-let input = input.search(name: "query", placeholder: "Search...")
+let anchor = Anchor(href: "https://example.com")
+let input = Input.search(name: "query", placeholder: "Search...")
 ```
 
 ### Foundation integration for URL safety
@@ -28,7 +28,7 @@ import HTMLTypesFoundation
 
 let url: Foundation.URL = .init(...)
 
-let anchor = Anchor(url: url) // or just use the shorthand: a(url: url)
+let anchor = Anchor(url: url)
 ```
 
 ## Motivation
@@ -36,7 +36,7 @@ let anchor = Anchor(url: url) // or just use the shorthand: a(url: url)
 A domain model for HTML brings many benefits. In particular, this package improves discoverability of available attributes for each HTML element, for example invoking the search static func on input reveals the available attributes (except global attributes, which should be applied via methods):
 
 ```swift
-let input = input.search(
+let input = Input.search(
   name: Name?,
   value: Value<String>?,
   list: List?,
@@ -55,7 +55,7 @@ let input = input.search(
 
 Contrast this with other input types, like color, that permit a different set of attributes:
 ```swift
-let input = input.color(
+let input = Input.color(
   name: Name?,
   value: Value<String>?,
   disabled: Disabled?,
