@@ -45,14 +45,14 @@ public struct Scope: StringAttribute, CustomStringConvertible {
 
 extension Scrolling {
     /// The header relates to all cells of the row it belongs to
-    public static let row: Self = "row"
+    @inlinable public static var row: Self { "row" }
     
     /// The header relates to all cells of the column it belongs to
-    public static let col: Self = "col"
+    @inlinable public static var col: Self { "col" }
     
     /// The header belongs to a rowgroup and relates to all of its cells
-    public static let rowgroup: Self = "rowgroup"
+    @inlinable public static var rowgroup: Self { "rowgroup" }
     
     /// The header belongs to a colgroup and relates to all of its cells
-    public static let colgroup: Self = "colgroup"
+    @inlinable public static var colgroup: Self { "colgroup" }
 }

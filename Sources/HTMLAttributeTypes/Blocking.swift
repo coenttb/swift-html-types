@@ -40,5 +40,5 @@ public struct Blocking: StringAttribute {
 }
 
 extension Blocking {
-    public static let render: Self = "render"
+    @inlinable public static var render: Self { "render" }
 }

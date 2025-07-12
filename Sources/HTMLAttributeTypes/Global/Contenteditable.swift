@@ -65,7 +65,7 @@ extension Contenteditable {
     /// ```html
     /// <div contenteditable="true">Editable content</div>
     /// ```
-    public static let `true`: Self = "true"
+    @inlinable public static var `true`: Self { "true" }
     
     /// Element is editable - equivalent to true (with rich formatting preserved when pasting)
     ///
@@ -73,7 +73,7 @@ extension Contenteditable {
     /// ```html
     /// <div contenteditable>Editable content</div>
     /// ```
-    public static let empty: Self = ""
+    @inlinable public static var empty: Self { "" }
     
     /// Element is not editable
     ///
@@ -81,7 +81,7 @@ extension Contenteditable {
     /// ```html
     /// <div contenteditable="false">Non-editable content</div>
     /// ```
-    public static let `false`: Self = "false"
+    @inlinable public static var `false`: Self { "false" }
     
     /// Element is editable but only as plain text (formatting is removed when pasting)
     ///
@@ -89,7 +89,7 @@ extension Contenteditable {
     /// ```html
     /// <div contenteditable="plaintext-only">Plain text editing only</div>
     /// ```
-    public static let plaintextOnly: Self = "plaintext-only"
+    @inlinable public static var plaintextOnly: Self { "plaintext-only" }
 }
 
 extension Contenteditable: CaseIterable {

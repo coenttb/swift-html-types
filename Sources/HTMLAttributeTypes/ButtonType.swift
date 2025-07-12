@@ -25,12 +25,12 @@ public struct ButtonType: StringAttribute {
 
 extension ButtonType {
     /// Submits the form data (default behavior)
-    public static let submit: Self = "submit"
+    @inlinable public static var submit: Self { "submit" }
     
     /// Resets the form data to its initial values
-    public static let reset: Self = "reset"
+    @inlinable public static var reset: Self { "reset" }
     
     /// No default behavior, typically used with JavaScript
-    public static let button: Self = "button"
+    @inlinable public static var button: Self { "button" }
 }
 

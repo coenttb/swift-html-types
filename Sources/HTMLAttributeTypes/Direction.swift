@@ -38,14 +38,14 @@ public struct Direction: StringAttribute {
 
 extension Direction {
     /// Preset for left-to-right scrolling (default)
-    public static let left: Self = "left"
+    @inlinable public static var left: Self { "left" }
     
     /// Preset for right-to-left scrolling
-    public static let right: Self = "right"
+    @inlinable public static var right: Self { "right" }
     
     /// Preset for bottom-to-top scrolling
-    public static let up: Self = "up"
+    @inlinable public static var up: Self { "up" }
     
     /// Preset for top-to-bottom scrolling
-    public static let down: Self = "down"
+    @inlinable public static var down: Self { "down" }
 }

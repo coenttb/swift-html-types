@@ -27,11 +27,11 @@ public struct Preload: StringAttribute, CustomStringConvertible {
 
 extension Preload {
     /// No preloading should occur
-    public static let none: Self = "none"
+    @inlinable public static var none: Self { "none" }
     
     /// Only video metadata (e.g., dimensions, duration) should be loaded
-    public static let metadata: Self = "metadata"
+    @inlinable public static var metadata: Self { "metadata" }
     
     /// The entire video can be downloaded
-    public static let auto: Self = "auto"
+    @inlinable public static var auto: Self { "auto" }
 }

@@ -92,34 +92,34 @@ extension Elementtiming {
             self.value = value
         }
         /// Main page hero or feature element
-        public static let hero: Self = "hero"
+        @inlinable public static var hero: Self { "hero" }
         
         /// Primary content elements
-        public static let main: Self = "main"
+        @inlinable public static var main: Self { "main" }
         
         /// Header elements
-        public static let header: Self = "header"
+        @inlinable public static var header: Self { "header" }
         
         /// Navigation elements
-        public static let nav: Self = "nav"
+        @inlinable public static var nav: Self { "nav" }
         
         /// Footer elements
-        public static let footer: Self = "footer"
+        @inlinable public static var footer: Self { "footer" }
         
         /// Image elements
-        public static let image: Self = "image"
+        @inlinable public static var image: Self { "image" }
         
         /// Text content elements
-        public static let text: Self = "text"
+        @inlinable public static var text: Self { "text" }
         
         /// Interactive elements
-        public static let interactive: Self = "interactive"
+        @inlinable public static var interactive: Self { "interactive" }
         
         /// Layout or structural elements
-        public static let layout: Self = "layout"
+        @inlinable public static var layout: Self { "layout" }
         
         /// Custom category
-        public static let custom: Self = "custom"
+        @inlinable public static var custom: Self { "custom" }
         
         public var description: String { self.value }
     }

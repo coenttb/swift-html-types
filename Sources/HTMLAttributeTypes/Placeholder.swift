@@ -61,17 +61,17 @@ public struct Placeholder: StringAttribute {
 
 extension Placeholder {
     /// Example email address placeholder
-    public static let email: Self = "email"
+    @inlinable public static var email: Self { "email" }
     
     /// Example phone number placeholder
-    public static let phone: Self = "phone"
+    @inlinable public static var phone: Self { "phone" }
     
     /// Example name placeholder
-    public static let name: Self = "name"
+    @inlinable public static var name: Self { "name" }
     
     /// Example search placeholder
-    public static let search: Self = "search"
+    @inlinable public static var search: Self { "search" }
     
     /// Example URL placeholder
-    public static let url: Self = "url"
+    @inlinable public static var url: Self { "url" }
 }

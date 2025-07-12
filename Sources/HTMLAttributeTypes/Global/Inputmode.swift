@@ -72,7 +72,7 @@ extension Inputmode {
     /// ```html
     /// <input inputmode="none">
     /// ```
-    public static let none: Self = "none"
+    @inlinable public static var none: Self { "none" }
     
     /// Standard text input keyboard for the user's locale (default)
     ///
@@ -82,7 +82,7 @@ extension Inputmode {
     /// ```html
     /// <input inputmode="text">
     /// ```
-    public static let text: Self = "text"
+    @inlinable public static var text: Self { "text" }
     
     /// Fractional numeric input keyboard
     ///
@@ -93,7 +93,7 @@ extension Inputmode {
     /// ```html
     /// <input inputmode="decimal" placeholder="Enter an amount">
     /// ```
-    public static let decimal: Self = "decimal"
+    @inlinable public static var decimal: Self { "decimal" }
     
     /// Numeric input keyboard (digits only)
     ///
@@ -104,7 +104,7 @@ extension Inputmode {
     /// ```html
     /// <input inputmode="numeric" pattern="[0-9]*" placeholder="PIN">
     /// ```
-    public static let numeric: Self = "numeric"
+    @inlinable public static var numeric: Self { "numeric" }
     
     /// Telephone keypad
     ///
@@ -115,7 +115,7 @@ extension Inputmode {
     /// ```html
     /// <input inputmode="tel" placeholder="Phone number">
     /// ```
-    public static let tel: Self = "tel"
+    @inlinable public static var tel: Self { "tel" }
     
     /// Search-optimized keyboard
     ///
@@ -126,7 +126,7 @@ extension Inputmode {
     /// ```html
     /// <input inputmode="search" placeholder="Search...">
     /// ```
-    public static let search: Self = "search"
+    @inlinable public static var search: Self { "search" }
     
     /// Email keyboard
     ///
@@ -137,7 +137,7 @@ extension Inputmode {
     /// ```html
     /// <input inputmode="email" placeholder="Email address">
     /// ```
-    public static let email: Self = "email"
+    @inlinable public static var email: Self { "email" }
     
     /// URL keyboard
     ///
@@ -148,7 +148,7 @@ extension Inputmode {
     /// ```html
     /// <input inputmode="url" placeholder="Website URL">
     /// ```
-    public static let url: Self = "url"
+    @inlinable public static var url: Self { "url" }
 }
 
 extension Inputmode: CaseIterable {

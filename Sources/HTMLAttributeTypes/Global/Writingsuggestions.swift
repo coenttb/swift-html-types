@@ -77,10 +77,10 @@ public struct Writingsuggestions: StringAttribute {
 
 extension Writingsuggestions {
     /// Enables browser-provided writing suggestions
-    public static let `true`: Self = "true"
+    @inlinable public static var `true`: Self { "true" }
     
     /// Disables browser-provided writing suggestions
-    public static let `false`: Self = "false"
+    @inlinable public static var `false`: Self { "false" }
 }
 
 extension Writingsuggestions: CaseIterable {

@@ -68,7 +68,7 @@ extension Draggable {
     /// ```html
     /// <div draggable="true">Drag me</div>
     /// ```
-    public static let `true`: Self = "true"
+    @inlinable public static var `true`: Self { "true" }
     
     /// Element cannot be dragged
     ///
@@ -76,7 +76,7 @@ extension Draggable {
     /// ```html
     /// <img src="image.png" draggable="false" alt="Non-draggable image" />
     /// ```
-    public static let `false`: Self = "false"
+    @inlinable public static var `false`: Self { "false" }
     
     /// Browser default dragging behavior
     ///
@@ -87,7 +87,7 @@ extension Draggable {
     /// ```html
     /// <div draggable="auto">Uses default browser behavior</div>
     /// ```
-    public static let auto: Self = "auto"
+    @inlinable public static var auto: Self { "auto" }
 }
 
 extension Draggable: CaseIterable {

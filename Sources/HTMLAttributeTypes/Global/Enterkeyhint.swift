@@ -62,7 +62,7 @@ extension Enterkeyhint {
     /// ```html
     /// <textarea enterkeyhint="enter"></textarea>
     /// ```
-    public static let enter: Self = "enter"
+    @inlinable public static var enter: Self { "enter" }
     
     /// Indicates that Enter will complete the input task
     ///
@@ -75,7 +75,7 @@ extension Enterkeyhint {
     /// ```html
     /// <input type="text" enterkeyhint="done" />
     /// ```
-    public static let done: Self = "done"
+    @inlinable public static var done: Self { "done" }
     
     /// Indicates that Enter will take the user to the target of the entered text
     ///
@@ -87,7 +87,7 @@ extension Enterkeyhint {
     /// ```html
     /// <input type="url" enterkeyhint="go" />
     /// ```
-    public static let go: Self = "go"
+    @inlinable public static var go: Self { "go" }
     
     /// Indicates that Enter will move focus to the next input field
     ///
@@ -99,7 +99,7 @@ extension Enterkeyhint {
     /// ```html
     /// <input type="text" enterkeyhint="next" />
     /// ```
-    public static let next: Self = "next"
+    @inlinable public static var next: Self { "next" }
     
     /// Indicates that Enter will move focus to the previous input field
     ///
@@ -111,7 +111,7 @@ extension Enterkeyhint {
     /// ```html
     /// <input type="text" enterkeyhint="previous" />
     /// ```
-    public static let previous: Self = "previous"
+    @inlinable public static var previous: Self { "previous" }
     
     /// Indicates that Enter will initiate a search
     ///
@@ -123,7 +123,7 @@ extension Enterkeyhint {
     /// ```html
     /// <input type="search" enterkeyhint="search" />
     /// ```
-    public static let search: Self = "search"
+    @inlinable public static var search: Self { "search" }
     
     /// Indicates that Enter will send the entered text to its target
     ///
@@ -135,7 +135,7 @@ extension Enterkeyhint {
     /// ```html
     /// <textarea enterkeyhint="send"></textarea>
     /// ```
-    public static let send: Self = "send"
+    @inlinable public static var send: Self { "send" }
 }
 
 extension Enterkeyhint: CaseIterable {

@@ -110,36 +110,36 @@ extension Lang {
  
 extension Lang {
     /// Common language code for English
-    public static let english: Self = "en"
+    @inlinable public static var english: Self { "en" }
     
     /// Common language code for French
-    public static let french: Self = "fr"
+    @inlinable public static var french: Self { "fr" }
     
     /// Common language code for German
-    public static let german: Self = "de"
+    @inlinable public static var german: Self { "de" }
     
     /// Common language code for Spanish
-    public static let spanish: Self = "es"
+    @inlinable public static var spanish: Self { "es" }
     
     /// Common language code for Italian
-    public static let italian: Self = "it"
+    @inlinable public static var italian: Self { "it" }
     
     /// Common language code for Japanese
-    public static let japanese: Self = "ja"
+    @inlinable public static var japanese: Self { "ja" }
     
     /// Common language code for Chinese
-    public static let chinese: Self = "zh"
+    @inlinable public static var chinese: Self { "zh" }
     
     /// Common language code for Russian
-    public static let russian: Self = "ru"
+    @inlinable public static var russian: Self { "ru" }
     
     /// Common language code for Arabic
-    public static let arabic: Self = "ar"
+    @inlinable public static var arabic: Self { "ar" }
     
     /// Common language code for American English
-    public static let americanEnglish: Self = "en-US"
+    @inlinable public static var americanEnglish: Self { "en-US" }
     
     /// Common language code for British English
-    public static let britishEnglish: Self = "en-GB"
+    @inlinable public static var britishEnglish: Self { "en-GB" }
 }
 

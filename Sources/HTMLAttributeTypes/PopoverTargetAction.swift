@@ -43,7 +43,7 @@ public struct PopoverTargetAction: StringAttribute, CustomStringConvertible {
 
 
 extension PopoverTargetAction {
-    public static let show: Self = "show"
-    public static let hide: Self = "hide"
-    public static let toggle: Self = "toggle"
+    @inlinable public static var show: Self { "show" }
+    @inlinable public static var hide: Self { "hide" }
+    @inlinable public static var toggle: Self { "toggle" }
 }

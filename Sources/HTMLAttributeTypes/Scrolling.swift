@@ -41,11 +41,11 @@ public struct Scrolling: StringAttribute, CustomStringConvertible {
 
 extension Scrolling {
     /// Force scrollbars to appear even when not needed
-    public static let yes: Self = "yes"
+    @inlinable public static var yes: Self { "yes" }
     
     /// Prevent scrollbars from appearing even when needed
-    public static let no: Self = "no"
+    @inlinable public static var no: Self { "no" }
     
     /// Allow browser to add scrollbars when necessary (default)
-    public static let auto: Self = "auto"
+    @inlinable public static var auto: Self { "auto" }
 }

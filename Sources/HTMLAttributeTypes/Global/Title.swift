@@ -97,5 +97,5 @@ extension Title: ExpressibleByArrayLiteral {
 
 extension Title {
     /// Creates an empty title to prevent inheriting from ancestors
-    public static let empty: Self = ""
+    @inlinable public static var empty: Self { "" }
 }

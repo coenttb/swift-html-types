@@ -60,7 +60,7 @@ extension FetchPriority {
     /// - LCP (Largest Contentful Paint) images
     /// - Critical CSS required for initial render
     /// - Important scripts needed early in the page lifecycle
-    public static let high: Self = "high"
+    @inlinable public static var high: Self { "high" }
     
     /// Fetch the resource at a low priority relative to other resources of the same type.
     ///
@@ -68,13 +68,13 @@ extension FetchPriority {
     /// - Below-the-fold images
     /// - Non-critical scripts
     /// - Analytics and tracking code
-    public static let low: Self = "low"
+    @inlinable public static var low: Self { "low" }
     
     /// Don't set a preference for the fetch priority (default).
     ///
     /// This is used if no value is explicitly set or if an invalid value is set.
     /// The browser will use its default prioritization heuristics.
-    public static let auto: Self = "auto"
+    @inlinable public static var auto: Self { "auto" }
 }
 
 extension FetchPriority: CaseIterable {

@@ -39,17 +39,17 @@ public struct ListType: StringAttribute {
  
 extension ListType {
     /// Lowercase letters (a, b, c, ...)
-    public static let lowerAlpha: Self = "a"
+    @inlinable public static var lowerAlpha: Self { "a" }
     
     /// Uppercase letters (A, B, C, ...)
-    public static let upperAlpha: Self = "A"
+    @inlinable public static var upperAlpha: Self { "A" }
     
     /// Lowercase Roman numerals (i, ii, iii, ...)
-    public static let lowerRoman: Self = "i"
+    @inlinable public static var lowerRoman: Self { "i" }
     
     /// Uppercase Roman numerals (I, II, III, ...)
-    public static let upperRoman: Self = "I"
+    @inlinable public static var upperRoman: Self { "I" }
     
     /// Numbers (1, 2, 3, ...) - default
-    public static let decimal: Self = "1"
+    @inlinable public static var decimal: Self { "1" }
 }

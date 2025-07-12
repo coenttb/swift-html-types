@@ -89,13 +89,13 @@ public struct Popover: StringAttribute {
 
 extension Popover {
     /// Auto popover that can be light dismissed and will close other auto popovers
-    public static let auto: Self = "auto"
+    @inlinable public static var auto: Self { "auto" }
     
     /// Manual popover that cannot be light dismissed and won't close other popovers
-    public static let manual: Self = "manual"
+    @inlinable public static var manual: Self { "manual" }
     
     /// Hint popover that can be light dismissed but won't close auto popovers
-    public static let hint: Self = "hint"
+    @inlinable public static var hint: Self { "hint" }
 }
 
 extension Popover: CaseIterable {

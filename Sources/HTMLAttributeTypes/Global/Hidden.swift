@@ -89,7 +89,7 @@ extension Hidden {
     /// ```html
     /// <div hidden="">Hidden content</div>
     /// ```
-    public static let empty: Self = ""
+    @inlinable public static var empty: Self { "" }
     
     /// Content is completely hidden
     ///
@@ -97,7 +97,7 @@ extension Hidden {
     /// ```html
     /// <div hidden="hidden">Hidden content</div>
     /// ```
-    public static let hidden: Self = "hidden"
+    @inlinable public static var hidden: Self { "hidden" }
     
     /// Content is hidden but discoverable by search or fragment navigation (experimental)
     ///
@@ -111,7 +111,7 @@ extension Hidden {
     /// ```html
     /// <div id="section3" hidden="until-found">Hidden until found</div>
     /// ```
-    public static let untilFound: Self = "until-found"
+    @inlinable public static var untilFound: Self { "until-found" }
 }
 
 

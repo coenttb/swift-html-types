@@ -27,29 +27,29 @@ public struct MetaName: StringAttribute {
 
 extension MetaName {
     /// Name of the application that generated the document.
-    public static let application: Self = "application-name"
+    @inlinable public static var application: Self { "application-name" }
     
     /// Name of the document's author.
-    public static let author: Self = "author"
+    @inlinable public static var author: Self { "author" }
     
     /// Summary of the page's content.
-    public static let description: Self = "description"
+    @inlinable public static var description: Self { "description" }
     
     /// Software that generated the document.
-    public static let generator: Self = "generator"
+    @inlinable public static var generator: Self { "generator" }
     
     /// Comma-separated list of keywords relevant to the page.
-    public static let keywords: Self = "keywords"
+    @inlinable public static var keywords: Self { "keywords" }
     
     /// Referrer policy for links away from the document.
-    public static let referrer: Self = "referrer"
+    @inlinable public static var referrer: Self { "referrer" }
     
     /// Suggested color for customizing browser UI elements.
-    public static let themeColor: Self = "theme-color"
+    @inlinable public static var themeColor: Self { "theme-color" }
     
     /// Instructions for search engine crawlers.
-    public static let robots: Self = "robots"
+    @inlinable public static var robots: Self { "robots" }
     
     /// Settings for the visual viewport on mobile devices.
-    public static let viewport: Self = "viewport"
+    @inlinable public static var viewport: Self { "viewport" }
 }

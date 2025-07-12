@@ -72,7 +72,7 @@ extension Dir {
     /// ```html
     /// <p dir="ltr">This is English text</p>
     /// ```
-    public static let ltr: Self = "ltr"
+    @inlinable public static var ltr: Self { "ltr" }
     
     /// Right-to-left text direction
     ///
@@ -82,7 +82,7 @@ extension Dir {
     /// ```html
     /// <p dir="rtl">هذه الفقرة باللغة العربية</p>
     /// ```
-    public static let rtl: Self = "rtl"
+    @inlinable public static var rtl: Self { "rtl" }
     
     /// Let the user agent determine direction based on content
     ///
@@ -94,7 +94,7 @@ extension Dir {
     /// ```html
     /// <p dir="auto">Content determines direction</p>
     /// ```
-    public static let auto: Self = "auto"
+    @inlinable public static var auto: Self { "auto" }
 }
 
 extension Dir: CaseIterable {

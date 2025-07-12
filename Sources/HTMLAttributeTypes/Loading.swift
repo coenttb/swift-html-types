@@ -63,8 +63,8 @@ public struct Loading: StringAttribute, Sendable, Equatable {
 }
 
 extension Loading {
-    public static let lazy: Self = "lazy"
-    public static let eager: Self = "eager"
+    @inlinable public static var lazy: Self { "lazy" }
+    @inlinable public static var eager: Self { "eager" }
 }
 
 extension Loading: CaseIterable {

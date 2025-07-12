@@ -47,5 +47,5 @@ public struct Xmlns: StringAttribute, CustomStringConvertible {
     }
     
     /// Standard HTML namespace
-    public static let html: Self = "http://www.w3.org/1999/xhtml"
+    @inlinable public static var html: Self { "http://www.w3.org/1999/xhtml" }
 }

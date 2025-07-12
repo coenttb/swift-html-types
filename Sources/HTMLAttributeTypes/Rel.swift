@@ -98,36 +98,36 @@ extension Rel {
 }
 
 extension Rel {
-    public static let alternate: Self = "alternate"
-    public static let author: Self = "author"
-    public static let help: Self = "help"
-    public static let license: Self = "license"
-    public static let next: Self = "next"
-    public static let prev: Self = "prev"
-    public static let search: Self = "search"
+    @inlinable public static var alternate: Self { "alternate" }
+    @inlinable public static var author: Self { "author" }
+    @inlinable public static var help: Self { "help" }
+    @inlinable public static var license: Self { "license" }
+    @inlinable public static var next: Self { "next" }
+    @inlinable public static var prev: Self { "prev" }
+    @inlinable public static var search: Self { "search" }
     
     // Link-specific types
-    public static let canonical: Self = "canonical"
-    public static let stylesheet: Self = "stylesheet"
-    public static let icon: Self = "icon"
-    public static let manifest: Self = "manifest"
-    public static let modulepreload: Self = "modulepreload"
-    public static let preload: Self = "preload"
-    public static let prefetch: Self = "prefetch"
-    public static let preconnect: Self = "preconnect"
-    public static let dns_prefetch: Self = "dns-prefetch"
+    @inlinable public static var canonical: Self { "canonical" }
+    @inlinable public static var stylesheet: Self { "stylesheet" }
+    @inlinable public static var icon: Self { "icon" }
+    @inlinable public static var manifest: Self { "manifest" }
+    @inlinable public static var modulepreload: Self { "modulepreload" }
+    @inlinable public static var preload: Self { "preload" }
+    @inlinable public static var prefetch: Self { "prefetch" }
+    @inlinable public static var preconnect: Self { "preconnect" }
+    @inlinable public static var dns_prefetch: Self { "dns-prefetch" }
     
     // Anchor-specific types
-    public static let bookmark: Self = "bookmark"
-    public static let external: Self = "external"
-    public static let nofollow: Self = "nofollow"
-    public static let noopener: Self = "noopener"
-    public static let noreferrer: Self = "noreferrer"
-    public static let tag: Self = "tag"
-    public static let me: Self = "me"
+    @inlinable public static var bookmark: Self { "bookmark" }
+    @inlinable public static var external: Self { "external" }
+    @inlinable public static var nofollow: Self { "nofollow" }
+    @inlinable public static var noopener: Self { "noopener" }
+    @inlinable public static var noreferrer: Self { "noreferrer" }
+    @inlinable public static var tag: Self { "tag" }
+    @inlinable public static var me: Self { "me" }
     
     // Security/privacy related types
-    public static let privacy_policy: Self = "privacy-policy"
-    public static let terms_of_service: Self = "terms-of-service"
+    @inlinable public static var privacy_policy: Self { "privacy-policy" }
+    @inlinable public static var terms_of_service: Self { "terms-of-service" }
 }
 

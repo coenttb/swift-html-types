@@ -53,26 +53,26 @@ public struct ReferrerPolicy: StringAttribute {
 
 extension ReferrerPolicy {
     /// No referrer information is sent
-    public static let noReferrer: Self = "no-referrer"
+    @inlinable public static var noReferrer: Self { "no-referrer" }
     
     /// No referrer sent when navigating from HTTPS to HTTP
-    public static let noReferrerWhenDowngrade: Self = "no-referrer-when-downgrade"
+    @inlinable public static var noReferrerWhenDowngrade: Self { "no-referrer-when-downgrade" }
     
     /// Only send the origin (scheme, host, port) as the referrer
-    public static let origin: Self = "origin"
+    @inlinable public static var origin: Self { "origin" }
     
     /// Full URL for same-origin requests, just origin for cross-origin
-    public static let originWhenCrossOrigin: Self = "origin-when-cross-origin"
+    @inlinable public static var originWhenCrossOrigin: Self { "origin-when-cross-origin" }
     
     /// Send referrer for same-origin requests only
-    public static let sameOrigin: Self = "same-origin"
+    @inlinable public static var sameOrigin: Self { "same-origin" }
     
     /// Send origin as referrer only when security level stays the same
-    public static let strictOrigin: Self = "strict-origin"
+    @inlinable public static var strictOrigin: Self { "strict-origin" }
     
     /// Default behavior if none specified
-    public static let strictOriginWhenCrossOrigin: Self = "strict-origin-when-cross-origin"
+    @inlinable public static var strictOriginWhenCrossOrigin: Self { "strict-origin-when-cross-origin" }
     
     /// Send full URL as referrer (not recommended for security reasons)
-    public static let unsafeUrl: Self = "unsafe-url"
+    @inlinable public static var unsafeUrl: Self { "unsafe-url" }
 }

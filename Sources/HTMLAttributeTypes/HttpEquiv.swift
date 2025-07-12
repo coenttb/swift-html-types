@@ -30,17 +30,17 @@ public struct HttpEquiv: StringAttribute {
 
 extension HttpEquiv {
     /// Defines a content security policy for the page.
-    public static let contentSecurityPolicy: Self = "content-security-policy"
+    @inlinable public static var contentSecurityPolicy: Self { "content-security-policy" }
     
     /// Declares the MIME type and character encoding.
-    public static let contentType: Self = "content-type"
+    @inlinable public static var contentType: Self { "content-type" }
     
     /// Sets the name of the default CSS style sheet set.
-    public static let defaultStyle: Self = "default-style"
+    @inlinable public static var defaultStyle: Self { "default-style" }
     
     /// Specifies page reload or redirect behavior.
-    public static let refresh: Self = "refresh"
+    @inlinable public static var refresh: Self { "refresh" }
     
     /// Specifies Internet Explorer compatibility mode.
-    public static let xUaCompatible: Self = "x-ua-compatible"
+    @inlinable public static var xUaCompatible: Self { "x-ua-compatible" }
 }

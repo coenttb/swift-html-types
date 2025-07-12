@@ -26,14 +26,14 @@ public struct Kind: StringAttribute  {
 
 extension Kind {
     /// Subtitles provide translation of content that cannot be understood by the viewer
-    public static let subtitles: Self = "subtitles"
+    @inlinable public static var subtitles: Self { "subtitles" }
     
     /// Closed captions provide a transcription and possibly a translation of audio
-    public static let captions: Self = "captions"
+    @inlinable public static var captions: Self { "captions" }
     
     /// Chapter titles are intended to be used when the user is navigating the media resource
-    public static let chapters: Self = "chapters"
+    @inlinable public static var chapters: Self { "chapters" }
     
     /// Tracks used by scripts, not visible to the user
-    public static let metadata: Self = "metadata"
+    @inlinable public static var metadata: Self { "metadata" }
 }

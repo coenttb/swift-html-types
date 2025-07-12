@@ -53,8 +53,8 @@ public struct ShadowRootMode: StringAttribute, CustomStringConvertible {
 
 extension ShadowRootMode {
     /// Exposes the internal shadow root DOM for JavaScript access
-    public static let open: Self = "open"
+    @inlinable public static var open: Self { "open" }
     
     /// Hides the internal shadow root DOM from JavaScript access
-    public static let closed: Self = "closed"
+    @inlinable public static var closed: Self { "closed" }
 }

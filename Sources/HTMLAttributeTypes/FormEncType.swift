@@ -26,11 +26,11 @@ public struct FormEncType: StringAttribute {
 
 extension FormEncType {
     /// Standard form encoding (default)
-    public static let urlEncoded: Self = "application/x-www-form-urlencoded"
+    @inlinable public static var urlEncoded: Self { "application/x-www-form-urlencoded" }
     
     /// Required for file uploads
-    public static let multipartFormData: Self = "multipart/form-data"
+    @inlinable public static var multipartFormData: Self { "multipart/form-data" }
     
     /// Minimal encoding, useful for debugging
-    public static let textPlain: Self = "text/plain"
+    @inlinable public static var textPlain: Self { "text/plain" }
 }

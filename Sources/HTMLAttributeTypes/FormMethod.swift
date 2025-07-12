@@ -83,11 +83,11 @@ public struct FormMethod: StringAttribute {
 extension FormMethod {
         
     /// GET method: data appended to the URL
-    public static let get: Self = "get"
+    @inlinable public static var get: Self { "get" }
     
     /// POST method: data sent in the request body
-    public static let post: Self = "post"
+    @inlinable public static var post: Self { "post" }
     
     /// DIALOG method: for forms inside a dialog element
-    public static let dialog: Self = "dialog"
+    @inlinable public static var dialog: Self { "dialog" }
 }

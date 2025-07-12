@@ -53,8 +53,8 @@ extension Autocomplete: ExpressibleByBooleanLiteral {
 }
 
 extension Autocomplete {
-    public static let on: Self = "on"
-    public static let off: Self = "off"
+    @inlinable public static var on: Self { "on" }
+    @inlinable public static var off: Self { "off" }
 }
 
 extension Autocomplete: ExpressibleByArrayLiteral {

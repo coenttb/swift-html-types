@@ -26,13 +26,13 @@ public struct ControlsList: StringAttribute {
 
 extension ControlsList {
     /// Hides the download control
-    public static let nodownload: Self = "nodownload"
+    @inlinable public static var nodownload: Self { "nodownload" }
     
     /// Hides the fullscreen control
-    public static let nofullscreen: Self = "nofullscreen"
+    @inlinable public static var nofullscreen: Self { "nofullscreen" }
     
     /// Hides the remote playback control
-    public static let noremoteplayback: Self = "noremoteplayback"
+    @inlinable public static var noremoteplayback: Self { "noremoteplayback" }
     
     /// Combines multiple controlslist values
     public static func combine(_ values: [ControlsList]) -> Self {

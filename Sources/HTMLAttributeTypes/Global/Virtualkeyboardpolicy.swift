@@ -87,10 +87,10 @@ public struct Virtualkeyboardpolicy: StringAttribute {
 
 extension Virtualkeyboardpolicy {
     /// Automatically shows the virtual keyboard when element is focused or tapped
-    public static let auto: Self = "auto"
+    @inlinable public static var auto: Self { "auto" }
     
     /// Decouples focus and tap on the element from the virtual keyboard's state
-    public static let manual: Self = "manual"
+    @inlinable public static var manual: Self { "manual" }
 }
 
 extension Virtualkeyboardpolicy: CaseIterable {

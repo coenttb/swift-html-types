@@ -92,10 +92,10 @@ public struct Translate: StringAttribute {
 
 extension Translate {
     /// Content should be translated
-    public static let yes: Self = "yes"
+    @inlinable public static var yes: Self { "yes" }
     
     /// Content should not be translated
-    public static let no: Self = "no"
+    @inlinable public static var no: Self { "no" }
 }
 
 extension Translate: ExpressibleByBooleanLiteral {

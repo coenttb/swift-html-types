@@ -63,8 +63,8 @@ public struct Crossorigin: StringAttribute {
 
 extension Crossorigin {
     /// A cross-origin request is performed, but no credentials are sent
-    public static let anonymous: Self = "anonymous"
+    @inlinable public static var anonymous: Self { "anonymous" }
     
     /// A cross-origin request is performed along with credentials
-    public static let useCredentials: Self = "use-credentials"
+    @inlinable public static var useCredentials: Self { "use-credentials" }
 }

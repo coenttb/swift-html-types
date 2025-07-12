@@ -30,25 +30,25 @@ public struct As: StringAttribute {
 
 extension As {
     /// For `<audio>` elements
-    public static let audio: Self = "audio"
+    @inlinable public static var audio: Self { "audio" }
     /// For `<iframe>` and `<frame>` elements
-    public static let document: Self = "document"
+    @inlinable public static var document: Self { "document" }
     /// For `<embed>` elements
-    public static let embed: Self = "embed"
+    @inlinable public static var embed: Self { "embed" }
     /// For fetch, XHR requests
-    public static let fetch: Self = "fetch"
+    @inlinable public static var fetch: Self { "fetch" }
     /// For CSS @font-face
-    public static let font: Self = "font"
+    @inlinable public static var font: Self { "font" }
     /// For images and SVGs
-    public static let image: Self = "image"
+    @inlinable public static var image: Self { "image" }
     /// For `<object>` elements
-    public static let object: Self = "object"
+    @inlinable public static var object: Self { "object" }
     /// For `<script>` elements, Worker importScripts
-    public static let script: Self = "script"
+    @inlinable public static var script: Self { "script" }
     /// For stylesheets
-    public static let style: Self = "style"
+    @inlinable public static var style: Self { "style" }
     /// For `<track>` elements
-    public static let track: Self = "track"
+    @inlinable public static var track: Self { "track" }
     /// For Worker, SharedWorker
-    public static let worker: Self = "worker"
+    @inlinable public static var worker: Self { "worker" }
 }
