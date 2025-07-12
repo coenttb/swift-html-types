@@ -42,7 +42,7 @@ import HTMLAttributeTypes
 /// - Use the `disabled` attribute to make an option unselectable when appropriate
 /// - Consider using `optgroup` to organize options into logical groups for better usability
 ///
-public struct Option: Element {
+public struct Option: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "option" }
     

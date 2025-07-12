@@ -36,7 +36,7 @@ import HTMLAttributeTypes
 /// - Use `<iframe>` instead for embedding content within a document
 /// - Always provide descriptive names for frames to improve navigation
 ///
-public struct Frame: Element {
+public struct Frame: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "frame" }
     

@@ -62,7 +62,7 @@ import HTMLAttributeTypes
 ///   of individual columns
 ///
 /// - Note: When rendered, this generates an HTML `<colgroup>` element containing column definitions.
-public struct TableColumnGroup: Element {
+public struct TableColumnGroup: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "colgroup" }
     

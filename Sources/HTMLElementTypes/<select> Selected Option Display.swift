@@ -39,7 +39,7 @@ import HTMLAttributeTypes
 /// - Keep the dropdown list reasonably sized for usability
 /// - Consider using `<optgroup>` to organize long lists of options
 ///
-public struct Select: Element {
+public struct Select: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "select" }
     

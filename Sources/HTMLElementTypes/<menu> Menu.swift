@@ -39,7 +39,7 @@
 /// - Include `<li>` elements as direct children of `<menu>`
 /// - For styling, you may want to apply `list-style-type: none` and adjust the display property
 ///
-public struct Menu: Element {
+public struct Menu: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "menu" }
     

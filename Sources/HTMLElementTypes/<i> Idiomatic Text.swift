@@ -48,7 +48,7 @@ import HTMLAttributeTypes
 ///   - Use `<mark>` for relevance
 ///   - Use `<cite>` for names of works
 ///   - Use `<dfn>` for defining terms
-public struct IdiomaticText: Element {
+public struct IdiomaticText: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "i" }
     

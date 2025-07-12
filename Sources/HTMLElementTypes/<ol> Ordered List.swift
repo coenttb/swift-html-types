@@ -36,7 +36,7 @@ import HTMLAttributeTypes
 /// - Nest lists as needed to show hierarchical information
 /// - For styling, prefer CSS over the `type` attribute when possible
 ///
-public struct OrderedList: Element {
+public struct OrderedList: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "ol" }
     

@@ -51,7 +51,7 @@ import HTMLAttributeTypes
 ///
 /// - Note: When rendered, this generates an HTML `<canvas>` element that can be used 
 ///   for drawing graphics with JavaScript.
-public struct Canvas: Element {
+public struct Canvas: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "canvas" }
     

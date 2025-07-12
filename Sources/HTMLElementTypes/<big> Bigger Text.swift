@@ -31,7 +31,7 @@ import HTMLAttributeTypes
 /// - Consider using CSS `font-size` property instead as `<big>` is deprecated
 /// - For modern development, prefer using semantic elements with appropriate CSS styling
 ///
-public struct Big: Element {
+public struct Big: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "big" }
     

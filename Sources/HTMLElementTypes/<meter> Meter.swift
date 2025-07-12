@@ -40,7 +40,7 @@ import HTMLAttributeTypes
 /// - Use `low` and `high` to indicate thresholds for acceptable ranges
 /// - Use `optimum` to indicate the ideal value within the range
 ///
-public struct Meter: Element {
+public struct Meter: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "meter" }
     

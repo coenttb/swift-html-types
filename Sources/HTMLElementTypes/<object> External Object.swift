@@ -48,7 +48,7 @@ import HTMLAttributeTypes
 /// - For images, audio, or video, prefer the specialized elements (<img>, <audio>, <video>)
 /// - For modern web applications, avoid using object for Flash content
 ///
-public struct ExternalObject: Element {
+public struct ExternalObject: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "object" }
     

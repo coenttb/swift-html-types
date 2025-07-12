@@ -39,7 +39,7 @@ import HTMLAttributeTypes
 /// - Consider accessibility concerns; continuous scrolling text can be difficult to read for some users.
 /// - If you must use animation, include support for the `prefers-reduced-motion` CSS media query.
 ///
-public struct Marquee: Element {
+public struct Marquee: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "marquee" }
     

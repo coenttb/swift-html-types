@@ -47,7 +47,7 @@
 /// - Use for meaningful relationships between terms and their descriptions
 /// - Consider using for metadata display where a clear key-value relationship exists
 /// - In HTML5, each term-description group can also be wrapped in a `<div>` for styling or microdata purposes
-public struct DescriptionList: Element {
+public struct DescriptionList: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "dl" }
     

@@ -41,7 +41,7 @@ import HTMLAttributeTypes
 /// - Include both opening and closing parentheses for better fallback appearance
 /// - Only use within a `<ruby>` element
 ///
-public struct RubyParenthesis: Element {
+public struct RubyParenthesis: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "rp" }
     

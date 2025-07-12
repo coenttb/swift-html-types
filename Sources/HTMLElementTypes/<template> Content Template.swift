@@ -40,7 +40,7 @@ import HTMLAttributeTypes
 /// - Remember that CSS styles inside a template are not applied until the template is cloned and inserted into the document
 /// - Consider using declarative shadow DOM by specifying `shadowrootmode` attribute when appropriate
 ///
-public struct ContentTemplate: Element {
+public struct ContentTemplate: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "template" }
 

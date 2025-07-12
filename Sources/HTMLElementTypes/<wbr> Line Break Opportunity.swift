@@ -57,7 +57,7 @@
 /// Unlike the `<br>` element which forces a line break, `<wbr>` only suggests where a break *may* occur if needed.
 /// The browser will only break at the `<wbr>` position if it would otherwise overflow its container.
 ///
-public struct LineBreakOpportunity: Element {
+public struct LineBreakOpportunity: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "wbr" }
     

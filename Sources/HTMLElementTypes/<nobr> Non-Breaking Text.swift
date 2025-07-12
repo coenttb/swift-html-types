@@ -34,7 +34,7 @@ import HTMLAttributeTypes
 /// <span style="white-space: nowrap;">Long line with no breaks</span>
 /// ```
 ///
-public struct NoBr: Element {
+public struct NoBr: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "nobr" }
     

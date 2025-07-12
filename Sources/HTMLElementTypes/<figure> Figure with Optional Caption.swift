@@ -42,7 +42,7 @@
 /// - Typically used for images, illustrations, diagrams, code snippets, etc.
 /// - Can be moved to another part of the document without affecting the main flow
 ///
-public struct Figure: Element {
+public struct Figure: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "figure" }
     

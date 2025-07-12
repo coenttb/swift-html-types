@@ -64,7 +64,7 @@ import HTMLAttributeTypes
 /// - Consider responsive design techniques for tables on small screens
 /// - Keep table structure simple when possible for better accessibility
 ///
-public struct Table: Element {
+public struct Table: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "table" }
     

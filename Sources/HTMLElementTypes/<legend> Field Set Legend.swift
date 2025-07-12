@@ -35,7 +35,7 @@ import HTMLAttributeTypes
 /// - Keep legend text concise and informative
 /// - Consider accessibility by using clear, descriptive text
 ///
-public struct Legend: Element {
+public struct Legend: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "legend" }
     

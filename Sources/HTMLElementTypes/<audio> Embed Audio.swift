@@ -59,7 +59,7 @@ import HTMLAttributeTypes
 ///
 /// - Note: When rendered, this generates an HTML `<audio>` element with the appropriate
 ///   attributes and content based on the configuration.
-public struct Audio: Element {
+public struct Audio: HTMLElement {
     public static var tag: String { "audio" }
     
     /// The URL of the audio file to embed.

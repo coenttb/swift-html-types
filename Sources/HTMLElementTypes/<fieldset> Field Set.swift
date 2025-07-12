@@ -43,7 +43,7 @@ import HTMLAttributeTypes
 /// - Consider using the `disabled` attribute to disable all form controls within the fieldset at once
 /// - Form controls inside the `<legend>` element won't be disabled when the fieldset is disabled
 ///
-public struct FieldSet: Element {
+public struct FieldSet: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "fieldset" }
     

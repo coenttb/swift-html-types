@@ -40,7 +40,7 @@ import HTMLAttributeTypes
 /// - Set the `default` attribute on one track if you want it enabled by default
 /// - A media element cannot have more than one track with the same `kind`, `srclang`, and `label`
 ///
-public struct Track: Element {
+public struct Track: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "track" }
     

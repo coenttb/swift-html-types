@@ -41,7 +41,7 @@ import HTMLAttributeTypes
 /// presentation (like `<b>` and `<i>`), it is valid in HTML when used for its semantic purpose rather than
 /// just visual styling.
 ///
-public struct Small: Element {
+public struct Small: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "small" }
     

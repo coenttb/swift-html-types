@@ -47,7 +47,7 @@ import HTMLAttributeTypes
 ///
 /// - Note: When rendered, this generates an HTML `<bdo>` element that overrides the default
 ///   text direction for its content.
-public struct BidirectionalTextOverride: Element {
+public struct BidirectionalTextOverride: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "bdo" }
     

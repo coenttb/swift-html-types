@@ -38,7 +38,7 @@ import HTMLAttributeTypes
 /// You can use CSS `::before` and `::after` pseudo-elements with the `content` property
 /// to make it announced by screen readers when necessary.
 ///
-public struct Strikethrough: Element {
+public struct Strikethrough: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "s" }
     

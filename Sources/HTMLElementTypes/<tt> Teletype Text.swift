@@ -37,7 +37,7 @@ import HTMLAttributeTypes
 ///   - `<pre>` for preformatted text blocks
 /// - For non-semantic monospace text, use CSS `font-family: monospace` with a `<span>` element
 ///
-public struct TeletypeText: Element {
+public struct TeletypeText: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "tt" }
     

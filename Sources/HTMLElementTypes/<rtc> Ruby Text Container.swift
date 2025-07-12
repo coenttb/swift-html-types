@@ -47,7 +47,7 @@ import HTMLAttributeTypes
 /// - Note that this element is deprecated; consider simpler ruby structures for better compatibility
 /// - Only use within a `<ruby>` element
 ///
-public struct RubyTextContainer: Element {
+public struct RubyTextContainer: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "rtc" }
     

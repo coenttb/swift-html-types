@@ -64,7 +64,7 @@ import HTMLAttributeTypes
 /// - Use `colspan` attributes when a footer cell needs to span multiple columns
 /// - Consider accessibility by using `<th>` elements with appropriate `scope` attributes for footer headers
 ///
-public struct TableFoot: Element {
+public struct TableFoot: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "tfoot" }
     

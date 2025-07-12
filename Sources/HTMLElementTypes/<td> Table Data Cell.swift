@@ -43,7 +43,7 @@ import HTMLAttributeTypes
 /// - Use CSS properties instead of deprecated attributes for styling
 /// - Ensure tables have a clear structure with `<thead>`, `<tbody>`, and `<tfoot>` when appropriate
 ///
-public struct TableDataCell: Element {
+public struct TableDataCell: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "td" }
     

@@ -34,7 +34,7 @@ import HTMLAttributeTypes
 /// - Use `<del>` for content that has been deleted from a document.
 /// - Consider using CSS `text-decoration: line-through` for styling purposes instead.
 ///
-public struct Strike: Element {
+public struct Strike: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "strike" }
     

@@ -32,7 +32,7 @@ import HTMLAttributeTypes
 /// - Use the `form` attribute to associate the output with a form outside its hierarchy
 /// - Many browsers implement this element as an `aria-live` region, making it useful for accessibility
 ///
-public struct Output: Element {
+public struct Output: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "output" }
     

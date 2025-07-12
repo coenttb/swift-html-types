@@ -43,7 +43,7 @@ import HTMLAttributeTypes
 /// - This element should not be used for dates prior to the introduction of the Gregorian calendar
 /// - If the element doesn't have a `datetime` attribute, the content must be in a valid datetime format
 ///
-public struct Time: Element {
+public struct Time: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "time" }
     

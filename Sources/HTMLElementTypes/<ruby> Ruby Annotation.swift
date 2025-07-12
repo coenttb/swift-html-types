@@ -40,7 +40,7 @@ import HTMLAttributeTypes
 /// - Keep annotations concise and directly related to the base text
 /// - For complex ruby annotations, consider using `<rb>` (Ruby Base) and `<rtc>` (Ruby Text Container) elements
 ///
-public struct Ruby: Element {
+public struct Ruby: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "ruby" }
     

@@ -37,7 +37,7 @@ import HTMLAttributeTypes
 /// - Consider combining with other semantic text elements like `<var>` for variables or `<kbd>` for keyboard input.
 /// - The element can be styled with CSS to enhance readability (background color, padding, etc.).
 ///
-public struct Code: Element {
+public struct Code: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "code" }
     

@@ -47,7 +47,7 @@ import HTMLAttributeTypes
 /// - While you can include HTML elements inside a `<summary>`, be aware that the default role of "button"
 ///   will strip roles from child elements, which may impact screen reader users.
 ///
-public struct DisclosureSummary: Element {
+public struct DisclosureSummary: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "summary" }
     

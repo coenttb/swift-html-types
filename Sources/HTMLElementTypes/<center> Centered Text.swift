@@ -46,7 +46,7 @@ import HTMLAttributeTypes
 /// - Instead, use CSS `text-align: center` with `<div>` or `<p>` elements
 /// - For centering blocks, use CSS properties like `margin-left` and `margin-right` set to `auto`
 ///
-public struct Center: Element {
+public struct Center: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "center" }
     

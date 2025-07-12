@@ -37,7 +37,7 @@ import HTMLAttributeTypes
 /// - It can be made to be announced by using the CSS `content` property, along with the `::before` and `::after` pseudo-elements.
 /// - Only use this when it's important for users to know that content was inserted.
 ///
-public struct InsertedText: Element {
+public struct InsertedText: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "ins" }
     

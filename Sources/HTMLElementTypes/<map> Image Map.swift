@@ -34,7 +34,7 @@ import HTMLAttributeTypes
 /// - Ensure the `name` attribute matches the corresponding `usemap` attribute on the `<img>` element
 /// - Include `alt` attributes on all `<area>` elements for accessibility
 ///
-public struct Map: Element {
+public struct Map: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "map" }
     

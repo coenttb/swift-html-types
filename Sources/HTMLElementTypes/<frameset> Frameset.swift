@@ -34,7 +34,7 @@ import HTMLAttributeTypes
 /// - Use `<iframe>` instead for embedding content
 /// - A frameset document has a `<frameset>` element instead of a `<body>` element
 ///
-public struct Frameset: Element {
+public struct Frameset: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "frameset" }
     

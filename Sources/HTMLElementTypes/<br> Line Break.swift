@@ -50,7 +50,7 @@ import HTMLAttributeTypes
 /// - Don't set margins on `<br>` elements; use the `line-height` property instead
 ///
 /// - Note: The `<br>` element is a void element and does not have a closing tag.
-public struct BR: Element {
+public struct BR: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "br" }
     

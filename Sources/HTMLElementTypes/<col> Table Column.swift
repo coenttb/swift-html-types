@@ -55,7 +55,7 @@ import HTMLAttributeTypes
 /// - Use CSS to style column properties rather than deprecated HTML attributes
 ///
 /// - Note: When rendered, this generates an HTML `<col>` element with no closing tag.
-public struct TableColumn: Element {
+public struct TableColumn: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "col" }
     

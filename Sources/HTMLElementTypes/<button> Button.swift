@@ -51,7 +51,7 @@ import HTMLAttributeTypes
 /// For toggle buttons, use the `aria-pressed` attribute to indicate state.
 ///
 /// - Note: When rendered, this generates an HTML `<button>` element that is interactive and clickable.
-public struct Button: Element {
+public struct Button: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "button" }
     

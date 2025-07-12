@@ -49,7 +49,7 @@ import HTMLAttributeTypes
 /// - Browser reader mode functionality looks for the presence of the `<main>` element when converting
 ///   content into a specialized reader view.
 ///
-public struct Main: Element {
+public struct Main: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "main" }
     

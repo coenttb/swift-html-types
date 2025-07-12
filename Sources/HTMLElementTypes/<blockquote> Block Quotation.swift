@@ -36,7 +36,7 @@ import HTMLAttributeTypes
 /// - For shorter inline quotes, use the `q` element instead
 /// - The content is typically rendered visually by indentation
 ///
-public struct BlockQuote: Element {
+public struct BlockQuote: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "blockquote" }
     

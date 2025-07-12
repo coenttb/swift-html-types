@@ -66,7 +66,7 @@
 /// Most browsers render the `<var>` element in an italicized font style, although this can vary
 /// across browsers and can be overridden with CSS.
 ///
-public struct Variable: Element {
+public struct Variable: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "var" }
     

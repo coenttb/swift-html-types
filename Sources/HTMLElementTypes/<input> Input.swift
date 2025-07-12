@@ -34,7 +34,7 @@ import HTMLAttributeTypes
 ///
 /// - Note: When rendered, this generates an HTML `<input>` element with the appropriate
 ///   attributes based on the input type.
-public struct Input: Element {
+public struct Input: HTMLElement {
     public static var tag: String { "input" }
     
     /// Name of the form control. Submitted with the form as part of a name/value pair.

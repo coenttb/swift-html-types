@@ -33,7 +33,7 @@ import HTMLAttributeTypes
 /// - Ensure slot names are unique within a shadow root
 /// - Remember that unnamed slots (without a name attribute) will capture all unassigned content
 ///
-public struct WebComponentSlot: Element {
+public struct WebComponentSlot: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "slot" }
     

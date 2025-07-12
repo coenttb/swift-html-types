@@ -45,7 +45,7 @@ import HTMLAttributeTypes
 /// - `<noscript>`: Provides fallback content for browsers with JavaScript disabled
 /// - `<template>`: Holds client-side template content
 ///
-public struct Head: Element {
+public struct Head: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "head" }
     

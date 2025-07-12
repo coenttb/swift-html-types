@@ -46,7 +46,7 @@ import HTMLAttributeTypes
 ///
 /// - Note: When rendered, this generates an HTML `<article>` element with the appropriate
 ///   attributes based on the configuration.
-public struct Article: Element {
+public struct Article: HTMLElement {
     public static var tag: String { "article" }
 
     

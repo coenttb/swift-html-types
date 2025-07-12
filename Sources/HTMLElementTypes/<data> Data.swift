@@ -34,7 +34,7 @@ import HTMLAttributeTypes
 /// - Use the `value` attribute to provide the machine-readable translation of the content.
 /// - This element can be used to associate additional data with content that is displayed to users.
 ///
-public struct Data: Element {
+public struct Data: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "data" }
     

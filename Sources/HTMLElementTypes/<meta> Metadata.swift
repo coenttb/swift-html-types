@@ -53,7 +53,7 @@ import HTMLAttributeTypes
 ///
 /// - Note: When rendered, this generates an HTML `<meta>` element with the appropriate
 ///   attributes based on the metadata type.
-public struct Meta: Element {
+public struct Meta: HTMLElement {
     public static var tag: String { "meta" }
     
     /// Declares the document's character encoding.

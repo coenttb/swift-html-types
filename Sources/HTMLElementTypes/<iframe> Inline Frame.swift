@@ -37,7 +37,7 @@ import HTMLAttributeTypes
 /// - Avoid using too many iframes on a single page as they consume additional memory and computing resources
 /// - Use the `loading="lazy"` attribute for iframes that are not immediately visible on page load
 /// - Specify both `width` and `height` attributes to prevent layout shifts as the page loads
-public struct InlineFrame: Element {
+public struct InlineFrame: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "iframe" }
     

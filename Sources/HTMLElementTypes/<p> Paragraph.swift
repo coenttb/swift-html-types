@@ -42,7 +42,7 @@ import HTMLAttributeTypes
 /// - Never use empty paragraphs for spacing, as screen readers may announce them without any content, causing confusion
 /// - Use CSS properties like `margin` to create spacing between paragraphs
 ///
-public struct Paragraph: Element {
+public struct Paragraph: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "p" }
     

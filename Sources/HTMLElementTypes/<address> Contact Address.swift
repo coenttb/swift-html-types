@@ -52,7 +52,7 @@ import HTMLAttributeTypes
 ///
 /// - Note: When rendered, this generates an HTML `<address>` element with the appropriate
 ///   attributes based on the configuration.
-public struct Address: Element {
+public struct Address: HTMLElement {
     public static var tag: String { "address" }
 
     /// Creates a new Address element with the specified content.

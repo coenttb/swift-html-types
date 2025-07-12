@@ -46,7 +46,7 @@ import HTMLAttributeTypes
 /// - Often combined with elements like `<code>`, `<samp>`, or `<kbd>`
 /// - Remember that < characters may need to be escaped as &lt; in the content
 ///
-public struct PreformattedText: Element {
+public struct PreformattedText: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "pre" }
     

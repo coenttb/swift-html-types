@@ -34,7 +34,7 @@ import HTMLAttributeTypes
 /// - Use the `cite` attribute to specify the source URL of the quotation
 /// - Consider using the `<cite>` element in conjunction with `<q>` to attribute the source
 ///
-public struct InlineQuotation: Element {
+public struct InlineQuotation: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "q" }
     

@@ -50,7 +50,7 @@ import HTMLAttributeTypes
 /// - Use CSS for styling rather than deprecated presentational attributes
 /// - For complex tables, consider using multiple header rows within a single `<thead>` element
 ///
-public struct TableHead: Element {
+public struct TableHead: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "thead" }
     

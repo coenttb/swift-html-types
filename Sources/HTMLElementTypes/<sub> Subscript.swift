@@ -35,7 +35,7 @@ import HTMLAttributeTypes
 ///   - Chemical formulas (e.g., H₂O)
 /// - For presentational subscripts, use CSS (e.g., `vertical-align: sub`)
 ///
-public struct Subscript: Element {
+public struct Subscript: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "sub" }
     

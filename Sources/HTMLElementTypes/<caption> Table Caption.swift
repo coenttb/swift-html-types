@@ -50,7 +50,7 @@ import HTMLAttributeTypes
 /// - Any `background-color` applied to a table will not be applied to its caption. Add a 
 ///   `background-color` to the `<caption>` element as well if you want the same color to be behind both
 
-public struct Caption: Element {
+public struct Caption: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "caption" }
     

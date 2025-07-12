@@ -48,7 +48,7 @@ import HTMLAttributeTypes
 /// - Use CSS selectors like `:nth-of-type`, `:first-of-type`, and `:last-of-type` to style rows
 /// - Avoid deprecated attributes like `align`, `bgcolor`, `char`, `charoff`, and `valign`; use CSS instead
 ///
-public struct TableRow: Element {
+public struct TableRow: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "tr" }
     

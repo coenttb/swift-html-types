@@ -39,7 +39,7 @@ import HTMLAttributeTypes
 /// - Note that only the heading element contributes to the document outline
 /// - The `<hgroup>` has an implicit ARIA role of "group"
 ///
-public struct HeadingGroup: Element {
+public struct HeadingGroup: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "hgroup" }
     

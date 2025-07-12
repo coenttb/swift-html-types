@@ -52,7 +52,7 @@ import HTMLAttributeTypes
 ///
 /// - Note: When rendered, this generates the HTML `<title>` element, which must be
 ///   placed within the `<head>` element of an HTML document.
-public struct Title: Element {
+public struct Title: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "title" }
 

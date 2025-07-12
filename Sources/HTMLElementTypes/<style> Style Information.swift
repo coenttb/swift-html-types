@@ -39,7 +39,7 @@ import HTMLAttributeTypes
 /// - When using multiple `<style>` and `<link>` elements, they are applied in the order they appear in the document.
 /// - You can use the `media` attribute to apply styles conditionally based on media queries.
 ///
-public struct Style: Element {
+public struct Style: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "style" }
     

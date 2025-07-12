@@ -56,7 +56,7 @@ import HTMLAttributeTypes
 ///
 /// - Note: When rendered, this generates the HTML `<body>` element that contains
 ///   all the visible content of the webpage.
-public struct Body: Element {
+public struct Body: HTMLElement {
     public static var tag: String { "body" }
     
     /// Function to call after the user has printed the document.

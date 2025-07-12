@@ -50,7 +50,7 @@ import HTMLAttributeTypes
 ///   `<meter>`, `<output>`, `<progress>`, `<select>`, and `<textarea>`
 ///
 /// - Note: When rendered, this generates an HTML `<label>` element that improves form accessibility.
-public struct Label: Element {
+public struct Label: HTMLElement {
     public static var tag: String { "label" }
     
     /// Associates the label with a form control using its ID.

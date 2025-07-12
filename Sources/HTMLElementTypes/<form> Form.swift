@@ -55,7 +55,7 @@ import HTMLAttributeTypes
 ///
 /// - Note: When rendered, this generates an HTML `<form>` element with the appropriate
 ///   attributes based on the form configuration.
-public struct Form: Element {
+public struct Form: HTMLElement {
     public static var tag: String { "form" }
     
     /// DEPRECATED: A comma-separated list of content types the server accepts.

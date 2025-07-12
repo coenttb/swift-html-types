@@ -39,7 +39,7 @@ import HTMLAttributeTypes
 ///
 /// The `<strong>` element has an implicit ARIA role of "strong" which communicates the importance to assistive technologies.
 ///
-public struct StrongImportance: Element {
+public struct StrongImportance: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "strong" }
     

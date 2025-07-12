@@ -37,7 +37,7 @@ import HTMLAttributeTypes
 /// - If there is no value attribute, the progress bar is indeterminate, indicating an ongoing activity with no indication of expected duration
 /// - To change a progress bar to indeterminate after giving it a value, the value attribute must be removed
 ///
-public struct ProgressIndicator: Element {
+public struct ProgressIndicator: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "progress" }
     

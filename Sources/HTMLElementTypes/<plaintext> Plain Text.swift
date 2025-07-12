@@ -42,7 +42,7 @@ import HTMLAttributeTypes
 /// - Apply monospaced fonts via CSS using `font-family: monospace` where needed.
 ///
 @available(*, deprecated, message: "The <plaintext> element is deprecated. Use <pre> or <code> instead.")
-public struct PlainText: Element {
+public struct PlainText: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "plaintext" }
     

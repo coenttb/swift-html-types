@@ -49,7 +49,7 @@ import HTMLAttributeTypes
 /// - Use semantic table structure with `<thead>`, `<tbody>`, and `<tfoot>` elements for better accessibility
 /// - Avoid deprecated presentational attributes; use CSS for styling instead
 ///
-public struct TableHeader: Element {
+public struct TableHeader: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "th" }
     

@@ -41,7 +41,7 @@ import HTMLAttributeTypes
 /// - Do not nest a `<header>` inside an `<address>`, `<footer>` or another `<header>` element
 /// - The `<header>` element should not contain another `<header>` or a `<footer>` element
 ///
-public struct Header: Element {
+public struct Header: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "header" }
     

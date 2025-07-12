@@ -42,7 +42,7 @@ import HTMLAttributeTypes
 /// The presence of the `del` element is not announced by most screen reading technology in its default configuration.
 /// For critical content, consider using CSS with `::before` and `::after` pseudo-elements to make deletions more apparent.
 ///
-public struct Del: Element {
+public struct Del: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "del" }
     

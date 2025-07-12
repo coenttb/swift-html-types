@@ -34,7 +34,7 @@ import HTMLAttributeTypes
 /// - Use `<object>` with fallback content instead
 /// - Provide descriptive alternative content that explains what would be shown
 ///
-public struct EmbedFallback: Element {
+public struct EmbedFallback: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "noembed" }
     

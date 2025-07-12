@@ -37,7 +37,7 @@ import HTMLAttributeTypes
 /// - The end tag may be omitted if this element is immediately followed by another
 ///   `<dd>` element, a `<dt>` element, or if there is no more content in the parent element
 ///
-public struct DescriptionDetails: Element {
+public struct DescriptionDetails: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "dd" }
     

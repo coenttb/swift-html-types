@@ -36,7 +36,7 @@ import HTMLAttributeTypes
 ///   so relying upon `<embed>` is generally not wise for broad browser compatibility.
 /// - Consider using more modern elements like `<video>`, `<audio>`, or `<iframe>` when possible.
 ///
-public struct Embed: Element {
+public struct Embed: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "embed" }
     

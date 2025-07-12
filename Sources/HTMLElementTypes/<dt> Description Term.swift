@@ -47,7 +47,7 @@ import HTMLAttributeTypes
 /// - The `<dt>` element should be followed by a `<dd>` element or another `<dt>` element.
 /// - Multiple `<dt>` elements in a row indicate multiple terms defined by the next `<dd>` element.
 ///
-public struct DescriptionTerm: Element {
+public struct DescriptionTerm: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "dt" }
     

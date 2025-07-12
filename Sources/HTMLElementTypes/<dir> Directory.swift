@@ -33,7 +33,7 @@ import HTMLAttributeTypes
 /// - Use `<ul>` for lists, including lists of files
 /// - If needed for legacy compatibility, ensure proper accessibility
 ///
-public struct Directory: Element {
+public struct Directory: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "dir" }
     

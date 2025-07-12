@@ -40,7 +40,7 @@ import HTMLAttributeTypes
 /// - The footer element has an implicit ARIA role of `contentinfo` (when at the page level) 
 ///   or `generic` (when nested within article, aside, main, nav, or section)
 /// - For legacy browser support, consider adding `role="contentinfo"` explicitly
-public struct Footer: Element {
+public struct Footer: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "footer" }
     

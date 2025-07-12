@@ -37,7 +37,7 @@ import HTMLAttributeTypes
 /// - Include both `<head>` and `<body>` elements as children
 /// - The `<html>` element should be the root of your document, preceded only by the DOCTYPE declaration
 ///
-public struct HtmlRoot: Element {
+public struct HtmlRoot: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "html" }
    

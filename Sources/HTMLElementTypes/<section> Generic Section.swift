@@ -37,7 +37,7 @@ import HTMLAttributeTypes
 /// - If content represents the main content area, use `<main>` instead
 /// - If you only need a styling wrapper, use `<div>` instead
 ///
-public struct Section: Element {
+public struct Section: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "section" }
     

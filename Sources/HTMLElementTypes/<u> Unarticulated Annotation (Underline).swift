@@ -41,7 +41,7 @@ import HTMLAttributeTypes
 ///   - `<i>` for technical terms, transliterations, thoughts, or vessel names
 /// - For non-semantic underlining, use CSS `text-decoration: underline` with a `<span>` element instead
 ///
-public struct UnarticulatedAnnotation: Element {
+public struct UnarticulatedAnnotation: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "u" }
     

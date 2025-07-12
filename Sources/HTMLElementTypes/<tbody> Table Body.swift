@@ -56,7 +56,7 @@ import HTMLAttributeTypes
 /// - Use CSS for styling rather than deprecated presentational attributes
 /// - Remember that even if you don't explicitly use `<tbody>`, browsers will implicitly create one
 ///
-public struct TableBody: Element {
+public struct TableBody: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "tbody" }
     

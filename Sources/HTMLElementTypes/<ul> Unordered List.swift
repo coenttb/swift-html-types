@@ -66,7 +66,7 @@
 /// - `list-style-image`: Uses a custom image for bullets
 /// - `margin` and `padding`: Control list indentation and spacing
 ///
-public struct UnorderedList: Element {
+public struct UnorderedList: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "ul" }
     

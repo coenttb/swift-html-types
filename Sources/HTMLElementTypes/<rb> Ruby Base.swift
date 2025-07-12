@@ -39,7 +39,7 @@ import HTMLAttributeTypes
 /// - Note that this element is deprecated; consider using plain text within the `<ruby>` element instead
 /// - Only use within a `<ruby>` element
 ///
-public struct RubyBase: Element {
+public struct RubyBase: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "rb" }
     

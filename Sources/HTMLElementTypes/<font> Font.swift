@@ -32,7 +32,7 @@ import HTMLAttributeTypes
 /// - Avoid using this element as it is deprecated
 /// - Use CSS styling with proper font properties instead
 ///
-public struct Font: Element {
+public struct Font: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "font" }
     

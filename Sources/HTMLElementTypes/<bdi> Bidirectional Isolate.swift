@@ -56,7 +56,7 @@ import HTMLAttributeTypes
 ///
 /// - Note: When rendered, this generates an HTML `<bdi>` element that isolates its content from
 ///   the bidirectional algorithm's influence.
-public struct BidirectionalIsolate: Element {
+public struct BidirectionalIsolate: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "bdi" }
     

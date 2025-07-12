@@ -35,7 +35,7 @@ import HTMLAttributeTypes
 /// - Use `<figcaption>` to provide an accessible description for the figure content
 /// - Only include one `<figcaption>` per `<figure>` element
 ///
-public struct FigureCaption: Element {
+public struct FigureCaption: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "figcaption" }
     

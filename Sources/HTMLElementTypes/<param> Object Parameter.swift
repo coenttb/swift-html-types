@@ -36,7 +36,7 @@ import HTMLAttributeTypes
 /// - For embedding media, consider using `<video>`, `<audio>`, or `<picture>` elements instead
 /// - For embedding other content, consider using `<iframe>` or more modern web components
 ///
-public struct Param: Element {
+public struct Param: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "param" }
     

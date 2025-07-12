@@ -61,7 +61,7 @@ import HTMLAttributeTypes
 /// - Use the `integrity` attribute for subresource integrity when loading external scripts
 /// - Specify `type="module"` for ES modules
 ///
-public struct Script: Element {
+public struct Script: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "script" }
     

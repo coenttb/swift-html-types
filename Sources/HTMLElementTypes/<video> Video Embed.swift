@@ -59,7 +59,7 @@ import HTMLAttributeTypes
 /// - Make sure video controls are accessible via keyboard
 /// - Videos with important visual information should include audio descriptions
 ///
-public struct Video: Element {
+public struct Video: HTMLElement {
     /// The HTML tag name for the video element
     public static var tag: String { "video" }
     

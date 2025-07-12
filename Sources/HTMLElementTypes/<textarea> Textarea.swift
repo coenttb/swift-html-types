@@ -38,7 +38,7 @@ import HTMLAttributeTypes
 /// - Use CSS for styling rather than relying on HTML attributes
 /// - Consider disabling textarea resizing with CSS `resize: none` if needed
 ///
-public struct Textarea: Element {
+public struct Textarea: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "textarea" }
     

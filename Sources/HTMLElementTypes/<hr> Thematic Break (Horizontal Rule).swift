@@ -32,7 +32,7 @@ import HTMLAttributeTypes
 /// - Use CSS for styling rather than deprecated HTML attributes
 /// - For purely decorative horizontal lines, consider using CSS on other elements instead
 ///
-public struct ThematicBreak: Element {
+public struct ThematicBreak: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "hr" }
     

@@ -37,7 +37,7 @@ import HTMLAttributeTypes
 /// The presence of the mark element is not announced by most screen reading technology by default.
 /// Consider using CSS ::before and ::after pseudo-elements to make it more accessible if necessary.
 ///
-public struct Mark: Element {
+public struct Mark: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "mark" }
     

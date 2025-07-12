@@ -33,7 +33,7 @@
 /// - When outside the `<head>` element, `<noscript>` can contain any content that would be valid in its parent element
 /// - A `<noscript>` element cannot contain another `<noscript>` element
 ///
-public struct Noscript: Element {
+public struct Noscript: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "noscript" }
     

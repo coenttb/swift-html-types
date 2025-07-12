@@ -37,7 +37,7 @@ import HTMLAttributeTypes
 /// - For accessibility, consider using `aria-labelledby` to label navigation sections when a page has multiple navigation blocks
 /// - Screen readers may use this element to determine whether to omit the initial rendering of navigation-only content
 ///
-public struct NavigationSection: Element {
+public struct NavigationSection: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "nav" }
     

@@ -46,7 +46,7 @@ import HTMLAttributeTypes
 /// - For responsive images, use media queries with the `media` attribute
 /// - For `<picture>`, use the `srcset` attribute; for `<audio>` and `<video>`, use the `src` attribute
 ///
-public struct Source: Element {
+public struct Source: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "source" }
     

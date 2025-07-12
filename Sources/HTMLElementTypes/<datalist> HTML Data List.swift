@@ -63,7 +63,7 @@ import HTMLAttributeTypes
 /// - Some screen reader/browser combinations may not announce the dropdown contents
 ///
 /// - Note: When rendered, this generates an HTML `<datalist>` element containing option elements.
-public struct DataList: Element {
+public struct DataList: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "datalist" }
     

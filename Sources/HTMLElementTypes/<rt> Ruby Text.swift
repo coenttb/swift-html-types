@@ -40,7 +40,7 @@ import HTMLAttributeTypes
 /// - Use with `<rp>` elements to provide fallback parentheses for browsers that don't support ruby annotations
 /// - For complex text layout, consider using with `<rb>` and `<rtc>` elements
 ///
-public struct RubyText: Element {
+public struct RubyText: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "rt" }
     

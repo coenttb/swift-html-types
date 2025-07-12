@@ -42,7 +42,7 @@ import HTMLAttributeTypes
 /// - For high-DPI (Retina) display versions, consider using `srcset` on the `<img>` element directly instead of `<picture>`.
 /// - Apply `object-position` and `object-fit` CSS properties on the child `<img>` element, not on the `<picture>` element.
 ///
-public struct Picture: Element {
+public struct Picture: HTMLElement {
     /// The HTML tag name
     public static var tag: String { "picture" }
     
