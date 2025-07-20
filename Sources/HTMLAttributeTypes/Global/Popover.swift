@@ -74,6 +74,7 @@
 /// </button>
 /// <div popover="hint" id="help-popover">Click this button for help</div>
 /// ```
+@dynamicMemberLookup
 public struct Popover: StringAttribute {
 
     /// The name of the HTML attribute

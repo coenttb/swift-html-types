@@ -24,6 +24,7 @@
 /// ```html
 /// <blockquote cite="https://example.com/source">Quoted text</blockquote>
 /// ```
+@dynamicMemberLookup
 public struct Cite: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "cite" }

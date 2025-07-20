@@ -23,6 +23,7 @@
 /// ```html
 /// <marquee behavior="alternate">Bouncing text</marquee>
 /// ```
+@dynamicMemberLookup
 public struct Behavior: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "behavior" }

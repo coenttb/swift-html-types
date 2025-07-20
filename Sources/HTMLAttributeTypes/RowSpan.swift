@@ -25,7 +25,8 @@
 /// ```html
 /// <td rowspan="2">This cell spans two rows</td>
 /// ```
-public struct RowSpan: StringAttribute, CustomStringConvertible {
+@dynamicMemberLookup
+public struct RowSpan: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "rowspan" }
 

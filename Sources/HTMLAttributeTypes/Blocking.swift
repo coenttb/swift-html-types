@@ -26,6 +26,7 @@
 ///   @import url("slow-loading-stylesheet.css");
 /// </style>
 /// ```
+@dynamicMemberLookup
 public struct Blocking: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "blocking" }

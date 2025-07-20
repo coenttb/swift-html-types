@@ -49,6 +49,7 @@
 ///   Drop zone
 /// </div>
 /// ```
+@dynamicMemberLookup
 public struct Draggable: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "draggable" }

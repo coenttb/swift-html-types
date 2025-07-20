@@ -30,6 +30,7 @@
 /// <audio src="sound.mp3" controls></audio>
 /// <video src="movie.mp4" controls></video>
 /// ```
+@dynamicMemberLookup
 public struct Src: StringAttribute, ExpressibleByStringInterpolation, CustomStringConvertible {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "src" }

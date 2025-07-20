@@ -51,6 +51,7 @@
 /// - Ensures resource integrity even when served from untrusted sources
 /// - Provides defense against compromised third-party resources
 ///
+@dynamicMemberLookup
 public struct Integrity: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "integrity" }

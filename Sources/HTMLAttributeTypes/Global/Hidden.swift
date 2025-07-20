@@ -64,6 +64,7 @@
 /// <!-- Link to the hidden content -->
 /// <a href="#details">Show details</a>
 /// ```
+@dynamicMemberLookup
 public struct Hidden: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "hidden" }

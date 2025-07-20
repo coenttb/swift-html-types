@@ -27,7 +27,8 @@
 /// <img srcset="image-320w.jpg 320w, image-480w.jpg 480w" sizes="(max-width: 600px) 320px, 480px">
 /// <link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
 /// ```
-public struct Sizes: StringAttribute, CustomStringConvertible {
+@dynamicMemberLookup
+public struct Sizes: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "sizes" }
 

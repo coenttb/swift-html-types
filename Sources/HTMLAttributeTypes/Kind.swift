@@ -11,6 +11,7 @@
 // ===----------------------------------------------------------------------===//
 
 /// Represents the kind attribute values for the track element.
+@dynamicMemberLookup
 public struct Kind: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "kind" }

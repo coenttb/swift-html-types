@@ -29,7 +29,8 @@
 /// <!-- Row header -->
 /// <th scope="row">Widget X</th>
 /// ```
-public struct Scope: StringAttribute, CustomStringConvertible {
+@dynamicMemberLookup
+public struct Scope: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "scope" }
 

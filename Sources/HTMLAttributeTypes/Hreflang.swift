@@ -10,6 +10,7 @@
 //
 // ===----------------------------------------------------------------------===//
 
+@dynamicMemberLookup
 public struct Hreflang: StringAttribute {
 
     @inlinable public static var attribute: String { "hreflang" }

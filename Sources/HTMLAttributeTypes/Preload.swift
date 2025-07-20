@@ -11,7 +11,8 @@
 // ===----------------------------------------------------------------------===//
 
 /// Represents the preload attribute values for the video element.
-public struct Preload: StringAttribute, CustomStringConvertible {
+@dynamicMemberLookup
+public struct Preload: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "preload" }
 

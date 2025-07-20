@@ -34,6 +34,7 @@
 ///   <p>Your browser doesn't support SVG</p>
 /// </object>
 /// ```
+@dynamicMemberLookup
 public struct ObjectForm: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "form" }

@@ -40,7 +40,8 @@
 ///   Text will only wrap where the user pressed Enter.
 /// </textarea>
 /// ```
-public struct TextareaWrap: StringAttribute, CustomStringConvertible {
+@dynamicMemberLookup
+public struct TextareaWrap: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "wrap" }
 

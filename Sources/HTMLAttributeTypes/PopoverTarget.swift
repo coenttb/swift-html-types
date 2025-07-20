@@ -27,7 +27,8 @@
 /// <button popovertarget="my-popover">Toggle Popover</button>
 /// <div id="my-popover" popover>Popover content</div>
 /// ```
-public struct PopoverTarget: StringAttribute, CustomStringConvertible {
+@dynamicMemberLookup
+public struct PopoverTarget: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "popovertarget" }
 

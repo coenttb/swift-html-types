@@ -23,6 +23,7 @@
 /// <font color="#FF0000">Red text</font>
 /// <font color="blue">Blue text</font>
 /// ```
+@dynamicMemberLookup
 public struct Color: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "color" }

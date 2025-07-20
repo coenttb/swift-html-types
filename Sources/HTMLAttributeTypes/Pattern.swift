@@ -50,6 +50,7 @@
 /// ```html
 /// <input type="text" pattern="[0-9]{5}(-[0-9]{4})?" title="Five digit zip code, optional four digit extension">
 /// ```
+@dynamicMemberLookup
 public struct Pattern: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "pattern" }

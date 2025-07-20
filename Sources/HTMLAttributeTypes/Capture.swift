@@ -45,6 +45,7 @@
 /// ```html
 /// <input type="file" accept="audio/*" capture="user">
 /// ```
+@dynamicMemberLookup
 public struct Capture: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "capture" }

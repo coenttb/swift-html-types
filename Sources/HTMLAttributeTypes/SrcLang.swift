@@ -30,6 +30,7 @@
 ///   <track src="subtitles_es.vtt" kind="subtitles" srclang="es" label="Español">
 /// </video>
 /// ```
+@dynamicMemberLookup
 public struct SrcLang: StringAttribute, ExpressibleByStringInterpolation, CustomStringConvertible {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "srclang" }

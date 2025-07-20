@@ -112,7 +112,7 @@ public struct Area: HTMLElement {
     ///
     /// A space-separated list of link relation types (e.g., "nofollow", "noopener").
     /// Only meaningful when href is present.
-    public var rel: String?
+    public var rel: Rel?
 
     /// Defines where to display the linked resource.
     ///
@@ -138,7 +138,7 @@ public struct Area: HTMLElement {
         download: Download? = nil,
         ping: Ping? = nil,
         referrerpolicy: ReferrerPolicy? = nil,
-        rel: String? = nil,
+        rel: Rel? = nil,
         target: Target? = nil
     ) {
         self.shape = shape

@@ -39,6 +39,7 @@
 ///
 /// This attribute is supported on various elements including `<a>`, `<area>`, `<img>`, `<iframe>`,
 /// `<script>`, and `<link>` elements.
+@dynamicMemberLookup
 public struct ReferrerPolicy: StringAttribute {
     @inlinable public static var attribute: String { "referrerpolicy" }
 

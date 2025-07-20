@@ -77,6 +77,7 @@
 /// - "pt" - Portuguese
 /// - "ru" - Russian
 /// - "zh" - Chinese
+@dynamicMemberLookup
 public struct Lang: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "lang" }

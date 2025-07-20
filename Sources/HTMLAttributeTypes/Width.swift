@@ -49,7 +49,8 @@
 ///   <source src="video.mp4" type="video/mp4">
 /// </video>
 /// ```
-public struct Width: StringAttribute, CustomStringConvertible {
+@dynamicMemberLookup
+public struct Width: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "width" }
 

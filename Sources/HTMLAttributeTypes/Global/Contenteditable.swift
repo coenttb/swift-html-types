@@ -45,6 +45,7 @@
 /// ```html
 /// <div contenteditable="false">This content cannot be edited directly.</div>
 /// ```
+@dynamicMemberLookup
 public struct Contenteditable: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "contenteditable" }

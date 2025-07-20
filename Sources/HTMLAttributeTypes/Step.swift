@@ -146,7 +146,8 @@
 /// ```html
 /// <input type="number" step="any">
 /// ```
-public enum Step: StringAttribute, Sendable, Equatable, ExpressibleByFloatLiteral, ExpressibleByIntegerLiteral {
+@dynamicMemberLookup
+public enum Step: StringAttribute, ExpressibleByFloatLiteral, ExpressibleByIntegerLiteral {
     @inlinable public static var attribute: String { "step" }
 
     /// A specific numeric step value.

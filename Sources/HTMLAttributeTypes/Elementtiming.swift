@@ -60,6 +60,7 @@
 /// ```html
 /// <div class="banner" style="background-image:url(banner.jpg)" elementtiming="main-banner"></div>
 /// ```
+@dynamicMemberLookup
 public struct Elementtiming: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "elementtiming" }

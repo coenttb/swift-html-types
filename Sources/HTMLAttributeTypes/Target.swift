@@ -85,7 +85,8 @@
 ///     input().type(.submit).value("Open in New Tab").formtarget("_blank")
 /// }
 /// ```
-public struct Target: StringAttribute, CustomStringConvertible {
+@dynamicMemberLookup
+public struct Target: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "target" }
 

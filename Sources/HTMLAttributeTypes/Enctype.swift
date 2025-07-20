@@ -66,6 +66,7 @@
 /// // Using string value
 /// HTML.form.enctype("multipart/form-data")
 /// ```
+@dynamicMemberLookup
 public struct EncType: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "enctype" }

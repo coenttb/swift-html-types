@@ -65,6 +65,7 @@
 ///   <li>Item 2</li>
 /// </ul>
 /// ```
+@dynamicMemberLookup
 public struct Is: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "is" }

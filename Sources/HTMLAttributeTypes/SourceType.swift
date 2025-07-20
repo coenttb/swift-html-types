@@ -36,7 +36,8 @@
 /// <!-- Audio with codecs -->
 /// <source src="audio.mp4" type="audio/mp4; codecs='mp4a.40.2'">
 /// ```
-public struct SourceType: StringAttribute, CustomStringConvertible {
+@dynamicMemberLookup
+public struct SourceType: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "type" }
 

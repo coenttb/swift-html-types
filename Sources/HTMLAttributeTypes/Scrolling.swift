@@ -26,7 +26,8 @@
 /// ```html
 /// <iframe src="page.html" scrolling="no"></iframe>
 /// ```
-public struct Scrolling: StringAttribute, CustomStringConvertible {
+@dynamicMemberLookup
+public struct Scrolling: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "scrolling" }
 

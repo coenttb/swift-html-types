@@ -67,6 +67,7 @@
 ///     return data.base64EncodedString()
 /// }
 /// ```
+@dynamicMemberLookup
 public struct Nonce: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "nonce" }

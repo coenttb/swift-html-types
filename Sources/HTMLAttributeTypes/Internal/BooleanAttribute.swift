@@ -10,7 +10,7 @@
 //
 // ===----------------------------------------------------------------------===//
 
-public protocol BooleanAttribute: Attribute, ExpressibleByBooleanLiteral, CaseIterable, RawRepresentable {
+public protocol BooleanAttribute: Attribute, CustomStringConvertible, ExpressibleByBooleanLiteral, CaseIterable, RawRepresentable {
     var rawValue: Bool { get }
 
     init(value: Bool)
@@ -35,11 +35,11 @@ extension BooleanAttribute {
 }
 
 extension BooleanAttribute {
-    static public var allCases: [Self] { [true, false] }
+    public static var allCases: [Self] { [true, false] }
 }
 
 extension BooleanAttribute {
-    subscript<T>(dynamicMember keyPath: KeyPath<Bool, T>) -> T {
+    public subscript<T>(dynamicMember keyPath: KeyPath<Bool, T>) -> T {
         self.rawValue[keyPath: keyPath]
     }
 }

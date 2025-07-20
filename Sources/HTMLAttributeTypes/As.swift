@@ -17,6 +17,7 @@
 ///
 /// It specifies the type of content being loaded, which is necessary for request matching,
 /// application of correct content security policy, and setting of correct Accept request header.
+@dynamicMemberLookup
 public struct As: StringAttribute {
     @inlinable public static var attribute: String { "as" }
 

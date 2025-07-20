@@ -64,7 +64,8 @@
 /// <link rel="icon" type="image/svg+xml" href="icon.svg">
 /// <link rel="apple-touch-icon" href="apple-touch-icon.png">
 /// ```
-public struct Rel: StringAttribute, CustomStringConvertible {
+@dynamicMemberLookup
+public struct Rel: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "rel" }
 

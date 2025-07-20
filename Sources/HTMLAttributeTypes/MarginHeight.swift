@@ -11,6 +11,7 @@
 // ===----------------------------------------------------------------------===//
 
 /// Represents the marginheight attribute for frame elements.
+@dynamicMemberLookup
 public struct MarginHeight: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "marginheight" }

@@ -45,6 +45,7 @@
 /// <label for="bio">Biography:</label>
 /// <textarea id="bio" placeholder="Tell us about yourself..."></textarea>
 /// ```
+@dynamicMemberLookup
 public struct Placeholder: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "placeholder" }

@@ -62,6 +62,7 @@
 /// const element = document.querySelector('#intro');
 /// const element = window.intro;
 /// ```
+@dynamicMemberLookup
 public struct Id: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "id" }

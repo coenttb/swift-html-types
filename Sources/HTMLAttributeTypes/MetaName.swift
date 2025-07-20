@@ -14,6 +14,7 @@
 ///
 /// These values are commonly used with the name attribute to provide
 /// various types of document-level metadata.
+@dynamicMemberLookup
 public struct MetaName: StringAttribute {
     @inlinable public static var attribute: String { "name" }
 

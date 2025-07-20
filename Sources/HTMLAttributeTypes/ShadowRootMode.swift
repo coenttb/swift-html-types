@@ -37,7 +37,8 @@
 ///   <p>Private shadow DOM content</p>
 /// </template>
 /// ```
-public struct ShadowRootMode: StringAttribute, CustomStringConvertible {
+@dynamicMemberLookup
+public struct ShadowRootMode: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "shadowrootmode" }
 

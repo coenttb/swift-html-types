@@ -49,7 +49,8 @@
 ///   but it's included in this library for completeness when working with HTML elements.
 ///
 /// - SeeAlso: [MDN Web Docs: loading attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading)
-public struct Loading: StringAttribute, Sendable, Equatable {
+@dynamicMemberLookup
+public struct Loading: StringAttribute {
     @inlinable public static var attribute: String { "loading" }
 
     /// The attribute value

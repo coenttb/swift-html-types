@@ -24,7 +24,8 @@
 /// ```html
 /// <textarea rows="5" cols="30">Default text</textarea>
 /// ```
-public struct Rows: StringAttribute, CustomStringConvertible {
+@dynamicMemberLookup
+public struct Rows: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "rows" }
 

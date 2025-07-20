@@ -11,6 +11,7 @@
 // ===----------------------------------------------------------------------===//
 
 /// Represents the marginwidth attribute for frame elements.
+@dynamicMemberLookup
 public struct MarginWidth: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "marginwidth" }

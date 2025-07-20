@@ -46,7 +46,8 @@
 /// ```html
 /// <colgroup span="2" style="background-color: pink;">
 /// ```
-public struct Span: StringAttribute, CustomStringConvertible {
+@dynamicMemberLookup
+public struct Span: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "span" }
 

@@ -48,6 +48,7 @@
 /// ```html
 /// <link rel="manifest" href="/app.webmanifest" crossorigin="use-credentials">
 /// ```
+@dynamicMemberLookup
 public struct Crossorigin: StringAttribute {
 
     /// The name of the HTML attribute

@@ -52,6 +52,7 @@
 /// ```
 /// message=سلام&message-direction=rtl
 /// ```
+@dynamicMemberLookup
 public struct Dirname: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "dirname" }

@@ -30,6 +30,7 @@
 /// <th id="header1">Header 1</th>
 /// <td headers="header1">Data cell</td>
 /// ```
+@dynamicMemberLookup
 public struct Headers: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "headers" }

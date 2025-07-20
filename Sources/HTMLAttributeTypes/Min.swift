@@ -68,6 +68,7 @@
 /// ```html
 /// <input type="range" min="0" step="5" max="100">
 /// ```
+@dynamicMemberLookup
 public struct Min: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "min" }

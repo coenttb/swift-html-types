@@ -11,6 +11,7 @@
 // ===----------------------------------------------------------------------===//
 
 /// Button types that define how a button behaves
+@dynamicMemberLookup
 public struct ButtonType: StringAttribute {
 
     @inlinable public static var attribute: String { "type" }

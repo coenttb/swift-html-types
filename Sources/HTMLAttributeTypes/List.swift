@@ -64,6 +64,7 @@
 ///   <option value="#0000ff">
 /// </datalist>
 /// ```
+@dynamicMemberLookup
 public struct List: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "list" }

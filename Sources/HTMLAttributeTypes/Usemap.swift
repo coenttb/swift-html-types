@@ -43,7 +43,8 @@
 ///   <area shape="circle" coords="124,58,8" href="venus.html" alt="Venus">
 /// </map>
 /// ```
-public struct Usemap: StringAttribute, CustomStringConvertible {
+@dynamicMemberLookup
+public struct Usemap: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "usemap" }
 

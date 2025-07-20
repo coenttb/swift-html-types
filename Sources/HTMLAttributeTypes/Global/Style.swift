@@ -61,6 +61,7 @@
 /// - Reserve inline styles for truly unique, one-off styling needs
 /// - Consider using CSS-in-JS or styled components for component libraries
 /// - Remember that inline styles override external styles due to CSS specificity rules
+@dynamicMemberLookup
 public struct Style: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "style" }

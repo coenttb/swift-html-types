@@ -28,7 +28,8 @@
 /// ```html
 /// <html xmlns="http://www.w3.org/1999/xhtml">
 /// ```
-public struct Xmlns: StringAttribute, CustomStringConvertible {
+@dynamicMemberLookup
+public struct Xmlns: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "xmlns" }
 

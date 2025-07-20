@@ -61,6 +61,7 @@
 ///   <input type="text" writingsuggestions="false" placeholder="Suggestions disabled">
 /// </div>
 /// ```
+@dynamicMemberLookup
 public struct Writingsuggestions: StringAttribute {
 
     /// The name of the HTML attribute

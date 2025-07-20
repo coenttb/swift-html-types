@@ -60,6 +60,7 @@
 /// <input type="checkbox" name="interests[]" value="sports"> Sports
 /// <input type="checkbox" name="interests[]" value="reading"> Reading
 /// ```
+@dynamicMemberLookup
 public struct Name: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "name" }

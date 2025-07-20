@@ -10,7 +10,7 @@
 //
 // ===----------------------------------------------------------------------===//
 
-public protocol StringAttribute: Attribute, ExpressibleByStringLiteral, RawRepresentable {
+public protocol StringAttribute: Attribute, CustomStringConvertible, ExpressibleByStringLiteral, ExpressibleByStringInterpolation, RawRepresentable {
     var rawValue: String { get }
 
     init(value: String)
@@ -41,7 +41,7 @@ extension StringAttribute {
 }
 
 extension StringAttribute {
-    subscript<T>(dynamicMember keyPath: KeyPath<String, T>) -> T {
+    public subscript<T>(dynamicMember keyPath: KeyPath<String, T>) -> T {
         self.rawValue[keyPath: keyPath]
     }
 }

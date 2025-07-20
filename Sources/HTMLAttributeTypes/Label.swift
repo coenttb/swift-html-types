@@ -11,6 +11,7 @@
 // ===----------------------------------------------------------------------===//
 
 /// Represents the label attribute used in HTML elements like <optgroup>, <option>, and <track>.
+@dynamicMemberLookup
 public struct Label: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "label" }

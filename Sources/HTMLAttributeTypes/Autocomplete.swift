@@ -28,6 +28,7 @@
 /// - `"off"`: The browser should not automatically complete or select a value
 /// - `"on"`: The browser may automatically complete the input with no specific guidance
 /// - **Token lists**: Space-separated tokens that describe expected data types (e.g., "email", "name", "street-address")
+@dynamicMemberLookup
 public struct Autocomplete: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "autocomplete" }

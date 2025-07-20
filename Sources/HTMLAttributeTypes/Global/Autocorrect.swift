@@ -45,6 +45,7 @@
 /// <!-- With contenteditable -->
 /// <p contenteditable autocorrect="on">Editable content with autocorrection</p>
 /// ```
+@dynamicMemberLookup
 public struct Autocorrect: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "autocorrect" }

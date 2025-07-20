@@ -26,6 +26,7 @@
 /// <font size="5">Larger text</font>
 /// <font size="+2">Relatively larger text</font>
 /// ```
+@dynamicMemberLookup
 public struct FontSize: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "size" }

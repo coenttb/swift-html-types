@@ -10,6 +10,7 @@
 //
 // ===----------------------------------------------------------------------===//
 
+@dynamicMemberLookup
 public struct ImageSizes: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "imagesizes" }

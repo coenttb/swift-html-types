@@ -51,6 +51,7 @@
 /// <!-- Better than just inputmode="tel" -->
 /// <input type="tel" inputmode="tel" placeholder="Phone number">
 /// ```
+@dynamicMemberLookup
 public struct Inputmode: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "inputmode" }

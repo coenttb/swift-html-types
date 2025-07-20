@@ -11,6 +11,7 @@
 // ===----------------------------------------------------------------------===//
 
 /// Represents the frameborder attribute for frame elements.
+@dynamicMemberLookup
 public struct FrameBorder: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "frameborder" }

@@ -27,6 +27,7 @@
 /// <form accept-charset="UTF-8">...</form>
 /// <form accept-charset="ISO-8859-1,UTF-8">...</form>
 /// ```
+@dynamicMemberLookup
 public struct AcceptCharset: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "accept-charset" }

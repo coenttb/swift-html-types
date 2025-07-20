@@ -48,6 +48,7 @@
 /// <input type="number" id="b" value="20">
 /// <output for="a b">30</output>
 /// ```
+@dynamicMemberLookup
 public struct For: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "for" }

@@ -23,6 +23,7 @@
 /// ```html
 /// <td colspan="2">Cell spans two columns</td>
 /// ```
+@dynamicMemberLookup
 public struct ColSpan: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "colspan" }

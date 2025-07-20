@@ -30,6 +30,7 @@
 /// <time datetime="20:00">8:00 PM</time>
 /// <time datetime="PT2H30M">2h 30m</time>
 /// ```
+@dynamicMemberLookup
 public struct DateTime: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "datetime" }

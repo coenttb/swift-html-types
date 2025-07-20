@@ -38,7 +38,8 @@
 /// - Provide a poster image to improve user experience on slow connections
 /// - For accessibility, ensure the poster image conveys appropriate context about the video content
 ///
-public struct Poster: StringAttribute, CustomStringConvertible {
+@dynamicMemberLookup
+public struct Poster: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "poster" }
 

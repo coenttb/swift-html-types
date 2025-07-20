@@ -26,6 +26,7 @@
 /// ```html
 /// <font face="Arial, Helvetica, sans-serif">Text with specified fonts</font>
 /// ```
+@dynamicMemberLookup
 public struct Face: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "face" }

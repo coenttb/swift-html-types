@@ -23,6 +23,7 @@
 /// ```html
 /// <marquee direction="up">Text scrolls upward</marquee>
 /// ```
+@dynamicMemberLookup
 public struct Direction: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "direction" }

@@ -41,6 +41,7 @@
 /// <!-- Editable content with go action -->
 /// <p contenteditable enterkeyhint="go">https://example.org</p>
 /// ```
+@dynamicMemberLookup
 public struct Enterkeyhint: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "enterkeyhint" }

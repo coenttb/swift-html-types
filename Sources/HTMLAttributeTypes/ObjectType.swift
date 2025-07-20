@@ -35,6 +35,7 @@
 /// <!-- Flash object (for legacy content) -->
 /// <object data="animation.swf" type="application/x-shockwave-flash" width="400" height="300"></object>
 /// ```
+@dynamicMemberLookup
 public struct ObjectType: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "type" }

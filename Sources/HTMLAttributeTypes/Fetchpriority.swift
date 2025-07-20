@@ -39,6 +39,7 @@
 /// - `<link>`: For prioritizing preloaded resources
 /// - `<script>`: For prioritizing script loading
 /// - `<iframe>`: For prioritizing iframe content loading
+@dynamicMemberLookup
 public struct FetchPriority: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "fetchpriority" }

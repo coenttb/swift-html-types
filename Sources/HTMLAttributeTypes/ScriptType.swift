@@ -42,7 +42,8 @@
 ///   {"user": "John", "id": 123}
 /// </script>
 /// ```
-public struct ScriptType: StringAttribute, CustomStringConvertible {
+@dynamicMemberLookup
+public struct ScriptType: StringAttribute {
     /// The name of the HTML attribute
     @inlinable public static var attribute: String { "type" }
 
