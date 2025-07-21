@@ -58,7 +58,7 @@ extension Input {
             min: Min? = nil,
             max: Max? = nil,
             step: Step? = nil,
-            required: Required? = nil,
+            required: Required? = nil
         ) {
             self.value = value
             self.min = min
