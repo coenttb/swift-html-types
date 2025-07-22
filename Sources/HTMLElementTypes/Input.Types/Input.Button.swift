@@ -80,7 +80,7 @@ extension Input {
         name: Name? = nil,
         value: Value<String>? = nil,
         disabled: Disabled? = nil,
-        form: HTMLAttributeTypes.Form.ID? = nil,
+        form: HTMLAttributeTypes.Form.ID? = nil
     ) -> Self {
         .init(
             name: name,

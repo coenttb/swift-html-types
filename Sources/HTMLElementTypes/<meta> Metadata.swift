@@ -98,7 +98,7 @@ public struct Meta: HTMLElement {
         content: Content? = nil,
         httpEquiv: HttpEquiv? = nil,
         media: Media? = nil,
-        name: MetaName? = nil,
+        name: MetaName? = nil
     ) {
         self.charset = charset
         self.content = content

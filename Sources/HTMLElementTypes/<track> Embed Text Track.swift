@@ -71,7 +71,7 @@ public struct Track: HTMLElement {
         kind: HTMLAttributeTypes.Kind? = nil,
         src: HTMLAttributeTypes.Src,
         srclang: HTMLAttributeTypes.SrcLang? = nil,
-        label: HTMLAttributeTypes.Label? = nil,
+        label: HTMLAttributeTypes.Label? = nil
     ) {
         self.default = `default`
         self.kind = kind
