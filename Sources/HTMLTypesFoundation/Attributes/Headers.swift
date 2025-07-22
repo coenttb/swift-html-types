@@ -28,7 +28,12 @@
 /// Created by Coen ten Thije Boonkkamp on 08/04/2025.
 ///
 
+#if canImport(FoundationEssentials)
+import FoundationEssentials
+#elseif canImport(Foundation)
 import Foundation
+#endif
+
 import HTMLAttributeTypes
 
 public typealias Headers = HTMLAttributeTypes.Headers

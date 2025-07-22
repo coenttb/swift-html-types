@@ -6,12 +6,14 @@ import PackageDescription
 extension String {
     static let htmlTypes: Self = "HTMLTypes"
     static let htmlAttributes: Self = "HTMLAttributeTypes"
+    static let htmlAttributesFoundation: Self = "HTMLAttributeTypesFoundation"
     static let htmlElements: Self = "HTMLElementTypes"
     static let htmlTypesFoundation: Self = "HTMLTypesFoundation"
 }
 
 extension Target.Dependency {
     static var htmlAttributes: Self { .target(name: .htmlAttributes) }
+    static var htmlAttributesFoundation: Self { .target(name: .htmlAttributesFoundation) }
     static var htmlElements: Self { .target(name: .htmlElements) }
     static var htmlTypes: Self { .target(name: .htmlTypes) }
     static var htmlTypesFoundation: Self { .target(name: .htmlTypesFoundation) }
@@ -23,6 +25,7 @@ let package = Package(
         .library(name: .htmlTypes, targets: [.htmlTypes]),
         .library(name: .htmlTypesFoundation, targets: [.htmlTypesFoundation]),
         .library(name: .htmlAttributes, targets: [.htmlAttributes]),
+        .library(name: .htmlAttributesFoundation, targets: [.htmlAttributesFoundation]),
         .library(name: .htmlElements, targets: [.htmlElements])
     ],
     dependencies: [],
@@ -42,6 +45,18 @@ let package = Package(
             name: .htmlAttributes.tests,
             dependencies: [
                 .htmlAttributes
+            ]
+        ),
+        .target(
+            name: .htmlAttributesFoundation,
+            dependencies: [
+                .htmlAttributes
+            ]
+        ),
+        .testTarget(
+            name: .htmlAttributesFoundation.tests,
+            dependencies: [
+                .htmlAttributesFoundation
             ]
         ),
         .target(
