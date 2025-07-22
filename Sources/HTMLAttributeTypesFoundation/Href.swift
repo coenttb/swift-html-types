@@ -10,71 +10,83 @@
 //
 // ===----------------------------------------------------------------------===//
 
+#if canImport(FoundationEssentials)
+import FoundationEssentials
+#elseif canImport(Foundation)
 import Foundation
+#endif
+
 import HTMLAttributeTypes
 
 extension Href {
-    /// Create an Href from a Foundation.URL
-    /// - Parameter url: The URL to convert to an Href
-    /// - Returns: An Href with the URL's absolute string representation
-    public static func url(_ url: URL) -> Href {
-        return Href(value: url.absoluteString)
+    /// Initialize with a URL
+    public init(_ url: URL) {
+        self = .init(url.absoluteString)
     }
 
-    /// Create an Href for an email address with subject and body
-    /// - Parameters:
-    ///   - email: The email address
-    ///   - subject: Optional email subject
-    ///   - body: Optional email body
-    /// - Returns: An Href with a mailto: scheme and query parameters
-    public static func mailto(_ email: String, subject: String? = nil, body: String? = nil) -> Href {
-        var components = URLComponents()
-        components.scheme = "mailto"
-        components.path = email
+    /// Creates an email link (mailto:)
+    public static func email(_ address: String, subject: String? = nil, body: String? = nil) -> Href {
+        // Define a custom allowed character set that excludes ?, &, =, and other special chars
+        var allowedCharacters = CharacterSet.urlQueryAllowed
+        allowedCharacters.remove(charactersIn: "?&=+%")
 
-        var queryItems: [URLQueryItem] = []
-        if let subject = subject {
-            queryItems.append(URLQueryItem(name: "subject", value: subject))
+        var url = "mailto:\(address)"
+
+        if subject != nil || body != nil {
+            url += "?"
+            var queryParts: [String] = []
+
+            if let subject = subject {
+                // Properly encode the subject
+                let encodedSubject = subject.addingPercentEncoding(withAllowedCharacters: allowedCharacters) ?? subject
+                queryParts.append("subject=\(encodedSubject)")
+            }
+
+            if let body = body {
+                // Properly encode the body
+                let encodedBody = body.addingPercentEncoding(withAllowedCharacters: allowedCharacters) ?? body
+                queryParts.append("body=\(encodedBody)")
+            }
+
+            url += queryParts.joined(separator: "&")
         }
+
+        return Href(url)
+    }
+
+    /// Creates a telephone link (tel:)
+    public static func tel(_ phoneNumber: String) -> Href {
+        let formattedNumber = phoneNumber.replacingOccurrences(of: #"[^\d+]"#, with: "", options: .regularExpression)
+        return Href("tel:\(formattedNumber)")
+    }
+
+    /// Creates an SMS link (sms:)
+    public static func sms(_ phoneNumber: String, body: String? = nil) -> Href {
+        let formattedNumber = phoneNumber.replacingOccurrences(of: #"[^\d+]"#, with: "", options: .regularExpression)
+
         if let body = body {
-            queryItems.append(URLQueryItem(name: "body", value: body))
+            // Define a custom allowed character set that excludes ?, &, =, and other special chars
+            var allowedCharacters = CharacterSet.urlQueryAllowed
+            allowedCharacters.remove(charactersIn: "?&=+%")
+
+            // Properly encode the body
+            let encodedBody = body.addingPercentEncoding(withAllowedCharacters: allowedCharacters) ?? body
+            return Href("sms:\(formattedNumber)?body=\(encodedBody)")
+        } else {
+            return Href("sms:\(formattedNumber)")
         }
-
-        if !queryItems.isEmpty {
-            components.queryItems = queryItems
-        }
-
-        return Href(value: components.string ?? "mailto:\(email)")
     }
 
-    /// Create an Href for SMS with body text
-    /// - Parameters:
-    ///   - phoneNumber: The phone number to send SMS to
-    ///   - body: The message body
-    /// - Returns: An Href with an sms: scheme and body parameter
-    public static func sms(_ phoneNumber: String, body: String) -> Href {
-        var components = URLComponents()
-        components.scheme = "sms"
-        components.path = phoneNumber
-        components.queryItems = [URLQueryItem(name: "body", value: body)]
-
-        return Href(value: components.string ?? "sms:\(phoneNumber)")
+    /// Creates a link with a fragment identifier (#section)
+    public static func fragment(_ base: String, fragment: String) -> Href {
+        let baseWithoutFragment = base.split(separator: "#")[0]
+        let fragmentWithoutHash = fragment.hasPrefix("#") ? String(fragment.dropFirst()) : fragment
+        return Href("\(baseWithoutFragment)#\(fragmentWithoutHash)")
     }
 
-    /// Create an Href for a file URL from a file URL
-    /// - Parameter fileURL: A file URL
-    /// - Returns: An Href with the file URL's absolute string
-    public static func file(_ fileURL: URL) -> Href {
-        return Href(value: fileURL.absoluteString)
-    }
-
-    /// Create an Href for WhatsApp with message
-    /// - Parameters:
-    ///   - phoneNumber: The phone number (with country code)
-    ///   - message: Pre-filled message text
-    /// - Returns: An Href with a WhatsApp URL scheme and message
-    public static func whatsapp(_ phoneNumber: String, message: String) -> Href {
-        let encodedMessage = message.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? message
-        return Href(value: "https://wa.me/\(phoneNumber)?text=\(encodedMessage)")
+    /// Creates a link to a specific fragment on the current page
+    public static func anchor(_ fragmentId: String) -> Href {
+        let fragmentWithoutHash = fragmentId.hasPrefix("#") ? fragmentId : "#\(fragmentId)"
+        return Href(fragmentWithoutHash)
     }
 }

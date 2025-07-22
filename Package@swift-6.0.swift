@@ -5,16 +5,20 @@ import PackageDescription
 
 extension String {
     static let htmlTypes: Self = "HTMLTypes"
-    static let htmlAttributes: Self = "HTMLAttributeTypes"
-    static let htmlElements: Self = "HTMLElementTypes"
+    static let htmlAttributeTypes: Self = "HTMLAttributeTypes"
+    static let htmlElementTypes: Self = "HTMLElementTypes"
     static let htmlTypesFoundation: Self = "HTMLTypesFoundation"
+    static let htmlAttributeTypesFoundation: Self = "HTMLAttributeTypesFoundation"
+    static let htmlElementTypesFoundation: Self = "HTMLElementTypesFoundation"
 }
 
 extension Target.Dependency {
-    static var htmlAttributes: Self { .target(name: .htmlAttributes) }
-    static var htmlElements: Self { .target(name: .htmlElements) }
+    static var htmlAttributeTypes: Self { .target(name: .htmlAttributeTypes) }
+    static var htmlElementTypes: Self { .target(name: .htmlElementTypes) }
     static var htmlTypes: Self { .target(name: .htmlTypes) }
     static var htmlTypesFoundation: Self { .target(name: .htmlTypesFoundation) }
+    static var htmlAttributeTypesFoundation: Self { .target(name: .htmlAttributeTypesFoundation) }
+    static var htmlElementTypesFoundation: Self { .target(name: .htmlElementTypesFoundation) }
 }
 
 let package = Package(
@@ -22,50 +26,75 @@ let package = Package(
     products: [
         .library(name: .htmlTypes, targets: [.htmlTypes]),
         .library(name: .htmlTypesFoundation, targets: [.htmlTypesFoundation]),
-        .library(name: .htmlAttributes, targets: [.htmlAttributes]),
-        .library(name: .htmlElements, targets: [.htmlElements]),
+        .library(name: .htmlAttributeTypes, targets: [.htmlAttributeTypes]),
+        .library(name: .htmlElementTypes, targets: [.htmlElementTypes]),
     ],
     dependencies: [],
     targets: [
         .target(
             name: .htmlTypes,
             dependencies: [
-                .htmlAttributes,
-                .htmlElements,
+                .htmlAttributeTypes,
+                .htmlElementTypes,
             ]
         ),
         .target(
-            name: .htmlAttributes,
+            name: .htmlAttributeTypes,
             dependencies: []
         ),
         .testTarget(
-            name: .htmlAttributes.tests,
+            name: .htmlAttributeTypes.tests,
             dependencies: [
-                .htmlAttributes
+                .htmlAttributeTypes
             ]
         ),
         .target(
-            name: .htmlElements,
+            name: .htmlElementTypes,
             dependencies: [
-                .htmlAttributes,
+                .htmlAttributeTypes,
             ]
         ),
         .testTarget(
-            name: .htmlElements.tests,
+            name: .htmlElementTypes.tests,
             dependencies: [
-                .htmlElements
+                .htmlElementTypes
             ]
         ),
         .target(
             name: .htmlTypesFoundation,
             dependencies: [
-                .htmlTypes,
+                .htmlElementTypesFoundation,
+                .htmlAttributeTypesFoundation
             ]
         ),
         .testTarget(
             name: .htmlTypesFoundation.tests,
             dependencies: [
-                .htmlElements
+                .htmlTypesFoundation
+            ]
+        ),
+        .target(
+            name: .htmlAttributeTypesFoundation,
+            dependencies: [
+                .htmlAttributeTypes,
+            ]
+        ),
+        .testTarget(
+            name: .htmlAttributeTypesFoundation.tests,
+            dependencies: [
+                .htmlAttributeTypesFoundation
+            ]
+        ),
+        .target(
+            name: .htmlElementTypesFoundation,
+            dependencies: [
+                .htmlElementTypes,
+            ]
+        ),
+        .testTarget(
+            name: .htmlElementTypesFoundation.tests,
+            dependencies: [
+                .htmlElementTypesFoundation
             ]
         ),
     ],
