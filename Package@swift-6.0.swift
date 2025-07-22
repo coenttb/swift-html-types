@@ -27,7 +27,9 @@ let package = Package(
         .library(name: .htmlTypes, targets: [.htmlTypes]),
         .library(name: .htmlTypesFoundation, targets: [.htmlTypesFoundation]),
         .library(name: .htmlAttributeTypes, targets: [.htmlAttributeTypes]),
+        .library(name: .htmlAttributeTypesFoundation, targets: [.htmlAttributeTypesFoundation]),
         .library(name: .htmlElementTypes, targets: [.htmlElementTypes]),
+        .library(name: .htmlElementTypesFoundation, targets: [.htmlElementTypesFoundation]),
     ],
     dependencies: [],
     targets: [
