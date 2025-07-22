@@ -20,7 +20,7 @@ import HTMLAttributeTypes
 import Testing
 
 @dynamicMemberLookup
-private struct TestStringAttribute: StringAttribute {
+private struct TestStringAttribute: HTMLStringAttribute {
     static var attribute: String { "test-attr" }
     
     let rawValue: String
@@ -144,16 +144,16 @@ struct StringAttributeTests {
     
     @Test("Any StringAttribute type erasure")
     func anyStringAttribute() {
-        let attr: any StringAttribute = TestStringAttribute(value: "type-erased")
+        let attr: any HTMLStringAttribute = TestStringAttribute(value: "type-erased")
         #expect(attr.rawValue == "type-erased")
         #expect(attr.description == "type-erased")
     }
     
     @Test("Any StringAttribute equality through protocol")
     func anyStringAttributeEquality() {
-        let attr1: any StringAttribute = TestStringAttribute(value: "same")
-        let attr2: any StringAttribute = TestStringAttribute(value: "same")
-        let attr3: any StringAttribute = TestStringAttribute(value: "different")
+        let attr1: any HTMLStringAttribute = TestStringAttribute(value: "same")
+        let attr2: any HTMLStringAttribute = TestStringAttribute(value: "same")
+        let attr3: any HTMLStringAttribute = TestStringAttribute(value: "different")
         
         #expect(attr1.rawValue == attr2.rawValue)
         #expect(attr1.rawValue != attr3.rawValue)

@@ -20,7 +20,7 @@ import HTMLAttributeTypes
 import Testing
 
 @dynamicMemberLookup
-private struct TestBooleanAttribute: BooleanAttribute {
+private struct TestBooleanAttribute: HTMLBooleanAttribute {
     static var attribute: String { "test-bool-attr" }
     
     var rawValue: Bool
@@ -144,8 +144,8 @@ struct BooleanAttributeTests {
     
     @Test("Any BooleanAttribute type erasure")
     func anyBooleanAttribute() {
-        let trueAttr: any BooleanAttribute = TestBooleanAttribute(value: true)
-        let falseAttr: any BooleanAttribute = TestBooleanAttribute(value: false)
+        let trueAttr: any HTMLBooleanAttribute = TestBooleanAttribute(value: true)
+        let falseAttr: any HTMLBooleanAttribute = TestBooleanAttribute(value: false)
         
         #expect(trueAttr.rawValue == true)
         #expect(falseAttr.rawValue == false)
@@ -155,9 +155,9 @@ struct BooleanAttributeTests {
     
     @Test("Any BooleanAttribute equality through protocol")
     func anyBooleanAttributeEquality() {
-        let trueAttr1: any BooleanAttribute = TestBooleanAttribute(value: true)
-        let trueAttr2: any BooleanAttribute = TestBooleanAttribute(value: true)
-        let falseAttr: any BooleanAttribute = TestBooleanAttribute(value: false)
+        let trueAttr1: any HTMLBooleanAttribute = TestBooleanAttribute(value: true)
+        let trueAttr2: any HTMLBooleanAttribute = TestBooleanAttribute(value: true)
+        let falseAttr: any HTMLBooleanAttribute = TestBooleanAttribute(value: false)
         
         #expect(trueAttr1.rawValue == trueAttr2.rawValue)
         #expect(trueAttr1.rawValue != falseAttr.rawValue)
@@ -166,7 +166,7 @@ struct BooleanAttributeTests {
     @Test("Any BooleanAttribute CaseIterable")
     func anyBooleanAttributeCaseIterable() {
         let allCases = TestBooleanAttribute.allCases
-        let anyAllCases: [any BooleanAttribute] = allCases
+        let anyAllCases: [any HTMLBooleanAttribute] = allCases
         
         #expect(anyAllCases.count == 2)
         #expect(anyAllCases.map(\.rawValue).contains(true))
@@ -175,7 +175,7 @@ struct BooleanAttributeTests {
     
     @Test("Default value initialization pattern")
     func defaultValuePattern() {
-        struct TestWithDefault: BooleanAttribute {
+        struct TestWithDefault: HTMLBooleanAttribute {
             static var attribute: String { "test-default" }
             var rawValue: Bool
             

@@ -19,7 +19,7 @@ import Foundation
 import HTMLAttributeTypes
 import Testing
 
-private struct TestAttribute: Attribute {
+private struct TestAttribute: HTMLAttribute {
     static var attribute: String { "test-attribute" }
     
     let value: String
@@ -29,7 +29,7 @@ private struct TestAttribute: Attribute {
     }
 }
 
-private struct NumericTestAttribute: Attribute {
+private struct NumericTestAttribute: HTMLAttribute {
     static var attribute: String { "numeric-test" }
     
     let value: Int
