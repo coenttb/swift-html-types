@@ -23,6 +23,10 @@ extension Href {
     public init(_ url: URL) {
         self = .init(url.absoluteString)
     }
+    
+    public static func url(_ url: URL) -> Href {
+        .init(url)
+    }
 
     /// Creates an email link (mailto:)
     public static func email(_ address: String, subject: String? = nil, body: String? = nil) -> Href {
