@@ -11,20 +11,18 @@
 // ===----------------------------------------------------------------------===//
 
 
+import HTMLAttributeTypes
+
 #if canImport(FoundationEssentials)
 import FoundationEssentials
 #elseif canImport(Foundation)
 import Foundation
-#endif
-
-import HTMLAttributeTypes
 
 extension Max {
-    #if canImport(Foundation)
     /// Initialize with a date (Foundation only)
     public init(date: Date, format: DateFormat = .fullDate) {
         let formatter: DateFormatter
-
+        
         switch format {
         case .fullDate:
             formatter = DateFormatter()
@@ -50,31 +48,33 @@ extension Max {
             formatter = DateFormatter()
             formatter.dateFormat = "yyyy-MM-dd'T'HH:mm"
         }
-
+        
         self = .init(formatter.string(from: date))
     }
-    #endif
+}
+#endif
 
+extension Max {
     /// Create a max value for a date input
     public static func date(_ year: Int, month: Int, day: Int) -> Max {
         return Max(String.format(year: year, month: month, day: day))
     }
-
+    
     /// Create a max value for a month input
     public static func month(_ year: Int, month: Int) -> Max {
         return Max(String.format(year: year, month: month))
     }
-
+    
     /// Create a max value for a week input
     public static func week(_ year: Int, week: Int) -> Max {
         return Max(String.format(year: year, week: week))
     }
-
+    
     /// Create a max value for a time input
     public static func time(_ hour: Int, minute: Int) -> Max {
         return Max(String.format(hour: hour, minute: minute))
     }
-
+    
     /// Create a max value for a datetime-local input
     public static func dateTimeLocal(_ year: Int, month: Int, day: Int, hour: Int, minute: Int) -> Max {
         return Max(String.format(year: year, month: month, day: day, hour: hour, minute: minute))

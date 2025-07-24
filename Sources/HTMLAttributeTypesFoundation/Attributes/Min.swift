@@ -10,16 +10,13 @@
 //
 // ===----------------------------------------------------------------------===//
 
+import HTMLAttributeTypes
 #if canImport(FoundationEssentials)
 import FoundationEssentials
 #elseif canImport(Foundation)
 import Foundation
-#endif
-
-import HTMLAttributeTypes
 
 extension Min {
-    #if canImport(Foundation)
     /// Initialize with a date (Foundation only)
     public init(date: Date, format: DateFormat = .fullDate) {
         let formatter: DateFormatter
@@ -52,8 +49,12 @@ extension Min {
 
         self = .init(formatter.string(from: date))
     }
-    #endif
+}
 
+#endif
+
+
+extension Min {
     /// Create a min value for a date input
     public static func date(_ year: Int, month: Int, day: Int) -> Min {
         return Min(String.format(year: year, month: month, day: day))
