@@ -14,7 +14,34 @@ import HTMLAttributeTypes
 
 #if canImport(FoundationEssentials)
 import FoundationEssentials
-#elseif canImport(Foundation)
+#endif
+
+extension Href {
+    /// Initialize with a URL
+    public init(_ url: URL) {
+        self = .init(url.absoluteString)
+    }
+    
+    public static func url(_ url: URL) -> Href {
+        .init(url)
+    }
+    
+    /// Creates a link with a fragment identifier (#section)
+    public static func fragment(_ base: String, fragment: String) -> Href {
+        let baseWithoutFragment = base.split(separator: "#")[0]
+        let fragmentWithoutHash = fragment.hasPrefix("#") ? String(fragment.dropFirst()) : fragment
+        return Href("\(baseWithoutFragment)#\(fragmentWithoutHash)")
+    }
+    
+    /// Creates a link to a specific fragment on the current page
+    public static func anchor(_ fragmentId: String) -> Href {
+        let fragmentWithoutHash = fragmentId.hasPrefix("#") ? fragmentId : "#\(fragmentId)"
+        return Href(fragmentWithoutHash)
+    }
+}
+
+
+#if canImport(Foundation)
 import Foundation
 
 extension Href {
@@ -72,28 +99,3 @@ extension Href {
     }
 }
 #endif
-
-
-extension Href {
-    /// Initialize with a URL
-    public init(_ url: URL) {
-        self = .init(url.absoluteString)
-    }
-    
-    public static func url(_ url: URL) -> Href {
-        .init(url)
-    }
-    
-    /// Creates a link with a fragment identifier (#section)
-    public static func fragment(_ base: String, fragment: String) -> Href {
-        let baseWithoutFragment = base.split(separator: "#")[0]
-        let fragmentWithoutHash = fragment.hasPrefix("#") ? String(fragment.dropFirst()) : fragment
-        return Href("\(baseWithoutFragment)#\(fragmentWithoutHash)")
-    }
-    
-    /// Creates a link to a specific fragment on the current page
-    public static func anchor(_ fragmentId: String) -> Href {
-        let fragmentWithoutHash = fragmentId.hasPrefix("#") ? fragmentId : "#\(fragmentId)"
-        return Href(fragmentWithoutHash)
-    }
-}
