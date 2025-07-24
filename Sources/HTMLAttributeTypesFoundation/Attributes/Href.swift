@@ -28,7 +28,8 @@ extension Href {
         .init(url)
     }
 
-    /// Creates an email link (mailto:)
+    #if canImport(Foundation) && !canImport(FoundationEssentials)
+    /// Creates an email link (mailto:) - Foundation only
     public static func email(_ address: String, subject: String? = nil, body: String? = nil) -> Href {
         // Define a custom allowed character set that excludes ?, &, =, and other special chars
         var allowedCharacters = CharacterSet.urlQueryAllowed
@@ -58,13 +59,13 @@ extension Href {
         return Href(url)
     }
 
-    /// Creates a telephone link (tel:)
+    /// Creates a telephone link (tel:) - Foundation only
     public static func tel(_ phoneNumber: String) -> Href {
         let formattedNumber = phoneNumber.replacingOccurrences(of: #"[^\d+]"#, with: "", options: .regularExpression)
         return Href("tel:\(formattedNumber)")
     }
 
-    /// Creates an SMS link (sms:)
+    /// Creates an SMS link (sms:) - Foundation only
     public static func sms(_ phoneNumber: String, body: String? = nil) -> Href {
         let formattedNumber = phoneNumber.replacingOccurrences(of: #"[^\d+]"#, with: "", options: .regularExpression)
 
@@ -80,6 +81,7 @@ extension Href {
             return Href("sms:\(formattedNumber)")
         }
     }
+    #endif
 
     /// Creates a link with a fragment identifier (#section)
     public static func fragment(_ base: String, fragment: String) -> Href {

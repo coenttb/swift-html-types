@@ -20,7 +20,8 @@ import Foundation
 import HTMLAttributeTypes
 
 extension Max {
-    /// Initialize with a date
+    #if canImport(Foundation) && !canImport(FoundationEssentials)
+    /// Initialize with a date (Foundation only)
     public init(date: Date, format: DateFormat = .fullDate) {
         let formatter: DateFormatter
 
@@ -36,7 +37,7 @@ extension Max {
             let calendar = Calendar(identifier: .iso8601)
             let components = calendar.dateComponents([.yearForWeekOfYear, .weekOfYear], from: date)
             if let year = components.yearForWeekOfYear, let week = components.weekOfYear {
-                self = .init(String(format: "%04d-W%02d", year, week))
+                self = .init(String.format(year: year, week: week))
                 return
             } else {
                 formatter = DateFormatter()
@@ -52,29 +53,31 @@ extension Max {
 
         self = .init(formatter.string(from: date))
     }
+    #endif
 
     /// Create a max value for a date input
     public static func date(_ year: Int, month: Int, day: Int) -> Max {
-        return Max(String(format: "%04d-%02d-%02d", year, month, day))
+        return Max(String.format(year: year, month: month, day: day))
     }
 
     /// Create a max value for a month input
     public static func month(_ year: Int, month: Int) -> Max {
-        return Max(String(format: "%04d-%02d", year, month))
+        return Max(String.format(year: year, month: month))
     }
 
     /// Create a max value for a week input
     public static func week(_ year: Int, week: Int) -> Max {
-        return Max(String(format: "%04d-W%02d", year, week))
+        return Max(String.format(year: year, week: week))
     }
 
     /// Create a max value for a time input
     public static func time(_ hour: Int, minute: Int) -> Max {
-        return Max(String(format: "%02d:%02d", hour, minute))
+        return Max(String.format(hour: hour, minute: minute))
     }
 
     /// Create a max value for a datetime-local input
     public static func dateTimeLocal(_ year: Int, month: Int, day: Int, hour: Int, minute: Int) -> Max {
-        return Max(String(format: "%04d-%02d-%02dT%02d:%02d", year, month, day, hour, minute))
+        return Max(String.format(year: year, month: month, day: day, hour: hour, minute: minute))
     }
 }
+
