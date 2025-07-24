@@ -19,7 +19,7 @@ import Foundation
 import HTMLAttributeTypes
 
 extension Min {
-    #if canImport(Foundation) && !canImport(FoundationEssentials)
+    #if canImport(Foundation)
     /// Initialize with a date (Foundation only)
     public init(date: Date, format: DateFormat = .fullDate) {
         let formatter: DateFormatter

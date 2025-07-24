@@ -28,7 +28,7 @@ extension Href {
         .init(url)
     }
 
-    #if canImport(Foundation) && !canImport(FoundationEssentials)
+    #if canImport(Foundation)
     /// Creates an email link (mailto:) - Foundation only
     public static func email(_ address: String, subject: String? = nil, body: String? = nil) -> Href {
         // Define a custom allowed character set that excludes ?, &, =, and other special chars
