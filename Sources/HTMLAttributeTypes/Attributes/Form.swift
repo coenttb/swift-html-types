@@ -11,7 +11,13 @@
 // ===----------------------------------------------------------------------===//
 
 public struct Form: Sendable, Equatable {
-
+    /// A string specifying the character encodings that are to be used for the form submission.
+    ///
+    /// The value is a space-separated list of one or more character encodings. The server must be able to handle all the specified encodings. If this attribute is not specified, the submission uses the character encoding of the page.
+    ///
+    /// This attribute corresponds to the `accept-charset` attribute on the `<form>` element.
+    public var acceptCharset: HTMLAttributeTypes.AcceptCharset?
+    
     /// A string indicating the URL to which to submit the data. This takes precedence over the action attribute on the `<form>` element that owns the `<input>`.
     ///
     /// This attribute is also available on `<input type="submit">` and `<button>` elements.
@@ -31,12 +37,14 @@ public struct Form: Sendable, Equatable {
 
     /// Create a new form override configuration
     public init(
+        acceptCharset: HTMLAttributeTypes.AcceptCharset? = nil,
         action: HTMLAttributeTypes.FormAction? = nil,
         enctype: HTMLAttributeTypes.FormEncType? = nil,
         method: HTMLAttributeTypes.FormMethod? = nil,
         novalidate: HTMLAttributeTypes.FormNovalidate? = nil,
         target: HTMLAttributeTypes.FormTarget? = nil
     ) {
+        self.acceptCharset = acceptCharset
         self.action = action
         self.enctype = enctype
         self.method = method
