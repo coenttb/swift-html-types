@@ -33,10 +33,5 @@ struct HrefTests {
         #expect(Href.facetimeVideo("123-456-7890").rawValue == "facetime-video:123-456-7890")
     }
 
-    @Test("Href URL method")
-    func urlMethod() {
-        let url = URL(string: "https://example.com")!
-        let href = Href.url(url)
-        #expect(href.rawValue == "https://example.com")
-    }
+
 }

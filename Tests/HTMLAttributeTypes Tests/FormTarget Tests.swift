@@ -23,7 +23,7 @@ struct FormTargetTests {
     
     @Test("FormTarget should have predefined values")
     func predefinedValues() {
-        #expect(FormTarget.self.rawValue == "_self")
+        #expect(FormTarget.`self`.rawValue == "_self")
         #expect(FormTarget.blank.rawValue == "_blank")
         #expect(FormTarget.parent.rawValue == "_parent")
         #expect(FormTarget.top.rawValue == "_top")

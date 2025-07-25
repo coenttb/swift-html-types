@@ -19,8 +19,8 @@ public struct Kind: HTMLStringAttribute {
     /// The attribute value
     public let rawValue: String
 
-    public init(value: String) {
-        self = Kind(rawValue: value) ?? .subtitles
+    public init(value: String = Kind.subtitles.rawValue) {
+        self.rawValue = value
     }
 }
 

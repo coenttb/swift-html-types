@@ -23,7 +23,7 @@ struct TargetTests {
 
     @Test("Target convenience properties")
     func convenienceProperties() {
-        #expect(Target.self.rawValue == "_self")
+        #expect(Target.`self`.rawValue == "_self")
         #expect(Target.blank.rawValue == "_blank")
         #expect(Target.parent.rawValue == "_parent")
         #expect(Target.top.rawValue == "_top")
