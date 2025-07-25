@@ -65,7 +65,7 @@ public struct AttributionSrc: HTMLAttribute, CustomStringConvertible {
     @inlinable public static var attribute: String { "attributionsrc" }
 
     /// The type of attribute value
-    public enum Value: Sendable, Equatable {
+    public enum Value: Sendable, Hashable {
         /// Boolean form (presence/absence of the attribute)
         case boolean(Bool)
 

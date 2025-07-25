@@ -20,7 +20,7 @@ import HTMLAttributeTypes
 /// combination of year, month, day, hour, and minute—even if such a combination is invalid in the user's
 /// local time zone (such as the one hour within a daylight saving time spring-forward transition gap).
 extension Input {
-    public struct DatetimeLocal: Sendable, Equatable {
+    public struct DatetimeLocal: Sendable, Hashable {
         /// A string representing the value of the date and time entered into the input.
         /// The format is YYYY-MM-DDTHH:mm.
         ///

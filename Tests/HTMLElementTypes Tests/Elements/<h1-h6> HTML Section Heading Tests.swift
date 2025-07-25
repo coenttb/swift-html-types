@@ -10,12 +10,39 @@
 //
 // ===----------------------------------------------------------------------===//
 
-#if canImport(FoundationEssentials)
-import FoundationEssentials
-#elseif canImport(Foundation)
-import Foundation
-#endif
-
 import HTMLAttributeTypes
 import HTMLElementTypes
 import Testing
+
+@Suite("Section Heading Test")
+struct SectionHeaderingTests {
+    @Suite("H1")
+    struct H1Tests {
+        
+    }
+    
+    @Suite("H2")
+    struct H2Tests {
+        
+    }
+    
+    @Suite("H3")
+    struct H3Tests {
+        
+    }
+    
+    @Suite("H4")
+    struct H4Tests {
+        
+    }
+    
+    @Suite("H5")
+    struct H5Tests {
+        
+    }
+    
+    @Suite("H6")
+    struct H6Tests {
+        
+    }
+}

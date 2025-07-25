@@ -17,7 +17,7 @@ import HTMLAttributeTypes
 /// validated to a particular format before the form can be submitted, because formats for telephone
 /// numbers vary so much around the world.
 extension Input {
-    public struct Tel: Sendable, Equatable {
+    public struct Tel: Sendable, Hashable {
         /// A string representing a telephone number, or empty.
         public var value: Value<String>?
 

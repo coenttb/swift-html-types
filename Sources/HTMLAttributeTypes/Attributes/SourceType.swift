@@ -60,7 +60,7 @@ public struct SourceType: HTMLStringAttribute {
 }
 
 extension SourceType {
-    public struct Codecs: Sendable, Equatable, ExpressibleByBooleanLiteral {
+    public struct Codecs: Sendable, Hashable, ExpressibleByBooleanLiteral {
         public var rawValue: Bool
 
         public init(_ value: Bool) {

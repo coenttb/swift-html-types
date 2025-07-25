@@ -10,7 +10,7 @@
 //
 // ===----------------------------------------------------------------------===//
 
-public protocol HTMLElement: Sendable, Equatable {
+public protocol HTMLElement: Sendable, Hashable {
     static var tag: String { get }
 }
 

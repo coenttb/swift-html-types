@@ -59,7 +59,7 @@ extension Input {
     /// - Buttons don't participate in constraint validation as they have no real value to be constrained
     /// - Unlike other browsers, Firefox persists the disabled state even after page reload
     /// - Buttons can inherit disabled state from parent elements like `<fieldset>`
-    public struct Button: Sendable, Equatable {
+    public struct Button: Sendable, Hashable {
         /// A string that is used as the button's label. The value provides the accessible description for the button.
         /// If not specified, you get an empty button.
         public var value: Value<String>?

@@ -22,7 +22,7 @@ import HTMLAttributeTypes
 /// group is established, selecting any radio button in that group automatically deselects any
 /// currently-selected radio button in the same group.
 extension Input {
-    public struct Radio: Sendable, Equatable {
+    public struct Radio: Sendable, Hashable {
         /// The value attribute is a string containing the radio button's value. The value is never shown 
         /// to the user by their user agent. Instead, it's used to identify which radio button in a group is selected.
         ///

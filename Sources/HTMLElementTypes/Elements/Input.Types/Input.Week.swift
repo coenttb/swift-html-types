@@ -15,7 +15,7 @@ import HTMLAttributeTypes
 /// `<input type="week">` elements create input fields allowing easy entry of a year plus 
 /// the ISO 8601 week number during that year (i.e., week 1 to 52 or 53).
 extension Input {
-    public struct Week: Sendable, Equatable {
+    public struct Week: Sendable, Hashable {
         /// A string representing the value of the week/year entered into the input
         /// in the format "yyyy-Www" (e.g., "2017-W01").
         public var value: Value<String>?

@@ -14,7 +14,7 @@ import HTMLAttributeTypes
 
 /// `<input type="text">` elements create basic single-line text fields.
 extension Input {
-    public struct Text: Sendable, Equatable {
+    public struct Text: Sendable, Hashable {
         /// A string that contains the current value of the text entered into the text field.
         public var value: Value<String>?
 

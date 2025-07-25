@@ -44,7 +44,7 @@ public struct Base: HTMLElement {
     ///
     /// According to the HTML specification, a base element must have either an href attribute,
     /// a target attribute, or both.
-    public enum Configuration: Sendable, Equatable {
+    public enum Configuration: Sendable, Hashable {
         /// A base element with only an href attribute.
         case href(HTMLAttributeTypes.Href)
 

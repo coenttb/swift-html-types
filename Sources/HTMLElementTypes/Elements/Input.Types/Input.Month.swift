@@ -15,7 +15,7 @@ import HTMLAttributeTypes
 /// `<input type="month">` elements create input fields that let the user enter a month and year.
 /// The value is a string in the format YYYY-MM, where YYYY is the four-digit year and MM is the month number.
 extension Input {
-    public struct Month: Sendable, Equatable {
+    public struct Month: Sendable, Hashable {
         /// A string representing the value of the month and year entered into the input,
         /// in the form YYYY-MM (e.g., "2023-07").
         public var value: Value<String>?

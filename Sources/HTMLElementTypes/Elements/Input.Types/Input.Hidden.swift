@@ -23,7 +23,7 @@ import HTMLAttributeTypes
 ///
 /// Hidden inputs don't participate in constraint validation; they have no real value to be constrained.
 extension Input {
-    public struct Hidden: Sendable, Equatable {
+    public struct Hidden: Sendable, Hashable {
         /// The value attribute holds a string that contains the hidden data you want to include when
         /// the form is submitted to the server. This specifically can't be edited or seen by the user
         /// via the user interface, although it could be edited via browser developer tools.

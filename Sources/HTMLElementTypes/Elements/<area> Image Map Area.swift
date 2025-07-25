@@ -175,7 +175,7 @@ public struct Area: HTMLElement {
 /// Shape of the area element's active region.
 ///
 /// Defines the geometry to use for the clickable area.
-public enum Shape: Sendable, Equatable {
+public enum Shape: Sendable, Hashable {
     /// Rectangular region defined by two corner points.
     case rect(coords: String)
 

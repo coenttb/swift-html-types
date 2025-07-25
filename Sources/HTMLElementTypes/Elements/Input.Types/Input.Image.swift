@@ -22,7 +22,7 @@ import HTMLAttributeTypes
 ///
 /// Where "name" is the value of the name attribute, and X and Y are the coordinates.
 extension Input {
-    public struct Image: Sendable, Equatable {
+    public struct Image: Sendable, Hashable {
 
         /// A string specifying the URL of the image file to display to represent the graphical submit button. When the user interacts with the image, the input is handled like any other button input.
         public var src: Src

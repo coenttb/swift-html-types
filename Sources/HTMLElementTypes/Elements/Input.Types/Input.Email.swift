@@ -20,7 +20,7 @@ import HTMLAttributeTypes
 /// pseudo-classes are automatically applied as appropriate to visually denote whether the current value
 /// of the field is a valid email address or not.
 extension Input {
-    public struct Email: Sendable, Equatable {
+    public struct Email: Sendable, Hashable {
         /// A string which is automatically validated as conforming to email syntax.
         /// This is the value that will be submitted with the form.
         public var value: Value<String>?

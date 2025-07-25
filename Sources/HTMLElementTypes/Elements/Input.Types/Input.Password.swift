@@ -21,7 +21,7 @@ import HTMLAttributeTypes
 /// Note: Any forms involving sensitive information like passwords (such as login forms) should be
 /// served over HTTPS. Many browsers now implement mechanisms to warn against insecure login forms.
 extension Input {
-    public struct Password: Sendable, Equatable {
+    public struct Password: Sendable, Hashable {
         /// The value attribute contains a string whose value is the current contents of the text
         /// editing control being used to enter the password. If the user hasn't entered anything yet,
         /// this value is an empty string ("").

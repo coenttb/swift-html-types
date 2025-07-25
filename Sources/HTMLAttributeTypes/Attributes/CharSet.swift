@@ -10,7 +10,7 @@
 //
 // ===----------------------------------------------------------------------===//
 
-public struct CharSet: Sendable, Equatable, ExpressibleByStringLiteral, CustomStringConvertible {
+public struct CharSet: Sendable, Hashable, ExpressibleByStringLiteral, CustomStringConvertible {
 
     public var value: String
 

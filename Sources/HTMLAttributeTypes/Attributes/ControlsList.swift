@@ -39,3 +39,9 @@ extension ControlsList {
         return Self(values.map(\.rawValue).joined(separator: " "))
     }
 }
+
+extension ControlsList: ExpressibleByArrayLiteral {
+    public init(arrayLiteral elements: ControlsList...) {
+        self = Self.combine(elements)
+    }
+}

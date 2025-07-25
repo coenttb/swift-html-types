@@ -19,7 +19,7 @@ import HTMLAttributeTypes
 /// browsers tend to automatically store search terms previously entered across domains, which then come up
 /// as autocomplete options when subsequent searches are performed.
 extension Input {
-    public struct Search: Sendable, Equatable {
+    public struct Search: Sendable, Hashable {
         /// The value attribute contains a string representing the value contained in the search field.
         /// If no validation constraints are in place for the input, the value can be any text string
         /// or an empty string ("").

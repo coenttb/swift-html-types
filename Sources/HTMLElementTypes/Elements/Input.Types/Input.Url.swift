@@ -15,7 +15,7 @@ import HTMLAttributeTypes
 /// `<input type="url">` elements are used to let the user enter and edit a URL.
 /// The input value is automatically validated to ensure that it's either empty or a properly-formatted URL.
 extension Input {
-    public struct Url: Sendable, Equatable {
+    public struct Url: Sendable, Hashable {
         /// A string representing a URL, or empty.
         public var value: Value<String>?
 

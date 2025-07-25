@@ -84,7 +84,7 @@ public struct Exportparts: HTMLAttribute {
     }
 
     /// A mapping from original part name to exposed part name
-    public struct PartMapping: Sendable, Equatable {
+    public struct PartMapping: Sendable, Hashable {
         /// The original part name in the shadow DOM
         public let originalName: String
 

@@ -15,7 +15,7 @@ import HTMLAttributeTypes
 /// `<input type="time">` elements create input fields designed to let the user easily enter a time (hours and minutes, and optionally seconds).
 /// The value is always a 24-hour HH:mm or HH:mm:ss formatted time, with leading zeros, regardless of the UI's input format.
 extension Input {
-    public struct Time: Sendable, Equatable {
+    public struct Time: Sendable, Hashable {
         /// A string representing a time in 24-hour format (HH:mm or HH:mm:ss).
         /// Example: "13:30" for 1:30 PM.
         public var value: Value<String>?

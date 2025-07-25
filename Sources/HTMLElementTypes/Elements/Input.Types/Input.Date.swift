@@ -19,7 +19,7 @@ import HTMLAttributeTypes
 /// The resulting value includes the year, month, and day, but not the time.
 /// The time and datetime-local input types support time and date+time input.
 extension Input {
-    public struct Date: Sendable, Equatable {
+    public struct Date: Sendable, Hashable {
         /// A string representing the date entered in the input. The date is formatted according to yyyy-mm-dd format.
         ///
         /// Note: The displayed date format will differ from the actual value — the displayed date is formatted based

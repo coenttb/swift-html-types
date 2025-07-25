@@ -73,7 +73,7 @@
 ///   <option value="mx">Mexico</option>
 /// </select>
 /// ```
-public struct Value<Element: Sendable & Equatable>: HTMLAttribute {
+public struct Value<Element: Sendable & Hashable>: HTMLAttribute {
     /// The name of the HTML attribute
     public static var attribute: String { "value" }
 

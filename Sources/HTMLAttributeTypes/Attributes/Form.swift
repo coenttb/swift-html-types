@@ -10,7 +10,7 @@
 //
 // ===----------------------------------------------------------------------===//
 
-public struct Form: Sendable, Equatable {
+public struct Form: Sendable, Hashable {
     /// A string specifying the character encodings that are to be used for the form submission.
     ///
     /// The value is a space-separated list of one or more character encodings. The server must be able to handle all the specified encodings. If this attribute is not specified, the submission uses the character encoding of the page.

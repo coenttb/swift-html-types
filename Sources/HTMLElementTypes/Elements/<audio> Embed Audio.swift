@@ -175,7 +175,7 @@ extension Audio {
     ///
     /// These values help the browser select what controls to show for the audio element
     /// when the controls attribute is specified.
-    public struct ControlsList: Sendable, Equatable {
+    public struct ControlsList: Sendable, Hashable {
         /// Hides the download button.
         public var nodownload: Bool
 

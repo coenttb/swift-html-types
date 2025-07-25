@@ -23,7 +23,7 @@ import HTMLAttributeTypes
 /// happen to only consist of numbers but aren't strictly speaking a number, such as postal codes or
 /// credit card numbers.
 extension Input {
-    public struct Number: Sendable, Equatable {
+    public struct Number: Sendable, Hashable {
         /// A number representing the value of the number entered into the input.
         /// You can set a default value for the input by including a number inside the value attribute.
         public var value: Value<String>?

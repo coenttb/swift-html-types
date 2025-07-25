@@ -28,7 +28,7 @@ extension Input {
     ///
     /// - Note: These values correspond directly to the values used in the
     ///   `type` attribute of HTML input elements.
-    public enum Variant: Sendable, Equatable {
+    public enum Variant: Sendable, Hashable {
 
         /// A push button with no default behavior displaying the value of the value attribute, empty by default
         case button(Input.Button)

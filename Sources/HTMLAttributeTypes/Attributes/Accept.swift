@@ -101,7 +101,7 @@ extension Accept {
 
 extension Accept {
     /// Represents a file type specifier for the Accept attribute
-    public struct FileType: Sendable, Equatable, CustomStringConvertible, ExpressibleByStringLiteral {
+    public struct FileType: Sendable, Hashable, CustomStringConvertible, ExpressibleByStringLiteral {
         /// The string value for the file type
         public var value: String
 

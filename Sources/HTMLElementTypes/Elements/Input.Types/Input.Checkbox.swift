@@ -20,7 +20,7 @@ import HTMLAttributeTypes
 /// turn single values on and off. Where multiple same-named controls exist, radio buttons allow one to be selected
 /// out of them all, whereas checkboxes allow multiple values to be selected.
 extension Input {
-    public struct Checkbox: Sendable, Equatable {
+    public struct Checkbox: Sendable, Hashable {
         /// A string representing the value of the checkbox. This is not displayed on the client-side, but on the server
         /// this is the value given to the data submitted with the checkbox's name. If the value attribute is omitted,
         /// the default value for the checkbox is "on".

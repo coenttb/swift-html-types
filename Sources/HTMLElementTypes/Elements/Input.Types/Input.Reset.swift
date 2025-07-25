@@ -19,7 +19,7 @@ import HTMLAttributeTypes
 /// useful, and are instead more likely to frustrate users who click them by mistake
 /// (often while trying to click the submit button).
 extension Input {
-    public struct Reset: Sendable, Equatable {
+    public struct Reset: Sendable, Hashable {
         /// The value attribute contains a string that is used as the button's label providing
         /// the button with an accessible description. If you don't specify a value, you get
         /// a button with the default label (typically "Reset," but this will vary depending

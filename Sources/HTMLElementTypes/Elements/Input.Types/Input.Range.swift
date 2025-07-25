@@ -24,7 +24,7 @@ import HTMLAttributeTypes
 /// - Game configuration controls such as difficulty, visibility distance, world size
 /// - Password length for a password manager's generated passwords
 extension Input {
-    public struct Range: Sendable, Equatable {
+    public struct Range: Sendable, Hashable {
         /// The value attribute contains a string which contains a string representation of the selected number.
         /// The value is never an empty string ("").
         ///

@@ -15,7 +15,7 @@ import HTMLAttributeTypes
 /// `<input type="submit">` elements are rendered as buttons. When the click event occurs (typically because the user clicked the button),
 /// the user agent attempts to submit the form to the server.
 extension Input {
-    public struct Submit: Sendable, Equatable {
+    public struct Submit: Sendable, Hashable {
         /// A string which is displayed as the button's label. The value provides the accessible description for the button.
         /// If you don't specify a value, the button will have a default label, chosen by the user agent.
         public var value: Value<String>?

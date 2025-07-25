@@ -16,7 +16,7 @@ import HTMLAttributeTypes
 /// Once chosen, the files can be uploaded to a server using form submission, or manipulated
 /// using JavaScript code and the File API.
 extension Input {
-    public struct File: Sendable, Equatable {
+    public struct File: Sendable, Hashable {
         /// The accept attribute value is a string that defines the file types the file input should accept.
         /// This string is a comma-separated list of unique file type specifiers.
         ///
