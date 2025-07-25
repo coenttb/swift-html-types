@@ -9,3 +9,12 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 // ===----------------------------------------------------------------------===//
+
+import Foundation
+import HTMLAttributeTypes
+import Testing
+
+@Suite("ScriptType Test")
+struct ScriptTypeTests {
+    
+}
