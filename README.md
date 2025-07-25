@@ -2,15 +2,6 @@
 
 A comprehensive, accurate, and type-safe domain model of HTML elements and attributes in Swift.
 
-![Development Status](https://img.shields.io/badge/status-active--development-blue.svg)
-
-This package is currently in active development and is subject to changes. Features and APIs may change without prior notice until a stable release is available.
-
-> [!NOTE]
-> `swift-html-types` is part of a modular ecosystem for HTML generation in Swift. Rather than building one monolithic package, I created focused packages that compose together: `swift-html-types` provides the foundational types, while other packages handle rendering, styling, and developer experience.
->
-> [Read about the architectural decisions behind this approach →](https://coenttb.com/blog/4)
-
 ## Examples
 
 ```swift
@@ -63,9 +54,15 @@ let input = Input.color(
 )
 ```
 
+> [!NOTE]
+> `swift-html-types` is part of a modular ecosystem for HTML generation in Swift. Rather than building one monolithic package, I created focused packages that compose together: `swift-html-types` provides the foundational types, while other packages handle rendering, styling, and developer experience.
+>
+> [Read about the architectural decisions behind this approach →](https://coenttb.com/blog/4)
+
 ## Showcases
 
 - [coenttb/swift-html](https://github.com/coenttb/swift-html) - A Swift DSL for domain-accurate and type-safe HTML & CSS.
+- [coenttb/coenttb-com-server](https://github.com/coenttb/coenttb-com-server) - 100% Swift server & website, built in `swift-html-types`.
 
 Using `swift-html-types` in your project? Open an issue or submit a PR to add your project to this list!
 
@@ -86,14 +83,6 @@ dependencies: [
 1. Select File > Add Packages...
 2. Enter package URL: `https://github.com/coenttb/swift-html-types`
 3. Choose the main branch or a specific version
-
-## Related Projects
-
-* [swift-css-types](https://github.com/coenttb/swift-css-types): A comprehensive, accurate, and type-safe domain model of CSS in Swift.
-* [pointfree-html](https://github.com/coenttb/pointfree-html): Rendering type-safe HTML.
-* [swift-html-css-pointfree](https://github.com/coenttb/swift-html-css-pointfree): Integrates HTML, CSS, and rendering.
-* [swift-html](https://github.com/coenttb/swift-html): A Swift DSL for type-safe HTML & CSS, built atop `swift-html-css-pointfree`.
-* [coenttb-html](https://github.com/coenttb/coenttb-html): Builds on swift-html and adds custom functionality for HTML components, PDF generation, and more.
 
 ## Contribution
 
