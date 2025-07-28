@@ -22,3 +22,9 @@ public struct Cols: HTMLStringAttribute {
         self.rawValue = value
     }
 }
+
+extension Cols: ExpressibleByIntegerLiteral {
+    public init(integerLiteral value: Int) {
+        self = .init(value: value.description)
+    }
+}
