@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Centered Text Test")
 struct CenteredTextTests {
-    
+
 }

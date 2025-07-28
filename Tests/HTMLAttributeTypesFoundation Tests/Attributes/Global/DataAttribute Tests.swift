@@ -16,5 +16,5 @@ import Testing
 
 @Suite("DataAttribute Test")
 struct DataAttributeTests {
-    
+
 }

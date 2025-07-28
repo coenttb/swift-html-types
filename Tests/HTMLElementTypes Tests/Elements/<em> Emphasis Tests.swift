@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Emphasis Test")
 struct EmphasisTests {
-    
+
 }

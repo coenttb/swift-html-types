@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Font Test")
 struct FontTests {
-    
+
 }

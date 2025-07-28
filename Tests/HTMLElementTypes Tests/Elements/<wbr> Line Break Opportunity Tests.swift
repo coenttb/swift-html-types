@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Line Break Opportunity Test")
 struct LineBreakOpportunityTests {
-    
+
 }

@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Inputmode Test")
 struct InputmodeTests {
-    
+
 }

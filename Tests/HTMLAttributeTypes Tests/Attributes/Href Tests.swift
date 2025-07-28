@@ -33,5 +33,4 @@ struct HrefTests {
         #expect(Href.facetimeVideo("123-456-7890").rawValue == "facetime-video:123-456-7890")
     }
 
-
 }

@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Embed Fallback Test")
 struct EmbedFallbackTests {
-    
+
 }

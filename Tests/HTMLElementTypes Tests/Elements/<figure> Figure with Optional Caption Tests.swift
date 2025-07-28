@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Figure with Optional Caption Test")
 struct FigureWithOptionalCaptionTests {
-    
+
 }

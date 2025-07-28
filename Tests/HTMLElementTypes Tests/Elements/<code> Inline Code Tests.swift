@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Inline Code Test")
 struct InlineCodeTests {
-    
+
 }

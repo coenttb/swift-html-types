@@ -20,7 +20,7 @@ struct FormEncTypeTests {
     func attribute() {
         #expect(FormEncType.attribute == "formenctype")
     }
-    
+
     @Test("FormEncType should have predefined values")
     func predefinedValues() {
         #expect(FormEncType.urlEncoded.rawValue == "application/x-www-form-urlencoded")

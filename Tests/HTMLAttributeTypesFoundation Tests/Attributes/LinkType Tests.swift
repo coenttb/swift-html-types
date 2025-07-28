@@ -16,5 +16,5 @@ import Testing
 
 @Suite("LinkType Test")
 struct LinkTypeTests {
-    
+
 }

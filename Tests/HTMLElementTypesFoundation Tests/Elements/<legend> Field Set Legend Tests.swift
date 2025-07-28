@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Field Set Legend Test")
 struct FieldSetLegendTests {
-    
+
 }

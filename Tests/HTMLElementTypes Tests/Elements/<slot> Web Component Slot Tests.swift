@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Web Component Slot Test")
 struct WebComponentSlotTests {
-    
+
 }

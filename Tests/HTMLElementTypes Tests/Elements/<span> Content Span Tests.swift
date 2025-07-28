@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Content Span Test")
 struct ContentSpanTests {
-    
+
 }

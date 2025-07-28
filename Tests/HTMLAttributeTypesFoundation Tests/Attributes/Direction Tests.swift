@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Direction Test")
 struct DirectionTests {
-    
+
 }

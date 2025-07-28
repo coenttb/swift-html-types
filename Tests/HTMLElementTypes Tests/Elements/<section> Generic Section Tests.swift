@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Generic Section Test")
 struct GenericSectionTests {
-    
+
 }

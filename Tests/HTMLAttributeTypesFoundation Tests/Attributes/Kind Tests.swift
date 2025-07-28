@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Kind Test")
 struct KindTests {
-    
+
 }

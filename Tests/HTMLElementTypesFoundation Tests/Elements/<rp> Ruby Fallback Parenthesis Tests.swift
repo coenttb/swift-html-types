@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Ruby Fallback Parenthesis Test")
 struct RubyFallbackParenthesisTests {
-    
+
 }

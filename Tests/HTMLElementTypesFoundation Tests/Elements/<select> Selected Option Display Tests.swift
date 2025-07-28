@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Selected Option Display Test")
 struct SelectedOptionDisplayTests {
-    
+
 }

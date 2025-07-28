@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Menu Test")
 struct MenuTests {
-    
+
 }

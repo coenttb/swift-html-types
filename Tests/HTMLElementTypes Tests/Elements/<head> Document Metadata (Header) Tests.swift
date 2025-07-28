@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Document Metadata Header Test")
 struct DocumentMetadataHeaderTests {
-    
+
 }

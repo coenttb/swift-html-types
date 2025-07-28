@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Input.Submit Test")
 struct InputSubmitTests {
-    
+
 }

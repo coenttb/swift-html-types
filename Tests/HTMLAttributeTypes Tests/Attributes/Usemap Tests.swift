@@ -20,16 +20,16 @@ struct UsemapTests {
     func attribute() {
         #expect(Usemap.attribute == "usemap")
     }
-    
+
     @Test("Usemap should automatically add # prefix")
     func hashPrefix() {
         let withoutHash = Usemap("planetmap")
         #expect(withoutHash.rawValue == "#planetmap")
-        
+
         let withHash = Usemap("#planetmap")
         #expect(withHash.rawValue == "#planetmap")
     }
-    
+
     @Test("Usemap should support string literal")
     func stringLiteral() {
         let usemap: Usemap = "mymap"

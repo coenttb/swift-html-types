@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Frame Fallback Test")
 struct FrameFallbackTests {
-    
+
 }

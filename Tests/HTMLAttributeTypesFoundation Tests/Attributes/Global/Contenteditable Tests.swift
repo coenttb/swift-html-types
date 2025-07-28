@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Contenteditable Test")
 struct ContenteditableTests {
-    
+
 }

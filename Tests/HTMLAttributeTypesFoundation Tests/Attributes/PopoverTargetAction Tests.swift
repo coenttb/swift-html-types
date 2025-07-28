@@ -16,5 +16,5 @@ import Testing
 
 @Suite("PopoverTargetAction Test")
 struct PopoverTargetActionTests {
-    
+
 }

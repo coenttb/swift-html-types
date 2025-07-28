@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Autoplay Test")
 struct AutoplayTests {
-    
+
 }

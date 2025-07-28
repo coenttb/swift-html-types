@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Superscript Test")
 struct SuperscriptTests {
-    
+
 }

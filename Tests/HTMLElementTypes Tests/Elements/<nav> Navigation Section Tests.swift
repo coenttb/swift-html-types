@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Navigation Section Test")
 struct NavigationSectionTests {
-    
+
 }

@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Keyboard Input Test")
 struct KeyboardInputTests {
-    
+
 }

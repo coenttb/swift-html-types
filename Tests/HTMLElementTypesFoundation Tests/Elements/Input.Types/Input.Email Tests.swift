@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Input.Email Test")
 struct InputEmailTests {
-    
+
 }

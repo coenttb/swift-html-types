@@ -16,5 +16,5 @@ import Testing
 
 @Suite("ObjectType Test")
 struct ObjectTypeTests {
-    
+
 }

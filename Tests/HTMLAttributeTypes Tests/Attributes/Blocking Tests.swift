@@ -20,7 +20,7 @@ struct BlockingTests {
     func attribute() {
         #expect(Blocking.attribute == "blocking")
     }
-    
+
     @Test("Blocking should have render preset")
     func renderPreset() {
         #expect(Blocking.render.rawValue == "render")

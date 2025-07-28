@@ -16,5 +16,5 @@ import Testing
 
 @Suite("HTML Data List Test")
 struct HTMLDataListTests {
-    
+
 }

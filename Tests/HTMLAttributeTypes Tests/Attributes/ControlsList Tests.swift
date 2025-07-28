@@ -20,14 +20,14 @@ struct ControlsListTests {
     func attribute() {
         #expect(ControlsList.attribute == "controlslist")
     }
-    
+
     @Test("ControlsList should have predefined values")
     func predefinedValues() {
         #expect(ControlsList.nodownload.rawValue == "nodownload")
         #expect(ControlsList.nofullscreen.rawValue == "nofullscreen")
         #expect(ControlsList.noremoteplayback.rawValue == "noremoteplayback")
     }
-    
+
     @Test("ControlsList should support combining values")
     func combineValues() {
         let combined = ControlsList.combine([.nodownload, .nofullscreen])

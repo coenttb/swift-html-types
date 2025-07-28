@@ -16,5 +16,5 @@ import Testing
 
 @Suite("ObjectData Test")
 struct ObjectDataTests {
-    
+
 }

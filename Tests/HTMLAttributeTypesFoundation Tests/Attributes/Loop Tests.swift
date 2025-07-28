@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Loop Test")
 struct LoopTests {
-    
+
 }

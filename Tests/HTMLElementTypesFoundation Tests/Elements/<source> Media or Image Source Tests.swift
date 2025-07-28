@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Media or Image Source Test")
 struct MediaOrImageSourceTests {
-    
+
 }

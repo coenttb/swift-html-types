@@ -16,5 +16,5 @@ import Testing
 
 @Suite("BooleanAttribute Test")
 struct BooleanAttributeTests {
-    
+
 }

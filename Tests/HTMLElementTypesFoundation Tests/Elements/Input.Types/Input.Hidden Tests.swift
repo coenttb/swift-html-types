@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Input.Hidden Test")
 struct InputHiddenTests {
-    
+
 }

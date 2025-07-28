@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Table Column Group Test")
 struct TableColumnGroupTests {
-    
+
 }

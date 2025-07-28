@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Block Quotation Test")
 struct BlockQuotationTests {
-    
+
 }

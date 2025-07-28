@@ -20,7 +20,7 @@ struct MarginHeightTests {
     func attribute() {
         #expect(MarginHeight.attribute == "marginheight")
     }
-    
+
     @Test("MarginHeight should support integer literal")
     func integerLiteral() {
         let marginHeight: MarginHeight = 10

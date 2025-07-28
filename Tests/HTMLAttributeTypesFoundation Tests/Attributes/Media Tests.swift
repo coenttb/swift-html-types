@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Media Test")
 struct MediaTests {
-    
+
 }

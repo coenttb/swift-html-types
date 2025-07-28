@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Lang Test")
 struct LangTests {
-    
+
 }

@@ -21,9 +21,9 @@ import Testing
 
 private struct TestAttribute: HTMLAttribute {
     static var attribute: String { "test-attribute" }
-    
+
     let value: String
-    
+
     init(_ value: String) {
         self.value = value
     }
@@ -31,9 +31,9 @@ private struct TestAttribute: HTMLAttribute {
 
 private struct NumericTestAttribute: HTMLAttribute {
     static var attribute: String { "numeric-test" }
-    
+
     let value: Int
-    
+
     init(_ value: Int) {
         self.value = value
     }
@@ -41,35 +41,35 @@ private struct NumericTestAttribute: HTMLAttribute {
 
 @Suite("Attribute Protocol Tests")
 struct AttributeTests {
-    
+
     @Test("Attribute has correct static attribute name")
     func attributeName() {
         #expect(TestAttribute.attribute == "test-attribute")
         #expect(NumericTestAttribute.attribute == "numeric-test")
     }
-    
+
     @Test("Attribute is Sendable")
     func sendableConformance() {
         let attr = TestAttribute("test")
-        
+
         Task {
-            let _ = attr
+            _ = attr
         }
     }
-    
+
     @Test("Attribute supports equality comparison")
     func equality() {
         let attr1 = TestAttribute("same")
         let attr2 = TestAttribute("same")
         let attr3 = TestAttribute("different")
-        
+
         #expect(attr1 == attr2)
         #expect(attr1 != attr3)
-        
+
         let numAttr1 = NumericTestAttribute(42)
         let numAttr2 = NumericTestAttribute(42)
         let numAttr3 = NumericTestAttribute(24)
-        
+
         #expect(numAttr1 == numAttr2)
         #expect(numAttr1 != numAttr3)
     }

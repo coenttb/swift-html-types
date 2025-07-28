@@ -16,5 +16,5 @@ import Testing
 
 @Suite("HTML Document Root element Test")
 struct HTMLDocumentRootElementTests {
-    
+
 }

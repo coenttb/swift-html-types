@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Defer Test")
 struct DeferTests {
-    
+
 }

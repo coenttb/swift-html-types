@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Ruby Annotation Test")
 struct RubyAnnotationTests {
-    
+
 }

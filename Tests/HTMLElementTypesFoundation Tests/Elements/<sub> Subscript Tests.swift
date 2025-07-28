@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Subscript Test")
 struct SubscriptTests {
-    
+
 }

@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Optimum Test")
 struct OptimumTests {
-    
+
 }

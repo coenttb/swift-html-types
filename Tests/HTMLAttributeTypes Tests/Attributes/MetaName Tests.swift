@@ -20,7 +20,7 @@ struct MetaNameTests {
     func attribute() {
         #expect(MetaName.attribute == "name")
     }
-    
+
     @Test("MetaName should have predefined values")
     func predefinedValues() {
         #expect(MetaName.application.rawValue == "application-name")

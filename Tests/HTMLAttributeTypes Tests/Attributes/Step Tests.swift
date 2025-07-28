@@ -20,25 +20,25 @@ struct StepTests {
     func attribute() {
         #expect(Step.attribute == "step")
     }
-    
+
     @Test("Step should support enum cases")
     func enumCases() {
         #expect(Step.any.rawValue == "any")
         #expect(Step.value(1.5).rawValue == "1.5")
     }
-    
+
     @Test("Step should support integer literal")
     func integerLiteral() {
         let step: Step = 5
         #expect(step.rawValue == "5.0")
     }
-    
+
     @Test("Step should support float literal")
     func floatLiteral() {
         let step: Step = 0.1
         #expect(step.rawValue == "0.1")
     }
-    
+
     @Test("Step should have predefined convenience values")
     func convenienceValues() {
         #expect(Step.integer.rawValue == "1.0")

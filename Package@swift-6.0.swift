@@ -103,6 +103,4 @@ let package = Package(
     swiftLanguageModes: [.v6]
 )
 
-extension String {
-    var tests: Self { "\(self) Tests" }
-}
+extension String { var tests: Self { "\(self) Tests" } }

@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Step Test")
 struct StepTests {
-    
+
 }

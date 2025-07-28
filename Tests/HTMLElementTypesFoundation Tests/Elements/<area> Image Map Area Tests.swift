@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Image Map Area Test")
 struct ImageMapAreaTests {
-    
+
 }

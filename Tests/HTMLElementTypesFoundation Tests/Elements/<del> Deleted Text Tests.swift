@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Deleted Text Test")
 struct DeletedTextTests {
-    
+
 }

@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Input.Tel Test")
 struct InputTelTests {
-    
+
 }

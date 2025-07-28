@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Allowfullscreen Test")
 struct AllowfullscreenTests {
-    
+
 }

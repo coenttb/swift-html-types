@@ -17,7 +17,7 @@ public struct Form: Sendable, Hashable {
     ///
     /// This attribute corresponds to the `accept-charset` attribute on the `<form>` element.
     public var acceptCharset: HTMLAttributeTypes.AcceptCharset?
-    
+
     /// A string indicating the URL to which to submit the data. This takes precedence over the action attribute on the `<form>` element that owns the `<input>`.
     ///
     /// This attribute is also available on `<input type="submit">` and `<button>` elements.

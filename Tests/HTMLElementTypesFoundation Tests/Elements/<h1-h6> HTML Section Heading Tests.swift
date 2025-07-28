@@ -16,5 +16,5 @@ import Testing
 
 @Suite("HTML Section Heading Test")
 struct HTMLSectionHeadingTests {
-    
+
 }

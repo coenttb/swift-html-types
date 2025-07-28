@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Plain Text Test")
 struct PlainTextTests {
-    
+
 }

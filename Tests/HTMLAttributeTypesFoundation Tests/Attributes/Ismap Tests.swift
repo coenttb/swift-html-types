@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Ismap Test")
 struct IsmapTests {
-    
+
 }

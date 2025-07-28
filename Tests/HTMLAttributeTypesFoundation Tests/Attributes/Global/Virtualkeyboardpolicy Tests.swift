@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Virtualkeyboardpolicy Test")
 struct VirtualkeyboardpolicyTests {
-    
+
 }

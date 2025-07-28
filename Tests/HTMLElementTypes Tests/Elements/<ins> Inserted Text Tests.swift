@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Inserted Text Test")
 struct InsertedTextTests {
-    
+
 }

@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Required Test")
 struct RequiredTests {
-    
+
 }

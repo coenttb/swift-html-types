@@ -53,7 +53,6 @@ extension Min {
 
 #endif
 
-
 extension Min {
     /// Create a min value for a date input
     public static func date(_ year: Int, month: Int, day: Int) -> Min {

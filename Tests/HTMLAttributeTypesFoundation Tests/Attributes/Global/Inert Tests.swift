@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Inert Test")
 struct InertTests {
-    
+
 }

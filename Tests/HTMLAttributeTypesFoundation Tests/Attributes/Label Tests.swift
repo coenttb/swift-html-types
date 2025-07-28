@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Label Test")
 struct LabelTests {
-    
+
 }

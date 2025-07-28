@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Cite Test")
 struct CiteTests {
-    
+
 }

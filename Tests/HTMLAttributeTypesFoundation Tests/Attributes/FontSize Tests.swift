@@ -16,5 +16,5 @@ import Testing
 
 @Suite("FontSize Test")
 struct FontSizeTests {
-    
+
 }

@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Strikethrough Test")
 struct StrikethroughTests {
-    
+
 }

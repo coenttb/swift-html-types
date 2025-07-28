@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Form Test")
 struct FormTests {
-    
+
 }

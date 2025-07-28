@@ -16,5 +16,5 @@ import Testing
 
 @Suite("ScriptType Test")
 struct ScriptTypeTests {
-    
+
 }

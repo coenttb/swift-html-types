@@ -20,7 +20,7 @@ struct BehaviorTests {
     func attribute() {
         #expect(Behavior.attribute == "behavior")
     }
-    
+
     @Test("Behavior should have predefined values")
     func predefinedValues() {
         #expect(Behavior.scroll.rawValue == "scroll")

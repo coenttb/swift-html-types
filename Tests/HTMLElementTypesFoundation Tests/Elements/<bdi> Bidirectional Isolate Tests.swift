@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Bidirectional Isolate Test")
 struct BidirectionalIsolateTests {
-    
+
 }

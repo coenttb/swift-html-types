@@ -20,14 +20,14 @@ struct FormMethodTests {
     func attribute() {
         #expect(FormMethod.attribute == "formmethod")
     }
-    
+
     @Test("FormMethod should have predefined values")
     func predefinedValues() {
         #expect(FormMethod.get.rawValue == "get")
         #expect(FormMethod.post.rawValue == "post")
         #expect(FormMethod.dialog.rawValue == "dialog")
     }
-    
+
     @Test("FormMethod should convert to lowercase")
     func lowercaseConversion() {
         let method = FormMethod(value: "POST")

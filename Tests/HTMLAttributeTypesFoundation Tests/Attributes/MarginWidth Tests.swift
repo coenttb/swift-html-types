@@ -16,5 +16,5 @@ import Testing
 
 @Suite("MarginWidth Test")
 struct MarginWidthTests {
-    
+
 }

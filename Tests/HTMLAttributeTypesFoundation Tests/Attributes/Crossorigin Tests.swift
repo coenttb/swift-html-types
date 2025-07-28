@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Crossorigin Test")
 struct CrossoriginTests {
-    
+
 }

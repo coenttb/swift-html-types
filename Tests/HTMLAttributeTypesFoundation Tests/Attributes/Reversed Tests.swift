@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Reversed Test")
 struct ReversedTests {
-    
+
 }

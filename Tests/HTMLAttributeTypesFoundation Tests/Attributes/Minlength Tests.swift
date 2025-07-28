@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Minlength Test")
 struct MinlengthTests {
-    
+
 }

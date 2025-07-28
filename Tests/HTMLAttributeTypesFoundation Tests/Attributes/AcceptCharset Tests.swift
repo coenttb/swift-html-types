@@ -16,5 +16,5 @@ import Testing
 
 @Suite("AcceptCharset Test")
 struct AcceptCharsetTests {
-    
+
 }

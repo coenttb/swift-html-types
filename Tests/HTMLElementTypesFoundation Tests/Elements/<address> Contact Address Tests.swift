@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Contact Address Test")
 struct ContactAddressTests {
-    
+
 }

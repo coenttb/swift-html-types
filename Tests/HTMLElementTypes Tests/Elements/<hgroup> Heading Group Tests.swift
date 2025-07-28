@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Heading Group Test")
 struct HeadingGroupTests {
-    
+
 }

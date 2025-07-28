@@ -29,7 +29,7 @@ let package = Package(
         .library(name: .htmlAttributeTypes, targets: [.htmlAttributeTypes]),
         .library(name: .htmlAttributeTypesFoundation, targets: [.htmlAttributeTypesFoundation]),
         .library(name: .htmlElementTypes, targets: [.htmlElementTypes]),
-        .library(name: .htmlElementTypesFoundation, targets: [.htmlElementTypesFoundation]),
+        .library(name: .htmlElementTypesFoundation, targets: [.htmlElementTypesFoundation])
     ],
     dependencies: [],
     targets: [
@@ -37,7 +37,7 @@ let package = Package(
             name: .htmlTypes,
             dependencies: [
                 .htmlAttributeTypes,
-                .htmlElementTypes,
+                .htmlElementTypes
             ]
         ),
         .target(
@@ -53,7 +53,7 @@ let package = Package(
         .target(
             name: .htmlElementTypes,
             dependencies: [
-                .htmlAttributeTypes,
+                .htmlAttributeTypes
             ]
         ),
         .testTarget(
@@ -78,7 +78,7 @@ let package = Package(
         .target(
             name: .htmlAttributeTypesFoundation,
             dependencies: [
-                .htmlAttributeTypes,
+                .htmlAttributeTypes
             ]
         ),
         .testTarget(
@@ -90,7 +90,7 @@ let package = Package(
         .target(
             name: .htmlElementTypesFoundation,
             dependencies: [
-                .htmlElementTypes,
+                .htmlElementTypes
             ]
         ),
         .testTarget(
@@ -98,11 +98,9 @@ let package = Package(
             dependencies: [
                 .htmlElementTypesFoundation
             ]
-        ),
+        )
     ],
     swiftLanguageModes: [.v5]
 )
 
-extension String {
-    var tests: Self { "\(self) Tests" }
-}
+extension String { var tests: Self { "\(self) Tests" } }

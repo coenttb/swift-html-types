@@ -26,7 +26,7 @@ extension Nonce {
         #if canImport(Darwin)
         _ = data.withUnsafeMutableBytes { SecRandomCopyBytes(kSecRandomDefault, length, $0.baseAddress!) }
         #else
-        let charset = Array<Character>("0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz-._")
+        let charset = [Character]("0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz-._")
         var rng = SystemRandomNumberGenerator()
         data.withUnsafeMutableBytes { (p: UnsafeMutableRawBufferPointer) in
             for i in 0..<length {

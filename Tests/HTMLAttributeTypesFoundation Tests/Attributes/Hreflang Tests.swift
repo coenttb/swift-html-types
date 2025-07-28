@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Hreflang Test")
 struct HreflangTests {
-    
+
 }

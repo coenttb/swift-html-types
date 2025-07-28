@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Enterkeyhint Test")
 struct EnterkeyhintTests {
-    
+
 }

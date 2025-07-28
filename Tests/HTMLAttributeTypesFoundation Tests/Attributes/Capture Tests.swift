@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Capture Test")
 struct CaptureTests {
-    
+
 }

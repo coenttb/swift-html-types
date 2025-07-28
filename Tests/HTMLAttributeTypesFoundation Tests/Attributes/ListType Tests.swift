@@ -16,5 +16,5 @@ import Testing
 
 @Suite("ListType Test")
 struct ListTypeTests {
-    
+
 }

@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Input.Reset Test")
 struct InputResetTests {
-    
+
 }

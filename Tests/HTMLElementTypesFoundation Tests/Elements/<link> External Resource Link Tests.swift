@@ -16,5 +16,5 @@ import Testing
 
 @Suite("External Resource Link Test")
 struct ExternalResourceLinkTests {
-    
+
 }

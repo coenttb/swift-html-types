@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Document Title Test")
 struct DocumentTitleTests {
-    
+
 }

@@ -20,7 +20,7 @@ struct ScriptTypeTests {
     func attribute() {
         #expect(ScriptType.attribute == "type")
     }
-    
+
     @Test("ScriptType should have predefined values")
     func predefinedValues() {
         #expect(ScriptType.module.rawValue == "module")

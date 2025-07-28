@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Bidirectional Text Override Test")
 struct BidirectionalTextOverrideTests {
-    
+
 }

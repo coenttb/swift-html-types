@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Option Group Test")
 struct OptionGroupTests {
-    
+
 }

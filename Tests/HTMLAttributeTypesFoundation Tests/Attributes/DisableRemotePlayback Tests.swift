@@ -16,5 +16,5 @@ import Testing
 
 @Suite("DisableRemotePlayback Test")
 struct DisableRemotePlaybackTests {
-    
+
 }

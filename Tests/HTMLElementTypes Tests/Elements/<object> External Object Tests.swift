@@ -16,5 +16,5 @@ import Testing
 
 @Suite("External Object Test")
 struct ExternalObjectTests {
-    
+
 }

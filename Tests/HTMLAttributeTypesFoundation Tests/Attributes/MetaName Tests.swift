@@ -16,5 +16,5 @@ import Testing
 
 @Suite("MetaName Test")
 struct MetaNameTests {
-    
+
 }

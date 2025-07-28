@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Embed Text Track Test")
 struct EmbedTextTrackTests {
-    
+
 }

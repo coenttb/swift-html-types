@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Readonly Test")
 struct ReadonlyTests {
-    
+
 }

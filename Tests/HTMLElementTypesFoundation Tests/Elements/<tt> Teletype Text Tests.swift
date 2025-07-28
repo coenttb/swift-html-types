@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Teletype Text Test")
 struct TeletypeTextTests {
-    
+
 }

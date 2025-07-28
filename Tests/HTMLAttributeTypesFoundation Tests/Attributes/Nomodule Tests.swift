@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Nomodule Test")
 struct NomoduleTests {
-    
+
 }

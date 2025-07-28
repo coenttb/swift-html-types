@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Idiomatic Text Test")
 struct IdiomaticTextTests {
-    
+
 }

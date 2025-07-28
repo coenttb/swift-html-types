@@ -20,7 +20,7 @@ struct ListTypeTests {
     func attribute() {
         #expect(ListType.attribute == "type")
     }
-    
+
     @Test("ListType should have predefined values")
     func predefinedValues() {
         #expect(ListType.lowerAlpha.rawValue == "a")

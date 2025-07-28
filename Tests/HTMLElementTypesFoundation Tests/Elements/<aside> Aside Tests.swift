@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Aside Test")
 struct AsideTests {
-    
+
 }

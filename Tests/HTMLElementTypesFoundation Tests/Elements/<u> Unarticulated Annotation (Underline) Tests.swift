@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Unarticulated Annotation Underline Test")
 struct UnarticultedAnnotationUnderlineTests {
-    
+
 }

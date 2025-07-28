@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Strong Importance Test")
 struct StrongImportanceTests {
-    
+
 }

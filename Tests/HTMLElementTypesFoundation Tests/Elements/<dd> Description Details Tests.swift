@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Description Details Test")
 struct DescriptionDetailsTests {
-    
+
 }

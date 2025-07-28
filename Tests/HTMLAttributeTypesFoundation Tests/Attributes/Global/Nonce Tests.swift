@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Nonce Test")
 struct NonceTests {
-    
+
 }

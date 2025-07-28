@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Min Test")
 struct MinTests {
-    
+
 }

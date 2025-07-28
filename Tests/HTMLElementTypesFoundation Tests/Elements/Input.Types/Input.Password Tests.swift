@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Input.Password Test")
 struct InputPasswordTests {
-    
+
 }

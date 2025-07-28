@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Download Test")
 struct DownloadTests {
-    
+
 }

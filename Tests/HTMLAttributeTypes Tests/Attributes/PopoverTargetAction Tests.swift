@@ -20,7 +20,7 @@ struct PopoverTargetActionTests {
     func attribute() {
         #expect(PopoverTargetAction.attribute == "popovertargetaction")
     }
-    
+
     @Test("PopoverTargetAction should have predefined values")
     func predefinedValues() {
         #expect(PopoverTargetAction.show.rawValue == "show")

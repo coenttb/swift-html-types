@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Dialog Test")
 struct DialogTests {
-    
+
 }

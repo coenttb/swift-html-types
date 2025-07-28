@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Document Base URL Test")
 struct DocumentBaseURLTests {
-    
+
 }

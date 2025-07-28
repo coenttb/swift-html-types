@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Checked Test")
 struct CheckedTests {
-    
+
 }

@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Bring Attention To Test")
 struct BringAttentionToTests {
-    
+
 }

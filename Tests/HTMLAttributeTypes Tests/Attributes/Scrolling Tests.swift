@@ -20,7 +20,7 @@ struct ScrollingTests {
     func attribute() {
         #expect(Scrolling.attribute == "scrolling")
     }
-    
+
     @Test("Scrolling should have predefined values")
     func predefinedValues() {
         #expect(Scrolling.yes.rawValue == "yes")

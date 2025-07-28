@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Image Embed Test")
 struct ImageEmbedTests {
-    
+
 }

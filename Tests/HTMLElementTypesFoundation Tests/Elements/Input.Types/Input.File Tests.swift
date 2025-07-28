@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Input.File Test")
 struct InputFileTests {
-    
+
 }

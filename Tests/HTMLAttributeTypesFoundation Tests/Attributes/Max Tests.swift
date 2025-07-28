@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Max Test")
 struct MaxTests {
-    
+
 }

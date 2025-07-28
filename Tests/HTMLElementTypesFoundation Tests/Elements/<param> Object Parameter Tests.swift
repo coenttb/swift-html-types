@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Object Parameter Test")
 struct ObjectParameterTests {
-    
+
 }

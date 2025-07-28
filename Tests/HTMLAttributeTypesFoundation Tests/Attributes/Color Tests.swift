@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Color Test")
 struct ColorTests {
-    
+
 }

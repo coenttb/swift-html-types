@@ -16,7 +16,7 @@ import Testing
 
 @Suite("Href Test")
 struct HrefTests {
-    
+
     @Test("Href URL method")
     func urlMethod() {
         let url = URL(string: "https://example.com")!

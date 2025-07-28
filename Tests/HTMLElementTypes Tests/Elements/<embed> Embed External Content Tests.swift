@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Embed External Content Test")
 struct EmbedExternalContentTests {
-    
+
 }

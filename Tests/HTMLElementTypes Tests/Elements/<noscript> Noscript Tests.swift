@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Noscript Test")
 struct NoscriptTests {
-    
+
 }

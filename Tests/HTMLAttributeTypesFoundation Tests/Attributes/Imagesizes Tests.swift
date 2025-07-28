@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Imagesizes Test")
 struct ImagesizesTests {
-    
+
 }

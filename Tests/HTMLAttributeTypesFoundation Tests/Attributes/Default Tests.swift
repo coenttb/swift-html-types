@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Default Test")
 struct DefaultTests {
-    
+
 }

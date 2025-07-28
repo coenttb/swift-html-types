@@ -16,5 +16,5 @@ import Testing
 
 @Suite("ButtonType Test")
 struct ButtonTypeTests {
-    
+
 }

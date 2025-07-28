@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Video Embed Test")
 struct VideoEmbedTests {
-    
+
 }

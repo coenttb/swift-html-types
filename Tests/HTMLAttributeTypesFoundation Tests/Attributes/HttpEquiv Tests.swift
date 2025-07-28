@@ -16,5 +16,5 @@ import Testing
 
 @Suite("HttpEquiv Test")
 struct HttpEquivTests {
-    
+
 }

@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Input.Week Test")
 struct InputWeekTests {
-    
+
 }

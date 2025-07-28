@@ -20,7 +20,7 @@ struct FormTargetTests {
     func attribute() {
         #expect(FormTarget.attribute == "formtarget")
     }
-    
+
     @Test("FormTarget should have predefined values")
     func predefinedValues() {
         #expect(FormTarget.`self`.rawValue == "_self")

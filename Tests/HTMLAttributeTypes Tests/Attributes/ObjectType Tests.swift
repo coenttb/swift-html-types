@@ -20,7 +20,7 @@ struct ObjectTypeTests {
     func attribute() {
         #expect(ObjectType.attribute == "type")
     }
-    
+
     @Test("ObjectType should have predefined MIME types")
     func predefinedMimeTypes() {
         #expect(ObjectType.pdf.rawValue == "application/pdf")

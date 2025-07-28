@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Input.Url Test")
 struct InputUrlTests {
-    
+
 }

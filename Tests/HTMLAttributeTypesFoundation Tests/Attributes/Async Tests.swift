@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Async Test")
 struct AsyncTests {
-    
+
 }

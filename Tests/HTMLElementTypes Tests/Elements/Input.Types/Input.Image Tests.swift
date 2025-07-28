@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Input.Image Test")
 struct InputImageTests {
-    
+
 }

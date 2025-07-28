@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Muted Test")
 struct MutedTests {
-    
+
 }

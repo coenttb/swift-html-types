@@ -16,5 +16,5 @@ import Testing
 
 @Suite("StringAttribute Test")
 struct StringAttributeTests {
-    
+
 }

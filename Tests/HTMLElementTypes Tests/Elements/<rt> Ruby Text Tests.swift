@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Ruby Text Test")
 struct RubyTextTests {
-    
+
 }

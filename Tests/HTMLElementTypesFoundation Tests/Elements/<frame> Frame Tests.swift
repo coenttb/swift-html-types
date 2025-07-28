@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Frame Test")
 struct FrameTests {
-    
+
 }

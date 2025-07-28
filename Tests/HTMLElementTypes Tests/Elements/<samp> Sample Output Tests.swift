@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Sample Output Test")
 struct SampleOutputTests {
-    
+
 }

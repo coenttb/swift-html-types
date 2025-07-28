@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Bigger Text Test")
 struct BiggerTextTests {
-    
+
 }

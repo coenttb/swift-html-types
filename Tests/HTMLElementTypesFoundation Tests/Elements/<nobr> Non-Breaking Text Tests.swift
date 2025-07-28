@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Non-Breaking Text Test")
 struct NonBreakingTextTests {
-    
+
 }

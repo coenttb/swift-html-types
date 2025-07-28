@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Spellcheck Test")
 struct SpellcheckTests {
-    
+
 }

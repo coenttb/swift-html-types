@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Itemprop Test")
 struct ItempropTests {
-    
+
 }

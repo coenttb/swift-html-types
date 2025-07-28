@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Paragraph Test")
 struct ParagraphTests {
-    
+
 }

@@ -16,5 +16,5 @@ import Testing
 
 @Suite("ShadowRootClonable Test")
 struct ShadowRootClonableTests {
-    
+
 }

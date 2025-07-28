@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Enctype Test")
 struct EnctypeTests {
-    
+
 }

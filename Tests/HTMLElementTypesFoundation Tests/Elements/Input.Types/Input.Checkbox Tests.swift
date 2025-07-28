@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Input.Checkbox Test")
 struct InputCheckboxTests {
-    
+
 }

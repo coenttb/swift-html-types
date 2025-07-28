@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Progress Indicator Test")
 struct ProgressIndicatorTests {
-    
+
 }

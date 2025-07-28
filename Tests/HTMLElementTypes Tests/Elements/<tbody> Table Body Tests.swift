@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Table Body Test")
 struct TableBodyTests {
-    
+
 }

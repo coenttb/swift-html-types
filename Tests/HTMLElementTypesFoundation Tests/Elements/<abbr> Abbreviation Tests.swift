@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Abbreviation Test")
 struct AbbreviationTests {
-    
+
 }

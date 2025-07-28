@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Novalidate Test")
 struct NovalidateTests {
-    
+
 }

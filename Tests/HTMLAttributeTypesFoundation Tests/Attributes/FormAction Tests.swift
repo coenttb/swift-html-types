@@ -16,5 +16,5 @@ import Testing
 
 @Suite("FormAction Test")
 struct FormActionTests {
-    
+
 }

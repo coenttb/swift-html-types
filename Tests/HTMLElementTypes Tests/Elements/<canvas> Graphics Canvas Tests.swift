@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Graphics Canvas Test")
 struct GraphicsCanvasTests {
-    
+
 }

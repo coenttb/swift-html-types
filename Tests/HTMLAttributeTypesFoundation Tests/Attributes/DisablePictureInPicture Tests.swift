@@ -16,5 +16,5 @@ import Testing
 
 @Suite("DisablePictureInPicture Test")
 struct DisablePictureInPictureTests {
-    
+
 }

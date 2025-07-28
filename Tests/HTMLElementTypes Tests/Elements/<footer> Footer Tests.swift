@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Footer Test")
 struct FooterTests {
-    
+
 }

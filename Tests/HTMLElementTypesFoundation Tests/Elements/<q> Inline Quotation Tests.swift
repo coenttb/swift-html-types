@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Inline Quotation Test")
 struct InlineQuotationTests {
-    
+
 }

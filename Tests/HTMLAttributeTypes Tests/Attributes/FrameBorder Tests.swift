@@ -20,7 +20,7 @@ struct FrameBorderTests {
     func attribute() {
         #expect(FrameBorder.attribute == "frameborder")
     }
-    
+
     @Test("FrameBorder should support integer literal")
     func integerLiteral() {
         let frameBorder: FrameBorder = 1

@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Figure Caption Test")
 struct FigureCaptionTests {
-    
+
 }

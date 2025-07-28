@@ -16,5 +16,5 @@ import Testing
 
 @Suite("FrameBorder Test")
 struct FrameBorderTests {
-    
+
 }

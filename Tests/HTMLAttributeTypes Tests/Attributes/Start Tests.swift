@@ -20,13 +20,13 @@ struct StartTests {
     func attribute() {
         #expect(Start.attribute == "start")
     }
-    
+
     @Test("Start should support integer initialization")
     func integerInitialization() {
         let start = Start(4)
         #expect(start.rawValue == "4")
     }
-    
+
     @Test("Start should support integer literal")
     func integerLiteral() {
         let start: Start = 10

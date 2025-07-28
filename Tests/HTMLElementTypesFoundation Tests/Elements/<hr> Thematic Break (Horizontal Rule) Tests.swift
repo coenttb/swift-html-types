@@ -16,5 +16,5 @@ import Testing
 
 @Suite("Thematic Break Horizontal Rule Test")
 struct ThematicBreakHorizontalRuleTests {
-    
+
 }
