@@ -24,6 +24,7 @@ public protocol HTMLVoidElement {}
 
 extension Area: HTMLVoidElement {}
 extension Base: HTMLVoidElement {}
+extension BR: HTMLVoidElement {}
 extension TableColumn: HTMLVoidElement {}
 extension Embed: HTMLVoidElement {}
 extension ThematicBreak: HTMLVoidElement {}
