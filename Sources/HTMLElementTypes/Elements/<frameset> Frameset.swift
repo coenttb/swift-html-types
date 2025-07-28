@@ -38,10 +38,10 @@ public struct Frameset: HTMLElement {
     @inlinable public static var tag: String { "frameset" }
 
     /// Specifies the number and size of horizontal spaces in a frameset
-    public var cols: String?
+    public var cols: Cols?
 
     /// Specifies the number and size of vertical spaces in a frameset
-    public var rows: String?
+    public var rows: Rows?
 
     /// Creates a new Frameset element with the specified attributes.
     ///
@@ -49,8 +49,8 @@ public struct Frameset: HTMLElement {
     ///   - cols: Specifies the number and size of horizontal spaces in a frameset
     ///   - rows: Specifies the number and size of vertical spaces in a frameset (typically `<frame>` elements)
     public init(
-        cols: String? = nil,
-        rows: String? = nil
+        cols: Cols? = nil,
+        rows: Rows? = nil
     ) {
         self.cols = cols
         self.rows = rows
