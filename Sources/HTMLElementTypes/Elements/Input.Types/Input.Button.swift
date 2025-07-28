@@ -12,7 +12,7 @@
 
 import HTMLAttributeTypes
 
-extension Input {
+extension HTMLElementTypes.Input {
     /// `<input type="button">` elements are rendered as push buttons, which can be programmed to control
     /// custom functionality anywhere on a webpage as required when assigned an event handler function
     /// (typically for the click event).
@@ -72,7 +72,7 @@ extension Input {
     }
 }
 
-extension Input {
+extension HTMLElementTypes.Input {
     /// Creates a new button input element
     public static let button: Self = .button()
 

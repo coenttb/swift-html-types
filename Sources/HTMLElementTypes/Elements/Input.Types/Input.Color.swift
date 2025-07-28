@@ -22,7 +22,7 @@ import HTMLAttributeTypes
 /// The element's presentation may vary substantially from one browser and/or platform to another—it might
 /// be a basic textual input that automatically validates to ensure that the color information is entered
 /// in the proper format, or a platform-standard color picker, or some kind of custom color picker window.
-extension Input {
+extension HTMLElementTypes.Input {
     public struct Color: Sendable, Hashable {
         /// The value of an `<input>` element of type color is always a string which contains a 7-character
         /// string specifying an RGB color in hexadecimal format. While you can input the color in either
@@ -43,7 +43,7 @@ extension Input {
     }
 }
 
-extension Input {
+extension HTMLElementTypes.Input {
     /// Creates a new color input element
     public static let color: Self = .color()
 

@@ -21,7 +21,7 @@ import HTMLAttributeTypes
 /// - name.y=Y
 ///
 /// Where "name" is the value of the name attribute, and X and Y are the coordinates.
-extension Input {
+extension HTMLElementTypes.Input {
     public struct Image: Sendable, Hashable {
 
         /// A string specifying the URL of the image file to display to represent the graphical submit button. When the user interacts with the image, the input is handled like any other button input.
@@ -64,7 +64,7 @@ extension Input {
     }
 }
 
-extension Input {
+extension HTMLElementTypes.Input {
 
     /// Creates a new image input element (graphical submit button)
     public static func image(

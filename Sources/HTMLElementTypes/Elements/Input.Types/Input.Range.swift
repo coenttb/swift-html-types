@@ -23,7 +23,7 @@ import HTMLAttributeTypes
 /// - Color configuration controls such as color channels, transparency, brightness
 /// - Game configuration controls such as difficulty, visibility distance, world size
 /// - Password length for a password manager's generated passwords
-extension Input {
+extension HTMLElementTypes.Input {
     public struct Range: Sendable, Hashable {
         /// The value attribute contains a string which contains a string representation of the selected number.
         /// The value is never an empty string ("").
@@ -80,7 +80,7 @@ extension Input {
     }
 }
 
-extension Input {
+extension HTMLElementTypes.Input {
     /// Creates a new range input element
     public static let range: Self = .range()
 

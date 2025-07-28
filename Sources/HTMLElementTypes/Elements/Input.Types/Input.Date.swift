@@ -18,7 +18,7 @@ import HTMLAttributeTypes
 ///
 /// The resulting value includes the year, month, and day, but not the time.
 /// The time and datetime-local input types support time and date+time input.
-extension Input {
+extension HTMLElementTypes.Input {
     public struct Date: Sendable, Hashable {
         /// A string representing the date entered in the input. The date is formatted according to yyyy-mm-dd format.
         ///
@@ -67,7 +67,7 @@ extension Input {
     }
 }
 
-extension Input {
+extension HTMLElementTypes.Input {
     /// Creates a new date input element
     public static let date: Self = .date()
 

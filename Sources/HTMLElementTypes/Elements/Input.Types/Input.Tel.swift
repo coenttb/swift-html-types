@@ -16,7 +16,7 @@ import HTMLAttributeTypes
 /// Unlike `<input type="email">` and `<input type="url">`, the input value is not automatically
 /// validated to a particular format before the form can be submitted, because formats for telephone
 /// numbers vary so much around the world.
-extension Input {
+extension HTMLElementTypes.Input {
     public struct Tel: Sendable, Hashable {
         /// A string representing a telephone number, or empty.
         public var value: Value<String>?
@@ -70,7 +70,7 @@ extension Input {
     }
 }
 
-extension Input {
+extension HTMLElementTypes.Input {
     /// Creates a new tel input element
     public static let tel: Self = .tel()
 

@@ -15,7 +15,7 @@ import HTMLAttributeTypes
 /// `<input type="file">` elements let the user choose one or more files from their device storage.
 /// Once chosen, the files can be uploaded to a server using form submission, or manipulated
 /// using JavaScript code and the File API.
-extension Input {
+extension HTMLElementTypes.Input {
     public struct File: Sendable, Hashable {
         /// The accept attribute value is a string that defines the file types the file input should accept.
         /// This string is a comma-separated list of unique file type specifiers.
@@ -55,7 +55,7 @@ extension Input {
     }
 }
 
-extension Input {
+extension HTMLElementTypes.Input {
     /// Creates a new file input element
     public static let file: Self = .file()
 

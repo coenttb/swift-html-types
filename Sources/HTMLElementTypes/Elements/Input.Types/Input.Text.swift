@@ -13,7 +13,7 @@
 import HTMLAttributeTypes
 
 /// `<input type="text">` elements create basic single-line text fields.
-extension Input {
+extension HTMLElementTypes.Input {
     public struct Text: Sendable, Hashable {
         /// A string that contains the current value of the text entered into the text field.
         public var value: Value<String>?
@@ -72,7 +72,7 @@ extension Input {
     }
 }
 
-extension Input {
+extension HTMLElementTypes.Input {
     /// Creates a new text input element
     public static let text: Self = .text()
 

@@ -19,7 +19,7 @@ import HTMLAttributeTypes
 /// date and time, not necessarily the user's local date and time. In other words, the input allows any valid
 /// combination of year, month, day, hour, and minute—even if such a combination is invalid in the user's
 /// local time zone (such as the one hour within a daylight saving time spring-forward transition gap).
-extension Input {
+extension HTMLElementTypes.Input {
     public struct DatetimeLocal: Sendable, Hashable {
         /// A string representing the value of the date and time entered into the input.
         /// The format is YYYY-MM-DDTHH:mm.
@@ -69,7 +69,7 @@ extension Input {
     }
 }
 
-extension Input {
+extension HTMLElementTypes.Input {
 
     /// Creates a new datetimeLocal input element
     public static let datetimeLocal: Self = .datetimeLocal()

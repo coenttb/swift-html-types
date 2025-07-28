@@ -21,7 +21,7 @@ import HTMLAttributeTypes
 /// A radio group is defined by giving each of radio buttons in the group the same name. Once a radio
 /// group is established, selecting any radio button in that group automatically deselects any
 /// currently-selected radio button in the same group.
-extension Input {
+extension HTMLElementTypes.Input {
     public struct Radio: Sendable, Hashable {
         /// The value attribute is a string containing the radio button's value. The value is never shown 
         /// to the user by their user agent. Instead, it's used to identify which radio button in a group is selected.
@@ -57,7 +57,7 @@ extension Input {
     }
 }
 
-extension Input {
+extension HTMLElementTypes.Input {
     /// Creates a new radio input element
     public static let radio: Self = .radio()
 

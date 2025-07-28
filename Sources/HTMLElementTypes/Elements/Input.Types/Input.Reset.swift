@@ -18,7 +18,7 @@ import HTMLAttributeTypes
 /// Note: You should usually avoid including reset buttons in your forms. They're rarely
 /// useful, and are instead more likely to frustrate users who click them by mistake
 /// (often while trying to click the submit button).
-extension Input {
+extension HTMLElementTypes.Input {
     public struct Reset: Sendable, Hashable {
         /// The value attribute contains a string that is used as the button's label providing
         /// the button with an accessible description. If you don't specify a value, you get
@@ -39,7 +39,7 @@ extension Input {
     }
 }
 
-extension Input {
+extension HTMLElementTypes.Input {
     /// Creates a new reset input element
     public static let reset: Self = .reset()
 

@@ -19,7 +19,7 @@ import HTMLAttributeTypes
 /// grouped into a set in which only one radio button can be selected at a time, whereas checkboxes allow you to
 /// turn single values on and off. Where multiple same-named controls exist, radio buttons allow one to be selected
 /// out of them all, whereas checkboxes allow multiple values to be selected.
-extension Input {
+extension HTMLElementTypes.Input {
     public struct Checkbox: Sendable, Hashable {
         /// A string representing the value of the checkbox. This is not displayed on the client-side, but on the server
         /// this is the value given to the data submitted with the checkbox's name. If the value attribute is omitted,
@@ -48,7 +48,7 @@ extension Input {
     }
 }
 
-extension Input {
+extension HTMLElementTypes.Input {
     /// Creates a new checkbox input element
     public static let checkbox: Self = .checkbox()
 

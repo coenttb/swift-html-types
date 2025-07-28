@@ -12,7 +12,7 @@
 
 import HTMLAttributeTypes
 
-extension Input {
+extension HTMLElementTypes.Input {
     /// Represents the possible types for HTML input elements.
     ///
     /// `InputType` encapsulates all standard HTML input types as defined
@@ -161,7 +161,7 @@ extension Input.Variant {
     }
 }
 
-extension Input {
+extension HTMLElementTypes.Input {
     /// Represents the raw HTML input type attribute values.
     ///
     /// This enum provides a string-based representation of input types, used primarily

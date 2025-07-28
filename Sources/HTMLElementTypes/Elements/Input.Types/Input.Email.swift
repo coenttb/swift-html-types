@@ -19,7 +19,7 @@ import HTMLAttributeTypes
 /// email address (or list of addresses) before the form can be submitted. The :valid and :invalid CSS
 /// pseudo-classes are automatically applied as appropriate to visually denote whether the current value
 /// of the field is a valid email address or not.
-extension Input {
+extension HTMLElementTypes.Input {
     public struct Email: Sendable, Hashable {
         /// A string which is automatically validated as conforming to email syntax.
         /// This is the value that will be submitted with the form.
@@ -87,7 +87,7 @@ extension Input {
 //
 // Baseline Widely available
 
-extension Input {
+extension HTMLElementTypes.Input {
     /// Creates a new email input element
     public static let email: Self = .email()
 

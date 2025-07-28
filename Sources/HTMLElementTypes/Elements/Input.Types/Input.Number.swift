@@ -22,7 +22,7 @@ import HTMLAttributeTypes
 /// incrementing and decrementing are helpful to user experience. It is not appropriate for values that
 /// happen to only consist of numbers but aren't strictly speaking a number, such as postal codes or
 /// credit card numbers.
-extension Input {
+extension HTMLElementTypes.Input {
     public struct Number: Sendable, Hashable {
         /// A number representing the value of the number entered into the input.
         /// You can set a default value for the input by including a number inside the value attribute.
@@ -86,7 +86,7 @@ extension Input {
     }
 }
 
-extension Input {
+extension HTMLElementTypes.Input {
     /// Creates a new number input element
     public static let number: Self = .number()
 

@@ -14,7 +14,7 @@ import HTMLAttributeTypes
 
 /// `<input type="url">` elements are used to let the user enter and edit a URL.
 /// The input value is automatically validated to ensure that it's either empty or a properly-formatted URL.
-extension Input {
+extension HTMLElementTypes.Input {
     public struct Url: Sendable, Hashable {
         /// A string representing a URL, or empty.
         public var value: Value<String>?
@@ -73,7 +73,7 @@ extension Input {
     }
 }
 
-extension Input {
+extension HTMLElementTypes.Input {
     /// Creates a new url input element
     public static let url: Self = .url()
 

@@ -22,7 +22,7 @@ import HTMLAttributeTypes
 /// inputs as a form of security.
 ///
 /// Hidden inputs don't participate in constraint validation; they have no real value to be constrained.
-extension Input {
+extension HTMLElementTypes.Input {
     public struct Hidden: Sendable, Hashable {
         /// The value attribute holds a string that contains the hidden data you want to include when
         /// the form is submitted to the server. This specifically can't be edited or seen by the user
@@ -38,7 +38,7 @@ extension Input {
     }
 }
 
-extension Input {
+extension HTMLElementTypes.Input {
     /// Creates a new hidden input element
     public static let hidden: Self = .hidden()
 

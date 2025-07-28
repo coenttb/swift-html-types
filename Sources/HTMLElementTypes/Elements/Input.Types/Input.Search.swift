@@ -18,7 +18,7 @@ import HTMLAttributeTypes
 /// Some browsers show a cross icon that can be clicked on to remove the search term instantly, and modern
 /// browsers tend to automatically store search terms previously entered across domains, which then come up
 /// as autocomplete options when subsequent searches are performed.
-extension Input {
+extension HTMLElementTypes.Input {
     public struct Search: Sendable, Hashable {
         /// The value attribute contains a string representing the value contained in the search field.
         /// If no validation constraints are in place for the input, the value can be any text string
@@ -90,7 +90,7 @@ extension Input {
     }
 }
 
-extension Input {
+extension HTMLElementTypes.Input {
     /// Creates a new search input element
     public static let search: Self = .search()
 
