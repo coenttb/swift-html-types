@@ -68,5 +68,9 @@ public struct TableFoot: HTMLElement {
     @inlinable public static var tag: String { "tfoot" }
 
     /// Creates a new TableFoot element.
-    
+    public init(
+
+    ) {
+
+    }
 }

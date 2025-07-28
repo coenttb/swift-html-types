@@ -60,5 +60,9 @@ public struct TableBody: HTMLElement {
     @inlinable public static var tag: String { "tbody" }
 
     /// Creates a new TableBody element.
-    
+    public init(
+
+    ) {
+
+    }
 }

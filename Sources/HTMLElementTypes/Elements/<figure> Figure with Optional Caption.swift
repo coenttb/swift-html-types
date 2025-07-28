@@ -46,5 +46,9 @@ public struct Figure: HTMLElement {
     @inlinable public static var tag: String { "figure" }
 
     /// Creates a new Figure element with the specified content.
-    
+    public init(
+
+    ) {
+
+    }
 }

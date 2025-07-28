@@ -40,5 +40,9 @@ public struct Samp: HTMLElement {
     @inlinable public static var tag: String { "samp" }
 
     /// Creates a new Sample Output element with the specified content.
-    
+    public init(
+
+    ) {
+
+    }
 }

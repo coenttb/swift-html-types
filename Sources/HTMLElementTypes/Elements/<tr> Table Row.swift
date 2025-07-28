@@ -52,5 +52,9 @@ public struct TableRow: HTMLElement {
     @inlinable public static var tag: String { "tr" }
 
     /// Creates a new TableRow element.
-    
+    public init(
+
+    ) {
+
+    }
 }

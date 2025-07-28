@@ -71,5 +71,9 @@ public struct Variable: HTMLElement {
     @inlinable public static var tag: String { "var" }
 
     /// Creates a new Variable element.
-    
+    public init(
+
+    ) {
+
+    }
 }

@@ -41,5 +41,9 @@ public struct Code: HTMLElement {
     @inlinable public static var tag: String { "code" }
 
     /// Creates a new Code element.
-    
+    public init(
+
+    ) {
+
+    }
 }

@@ -56,5 +56,9 @@ public struct Cite: HTMLElement {
     @inlinable public static var tag: String { "cite" }
 
     /// Creates a new Cite element.
-    
+    public init(
+
+    ) {
+
+    }
 }

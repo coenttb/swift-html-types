@@ -46,5 +46,9 @@ public struct ContentSpan: HTMLElement {
     @inlinable public static var tag: String { "span" }
 
     /// Creates a new span element with the specified attributes.
-    
+    public init(
+
+    ) {
+
+    }
 }

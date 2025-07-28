@@ -43,5 +43,9 @@ public struct ContentDivision: HTMLElement {
     @inlinable public static var tag: String { "div" }
 
     /// Creates a new ContentDivision element.
-    
+    public init(
+
+    ) {
+
+    }
 }

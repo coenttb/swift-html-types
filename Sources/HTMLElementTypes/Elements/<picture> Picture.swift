@@ -46,5 +46,9 @@ public struct Picture: HTMLElement {
     @inlinable public static var tag: String { "picture" }
 
     /// Creates a new Picture element.
-    
+    public init(
+
+    ) {
+
+    }
 }

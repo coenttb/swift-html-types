@@ -41,5 +41,9 @@ public struct DescriptionDetails: HTMLElement {
     @inlinable public static var tag: String { "dd" }
 
     /// Creates a new DescriptionDetails element.
-    
+    public init(
+
+    ) {
+
+    }
 }

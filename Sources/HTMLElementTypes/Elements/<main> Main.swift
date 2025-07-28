@@ -53,5 +53,9 @@ public struct Main: HTMLElement {
     @inlinable public static var tag: String { "main" }
 
     /// Creates a new Main element.
-    
+    public init(
+
+    ) {
+
+    }
 }

@@ -49,5 +49,9 @@ public struct KeyboardInput: HTMLElement {
     @inlinable public static var tag: String { "kbd" }
 
     /// Creates a new keyboard input element.
-    
+    public init(
+
+    ) {
+
+    }
 }

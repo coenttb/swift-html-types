@@ -52,5 +52,9 @@ public struct IdiomaticText: HTMLElement {
     @inlinable public static var tag: String { "i" }
 
     /// Creates a new IdiomaticText element with the specified content.
-    
+    public init(
+
+    ) {
+
+    }
 }

@@ -43,5 +43,9 @@ public struct Superscript: HTMLElement {
     @inlinable public static var tag: String { "sup" }
 
     /// Creates a new superscript element.
-    
+    public init(
+
+    ) {
+
+    }
 }

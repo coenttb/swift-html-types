@@ -51,5 +51,9 @@ public struct DescriptionList: HTMLElement {
     @inlinable public static var tag: String { "dl" }
 
     /// Creates a new Description List element.
-    
+    public init(
+
+    ) {
+
+    }
 }

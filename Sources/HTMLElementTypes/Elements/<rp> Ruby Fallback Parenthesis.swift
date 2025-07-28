@@ -47,5 +47,9 @@ public struct RubyParenthesis: HTMLElement {
     /// Creates a new RubyParenthesis element with the specified attributes.
     ///
     /// - Parameters:, typically "(" or ")" for fallback display
-    
+    public init(
+
+    ) {
+
+    }
 }

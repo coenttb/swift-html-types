@@ -37,5 +37,9 @@ public struct Noscript: HTMLElement {
     @inlinable public static var tag: String { "noscript" }
 
     /// Creates a new Noscript element with the specified content.
-    
+    public init(
+
+    ) {
+
+    }
 }

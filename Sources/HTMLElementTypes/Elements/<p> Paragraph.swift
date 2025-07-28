@@ -46,5 +46,9 @@ public struct Paragraph: HTMLElement {
     @inlinable public static var tag: String { "p" }
 
     /// Creates a new paragraph element with the specified content.
-    
+    public init(
+
+    ) {
+
+    }
 }

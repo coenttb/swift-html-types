@@ -50,5 +50,9 @@ public struct PreformattedText: HTMLElement {
     @inlinable public static var tag: String { "pre" }
 
     /// Creates a new PreformattedText element.
-    
+    public init(
+
+    ) {
+
+    }
 }

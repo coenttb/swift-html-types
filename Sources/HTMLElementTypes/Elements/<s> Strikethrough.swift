@@ -42,5 +42,9 @@ public struct Strikethrough: HTMLElement {
     @inlinable public static var tag: String { "s" }
 
     /// Creates a new Strikethrough element.
-    
+    public init(
+
+    ) {
+
+    }
 }

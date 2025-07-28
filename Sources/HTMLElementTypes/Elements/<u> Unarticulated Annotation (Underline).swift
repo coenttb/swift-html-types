@@ -45,5 +45,9 @@ public struct UnarticulatedAnnotation: HTMLElement {
     @inlinable public static var tag: String { "u" }
 
     /// Creates a new UnarticulatedAnnotation element.
-    
+    public init(
+
+    ) {
+
+    }
 }

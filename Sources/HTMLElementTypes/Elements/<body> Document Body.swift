@@ -153,7 +153,11 @@ public struct Body: HTMLElement {
     /// Creates a new Body element with the specified content and event handlers.
     ///
     /// - Parameters:
-    
+    public init(
+
+    ) {
+
+    }
 
     /// Creates a new Body element with the specified content and event handlers.
     ///

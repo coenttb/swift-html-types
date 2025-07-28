@@ -45,5 +45,9 @@ public struct Header: HTMLElement {
     @inlinable public static var tag: String { "header" }
 
     /// Creates a new Header element.
-    
+    public init(
+
+    ) {
+
+    }
 }

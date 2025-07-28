@@ -50,5 +50,9 @@ public struct Center: HTMLElement {
     @inlinable public static var tag: String { "center" }
 
     /// Creates a new Center element.
-    
+    public init(
+
+    ) {
+
+    }
 }

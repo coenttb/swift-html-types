@@ -41,5 +41,9 @@ public struct NavigationSection: HTMLElement {
     @inlinable public static var tag: String { "nav" }
 
     /// Creates a new NavigationSection element.
-    
+    public init(
+
+    ) {
+
+    }
 }
