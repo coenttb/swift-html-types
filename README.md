@@ -74,7 +74,7 @@ Add the dependency in your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/coenttb/swift-html-types", from: "0.0.1")
+    .package(url: "https://github.com/coenttb/swift-html-types", from: "0.1.0")
 ]
 ```
 
