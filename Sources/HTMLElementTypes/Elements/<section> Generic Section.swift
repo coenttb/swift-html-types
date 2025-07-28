@@ -41,9 +41,5 @@ public struct Section: HTMLElement {
     @inlinable public static var tag: String { "section" }
 
     /// Creates a new Section element with the specified attributes.
-    public init(
-
-    ) {
-
-    }
+    
 }

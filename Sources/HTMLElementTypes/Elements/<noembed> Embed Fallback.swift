@@ -33,15 +33,8 @@ import HTMLAttributeTypes
 /// - Use `<object>` with fallback content instead
 /// - Provide descriptive alternative content that explains what would be shown
 ///
+@available(*, deprecated, message: "The <noembed> element is deprecated in HTML standards. Use <object> with fallback content instead.")
 public struct EmbedFallback: HTMLElement {
     /// The HTML tag name
     @inlinable public static var tag: String { "noembed" }
-
-    /// Creates a new EmbedFallback element with the specified content.
-    @available(*, deprecated, message: "The <noembed> element is deprecated in HTML standards. Use <object> with fallback content instead.")
-    public init(
-
-    ) {
-
-    }
 }

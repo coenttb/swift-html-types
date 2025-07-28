@@ -44,9 +44,5 @@ public struct Footer: HTMLElement {
     @inlinable public static var tag: String { "footer" }
 
     /// Creates a new Footer element.
-    public init(
-
-    ) {
-
-    }
+    
 }

@@ -43,9 +43,5 @@ public struct StrongImportance: HTMLElement {
     @inlinable public static var tag: String { "strong" }
 
     /// Creates a new StrongImportance element.
-    public init(
-
-    ) {
-
-    }
+    
 }

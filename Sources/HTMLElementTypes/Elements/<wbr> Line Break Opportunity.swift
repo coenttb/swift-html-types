@@ -61,9 +61,5 @@ public struct LineBreakOpportunity: HTMLElement {
     @inlinable public static var tag: String { "wbr" }
 
     /// Creates a new LineBreakOpportunity element.
-    public init(
-
-    ) {
-
-    }
+    
 }

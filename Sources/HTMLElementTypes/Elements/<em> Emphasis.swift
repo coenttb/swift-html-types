@@ -43,9 +43,5 @@ public struct Emphasis: HTMLElement {
     @inlinable public static var tag: String { "em" }
 
     /// Creates a new Emphasis element.
-    public init(
-
-    ) {
-
-    }
+    
 }

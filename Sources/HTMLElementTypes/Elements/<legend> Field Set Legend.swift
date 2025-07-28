@@ -39,9 +39,5 @@ public struct Legend: HTMLElement {
     @inlinable public static var tag: String { "legend" }
 
     /// Creates a new Legend element.
-    public init(
-
-    ) {
-
-    }
+    
 }

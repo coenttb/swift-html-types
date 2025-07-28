@@ -38,9 +38,5 @@ public struct Strike: HTMLElement {
     @inlinable public static var tag: String { "strike" }
 
     /// Creates a new Strike element.
-    public init(
-
-    ) {
-
-    }
+    
 }

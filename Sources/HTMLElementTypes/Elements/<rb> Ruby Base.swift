@@ -45,9 +45,5 @@ public struct RubyBase: HTMLElement {
     /// Creates a new RubyBase element with the specified attributes.
     ///
     /// - Parameters:, typically the base text to be annotated
-    public init(
-
-    ) {
-
-    }
+    
 }

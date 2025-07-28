@@ -51,9 +51,5 @@ public struct RubyTextContainer: HTMLElement {
     @inlinable public static var tag: String { "rtc" }
 
     /// Creates a new RubyTextContainer element with the specified attributes.
-    public init(
-
-    ) {
-
-    }
+    
 }

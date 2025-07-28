@@ -44,9 +44,5 @@ public struct Ruby: HTMLElement {
     @inlinable public static var tag: String { "ruby" }
 
     /// Creates a new Ruby element with the specified attributes.
-    public init(
-
-    ) {
-
-    }
+    
 }

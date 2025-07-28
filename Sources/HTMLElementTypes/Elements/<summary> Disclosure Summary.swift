@@ -51,9 +51,5 @@ public struct DisclosureSummary: HTMLElement {
     @inlinable public static var tag: String { "summary" }
 
     /// Creates a new DisclosureSummary element.
-    public init(
-
-    ) {
-
-    }
+    
 }

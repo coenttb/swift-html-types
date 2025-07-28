@@ -43,9 +43,5 @@ public struct HeadingGroup: HTMLElement {
     @inlinable public static var tag: String { "hgroup" }
 
     /// Creates a new HeadingGroup element.
-    public init(
-
-    ) {
-
-    }
+    
 }

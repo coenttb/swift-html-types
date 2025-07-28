@@ -39,9 +39,5 @@ public struct FigureCaption: HTMLElement {
     @inlinable public static var tag: String { "figcaption" }
 
     /// Creates a new FigureCaption element.
-    public init(
-
-    ) {
-
-    }
+    
 }

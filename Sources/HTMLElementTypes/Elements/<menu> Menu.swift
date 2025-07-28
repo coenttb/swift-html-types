@@ -43,9 +43,5 @@ public struct Menu: HTMLElement {
     @inlinable public static var tag: String { "menu" }
 
     /// Creates a new Menu element with the specified content.
-    public init(
-
-    ) {
-
-    }
+    
 }

@@ -68,9 +68,5 @@ public struct Table: HTMLElement {
     @inlinable public static var tag: String { "table" }
 
     /// Creates a new Table element.
-    public init(
-
-    ) {
-
-    }
+    
 }

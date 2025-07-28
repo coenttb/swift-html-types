@@ -39,9 +39,5 @@ public struct Subscript: HTMLElement {
     @inlinable public static var tag: String { "sub" }
 
     /// Creates a new subscript element.
-    public init(
-
-    ) {
-
-    }
+    
 }

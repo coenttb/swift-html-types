@@ -45,9 +45,5 @@ public struct Small: HTMLElement {
     @inlinable public static var tag: String { "small" }
 
     /// Creates a new Small element with the specified content.
-    public init(
-
-    ) {
-
-    }
+    
 }

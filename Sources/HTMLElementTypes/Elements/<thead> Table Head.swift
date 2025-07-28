@@ -54,9 +54,5 @@ public struct TableHead: HTMLElement {
     @inlinable public static var tag: String { "thead" }
 
     /// Creates a new TableHead element.
-    public init(
-
-    ) {
-
-    }
+    
 }

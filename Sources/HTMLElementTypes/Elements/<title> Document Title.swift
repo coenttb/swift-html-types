@@ -56,9 +56,5 @@ public struct Title: HTMLElement {
     @inlinable public static var tag: String { "title" }
 
     /// Creates a new Title element with the specified text content.
-    public init(
-
-    ) {
-
-    }
+    
 }

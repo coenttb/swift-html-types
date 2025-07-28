@@ -39,9 +39,5 @@ public struct FrameFallback: HTMLElement {
     @inlinable public static var tag: String { "noframes" }
 
     /// Creates a new FrameFallback element with the specified content.
-    public init(
-
-    ) {
-
-    }
+    
 }

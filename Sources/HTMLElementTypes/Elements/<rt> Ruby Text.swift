@@ -48,9 +48,5 @@ public struct RubyText: HTMLElement {
     /// - Parameters:
     ///   - id: The unique identifier for this element
     ///   - class: The CSS classes for this element, typically the pronunciation or meaning of the base text
-    public init(
-
-    ) {
-
-    }
+    
 }

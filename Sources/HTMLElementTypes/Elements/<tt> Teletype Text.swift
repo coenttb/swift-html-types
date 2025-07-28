@@ -41,9 +41,5 @@ public struct TeletypeText: HTMLElement {
     @inlinable public static var tag: String { "tt" }
 
     /// Creates a new TeletypeText element.
-    public init(
-
-    ) {
-
-    }
+    
 }
