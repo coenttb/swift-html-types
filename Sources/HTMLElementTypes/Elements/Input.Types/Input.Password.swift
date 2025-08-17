@@ -108,7 +108,8 @@ extension HTMLElementTypes.Input {
         size: Size? = nil,
         autocomplete: Autocomplete? = nil,
         disabled: Disabled? = nil,
-        form: HTMLAttributeTypes.Form.ID? = nil
+        form: HTMLAttributeTypes.Form.ID? = nil,
+        required: Required? = nil
     ) -> Self {
         .init(
             name: name,
@@ -123,7 +124,8 @@ extension HTMLElementTypes.Input {
                     placeholder: placeholder,
                     readonly: readonly,
                     size: size,
-                    autocomplete: autocomplete
+                    autocomplete: autocomplete,
+                    required: required
                 )
             )
         )
