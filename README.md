@@ -52,7 +52,7 @@ let input = Input.search(name: "query", placeholder: "Search...")
 import HTMLTypesFoundation
 
 let url: Foundation.URL = .init(string: "https://example.com")!
-let anchor = Anchor(url: url)
+let anchor = Anchor(href: Href(url))
 ```
 
 ## Usage

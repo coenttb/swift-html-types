@@ -40,6 +40,13 @@ let package = Package(
                 .htmlElementTypes,
             ]
         ),
+        .testTarget(
+            name: .htmlTypes.tests,
+            dependencies: [
+                .htmlTypes,
+                .htmlTypesFoundation
+            ]
+        ),
         .target(
             name: .htmlAttributeTypes,
             dependencies: []
