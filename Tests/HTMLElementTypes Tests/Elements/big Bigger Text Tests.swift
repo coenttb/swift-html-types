@@ -237,8 +237,8 @@ struct BiggerTextTests {
       let innerBig = Big()
 
       #expect(Big.tag == "big")
-      #expect(outerBig is HTMLElement)
-      #expect(innerBig is HTMLElement)
+      #expect(outerBig is any HTMLElement)
+      #expect(innerBig is any HTMLElement)
     }
 
     @Test("Big element with other inline elements")

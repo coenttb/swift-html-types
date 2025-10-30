@@ -171,8 +171,8 @@ struct AsideTests {
       let secondaryAside = Aside()
 
       #expect(Aside.tag == "aside")
-      #expect(primaryAside is HTMLElement)
-      #expect(secondaryAside is HTMLElement)
+      #expect(primaryAside is any HTMLElement)
+      #expect(secondaryAside is any HTMLElement)
     }
   }
 
@@ -193,8 +193,8 @@ struct AsideTests {
       let nestedAside = Aside()
 
       #expect(Aside.tag == "aside")
-      #expect(parentAside is HTMLElement)
-      #expect(nestedAside is HTMLElement)
+      #expect(parentAside is any HTMLElement)
+      #expect(nestedAside is any HTMLElement)
     }
 
     @Test("Aside collection")

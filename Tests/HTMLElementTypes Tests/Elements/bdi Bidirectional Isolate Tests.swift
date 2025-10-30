@@ -213,8 +213,8 @@ struct BidirectionalIsolateTests {
       let innerBdi = BidirectionalIsolate()
 
       #expect(BidirectionalIsolate.tag == "bdi")
-      #expect(outerBdi is HTMLElement)
-      #expect(innerBdi is HTMLElement)
+      #expect(outerBdi is any HTMLElement)
+      #expect(innerBdi is any HTMLElement)
     }
 
     @Test("BDI within lists and tables")

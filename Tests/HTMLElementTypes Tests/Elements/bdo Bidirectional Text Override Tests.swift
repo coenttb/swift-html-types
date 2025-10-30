@@ -236,8 +236,8 @@ struct BidirectionalTextOverrideTests {
       #expect(BidirectionalTextOverride.tag == "bdo")
       #expect(outerBdo.dir.rawValue == "rtl")
       #expect(innerBdo.dir.rawValue == "ltr")
-      #expect(outerBdo is HTMLElement)
-      #expect(innerBdo is HTMLElement)
+      #expect(outerBdo is any HTMLElement)
+      #expect(innerBdo is any HTMLElement)
     }
 
     @Test("BDO with different HTML context elements")
@@ -277,7 +277,7 @@ struct BidirectionalTextOverrideTests {
     @Test("HTMLElement protocol compliance")
     func htmlElementProtocolCompliance() {
       let bdo = BidirectionalTextOverride(dir: .ltr)
-      #expect(bdo is HTMLElement)
+      #expect(bdo is any HTMLElement)
     }
   }
 

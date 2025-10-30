@@ -296,7 +296,7 @@ struct DocumentBaseURLTests {
 
       #expect(bases.count == 3)
       bases.forEach { base in
-        #expect(base is HTMLElement)
+        #expect(base is any HTMLElement)
         #expect(type(of: base).tag == "base")
       }
     }
@@ -392,7 +392,7 @@ struct DocumentBaseURLTests {
       let href = Href("https://example.com/")
       let base = Base(href: href)
 
-      #expect(base is HTMLElement)
+      #expect(base is any HTMLElement)
     }
 
     @Test("Base element before other URL references")

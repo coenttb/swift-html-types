@@ -79,8 +79,8 @@ struct ArticleTests {
       let commentArticle = Article()
 
       #expect(Article.tag == "article")
-      #expect(mainArticle is HTMLElement)
-      #expect(commentArticle is HTMLElement)
+      #expect(mainArticle is any HTMLElement)
+      #expect(commentArticle is any HTMLElement)
     }
 
     @Test("Multi-part article series")
@@ -90,9 +90,9 @@ struct ArticleTests {
       let part2 = Article()
 
       #expect(Article.tag == "article")
-      #expect(containerArticle is HTMLElement)
-      #expect(part1 is HTMLElement)
-      #expect(part2 is HTMLElement)
+      #expect(containerArticle is any HTMLElement)
+      #expect(part1 is any HTMLElement)
+      #expect(part2 is any HTMLElement)
     }
 
     @Test("Article with related content")
@@ -101,8 +101,8 @@ struct ArticleTests {
       let relatedArticle = Article()
 
       #expect(Article.tag == "article")
-      #expect(mainArticle is HTMLElement)
-      #expect(relatedArticle is HTMLElement)
+      #expect(mainArticle is any HTMLElement)
+      #expect(relatedArticle is any HTMLElement)
     }
   }
 
@@ -195,7 +195,7 @@ struct ArticleTests {
 
       #expect(allArticles.count == 3)
       allArticles.forEach { article in
-        #expect(article is HTMLElement)
+        #expect(article is any HTMLElement)
         #expect(type(of: article).tag == "article")
       }
     }

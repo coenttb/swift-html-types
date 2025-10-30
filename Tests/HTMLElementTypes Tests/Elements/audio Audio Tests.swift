@@ -375,7 +375,7 @@ struct AudioTests {
 
       #expect(audioElements.count == 3)
       audioElements.forEach { audio in
-        #expect(audio is HTMLElement)
+        #expect(audio is any HTMLElement)
         #expect(type(of: audio).tag == "audio")
         #expect(audio.controls != nil)
       }

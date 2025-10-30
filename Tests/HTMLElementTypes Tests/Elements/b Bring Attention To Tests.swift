@@ -225,8 +225,8 @@ struct BringAttentionToTests {
       let innerB = B()
 
       #expect(B.tag == "b")
-      #expect(outerB is HTMLElement)
-      #expect(innerB is HTMLElement)
+      #expect(outerB is any HTMLElement)
+      #expect(innerB is any HTMLElement)
     }
   }
 
