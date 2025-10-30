@@ -13,7 +13,7 @@
 /// An attribute that specifies the number of columns a `<col>` or `<colgroup>` element should span.
 ///
 /// The `span` attribute defines the number of consecutive columns the element spans.
-/// This attribute is primarily used with `<col>` and `<colgroup>` elements to define 
+/// This attribute is primarily used with `<col>` and `<colgroup>` elements to define
 /// properties for a group of columns in a table.
 ///
 /// ## Usage Notes
@@ -48,21 +48,21 @@
 /// ```
 @dynamicMemberLookup
 public struct Span: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "span" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "span" }
 
-    /// The span value
-    public var rawValue: String
+  /// The span value
+  public var rawValue: String
 
-    /// Initialize with a string value
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a string value
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Span: ExpressibleByIntegerLiteral {
-    public init(integerLiteral value: IntegerLiteralType) {
-        precondition(value > 0, "Span value must be a positive integer")
-        self.init(value: String(value))
-    }
+  public init(integerLiteral value: IntegerLiteralType) {
+    precondition(value > 0, "Span value must be a positive integer")
+    self.init(value: String(value))
+  }
 }

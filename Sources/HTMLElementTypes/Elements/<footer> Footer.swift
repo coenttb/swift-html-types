@@ -12,10 +12,10 @@
 
 import HTMLAttributeTypes
 
-/// Represents an HTML footer element (`<footer>`), which represents a footer for its nearest 
+/// Represents an HTML footer element (`<footer>`), which represents a footer for its nearest
 /// ancestor sectioning content or sectioning root element.
 ///
-/// A `<footer>` typically contains information about the author of the section, copyright data, 
+/// A `<footer>` typically contains information about the author of the section, copyright data,
 /// or links to related documents.
 ///
 /// ## Example
@@ -36,17 +36,18 @@ import HTMLAttributeTypes
 ///
 /// ## Accessibility
 ///
-/// - The footer element has an implicit ARIA role of `contentinfo` (when at the page level) 
+/// - The footer element has an implicit ARIA role of `contentinfo` (when at the page level)
 ///   or `generic` (when nested within article, aside, main, nav, or section)
 /// - For legacy browser support, consider adding `role="contentinfo"` explicitly
 public struct Footer: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "footer" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "footer" }
 
-    /// Creates a new Footer element.
-    public init(
+  /// Creates a new Footer element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

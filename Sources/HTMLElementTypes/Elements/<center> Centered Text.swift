@@ -15,7 +15,7 @@ import HTMLAttributeTypes
 /// Represents an HTML center element (`<center>`), which centers text horizontally.
 ///
 /// The `Center` struct provides a type-safe way to create centered text elements.
-/// 
+///
 /// > **Deprecation Notice**: The `<center>` element is deprecated in HTML5.
 /// > Use CSS `text-align: center` with `<div>` or `<p>` elements instead.
 ///
@@ -46,13 +46,14 @@ import HTMLAttributeTypes
 /// - For centering blocks, use CSS properties like `margin-left` and `margin-right` set to `auto`
 ///
 public struct Center: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "center" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "center" }
 
-    /// Creates a new Center element.
-    public init(
+  /// Creates a new Center element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

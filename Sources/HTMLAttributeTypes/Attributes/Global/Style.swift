@@ -63,36 +63,36 @@
 /// - Remember that inline styles override external styles due to CSS specificity rules
 @dynamicMemberLookup
 public struct Style: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "style" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "style" }
 
-    /// The CSS declarations
-    public let rawValue: String
+  /// The CSS declarations
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Style {
-    /// Initialize with CSS declarations as key-value pairs
-    public init(_ declarations: [String: String]) {
-        let formattedDeclarations = declarations.map { key, value in
-            "\(key): \(value)"
-        }.joined(separator: "; ")
+  /// Initialize with CSS declarations as key-value pairs
+  public init(_ declarations: [String: String]) {
+    let formattedDeclarations = declarations.map { key, value in
+      "\(key): \(value)"
+    }.joined(separator: "; ")
 
-        self = .init(formattedDeclarations)
-    }
+    self = .init(formattedDeclarations)
+  }
 
-    /// Initialize with a dictionary of CSS properties and values
-    public init(properties: [String: String]) {
-        self.init(properties)
-    }
+  /// Initialize with a dictionary of CSS properties and values
+  public init(properties: [String: String]) {
+    self.init(properties)
+  }
 }
 
 extension Style: ExpressibleByDictionaryLiteral {
-    public init(dictionaryLiteral elements: (String, String)...) {
-        let dict = Dictionary(uniqueKeysWithValues: elements)
-        self.init(dict)
-    }
+  public init(dictionaryLiteral elements: (String, String)...) {
+    let dict = Dictionary(uniqueKeysWithValues: elements)
+    self.init(dict)
+  }
 }

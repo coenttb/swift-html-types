@@ -10,17 +10,17 @@
 //
 // ===----------------------------------------------------------------------===//
 
-#if canImport(FoundationEssentials)
-import FoundationEssentials
-#elseif canImport(Foundation)
-import Foundation
-#endif
-
 import HTMLAttributeTypes
 
+#if canImport(FoundationEssentials)
+  import FoundationEssentials
+#elseif canImport(Foundation)
+  import Foundation
+#endif
+
 extension ObjectData {
-    /// Initialize with a URL object
-    public init(_ url: URL) {
-        self = .init(url.absoluteString)
-    }
+  /// Initialize with a URL object
+  public init(_ url: URL) {
+    self = .init(url.absoluteString)
+  }
 }

@@ -12,9 +12,9 @@
 
 /// An attribute that enables the submission of the text directionality with form data.
 ///
-/// The `dirname` attribute specifies the name for an additional form field that will contain 
-/// the text directionality ("ltr" or "rtl") of the element's content when the form is submitted. 
-/// It works in conjunction with the `dir` attribute, particularly when `dir="auto"` is used to 
+/// The `dirname` attribute specifies the name for an additional form field that will contain
+/// the text directionality ("ltr" or "rtl") of the element's content when the form is submitted.
+/// It works in conjunction with the `dir` attribute, particularly when `dir="auto"` is used to
 /// automatically detect text direction.
 ///
 /// ## Usage Notes
@@ -54,21 +54,21 @@
 /// ```
 @dynamicMemberLookup
 public struct Dirname: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "dirname" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "dirname" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    /// Initialize with a value for the directionality information
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a value for the directionality information
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Dirname {
-    /// Initialize with the same field name as the input/textarea, but with a suffix
-    public init(basedOn elementName: String, suffix: String = "-direction") {
-        self.rawValue = elementName + suffix
-    }
+  /// Initialize with the same field name as the input/textarea, but with a suffix
+  public init(basedOn elementName: String, suffix: String = "-direction") {
+    self.rawValue = elementName + suffix
+  }
 }

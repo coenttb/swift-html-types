@@ -19,7 +19,7 @@
 /// - CSS styling of specific elements
 /// - Associating form controls with their labels
 ///
-/// Elements with ID attributes are also available in JavaScript as global properties 
+/// Elements with ID attributes are also available in JavaScript as global properties
 /// on the `window` object.
 ///
 /// ## Usage Notes
@@ -44,7 +44,7 @@
 /// Used with fragment identifiers:
 /// ```html
 /// <a href="#section2">Jump to Section 2</a>
-/// 
+///
 /// <h2 id="section2">Section 2</h2>
 /// ```
 ///
@@ -64,13 +64,13 @@
 /// ```
 @dynamicMemberLookup
 public struct Id: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "id" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "id" }
 
-    /// The ID value
-    public let rawValue: String
+  /// The ID value
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }

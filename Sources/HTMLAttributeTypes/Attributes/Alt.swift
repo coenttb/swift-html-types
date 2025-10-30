@@ -12,8 +12,8 @@
 
 /// An attribute that provides alternative text for images or other non-text content.
 ///
-/// The `alt` attribute specifies alternate text for an area, input, or img element. It is used 
-/// by screen readers to describe the image to users who cannot see it. It's also displayed if the 
+/// The `alt` attribute specifies alternate text for an area, input, or img element. It is used
+/// by screen readers to describe the image to users who cannot see it. It's also displayed if the
 /// image fails to load or when the user has disabled images in their browser.
 ///
 /// ## Usage Notes
@@ -57,13 +57,13 @@
 /// ```
 @dynamicMemberLookup
 public struct Alt: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "alt" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "alt" }
 
-    /// The alternative text value
-    public let rawValue: String
+  /// The alternative text value
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }

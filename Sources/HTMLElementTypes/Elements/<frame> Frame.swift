@@ -36,55 +36,55 @@ import HTMLAttributeTypes
 /// - Always provide descriptive names for frames to improve navigation
 ///
 public struct Frame: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "frame" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "frame" }
 
-    /// The URL of the document to be displayed in the frame
-    public var src: Src?
+  /// The URL of the document to be displayed in the frame
+  public var src: Src?
 
-    /// A name for the frame, used for targeting links
-    public var name: Name?
+  /// A name for the frame, used for targeting links
+  public var name: Name?
 
-    /// Prevents user from resizing the frame
-    public var noresize: NoResize?
+  /// Prevents user from resizing the frame
+  public var noresize: NoResize?
 
-    /// Controls scrollbar appearance
-    public var scrolling: Scrolling?
+  /// Controls scrollbar appearance
+  public var scrolling: Scrolling?
 
-    /// Margins between frames (height)
-    public var marginheight: MarginHeight?
+  /// Margins between frames (height)
+  public var marginheight: MarginHeight?
 
-    /// Margins between frames (width)
-    public var marginwidth: MarginWidth?
+  /// Margins between frames (width)
+  public var marginwidth: MarginWidth?
 
-    /// Controls frame border appearance
-    public var frameborder: FrameBorder?
+  /// Controls frame border appearance
+  public var frameborder: FrameBorder?
 
-    /// Creates a new Frame element with the specified attributes.
-    ///
-    /// - Parameters:
-    ///   - src: URL of the document to display in the frame
-    ///   - name: Name for the frame (for targeting links)
-    ///   - noresize: Whether to prevent user resizing
-    ///   - scrolling: Scrollbar appearance control
-    ///   - marginheight: Height of margins between frames
-    ///   - marginwidth: Width of margins between frames
-    ///   - frameborder: Frame border appearance
-    public init(
-        src: Src? = nil,
-        name: Name? = nil,
-        noresize: NoResize? = nil,
-        scrolling: Scrolling? = nil,
-        marginheight: MarginHeight? = nil,
-        marginwidth: MarginWidth? = nil,
-        frameborder: FrameBorder? = nil
-    ) {
-        self.src = src
-        self.name = name
-        self.noresize = noresize
-        self.scrolling = scrolling
-        self.marginheight = marginheight
-        self.marginwidth = marginwidth
-        self.frameborder = frameborder
-    }
+  /// Creates a new Frame element with the specified attributes.
+  ///
+  /// - Parameters:
+  ///   - src: URL of the document to display in the frame
+  ///   - name: Name for the frame (for targeting links)
+  ///   - noresize: Whether to prevent user resizing
+  ///   - scrolling: Scrollbar appearance control
+  ///   - marginheight: Height of margins between frames
+  ///   - marginwidth: Width of margins between frames
+  ///   - frameborder: Frame border appearance
+  public init(
+    src: Src? = nil,
+    name: Name? = nil,
+    noresize: NoResize? = nil,
+    scrolling: Scrolling? = nil,
+    marginheight: MarginHeight? = nil,
+    marginwidth: MarginWidth? = nil,
+    frameborder: FrameBorder? = nil
+  ) {
+    self.src = src
+    self.name = name
+    self.noresize = noresize
+    self.scrolling = scrolling
+    self.marginheight = marginheight
+    self.marginwidth = marginwidth
+    self.frameborder = frameborder
+  }
 }

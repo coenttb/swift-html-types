@@ -10,11 +10,11 @@
 //
 // ===----------------------------------------------------------------------===//
 
-/// Represents an HTML figure element (`<figure>`), which represents self-contained content, 
+/// Represents an HTML figure element (`<figure>`), which represents self-contained content,
 /// potentially with an optional caption.
 ///
 /// The `Figure` struct provides a type-safe way to create HTML figure elements with content
-/// such as images, illustrations, diagrams, code snippets, etc., that are referenced in the 
+/// such as images, illustrations, diagrams, code snippets, etc., that are referenced in the
 /// main flow of a document, but can be moved to another part of the document without affecting the main flow.
 ///
 /// ## Examples
@@ -24,7 +24,7 @@
 /// figure {
 ///     img(src: "image.jpg", alt: "Description")
 /// }
-/// 
+///
 /// // Figure with an image and caption
 /// figure {
 ///     img(src: "image.jpg", alt: "Description")
@@ -42,13 +42,14 @@
 /// - Can be moved to another part of the document without affecting the main flow
 ///
 public struct Figure: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "figure" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "figure" }
 
-    /// Creates a new Figure element with the specified content.
-    public init(
+  /// Creates a new Figure element with the specified content.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

@@ -12,8 +12,8 @@
 
 /// An attribute that specifies the height of an element.
 ///
-/// The `height` attribute defines the height of an element in pixels (for images, videos, and similar) 
-/// or in other units when combined with CSS. It is primarily used with media elements to ensure proper 
+/// The `height` attribute defines the height of an element in pixels (for images, videos, and similar)
+/// or in other units when combined with CSS. It is primarily used with media elements to ensure proper
 /// layout before the media is loaded, preventing layout shifts.
 ///
 /// ## Usage Notes
@@ -51,20 +51,20 @@
 /// ```
 @dynamicMemberLookup
 public struct Height: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "height" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "height" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    /// Initialize with a value for the height attribute
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a value for the height attribute
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Height: ExpressibleByIntegerLiteral {
-    public init(integerLiteral value: IntegerLiteralType) {
-        self.rawValue = String(value)
-    }
+  public init(integerLiteral value: IntegerLiteralType) {
+    self.rawValue = String(value)
+  }
 }

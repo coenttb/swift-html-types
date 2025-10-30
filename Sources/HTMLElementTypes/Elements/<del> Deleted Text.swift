@@ -14,7 +14,7 @@ import HTMLAttributeTypes
 
 /// Represents an HTML `<del>` element, which marks text that has been deleted from a document.
 ///
-/// The `Del` struct provides a type-safe way to create HTML elements that represent deleted text, 
+/// The `Del` struct provides a type-safe way to create HTML elements that represent deleted text,
 /// which can be used when rendering "track changes" or source code diff information.
 ///
 /// ## Example
@@ -23,8 +23,8 @@ import HTMLAttributeTypes
 /// del {
 ///     "This text has been deleted"
 /// }
-/// 
-/// del(cite: "https://example.com/meeting-notes.html", 
+///
+/// del(cite: "https://example.com/meeting-notes.html",
 ///     datetime: "2025-04-05T14:30:00") {
 ///     "Feature removed based on meeting decision"
 /// }
@@ -42,25 +42,25 @@ import HTMLAttributeTypes
 /// For critical content, consider using CSS with `::before` and `::after` pseudo-elements to make deletions more apparent.
 ///
 public struct Del: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "del" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "del" }
 
-    /// A URI for a resource that explains the change (for example, meeting minutes).
-    public var cite: HTMLAttributeTypes.Cite?
+  /// A URI for a resource that explains the change (for example, meeting minutes).
+  public var cite: HTMLAttributeTypes.Cite?
 
-    /// The time and date of the change as a valid date string with an optional time.
-    public var datetime: HTMLAttributeTypes.DateTime?
+  /// The time and date of the change as a valid date string with an optional time.
+  public var datetime: HTMLAttributeTypes.DateTime?
 
-    /// Creates a new Del element to mark deleted text.
-    ///
-    /// - Parameters:
-    ///   - cite: A URI for a resource that explains the change
-    ///   - datetime: The time and date of the change
-    public init(
-        cite: HTMLAttributeTypes.Cite? = nil,
-        datetime: HTMLAttributeTypes.DateTime? = nil
-    ) {
-        self.cite = cite
-        self.datetime = datetime
-    }
+  /// Creates a new Del element to mark deleted text.
+  ///
+  /// - Parameters:
+  ///   - cite: A URI for a resource that explains the change
+  ///   - datetime: The time and date of the change
+  public init(
+    cite: HTMLAttributeTypes.Cite? = nil,
+    datetime: HTMLAttributeTypes.DateTime? = nil
+  ) {
+    self.cite = cite
+    self.datetime = datetime
+  }
 }

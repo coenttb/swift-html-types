@@ -12,7 +12,7 @@
 
 import HTMLAttributeTypes
 
-/// Represents an HTML data element (`<data>`), which links a given piece of content 
+/// Represents an HTML data element (`<data>`), which links a given piece of content
 /// with a machine-readable translation.
 ///
 /// The `Data` element is used to associate a machine-readable value with human-readable content.
@@ -34,20 +34,20 @@ import HTMLAttributeTypes
 /// - This element can be used to associate additional data with content that is displayed to users.
 ///
 public struct Data: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "data" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "data" }
 
-    /// The machine-readable translation of the content
-    public var value: Value<String>
+  /// The machine-readable translation of the content
+  public var value: Value<String>
 
-    /// Creates a new Data element with the specified value.
-    ///
-    /// - Parameters:
-    ///   - value: The machine-readable translation of the content
-    public init(
-        value: Value<String>
-    ) {
-        self.value = value
+  /// Creates a new Data element with the specified value.
+  ///
+  /// - Parameters:
+  ///   - value: The machine-readable translation of the content
+  public init(
+    value: Value<String>
+  ) {
+    self.value = value
 
-    }
+  }
 }

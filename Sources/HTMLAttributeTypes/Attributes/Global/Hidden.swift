@@ -66,54 +66,54 @@
 /// ```
 @dynamicMemberLookup
 public struct Hidden: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "hidden" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "hidden" }
 
-    public let rawValue: String
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Hidden {
-    public init() {
-        self = .hidden
-    }
+  public init() {
+    self = .hidden
+  }
 }
 
 extension Hidden {
-    /// Content is completely hidden (empty string value)
-    ///
-    /// Example:
-    /// ```html
-    /// <div hidden="">Hidden content</div>
-    /// ```
-    @inlinable public static var empty: Self { "" }
+  /// Content is completely hidden (empty string value)
+  ///
+  /// Example:
+  /// ```html
+  /// <div hidden="">Hidden content</div>
+  /// ```
+  @inlinable public static var empty: Self { "" }
 
-    /// Content is completely hidden
-    ///
-    /// Example:
-    /// ```html
-    /// <div hidden="hidden">Hidden content</div>
-    /// ```
-    @inlinable public static var hidden: Self { "hidden" }
+  /// Content is completely hidden
+  ///
+  /// Example:
+  /// ```html
+  /// <div hidden="hidden">Hidden content</div>
+  /// ```
+  @inlinable public static var hidden: Self { "hidden" }
 
-    /// Content is hidden but discoverable by search or fragment navigation (experimental)
-    ///
-    /// When the browser's "find in page" feature or fragment navigation targets an element
-    /// with this value, the browser will:
-    /// 1. Fire a `beforematch` event on the hidden element
-    /// 2. Remove the hidden attribute from the element
-    /// 3. Scroll to the element
-    ///
-    /// Example:
-    /// ```html
-    /// <div id="section3" hidden="until-found">Hidden until found</div>
-    /// ```
-    @inlinable public static var untilFound: Self { "until-found" }
+  /// Content is hidden but discoverable by search or fragment navigation (experimental)
+  ///
+  /// When the browser's "find in page" feature or fragment navigation targets an element
+  /// with this value, the browser will:
+  /// 1. Fire a `beforematch` event on the hidden element
+  /// 2. Remove the hidden attribute from the element
+  /// 3. Scroll to the element
+  ///
+  /// Example:
+  /// ```html
+  /// <div id="section3" hidden="until-found">Hidden until found</div>
+  /// ```
+  @inlinable public static var untilFound: Self { "until-found" }
 }
 
 extension Hidden: CaseIterable {
-    public static let allCases: [Hidden] = [ .empty, .hidden, .untilFound ]
+  public static let allCases: [Hidden] = [.empty, .hidden, .untilFound]
 }

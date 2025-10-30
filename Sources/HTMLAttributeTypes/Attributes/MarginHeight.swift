@@ -13,20 +13,20 @@
 /// Represents the marginheight attribute for frame elements.
 @dynamicMemberLookup
 public struct MarginHeight: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "marginheight" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "marginheight" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    /// Initialize with a value for the marginheight attribute
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a value for the marginheight attribute
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension MarginHeight: ExpressibleByIntegerLiteral {
-    public init(integerLiteral value: IntegerLiteralType) {
-        self.rawValue = String(value)
-    }
+  public init(integerLiteral value: IntegerLiteralType) {
+    self.rawValue = String(value)
+  }
 }

@@ -12,12 +12,12 @@
 
 @dynamicMemberLookup
 public struct Loop: HTMLBooleanAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "loop" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "loop" }
 
-    public var rawValue: Bool
+  public var rawValue: Bool
 
-    public init(value: Bool = true) {
-        self.rawValue = value
-    }
+  public init(value: Bool = true) {
+    self.rawValue = value
+  }
 }

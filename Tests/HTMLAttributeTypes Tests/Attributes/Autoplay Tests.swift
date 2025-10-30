@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Autoplay Test")
 struct AutoplayTests {
-    @Test("Autoplay attribute should be autoplay")
-    func attribute() {
-        #expect(Autoplay.attribute == "autoplay")
-    }
+  @Test("Autoplay attribute should be autoplay")
+  func attribute() {
+    #expect(Autoplay.attribute == "autoplay")
+  }
 }

@@ -65,29 +65,29 @@
 /// <div tabindex="0">This is focused fourth</div>
 /// ```
 public struct Tabindex: HTMLAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "tabindex" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "tabindex" }
 
-    /// The tabindex value
-    public var value: Int
+  /// The tabindex value
+  public var value: Int
 
-    /// Initialize with a tabindex value
-    public init(_ value: Int) {
-        self.value = value
-    }
+  /// Initialize with a tabindex value
+  public init(_ value: Int) {
+    self.value = value
+  }
 }
 
 extension Tabindex {
-    /// A constant for the common -1 value (not in tab order but focusable via script)
-    public static let notTabbable = Tabindex(-1)
+  /// A constant for the common -1 value (not in tab order but focusable via script)
+  public static let notTabbable = Tabindex(-1)
 
-    /// A constant for the common 0 value (in natural tab order)
-    public static let inDocumentOrder = Tabindex(0)
+  /// A constant for the common 0 value (in natural tab order)
+  public static let inDocumentOrder = Tabindex(0)
 }
 
 extension Tabindex: CustomStringConvertible {
-    /// Returns the string representation of the tabindex value
-    public var description: String {
-        return String(self.value)
-    }
+  /// Returns the string representation of the tabindex value
+  public var description: String {
+    return String(self.value)
+  }
 }

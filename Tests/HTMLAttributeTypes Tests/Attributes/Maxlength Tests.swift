@@ -16,28 +16,28 @@ import Testing
 
 @Suite("Maxlength Test")
 struct MaxlengthTests {
-    @Test("Maxlength attribute should be maxlength")
-    func attribute() {
-        #expect(Maxlength.attribute == "maxlength")
-    }
+  @Test("Maxlength attribute should be maxlength")
+  func attribute() {
+    #expect(Maxlength.attribute == "maxlength")
+  }
 
-    @Test("Maxlength should support integer literal")
-    func integerLiteral() {
-        let maxlength: Maxlength = 100
-        #expect(maxlength.value == 100)
-        #expect(maxlength.description == "100")
-    }
+  @Test("Maxlength should support integer literal")
+  func integerLiteral() {
+    let maxlength: Maxlength = 100
+    #expect(maxlength.value == 100)
+    #expect(maxlength.description == "100")
+  }
 
-    @Test("Maxlength should enforce non-negative values")
-    func nonNegativeValues() {
-        let maxlength = Maxlength(-10)
-        #expect(maxlength.value == 0)
-    }
+  @Test("Maxlength should enforce non-negative values")
+  func nonNegativeValues() {
+    let maxlength = Maxlength(-10)
+    #expect(maxlength.value == 0)
+  }
 
-    @Test("Maxlength characters factory method")
-    func charactersFactory() {
-        let maxlength = Maxlength.characters(50)
-        #expect(maxlength.value == 50)
-        #expect(maxlength.description == "50")
-    }
+  @Test("Maxlength characters factory method")
+  func charactersFactory() {
+    let maxlength = Maxlength.characters(50)
+    #expect(maxlength.value == 50)
+    #expect(maxlength.description == "50")
+  }
 }

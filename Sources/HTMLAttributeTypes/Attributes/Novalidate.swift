@@ -68,12 +68,12 @@
 /// ```
 @dynamicMemberLookup
 public struct Novalidate: HTMLBooleanAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "novalidate" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "novalidate" }
 
-    public var rawValue: Bool
+  public var rawValue: Bool
 
-    public init(value: Bool = true) {
-        self.rawValue = value
-    }
+  public init(value: Bool = true) {
+    self.rawValue = value
+  }
 }

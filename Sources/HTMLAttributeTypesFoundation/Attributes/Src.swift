@@ -10,16 +10,16 @@
 //
 // ===----------------------------------------------------------------------===//
 
-#if canImport(FoundationEssentials)
-import FoundationEssentials
-#elseif canImport(Foundation)
-import Foundation
-#endif
-
 import HTMLAttributeTypes
 
+#if canImport(FoundationEssentials)
+  import FoundationEssentials
+#elseif canImport(Foundation)
+  import Foundation
+#endif
+
 extension Src {
-    public init(_ url: URL) {
-        self = .init(url.absoluteString)
-    }
+  public init(_ url: URL) {
+    self = .init(url.absoluteString)
+  }
 }

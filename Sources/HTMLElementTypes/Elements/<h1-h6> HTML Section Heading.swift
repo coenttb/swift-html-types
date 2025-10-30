@@ -21,42 +21,42 @@
 
 // MARK: - H1 Element
 public struct H1: HTMLElement {
-    @inlinable public static var tag: String { "h1" }
+  @inlinable public static var tag: String { "h1" }
 
-    public init() {}
+  public init() {}
 }
 
 // MARK: - H2 Element
 public struct H2: HTMLElement {
-    @inlinable public static var tag: String { "h2" }
+  @inlinable public static var tag: String { "h2" }
 
-    public init() {}
+  public init() {}
 }
 
 // MARK: - H3 Element
 public struct H3: HTMLElement {
-    @inlinable public static var tag: String { "h3" }
+  @inlinable public static var tag: String { "h3" }
 
-    public init() {}
+  public init() {}
 }
 
 // MARK: - H4 Element
 public struct H4: HTMLElement {
-    @inlinable public static var tag: String { "h4" }
+  @inlinable public static var tag: String { "h4" }
 
-    public init() {}
+  public init() {}
 }
 
 // MARK: - H5 Element
 public struct H5: HTMLElement {
-    @inlinable public static var tag: String { "h5" }
+  @inlinable public static var tag: String { "h5" }
 
-    public init() {}
+  public init() {}
 }
 
 // MARK: - H6 Element
 public struct H6: HTMLElement {
-    @inlinable public static var tag: String { "h6" }
+  @inlinable public static var tag: String { "h6" }
 
-    public init() {}
+  public init() {}
 }

@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Cite Test")
 struct CiteTests {
-    @Test("Cite attribute should be cite")
-    func attribute() {
-        #expect(Cite.attribute == "cite")
-    }
+  @Test("Cite attribute should be cite")
+  func attribute() {
+    #expect(Cite.attribute == "cite")
+  }
 }

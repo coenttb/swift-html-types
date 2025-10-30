@@ -10,7 +10,7 @@
 //
 // ===----------------------------------------------------------------------===//
 
-/// Represents an HTML unordered list element (`<ul>`), which is used to group a collection of items 
+/// Represents an HTML unordered list element (`<ul>`), which is used to group a collection of items
 /// that do not have a numerical ordering, typically rendered as a bulleted list.
 ///
 /// The `UnorderedList` struct provides a type-safe way to create HTML unordered lists with various attributes.
@@ -66,13 +66,14 @@
 /// - `margin` and `padding`: Control list indentation and spacing
 ///
 public struct UnorderedList: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "ul" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "ul" }
 
-    /// Creates a new UnorderedList element.
-    public init(
+  /// Creates a new UnorderedList element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

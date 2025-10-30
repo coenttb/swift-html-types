@@ -12,7 +12,7 @@
 
 import HTMLAttributeTypes
 
-/// Represents an HTML section element (`<section>`), which represents a generic standalone 
+/// Represents an HTML section element (`<section>`), which represents a generic standalone
 /// section of a document that doesn't have a more specific semantic element to represent it.
 ///
 /// The `Section` struct provides a type-safe way to create HTML section elements with appropriate attributes.
@@ -37,13 +37,14 @@ import HTMLAttributeTypes
 /// - If you only need a styling wrapper, use `<div>` instead
 ///
 public struct Section: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "section" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "section" }
 
-    /// Creates a new Section element with the specified attributes.
-    public init(
+  /// Creates a new Section element with the specified attributes.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

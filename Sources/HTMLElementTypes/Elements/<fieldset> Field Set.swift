@@ -43,31 +43,31 @@ import HTMLAttributeTypes
 /// - Form controls inside the `<legend>` element won't be disabled when the fieldset is disabled
 ///
 public struct FieldSet: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "fieldset" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "fieldset" }
 
-    /// Disables all form controls that are descendants of the fieldset
-    public var disabled: HTMLAttributeTypes.Disabled?
+  /// Disables all form controls that are descendants of the fieldset
+  public var disabled: HTMLAttributeTypes.Disabled?
 
-    /// Associates the fieldset with a form element using the form's ID
-    public var form: HTMLAttributeTypes.Form.ID?
+  /// Associates the fieldset with a form element using the form's ID
+  public var form: HTMLAttributeTypes.Form.ID?
 
-    /// The name associated with the fieldset group
-    public var name: HTMLAttributeTypes.Name?
+  /// The name associated with the fieldset group
+  public var name: HTMLAttributeTypes.Name?
 
-    /// Creates a new FieldSet element with the specified attributes.
-    ///
-    /// - Parameters:
-    ///   - disabled: If set, all form controls that are descendants of the fieldset will be disabled
-    ///   - form: Associates the fieldset with a form element using the form's ID
-    ///   - name: The name associated with the fieldset group
-    public init(
-        disabled: HTMLAttributeTypes.Disabled? = nil,
-        form: HTMLAttributeTypes.Form.ID? = nil,
-        name: HTMLAttributeTypes.Name? = nil
-    ) {
-        self.disabled = disabled
-        self.form = form
-        self.name = name
-    }
+  /// Creates a new FieldSet element with the specified attributes.
+  ///
+  /// - Parameters:
+  ///   - disabled: If set, all form controls that are descendants of the fieldset will be disabled
+  ///   - form: Associates the fieldset with a form element using the form's ID
+  ///   - name: The name associated with the fieldset group
+  public init(
+    disabled: HTMLAttributeTypes.Disabled? = nil,
+    form: HTMLAttributeTypes.Form.ID? = nil,
+    name: HTMLAttributeTypes.Name? = nil
+  ) {
+    self.disabled = disabled
+    self.form = form
+    self.name = name
+  }
 }

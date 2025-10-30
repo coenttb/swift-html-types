@@ -40,29 +40,29 @@ import HTMLAttributeTypes
 /// - Use optgroups to organize related options in a select element
 ///
 public struct OptionGroup: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "optgroup" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "optgroup" }
 
-    /// If set, none of the items in this option group is selectable.
-    /// Often browsers grey out such control and it won't receive any browsing events,
-    /// like mouse clicks or focus-related ones.
-    public var disabled: Disabled?
+  /// If set, none of the items in this option group is selectable.
+  /// Often browsers grey out such control and it won't receive any browsing events,
+  /// like mouse clicks or focus-related ones.
+  public var disabled: Disabled?
 
-    /// The name of the group of options, which the browser can use when labeling
-    /// the options in the user interface. This attribute is mandatory if this element is used.
-    public var label: HTMLAttributeTypes.Label?
+  /// The name of the group of options, which the browser can use when labeling
+  /// the options in the user interface. This attribute is mandatory if this element is used.
+  public var label: HTMLAttributeTypes.Label?
 
-    /// Creates a new OptionGroup element with the specified attributes.
-    ///
-    /// - Parameters:
-    ///   - disabled: If set, none of the items in this option group will be selectable
-    ///   - label: The name of the group of options (mandatory) (typically `<option>` elements)
-    public init(
-        disabled: Disabled? = nil,
-        label: HTMLAttributeTypes.Label? = nil
-    ) {
-        self.disabled = disabled
-        self.label = label
+  /// Creates a new OptionGroup element with the specified attributes.
+  ///
+  /// - Parameters:
+  ///   - disabled: If set, none of the items in this option group will be selectable
+  ///   - label: The name of the group of options (mandatory) (typically `<option>` elements)
+  public init(
+    disabled: Disabled? = nil,
+    label: HTMLAttributeTypes.Label? = nil
+  ) {
+    self.disabled = disabled
+    self.label = label
 
-    }
+  }
 }

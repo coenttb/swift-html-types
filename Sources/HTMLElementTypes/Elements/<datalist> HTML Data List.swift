@@ -12,11 +12,11 @@
 
 import HTMLAttributeTypes
 
-/// Represents an HTML datalist element (`<datalist>`), which contains a set of predefined options 
+/// Represents an HTML datalist element (`<datalist>`), which contains a set of predefined options
 /// for use with form inputs.
 ///
-/// The `DataList` struct provides a type-safe way to create HTML datalist elements. The `<datalist>` 
-/// element is used to provide an autocomplete feature for form inputs by suggesting predefined options 
+/// The `DataList` struct provides a type-safe way to create HTML datalist elements. The `<datalist>`
+/// element is used to provide an autocomplete feature for form inputs by suggesting predefined options
 /// that the user can select from while still allowing free-form input.
 ///
 /// ## Example
@@ -29,7 +29,7 @@ import HTMLAttributeTypes
 ///     name: "ice-cream-choice",
 ///     list: "ice-cream-flavors"
 /// )
-/// 
+///
 /// // Datalist with options
 /// datalist(id: "ice-cream-flavors") {
 ///     option(value: "Chocolate")
@@ -63,14 +63,13 @@ import HTMLAttributeTypes
 ///
 /// - Note: When rendered, this generates an HTML `<datalist>` element containing option elements.
 public struct DataList: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "datalist" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "datalist" }
 
-    /// Creates a new DataList element with the specified attributes and content.
-    ///
-    /// - Parameters:
-    ///   - id: The ID attribute, used to associate the datalist with an input element
-    public init(
-    ) {
-    }
+  /// Creates a new DataList element with the specified attributes and content.
+  ///
+  /// - Parameters:
+  ///   - id: The ID attribute, used to associate the datalist with an input element
+  public init() {
+  }
 }

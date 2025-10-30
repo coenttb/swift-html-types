@@ -12,8 +12,8 @@
 
 /// A Boolean attribute that indicates whether a form control is checked or selected.
 ///
-/// The `checked` attribute is applicable to checkbox and radio input types. When present, it indicates 
-/// the control is selected by default when the page loads. For checkboxes, it means the box is checked. 
+/// The `checked` attribute is applicable to checkbox and radio input types. When present, it indicates
+/// the control is selected by default when the page loads. For checkboxes, it means the box is checked.
 /// For radio buttons, it indicates which option in a group is pre-selected.
 ///
 /// ## Usage Notes
@@ -44,12 +44,12 @@
 /// ```
 @dynamicMemberLookup
 public struct Checked: HTMLBooleanAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "checked" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "checked" }
 
-    public var rawValue: Bool
+  public var rawValue: Bool
 
-    public init(value: Bool = true) {
-        self.rawValue = value
-    }
+  public init(value: Bool = true) {
+    self.rawValue = value
+  }
 }

@@ -35,17 +35,18 @@ import HTMLAttributeTypes
 ///
 /// ## Accessibility
 ///
-/// The `<div>` element has an implicit ARIA role of "generic", not "none". This may affect certain 
+/// The `<div>` element has an implicit ARIA role of "generic", not "none". This may affect certain
 /// ARIA combination declarations that expect a direct descendant element with a certain role to function properly.
 ///
 public struct ContentDivision: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "div" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "div" }
 
-    /// Creates a new ContentDivision element.
-    public init(
+  /// Creates a new ContentDivision element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

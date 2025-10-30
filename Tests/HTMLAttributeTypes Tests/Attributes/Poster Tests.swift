@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Poster Test")
 struct PosterTests {
-    @Test("Poster attribute should be poster")
-    func attribute() {
-        #expect(Poster.attribute == "poster")
-    }
+  @Test("Poster attribute should be poster")
+  func attribute() {
+    #expect(Poster.attribute == "poster")
+  }
 }

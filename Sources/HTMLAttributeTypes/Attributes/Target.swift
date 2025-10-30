@@ -87,42 +87,42 @@
 /// ```
 @dynamicMemberLookup
 public struct Target: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "target" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "target" }
 
-    /// The target value
-    public var rawValue: String
+  /// The target value
+  public var rawValue: String
 
-    /// Initialize with a string value
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a string value
+  public init(value: String) {
+    self.rawValue = value
+  }
 
-    /// Initialize with a target value
-    public init(_ value: String) {
-        self.init(value: value)
-    }
+  /// Initialize with a target value
+  public init(_ value: String) {
+    self.init(value: value)
+  }
 }
 
 extension Target: ExpressibleByStringLiteral {
-    public init(stringLiteral value: StringLiteralType) {
-        self.init(value)
-    }
+  public init(stringLiteral value: StringLiteralType) {
+    self.init(value)
+  }
 }
 
 extension Target {
-    /// Opens the response in the current browsing context (default)
-    @inlinable public static var `self`: Self { "_self" }
+  /// Opens the response in the current browsing context (default)
+  @inlinable public static var `self`: Self { "_self" }
 
-    /// Opens the response in a new browsing context (usually a new tab)
-    @inlinable public static var blank: Self { "_blank" }
+  /// Opens the response in a new browsing context (usually a new tab)
+  @inlinable public static var blank: Self { "_blank" }
 
-    /// Opens the response in the parent browsing context; if no parent exists, behaves as `self`
-    @inlinable public static var parent: Self { "_parent" }
+  /// Opens the response in the parent browsing context; if no parent exists, behaves as `self`
+  @inlinable public static var parent: Self { "_parent" }
 
-    /// Opens the response in the topmost browsing context; if no ancestors exist, behaves as `self`
-    @inlinable public static var top: Self { "_top" }
+  /// Opens the response in the topmost browsing context; if no ancestors exist, behaves as `self`
+  @inlinable public static var top: Self { "_top" }
 
-    /// Allows embedded fenced frames to navigate the top-level frame
-    @inlinable public static var unfencedTop: Self { "_unfencedTop" }
+  /// Allows embedded fenced frames to navigate the top-level frame
+  @inlinable public static var unfencedTop: Self { "_unfencedTop" }
 }

@@ -12,25 +12,25 @@
 
 @dynamicMemberLookup
 public struct FormEncType: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "formenctype" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "formenctype" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    /// Initialize with a value for the formenctype attribute
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a value for the formenctype attribute
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension FormEncType {
-    /// Standard form encoding (default)
-    @inlinable public static var urlEncoded: Self { "application/x-www-form-urlencoded" }
+  /// Standard form encoding (default)
+  @inlinable public static var urlEncoded: Self { "application/x-www-form-urlencoded" }
 
-    /// Required for file uploads
-    @inlinable public static var multipartFormData: Self { "multipart/form-data" }
+  /// Required for file uploads
+  @inlinable public static var multipartFormData: Self { "multipart/form-data" }
 
-    /// Minimal encoding, useful for debugging
-    @inlinable public static var textPlain: Self { "text/plain" }
+  /// Minimal encoding, useful for debugging
+  @inlinable public static var textPlain: Self { "text/plain" }
 }

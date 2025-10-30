@@ -16,8 +16,8 @@ import Testing
 
 @Suite("DisablePictureInPicture Test")
 struct DisablePictureInPictureTests {
-    @Test("DisablePictureInPicture attribute should be disablepictureinpicture")
-    func attribute() {
-        #expect(DisablePictureInPicture.attribute == "disablepictureinpicture")
-    }
+  @Test("DisablePictureInPicture attribute should be disablepictureinpicture")
+  func attribute() {
+    #expect(DisablePictureInPicture.attribute == "disablepictureinpicture")
+  }
 }

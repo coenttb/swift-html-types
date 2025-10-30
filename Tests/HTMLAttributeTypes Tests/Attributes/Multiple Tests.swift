@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Multiple Test")
 struct MultipleTests {
-    @Test("Multiple attribute should be multiple")
-    func attribute() {
-        #expect(Multiple.attribute == "multiple")
-    }
+  @Test("Multiple attribute should be multiple")
+  func attribute() {
+    #expect(Multiple.attribute == "multiple")
+  }
 }

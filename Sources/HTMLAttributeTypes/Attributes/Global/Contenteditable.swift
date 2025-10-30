@@ -47,65 +47,65 @@
 /// ```
 @dynamicMemberLookup
 public struct Contenteditable: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "contenteditable" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "contenteditable" }
 
-    public let rawValue: String
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Contenteditable {
 
-    /// Element is editable (with rich formatting preserved when pasting)
-    ///
-    /// Example:
-    /// ```html
-    /// <div contenteditable="true">Editable content</div>
-    /// ```
-    @inlinable public static var `true`: Self { "true" }
+  /// Element is editable (with rich formatting preserved when pasting)
+  ///
+  /// Example:
+  /// ```html
+  /// <div contenteditable="true">Editable content</div>
+  /// ```
+  @inlinable public static var `true`: Self { "true" }
 
-    /// Element is editable - equivalent to true (with rich formatting preserved when pasting)
-    ///
-    /// Example:
-    /// ```html
-    /// <div contenteditable>Editable content</div>
-    /// ```
-    @inlinable public static var empty: Self { "" }
+  /// Element is editable - equivalent to true (with rich formatting preserved when pasting)
+  ///
+  /// Example:
+  /// ```html
+  /// <div contenteditable>Editable content</div>
+  /// ```
+  @inlinable public static var empty: Self { "" }
 
-    /// Element is not editable
-    ///
-    /// Example:
-    /// ```html
-    /// <div contenteditable="false">Non-editable content</div>
-    /// ```
-    @inlinable public static var `false`: Self { "false" }
+  /// Element is not editable
+  ///
+  /// Example:
+  /// ```html
+  /// <div contenteditable="false">Non-editable content</div>
+  /// ```
+  @inlinable public static var `false`: Self { "false" }
 
-    /// Element is editable but only as plain text (formatting is removed when pasting)
-    ///
-    /// Example:
-    /// ```html
-    /// <div contenteditable="plaintext-only">Plain text editing only</div>
-    /// ```
-    @inlinable public static var plaintextOnly: Self { "plaintext-only" }
+  /// Element is editable but only as plain text (formatting is removed when pasting)
+  ///
+  /// Example:
+  /// ```html
+  /// <div contenteditable="plaintext-only">Plain text editing only</div>
+  /// ```
+  @inlinable public static var plaintextOnly: Self { "plaintext-only" }
 }
 
 extension Contenteditable: CaseIterable {
-    public static let allCases: [Contenteditable] = [
-        .true,
-        .empty,
-        .false,
-        .plaintextOnly
-    ]
+  public static let allCases: [Contenteditable] = [
+    .true,
+    .empty,
+    .false,
+    .plaintextOnly,
+  ]
 }
 
 extension Contenteditable: ExpressibleByBooleanLiteral {
-    public init(booleanLiteral value: BooleanLiteralType) {
-        switch value {
-        case true: self = .true
-        case false: self = .false
-        }
+  public init(booleanLiteral value: BooleanLiteralType) {
+    switch value {
+    case true: self = .true
+    case false: self = .false
     }
+  }
 }

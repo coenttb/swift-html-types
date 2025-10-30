@@ -12,8 +12,8 @@
 
 /// An attribute that specifies the name of an HTML element, primarily used with form controls.
 ///
-/// The `name` attribute is used to reference form data after a form is submitted, or to reference 
-/// form elements in JavaScript. Its value is sent to the server when the form is submitted, 
+/// The `name` attribute is used to reference form data after a form is submitted, or to reference
+/// form elements in JavaScript. Its value is sent to the server when the form is submitted,
 /// along with the element's current value.
 ///
 /// ## Usage Notes
@@ -32,7 +32,7 @@
 /// - Radio buttons with the same name form a group where only one can be selected
 /// - Checkboxes with the same name allow multiple selections
 ///
-/// ### For `<select>` and `<textarea>` Elements 
+/// ### For `<select>` and `<textarea>` Elements
 /// - Used to identify the field in form submissions
 ///
 /// ### For Other Elements
@@ -62,14 +62,14 @@
 /// ```
 @dynamicMemberLookup
 public struct Name: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "name" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "name" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    /// Initialize with a value for the name attribute
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a value for the name attribute
+  public init(value: String) {
+    self.rawValue = value
+  }
 }

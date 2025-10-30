@@ -16,8 +16,8 @@ import Testing
 
 @Suite("DateTime Test")
 struct DateTimeTests {
-    @Test("DateTime attribute should be datetime")
-    func attribute() {
-        #expect(DateTime.attribute == "datetime")
-    }
+  @Test("DateTime attribute should be datetime")
+  func attribute() {
+    #expect(DateTime.attribute == "datetime")
+  }
 }

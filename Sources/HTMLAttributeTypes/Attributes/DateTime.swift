@@ -32,13 +32,13 @@
 /// ```
 @dynamicMemberLookup
 public struct DateTime: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "datetime" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "datetime" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }

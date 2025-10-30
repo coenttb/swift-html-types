@@ -68,26 +68,26 @@
 /// ```
 @dynamicMemberLookup
 public struct FormMethod: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "formmethod" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "formmethod" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    /// Initialize with a value for the formmethod attribute
-    public init(value: String) {
-        self.rawValue = value.lowercased()
-    }
+  /// Initialize with a value for the formmethod attribute
+  public init(value: String) {
+    self.rawValue = value.lowercased()
+  }
 }
 
 extension FormMethod {
 
-    /// GET method: data appended to the URL
-    @inlinable public static var get: Self { "get" }
+  /// GET method: data appended to the URL
+  @inlinable public static var get: Self { "get" }
 
-    /// POST method: data sent in the request body
-    @inlinable public static var post: Self { "post" }
+  /// POST method: data sent in the request body
+  @inlinable public static var post: Self { "post" }
 
-    /// DIALOG method: for forms inside a dialog element
-    @inlinable public static var dialog: Self { "dialog" }
+  /// DIALOG method: for forms inside a dialog element
+  @inlinable public static var dialog: Self { "dialog" }
 }

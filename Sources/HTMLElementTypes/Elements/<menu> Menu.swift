@@ -39,13 +39,14 @@
 /// - For styling, you may want to apply `list-style-type: none` and adjust the display property
 ///
 public struct Menu: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "menu" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "menu" }
 
-    /// Creates a new Menu element with the specified content.
-    public init(
+  /// Creates a new Menu element with the specified content.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

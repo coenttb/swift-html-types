@@ -25,13 +25,13 @@
 /// ```
 @dynamicMemberLookup
 public struct Color: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "color" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "color" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }

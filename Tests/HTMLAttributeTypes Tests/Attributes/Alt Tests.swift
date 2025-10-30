@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Alt Test")
 struct AltTests {
-    @Test("Alt attribute should be alt")
-    func attribute() {
-        #expect(Alt.attribute == "alt")
-    }
+  @Test("Alt attribute should be alt")
+  func attribute() {
+    #expect(Alt.attribute == "alt")
+  }
 }

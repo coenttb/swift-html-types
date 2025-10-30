@@ -13,14 +13,14 @@
 /// Represents the label attribute used in HTML elements like <optgroup>, <option>, and <track>.
 @dynamicMemberLookup
 public struct Label: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "label" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "label" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    /// Initialize with a value for the label attribute
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a value for the label attribute
+  public init(value: String) {
+    self.rawValue = value
+  }
 }

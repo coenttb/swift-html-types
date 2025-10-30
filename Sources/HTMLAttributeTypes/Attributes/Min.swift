@@ -70,49 +70,49 @@
 /// ```
 @dynamicMemberLookup
 public struct Min: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "min" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "min" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    /// Initialize with a value for the min attribute
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a value for the min attribute
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Min {
-    /// Date format types for the min attribute
-    public enum DateFormat {
-        /// Full date (yyyy-MM-dd)
-        case fullDate
+  /// Date format types for the min attribute
+  public enum DateFormat {
+    /// Full date (yyyy-MM-dd)
+    case fullDate
 
-        /// Month only (yyyy-MM)
-        case month
+    /// Month only (yyyy-MM)
+    case month
 
-        /// Week (yyyy-Www)
-        case week
+    /// Week (yyyy-Www)
+    case week
 
-        /// Time (HH:mm)
-        case time
+    /// Time (HH:mm)
+    case time
 
-        /// Local date and time (yyyy-MM-ddTHH:mm)
-        case dateTimeLocal
-    }
+    /// Local date and time (yyyy-MM-ddTHH:mm)
+    case dateTimeLocal
+  }
 
-    /// Zero value for numeric inputs
-    public static let zero = Min(0)
+  /// Zero value for numeric inputs
+  public static let zero = Min(0)
 }
 
 extension Min: ExpressibleByIntegerLiteral {
-    public init(integerLiteral value: IntegerLiteralType) {
-        self.rawValue = String(value)
-    }
+  public init(integerLiteral value: IntegerLiteralType) {
+    self.rawValue = String(value)
+  }
 }
 
 extension Min: ExpressibleByFloatLiteral {
-    public init(floatLiteral value: FloatLiteralType) {
-        self.rawValue = String(value)
-    }
+  public init(floatLiteral value: FloatLiteralType) {
+    self.rawValue = String(value)
+  }
 }

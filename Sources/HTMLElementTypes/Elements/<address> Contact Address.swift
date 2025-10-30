@@ -12,13 +12,13 @@
 
 import HTMLAttributeTypes
 
-/// Represents an HTML address element (`<address>`), which indicates that the enclosed HTML 
+/// Represents an HTML address element (`<address>`), which indicates that the enclosed HTML
 /// provides contact information for a person, people, or organization.
 ///
 /// The `Address` struct provides a type-safe way to create HTML address elements that contain
 /// contact information related to the document or a specific article within the document.
 ///
-/// The contact information can include any appropriate form such as physical address, 
+/// The contact information can include any appropriate form such as physical address,
 /// URL, email address, phone number, social media handle, or geographic coordinates.
 ///
 /// ## Example
@@ -37,7 +37,7 @@ import HTMLAttributeTypes
 /// ## Usage Notes
 ///
 /// The `<address>` element can only be used to represent the contact information for its nearest
-/// `<article>` or `<body>` element ancestor. Typically, it is placed inside the `<footer>` 
+/// `<article>` or `<body>` element ancestor. Typically, it is placed inside the `<footer>`
 /// element of the current section.
 ///
 /// ## Best Practices
@@ -52,8 +52,8 @@ import HTMLAttributeTypes
 /// - Note: When rendered, this generates an HTML `<address>` element with the appropriate
 ///   attributes based on the configuration.
 public struct Address: HTMLElement {
-    @inlinable public static var tag: String { "address" }
+  @inlinable public static var tag: String { "address" }
 
-    /// Creates a new Address element with the specified content.
-    public init() {}
+  /// Creates a new Address element with the specified content.
+  public init() {}
 }

@@ -51,20 +51,20 @@
 @dynamicMemberLookup
 public struct Crossorigin: HTMLStringAttribute {
 
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "crossorigin" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "crossorigin" }
 
-    public let rawValue: String
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Crossorigin {
-    /// A cross-origin request is performed, but no credentials are sent
-    @inlinable public static var anonymous: Self { "anonymous" }
+  /// A cross-origin request is performed, but no credentials are sent
+  @inlinable public static var anonymous: Self { "anonymous" }
 
-    /// A cross-origin request is performed along with credentials
-    @inlinable public static var useCredentials: Self { "use-credentials" }
+  /// A cross-origin request is performed along with credentials
+  @inlinable public static var useCredentials: Self { "use-credentials" }
 }

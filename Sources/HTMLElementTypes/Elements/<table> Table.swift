@@ -64,13 +64,14 @@ import HTMLAttributeTypes
 /// - Keep table structure simple when possible for better accessibility
 ///
 public struct Table: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "table" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "table" }
 
-    /// Creates a new Table element.
-    public init(
+  /// Creates a new Table element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

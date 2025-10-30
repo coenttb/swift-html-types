@@ -10,7 +10,7 @@
 //
 // ===----------------------------------------------------------------------===//
 
-/// Represents the `headers` attribute, which identifies the header cell(s) 
+/// Represents the `headers` attribute, which identifies the header cell(s)
 /// that apply to a table data or header cell.
 ///
 /// The `headers` attribute provides a way to explicitly associate data cells with their headers
@@ -18,10 +18,10 @@
 ///
 /// ## Usage Notes
 ///
-/// - Use this attribute on `<td>` and `<th>` elements to reference the `id` values of the 
+/// - Use this attribute on `<td>` and `<th>` elements to reference the `id` values of the
 ///   header cells that apply to the cell.
 /// - Multiple header IDs should be separated by spaces.
-/// - This attribute is particularly useful for accessibility in complex tables with 
+/// - This attribute is particularly useful for accessibility in complex tables with
 ///   non-standard layouts.
 ///
 /// ## Examples
@@ -32,20 +32,20 @@
 /// ```
 @dynamicMemberLookup
 public struct Headers: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "headers" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "headers" }
 
-    /// Contains a list of space-separated strings, each corresponding to the id attribute of the <th> elements that provide headings for this table cell.
-    public let rawValue: String
+  /// Contains a list of space-separated strings, each corresponding to the id attribute of the <th> elements that provide headings for this table cell.
+  public let rawValue: String
 
-    /// Initialize with a value for the headers attribute
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a value for the headers attribute
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Headers: ExpressibleByArrayLiteral {
-    public init(arrayLiteral elements: String...) {
-        self = .init(value: elements.joined(separator: " "))
-    }
+  public init(arrayLiteral elements: String...) {
+    self = .init(value: elements.joined(separator: " "))
+  }
 }

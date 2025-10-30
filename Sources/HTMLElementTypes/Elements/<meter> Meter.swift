@@ -40,56 +40,56 @@ import HTMLAttributeTypes
 /// - Use `optimum` to indicate the ideal value within the range
 ///
 public struct Meter: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "meter" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "meter" }
 
-    /// The current numeric value, which must be between the minimum and maximum values
-    public var value: Value<Double>
+  /// The current numeric value, which must be between the minimum and maximum values
+  public var value: Value<Double>
 
-    /// The lower numeric bound of the measured range (defaults to 0)
-    public var min: Min?
+  /// The lower numeric bound of the measured range (defaults to 0)
+  public var min: Min?
 
-    /// The upper numeric bound of the measured range (defaults to 1)
-    public var max: Max?
+  /// The upper numeric bound of the measured range (defaults to 1)
+  public var max: Max?
 
-    /// The upper numeric bound of the low end of the measured range
-    public var low: Low?
+  /// The upper numeric bound of the low end of the measured range
+  public var low: Low?
 
-    /// The lower numeric bound of the high end of the measured range
-    public var high: High?
+  /// The lower numeric bound of the high end of the measured range
+  public var high: High?
 
-    /// The optimal numeric value, which must be within the range
-    public var optimum: Optimum?
+  /// The optimal numeric value, which must be within the range
+  public var optimum: Optimum?
 
-    /// The ID of the form element that the meter is associated with
-    public var form: HTMLAttributeTypes.Form.ID?
+  /// The ID of the form element that the meter is associated with
+  public var form: HTMLAttributeTypes.Form.ID?
 
-    /// Creates a new meter element with the specified attributes.
-    ///
-    /// - Parameters:
-    ///   - value: The current numeric value
-    ///   - min: The lower bound of the range (defaults to 0)
-    ///   - max: The upper bound of the range (defaults to 1)
-    ///   - low: The upper bound of the low end of the range
-    ///   - high: The lower bound of the high end of the range
-    ///   - optimum: The optimal value within the range
-    ///   - form: The ID of the form element that the meter is associated with
-    public init(
-        value: Value<Double>,
-        min: Min? = nil,
-        max: Max? = nil,
-        low: Low? = nil,
-        high: High? = nil,
-        optimum: Optimum? = nil,
-        form: HTMLAttributeTypes.Form.ID? = nil
-    ) {
-        self.value = value
-        self.min = min
-        self.max = max
-        self.low = low
-        self.high = high
-        self.optimum = optimum
-        self.form = form
+  /// Creates a new meter element with the specified attributes.
+  ///
+  /// - Parameters:
+  ///   - value: The current numeric value
+  ///   - min: The lower bound of the range (defaults to 0)
+  ///   - max: The upper bound of the range (defaults to 1)
+  ///   - low: The upper bound of the low end of the range
+  ///   - high: The lower bound of the high end of the range
+  ///   - optimum: The optimal value within the range
+  ///   - form: The ID of the form element that the meter is associated with
+  public init(
+    value: Value<Double>,
+    min: Min? = nil,
+    max: Max? = nil,
+    low: Low? = nil,
+    high: High? = nil,
+    optimum: Optimum? = nil,
+    form: HTMLAttributeTypes.Form.ID? = nil
+  ) {
+    self.value = value
+    self.min = min
+    self.max = max
+    self.low = low
+    self.high = high
+    self.optimum = optimum
+    self.form = form
 
-    }
+  }
 }

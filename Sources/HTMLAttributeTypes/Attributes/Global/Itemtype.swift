@@ -54,13 +54,13 @@
 /// <div itemscope itemtype="https://schema.org/Product">
 ///   <span itemprop="name">Smartphone X</span>
 ///   <span itemprop="description">The latest smartphone with amazing features.</span>
-///   
+///
 ///   <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
 ///     <span itemprop="price">599.99</span>
 ///     <meta itemprop="priceCurrency" content="USD" />
 ///     <link itemprop="availability" href="https://schema.org/InStock" />
 ///   </div>
-///   
+///
 ///   <div itemprop="review" itemscope itemtype="https://schema.org/Review">
 ///     <span itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
 ///       <meta itemprop="ratingValue" content="4.5" />
@@ -73,28 +73,28 @@
 /// ```
 @dynamicMemberLookup
 public struct Itemtype: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "itemtype" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "itemtype" }
 
-    /// The URL or space-separated list of URLs defining the vocabulary
-    public let rawValue: String
+  /// The URL or space-separated list of URLs defining the vocabulary
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Itemtype {
-    /// Initialize with a schema.org type
-    public init(schemaOrg type: String) {
-        self = .init("https://schema.org/\(type)")
-    }
+  /// Initialize with a schema.org type
+  public init(schemaOrg type: String) {
+    self = .init("https://schema.org/\(type)")
+  }
 }
 
 extension Itemtype: ExpressibleByArrayLiteral {
-    public typealias ArrayLiteralElement = String
+  public typealias ArrayLiteralElement = String
 
-    public init(arrayLiteral elements: String...) {
-        self = .init(elements.joined(separator: " "))
-    }
+  public init(arrayLiteral elements: String...) {
+    self = .init(elements.joined(separator: " "))
+  }
 }

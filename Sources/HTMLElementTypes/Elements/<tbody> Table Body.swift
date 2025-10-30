@@ -15,8 +15,8 @@ import HTMLAttributeTypes
 /// Represents an HTML table body element (`<tbody>`), which encapsulates a set of table rows
 /// that comprise the body of a table's main data.
 ///
-/// The `TableBody` struct provides a type-safe way to create HTML table body elements that 
-/// define a semantic section for the main content rows in a table. This is important for both 
+/// The `TableBody` struct provides a type-safe way to create HTML table body elements that
+/// define a semantic section for the main content rows in a table. This is important for both
 /// accessibility and proper table rendering.
 ///
 /// ## Example
@@ -56,13 +56,14 @@ import HTMLAttributeTypes
 /// - Remember that even if you don't explicitly use `<tbody>`, browsers will implicitly create one
 ///
 public struct TableBody: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "tbody" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "tbody" }
 
-    /// Creates a new TableBody element.
-    public init(
+  /// Creates a new TableBody element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

@@ -41,42 +41,42 @@
 /// - `<iframe>`: For prioritizing iframe content loading
 @dynamicMemberLookup
 public struct FetchPriority: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "fetchpriority" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "fetchpriority" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    /// Initialize with a value for the size attribute
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a value for the size attribute
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension FetchPriority {
-    /// Fetch the resource at a high priority relative to other resources of the same type.
-    ///
-    /// Use for critical resources that significantly impact user experience, such as:
-    /// - LCP (Largest Contentful Paint) images
-    /// - Critical CSS required for initial render
-    /// - Important scripts needed early in the page lifecycle
-    @inlinable public static var high: Self { "high" }
+  /// Fetch the resource at a high priority relative to other resources of the same type.
+  ///
+  /// Use for critical resources that significantly impact user experience, such as:
+  /// - LCP (Largest Contentful Paint) images
+  /// - Critical CSS required for initial render
+  /// - Important scripts needed early in the page lifecycle
+  @inlinable public static var high: Self { "high" }
 
-    /// Fetch the resource at a low priority relative to other resources of the same type.
-    ///
-    /// Use for non-critical resources that don't significantly impact initial user experience, such as:
-    /// - Below-the-fold images
-    /// - Non-critical scripts
-    /// - Analytics and tracking code
-    @inlinable public static var low: Self { "low" }
+  /// Fetch the resource at a low priority relative to other resources of the same type.
+  ///
+  /// Use for non-critical resources that don't significantly impact initial user experience, such as:
+  /// - Below-the-fold images
+  /// - Non-critical scripts
+  /// - Analytics and tracking code
+  @inlinable public static var low: Self { "low" }
 
-    /// Don't set a preference for the fetch priority (default).
-    ///
-    /// This is used if no value is explicitly set or if an invalid value is set.
-    /// The browser will use its default prioritization heuristics.
-    @inlinable public static var auto: Self { "auto" }
+  /// Don't set a preference for the fetch priority (default).
+  ///
+  /// This is used if no value is explicitly set or if an invalid value is set.
+  /// The browser will use its default prioritization heuristics.
+  @inlinable public static var auto: Self { "auto" }
 }
 
 extension FetchPriority: CaseIterable {
-    public static let allCases: [FetchPriority] = [.high, .low, .auto]
+  public static let allCases: [FetchPriority] = [.high, .low, .auto]
 }

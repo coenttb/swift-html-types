@@ -22,7 +22,7 @@ import HTMLAttributeTypes
 /// dialog {
 ///     "Dialog content"
 /// }
-/// 
+///
 /// dialog(open: .init()) {
 ///     "This dialog is initially open"
 ///     form(method: .dialog) {
@@ -49,24 +49,24 @@ import HTMLAttributeTypes
 /// - When the dialog is opened with `showModal()`, it automatically gets `aria-modal="true"`
 ///
 public struct Dialog: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "dialog" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "dialog" }
 
-    /// Indicates that the dialog box is active and available for interaction
-    ///
-    /// When the `open` attribute is not set, the dialog box will not be visible.
-    /// It is recommended to use JavaScript's `showModal()` or `show()` methods
-    /// rather than this attribute to display dialogs.
-    public var open: Open?
+  /// Indicates that the dialog box is active and available for interaction
+  ///
+  /// When the `open` attribute is not set, the dialog box will not be visible.
+  /// It is recommended to use JavaScript's `showModal()` or `show()` methods
+  /// rather than this attribute to display dialogs.
+  public var open: Open?
 
-    /// Creates a new Dialog element with the specified attributes.
-    ///
-    /// - Parameters:
-    ///   - open: Indicates if the dialog is initially open
-    public init(
-        open: Open? = nil
-    ) {
-        self.open = open
+  /// Creates a new Dialog element with the specified attributes.
+  ///
+  /// - Parameters:
+  ///   - open: Indicates if the dialog is initially open
+  public init(
+    open: Open? = nil
+  ) {
+    self.open = open
 
-    }
+  }
 }

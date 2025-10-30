@@ -25,12 +25,12 @@
 /// <template shadowrootclonable="true"></template>
 /// ```
 public struct ShadowRootClonable: HTMLBooleanAttribute, CustomStringConvertible {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "shadowrootclonable" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "shadowrootclonable" }
 
-    public var rawValue: Bool
+  public var rawValue: Bool
 
-    public init(value: Bool = true) {
-        self.rawValue = value
-    }
+  public init(value: Bool = true) {
+    self.rawValue = value
+  }
 }

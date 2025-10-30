@@ -65,8 +65,8 @@
 ///
 /// Hint popover for tooltip:
 /// ```html
-/// <button 
-///   id="help-button" 
+/// <button
+///   id="help-button"
 ///   aria-describedby="help-popover"
 ///   onmouseover="document.getElementById('help-popover').showPopover()"
 ///   onmouseout="document.getElementById('help-popover').hidePopover()">
@@ -77,27 +77,27 @@
 @dynamicMemberLookup
 public struct Popover: HTMLStringAttribute {
 
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "popover" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "popover" }
 
-    public let rawValue: String
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Popover {
-    /// Auto popover that can be light dismissed and will close other auto popovers
-    @inlinable public static var auto: Self { "auto" }
+  /// Auto popover that can be light dismissed and will close other auto popovers
+  @inlinable public static var auto: Self { "auto" }
 
-    /// Manual popover that cannot be light dismissed and won't close other popovers
-    @inlinable public static var manual: Self { "manual" }
+  /// Manual popover that cannot be light dismissed and won't close other popovers
+  @inlinable public static var manual: Self { "manual" }
 
-    /// Hint popover that can be light dismissed but won't close auto popovers
-    @inlinable public static var hint: Self { "hint" }
+  /// Hint popover that can be light dismissed but won't close auto popovers
+  @inlinable public static var hint: Self { "hint" }
 }
 
 extension Popover: CaseIterable {
-    public static let allCases: [Popover] = [.auto, .manual, .hint]
+  public static let allCases: [Popover] = [.auto, .manual, .hint]
 }

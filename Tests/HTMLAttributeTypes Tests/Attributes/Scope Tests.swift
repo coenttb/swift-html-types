@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Scope Test")
 struct ScopeTests {
-    @Test("Scope attribute should be scope")
-    func attribute() {
-        #expect(Scope.attribute == "scope")
-    }
+  @Test("Scope attribute should be scope")
+  func attribute() {
+    #expect(Scope.attribute == "scope")
+  }
 }

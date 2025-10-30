@@ -58,11 +58,11 @@
 /// <div itemscope itemtype="https://schema.org/Recipe">
 ///   <h2 itemprop="name">Chocolate Cake</h2>
 ///   <span itemprop="description">A delicious chocolate cake recipe</span>
-///   
+///
 ///   <div itemprop="author" itemscope itemtype="https://schema.org/Person">
 ///     <span itemprop="name">Julia Child</span>
 ///   </div>
-///   
+///
 ///   <div itemprop="nutrition" itemscope itemtype="https://schema.org/NutritionInformation">
 ///     <span itemprop="calories">350 calories</span>
 ///   </div>
@@ -70,12 +70,12 @@
 /// ```
 @dynamicMemberLookup
 public struct Itemscope: HTMLBooleanAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "itemscope" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "itemscope" }
 
-    public var rawValue: Bool
+  public var rawValue: Bool
 
-    public init(value: Bool = true) {
-        self.rawValue = value
-    }
+  public init(value: Bool = true) {
+    self.rawValue = value
+  }
 }

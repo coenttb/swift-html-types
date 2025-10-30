@@ -12,10 +12,10 @@
 
 import HTMLAttributeTypes
 
-/// Represents an HTML header element (`<header>`), which represents introductory content, typically 
+/// Represents an HTML header element (`<header>`), which represents introductory content, typically
 /// a group of introductory or navigational aids.
 ///
-/// A header typically contains heading elements but may also include a logo, search form, author name, 
+/// A header typically contains heading elements but may also include a logo, search form, author name,
 /// and other elements.
 ///
 /// ## Example
@@ -30,7 +30,7 @@ import HTMLAttributeTypes
 /// ## Accessibility
 ///
 /// - The `<header>` element defines a `banner` landmark when its context is the `<body>` element.
-/// - It is not considered a banner landmark when it is a descendant of an `<article>`, `<aside>`, 
+/// - It is not considered a banner landmark when it is a descendant of an `<article>`, `<aside>`,
 ///   `<main>`, `<nav>`, or `<section>` element.
 ///
 /// ## Best Practices
@@ -41,13 +41,14 @@ import HTMLAttributeTypes
 /// - The `<header>` element should not contain another `<header>` or a `<footer>` element
 ///
 public struct Header: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "header" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "header" }
 
-    /// Creates a new Header element.
-    public init(
+  /// Creates a new Header element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

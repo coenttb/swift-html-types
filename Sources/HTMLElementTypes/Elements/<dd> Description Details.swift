@@ -12,7 +12,7 @@
 
 import HTMLAttributeTypes
 
-/// Represents an HTML description details element (`<dd>`), which provides the description, definition, 
+/// Represents an HTML description details element (`<dd>`), which provides the description, definition,
 /// or value for the preceding term (`<dt>`) in a description list (`<dl>`).
 ///
 /// The `DescriptionDetails` struct provides a type-safe way to create HTML description detail elements.
@@ -37,13 +37,14 @@ import HTMLAttributeTypes
 ///   `<dd>` element, a `<dt>` element, or if there is no more content in the parent element
 ///
 public struct DescriptionDetails: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "dd" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "dd" }
 
-    /// Creates a new DescriptionDetails element.
-    public init(
+  /// Creates a new DescriptionDetails element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

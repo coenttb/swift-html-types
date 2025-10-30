@@ -16,23 +16,23 @@ import Testing
 
 @Suite("Usemap Test")
 struct UsemapTests {
-    @Test("Usemap attribute should be usemap")
-    func attribute() {
-        #expect(Usemap.attribute == "usemap")
-    }
+  @Test("Usemap attribute should be usemap")
+  func attribute() {
+    #expect(Usemap.attribute == "usemap")
+  }
 
-    @Test("Usemap should automatically add # prefix")
-    func hashPrefix() {
-        let withoutHash = Usemap("planetmap")
-        #expect(withoutHash.rawValue == "#planetmap")
+  @Test("Usemap should automatically add # prefix")
+  func hashPrefix() {
+    let withoutHash = Usemap("planetmap")
+    #expect(withoutHash.rawValue == "#planetmap")
 
-        let withHash = Usemap("#planetmap")
-        #expect(withHash.rawValue == "#planetmap")
-    }
+    let withHash = Usemap("#planetmap")
+    #expect(withHash.rawValue == "#planetmap")
+  }
 
-    @Test("Usemap should support string literal")
-    func stringLiteral() {
-        let usemap: Usemap = "mymap"
-        #expect(usemap.rawValue == "#mymap")
-    }
+  @Test("Usemap should support string literal")
+  func stringLiteral() {
+    let usemap: Usemap = "mymap"
+    #expect(usemap.rawValue == "#mymap")
+  }
 }

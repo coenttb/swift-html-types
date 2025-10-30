@@ -12,11 +12,11 @@
 
 import HTMLAttributeTypes
 
-/// Represents an HTML Ruby Text Container element (`<rtc>`), which embraces semantic annotations 
+/// Represents an HTML Ruby Text Container element (`<rtc>`), which embraces semantic annotations
 /// of characters presented in ruby annotations.
 ///
-/// The `RubyTextContainer` element is used to group ruby text (`<rt>`) elements when there are 
-/// multiple levels of annotations. While this element is deprecated in modern HTML specifications, 
+/// The `RubyTextContainer` element is used to group ruby text (`<rt>`) elements when there are
+/// multiple levels of annotations. While this element is deprecated in modern HTML specifications,
 /// it is included for completeness.
 ///
 /// ## Example
@@ -47,13 +47,14 @@ import HTMLAttributeTypes
 /// - Only use within a `<ruby>` element
 ///
 public struct RubyTextContainer: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "rtc" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "rtc" }
 
-    /// Creates a new RubyTextContainer element with the specified attributes.
-    public init(
+  /// Creates a new RubyTextContainer element with the specified attributes.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

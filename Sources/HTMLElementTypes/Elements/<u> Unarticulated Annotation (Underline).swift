@@ -12,7 +12,7 @@
 
 import HTMLAttributeTypes
 
-/// Represents an HTML unarticulated annotation element (`<u>`), which indicates text that should 
+/// Represents an HTML unarticulated annotation element (`<u>`), which indicates text that should
 /// be rendered in a way that indicates it has a non-textual annotation.
 ///
 /// The `UnarticulatedAnnotation` struct provides a type-safe way to create HTML `<u>` elements.
@@ -34,20 +34,21 @@ import HTMLAttributeTypes
 /// - Consider using more appropriate semantic elements:
 ///   - `<em>` for stress emphasis
 ///   - `<b>` to draw attention to text
-///   - `<mark>` to mark key words or phrases  
+///   - `<mark>` to mark key words or phrases
 ///   - `<strong>` to indicate that text has strong importance
 ///   - `<cite>` to mark titles of books or other publications
 ///   - `<i>` for technical terms, transliterations, thoughts, or vessel names
 /// - For non-semantic underlining, use CSS `text-decoration: underline` with a `<span>` element instead
 ///
 public struct UnarticulatedAnnotation: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "u" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "u" }
 
-    /// Creates a new UnarticulatedAnnotation element.
-    public init(
+  /// Creates a new UnarticulatedAnnotation element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

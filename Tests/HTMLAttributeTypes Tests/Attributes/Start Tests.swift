@@ -16,20 +16,20 @@ import Testing
 
 @Suite("Start Test")
 struct StartTests {
-    @Test("Start attribute should be start")
-    func attribute() {
-        #expect(Start.attribute == "start")
-    }
+  @Test("Start attribute should be start")
+  func attribute() {
+    #expect(Start.attribute == "start")
+  }
 
-    @Test("Start should support integer initialization")
-    func integerInitialization() {
-        let start = Start(4)
-        #expect(start.rawValue == "4")
-    }
+  @Test("Start should support integer initialization")
+  func integerInitialization() {
+    let start = Start(4)
+    #expect(start.rawValue == "4")
+  }
 
-    @Test("Start should support integer literal")
-    func integerLiteral() {
-        let start: Start = 10
-        #expect(start.rawValue == "10")
-    }
+  @Test("Start should support integer literal")
+  func integerLiteral() {
+    let start: Start = 10
+    #expect(start.rawValue == "10")
+  }
 }

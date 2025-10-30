@@ -41,38 +41,40 @@
 /// `<script>`, and `<link>` elements.
 @dynamicMemberLookup
 public struct ReferrerPolicy: HTMLStringAttribute {
-    @inlinable public static var attribute: String { "referrerpolicy" }
+  @inlinable public static var attribute: String { "referrerpolicy" }
 
-    public var rawValue: String
+  public var rawValue: String
 
-    /// Initialize with a value
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a value
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension ReferrerPolicy {
-    /// No referrer information is sent
-    @inlinable public static var noReferrer: Self { "no-referrer" }
+  /// No referrer information is sent
+  @inlinable public static var noReferrer: Self { "no-referrer" }
 
-    /// No referrer sent when navigating from HTTPS to HTTP
-    @inlinable public static var noReferrerWhenDowngrade: Self { "no-referrer-when-downgrade" }
+  /// No referrer sent when navigating from HTTPS to HTTP
+  @inlinable public static var noReferrerWhenDowngrade: Self { "no-referrer-when-downgrade" }
 
-    /// Only send the origin (scheme, host, port) as the referrer
-    @inlinable public static var origin: Self { "origin" }
+  /// Only send the origin (scheme, host, port) as the referrer
+  @inlinable public static var origin: Self { "origin" }
 
-    /// Full URL for same-origin requests, just origin for cross-origin
-    @inlinable public static var originWhenCrossOrigin: Self { "origin-when-cross-origin" }
+  /// Full URL for same-origin requests, just origin for cross-origin
+  @inlinable public static var originWhenCrossOrigin: Self { "origin-when-cross-origin" }
 
-    /// Send referrer for same-origin requests only
-    @inlinable public static var sameOrigin: Self { "same-origin" }
+  /// Send referrer for same-origin requests only
+  @inlinable public static var sameOrigin: Self { "same-origin" }
 
-    /// Send origin as referrer only when security level stays the same
-    @inlinable public static var strictOrigin: Self { "strict-origin" }
+  /// Send origin as referrer only when security level stays the same
+  @inlinable public static var strictOrigin: Self { "strict-origin" }
 
-    /// Default behavior if none specified
-    @inlinable public static var strictOriginWhenCrossOrigin: Self { "strict-origin-when-cross-origin" }
+  /// Default behavior if none specified
+  @inlinable public static var strictOriginWhenCrossOrigin: Self {
+    "strict-origin-when-cross-origin"
+  }
 
-    /// Send full URL as referrer (not recommended for security reasons)
-    @inlinable public static var unsafeUrl: Self { "unsafe-url" }
+  /// Send full URL as referrer (not recommended for security reasons)
+  @inlinable public static var unsafeUrl: Self { "unsafe-url" }
 }

@@ -148,61 +148,61 @@
 /// ```
 @dynamicMemberLookup
 public enum Step: HTMLStringAttribute, ExpressibleByFloatLiteral, ExpressibleByIntegerLiteral {
-    @inlinable public static var attribute: String { "step" }
+  @inlinable public static var attribute: String { "step" }
 
-    /// A specific numeric step value.
-    case value(Double)
+  /// A specific numeric step value.
+  case value(Double)
 
-    /// No stepping is implied, and any value is allowed in the specified range.
-    case any
+  /// No stepping is implied, and any value is allowed in the specified range.
+  case any
 
-    public var rawValue: String {
-        description
+  public var rawValue: String {
+    description
+  }
+
+  public init(value: String) {
+    if value == "any" {
+      self = .any
+    } else if let doubleValue = Double(value) {
+      self = .value(doubleValue)
+    } else {
+      // Default to "any" if the value is not valid
+      self = .any
     }
+  }
 
-    public init(value: String) {
-        if value == "any" {
-            self = .any
-        } else if let doubleValue = Double(value) {
-            self = .value(doubleValue)
-        } else {
-            // Default to "any" if the value is not valid
-            self = .any
-        }
+  public init(floatLiteral value: Double) {
+    self = .value(value)
+  }
+
+  public init(integerLiteral value: IntegerLiteralType) {
+    self = .value(Double(value))
+  }
+
+  public var description: String {
+    switch self {
+    case .value(let value):
+      return value.description
+    case .any:
+      return "any"
     }
+  }
 
-    public init(floatLiteral value: Double) {
-        self = .value(value)
-    }
+  /// Step of 1 (integer values only, default for number/range)
+  public static let integer: Self = 1
 
-    public init(integerLiteral value: IntegerLiteralType) {
-        self = .value(Double(value))
-    }
+  /// Step of 0.1 (tenth precision)
+  public static let tenth: Self = 0.1
 
-    public var description: String {
-        switch self {
-        case .value(let value):
-            return value.description
-        case .any:
-            return "any"
-        }
-    }
+  /// Step of 0.01 (hundredth precision)
+  public static let hundredth: Self = 0.01
 
-    /// Step of 1 (integer values only, default for number/range)
-    public static let integer: Self = 1
+  /// Step of 0.001 (thousandth precision)
+  public static let thousandth: Self = 0.001
 
-    /// Step of 0.1 (tenth precision)
-    public static let tenth: Self = 0.1
+  /// Step for money values (cents precision)
+  public static let money: Self = 0.01
 
-    /// Step of 0.01 (hundredth precision)
-    public static let hundredth: Self = 0.01
-
-    /// Step of 0.001 (thousandth precision)
-    public static let thousandth: Self = 0.001
-
-    /// Step for money values (cents precision)
-    public static let money: Self = 0.01
-
-    /// Step of 7 days (weekly)
-    public static let weekly: Self = 7
+  /// Step of 7 days (weekly)
+  public static let weekly: Self = 7
 }

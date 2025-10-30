@@ -69,14 +69,14 @@
 /// ```
 @dynamicMemberLookup
 public struct Nonce: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "nonce" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "nonce" }
 
-    /// The cryptographic nonce value
-    /// The language tag value
-    public let rawValue: String
+  /// The cryptographic nonce value
+  /// The language tag value
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }

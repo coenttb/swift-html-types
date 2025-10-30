@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Compact Test")
 struct CompactTests {
-    @Test("Compact attribute should be compact")
-    func attribute() {
-        #expect(Compact.attribute == "compact")
-    }
+  @Test("Compact attribute should be compact")
+  func attribute() {
+    #expect(Compact.attribute == "compact")
+  }
 }

@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Checked Test")
 struct CheckedTests {
-    @Test("Checked attribute should be checked")
-    func attribute() {
-        #expect(Checked.attribute == "checked")
-    }
+  @Test("Checked attribute should be checked")
+  func attribute() {
+    #expect(Checked.attribute == "checked")
+  }
 }

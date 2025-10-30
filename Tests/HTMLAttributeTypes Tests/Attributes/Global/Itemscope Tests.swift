@@ -10,19 +10,19 @@
 //
 // ===----------------------------------------------------------------------===//
 
-#if canImport(FoundationEssentials)
-import FoundationEssentials
-#elseif canImport(Foundation)
-import Foundation
-#endif
-
 import HTMLAttributeTypes
 import Testing
 
+#if canImport(FoundationEssentials)
+  import FoundationEssentials
+#elseif canImport(Foundation)
+  import Foundation
+#endif
+
 @Suite("Itemscope Test")
 struct ItemscopeTests {
-    @Test("Itemscope attribute should be itemscope")
-    func attribute() {
-        #expect(Itemscope.attribute == "itemscope")
-    }
+  @Test("Itemscope attribute should be itemscope")
+  func attribute() {
+    #expect(Itemscope.attribute == "itemscope")
+  }
 }

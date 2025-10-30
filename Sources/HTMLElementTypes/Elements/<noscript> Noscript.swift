@@ -10,7 +10,7 @@
 //
 // ===----------------------------------------------------------------------===//
 
-/// Represents an HTML `<noscript>` element, which defines content to be inserted if a script type on the page 
+/// Represents an HTML `<noscript>` element, which defines content to be inserted if a script type on the page
 /// is unsupported or if scripting is currently turned off in the browser.
 ///
 /// The `Noscript` element can be used to provide alternative content when JavaScript is unavailable.
@@ -33,13 +33,14 @@
 /// - A `<noscript>` element cannot contain another `<noscript>` element
 ///
 public struct Noscript: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "noscript" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "noscript" }
 
-    /// Creates a new Noscript element with the specified content.
-    public init(
+  /// Creates a new Noscript element with the specified content.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

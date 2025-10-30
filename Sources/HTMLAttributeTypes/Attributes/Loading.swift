@@ -51,22 +51,22 @@
 /// - SeeAlso: [MDN Web Docs: loading attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading)
 @dynamicMemberLookup
 public struct Loading: HTMLStringAttribute {
-    @inlinable public static var attribute: String { "loading" }
+  @inlinable public static var attribute: String { "loading" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    /// Initialize with a value for the marginheight attribute
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a value for the marginheight attribute
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Loading {
-    @inlinable public static var lazy: Self { "lazy" }
-    @inlinable public static var eager: Self { "eager" }
+  @inlinable public static var lazy: Self { "lazy" }
+  @inlinable public static var eager: Self { "eager" }
 }
 
 extension Loading: CaseIterable {
-    public static let allCases: [Loading] = [.lazy, .eager]
+  public static let allCases: [Loading] = [.lazy, .eager]
 }

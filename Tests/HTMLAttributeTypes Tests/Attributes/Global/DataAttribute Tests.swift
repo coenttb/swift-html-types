@@ -10,38 +10,38 @@
 //
 // ===----------------------------------------------------------------------===//
 
-#if canImport(FoundationEssentials)
-import FoundationEssentials
-#elseif canImport(Foundation)
-import Foundation
-#endif
-
 import HTMLAttributeTypes
 import Testing
 
+#if canImport(FoundationEssentials)
+  import FoundationEssentials
+#elseif canImport(Foundation)
+  import Foundation
+#endif
+
 @Suite("DataAttribute Test")
 struct DataAttributeTests {
-    @Test("DataAttribute prefix should be data-")
-    func prefix() {
-        #expect(DataAttribute.prefix == "data-")
-    }
+  @Test("DataAttribute prefix should be data-")
+  func prefix() {
+    #expect(DataAttribute.prefix == "data-")
+  }
 
-    @Test("DataAttribute should initialize with name and value")
-    func initialization() {
-        let dataAttr = DataAttribute(name: "user-id", value: "123")
-        #expect(dataAttr.name == "user-id")
-        #expect(dataAttr.value == "123")
-    }
+  @Test("DataAttribute should initialize with name and value")
+  func initialization() {
+    let dataAttr = DataAttribute(name: "user-id", value: "123")
+    #expect(dataAttr.name == "user-id")
+    #expect(dataAttr.value == "123")
+  }
 
-    @Test("DataAttribute attribute should combine prefix and name")
-    func attribute() {
-        let dataAttr = DataAttribute(name: "user-id", value: "123")
-        #expect(dataAttr.attributeName == "data-user-id")
-    }
+  @Test("DataAttribute attribute should combine prefix and name")
+  func attribute() {
+    let dataAttr = DataAttribute(name: "user-id", value: "123")
+    #expect(dataAttr.attributeName == "data-user-id")
+  }
 
-    @Test("DataAttribute description should match the value")
-    func description() {
-        let dataAttr = DataAttribute(name: "user-id", value: "123")
-        #expect(dataAttr.description == "123")
-    }
+  @Test("DataAttribute description should match the value")
+  func description() {
+    let dataAttr = DataAttribute(name: "user-id", value: "123")
+    #expect(dataAttr.description == "123")
+  }
 }

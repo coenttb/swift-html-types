@@ -12,12 +12,12 @@
 
 @dynamicMemberLookup
 public struct Async: HTMLBooleanAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "async" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "async" }
 
-    public var rawValue: Bool
+  public var rawValue: Bool
 
-    public init(value: Bool = true) {
-        self.rawValue = value
-    }
+  public init(value: Bool = true) {
+    self.rawValue = value
+  }
 }

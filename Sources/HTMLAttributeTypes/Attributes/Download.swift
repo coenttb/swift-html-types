@@ -64,79 +64,79 @@
 /// - Note: For security reasons, this attribute only works with same-origin URLs
 ///   or URLs using the blob: or data: schemes.
 public struct Download: HTMLAttribute, CustomStringConvertible {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "download" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "download" }
 
-    /// The type of attribute value
-    public enum Value: Sendable, Hashable {
-        /// Boolean form (presence/absence of the attribute)
-        case boolean(Bool)
+  /// The type of attribute value
+  public enum Value: Sendable, Hashable {
+    /// Boolean form (presence/absence of the attribute)
+    case boolean(Bool)
 
-        /// Value form (with a suggested filename)
-        case withFilename(String)
+    /// Value form (with a suggested filename)
+    case withFilename(String)
+  }
+
+  /// The internal value representation
+  public var value: Value
+
+  /// Create a boolean download attribute (browser chooses filename)
+  public init() {
+    self.value = .boolean(true)
+  }
+
+  /// Create a download attribute with a specific boolean value
+  ///
+  /// - Parameter include: Whether to include the attribute
+  public init(_ include: Bool) {
+    self.value = .boolean(include)
+  }
+
+  /// Create a download attribute with a suggested filename
+  ///
+  /// - Parameter filename: The suggested filename for the downloaded file.
+  ///   Characters like `/` and `\` will be converted to underscores by browsers.
+  public init(_ filename: String) {
+    self.value = .withFilename(filename)
+  }
+
+  /// String representation of the download attribute
+  public var description: String {
+    switch value {
+    case .boolean:
+      return ""  // Empty string for boolean attribute
+    case .withFilename(let filename):
+      return filename
     }
+  }
 
-    /// The internal value representation
-    public var value: Value
-
-    /// Create a boolean download attribute (browser chooses filename)
-    public init() {
-        self.value = .boolean(true)
+  /// Whether the attribute should be included in HTML rendering
+  public var shouldInclude: Bool {
+    switch value {
+    case .boolean(let include):
+      return include
+    case .withFilename:
+      return true
     }
-
-    /// Create a download attribute with a specific boolean value
-    ///
-    /// - Parameter include: Whether to include the attribute
-    public init(_ include: Bool) {
-        self.value = .boolean(include)
-    }
-
-    /// Create a download attribute with a suggested filename
-    ///
-    /// - Parameter filename: The suggested filename for the downloaded file.
-    ///   Characters like `/` and `\` will be converted to underscores by browsers.
-    public init(_ filename: String) {
-        self.value = .withFilename(filename)
-    }
-
-    /// String representation of the download attribute
-    public var description: String {
-        switch value {
-        case .boolean:
-            return ""  // Empty string for boolean attribute
-        case .withFilename(let filename):
-            return filename
-        }
-    }
-
-    /// Whether the attribute should be included in HTML rendering
-    public var shouldInclude: Bool {
-        switch value {
-        case .boolean(let include):
-            return include
-        case .withFilename:
-            return true
-        }
-    }
+  }
 }
 
 /// Extension to allow creating a Download attribute with a boolean literal
 extension Download: ExpressibleByBooleanLiteral {
-    /// Initialize with a boolean literal
-    ///
-    /// - Parameter value: When true, creates a boolean download attribute
-    ///   When false, the attribute will not be included
-    public init(booleanLiteral value: BooleanLiteralType) {
-        self.init(value)
-    }
+  /// Initialize with a boolean literal
+  ///
+  /// - Parameter value: When true, creates a boolean download attribute
+  ///   When false, the attribute will not be included
+  public init(booleanLiteral value: BooleanLiteralType) {
+    self.init(value)
+  }
 }
 
 /// Extension to allow creating a Download attribute with a string literal
 extension Download: ExpressibleByStringLiteral {
-    /// Initialize with a string literal
-    ///
-    /// - Parameter value: The suggested filename for the downloaded file
-    public init(stringLiteral value: StringLiteralType) {
-        self.init(value)
-    }
+  /// Initialize with a string literal
+  ///
+  /// - Parameter value: The suggested filename for the downloaded file
+  public init(stringLiteral value: StringLiteralType) {
+    self.init(value)
+  }
 }

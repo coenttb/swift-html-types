@@ -16,16 +16,16 @@ import Testing
 
 @Suite("Direction Test")
 struct DirectionTests {
-    @Test("Direction attribute should be direction")
-    func attribute() {
-        #expect(Direction.attribute == "direction")
-    }
+  @Test("Direction attribute should be direction")
+  func attribute() {
+    #expect(Direction.attribute == "direction")
+  }
 
-    @Test("Direction convenience properties")
-    func convenienceProperties() {
-        #expect(Direction.left.rawValue == "left")
-        #expect(Direction.right.rawValue == "right")
-        #expect(Direction.up.rawValue == "up")
-        #expect(Direction.down.rawValue == "down")
-    }
+  @Test("Direction convenience properties")
+  func convenienceProperties() {
+    #expect(Direction.left.rawValue == "left")
+    #expect(Direction.right.rawValue == "right")
+    #expect(Direction.up.rawValue == "up")
+    #expect(Direction.down.rawValue == "down")
+  }
 }

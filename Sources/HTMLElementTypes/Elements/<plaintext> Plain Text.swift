@@ -40,16 +40,25 @@ import HTMLAttributeTypes
 /// - Use `<pre>` or `<code>` elements instead and escape special characters.
 /// - Apply monospaced fonts via CSS using `font-family: monospace` where needed.
 ///
-@available(*, deprecated, message: "The <plaintext> element is deprecated. Use <pre> or <code> instead.")
+@available(
+  *,
+  deprecated,
+  message: "The <plaintext> element is deprecated. Use <pre> or <code> instead."
+)
 public struct PlainText: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "plaintext" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "plaintext" }
 
-    /// Creates a new plaintext element.
-    @available(*, deprecated, message: "The <plaintext> element is deprecated. Use <pre> or <code> instead.")
-    public init(
+  /// Creates a new plaintext element.
+  @available(
+    *,
+    deprecated,
+    message: "The <plaintext> element is deprecated. Use <pre> or <code> instead."
+  )
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

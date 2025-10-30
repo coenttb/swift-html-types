@@ -44,15 +44,15 @@ import HTMLAttributeTypes
 /// ## Usage Notes
 ///
 /// - If included, the `<caption>` element must be the first child of its parent `<table>` element
-/// - When a `<table>` is nested within a `<figure>` as the figure's only content, it should be captioned 
+/// - When a `<table>` is nested within a `<figure>` as the figure's only content, it should be captioned
 ///   via a `<figcaption>` for the `<figure>` instead of as a `<caption>` nested within the `<table>`
-/// - Any `background-color` applied to a table will not be applied to its caption. Add a 
+/// - Any `background-color` applied to a table will not be applied to its caption. Add a
 ///   `background-color` to the `<caption>` element as well if you want the same color to be behind both
 
 public struct Caption: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "caption" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "caption" }
 
-    /// Creates a new Caption element with the specified content.
-    public init() {}
+  /// Creates a new Caption element with the specified content.
+  public init() {}
 }

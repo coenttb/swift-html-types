@@ -46,8 +46,8 @@ import HTMLAttributeTypes
 /// - Note: When rendered, this generates an HTML `<b>` element with bold styling but no
 ///   additional semantic weight beyond bringing attention to the text.
 public struct B: HTMLElement {
-    @inlinable public static var tag: String { "b" }
+  @inlinable public static var tag: String { "b" }
 
-    /// Creates a new B element with the specified content.
-    public init() {}
+  /// Creates a new B element with the specified content.
+  public init() {}
 }

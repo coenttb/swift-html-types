@@ -28,17 +28,17 @@
 /// ```
 @dynamicMemberLookup
 public struct Blocking: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "blocking" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "blocking" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Blocking {
-    @inlinable public static var render: Self { "render" }
+  @inlinable public static var render: Self { "render" }
 }

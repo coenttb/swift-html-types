@@ -16,8 +16,8 @@ import Testing
 
 @Suite("NoResize Test")
 struct NoResizeTests {
-    @Test("NoResize attribute should be noresize")
-    func attribute() {
-        #expect(NoResize.attribute == "noresize")
-    }
+  @Test("NoResize attribute should be noresize")
+  func attribute() {
+    #expect(NoResize.attribute == "noresize")
+  }
 }

@@ -12,7 +12,7 @@
 
 import HTMLAttributeTypes
 
-/// Represents an HTML Ruby Base element (`<rb>`), which is used to delimit the base text component 
+/// Represents an HTML Ruby Base element (`<rb>`), which is used to delimit the base text component
 /// of a ruby annotation, i.e., the text that is being annotated.
 ///
 /// The `RubyBase` element should wrap each separate atomic segment of the base text.
@@ -39,15 +39,16 @@ import HTMLAttributeTypes
 /// - Only use within a `<ruby>` element
 ///
 public struct RubyBase: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "rb" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "rb" }
 
-    /// Creates a new RubyBase element with the specified attributes.
-    ///
-    /// - Parameters:, typically the base text to be annotated
-    public init(
+  /// Creates a new RubyBase element with the specified attributes.
+  ///
+  /// - Parameters:, typically the base text to be annotated
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

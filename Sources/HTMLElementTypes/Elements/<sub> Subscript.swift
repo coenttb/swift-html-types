@@ -12,7 +12,7 @@
 
 import HTMLAttributeTypes
 
-/// Represents an HTML subscript element (`<sub>`), which specifies inline text that should 
+/// Represents an HTML subscript element (`<sub>`), which specifies inline text that should
 /// be displayed as subscript for typographical reasons.
 ///
 /// Subscripts are typically rendered with a lowered baseline using smaller text.
@@ -35,13 +35,14 @@ import HTMLAttributeTypes
 /// - For presentational subscripts, use CSS (e.g., `vertical-align: sub`)
 ///
 public struct Subscript: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "sub" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "sub" }
 
-    /// Creates a new subscript element.
-    public init(
+  /// Creates a new subscript element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

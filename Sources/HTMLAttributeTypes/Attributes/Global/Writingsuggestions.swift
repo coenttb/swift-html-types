@@ -64,25 +64,25 @@
 @dynamicMemberLookup
 public struct Writingsuggestions: HTMLStringAttribute {
 
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "writingsuggestions" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "writingsuggestions" }
 
-    /// The URL for form submission
-    public let rawValue: String
+  /// The URL for form submission
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Writingsuggestions {
-    /// Enables browser-provided writing suggestions
-    @inlinable public static var `true`: Self { "true" }
+  /// Enables browser-provided writing suggestions
+  @inlinable public static var `true`: Self { "true" }
 
-    /// Disables browser-provided writing suggestions
-    @inlinable public static var `false`: Self { "false" }
+  /// Disables browser-provided writing suggestions
+  @inlinable public static var `false`: Self { "false" }
 }
 
 extension Writingsuggestions: CaseIterable {
-    public static let allCases: [Writingsuggestions] = [.true, .false]
+  public static let allCases: [Writingsuggestions] = [.true, .false]
 }

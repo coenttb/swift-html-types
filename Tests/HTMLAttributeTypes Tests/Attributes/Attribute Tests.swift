@@ -10,67 +10,67 @@
 //
 // ===----------------------------------------------------------------------===//
 
-#if canImport(FoundationEssentials)
-import FoundationEssentials
-#elseif canImport(Foundation)
-import Foundation
-#endif
-
 import HTMLAttributeTypes
 import Testing
 
+#if canImport(FoundationEssentials)
+  import FoundationEssentials
+#elseif canImport(Foundation)
+  import Foundation
+#endif
+
 private struct TestAttribute: HTMLAttribute {
-    static var attribute: String { "test-attribute" }
+  static var attribute: String { "test-attribute" }
 
-    let value: String
+  let value: String
 
-    init(_ value: String) {
-        self.value = value
-    }
+  init(_ value: String) {
+    self.value = value
+  }
 }
 
 private struct NumericTestAttribute: HTMLAttribute {
-    static var attribute: String { "numeric-test" }
+  static var attribute: String { "numeric-test" }
 
-    let value: Int
+  let value: Int
 
-    init(_ value: Int) {
-        self.value = value
-    }
+  init(_ value: Int) {
+    self.value = value
+  }
 }
 
 @Suite("Attribute Protocol Tests")
 struct AttributeTests {
 
-    @Test("Attribute has correct static attribute name")
-    func attributeName() {
-        #expect(TestAttribute.attribute == "test-attribute")
-        #expect(NumericTestAttribute.attribute == "numeric-test")
+  @Test("Attribute has correct static attribute name")
+  func attributeName() {
+    #expect(TestAttribute.attribute == "test-attribute")
+    #expect(NumericTestAttribute.attribute == "numeric-test")
+  }
+
+  @Test("Attribute is Sendable")
+  func sendableConformance() {
+    let attr = TestAttribute("test")
+
+    Task {
+      _ = attr
     }
+  }
 
-    @Test("Attribute is Sendable")
-    func sendableConformance() {
-        let attr = TestAttribute("test")
+  @Test("Attribute supports equality comparison")
+  func equality() {
+    let attr1 = TestAttribute("same")
+    let attr2 = TestAttribute("same")
+    let attr3 = TestAttribute("different")
 
-        Task {
-            _ = attr
-        }
-    }
+    #expect(attr1 == attr2)
+    #expect(attr1 != attr3)
 
-    @Test("Attribute supports equality comparison")
-    func equality() {
-        let attr1 = TestAttribute("same")
-        let attr2 = TestAttribute("same")
-        let attr3 = TestAttribute("different")
+    let numAttr1 = NumericTestAttribute(42)
+    let numAttr2 = NumericTestAttribute(42)
+    let numAttr3 = NumericTestAttribute(24)
 
-        #expect(attr1 == attr2)
-        #expect(attr1 != attr3)
-
-        let numAttr1 = NumericTestAttribute(42)
-        let numAttr2 = NumericTestAttribute(42)
-        let numAttr3 = NumericTestAttribute(24)
-
-        #expect(numAttr1 == numAttr2)
-        #expect(numAttr1 != numAttr3)
-    }
+    #expect(numAttr1 == numAttr2)
+    #expect(numAttr1 != numAttr3)
+  }
 }

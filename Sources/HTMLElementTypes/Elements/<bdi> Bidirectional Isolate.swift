@@ -28,7 +28,7 @@ import HTMLAttributeTypes
 ///
 /// ## Use Cases
 ///
-/// - Displaying user names or other user-generated content that might contain text 
+/// - Displaying user names or other user-generated content that might contain text
 ///   in languages with right-to-left (RTL) script like Arabic or Hebrew
 /// - Preventing the directionality of unknown text from affecting surrounding text
 /// - Protecting website layout when displaying dynamic content from external sources
@@ -47,8 +47,8 @@ import HTMLAttributeTypes
 /// ARIA role of "generic".
 ///
 /// ## Notes
-/// 
-/// - While similar visual effects can be achieved using CSS (`unicode-bidi: isolate`), 
+///
+/// - While similar visual effects can be achieved using CSS (`unicode-bidi: isolate`),
 ///   using the semantic `<bdi>` element is preferred.
 /// - The `dir` attribute on `<bdi>` defaults to `auto`, never inheriting from parent elements.
 /// - An alternative approach is using `<span dir="auto">`, but `<bdi>` has clearer semantics.
@@ -56,9 +56,9 @@ import HTMLAttributeTypes
 /// - Note: When rendered, this generates an HTML `<bdi>` element that isolates its content from
 ///   the bidirectional algorithm's influence.
 public struct BidirectionalIsolate: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "bdi" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "bdi" }
 
-    /// Creates a new BidirectionalIsolate element with the specified content.
-    public init() {}
+  /// Creates a new BidirectionalIsolate element with the specified content.
+  public init() {}
 }

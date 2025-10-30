@@ -46,19 +46,20 @@ import HTMLAttributeTypes
 ///
 /// ## Best Practices
 ///
-/// - To include a reference to the source of quoted material which is contained within a `<blockquote>` or `<q>` element, 
+/// - To include a reference to the source of quoted material which is contained within a `<blockquote>` or `<q>` element,
 ///   use the `cite` attribute on those elements instead.
 /// - Browsers typically style the contents of a `<cite>` element in italics by default.
 /// - The `<cite>` element should only include the title of the work, not the author's name.
 ///
 public struct Cite: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "cite" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "cite" }
 
-    /// Creates a new Cite element.
-    public init(
+  /// Creates a new Cite element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

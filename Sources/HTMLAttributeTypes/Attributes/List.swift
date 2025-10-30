@@ -12,9 +12,9 @@
 
 /// An attribute that associates an input element with a datalist of predefined options.
 ///
-/// The `list` attribute references a `<datalist>` element by its id, which provides a list of 
-/// predefined options to suggest to the user as they input data. Unlike the options in a `<select>` 
-/// element, the suggestions provided by `<datalist>` are not mandatory; users can either select 
+/// The `list` attribute references a `<datalist>` element by its id, which provides a list of
+/// predefined options to suggest to the user as they input data. Unlike the options in a `<select>`
+/// element, the suggestions provided by `<datalist>` are not mandatory; users can either select
 /// from the suggestions or enter a different value.
 ///
 /// ## Usage Notes
@@ -66,14 +66,14 @@
 /// ```
 @dynamicMemberLookup
 public struct List: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "list" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "list" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    /// Initialize with a value for the list attribute
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a value for the list attribute
+  public init(value: String) {
+    self.rawValue = value
+  }
 }

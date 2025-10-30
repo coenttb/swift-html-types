@@ -12,12 +12,12 @@
 
 @dynamicMemberLookup
 public struct Muted: HTMLBooleanAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "muted" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "muted" }
 
-    public var rawValue: Bool
+  public var rawValue: Bool
 
-    public init(value: Bool = true) {
-        self.rawValue = value
-    }
+  public init(value: Bool = true) {
+    self.rawValue = value
+  }
 }

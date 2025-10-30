@@ -12,7 +12,7 @@
 
 import HTMLAttributeTypes
 
-/// Represents an HTML heading group element (`<hgroup>`), which groups a heading with 
+/// Represents an HTML heading group element (`<hgroup>`), which groups a heading with
 /// related content such as subheadings, alternative titles, or taglines.
 ///
 /// The `HeadingGroup` struct provides a type-safe way to create HTML heading group elements.
@@ -39,13 +39,14 @@ import HTMLAttributeTypes
 /// - The `<hgroup>` has an implicit ARIA role of "group"
 ///
 public struct HeadingGroup: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "hgroup" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "hgroup" }
 
-    /// Creates a new HeadingGroup element.
-    public init(
+  /// Creates a new HeadingGroup element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

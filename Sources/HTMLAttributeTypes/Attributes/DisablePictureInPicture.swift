@@ -13,12 +13,12 @@
 /// Represents the disablepictureinpicture attribute for the video element.
 @dynamicMemberLookup
 public struct DisablePictureInPicture: HTMLBooleanAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "disablepictureinpicture" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "disablepictureinpicture" }
 
-    public var rawValue: Bool
+  public var rawValue: Bool
 
-    public init(value: Bool = true) {
-        self.rawValue = value
-    }
+  public init(value: Bool = true) {
+    self.rawValue = value
+  }
 }

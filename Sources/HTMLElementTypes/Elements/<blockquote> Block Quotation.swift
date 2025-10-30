@@ -12,10 +12,10 @@
 
 import HTMLAttributeTypes
 
-/// Represents an HTML blockquote element (`<blockquote>`), which indicates that the enclosed text 
+/// Represents an HTML blockquote element (`<blockquote>`), which indicates that the enclosed text
 /// is an extended quotation.
 ///
-/// The `BlockQuote` struct provides a type-safe way to create HTML block quotations with an optional 
+/// The `BlockQuote` struct provides a type-safe way to create HTML block quotations with an optional
 /// citation source URL.
 ///
 /// ## Example
@@ -36,19 +36,19 @@ import HTMLAttributeTypes
 /// - The content is typically rendered visually by indentation
 ///
 public struct BlockQuote: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "blockquote" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "blockquote" }
 
-    /// A URL that designates a source document or message for the quoted information
-    public var cite: HTMLAttributeTypes.Cite?
+  /// A URL that designates a source document or message for the quoted information
+  public var cite: HTMLAttributeTypes.Cite?
 
-    /// Creates a new BlockQuote element with the specified citation source and content.
-    ///
-    /// - Parameters:
-    ///   - cite: A URL that designates the source document for the quotation
-    public init(
-        cite: HTMLAttributeTypes.Cite? = nil
-    ) {
-        self.cite = cite
-    }
+  /// Creates a new BlockQuote element with the specified citation source and content.
+  ///
+  /// - Parameters:
+  ///   - cite: A URL that designates the source document for the quotation
+  public init(
+    cite: HTMLAttributeTypes.Cite? = nil
+  ) {
+    self.cite = cite
+  }
 }

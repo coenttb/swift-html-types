@@ -34,21 +34,21 @@ import HTMLAttributeTypes
 /// - Include `alt` attributes on all `<area>` elements for accessibility
 ///
 public struct Map: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "map" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "map" }
 
-    /// The name attribute gives the map a unique name so that it can be referenced.
-    /// The name must be non-empty with no space characters and must be unique across all maps in the document.
-    public var name: Name?
+  /// The name attribute gives the map a unique name so that it can be referenced.
+  /// The name must be non-empty with no space characters and must be unique across all maps in the document.
+  public var name: Name?
 
-    /// Creates a new Map element with the specified attributes.
-    ///
-    /// - Parameters:
-    ///   - name: A unique identifier for the map, used to reference it from an image's `usemap` attribute, typically containing `<area>` elements
-    public init(
-        name: Name? = nil
-    ) {
-        self.name = name
+  /// Creates a new Map element with the specified attributes.
+  ///
+  /// - Parameters:
+  ///   - name: A unique identifier for the map, used to reference it from an image's `usemap` attribute, typically containing `<area>` elements
+  public init(
+    name: Name? = nil
+  ) {
+    self.name = name
 
-    }
+  }
 }

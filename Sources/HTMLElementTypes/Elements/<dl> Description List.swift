@@ -47,13 +47,14 @@
 /// - Consider using for metadata display where a clear key-value relationship exists
 /// - In HTML5, each term-description group can also be wrapped in a `<div>` for styling or microdata purposes
 public struct DescriptionList: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "dl" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "dl" }
 
-    /// Creates a new Description List element.
-    public init(
+  /// Creates a new Description List element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

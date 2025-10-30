@@ -26,33 +26,33 @@
 /// <meter value="90" min="0" max="100" low="33" high="67">90 out of 100</meter>
 /// ```
 public struct High: HTMLAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "high" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "high" }
 
-    /// The attribute value
-    public let value: Double
+  /// The attribute value
+  public let value: Double
 
-    /// Initialize with a value
-    public init(_ value: Double) {
-        self.value = value
-    }
+  /// Initialize with a value
+  public init(_ value: Double) {
+    self.value = value
+  }
 }
 
 extension High: ExpressibleByFloatLiteral {
-    public init(floatLiteral value: Double) {
-        self.value = value
-    }
+  public init(floatLiteral value: Double) {
+    self.value = value
+  }
 }
 
 extension High: ExpressibleByIntegerLiteral {
-    public init(integerLiteral value: Int) {
-        self.value = Double(value)
-    }
+  public init(integerLiteral value: Int) {
+    self.value = Double(value)
+  }
 }
 
 extension High: CustomStringConvertible {
-    /// Returns the string representation of the attribute value
-    public var description: String {
-        return String(self.value)
-    }
+  /// Returns the string representation of the attribute value
+  public var description: String {
+    return String(self.value)
+  }
 }

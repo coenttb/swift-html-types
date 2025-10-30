@@ -52,36 +52,36 @@
 /// <input type="text" minlength="3" required>
 /// ```
 public struct Minlength: HTMLAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "minlength" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "minlength" }
 
-    /// The minimum length value
-    public var value: Int
+  /// The minimum length value
+  public var value: Int
 
-    /// Initialize with a minimum length value
-    public init(_ value: Int) {
-        // Ensure value is non-negative
-        self.value = max(0, value)
-    }
+  /// Initialize with a minimum length value
+  public init(_ value: Int) {
+    // Ensure value is non-negative
+    self.value = max(0, value)
+  }
 
-    /// Create a minlength attribute with the given number of characters 
-    public static func characters(_ count: Int) -> Minlength {
-        return Minlength(count)
-    }
+  /// Create a minlength attribute with the given number of characters
+  public static func characters(_ count: Int) -> Minlength {
+    return Minlength(count)
+  }
 
-    /// Minimum length of zero (effectively no minimum)
-    public static let none = Minlength(0)
+  /// Minimum length of zero (effectively no minimum)
+  public static let none = Minlength(0)
 }
 
 extension Minlength: ExpressibleByIntegerLiteral {
-    public init(integerLiteral value: IntegerLiteralType) {
-        self.value = max(0, value)
-    }
+  public init(integerLiteral value: IntegerLiteralType) {
+    self.value = max(0, value)
+  }
 }
 
 extension Minlength: CustomStringConvertible {
-    /// Returns the string representation of the minlength value
-    public var description: String {
-        return String(self.value)
-    }
+  /// Returns the string representation of the minlength value
+  public var description: String {
+    return String(self.value)
+  }
 }

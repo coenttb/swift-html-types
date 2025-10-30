@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Nomodule Test")
 struct NomoduleTests {
-    @Test("Nomodule attribute should be nomodule")
-    func attribute() {
-        #expect(Nomodule.attribute == "nomodule")
-    }
+  @Test("Nomodule attribute should be nomodule")
+  func attribute() {
+    #expect(Nomodule.attribute == "nomodule")
+  }
 }

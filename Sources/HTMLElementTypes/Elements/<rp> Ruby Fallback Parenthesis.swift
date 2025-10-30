@@ -41,15 +41,16 @@ import HTMLAttributeTypes
 /// - Only use within a `<ruby>` element
 ///
 public struct RubyParenthesis: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "rp" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "rp" }
 
-    /// Creates a new RubyParenthesis element with the specified attributes.
-    ///
-    /// - Parameters:, typically "(" or ")" for fallback display
-    public init(
+  /// Creates a new RubyParenthesis element with the specified attributes.
+  ///
+  /// - Parameters:, typically "(" or ")" for fallback display
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

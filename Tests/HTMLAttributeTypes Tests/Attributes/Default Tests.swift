@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Default Test")
 struct DefaultTests {
-    @Test("Default attribute should be default")
-    func attribute() {
-        #expect(Default.attribute == "default")
-    }
+  @Test("Default attribute should be default")
+  func attribute() {
+    #expect(Default.attribute == "default")
+  }
 }

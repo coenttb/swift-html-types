@@ -16,8 +16,8 @@ import Testing
 
 @Suite("FormNovalidate Test")
 struct FormNovalidateTests {
-    @Test("FormNovalidate attribute should be formnovalidate")
-    func attribute() {
-        #expect(FormNovalidate.attribute == "formnovalidate")
-    }
+  @Test("FormNovalidate attribute should be formnovalidate")
+  func attribute() {
+    #expect(FormNovalidate.attribute == "formnovalidate")
+  }
 }

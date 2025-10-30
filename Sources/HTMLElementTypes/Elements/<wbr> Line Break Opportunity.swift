@@ -10,8 +10,8 @@
 //
 // ===----------------------------------------------------------------------===//
 
-/// Represents an HTML word break opportunity element (`<wbr>`), which indicates a position within text 
-/// where the browser may optionally break a line, though its line-breaking rules would not otherwise 
+/// Represents an HTML word break opportunity element (`<wbr>`), which indicates a position within text
+/// where the browser may optionally break a line, though its line-breaking rules would not otherwise
 /// create a break at that location.
 ///
 /// The `LineBreakOpportunity` struct provides a type-safe way to create HTML word break opportunity elements.
@@ -57,13 +57,14 @@
 /// The browser will only break at the `<wbr>` position if it would otherwise overflow its container.
 ///
 public struct LineBreakOpportunity: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "wbr" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "wbr" }
 
-    /// Creates a new LineBreakOpportunity element.
-    public init(
+  /// Creates a new LineBreakOpportunity element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

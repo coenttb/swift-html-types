@@ -39,7 +39,7 @@
 ///
 /// With JavaScript event handlers:
 /// ```html
-/// <div draggable="true" 
+/// <div draggable="true"
 ///      ondragstart="event.dataTransfer.setData('text/plain', 'Dragged data')">
 ///   Drag me
 /// </div>
@@ -51,54 +51,54 @@
 /// ```
 @dynamicMemberLookup
 public struct Draggable: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "draggable" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "draggable" }
 
-    public let rawValue: String
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Draggable {
-    /// Element can be dragged
-    ///
-    /// Example:
-    /// ```html
-    /// <div draggable="true">Drag me</div>
-    /// ```
-    @inlinable public static var `true`: Self { "true" }
+  /// Element can be dragged
+  ///
+  /// Example:
+  /// ```html
+  /// <div draggable="true">Drag me</div>
+  /// ```
+  @inlinable public static var `true`: Self { "true" }
 
-    /// Element cannot be dragged
-    ///
-    /// Example:
-    /// ```html
-    /// <img src="image.png" draggable="false" alt="Non-draggable image" />
-    /// ```
-    @inlinable public static var `false`: Self { "false" }
+  /// Element cannot be dragged
+  ///
+  /// Example:
+  /// ```html
+  /// <img src="image.png" draggable="false" alt="Non-draggable image" />
+  /// ```
+  @inlinable public static var `false`: Self { "false" }
 
-    /// Browser default dragging behavior
-    ///
-    /// This is the default if the attribute is not specified. 
-    /// Only text selections, images, and links can be dragged by default.
-    ///
-    /// Example:
-    /// ```html
-    /// <div draggable="auto">Uses default browser behavior</div>
-    /// ```
-    @inlinable public static var auto: Self { "auto" }
+  /// Browser default dragging behavior
+  ///
+  /// This is the default if the attribute is not specified.
+  /// Only text selections, images, and links can be dragged by default.
+  ///
+  /// Example:
+  /// ```html
+  /// <div draggable="auto">Uses default browser behavior</div>
+  /// ```
+  @inlinable public static var auto: Self { "auto" }
 }
 
 extension Draggable: CaseIterable {
-    public static let allCases: [Draggable] = [.true, .false, .auto]
+  public static let allCases: [Draggable] = [.true, .false, .auto]
 }
 
 extension Draggable: ExpressibleByBooleanLiteral {
-    public init(booleanLiteral value: BooleanLiteralType) {
-        switch value {
-        case true: self = .true
-        case false: self = .false
-        }
+  public init(booleanLiteral value: BooleanLiteralType) {
+    switch value {
+    case true: self = .true
+    case false: self = .false
     }
+  }
 }

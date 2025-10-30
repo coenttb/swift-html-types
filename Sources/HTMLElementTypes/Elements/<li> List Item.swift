@@ -50,22 +50,22 @@ import HTMLAttributeTypes
 /// - Use CSS for styling rather than deprecated attributes like `type`
 ///
 public struct ListItem: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "li" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "li" }
 
-    /// The ordinal value of the list item (only meaningful within `<ol>` elements).
-    /// This integer attribute indicates the current ordinal value as defined by the
-    /// parent `<ol>` element. List items that follow this one continue numbering from this value.
-    public var value: Value<Int>?
+  /// The ordinal value of the list item (only meaningful within `<ol>` elements).
+  /// This integer attribute indicates the current ordinal value as defined by the
+  /// parent `<ol>` element. List items that follow this one continue numbering from this value.
+  public var value: Value<Int>?
 
-    /// Creates a new list item element with the specified value.
-    ///
-    /// - Parameters:
-    ///   - value: The ordinal value of the list item (only meaningful within `<ol>` elements)
-    public init(
-        value: Value<Int>? = nil
-    ) {
-        self.value = value
+  /// Creates a new list item element with the specified value.
+  ///
+  /// - Parameters:
+  ///   - value: The ordinal value of the list item (only meaningful within `<ol>` elements)
+  public init(
+    value: Value<Int>? = nil
+  ) {
+    self.value = value
 
-    }
+  }
 }

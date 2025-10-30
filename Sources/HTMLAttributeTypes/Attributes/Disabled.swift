@@ -12,8 +12,8 @@
 
 /// A Boolean attribute that indicates whether a form control is disabled.
 ///
-/// When the `disabled` attribute is present, the element becomes non-interactive, 
-/// non-focusable, and is not submitted with the form. Browsers typically display 
+/// When the `disabled` attribute is present, the element becomes non-interactive,
+/// non-focusable, and is not submitted with the form. Browsers typically display
 /// disabled elements with a greyed-out appearance to indicate their inactive state.
 ///
 /// ## Usage Notes
@@ -60,12 +60,12 @@
 /// ```
 @dynamicMemberLookup
 public struct Disabled: HTMLBooleanAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "disabled" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "disabled" }
 
-    public var rawValue: Bool
+  public var rawValue: Bool
 
-    public init(value: Bool = true) {
-        self.rawValue = value
-    }
+  public init(value: Bool = true) {
+    self.rawValue = value
+  }
 }

@@ -37,24 +37,24 @@
 /// ```
 @dynamicMemberLookup
 public struct ObjectType: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "type" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "type" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    /// Initialize with a value for the type attribute
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a value for the type attribute
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension ObjectType {
-    /// Common MIME types
-    public static let pdf = ObjectType("application/pdf")
-    public static let mp4 = ObjectType("video/mp4")
-    public static let mp3 = ObjectType("audio/mpeg")
-    public static let jpeg = ObjectType("image/jpeg")
-    public static let png = ObjectType("image/png")
-    public static let html = ObjectType("text/html")
+  /// Common MIME types
+  public static let pdf = ObjectType("application/pdf")
+  public static let mp4 = ObjectType("video/mp4")
+  public static let mp3 = ObjectType("audio/mpeg")
+  public static let jpeg = ObjectType("image/jpeg")
+  public static let png = ObjectType("image/png")
+  public static let html = ObjectType("text/html")
 }

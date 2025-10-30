@@ -42,7 +42,7 @@
 /// Remapping part names when exporting:
 /// ```html
 /// <template id="ancestor-component">
-///   <nested-component 
+///   <nested-component
 ///     exportparts="base:card__base, header:card__header, footer:card__footer">
 ///   </nested-component>
 /// </template>
@@ -62,55 +62,55 @@
 /// }
 /// ```
 public struct Exportparts: HTMLAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "exportparts" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "exportparts" }
 
-    /// The part mappings to export
-    private let partMappings: [PartMapping]
+  /// The part mappings to export
+  private let partMappings: [PartMapping]
 
-    /// Initialize with part names to export
-    public init(_ partNames: [String]) {
-        self.partMappings = partNames.map { PartMapping(originalName: $0, exposedName: $0) }
+  /// Initialize with part names to export
+  public init(_ partNames: [String]) {
+    self.partMappings = partNames.map { PartMapping(originalName: $0, exposedName: $0) }
+  }
+
+  /// Initialize with part names to export as variadic parameters
+  public init(_ partNames: String...) {
+    self.partMappings = partNames.map { PartMapping(originalName: $0, exposedName: $0) }
+  }
+
+  /// Initialize with explicit part name mappings
+  public init(_ mappings: [PartMapping]) {
+    self.partMappings = mappings
+  }
+
+  /// A mapping from original part name to exposed part name
+  public struct PartMapping: Sendable, Hashable {
+    /// The original part name in the shadow DOM
+    public let originalName: String
+
+    /// The name to expose to ancestor DOMs
+    public let exposedName: String
+
+    /// Initialize with original and exposed part names
+    public init(originalName: String, exposedName: String) {
+      self.originalName = originalName
+      self.exposedName = exposedName
     }
 
-    /// Initialize with part names to export as variadic parameters
-    public init(_ partNames: String...) {
-        self.partMappings = partNames.map { PartMapping(originalName: $0, exposedName: $0) }
+    /// The string representation of this mapping
+    public var description: String {
+      if originalName == exposedName {
+        return originalName
+      } else {
+        return "\(originalName):\(exposedName)"
+      }
     }
-
-    /// Initialize with explicit part name mappings
-    public init(_ mappings: [PartMapping]) {
-        self.partMappings = mappings
-    }
-
-    /// A mapping from original part name to exposed part name
-    public struct PartMapping: Sendable, Hashable {
-        /// The original part name in the shadow DOM
-        public let originalName: String
-
-        /// The name to expose to ancestor DOMs
-        public let exposedName: String
-
-        /// Initialize with original and exposed part names
-        public init(originalName: String, exposedName: String) {
-            self.originalName = originalName
-            self.exposedName = exposedName
-        }
-
-        /// The string representation of this mapping
-        public var description: String {
-            if originalName == exposedName {
-                return originalName
-            } else {
-                return "\(originalName):\(exposedName)"
-            }
-        }
-    }
+  }
 }
 
 extension Exportparts: CustomStringConvertible {
-    /// Returns the string representation of the exportparts value
-    public var description: String {
-        return self.partMappings.map { $0.description }.joined(separator: ", ")
-    }
+  /// Returns the string representation of the exportparts value
+  public var description: String {
+    return self.partMappings.map { $0.description }.joined(separator: ", ")
+  }
 }

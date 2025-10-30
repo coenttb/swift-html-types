@@ -36,32 +36,32 @@ import HTMLAttributeTypes
 /// - For styling, prefer CSS over the `type` attribute when possible
 ///
 public struct OrderedList: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "ol" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "ol" }
 
-    /// Boolean attribute specifying that the list's items are in reverse order (high to low)
-    public var reversed: HTMLAttributeTypes.Reversed?
+  /// Boolean attribute specifying that the list's items are in reverse order (high to low)
+  public var reversed: HTMLAttributeTypes.Reversed?
 
-    /// Specifies the starting number for the list items
-    public var start: HTMLAttributeTypes.Start?
+  /// Specifies the starting number for the list items
+  public var start: HTMLAttributeTypes.Start?
 
-    /// Specifies the numbering type (1, a, A, i, I)
-    public var type: HTMLAttributeTypes.ListType?
+  /// Specifies the numbering type (1, a, A, i, I)
+  public var type: HTMLAttributeTypes.ListType?
 
-    /// Creates a new OrderedList element with the specified attributes.
-    ///
-    /// - Parameters:
-    ///   - reversed: Boolean attribute that reverses the order of items
-    ///   - start: The starting number for the list
-    ///   - type: The numbering type to use (list items)
-    public init(
-        reversed: HTMLAttributeTypes.Reversed? = nil,
-        start: HTMLAttributeTypes.Start? = nil,
-        type: HTMLAttributeTypes.ListType? = nil
-    ) {
-        self.reversed = reversed
-        self.start = start
-        self.type = type
+  /// Creates a new OrderedList element with the specified attributes.
+  ///
+  /// - Parameters:
+  ///   - reversed: Boolean attribute that reverses the order of items
+  ///   - start: The starting number for the list
+  ///   - type: The numbering type to use (list items)
+  public init(
+    reversed: HTMLAttributeTypes.Reversed? = nil,
+    start: HTMLAttributeTypes.Start? = nil,
+    type: HTMLAttributeTypes.ListType? = nil
+  ) {
+    self.reversed = reversed
+    self.start = start
+    self.type = type
 
-    }
+  }
 }

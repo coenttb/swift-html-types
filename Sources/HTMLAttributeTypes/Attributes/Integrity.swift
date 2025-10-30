@@ -10,16 +10,16 @@
 //
 // ===----------------------------------------------------------------------===//
 
-/// Represents the HTML `integrity` attribute, which contains inline metadata 
+/// Represents the HTML `integrity` attribute, which contains inline metadata
 /// for verifying subresource integrity (SRI).
 ///
 /// Subresource Integrity (SRI) is a security feature that enables browsers to verify
 /// that resources fetched from external sources have been delivered without unexpected
-/// manipulation. The browser verifies that a fetched resource's cryptographic hash 
+/// manipulation. The browser verifies that a fetched resource's cryptographic hash
 /// matches the hash provided in the integrity attribute.
 ///
 /// ## Format
-/// 
+///
 /// The attribute value is a string containing one or more cryptographic hashes, each
 /// prefixed by the hash algorithm used, and separated by spaces if more than one.
 ///
@@ -38,8 +38,8 @@
 /// ## Examples
 ///
 /// ```html
-/// <script 
-///   src="https://example.com/example-framework.js" 
+/// <script
+///   src="https://example.com/example-framework.js"
 ///   integrity="sha384-oqVuAfXRKap7fdgcCY5uykM6+R9GqQ8K/uxy9rx7HNQlGYl1kPzQho1wx4JwY8wC"
 ///   crossorigin="anonymous">
 /// </script>
@@ -53,31 +53,31 @@
 ///
 @dynamicMemberLookup
 public struct Integrity: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "integrity" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "integrity" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    /// Initialize with a value for the integrity attribute
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a value for the integrity attribute
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Integrity {
-    /// Creates an integrity hash using the SHA-256 algorithm
-    public static func sha256(_ hash: String) -> Integrity {
-        return Integrity("sha256-\(hash)")
-    }
+  /// Creates an integrity hash using the SHA-256 algorithm
+  public static func sha256(_ hash: String) -> Integrity {
+    return Integrity("sha256-\(hash)")
+  }
 
-    /// Creates an integrity hash using the SHA-384 algorithm
-    public static func sha384(_ hash: String) -> Integrity {
-        return Integrity("sha384-\(hash)")
-    }
+  /// Creates an integrity hash using the SHA-384 algorithm
+  public static func sha384(_ hash: String) -> Integrity {
+    return Integrity("sha384-\(hash)")
+  }
 
-    /// Creates an integrity hash using the SHA-512 algorithm
-    public static func sha512(_ hash: String) -> Integrity {
-        return Integrity("sha512-\(hash)")
-    }
+  /// Creates an integrity hash using the SHA-512 algorithm
+  public static func sha512(_ hash: String) -> Integrity {
+    return Integrity("sha512-\(hash)")
+  }
 }

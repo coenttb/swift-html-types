@@ -31,9 +31,9 @@ import HTMLAttributeTypes
 /// - For modern development, prefer using semantic elements with appropriate CSS styling
 ///
 public struct Big: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "big" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "big" }
 
-    /// Creates a new Big element.
-    public init() {}
+  /// Creates a new Big element.
+  public init() {}
 }

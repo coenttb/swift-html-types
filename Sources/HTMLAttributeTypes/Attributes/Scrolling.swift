@@ -28,24 +28,24 @@
 /// ```
 @dynamicMemberLookup
 public struct Scrolling: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "scrolling" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "scrolling" }
 
-    public var rawValue: String
+  public var rawValue: String
 
-    /// Initialize with a string value
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a string value
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Scrolling {
-    /// Force scrollbars to appear even when not needed
-    @inlinable public static var yes: Self { "yes" }
+  /// Force scrollbars to appear even when not needed
+  @inlinable public static var yes: Self { "yes" }
 
-    /// Prevent scrollbars from appearing even when needed
-    @inlinable public static var no: Self { "no" }
+  /// Prevent scrollbars from appearing even when needed
+  @inlinable public static var no: Self { "no" }
 
-    /// Allow browser to add scrollbars when necessary (default)
-    @inlinable public static var auto: Self { "auto" }
+  /// Allow browser to add scrollbars when necessary (default)
+  @inlinable public static var auto: Self { "auto" }
 }

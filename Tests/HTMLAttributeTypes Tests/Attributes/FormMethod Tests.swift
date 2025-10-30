@@ -16,21 +16,21 @@ import Testing
 
 @Suite("FormMethod Test")
 struct FormMethodTests {
-    @Test("FormMethod attribute should be formmethod")
-    func attribute() {
-        #expect(FormMethod.attribute == "formmethod")
-    }
+  @Test("FormMethod attribute should be formmethod")
+  func attribute() {
+    #expect(FormMethod.attribute == "formmethod")
+  }
 
-    @Test("FormMethod should have predefined values")
-    func predefinedValues() {
-        #expect(FormMethod.get.rawValue == "get")
-        #expect(FormMethod.post.rawValue == "post")
-        #expect(FormMethod.dialog.rawValue == "dialog")
-    }
+  @Test("FormMethod should have predefined values")
+  func predefinedValues() {
+    #expect(FormMethod.get.rawValue == "get")
+    #expect(FormMethod.post.rawValue == "post")
+    #expect(FormMethod.dialog.rawValue == "dialog")
+  }
 
-    @Test("FormMethod should convert to lowercase")
-    func lowercaseConversion() {
-        let method = FormMethod(value: "POST")
-        #expect(method.rawValue == "post")
-    }
+  @Test("FormMethod should convert to lowercase")
+  func lowercaseConversion() {
+    let method = FormMethod(value: "POST")
+    #expect(method.rawValue == "post")
+  }
 }

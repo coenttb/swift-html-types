@@ -34,21 +34,21 @@ import HTMLAttributeTypes
 /// - Consider using the `<cite>` element in conjunction with `<q>` to attribute the source
 ///
 public struct InlineQuotation: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "q" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "q" }
 
-    /// The URL that designates a source document or message for the information quoted
-    /// This attribute is intended to point to information explaining the context or the reference for the quote
-    public var cite: HTMLAttributeTypes.Cite?
+  /// The URL that designates a source document or message for the information quoted
+  /// This attribute is intended to point to information explaining the context or the reference for the quote
+  public var cite: HTMLAttributeTypes.Cite?
 
-    /// Creates a new InlineQuotation element with the specified attributes.
-    ///
-    /// - Parameters:
-    ///   - cite: The URL that designates a source document or message for the information quoted
-    public init(
-        cite: HTMLAttributeTypes.Cite? = nil
-    ) {
-        self.cite = cite
+  /// Creates a new InlineQuotation element with the specified attributes.
+  ///
+  /// - Parameters:
+  ///   - cite: The URL that designates a source document or message for the information quoted
+  public init(
+    cite: HTMLAttributeTypes.Cite? = nil
+  ) {
+    self.cite = cite
 
-    }
+  }
 }

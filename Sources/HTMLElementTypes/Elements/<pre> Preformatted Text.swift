@@ -14,11 +14,11 @@ import HTMLAttributeTypes
 
 /// Represents an HTML `<pre>` element, which displays preformatted text exactly as written in the HTML file.
 ///
-/// The `PreformattedText` struct provides a type-safe way to create HTML preformatted text elements, 
+/// The `PreformattedText` struct provides a type-safe way to create HTML preformatted text elements,
 /// which preserve whitespace, line breaks, and spacing.
 ///
-/// The text is typically rendered using a monospaced font. Whitespace inside this element is displayed 
-/// as written, with one exception: if one or more leading newline characters are included immediately 
+/// The text is typically rendered using a monospaced font. Whitespace inside this element is displayed
+/// as written, with one exception: if one or more leading newline characters are included immediately
 /// following the opening `<pre>` tag, the first newline character is stripped.
 ///
 /// ## Example
@@ -46,13 +46,14 @@ import HTMLAttributeTypes
 /// - Remember that < characters may need to be escaped as &lt; in the content
 ///
 public struct PreformattedText: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "pre" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "pre" }
 
-    /// Creates a new PreformattedText element.
-    public init(
+  /// Creates a new PreformattedText element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

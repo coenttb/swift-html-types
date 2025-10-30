@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Reversed Test")
 struct ReversedTests {
-    @Test("Reversed attribute should be reversed")
-    func attribute() {
-        #expect(Reversed.attribute == "reversed")
-    }
+  @Test("Reversed attribute should be reversed")
+  func attribute() {
+    #expect(Reversed.attribute == "reversed")
+  }
 }

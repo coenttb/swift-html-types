@@ -15,8 +15,8 @@ import HTMLAttributeTypes
 /// Represents an HTML table foot element (`<tfoot>`), which encapsulates a set of table rows
 /// that comprise the foot of a table, typically containing summary information about the table's columns.
 ///
-/// The `TableFoot` struct provides a type-safe way to create HTML table foot elements that 
-/// define a semantic section for footer rows in a table. This is important for both 
+/// The `TableFoot` struct provides a type-safe way to create HTML table foot elements that
+/// define a semantic section for footer rows in a table. This is important for both
 /// accessibility and proper table rendering, especially for large tables or when printing.
 ///
 /// ## Example
@@ -64,13 +64,14 @@ import HTMLAttributeTypes
 /// - Consider accessibility by using `<th>` elements with appropriate `scope` attributes for footer headers
 ///
 public struct TableFoot: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "tfoot" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "tfoot" }
 
-    /// Creates a new TableFoot element.
-    public init(
+  /// Creates a new TableFoot element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

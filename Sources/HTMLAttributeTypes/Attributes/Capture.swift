@@ -47,21 +47,21 @@
 /// ```
 @dynamicMemberLookup
 public struct Capture: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "capture" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "capture" }
 
-    /// The capture device value
-    public let rawValue: String
+  /// The capture device value
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Capture {
-    /// Convenience initializer for "user" value (front-facing camera)
-    public static let user: Capture = "user"
+  /// Convenience initializer for "user" value (front-facing camera)
+  public static let user: Capture = "user"
 
-    /// Convenience initializer for "environment" value (back-facing camera)
-    public static let environment: Capture = "environment"
+  /// Convenience initializer for "environment" value (back-facing camera)
+  public static let environment: Capture = "environment"
 }

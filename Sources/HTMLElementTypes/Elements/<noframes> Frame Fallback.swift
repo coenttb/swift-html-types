@@ -10,10 +10,10 @@
 //
 // ===----------------------------------------------------------------------===//
 
-/// Represents an HTML noframes element (`<noframes>`), which provides content for browsers 
+/// Represents an HTML noframes element (`<noframes>`), which provides content for browsers
 /// that don't support frames.
 ///
-/// The `FrameFallback` struct provides a way to display alternative content in browsers 
+/// The `FrameFallback` struct provides a way to display alternative content in browsers
 /// that don't support or have disabled support for frames.
 ///
 /// ## Example
@@ -30,18 +30,23 @@
 ///
 /// - This element is deprecated and shouldn't be used in modern web development.
 /// - When frames are needed, use the `<iframe>` element instead.
-/// - If you must use this element, provide meaningful alternative content that offers 
+/// - If you must use this element, provide meaningful alternative content that offers
 ///   similar functionality to what would be available in the frames.
 ///
-@available(*, deprecated, message: "The noframes element is obsolete and shouldn't be used in modern web development")
+@available(
+  *,
+  deprecated,
+  message: "The noframes element is obsolete and shouldn't be used in modern web development"
+)
 public struct FrameFallback: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "noframes" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "noframes" }
 
-    /// Creates a new FrameFallback element with the specified content.
-    public init(
+  /// Creates a new FrameFallback element with the specified content.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

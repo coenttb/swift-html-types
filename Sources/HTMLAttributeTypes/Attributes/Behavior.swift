@@ -25,27 +25,27 @@
 /// ```
 @dynamicMemberLookup
 public struct Behavior: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "behavior" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "behavior" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Behavior {
-    /// Preset for scrolling behavior (default)
-    /// Text scrolls in, then jumps back to the start and scrolls in again
-    public static let scroll: Self = Self("scroll")
+  /// Preset for scrolling behavior (default)
+  /// Text scrolls in, then jumps back to the start and scrolls in again
+  public static let scroll: Self = Self("scroll")
 
-    /// Preset for sliding behavior
-    /// Text scrolls in and stops at the edge of the marquee
-    public static let slide: Self = Self("slide")
+  /// Preset for sliding behavior
+  /// Text scrolls in and stops at the edge of the marquee
+  public static let slide: Self = Self("slide")
 
-    /// Preset for alternate behavior
-    /// Text bounces back and forth between the two edges of the marquee
-    public static let alternate: Self = Self("alternate")
+  /// Preset for alternate behavior
+  /// Text bounces back and forth between the two edges of the marquee
+  public static let alternate: Self = Self("alternate")
 }

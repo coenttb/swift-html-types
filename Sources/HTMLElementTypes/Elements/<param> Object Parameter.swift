@@ -36,25 +36,25 @@ import HTMLAttributeTypes
 /// - For embedding other content, consider using `<iframe>` or more modern web components
 ///
 public struct Param: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "param" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "param" }
 
-    /// Name of the parameter
-    public var name: HTMLAttributeTypes.Name?
+  /// Name of the parameter
+  public var name: HTMLAttributeTypes.Name?
 
-    /// Value of the parameter
-    public var value: HTMLAttributeTypes.Value<String>?
+  /// Value of the parameter
+  public var value: HTMLAttributeTypes.Value<String>?
 
-    /// Creates a new Param element with the specified attributes.
-    ///
-    /// - Parameters:
-    ///   - name: Name of the parameter
-    ///   - value: Value of the parameter
-    public init(
-        name: HTMLAttributeTypes.Name? = nil,
-        value: HTMLAttributeTypes.Value<String>? = nil
-    ) {
-        self.name = name
-        self.value = value
-    }
+  /// Creates a new Param element with the specified attributes.
+  ///
+  /// - Parameters:
+  ///   - name: Name of the parameter
+  ///   - value: Value of the parameter
+  public init(
+    name: HTMLAttributeTypes.Name? = nil,
+    value: HTMLAttributeTypes.Value<String>? = nil
+  ) {
+    self.name = name
+    self.value = value
+  }
 }

@@ -10,19 +10,19 @@
 //
 // ===----------------------------------------------------------------------===//
 
-#if canImport(FoundationEssentials)
-import FoundationEssentials
-#elseif canImport(Foundation)
-import Foundation
-#endif
-
 import HTMLAttributeTypes
 import Testing
 
+#if canImport(FoundationEssentials)
+  import FoundationEssentials
+#elseif canImport(Foundation)
+  import Foundation
+#endif
+
 @Suite("Inert Test")
 struct InertTests {
-    @Test("Inert attribute should be inert")
-    func attribute() {
-        #expect(Inert.attribute == "inert")
-    }
+  @Test("Inert attribute should be inert")
+  func attribute() {
+    #expect(Inert.attribute == "inert")
+  }
 }

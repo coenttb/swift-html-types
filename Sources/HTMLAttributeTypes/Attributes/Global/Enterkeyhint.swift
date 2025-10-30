@@ -43,109 +43,109 @@
 /// ```
 @dynamicMemberLookup
 public struct Enterkeyhint: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "enterkeyhint" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "enterkeyhint" }
 
-    public let rawValue: String
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Enterkeyhint {
-    /// Indicates that Enter will insert a new line
-    ///
-    /// Example labels in different browsers/languages: "return", "↵"
-    ///
-    /// Example:
-    /// ```html
-    /// <textarea enterkeyhint="enter"></textarea>
-    /// ```
-    @inlinable public static var enter: Self { "enter" }
+  /// Indicates that Enter will insert a new line
+  ///
+  /// Example labels in different browsers/languages: "return", "↵"
+  ///
+  /// Example:
+  /// ```html
+  /// <textarea enterkeyhint="enter"></textarea>
+  /// ```
+  @inlinable public static var enter: Self { "enter" }
 
-    /// Indicates that Enter will complete the input task
-    ///
-    /// Typically signals that there is nothing more to input and the input method
-    /// editor (IME) will be closed.
-    ///
-    /// Example labels in different browsers/languages: "done", "✅"
-    ///
-    /// Example:
-    /// ```html
-    /// <input type="text" enterkeyhint="done" />
-    /// ```
-    @inlinable public static var done: Self { "done" }
+  /// Indicates that Enter will complete the input task
+  ///
+  /// Typically signals that there is nothing more to input and the input method
+  /// editor (IME) will be closed.
+  ///
+  /// Example labels in different browsers/languages: "done", "✅"
+  ///
+  /// Example:
+  /// ```html
+  /// <input type="text" enterkeyhint="done" />
+  /// ```
+  @inlinable public static var done: Self { "done" }
 
-    /// Indicates that Enter will take the user to the target of the entered text
-    ///
-    /// Typically used for URLs or navigation actions.
-    ///
-    /// Example labels in different browsers/languages: "go", "🡢"
-    ///
-    /// Example:
-    /// ```html
-    /// <input type="url" enterkeyhint="go" />
-    /// ```
-    @inlinable public static var go: Self { "go" }
+  /// Indicates that Enter will take the user to the target of the entered text
+  ///
+  /// Typically used for URLs or navigation actions.
+  ///
+  /// Example labels in different browsers/languages: "go", "🡢"
+  ///
+  /// Example:
+  /// ```html
+  /// <input type="url" enterkeyhint="go" />
+  /// ```
+  @inlinable public static var go: Self { "go" }
 
-    /// Indicates that Enter will move focus to the next input field
-    ///
-    /// Useful in multi-field forms to help users progress through the form.
-    ///
-    /// Example labels in different browsers/languages: "next", "⇥"
-    ///
-    /// Example:
-    /// ```html
-    /// <input type="text" enterkeyhint="next" />
-    /// ```
-    @inlinable public static var next: Self { "next" }
+  /// Indicates that Enter will move focus to the next input field
+  ///
+  /// Useful in multi-field forms to help users progress through the form.
+  ///
+  /// Example labels in different browsers/languages: "next", "⇥"
+  ///
+  /// Example:
+  /// ```html
+  /// <input type="text" enterkeyhint="next" />
+  /// ```
+  @inlinable public static var next: Self { "next" }
 
-    /// Indicates that Enter will move focus to the previous input field
-    ///
-    /// Useful for backward navigation in forms.
-    ///
-    /// Example labels in different browsers/languages: "previous", "⇤"
-    ///
-    /// Example:
-    /// ```html
-    /// <input type="text" enterkeyhint="previous" />
-    /// ```
-    @inlinable public static var previous: Self { "previous" }
+  /// Indicates that Enter will move focus to the previous input field
+  ///
+  /// Useful for backward navigation in forms.
+  ///
+  /// Example labels in different browsers/languages: "previous", "⇤"
+  ///
+  /// Example:
+  /// ```html
+  /// <input type="text" enterkeyhint="previous" />
+  /// ```
+  @inlinable public static var previous: Self { "previous" }
 
-    /// Indicates that Enter will initiate a search
-    ///
-    /// Typically used in search fields.
-    ///
-    /// Example labels in different browsers/languages: "search", "🔍"
-    ///
-    /// Example:
-    /// ```html
-    /// <input type="search" enterkeyhint="search" />
-    /// ```
-    @inlinable public static var search: Self { "search" }
+  /// Indicates that Enter will initiate a search
+  ///
+  /// Typically used in search fields.
+  ///
+  /// Example labels in different browsers/languages: "search", "🔍"
+  ///
+  /// Example:
+  /// ```html
+  /// <input type="search" enterkeyhint="search" />
+  /// ```
+  @inlinable public static var search: Self { "search" }
 
-    /// Indicates that Enter will send the entered text to its target
-    ///
-    /// Typically used in messaging or email applications.
-    ///
-    /// Example labels in different browsers/languages: "send"
-    ///
-    /// Example:
-    /// ```html
-    /// <textarea enterkeyhint="send"></textarea>
-    /// ```
-    @inlinable public static var send: Self { "send" }
+  /// Indicates that Enter will send the entered text to its target
+  ///
+  /// Typically used in messaging or email applications.
+  ///
+  /// Example labels in different browsers/languages: "send"
+  ///
+  /// Example:
+  /// ```html
+  /// <textarea enterkeyhint="send"></textarea>
+  /// ```
+  @inlinable public static var send: Self { "send" }
 }
 
 extension Enterkeyhint: CaseIterable {
-   public static let allCases: [Enterkeyhint] = [
+  public static let allCases: [Enterkeyhint] = [
     .enter,
     .done,
     .go,
     .next,
     .previous,
     .search,
-    .send
-   ]
+    .send,
+  ]
 }

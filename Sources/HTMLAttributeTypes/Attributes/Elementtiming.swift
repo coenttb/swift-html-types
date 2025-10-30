@@ -12,9 +12,9 @@
 
 /// An attribute that marks an element for performance timing measurement.
 ///
-/// The `elementtiming` attribute flags an element for performance tracking by the 
-/// PerformanceObserver API using the "element" type. It allows developers to measure 
-/// when specific important elements become visible to the user, which is useful for 
+/// The `elementtiming` attribute flags an element for performance tracking by the
+/// PerformanceObserver API using the "element" type. It allows developers to measure
+/// when specific important elements become visible to the user, which is useful for
 /// monitoring and optimizing page performance.
 ///
 /// ## Usage Notes
@@ -62,74 +62,74 @@
 /// ```
 @dynamicMemberLookup
 public struct Elementtiming: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "elementtiming" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "elementtiming" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    /// Initialize with a value for the elementtiming attribute
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a value for the elementtiming attribute
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Elementtiming {
-    /// Create an elementtiming value with a prefixed category for organization
-    public init(category: String, name: String, separator: String = "-") {
-        self.rawValue = "\(category)\(separator)\(name)"
+  /// Create an elementtiming value with a prefixed category for organization
+  public init(category: String, name: String, separator: String = "-") {
+    self.rawValue = "\(category)\(separator)\(name)"
+  }
+
+  /// Common predefined timing categories for semantic naming
+  public struct Category: Sendable, Hashable, ExpressibleByStringLiteral, CustomStringConvertible {
+    public var value: String
+
+    public init(_ value: String) {
+      self.value = value
     }
 
-    /// Common predefined timing categories for semantic naming
-    public struct Category: Sendable, Hashable, ExpressibleByStringLiteral, CustomStringConvertible {
-        public var value: String
-
-        public init(_ value: String) {
-            self.value = value
-        }
-
-        public init(stringLiteral value: StringLiteralType) {
-            self.value = value
-        }
-        /// Main page hero or feature element
-        @inlinable public static var hero: Self { "hero" }
-
-        /// Primary content elements
-        @inlinable public static var main: Self { "main" }
-
-        /// Header elements
-        @inlinable public static var header: Self { "header" }
-
-        /// Navigation elements
-        @inlinable public static var nav: Self { "nav" }
-
-        /// Footer elements
-        @inlinable public static var footer: Self { "footer" }
-
-        /// Image elements
-        @inlinable public static var image: Self { "image" }
-
-        /// Text content elements
-        @inlinable public static var text: Self { "text" }
-
-        /// Interactive elements
-        @inlinable public static var interactive: Self { "interactive" }
-
-        /// Layout or structural elements
-        @inlinable public static var layout: Self { "layout" }
-
-        /// Custom category
-        @inlinable public static var custom: Self { "custom" }
-
-        public var description: String { self.value }
+    public init(stringLiteral value: StringLiteralType) {
+      self.value = value
     }
+    /// Main page hero or feature element
+    @inlinable public static var hero: Self { "hero" }
 
-    /// Create an elementtiming value with a predefined category
-    public init(category: Category, name: String, separator: String = "-") {
-        if category == .custom {
-            self.rawValue = name
-        } else {
-            self.rawValue = "\(category.description)\(separator)\(name)"
-        }
+    /// Primary content elements
+    @inlinable public static var main: Self { "main" }
+
+    /// Header elements
+    @inlinable public static var header: Self { "header" }
+
+    /// Navigation elements
+    @inlinable public static var nav: Self { "nav" }
+
+    /// Footer elements
+    @inlinable public static var footer: Self { "footer" }
+
+    /// Image elements
+    @inlinable public static var image: Self { "image" }
+
+    /// Text content elements
+    @inlinable public static var text: Self { "text" }
+
+    /// Interactive elements
+    @inlinable public static var interactive: Self { "interactive" }
+
+    /// Layout or structural elements
+    @inlinable public static var layout: Self { "layout" }
+
+    /// Custom category
+    @inlinable public static var custom: Self { "custom" }
+
+    public var description: String { self.value }
+  }
+
+  /// Create an elementtiming value with a predefined category
+  public init(category: Category, name: String, separator: String = "-") {
+    if category == .custom {
+      self.rawValue = name
+    } else {
+      self.rawValue = "\(category.description)\(separator)\(name)"
     }
+  }
 }

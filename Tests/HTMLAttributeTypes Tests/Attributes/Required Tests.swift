@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Required Test")
 struct RequiredTests {
-    @Test("Required attribute should be required")
-    func attribute() {
-        #expect(Required.attribute == "required")
-    }
+  @Test("Required attribute should be required")
+  func attribute() {
+    #expect(Required.attribute == "required")
+  }
 }

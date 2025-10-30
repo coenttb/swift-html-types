@@ -32,14 +32,14 @@
 /// ```
 @dynamicMemberLookup
 public struct ShadowRootDelegatesFocus: HTMLBooleanAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "shadowrootdelegatesfocus" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "shadowrootdelegatesfocus" }
 
-    /// The attribute value
-    public var rawValue: Bool
+  /// The attribute value
+  public var rawValue: Bool
 
-    /// Initialize with a boolean value (defaults to true)
-    public init(value: Bool = true) {
-        self.rawValue = value
-    }
+  /// Initialize with a boolean value (defaults to true)
+  public init(value: Bool = true) {
+    self.rawValue = value
+  }
 }

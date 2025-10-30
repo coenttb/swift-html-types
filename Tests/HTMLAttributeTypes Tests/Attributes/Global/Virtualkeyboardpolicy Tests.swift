@@ -10,25 +10,25 @@
 //
 // ===----------------------------------------------------------------------===//
 
-#if canImport(FoundationEssentials)
-import FoundationEssentials
-#elseif canImport(Foundation)
-import Foundation
-#endif
-
 import HTMLAttributeTypes
 import Testing
 
+#if canImport(FoundationEssentials)
+  import FoundationEssentials
+#elseif canImport(Foundation)
+  import Foundation
+#endif
+
 @Suite("Virtualkeyboardpolicy Test")
 struct VirtualkeyboardpolicyTests {
-    @Test("Virtualkeyboardpolicy attribute should be virtualkeyboardpolicy")
-    func attribute() {
-        #expect(Virtualkeyboardpolicy.attribute == "virtualkeyboardpolicy")
-    }
+  @Test("Virtualkeyboardpolicy attribute should be virtualkeyboardpolicy")
+  func attribute() {
+    #expect(Virtualkeyboardpolicy.attribute == "virtualkeyboardpolicy")
+  }
 
-    @Test("Virtualkeyboardpolicy description should match the spec")
-    func description() {
-        #expect(Virtualkeyboardpolicy.auto.description == "auto")
-        #expect(Virtualkeyboardpolicy.manual.description == "manual")
-    }
+  @Test("Virtualkeyboardpolicy description should match the spec")
+  func description() {
+    #expect(Virtualkeyboardpolicy.auto.description == "auto")
+    #expect(Virtualkeyboardpolicy.manual.description == "manual")
+  }
 }

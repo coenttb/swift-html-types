@@ -12,7 +12,7 @@
 
 /// References elements that are not direct descendants of an item in microdata.
 ///
-/// The `itemref` global attribute identifies elements that are not direct descendants of an item 
+/// The `itemref` global attribute identifies elements that are not direct descendants of an item
 /// but still contain properties of that item. This allows microdata properties to be organized
 /// flexibly throughout the document, regardless of DOM structure.
 ///
@@ -24,7 +24,7 @@
 ///
 /// - Only used on elements with the `itemscope` attribute
 /// - Contains a space-separated list of element IDs
-/// - The referenced elements provide additional properties for the item but are not themselves 
+/// - The referenced elements provide additional properties for the item but are not themselves
 ///   considered part of the item node
 /// - Particularly useful for complex layouts where properties may be scattered throughout the document
 /// - Can create circular references (items referencing each other), though parsers must handle this correctly
@@ -77,21 +77,21 @@
 /// ```
 @dynamicMemberLookup
 public struct Itemref: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "itemref" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "itemref" }
 
-    /// The space-separated list of element IDs
-    public let rawValue: String
+  /// The space-separated list of element IDs
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Itemref: ExpressibleByArrayLiteral {
-    public typealias ArrayLiteralElement = String
+  public typealias ArrayLiteralElement = String
 
-    public init(arrayLiteral elements: String...) {
-        self = .init(value: elements.joined(separator: " "))
-    }
+  public init(arrayLiteral elements: String...) {
+    self = .init(value: elements.joined(separator: " "))
+  }
 }

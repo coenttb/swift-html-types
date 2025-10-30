@@ -19,7 +19,7 @@
 /// ## Usage Notes
 ///
 /// ### Supported Elements
-/// 
+///
 /// The required attribute is valid on:
 /// - Text-based `<input>` types: text, search, url, tel, email, password
 /// - Time-based `<input>` types: date, month, week, time, datetime-local
@@ -65,12 +65,12 @@
 /// ```
 @dynamicMemberLookup
 public struct Required: HTMLBooleanAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "required" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "required" }
 
-    public var rawValue: Bool
+  public var rawValue: Bool
 
-    public init(value: Bool = true) {
-        self.rawValue = value
-    }
+  public init(value: Bool = true) {
+    self.rawValue = value
+  }
 }

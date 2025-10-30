@@ -12,20 +12,20 @@
 
 @dynamicMemberLookup
 public struct Ping: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "ping" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "ping" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    /// Initialize with a value for the ping attribute
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a value for the ping attribute
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Ping: ExpressibleByArrayLiteral {
-    public init(arrayLiteral elements: String...) {
-        self.rawValue = elements.joined(separator: " ")
-    }
+  public init(arrayLiteral elements: String...) {
+    self.rawValue = elements.joined(separator: " ")
+  }
 }

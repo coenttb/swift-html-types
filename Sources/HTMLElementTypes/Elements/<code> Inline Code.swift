@@ -14,7 +14,7 @@ import HTMLAttributeTypes
 
 /// Represents an HTML `<code>` element, which displays its contents styled as a fragment of computer code.
 ///
-/// The `Code` element is used to display short fragments of computer code or programming language syntax. 
+/// The `Code` element is used to display short fragments of computer code or programming language syntax.
 /// By default, browsers display the content of a `<code>` element using a monospace font.
 ///
 /// ## Example
@@ -37,13 +37,14 @@ import HTMLAttributeTypes
 /// - The element can be styled with CSS to enhance readability (background color, padding, etc.).
 ///
 public struct Code: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "code" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "code" }
 
-    /// Creates a new Code element.
-    public init(
+  /// Creates a new Code element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

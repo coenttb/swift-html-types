@@ -16,8 +16,8 @@ import HTMLAttributeTypes
 ///
 /// The `Main` struct provides a type-safe way to create HTML main elements.
 ///
-/// The content of a `<main>` element should be unique to the document. Content that is repeated across a set of 
-/// documents or document sections such as sidebars, navigation links, copyright information, site logos, and 
+/// The content of a `<main>` element should be unique to the document. Content that is repeated across a set of
+/// documents or document sections such as sidebars, navigation links, copyright information, site logos, and
 /// search forms shouldn't be included unless the search form is the main function of the page.
 ///
 /// A document mustn't have more than one `<main>` element that doesn't have the `hidden` attribute specified.
@@ -49,13 +49,14 @@ import HTMLAttributeTypes
 ///   content into a specialized reader view.
 ///
 public struct Main: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "main" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "main" }
 
-    /// Creates a new Main element.
-    public init(
+  /// Creates a new Main element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

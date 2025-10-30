@@ -28,37 +28,37 @@
 /// ```
 @dynamicMemberLookup
 public struct FontSize: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "size" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "size" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    /// Initialize with a value for the size attribute
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a value for the size attribute
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension FontSize: ExpressibleByIntegerLiteral {
-    public init(integerLiteral value: IntegerLiteralType) {
-        self.init(numericValue: value)
-    }
+  public init(integerLiteral value: IntegerLiteralType) {
+    self.init(numericValue: value)
+  }
 }
 
 extension FontSize {
-    /// Initialize with a numeric value (1-7)
-    public init(numericValue: Int) {
-        precondition(numericValue >= 1 && numericValue <= 7, "Font size must be between 1 and 7")
-        self.rawValue = String(numericValue)
-    }
+  /// Initialize with a numeric value (1-7)
+  public init(numericValue: Int) {
+    precondition(numericValue >= 1 && numericValue <= 7, "Font size must be between 1 and 7")
+    self.rawValue = String(numericValue)
+  }
 
-    /// Initialize with a relative value
-    public init(relativeValue: Int) {
-        if relativeValue > 0 {
-            self.rawValue = "+\(relativeValue)"
-        } else {
-            self.rawValue = "\(relativeValue)"
-        }
+  /// Initialize with a relative value
+  public init(relativeValue: Int) {
+    if relativeValue > 0 {
+      self.rawValue = "+\(relativeValue)"
+    } else {
+      self.rawValue = "\(relativeValue)"
     }
+  }
 }

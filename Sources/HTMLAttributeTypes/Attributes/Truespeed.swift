@@ -31,14 +31,14 @@
 /// ```
 @dynamicMemberLookup
 public struct Truespeed: HTMLBooleanAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "truespeed" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "truespeed" }
 
-    /// The attribute value
-    public var rawValue: Bool
+  /// The attribute value
+  public var rawValue: Bool
 
-    /// Initialize with a boolean value (defaults to true)
-    public init(value: Bool = true) {
-        self.rawValue = value
-    }
+  /// Initialize with a boolean value (defaults to true)
+  public init(value: Bool = true) {
+    self.rawValue = value
+  }
 }

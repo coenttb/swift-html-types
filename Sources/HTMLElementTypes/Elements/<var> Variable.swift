@@ -10,7 +10,7 @@
 //
 // ===----------------------------------------------------------------------===//
 
-/// Represents an HTML variable element (`<var>`), which represents the name of a variable in a mathematical 
+/// Represents an HTML variable element (`<var>`), which represents the name of a variable in a mathematical
 /// expression or a programming context.
 ///
 /// The `Variable` struct provides a type-safe way to create HTML variable elements for marking up variable names
@@ -67,13 +67,14 @@
 /// across browsers and can be overridden with CSS.
 ///
 public struct Variable: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "var" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "var" }
 
-    /// Creates a new Variable element.
-    public init(
+  /// Creates a new Variable element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

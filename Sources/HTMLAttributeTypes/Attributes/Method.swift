@@ -68,45 +68,45 @@
 /// ```
 @dynamicMemberLookup
 public struct Method: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "method" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "method" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    /// Initialize with a value for the method attribute
-    public init(value: String) {
-        self.rawValue = value.lowercased()
-    }
+  /// Initialize with a value for the method attribute
+  public init(value: String) {
+    self.rawValue = value.lowercased()
+  }
 }
 
 extension Method {
 
-    /// Initialize with a predefined HTTP method
-    public init(_ method: HTTPMethod) {
-        self.rawValue = method.rawValue
-    }
+  /// Initialize with a predefined HTTP method
+  public init(_ method: HTTPMethod) {
+    self.rawValue = method.rawValue
+  }
 
-    /// Predefined HTTP methods for form submission
-    public enum HTTPMethod: String {
-        /// GET method: data appended to the URL
-        case get
-
-        /// POST method: data sent in the request body
-        case post
-
-        /// DIALOG method: for forms inside a dialog element
-        case dialog
-    }
-}
-
-extension Method {
+  /// Predefined HTTP methods for form submission
+  public enum HTTPMethod: String {
     /// GET method: data appended to the URL
-    public static let get: Self = Self(.get)
+    case get
 
     /// POST method: data sent in the request body
-    public static let post: Self = Self(.post)
+    case post
 
     /// DIALOG method: for forms inside a dialog element
-    public static let dialog: Self = Self(.dialog)
+    case dialog
+  }
+}
+
+extension Method {
+  /// GET method: data appended to the URL
+  public static let get: Self = Self(.get)
+
+  /// POST method: data sent in the request body
+  public static let post: Self = Self(.post)
+
+  /// DIALOG method: for forms inside a dialog element
+  public static let dialog: Self = Self(.dialog)
 }

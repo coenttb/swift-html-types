@@ -18,7 +18,7 @@
 ///
 /// This attribute is useful for content that should not be translated, such as brand names, proper
 /// nouns, code samples, or certain technical terms. While not all browsers directly interpret this
-/// attribute, it is respected by automatic translation systems like Google Translate and may be 
+/// attribute, it is respected by automatic translation systems like Google Translate and may be
 /// respected by tools used by human translators.
 ///
 /// ## Values
@@ -73,40 +73,40 @@
 /// Mixed content with selective translation:
 /// ```html
 /// <p>
-///   Please contact our support team at 
-///   <span translate="no">support@example.com</span> 
+///   Please contact our support team at
+///   <span translate="no">support@example.com</span>
 ///   for assistance.
 /// </p>
 /// ```
 @dynamicMemberLookup
 public struct Translate: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "translate" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "translate" }
 
-    public let rawValue: String
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Translate {
-    /// Content should be translated
-    @inlinable public static var yes: Self { "yes" }
+  /// Content should be translated
+  @inlinable public static var yes: Self { "yes" }
 
-    /// Content should not be translated
-    @inlinable public static var no: Self { "no" }
+  /// Content should not be translated
+  @inlinable public static var no: Self { "no" }
 }
 
 extension Translate: ExpressibleByBooleanLiteral {
-    public init(booleanLiteral value: BooleanLiteralType) {
-        switch value {
-        case true: self = .yes
-        case false: self = .no
-        }
+  public init(booleanLiteral value: BooleanLiteralType) {
+    switch value {
+    case true: self = .yes
+    case false: self = .no
     }
+  }
 }
 
 extension Translate: CaseIterable {
-    public static let allCases: [Translate] = [.yes, .no]
+  public static let allCases: [Translate] = [.yes, .no]
 }

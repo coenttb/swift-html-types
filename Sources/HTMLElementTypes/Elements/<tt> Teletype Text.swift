@@ -37,13 +37,14 @@ import HTMLAttributeTypes
 /// - For non-semantic monospace text, use CSS `font-family: monospace` with a `<span>` element
 ///
 public struct TeletypeText: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "tt" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "tt" }
 
-    /// Creates a new TeletypeText element.
-    public init(
+  /// Creates a new TeletypeText element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

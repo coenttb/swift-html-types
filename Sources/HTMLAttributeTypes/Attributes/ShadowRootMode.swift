@@ -39,22 +39,22 @@
 /// ```
 @dynamicMemberLookup
 public struct ShadowRootMode: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "shadowrootmode" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "shadowrootmode" }
 
-    /// The shadow root mode value
-    public var rawValue: String
+  /// The shadow root mode value
+  public var rawValue: String
 
-    /// Initialize with a string value
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a string value
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension ShadowRootMode {
-    /// Exposes the internal shadow root DOM for JavaScript access
-    @inlinable public static var open: Self { "open" }
+  /// Exposes the internal shadow root DOM for JavaScript access
+  @inlinable public static var open: Self { "open" }
 
-    /// Hides the internal shadow root DOM from JavaScript access
-    @inlinable public static var closed: Self { "closed" }
+  /// Hides the internal shadow root DOM from JavaScript access
+  @inlinable public static var closed: Self { "closed" }
 }

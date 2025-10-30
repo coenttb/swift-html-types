@@ -25,12 +25,12 @@
 @available(*, deprecated)
 @dynamicMemberLookup
 public struct Compact: HTMLBooleanAttribute, CustomStringConvertible {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "compact" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "compact" }
 
-    public var rawValue: Bool
+  public var rawValue: Bool
 
-    public init(value: Bool = true) {
-        self.rawValue = value
-    }
+  public init(value: Bool = true) {
+    self.rawValue = value
+  }
 }

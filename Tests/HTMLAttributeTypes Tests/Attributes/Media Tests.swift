@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Media Test")
 struct MediaTests {
-    @Test("Media attribute should be media")
-    func attribute() {
-        #expect(Media.attribute == "media")
-    }
+  @Test("Media attribute should be media")
+  func attribute() {
+    #expect(Media.attribute == "media")
+  }
 }

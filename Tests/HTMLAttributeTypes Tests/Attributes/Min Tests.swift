@@ -16,25 +16,25 @@ import Testing
 
 @Suite("Min Test")
 struct MinTests {
-    @Test("Min attribute should be min")
-    func attribute() {
-        #expect(Min.attribute == "min")
-    }
+  @Test("Min attribute should be min")
+  func attribute() {
+    #expect(Min.attribute == "min")
+  }
 
-    @Test("Min should support integer literal")
-    func integerLiteral() {
-        let min: Min = 0
-        #expect(min.rawValue == "0")
-    }
+  @Test("Min should support integer literal")
+  func integerLiteral() {
+    let min: Min = 0
+    #expect(min.rawValue == "0")
+  }
 
-    @Test("Min should support float literal")
-    func floatLiteral() {
-        let min: Min = 1.5
-        #expect(min.rawValue == "1.5")
-    }
+  @Test("Min should support float literal")
+  func floatLiteral() {
+    let min: Min = 1.5
+    #expect(min.rawValue == "1.5")
+  }
 
-    @Test("Min zero convenience property")
-    func zeroProperty() {
-        #expect(Min.zero.rawValue == "0")
-    }
+  @Test("Min zero convenience property")
+  func zeroProperty() {
+    #expect(Min.zero.rawValue == "0")
+  }
 }

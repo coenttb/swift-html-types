@@ -15,8 +15,8 @@ import HTMLAttributeTypes
 /// Represents an HTML table head element (`<thead>`), which encapsulates a set of table rows
 /// that comprise the head of a table with information about the table's columns.
 ///
-/// The `TableHead` struct provides a type-safe way to create HTML table head elements that 
-/// define a semantic section for column headers in a table. This is important for both 
+/// The `TableHead` struct provides a type-safe way to create HTML table head elements that
+/// define a semantic section for column headers in a table. This is important for both
 /// accessibility and proper table rendering.
 ///
 /// ## Example
@@ -50,13 +50,14 @@ import HTMLAttributeTypes
 /// - For complex tables, consider using multiple header rows within a single `<thead>` element
 ///
 public struct TableHead: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "thead" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "thead" }
 
-    /// Creates a new TableHead element.
-    public init(
+  /// Creates a new TableHead element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

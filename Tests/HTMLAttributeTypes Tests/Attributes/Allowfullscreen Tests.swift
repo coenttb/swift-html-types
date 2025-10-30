@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Allowfullscreen Test")
 struct AllowfullscreenTests {
-    @Test("Allowfullscreen attribute should be allowfullscreen")
-    func attribute() {
-        #expect(Allowfullscreen.attribute == "allowfullscreen")
-    }
+  @Test("Allowfullscreen attribute should be allowfullscreen")
+  func attribute() {
+    #expect(Allowfullscreen.attribute == "allowfullscreen")
+  }
 }

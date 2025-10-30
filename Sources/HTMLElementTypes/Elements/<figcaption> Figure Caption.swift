@@ -12,7 +12,7 @@
 
 import HTMLAttributeTypes
 
-/// Represents an HTML figure caption element (`<figcaption>`), which provides a caption or legend describing the contents of its 
+/// Represents an HTML figure caption element (`<figcaption>`), which provides a caption or legend describing the contents of its
 /// parent `<figure>` element, giving the figure an accessible description.
 ///
 /// The `FigureCaption` struct provides a type-safe way to create HTML figure caption elements.
@@ -35,13 +35,14 @@ import HTMLAttributeTypes
 /// - Only include one `<figcaption>` per `<figure>` element
 ///
 public struct FigureCaption: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "figcaption" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "figcaption" }
 
-    /// Creates a new FigureCaption element.
-    public init(
+  /// Creates a new FigureCaption element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

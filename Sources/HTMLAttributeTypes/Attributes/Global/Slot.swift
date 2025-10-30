@@ -83,13 +83,13 @@
 /// ```
 @dynamicMemberLookup
 public struct Slot: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "slot" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "slot" }
 
-    /// The name of the slot to assign the element to
-    public let rawValue: String
+  /// The name of the slot to assign the element to
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }

@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Novalidate Test")
 struct NovalidateTests {
-    @Test("Novalidate attribute should be novalidate")
-    func attribute() {
-        #expect(Novalidate.attribute == "novalidate")
-    }
+  @Test("Novalidate attribute should be novalidate")
+  func attribute() {
+    #expect(Novalidate.attribute == "novalidate")
+  }
 }

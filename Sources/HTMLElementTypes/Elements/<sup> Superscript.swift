@@ -12,7 +12,7 @@
 
 import HTMLAttributeTypes
 
-/// Represents an HTML superscript element (`<sup>`), which specifies inline text 
+/// Represents an HTML superscript element (`<sup>`), which specifies inline text
 /// to be displayed as superscript for typographical reasons.
 ///
 /// Superscripts are usually rendered with a raised baseline using smaller text.
@@ -27,8 +27,8 @@ import HTMLAttributeTypes
 ///
 /// ## Usage Notes
 ///
-/// The superscript element should only be used for typographical reasons—that is, 
-/// to change the position of the text to comply with typographical conventions 
+/// The superscript element should only be used for typographical reasons—that is,
+/// to change the position of the text to comply with typographical conventions
 /// or standards, rather than solely for presentation or appearance purposes.
 ///
 /// Appropriate use cases include:
@@ -39,13 +39,14 @@ import HTMLAttributeTypes
 /// For purely presentational superscript, consider using CSS `vertical-align: super` instead.
 ///
 public struct Superscript: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "sup" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "sup" }
 
-    /// Creates a new superscript element.
-    public init(
+  /// Creates a new superscript element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

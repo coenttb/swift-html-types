@@ -16,13 +16,13 @@ import Testing
 
 @Suite("Blocking Test")
 struct BlockingTests {
-    @Test("Blocking attribute should be blocking")
-    func attribute() {
-        #expect(Blocking.attribute == "blocking")
-    }
+  @Test("Blocking attribute should be blocking")
+  func attribute() {
+    #expect(Blocking.attribute == "blocking")
+  }
 
-    @Test("Blocking should have render preset")
-    func renderPreset() {
-        #expect(Blocking.render.rawValue == "render")
-    }
+  @Test("Blocking should have render preset")
+  func renderPreset() {
+    #expect(Blocking.render.rawValue == "render")
+  }
 }

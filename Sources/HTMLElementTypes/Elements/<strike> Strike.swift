@@ -34,13 +34,14 @@ import HTMLAttributeTypes
 /// - Consider using CSS `text-decoration: line-through` for styling purposes instead.
 ///
 public struct Strike: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "strike" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "strike" }
 
-    /// Creates a new Strike element.
-    public init(
+  /// Creates a new Strike element.
+  public init(
 
-    ) {
+    )
+  {
 
-    }
+  }
 }

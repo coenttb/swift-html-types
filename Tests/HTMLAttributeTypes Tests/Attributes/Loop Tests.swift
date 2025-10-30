@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Loop Test")
 struct LoopTests {
-    @Test("Loop attribute should be loop")
-    func attribute() {
-        #expect(Loop.attribute == "loop")
-    }
+  @Test("Loop attribute should be loop")
+  func attribute() {
+    #expect(Loop.attribute == "loop")
+  }
 }

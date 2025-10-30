@@ -16,8 +16,8 @@ import Testing
 
 @Suite("ObjectForm Test")
 struct ObjectFormTests {
-    @Test("ObjectForm attribute should be form")
-    func attribute() {
-        #expect(ObjectForm.attribute == "form")
-    }
+  @Test("ObjectForm attribute should be form")
+  func attribute() {
+    #expect(ObjectForm.attribute == "form")
+  }
 }

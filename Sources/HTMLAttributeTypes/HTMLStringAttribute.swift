@@ -10,38 +10,40 @@
 //
 // ===----------------------------------------------------------------------===//
 
-public protocol HTMLStringAttribute: HTMLAttribute, CustomStringConvertible, ExpressibleByStringLiteral, ExpressibleByStringInterpolation, RawRepresentable {
-    var rawValue: String { get }
+public protocol HTMLStringAttribute: HTMLAttribute, CustomStringConvertible,
+  ExpressibleByStringLiteral, ExpressibleByStringInterpolation, RawRepresentable
+{
+  var rawValue: String { get }
 
-    init(value: String)
+  init(value: String)
 }
 
 extension HTMLStringAttribute {
-    public init?(rawValue value: String) {
-        self = .init(value: value)
-    }
+  public init?(rawValue value: String) {
+    self = .init(value: value)
+  }
 }
 
 extension HTMLStringAttribute {
-    public init(_ value: String) {
-        self = .init(value: value)
-    }
+  public init(_ value: String) {
+    self = .init(value: value)
+  }
 }
 
 extension HTMLStringAttribute {
-    public init(stringLiteral value: String) {
-        self = .init(value: value)
-    }
+  public init(stringLiteral value: String) {
+    self = .init(value: value)
+  }
 }
 
 extension HTMLStringAttribute {
-    public var description: String {
-        rawValue
-    }
+  public var description: String {
+    rawValue
+  }
 }
 
 extension HTMLStringAttribute {
-    public subscript<T>(dynamicMember keyPath: KeyPath<String, T>) -> T {
-        self.rawValue[keyPath: keyPath]
-    }
+  public subscript<T>(dynamicMember keyPath: KeyPath<String, T>) -> T {
+    self.rawValue[keyPath: keyPath]
+  }
 }

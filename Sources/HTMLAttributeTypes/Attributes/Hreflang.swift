@@ -13,11 +13,11 @@
 @dynamicMemberLookup
 public struct Hreflang: HTMLStringAttribute {
 
-    @inlinable public static var attribute: String { "hreflang" }
+  @inlinable public static var attribute: String { "hreflang" }
 
-    public let rawValue: String
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }

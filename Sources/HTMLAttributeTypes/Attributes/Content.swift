@@ -12,13 +12,13 @@
 
 @dynamicMemberLookup
 public struct Content: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "content" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "content" }
 
-    /// The field name that will contain the directionality information
-    public let rawValue: String
+  /// The field name that will contain the directionality information
+  public let rawValue: String
 
-    public init(value: String) {
-        self.rawValue = value
-    }
+  public init(value: String) {
+    self.rawValue = value
+  }
 }

@@ -43,20 +43,20 @@ import HTMLAttributeTypes
 /// - If the element doesn't have a `datetime` attribute, the content must be in a valid datetime format
 ///
 public struct Time: HTMLElement {
-    /// The HTML tag name
-    @inlinable public static var tag: String { "time" }
+  /// The HTML tag name
+  @inlinable public static var tag: String { "time" }
 
-    /// The datetime attribute that provides a machine-readable format of the date and/or time
-    public var datetime: HTMLAttributeTypes.DateTime?
+  /// The datetime attribute that provides a machine-readable format of the date and/or time
+  public var datetime: HTMLAttributeTypes.DateTime?
 
-    /// Creates a new Time element with the specified attributes.
-    ///
-    /// - Parameters:
-    ///   - datetime: A machine-readable representation of the date or time, typically a human-readable date or time
-    public init(
-        datetime: HTMLAttributeTypes.DateTime? = nil
-    ) {
-        self.datetime = datetime
+  /// Creates a new Time element with the specified attributes.
+  ///
+  /// - Parameters:
+  ///   - datetime: A machine-readable representation of the date or time, typically a human-readable date or time
+  public init(
+    datetime: HTMLAttributeTypes.DateTime? = nil
+  ) {
+    self.datetime = datetime
 
-    }
+  }
 }

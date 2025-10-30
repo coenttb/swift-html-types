@@ -50,24 +50,24 @@ import HTMLAttributeTypes
 ///
 /// - Note: When rendered, this generates an HTML `<label>` element that improves form accessibility.
 public struct Label: HTMLElement {
-    @inlinable public static var tag: String { "label" }
+  @inlinable public static var tag: String { "label" }
 
-    /// Associates the label with a form control using its ID.
-    ///
-    /// When specified, this attribute creates an explicit relationship between
-    /// the label and a form control. The value should match the ID of the form control.
-    /// A label can only be associated with one form control, but a form control
-    /// can have multiple associated labels.
-    public var `for`: For?
+  /// Associates the label with a form control using its ID.
+  ///
+  /// When specified, this attribute creates an explicit relationship between
+  /// the label and a form control. The value should match the ID of the form control.
+  /// A label can only be associated with one form control, but a form control
+  /// can have multiple associated labels.
+  public var `for`: For?
 
-    /// Creates a new Label element with optional explicit association.
-    ///
-    /// - Parameters:
-    ///   - htmlFor: ID of the form control this label is associated with (optional)
-    public init(
-        for: For? = nil
-    ) {
-        self.for = `for`
+  /// Creates a new Label element with optional explicit association.
+  ///
+  /// - Parameters:
+  ///   - htmlFor: ID of the form control this label is associated with (optional)
+  public init(
+    for: For? = nil
+  ) {
+    self.for = `for`
 
-    }
+  }
 }

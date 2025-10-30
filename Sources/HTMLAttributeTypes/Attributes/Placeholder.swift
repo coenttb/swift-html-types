@@ -47,31 +47,31 @@
 /// ```
 @dynamicMemberLookup
 public struct Placeholder: HTMLStringAttribute {
-    /// The name of the HTML attribute
-    @inlinable public static var attribute: String { "placeholder" }
+  /// The name of the HTML attribute
+  @inlinable public static var attribute: String { "placeholder" }
 
-    /// The attribute value
-    public let rawValue: String
+  /// The attribute value
+  public let rawValue: String
 
-    /// Initialize with a value for the placeholder attribute
-    public init(value: String) {
-        self.rawValue = value
-    }
+  /// Initialize with a value for the placeholder attribute
+  public init(value: String) {
+    self.rawValue = value
+  }
 }
 
 extension Placeholder {
-    /// Example email address placeholder
-    @inlinable public static var email: Self { "email" }
+  /// Example email address placeholder
+  @inlinable public static var email: Self { "email" }
 
-    /// Example phone number placeholder
-    @inlinable public static var phone: Self { "phone" }
+  /// Example phone number placeholder
+  @inlinable public static var phone: Self { "phone" }
 
-    /// Example name placeholder
-    @inlinable public static var name: Self { "name" }
+  /// Example name placeholder
+  @inlinable public static var name: Self { "name" }
 
-    /// Example search placeholder
-    @inlinable public static var search: Self { "search" }
+  /// Example search placeholder
+  @inlinable public static var search: Self { "search" }
 
-    /// Example URL placeholder
-    @inlinable public static var url: Self { "url" }
+  /// Example URL placeholder
+  @inlinable public static var url: Self { "url" }
 }
