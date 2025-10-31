@@ -9,7 +9,7 @@ on:
 jobs:
   swiftlint:
     name: Check Code Quality
-    runs-on: macos-26
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
 
