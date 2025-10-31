@@ -97,11 +97,12 @@ Each input type exposes only the attributes that are semantically valid for that
 - Swift 5.9+
 - macOS 14.0+ / iOS 17.0+ / Linux
 
-## Related Projects
+## Related Packages
 
-- [swift-html](https://www.github.com/coenttb/swift-html): The Swift library for domain-accurate and type-safe HTML & CSS.
-- [swift-css-types](https://www.github.com/coenttb/swift-css-types): A Swift package with foundational types for CSS.
-- [coenttb-com-server](https://www.github.com/coenttb/coenttb-com-server): Production server for coenttb.com built with Boiler.
+### Used By
+
+- [swift-html](https://github.com/coenttb/swift-html): The Swift library for domain-accurate and type-safe HTML & CSS.
+- [swift-html-css-pointfree](https://github.com/coenttb/swift-html-css-pointfree): A Swift package integrating swift-html-types and swift-css-types with pointfree-html.
 
 ## Contributing
 
