@@ -12,17 +12,36 @@ concurrency:
 jobs:
   swift_format:
     name: swift-format
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v5
 
-      - name: Install swift-format
-        run: brew install swift-format
+      - uses: swift-actions/setup-swift@v2
+        with:
+          swift-version: '6.0'
+
+      - name: Cache swift-format
+        id: cache-swift-format
+        uses: actions/cache@v4
+        with:
+          path: .build/swift-format
+          key: ${{ runner.os }}-swift-format-${{ hashFiles('.github/workflows/swift-format.yml') }}
+
+      - name: Build swift-format
+        if: steps.cache-swift-format.outputs.cache-hit != 'true'
+        run: |
+          git clone --depth 1 --branch main https://github.com/apple/swift-format.git
+          cd swift-format
+          swift build -c release
+          mkdir -p ../.build
+          cp .build/release/swift-format ../.build/swift-format
+          cd ..
+          rm -rf swift-format
 
       - name: Format
-        run: swift-format format --ignore-unparsable-files --recursive --in-place Sources Tests
+        run: .build/swift-format format --ignore-unparsable-files --recursive --in-place Sources Tests
 
       - uses: stefanzweifel/git-auto-commit-action@v7
         with:
