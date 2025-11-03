@@ -14,10 +14,10 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Primary development workflow: Latest Swift on macOS with debug build
-  # Includes README validation for fast feedback on development machines
-  macos-latest:
-    name: macOS (Swift 6.2, debug)
+  # Primary development workflow: Latest Swift on macOS & iOS
+  # Tests both macOS and iOS platforms for compatibility
+  macos-ios-latest:
+    name: macOS & iOS (Swift 6.2, debug)
     runs-on: macos-26
     steps:
       - uses: actions/checkout@v5
@@ -36,14 +36,18 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-spm-
 
-      - name: Build
-        run: swift build -c debug
-
-      - name: Run tests
+      # macOS tests (using swift test - builds automatically)
+      - name: Test on macOS
         run: swift test -c debug
 
-      - name: Run README verification tests
-        run: swift test --filter ReadmeVerificationTests
+      # iOS validation (ensures no platform-specific issues)
+      - name: Test on iOS Simulator
+        run: |
+          xcodebuild test \
+            -scheme HTMLTypes \
+            -destination 'platform=iOS Simulator,name=iPhone 16 Pro' \
+            -configuration debug \
+            -enableCodeCoverage NO
 
   # Production validation: Latest Swift on Linux with release build
   linux-latest:
@@ -60,10 +64,8 @@ jobs:
           key: ${{ runner.os }}-spm-${{ hashFiles('Package.resolved') }}
           restore-keys: ${{ runner.os }}-spm-
 
-      - name: Build
-        run: swift build -c release
-
-      - name: Run tests
+      # Note: swift test builds automatically in release mode
+      - name: Test (release)
         run: swift test -c release
 
   # Compatibility check: Minimum supported Swift version (6.0)
@@ -82,13 +84,11 @@ jobs:
           key: ${{ runner.os }}-swift60-spm-${{ hashFiles('Package.resolved') }}
           restore-keys: ${{ runner.os }}-swift60-spm-
 
-      - name: Build
-        run: swift build -c release
-
-      - name: Run tests
+      # Note: swift test builds automatically
+      - name: Test (Swift 6.0)
         run: swift test -c release
 
-  # Documentation generation (keep if you're publishing docs)
+  # Documentation generation
   documentation:
     name: Documentation
     runs-on: macos-26
