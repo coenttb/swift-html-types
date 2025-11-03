@@ -73,7 +73,8 @@ let package = Package(
         .testTarget(
             name: .htmlElementTypes.tests,
             dependencies: [
-                .htmlElementTypes
+                .htmlElementTypes,
+                .htmlElementTypesFoundation
             ]
         ),
         .target(
