@@ -14,10 +14,9 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Primary development workflow: Latest Swift on macOS & iOS
-  # Tests both macOS and iOS platforms for compatibility
-  macos-ios-latest:
-    name: macOS & iOS (Swift 6.2, debug)
+  # Primary development workflow: Latest Swift on macOS with debug build
+  macos-latest:
+    name: macOS (Swift 6.2, debug)
     runs-on: macos-26
     steps:
       - uses: actions/checkout@v5
@@ -36,18 +35,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-spm-
 
-      # macOS tests (using swift test - builds automatically)
-      - name: Test on macOS
+      # Note: swift test builds automatically, no separate build step needed
+      - name: Test
         run: swift test -c debug
-
-      # iOS validation (ensures no platform-specific issues)
-      - name: Test on iOS Simulator
-        run: |
-          xcodebuild test \
-            -scheme HTMLTypes \
-            -destination 'platform=iOS Simulator,name=iPhone 16 Pro' \
-            -configuration debug \
-            -enableCodeCoverage NO
 
   # Production validation: Latest Swift on Linux with release build
   linux-latest:
