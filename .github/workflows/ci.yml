@@ -77,24 +77,3 @@ jobs:
       # Note: swift test builds automatically
       - name: Test (Swift 6.0)
         run: swift test -c release
-
-  # Documentation generation
-  documentation:
-    name: Documentation
-    runs-on: macos-26
-    steps:
-      - uses: actions/checkout@v5
-
-      - name: Select Xcode
-        run: sudo xcode-select -s /Applications/Xcode_26.0.app
-
-      - name: Build documentation
-        run: |
-          swift package \
-            --allow-writing-to-directory ./docs \
-            generate-documentation \
-            --target HTMLTypes \
-            --output-path ./docs \
-            --transform-for-static-hosting \
-            --hosting-base-path swift-html-types
-        continue-on-error: true
