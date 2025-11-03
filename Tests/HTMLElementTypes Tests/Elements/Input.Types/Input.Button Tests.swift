@@ -11,7 +11,6 @@
 // ===----------------------------------------------------------------------===//
 
 import Foundation
-import HTMLElementTypesFoundation
 import Testing
 
 @Suite("Input.Button Test")
