@@ -13,6 +13,7 @@ jobs:
   swift_format:
     name: swift-format
     runs-on: ubuntu-latest
+    container: swift:6.2
     permissions:
       contents: write
     steps:
@@ -21,32 +22,27 @@ jobs:
           ref: ${{ github.head_ref || github.ref_name }}
 
       - name: Configure git safe directory
-        run: git config --global --add safe.directory $PWD
-
-      - uses: swift-actions/setup-swift@v2
-        with:
-          swift-version: '6.0'
+        run: git config --global --add safe.directory /__w/swift-html-types/swift-html-types
 
       - name: Restore swift-format cache
         id: cache-swift-format-restore
         uses: actions/cache/restore@v4
         with:
-          path: .build/swift-format
+          path: /usr/local/bin/swift-format
           key: ${{ runner.os }}-swift-format-main-v1
 
-      - name: Build swift-format
+      - name: Install swift-format
         if: steps.cache-swift-format-restore.outputs.cache-hit != 'true'
         run: |
           git clone --depth 1 --branch main https://github.com/apple/swift-format.git
           cd swift-format
           swift build -c release
-          mkdir -p ../.build
-          cp .build/release/swift-format ../.build/swift-format
+          cp .build/release/swift-format /usr/local/bin/
           cd ..
           rm -rf swift-format
 
       - name: Format
-        run: .build/swift-format format --ignore-unparsable-files --recursive --in-place Sources Tests
+        run: swift-format format --recursive --in-place --ignore-unparsable-files Sources Tests
 
       - uses: stefanzweifel/git-auto-commit-action@v7
         with:
@@ -57,5 +53,5 @@ jobs:
         uses: actions/cache/save@v4
         if: steps.cache-swift-format-restore.outputs.cache-hit != 'true'
         with:
-          path: .build/swift-format
+          path: /usr/local/bin/swift-format
           key: ${{ runner.os }}-swift-format-main-v1
