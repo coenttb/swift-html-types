@@ -107,7 +107,7 @@ let package = Package(
             ]
         )
     ],
-    swiftLanguageModes: [.v5]
+    swiftLanguageModes: [.v6]
 )
 
 extension String { var tests: Self { "\(self) Tests" } }
