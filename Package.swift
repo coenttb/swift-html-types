@@ -106,8 +106,7 @@ let package = Package(
                 .htmlElementTypesFoundation
             ]
         )
-    ],
-    swiftLanguageModes: [.v6]
+    ]
 )
 
 extension String { var tests: Self { "\(self) Tests" } }
