@@ -1,4 +1,4 @@
-// swift-tools-version:5.9
+// swift-tools-version:6.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -23,13 +23,6 @@ extension Target.Dependency {
 
 let package = Package(
     name: "swift-html-types",
-    platforms: [
-        .macOS(.v13),
-        .iOS(.v16),
-        .tvOS(.v16),
-        .watchOS(.v9),
-        .visionOS(.v1)
-    ],
     products: [
         .library(name: .htmlTypes, targets: [.htmlTypes]),
         .library(name: .htmlTypesFoundation, targets: [.htmlTypesFoundation]),

@@ -5,7 +5,6 @@
 //  Created by Coen ten Thije Boonkkamp on 11/07/2025.
 //
 
-import Foundation
 import HTMLAttributeTypes
 
 extension Input.Variant {
