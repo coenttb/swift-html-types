@@ -40,14 +40,14 @@ import HTMLAttributeTypes
 ///   or `generic` (when nested within article, aside, main, nav, or section)
 /// - For legacy browser support, consider adding `role="contentinfo"` explicitly
 public struct Footer: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "footer" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "footer" }
 
-  /// Creates a new Footer element.
-  public init(
+    /// Creates a new Footer element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

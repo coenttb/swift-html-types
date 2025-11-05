@@ -16,14 +16,14 @@ import Testing
 
 @Suite("MarginHeight Test")
 struct MarginHeightTests {
-  @Test("MarginHeight attribute should be marginheight")
-  func attribute() {
-    #expect(MarginHeight.attribute == "marginheight")
-  }
+    @Test("MarginHeight attribute should be marginheight")
+    func attribute() {
+        #expect(MarginHeight.attribute == "marginheight")
+    }
 
-  @Test("MarginHeight should support integer literal")
-  func integerLiteral() {
-    let marginHeight: MarginHeight = 10
-    #expect(marginHeight.rawValue == "10")
-  }
+    @Test("MarginHeight should support integer literal")
+    func integerLiteral() {
+        let marginHeight: MarginHeight = 10
+        #expect(marginHeight.rawValue == "10")
+    }
 }

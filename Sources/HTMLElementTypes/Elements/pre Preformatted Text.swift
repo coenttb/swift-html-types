@@ -46,14 +46,14 @@ import HTMLAttributeTypes
 /// - Remember that < characters may need to be escaped as &lt; in the content
 ///
 public struct PreformattedText: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "pre" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "pre" }
 
-  /// Creates a new PreformattedText element.
-  public init(
+    /// Creates a new PreformattedText element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

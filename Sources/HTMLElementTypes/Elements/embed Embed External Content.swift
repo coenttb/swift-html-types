@@ -36,37 +36,37 @@ import HTMLAttributeTypes
 /// - Consider using more modern elements like `<video>`, `<audio>`, or `<iframe>` when possible.
 ///
 public struct Embed: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "embed" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "embed" }
 
-  /// The URL of the resource being embedded
-  public var src: HTMLAttributeTypes.Src?
+    /// The URL of the resource being embedded
+    public var src: HTMLAttributeTypes.Src?
 
-  /// The MIME type to use to select the plug-in to instantiate
-  public var type: HTMLAttributeTypes.ScriptType?
+    /// The MIME type to use to select the plug-in to instantiate
+    public var type: HTMLAttributeTypes.ScriptType?
 
-  /// The displayed height of the resource in CSS pixels
-  public var height: HTMLAttributeTypes.Height?
+    /// The displayed height of the resource in CSS pixels
+    public var height: HTMLAttributeTypes.Height?
 
-  /// The displayed width of the resource in CSS pixels
-  public var width: HTMLAttributeTypes.Width?
+    /// The displayed width of the resource in CSS pixels
+    public var width: HTMLAttributeTypes.Width?
 
-  /// Creates a new Embed element with the specified attributes.
-  ///
-  /// - Parameters:
-  ///   - src: The URL of the resource being embedded
-  ///   - type: The MIME type to use to select the plug-in to instantiate
-  ///   - width: The displayed width of the resource in CSS pixels
-  ///   - height: The displayed height of the resource in CSS pixels
-  public init(
-    src: HTMLAttributeTypes.Src? = nil,
-    type: HTMLAttributeTypes.ScriptType? = nil,
-    width: HTMLAttributeTypes.Width? = nil,
-    height: HTMLAttributeTypes.Height? = nil
-  ) {
-    self.src = src
-    self.type = type
-    self.width = width
-    self.height = height
-  }
+    /// Creates a new Embed element with the specified attributes.
+    ///
+    /// - Parameters:
+    ///   - src: The URL of the resource being embedded
+    ///   - type: The MIME type to use to select the plug-in to instantiate
+    ///   - width: The displayed width of the resource in CSS pixels
+    ///   - height: The displayed height of the resource in CSS pixels
+    public init(
+        src: HTMLAttributeTypes.Src? = nil,
+        type: HTMLAttributeTypes.ScriptType? = nil,
+        width: HTMLAttributeTypes.Width? = nil,
+        height: HTMLAttributeTypes.Height? = nil
+    ) {
+        self.src = src
+        self.type = type
+        self.width = width
+        self.height = height
+    }
 }

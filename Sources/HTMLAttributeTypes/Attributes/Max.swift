@@ -63,46 +63,46 @@
 /// ```
 @dynamicMemberLookup
 public struct Max: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "max" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "max" }
 
-  /// The attribute value
-  public let rawValue: String
+    /// The attribute value
+    public let rawValue: String
 
-  /// Initialize with a value for the max attribute
-  public init(value: String) {
-    self.rawValue = value
-  }
+    /// Initialize with a value for the max attribute
+    public init(value: String) {
+        self.rawValue = value
+    }
 }
 
 extension Max {
-  /// Date format types for the max attribute
-  public enum DateFormat {
-    /// Full date (yyyy-MM-dd)
-    case fullDate
+    /// Date format types for the max attribute
+    public enum DateFormat {
+        /// Full date (yyyy-MM-dd)
+        case fullDate
 
-    /// Month only (yyyy-MM)
-    case month
+        /// Month only (yyyy-MM)
+        case month
 
-    /// Week (yyyy-Www)
-    case week
+        /// Week (yyyy-Www)
+        case week
 
-    /// Time (HH:mm)
-    case time
+        /// Time (HH:mm)
+        case time
 
-    /// Local date and time (yyyy-MM-ddTHH:mm)
-    case dateTimeLocal
-  }
+        /// Local date and time (yyyy-MM-ddTHH:mm)
+        case dateTimeLocal
+    }
 }
 
 extension Max: ExpressibleByIntegerLiteral {
-  public init(integerLiteral value: IntegerLiteralType) {
-    self.rawValue = String(value)
-  }
+    public init(integerLiteral value: IntegerLiteralType) {
+        self.rawValue = String(value)
+    }
 }
 
 extension Max: ExpressibleByFloatLiteral {
-  public init(floatLiteral value: FloatLiteralType) {
-    self.rawValue = String(value)
-  }
+    public init(floatLiteral value: FloatLiteralType) {
+        self.rawValue = String(value)
+    }
 }

@@ -16,8 +16,8 @@ import Testing
 
 @Suite("ObjectData Test")
 struct ObjectDataTests {
-  @Test("ObjectData attribute should be data")
-  func attribute() {
-    #expect(ObjectData.attribute == "data")
-  }
+    @Test("ObjectData attribute should be data")
+    func attribute() {
+        #expect(ObjectData.attribute == "data")
+    }
 }

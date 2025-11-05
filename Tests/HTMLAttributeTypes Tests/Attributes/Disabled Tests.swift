@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Disabled Test")
 struct DisabledTests {
-  @Test("Disabled attribute should be disabled")
-  func attribute() {
-    #expect(Disabled.attribute == "disabled")
-  }
+    @Test("Disabled attribute should be disabled")
+    func attribute() {
+        #expect(Disabled.attribute == "disabled")
+    }
 }

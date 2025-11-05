@@ -33,14 +33,14 @@
 /// - A `<noscript>` element cannot contain another `<noscript>` element
 ///
 public struct Noscript: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "noscript" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "noscript" }
 
-  /// Creates a new Noscript element with the specified content.
-  public init(
+    /// Creates a new Noscript element with the specified content.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

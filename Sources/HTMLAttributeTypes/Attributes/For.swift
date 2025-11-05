@@ -50,27 +50,27 @@
 /// ```
 @dynamicMemberLookup
 public struct For: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "for" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "for" }
 
-  /// The value of the for attribute (ID or space-separated list of IDs)
-  public let rawValue: String
+    /// The value of the for attribute (ID or space-separated list of IDs)
+    public let rawValue: String
 
-  /// Initialize with a value for the for attribute
-  public init(value: String) {
-    self.rawValue = value
-  }
+    /// Initialize with a value for the for attribute
+    public init(value: String) {
+        self.rawValue = value
+    }
 
-  /// Initialize with an ID or space-separated list of IDs
-  public init(_ value: String) {
-    self.rawValue = value
-  }
+    /// Initialize with an ID or space-separated list of IDs
+    public init(_ value: String) {
+        self.rawValue = value
+    }
 }
 
 extension For: ExpressibleByArrayLiteral {
-  public typealias ArrayLiteralElement = String
+    public typealias ArrayLiteralElement = String
 
-  public init(arrayLiteral elements: String...) {
-    self.rawValue = elements.joined(separator: " ")
-  }
+    public init(arrayLiteral elements: String...) {
+        self.rawValue = elements.joined(separator: " ")
+    }
 }

@@ -75,24 +75,24 @@
 /// ```
 @dynamicMemberLookup
 public struct Virtualkeyboardpolicy: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "virtualkeyboardpolicy" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "virtualkeyboardpolicy" }
 
-  public let rawValue: String
+    public let rawValue: String
 
-  public init(value: String) {
-    self.rawValue = value
-  }
+    public init(value: String) {
+        self.rawValue = value
+    }
 }
 
 extension Virtualkeyboardpolicy {
-  /// Automatically shows the virtual keyboard when element is focused or tapped
-  @inlinable public static var auto: Self { "auto" }
+    /// Automatically shows the virtual keyboard when element is focused or tapped
+    @inlinable public static var auto: Self { "auto" }
 
-  /// Decouples focus and tap on the element from the virtual keyboard's state
-  @inlinable public static var manual: Self { "manual" }
+    /// Decouples focus and tap on the element from the virtual keyboard's state
+    @inlinable public static var manual: Self { "manual" }
 }
 
 extension Virtualkeyboardpolicy: CaseIterable {
-  public static let allCases: [Virtualkeyboardpolicy] = [.auto, .manual]
+    public static let allCases: [Virtualkeyboardpolicy] = [.auto, .manual]
 }

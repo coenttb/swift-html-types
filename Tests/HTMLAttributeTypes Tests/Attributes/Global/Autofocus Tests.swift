@@ -14,15 +14,15 @@ import HTMLAttributeTypes
 import Testing
 
 #if canImport(FoundationEssentials)
-  import FoundationEssentials
+    import FoundationEssentials
 #elseif canImport(Foundation)
-  import Foundation
+    import Foundation
 #endif
 
 @Suite("Autofocus Test")
 struct AutofocusTests {
-  @Test("Autofocus attribute should be autofocus")
-  func attribute() {
-    #expect(Autofocus.attribute == "autofocus")
-  }
+    @Test("Autofocus attribute should be autofocus")
+    func attribute() {
+        #expect(Autofocus.attribute == "autofocus")
+    }
 }

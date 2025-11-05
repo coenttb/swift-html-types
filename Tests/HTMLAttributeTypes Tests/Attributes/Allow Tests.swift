@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Allow Test")
 struct AllowTests {
-  @Test("Allow attribute should be allow")
-  func attribute() {
-    #expect(Allow.attribute == "allow")
-  }
+    @Test("Allow attribute should be allow")
+    func attribute() {
+        #expect(Allow.attribute == "allow")
+    }
 }

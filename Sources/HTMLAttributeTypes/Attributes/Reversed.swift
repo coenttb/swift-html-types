@@ -26,14 +26,14 @@
 /// ```
 @dynamicMemberLookup
 public struct Reversed: HTMLBooleanAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "reversed" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "reversed" }
 
-  /// The attribute value
-  public var rawValue: Bool
+    /// The attribute value
+    public var rawValue: Bool
 
-  /// Initialize with a boolean value
-  public init(value: Bool = true) {
-    self.rawValue = value
-  }
+    /// Initialize with a boolean value
+    public init(value: Bool = true) {
+        self.rawValue = value
+    }
 }

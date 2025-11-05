@@ -48,14 +48,14 @@ import HTMLAttributeTypes
 /// - Avoid deprecated attributes like `align`, `bgcolor`, `char`, `charoff`, and `valign`; use CSS instead
 ///
 public struct TableRow: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "tr" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "tr" }
 
-  /// Creates a new TableRow element.
-  public init(
+    /// Creates a new TableRow element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

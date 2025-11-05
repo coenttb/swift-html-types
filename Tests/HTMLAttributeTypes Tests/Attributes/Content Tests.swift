@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Content Test")
 struct ContentTests {
-  @Test("Content attribute should be content")
-  func attribute() {
-    #expect(Content.attribute == "content")
-  }
+    @Test("Content attribute should be content")
+    func attribute() {
+        #expect(Content.attribute == "content")
+    }
 }

@@ -47,14 +47,14 @@ import HTMLAttributeTypes
 ///   will strip roles from child elements, which may impact screen reader users.
 ///
 public struct DisclosureSummary: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "summary" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "summary" }
 
-  /// Creates a new DisclosureSummary element.
-  public init(
+    /// Creates a new DisclosureSummary element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

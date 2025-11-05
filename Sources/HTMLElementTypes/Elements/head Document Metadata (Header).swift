@@ -45,9 +45,9 @@ import HTMLAttributeTypes
 /// - `<template>`: Holds client-side template content
 ///
 public struct Head: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "head" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "head" }
 
-  /// Creates a new Head element with the specified content.
-  public init() {}
+    /// Creates a new Head element with the specified content.
+    public init() {}
 }

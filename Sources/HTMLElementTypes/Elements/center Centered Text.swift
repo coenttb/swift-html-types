@@ -46,14 +46,14 @@ import HTMLAttributeTypes
 /// - For centering blocks, use CSS properties like `margin-left` and `margin-right` set to `auto`
 ///
 public struct Center: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "center" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "center" }
 
-  /// Creates a new Center element.
-  public init(
+    /// Creates a new Center element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

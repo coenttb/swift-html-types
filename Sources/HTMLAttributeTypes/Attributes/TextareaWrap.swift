@@ -42,25 +42,25 @@
 /// ```
 @dynamicMemberLookup
 public struct TextareaWrap: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "wrap" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "wrap" }
 
-  /// The wrap value
-  public var rawValue: String
+    /// The wrap value
+    public var rawValue: String
 
-  /// Initialize with a string value
-  public init(value: String) {
-    self.rawValue = value
-  }
+    /// Initialize with a string value
+    public init(value: String) {
+        self.rawValue = value
+    }
 
-  /// Initialize with a wrap value
-  public init(_ value: String) {
-    self.init(value: value)
-  }
+    /// Initialize with a wrap value
+    public init(_ value: String) {
+        self.init(value: value)
+    }
 
-  /// Line breaks are automatically inserted
-  public static let hard = TextareaWrap("hard")
+    /// Line breaks are automatically inserted
+    public static let hard = TextareaWrap("hard")
 
-  /// Line breaks are not automatically inserted
-  public static let soft = TextareaWrap("soft")
+    /// Line breaks are not automatically inserted
+    public static let soft = TextareaWrap("soft")
 }

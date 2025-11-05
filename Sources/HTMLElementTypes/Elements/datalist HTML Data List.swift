@@ -63,13 +63,13 @@ import HTMLAttributeTypes
 ///
 /// - Note: When rendered, this generates an HTML `<datalist>` element containing option elements.
 public struct DataList: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "datalist" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "datalist" }
 
-  /// Creates a new DataList element with the specified attributes and content.
-  ///
-  /// - Parameters:
-  ///   - id: The ID attribute, used to associate the datalist with an input element
-  public init() {
-  }
+    /// Creates a new DataList element with the specified attributes and content.
+    ///
+    /// - Parameters:
+    ///   - id: The ID attribute, used to associate the datalist with an input element
+    public init() {
+    }
 }

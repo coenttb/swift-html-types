@@ -34,19 +34,19 @@
 ///   similar functionality to what would be available in the frames.
 ///
 @available(
-  *,
-  deprecated,
-  message: "The noframes element is obsolete and shouldn't be used in modern web development"
+    *,
+    deprecated,
+    message: "The noframes element is obsolete and shouldn't be used in modern web development"
 )
 public struct FrameFallback: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "noframes" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "noframes" }
 
-  /// Creates a new FrameFallback element with the specified content.
-  public init(
+    /// Creates a new FrameFallback element with the specified content.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

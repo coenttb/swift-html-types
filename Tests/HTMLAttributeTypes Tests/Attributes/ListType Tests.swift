@@ -16,17 +16,17 @@ import Testing
 
 @Suite("ListType Test")
 struct ListTypeTests {
-  @Test("ListType attribute should be type")
-  func attribute() {
-    #expect(ListType.attribute == "type")
-  }
+    @Test("ListType attribute should be type")
+    func attribute() {
+        #expect(ListType.attribute == "type")
+    }
 
-  @Test("ListType should have predefined values")
-  func predefinedValues() {
-    #expect(ListType.lowerAlpha.rawValue == "a")
-    #expect(ListType.upperAlpha.rawValue == "A")
-    #expect(ListType.lowerRoman.rawValue == "i")
-    #expect(ListType.upperRoman.rawValue == "I")
-    #expect(ListType.decimal.rawValue == "1")
-  }
+    @Test("ListType should have predefined values")
+    func predefinedValues() {
+        #expect(ListType.lowerAlpha.rawValue == "a")
+        #expect(ListType.upperAlpha.rawValue == "A")
+        #expect(ListType.lowerRoman.rawValue == "i")
+        #expect(ListType.upperRoman.rawValue == "I")
+        #expect(ListType.decimal.rawValue == "1")
+    }
 }

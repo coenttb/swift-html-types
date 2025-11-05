@@ -16,20 +16,20 @@ import Testing
 
 @Suite("Max Test")
 struct MaxTests {
-  @Test("Max attribute should be max")
-  func attribute() {
-    #expect(Max.attribute == "max")
-  }
+    @Test("Max attribute should be max")
+    func attribute() {
+        #expect(Max.attribute == "max")
+    }
 
-  @Test("Max should support integer literal")
-  func integerLiteral() {
-    let max: Max = 100
-    #expect(max.rawValue == "100")
-  }
+    @Test("Max should support integer literal")
+    func integerLiteral() {
+        let max: Max = 100
+        #expect(max.rawValue == "100")
+    }
 
-  @Test("Max should support float literal")
-  func floatLiteral() {
-    let max: Max = 99.5
-    #expect(max.rawValue == "99.5")
-  }
+    @Test("Max should support float literal")
+    func floatLiteral() {
+        let max: Max = 99.5
+        #expect(max.rawValue == "99.5")
+    }
 }

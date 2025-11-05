@@ -16,21 +16,21 @@ import Testing
 
 @Suite("Method Test")
 struct MethodTests {
-  @Test("Method attribute should be method")
-  func attribute() {
-    #expect(Method.attribute == "method")
-  }
+    @Test("Method attribute should be method")
+    func attribute() {
+        #expect(Method.attribute == "method")
+    }
 
-  @Test("Method convenience properties")
-  func convenienceProperties() {
-    #expect(Method.get.rawValue == "get")
-    #expect(Method.post.rawValue == "post")
-    #expect(Method.dialog.rawValue == "dialog")
-  }
+    @Test("Method convenience properties")
+    func convenienceProperties() {
+        #expect(Method.get.rawValue == "get")
+        #expect(Method.post.rawValue == "post")
+        #expect(Method.dialog.rawValue == "dialog")
+    }
 
-  @Test("Method should lowercase input")
-  func lowercaseInput() {
-    let method = Method(value: "POST")
-    #expect(method.rawValue == "post")
-  }
+    @Test("Method should lowercase input")
+    func lowercaseInput() {
+        let method = Method(value: "POST")
+        #expect(method.rawValue == "post")
+    }
 }

@@ -39,37 +39,37 @@ import HTMLAttributeTypes
 /// - You can use the `media` attribute to apply styles conditionally based on media queries.
 ///
 public struct Style: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "style" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "style" }
 
-  /// Defines which media the style should be applied to. Its value is a media query, which defaults to "all" if the attribute is missing.
-  public var media: HTMLAttributeTypes.Media?
+    /// Defines which media the style should be applied to. Its value is a media query, which defaults to "all" if the attribute is missing.
+    public var media: HTMLAttributeTypes.Media?
 
-  /// Explicitly indicates that certain operations should be blocked on the fetching of critical subresources.
-  public var blocking: HTMLAttributeTypes.Blocking?
+    /// Explicitly indicates that certain operations should be blocked on the fetching of critical subresources.
+    public var blocking: HTMLAttributeTypes.Blocking?
 
-  /// A cryptographic nonce (number used once) used to allow inline styles in a style-src Content-Security-Policy.
-  public var nonce: HTMLAttributeTypes.Nonce?
+    /// A cryptographic nonce (number used once) used to allow inline styles in a style-src Content-Security-Policy.
+    public var nonce: HTMLAttributeTypes.Nonce?
 
-  /// Specifies alternative style sheet sets.
-  public var title: HTMLAttributeTypes.Title?
+    /// Specifies alternative style sheet sets.
+    public var title: HTMLAttributeTypes.Title?
 
-  /// Creates a new Style element with the specified attributes.
-  ///
-  /// - Parameters:
-  ///   - media: Defines which media the style should be applied to
-  ///   - blocking: Indicates operations to be blocked on fetching critical subresources
-  ///   - nonce: A cryptographic nonce for Content-Security-Policy
-  ///   - title: Specifies alternative style sheet sets
-  public init(
-    media: HTMLAttributeTypes.Media? = nil,
-    blocking: HTMLAttributeTypes.Blocking? = nil,
-    nonce: HTMLAttributeTypes.Nonce? = nil,
-    title: HTMLAttributeTypes.Title? = nil
-  ) {
-    self.media = media
-    self.blocking = blocking
-    self.nonce = nonce
-    self.title = title
-  }
+    /// Creates a new Style element with the specified attributes.
+    ///
+    /// - Parameters:
+    ///   - media: Defines which media the style should be applied to
+    ///   - blocking: Indicates operations to be blocked on fetching critical subresources
+    ///   - nonce: A cryptographic nonce for Content-Security-Policy
+    ///   - title: Specifies alternative style sheet sets
+    public init(
+        media: HTMLAttributeTypes.Media? = nil,
+        blocking: HTMLAttributeTypes.Blocking? = nil,
+        nonce: HTMLAttributeTypes.Nonce? = nil,
+        title: HTMLAttributeTypes.Title? = nil
+    ) {
+        self.media = media
+        self.blocking = blocking
+        self.nonce = nonce
+        self.title = title
+    }
 }

@@ -67,121 +67,121 @@ import HTMLAttributeTypes
 /// - Note: When rendered, this generates an HTML `<a>` element with the appropriate
 ///   attributes based on the link configuration.
 public struct Anchor: HTMLElement {
-  @inlinable public static var tag: String { "a" }
+    @inlinable public static var tag: String { "a" }
 
-  /// Indicates that Attribution-Reporting-Eligible header should be sent.
-  ///
-  /// Used to register a navigation-based attribution source for the Attribution Reporting API.
-  /// Can be a boolean or a space-separated list of URLs where the header should be sent.
-  ///
-  /// - Note: Still experimental as of 2025
-  public var attributionsrc: HTMLAttributeTypes.AttributionSrc?
+    /// Indicates that Attribution-Reporting-Eligible header should be sent.
+    ///
+    /// Used to register a navigation-based attribution source for the Attribution Reporting API.
+    /// Can be a boolean or a space-separated list of URLs where the header should be sent.
+    ///
+    /// - Note: Still experimental as of 2025
+    public var attributionsrc: HTMLAttributeTypes.AttributionSrc?
 
-  /// Causes the browser to treat the linked URL as a download.
-  ///
-  /// This attribute can be used with or without a filename value:
-  ///
-  /// - Without a value: The browser will suggest a filename/extension, generated from various sources:
-  ///   - The Content-Disposition HTTP header
-  ///   - The final segment in the URL path
-  ///   - The media type (from the Content-Type header, data: URL, or Blob.type)
-  ///
-  /// - With a filename value: Suggests a filename for the downloaded file.
-  ///   Characters like `/` and `\` are converted to underscores (`_`).
-  ///   Browsers will adjust the suggested name if it contains characters forbidden by the filesystem.
-  ///
-  /// ## Limitations
-  ///
-  /// - Only works for same-origin URLs, or the `blob:` and `data:` schemes.
-  /// - Browser handling varies by browser, user settings, and other factors.
-  /// - The user may be prompted before a download starts, or the file may be saved automatically,
-  ///   or opened in an external application or the browser itself.
-  ///
-  /// ## Content-Disposition Header Interaction
-  ///
-  /// If the Content-Disposition header has different information from the download attribute:
-  /// - If the header specifies a filename, it takes priority over a filename specified in this attribute.
-  /// - If the header specifies a disposition of inline, modern browsers prioritize
-  ///   this attribute and treat it as a download.
-  public var download: HTMLAttributeTypes.Download?
+    /// Causes the browser to treat the linked URL as a download.
+    ///
+    /// This attribute can be used with or without a filename value:
+    ///
+    /// - Without a value: The browser will suggest a filename/extension, generated from various sources:
+    ///   - The Content-Disposition HTTP header
+    ///   - The final segment in the URL path
+    ///   - The media type (from the Content-Type header, data: URL, or Blob.type)
+    ///
+    /// - With a filename value: Suggests a filename for the downloaded file.
+    ///   Characters like `/` and `\` are converted to underscores (`_`).
+    ///   Browsers will adjust the suggested name if it contains characters forbidden by the filesystem.
+    ///
+    /// ## Limitations
+    ///
+    /// - Only works for same-origin URLs, or the `blob:` and `data:` schemes.
+    /// - Browser handling varies by browser, user settings, and other factors.
+    /// - The user may be prompted before a download starts, or the file may be saved automatically,
+    ///   or opened in an external application or the browser itself.
+    ///
+    /// ## Content-Disposition Header Interaction
+    ///
+    /// If the Content-Disposition header has different information from the download attribute:
+    /// - If the header specifies a filename, it takes priority over a filename specified in this attribute.
+    /// - If the header specifies a disposition of inline, modern browsers prioritize
+    ///   this attribute and treat it as a download.
+    public var download: HTMLAttributeTypes.Download?
 
-  /// The URL that the hyperlink points to.
-  ///
-  /// This can be an absolute URL, relative URL, or special URL schemes like:
-  /// - `mailto:` for email addresses
-  /// - `tel:` for telephone numbers
-  /// - `sms:` for text messages
-  /// - Document fragments starting with `#` for in-page navigation
-  public var href: HTMLAttributeTypes.Href?
+    /// The URL that the hyperlink points to.
+    ///
+    /// This can be an absolute URL, relative URL, or special URL schemes like:
+    /// - `mailto:` for email addresses
+    /// - `tel:` for telephone numbers
+    /// - `sms:` for text messages
+    /// - Document fragments starting with `#` for in-page navigation
+    public var href: HTMLAttributeTypes.Href?
 
-  /// Hints at the human language of the linked URL.
-  ///
-  /// This attribute indicates the language of the linked resource.
-  /// Values are language codes like "en", "fr", "ja", etc.
-  public var hreflang: HTMLAttributeTypes.Hreflang?
+    /// Hints at the human language of the linked URL.
+    ///
+    /// This attribute indicates the language of the linked resource.
+    /// Values are language codes like "en", "fr", "ja", etc.
+    public var hreflang: HTMLAttributeTypes.Hreflang?
 
-  /// A space-separated list of URLs to ping when the link is followed.
-  ///
-  /// When the link is followed, the browser will send POST requests with the body PING to the URLs.
-  /// Typically used for tracking.
-  public var ping: HTMLAttributeTypes.Ping?
+    /// A space-separated list of URLs to ping when the link is followed.
+    ///
+    /// When the link is followed, the browser will send POST requests with the body PING to the URLs.
+    /// Typically used for tracking.
+    public var ping: HTMLAttributeTypes.Ping?
 
-  /// How much of the referrer to send when following the link.
-  ///
-  /// Controls the information included in the Referer header when navigating to the linked resource.
-  /// Options include no-referrer, origin, same-origin, strict-origin, etc.
-  public var referrerpolicy: HTMLAttributeTypes.ReferrerPolicy?
+    /// How much of the referrer to send when following the link.
+    ///
+    /// Controls the information included in the Referer header when navigating to the linked resource.
+    /// Options include no-referrer, origin, same-origin, strict-origin, etc.
+    public var referrerpolicy: HTMLAttributeTypes.ReferrerPolicy?
 
-  /// The relationship of the linked URL as space-separated link types.
-  ///
-  /// Common values include:
-  /// - `nofollow` - Indicates search engines should not follow the link
-  /// - `noopener` - Prevents the opened page from accessing the window.opener property
-  /// - `noreferrer` - Prevents passing the referrer information to the linked page
-  /// - `alternate`, `author`, `help`, `license`, etc.
-  public var rel: HTMLAttributeTypes.Rel?
+    /// The relationship of the linked URL as space-separated link types.
+    ///
+    /// Common values include:
+    /// - `nofollow` - Indicates search engines should not follow the link
+    /// - `noopener` - Prevents the opened page from accessing the window.opener property
+    /// - `noreferrer` - Prevents passing the referrer information to the linked page
+    /// - `alternate`, `author`, `help`, `license`, etc.
+    public var rel: HTMLAttributeTypes.Rel?
 
-  /// Where to display the linked URL, as the name for a browsing context.
-  ///
-  /// Specifies where to open the linked document:
-  /// - `_self` - Current browsing context (default)
-  /// - `_blank` - New tab/window
-  /// - `_parent` - Parent browsing context
-  /// - `_top` - Topmost browsing context
-  /// - `_unfencedTop` - Allows embedded fenced frames to navigate the top-level frame
-  ///
-  /// Note: Setting `target="_blank"` on anchor elements implicitly provides the same
-  /// behavior as setting `rel="noopener"` in modern browsers.
-  public var target: HTMLAttributeTypes.Target?
+    /// Where to display the linked URL, as the name for a browsing context.
+    ///
+    /// Specifies where to open the linked document:
+    /// - `_self` - Current browsing context (default)
+    /// - `_blank` - New tab/window
+    /// - `_parent` - Parent browsing context
+    /// - `_top` - Topmost browsing context
+    /// - `_unfencedTop` - Allows embedded fenced frames to navigate the top-level frame
+    ///
+    /// Note: Setting `target="_blank"` on anchor elements implicitly provides the same
+    /// behavior as setting `rel="noopener"` in modern browsers.
+    public var target: HTMLAttributeTypes.Target?
 
-  /// Creates a new Anchor element with the specified attributes.
-  ///
-  /// - Parameters:
-  ///   - attributionsrc: Attribution source reporting configuration
-  ///   - download: Whether the link should be treated as a download
-  ///   - href: The URL that the hyperlink points to
-  ///   - hreflang: Hints at the language of the linked resource
-  ///   - ping: URLs to be notified when the link is followed
-  ///   - referrerpolicy: How much referrer information to send
-  ///   - rel: Relationship between the current document and linked resource
-  ///   - target: Where to display the linked URL
-  public init(
-    attributionsrc: HTMLAttributeTypes.AttributionSrc? = nil,
-    download: HTMLAttributeTypes.Download? = nil,
-    href: HTMLAttributeTypes.Href? = nil,
-    hreflang: HTMLAttributeTypes.Hreflang? = nil,
-    ping: HTMLAttributeTypes.Ping? = nil,
-    referrerpolicy: HTMLAttributeTypes.ReferrerPolicy? = nil,
-    rel: HTMLAttributeTypes.Rel? = nil,
-    target: HTMLAttributeTypes.Target? = nil
-  ) {
-    self.attributionsrc = attributionsrc
-    self.download = download
-    self.href = href
-    self.hreflang = hreflang
-    self.ping = ping
-    self.referrerpolicy = referrerpolicy
-    self.rel = rel
-    self.target = target
-  }
+    /// Creates a new Anchor element with the specified attributes.
+    ///
+    /// - Parameters:
+    ///   - attributionsrc: Attribution source reporting configuration
+    ///   - download: Whether the link should be treated as a download
+    ///   - href: The URL that the hyperlink points to
+    ///   - hreflang: Hints at the language of the linked resource
+    ///   - ping: URLs to be notified when the link is followed
+    ///   - referrerpolicy: How much referrer information to send
+    ///   - rel: Relationship between the current document and linked resource
+    ///   - target: Where to display the linked URL
+    public init(
+        attributionsrc: HTMLAttributeTypes.AttributionSrc? = nil,
+        download: HTMLAttributeTypes.Download? = nil,
+        href: HTMLAttributeTypes.Href? = nil,
+        hreflang: HTMLAttributeTypes.Hreflang? = nil,
+        ping: HTMLAttributeTypes.Ping? = nil,
+        referrerpolicy: HTMLAttributeTypes.ReferrerPolicy? = nil,
+        rel: HTMLAttributeTypes.Rel? = nil,
+        target: HTMLAttributeTypes.Target? = nil
+    ) {
+        self.attributionsrc = attributionsrc
+        self.download = download
+        self.href = href
+        self.hreflang = hreflang
+        self.ping = ping
+        self.referrerpolicy = referrerpolicy
+        self.rel = rel
+        self.target = target
+    }
 }

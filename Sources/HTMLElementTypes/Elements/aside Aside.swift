@@ -44,8 +44,8 @@ import HTMLAttributeTypes
 /// - Note: When rendered, this generates an HTML `<aside>` element with the appropriate
 ///   attributes based on the configuration.
 public struct Aside: HTMLElement {
-  @inlinable public static var tag: String { "aside" }
+    @inlinable public static var tag: String { "aside" }
 
-  /// Creates a new Aside element with the specified content.
-  public init() {}
+    /// Creates a new Aside element with the specified content.
+    public init() {}
 }

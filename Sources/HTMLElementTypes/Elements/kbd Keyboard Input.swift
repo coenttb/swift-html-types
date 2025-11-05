@@ -45,14 +45,14 @@ import HTMLAttributeTypes
 /// - By default, browsers typically render `<kbd>` content in a monospace font.
 ///
 public struct KeyboardInput: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "kbd" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "kbd" }
 
-  /// Creates a new keyboard input element.
-  public init(
+    /// Creates a new keyboard input element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

@@ -60,28 +60,28 @@ import HTMLAttributeTypes
 /// - Use CSS to style the disclosure widget for better visual appearance
 ///
 public struct Details: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "details" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "details" }
 
-  /// Boolean attribute that indicates whether the details are currently visible.
-  /// When present, the details are shown; when absent, the details are hidden.
-  public var open: Open?
+    /// Boolean attribute that indicates whether the details are currently visible.
+    /// When present, the details are shown; when absent, the details are hidden.
+    public var open: Open?
 
-  /// Specifies a group name for multiple connected details elements.
-  /// When multiple details elements have the same name value, only one can be open at a time.
-  public var name: Name?
+    /// Specifies a group name for multiple connected details elements.
+    /// When multiple details elements have the same name value, only one can be open at a time.
+    public var name: Name?
 
-  /// Creates a new Details element with the specified attributes.
-  ///
-  /// - Parameters:
-  ///   - open: When present, indicates that the details should be visible
-  ///   - name: Group name for connected details elements (accordion behavior)
-  public init(
-    open: Open? = nil,
-    name: Name? = nil
-  ) {
-    self.open = open
-    self.name = name
+    /// Creates a new Details element with the specified attributes.
+    ///
+    /// - Parameters:
+    ///   - open: When present, indicates that the details should be visible
+    ///   - name: Group name for connected details elements (accordion behavior)
+    public init(
+        open: Open? = nil,
+        name: Name? = nil
+    ) {
+        self.open = open
+        self.name = name
 
-  }
+    }
 }

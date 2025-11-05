@@ -57,8 +57,8 @@ import HTMLAttributeTypes
 /// - Note: When rendered, this generates an HTML `<abbr>` element with the appropriate
 ///   attributes based on the configuration.
 public struct Abbreviation: HTMLElement {
-  @inlinable public static var tag: String { "abbr" }
+    @inlinable public static var tag: String { "abbr" }
 
-  /// Creates a new Abbreviation element with the specified content.
-  public init() {}
+    /// Creates a new Abbreviation element with the specified content.
+    public init() {}
 }

@@ -61,12 +61,12 @@
 /// ```
 @dynamicMemberLookup
 public struct Readonly: HTMLBooleanAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "readonly" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "readonly" }
 
-  public var rawValue: Bool
+    public var rawValue: Bool
 
-  public init(value: Bool = true) {
-    self.rawValue = value
-  }
+    public init(value: Bool = true) {
+        self.rawValue = value
+    }
 }

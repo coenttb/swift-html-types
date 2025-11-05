@@ -39,14 +39,14 @@ import HTMLAttributeTypes
 /// For purely presentational superscript, consider using CSS `vertical-align: super` instead.
 ///
 public struct Superscript: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "sup" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "sup" }
 
-  /// Creates a new superscript element.
-  public init(
+    /// Creates a new superscript element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

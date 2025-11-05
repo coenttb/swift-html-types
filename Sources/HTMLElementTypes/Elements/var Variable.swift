@@ -67,14 +67,14 @@
 /// across browsers and can be overridden with CSS.
 ///
 public struct Variable: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "var" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "var" }
 
-  /// Creates a new Variable element.
-  public init(
+    /// Creates a new Variable element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Hreflang Test")
 struct HreflangTests {
-  @Test("Hreflang attribute should be hreflang")
-  func attribute() {
-    #expect(Hreflang.attribute == "hreflang")
-  }
+    @Test("Hreflang attribute should be hreflang")
+    func attribute() {
+        #expect(Hreflang.attribute == "hreflang")
+    }
 }

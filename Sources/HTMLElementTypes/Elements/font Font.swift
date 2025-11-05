@@ -32,32 +32,32 @@ import HTMLAttributeTypes
 /// - Use CSS styling with proper font properties instead
 ///
 public struct Font: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "font" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "font" }
 
-  /// The color of the text
-  public var color: HTMLAttributeTypes.Color?
+    /// The color of the text
+    public var color: HTMLAttributeTypes.Color?
 
-  /// The font face to use
-  public var face: HTMLAttributeTypes.Face?
+    /// The font face to use
+    public var face: HTMLAttributeTypes.Face?
 
-  /// The font size
-  public var size: HTMLAttributeTypes.FontSize?
+    /// The font size
+    public var size: HTMLAttributeTypes.FontSize?
 
-  /// Creates a new Font element with the specified attributes.
-  ///
-  /// - Parameters:
-  ///   - color: The color of the text
-  ///   - face: The font face to use
-  ///   - size: The font size
-  public init(
-    color: HTMLAttributeTypes.Color? = nil,
-    face: HTMLAttributeTypes.Face? = nil,
-    size: HTMLAttributeTypes.FontSize? = nil
-  ) {
-    self.color = color
-    self.face = face
-    self.size = size
+    /// Creates a new Font element with the specified attributes.
+    ///
+    /// - Parameters:
+    ///   - color: The color of the text
+    ///   - face: The font face to use
+    ///   - size: The font size
+    public init(
+        color: HTMLAttributeTypes.Color? = nil,
+        face: HTMLAttributeTypes.Face? = nil,
+        size: HTMLAttributeTypes.FontSize? = nil
+    ) {
+        self.color = color
+        self.face = face
+        self.size = size
 
-  }
+    }
 }

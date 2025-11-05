@@ -16,8 +16,8 @@ import Testing
 
 @Suite("List Test")
 struct ListTests {
-  @Test("List attribute should be list")
-  func attribute() {
-    #expect(List.attribute == "list")
-  }
+    @Test("List attribute should be list")
+    func attribute() {
+        #expect(List.attribute == "list")
+    }
 }

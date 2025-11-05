@@ -16,8 +16,8 @@ import Testing
 
 @Suite("PopoverTarget Test")
 struct PopoverTargetTests {
-  @Test("PopoverTarget attribute should be popovertarget")
-  func attribute() {
-    #expect(PopoverTarget.attribute == "popovertarget")
-  }
+    @Test("PopoverTarget attribute should be popovertarget")
+    func attribute() {
+        #expect(PopoverTarget.attribute == "popovertarget")
+    }
 }

@@ -38,81 +38,81 @@
 /// ```
 @dynamicMemberLookup
 public struct SourceType: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "type" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "type" }
 
-  /// The MIME type value as a string
-  public var rawValue: String
+    /// The MIME type value as a string
+    public var rawValue: String
 
-  public let codecs: Codecs?
+    public let codecs: Codecs?
 
-  /// Initialize with a string value
-  public init(value: String) {
-    self.rawValue = value
-    self.codecs = nil
-  }
+    /// Initialize with a string value
+    public init(value: String) {
+        self.rawValue = value
+        self.codecs = nil
+    }
 
-  /// Initialize with a string value
-  public init(value: String, codecs: Codecs? = nil) {
-    self.rawValue = value
-    self.codecs = codecs
-  }
+    /// Initialize with a string value
+    public init(value: String, codecs: Codecs? = nil) {
+        self.rawValue = value
+        self.codecs = codecs
+    }
 }
 
 extension SourceType {
-  public struct Codecs: Sendable, Hashable, ExpressibleByBooleanLiteral {
-    public var rawValue: Bool
+    public struct Codecs: Sendable, Hashable, ExpressibleByBooleanLiteral {
+        public var rawValue: Bool
 
-    public init(_ value: Bool) {
-      self.rawValue = value
+        public init(_ value: Bool) {
+            self.rawValue = value
+        }
+
+        public init(booleanLiteral value: BooleanLiteralType) {
+            self = .init(value)
+        }
     }
 
-    public init(booleanLiteral value: BooleanLiteralType) {
-      self = .init(value)
+    /// Returns the string representation of the type value
+    public var description: String {
+        if codecs == true {
+            return "\(self.rawValue) codecs"
+        } else {
+            return self.rawValue
+        }
     }
-  }
-
-  /// Returns the string representation of the type value
-  public var description: String {
-    if codecs == true {
-      return "\(self.rawValue) codecs"
-    } else {
-      return self.rawValue
-    }
-  }
 }
 
 extension SourceType: ExpressibleByStringLiteral {
-  public init(stringLiteral value: StringLiteralType) {
-    self = .init(value)
-  }
+    public init(stringLiteral value: StringLiteralType) {
+        self = .init(value)
+    }
 }
 
 extension SourceType {
-  /// CSS stylesheet
-  public static let css = SourceType("text/css")
+    /// CSS stylesheet
+    public static let css = SourceType("text/css")
 
-  /// JavaScript
-  public static let javascript = SourceType("text/javascript")
+    /// JavaScript
+    public static let javascript = SourceType("text/javascript")
 
-  /// Favicon
-  public static let icon = SourceType("image/x-icon")
+    /// Favicon
+    public static let icon = SourceType("image/x-icon")
 
-  /// SVG image
-  public static let svg = SourceType("image/svg+xml")
+    /// SVG image
+    public static let svg = SourceType("image/svg+xml")
 
-  /// PNG image
-  public static let png = SourceType("image/png")
+    /// PNG image
+    public static let png = SourceType("image/png")
 
-  /// Web app manifest
-  public static let manifest = SourceType("application/manifest+json")
+    /// Web app manifest
+    public static let manifest = SourceType("application/manifest+json")
 
-  /// RSS feed
-  public static let rss = SourceType("application/rss+xml")
+    /// RSS feed
+    public static let rss = SourceType("application/rss+xml")
 
-  /// Atom feed
-  public static let atom = SourceType("application/atom+xml")
+    /// Atom feed
+    public static let atom = SourceType("application/atom+xml")
 
-  /// JSON data
-  public static let json = SourceType("application/json")
+    /// JSON data
+    public static let json = SourceType("application/json")
 }

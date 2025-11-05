@@ -40,14 +40,14 @@ import HTMLAttributeTypes
 /// - For complex ruby annotations, consider using `<rb>` (Ruby Base) and `<rtc>` (Ruby Text Container) elements
 ///
 public struct Ruby: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "ruby" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "ruby" }
 
-  /// Creates a new Ruby element with the specified attributes.
-  public init(
+    /// Creates a new Ruby element with the specified attributes.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

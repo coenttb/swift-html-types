@@ -16,15 +16,15 @@ import Testing
 
 @Suite("ButtonType Test")
 struct ButtonTypeTests {
-  @Test("ButtonType attribute should be type")
-  func attribute() {
-    #expect(ButtonType.attribute == "type")
-  }
+    @Test("ButtonType attribute should be type")
+    func attribute() {
+        #expect(ButtonType.attribute == "type")
+    }
 
-  @Test("ButtonType convenience properties")
-  func convenienceProperties() {
-    #expect(ButtonType.submit.rawValue == "submit")
-    #expect(ButtonType.reset.rawValue == "reset")
-    #expect(ButtonType.button.rawValue == "button")
-  }
+    @Test("ButtonType convenience properties")
+    func convenienceProperties() {
+        #expect(ButtonType.submit.rawValue == "submit")
+        #expect(ButtonType.reset.rawValue == "reset")
+        #expect(ButtonType.button.rawValue == "button")
+    }
 }

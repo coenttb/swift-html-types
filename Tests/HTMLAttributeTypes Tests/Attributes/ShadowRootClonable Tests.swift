@@ -16,8 +16,8 @@ import Testing
 
 @Suite("ShadowRootClonable Test")
 struct ShadowRootClonableTests {
-  @Test("ShadowRootClonable attribute should be shadowrootclonable")
-  func attribute() {
-    #expect(ShadowRootClonable.attribute == "shadowrootclonable")
-  }
+    @Test("ShadowRootClonable attribute should be shadowrootclonable")
+    func attribute() {
+        #expect(ShadowRootClonable.attribute == "shadowrootclonable")
+    }
 }

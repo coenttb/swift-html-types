@@ -38,14 +38,14 @@
 /// ```
 @dynamicMemberLookup
 public struct ObjectData: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "data" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "data" }
 
-  /// The attribute value
-  public let rawValue: String
+    /// The attribute value
+    public let rawValue: String
 
-  /// Initialize with a value for the data attribute
-  public init(value: String) {
-    self.rawValue = value
-  }
+    /// Initialize with a value for the data attribute
+    public init(value: String) {
+        self.rawValue = value
+    }
 }

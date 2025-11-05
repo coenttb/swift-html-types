@@ -47,43 +47,43 @@
 /// ```
 @dynamicMemberLookup
 public struct Autocorrect: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "autocorrect" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "autocorrect" }
 
-  public let rawValue: String
+    public let rawValue: String
 
-  public init(value: String) {
-    self.rawValue = value
-  }
+    public init(value: String) {
+        self.rawValue = value
+    }
 }
 
 extension Autocorrect {
-  /// Enable automatic correction of spelling and punctuation errors (default for most elements)
-  ///
-  /// Example:
-  /// ```html
-  /// <input type="text" autocorrect="on" />
-  /// ```
-  @inlinable public static var on: Self { "on" }
+    /// Enable automatic correction of spelling and punctuation errors (default for most elements)
+    ///
+    /// Example:
+    /// ```html
+    /// <input type="text" autocorrect="on" />
+    /// ```
+    @inlinable public static var on: Self { "on" }
 
-  /// Enable automatic correction of spelling and punctuation errors (equivalent to "on")
-  ///
-  /// Example:
-  /// ```html
-  /// <input type="text" autocorrect="" />
-  /// ```
-  @inlinable public static var empty: Self { "\"\"" }
+    /// Enable automatic correction of spelling and punctuation errors (equivalent to "on")
+    ///
+    /// Example:
+    /// ```html
+    /// <input type="text" autocorrect="" />
+    /// ```
+    @inlinable public static var empty: Self { "\"\"" }
 
-  /// Disable automatic correction of editable text
-  ///
-  /// Example:
-  /// ```html
-  /// <input type="text" autocorrect="off" />
-  /// <textarea autocorrect="off"></textarea>
-  /// ```
-  @inlinable public static var off: Self { "off" }
+    /// Disable automatic correction of editable text
+    ///
+    /// Example:
+    /// ```html
+    /// <input type="text" autocorrect="off" />
+    /// <textarea autocorrect="off"></textarea>
+    /// ```
+    @inlinable public static var off: Self { "off" }
 }
 
 extension Autocorrect: CaseIterable {
-  @inlinable public static var allCases: [Autocorrect] { [.on, .off, .empty] }
+    @inlinable public static var allCases: [Autocorrect] { [.on, .off, .empty] }
 }

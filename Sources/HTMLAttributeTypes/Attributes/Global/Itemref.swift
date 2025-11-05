@@ -77,21 +77,21 @@
 /// ```
 @dynamicMemberLookup
 public struct Itemref: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "itemref" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "itemref" }
 
-  /// The space-separated list of element IDs
-  public let rawValue: String
+    /// The space-separated list of element IDs
+    public let rawValue: String
 
-  public init(value: String) {
-    self.rawValue = value
-  }
+    public init(value: String) {
+        self.rawValue = value
+    }
 }
 
 extension Itemref: ExpressibleByArrayLiteral {
-  public typealias ArrayLiteralElement = String
+    public typealias ArrayLiteralElement = String
 
-  public init(arrayLiteral elements: String...) {
-    self = .init(value: elements.joined(separator: " "))
-  }
+    public init(arrayLiteral elements: String...) {
+        self = .init(value: elements.joined(separator: " "))
+    }
 }

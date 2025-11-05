@@ -29,14 +29,14 @@
 /// ```
 @dynamicMemberLookup
 public struct Sizes: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "sizes" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "sizes" }
 
-  /// The attribute value
-  public var rawValue: String
+    /// The attribute value
+    public var rawValue: String
 
-  /// Initialize with a string value
-  public init(value: String) {
-    self.rawValue = value
-  }
+    /// Initialize with a string value
+    public init(value: String) {
+        self.rawValue = value
+    }
 }

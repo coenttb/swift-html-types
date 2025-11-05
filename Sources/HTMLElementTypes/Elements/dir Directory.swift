@@ -33,20 +33,20 @@ import HTMLAttributeTypes
 /// - If needed for legacy compatibility, ensure proper accessibility
 ///
 public struct Directory: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "dir" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "dir" }
 
-  /// Boolean attribute that hints the list should be rendered in a compact style
-  public var compact: HTMLAttributeTypes.Compact?
+    /// Boolean attribute that hints the list should be rendered in a compact style
+    public var compact: HTMLAttributeTypes.Compact?
 
-  /// Creates a new Directory element with the specified attributes.
-  ///
-  /// - Parameters:
-  ///   - compact: Boolean attribute that hints the list should be rendered in a compact style
-  public init(
-    compact: HTMLAttributeTypes.Compact? = nil
-  ) {
-    self.compact = compact
+    /// Creates a new Directory element with the specified attributes.
+    ///
+    /// - Parameters:
+    ///   - compact: Boolean attribute that hints the list should be rendered in a compact style
+    public init(
+        compact: HTMLAttributeTypes.Compact? = nil
+    ) {
+        self.compact = compact
 
-  }
+    }
 }

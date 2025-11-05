@@ -51,35 +51,35 @@
 /// <input type="password" maxlength="12">
 /// ```
 public struct Maxlength: HTMLAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "maxlength" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "maxlength" }
 
-  /// The maximum length value
-  public var value: Int
+    /// The maximum length value
+    public var value: Int
 
-  /// Initialize with a maximum length value
-  public init(_ value: Int) {
-    // Ensure value is non-negative
-    self.value = max(0, value)
-  }
+    /// Initialize with a maximum length value
+    public init(_ value: Int) {
+        // Ensure value is non-negative
+        self.value = max(0, value)
+    }
 }
 
 extension Maxlength {
-  /// Create a maxlength attribute with the given number of characters
-  public static func characters(_ count: Int) -> Maxlength {
-    return Maxlength(count)
-  }
+    /// Create a maxlength attribute with the given number of characters
+    public static func characters(_ count: Int) -> Maxlength {
+        return Maxlength(count)
+    }
 }
 
 extension Maxlength: ExpressibleByIntegerLiteral {
-  public init(integerLiteral value: IntegerLiteralType) {
-    self.value = max(0, value)
-  }
+    public init(integerLiteral value: IntegerLiteralType) {
+        self.value = max(0, value)
+    }
 }
 
 extension Maxlength: CustomStringConvertible {
-  /// Returns the string representation of the maxlength value
-  public var description: String {
-    return String(self.value)
-  }
+    /// Returns the string representation of the maxlength value
+    public var description: String {
+        return String(self.value)
+    }
 }

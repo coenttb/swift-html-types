@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Async Test")
 struct AsyncTests {
-  @Test("Async attribute should be async")
-  func attribute() {
-    #expect(Async.attribute == "async")
-  }
+    @Test("Async attribute should be async")
+    func attribute() {
+        #expect(Async.attribute == "async")
+    }
 }

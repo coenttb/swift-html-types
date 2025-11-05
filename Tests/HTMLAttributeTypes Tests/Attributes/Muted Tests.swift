@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Muted Test")
 struct MutedTests {
-  @Test("Muted attribute should be muted")
-  func attribute() {
-    #expect(Muted.attribute == "muted")
-  }
+    @Test("Muted attribute should be muted")
+    func attribute() {
+        #expect(Muted.attribute == "muted")
+    }
 }

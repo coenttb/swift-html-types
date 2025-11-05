@@ -41,14 +41,14 @@ import HTMLAttributeTypes
 /// just visual styling.
 ///
 public struct Small: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "small" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "small" }
 
-  /// Creates a new Small element with the specified content.
-  public init(
+    /// Creates a new Small element with the specified content.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

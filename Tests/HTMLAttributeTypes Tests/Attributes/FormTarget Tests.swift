@@ -16,17 +16,17 @@ import Testing
 
 @Suite("FormTarget Test")
 struct FormTargetTests {
-  @Test("FormTarget attribute should be formtarget")
-  func attribute() {
-    #expect(FormTarget.attribute == "formtarget")
-  }
+    @Test("FormTarget attribute should be formtarget")
+    func attribute() {
+        #expect(FormTarget.attribute == "formtarget")
+    }
 
-  @Test("FormTarget should have predefined values")
-  func predefinedValues() {
-    #expect(FormTarget.`self`.rawValue == "_self")
-    #expect(FormTarget.blank.rawValue == "_blank")
-    #expect(FormTarget.parent.rawValue == "_parent")
-    #expect(FormTarget.top.rawValue == "_top")
-    #expect(FormTarget.unfencedTop.rawValue == "_unfencedTop")
-  }
+    @Test("FormTarget should have predefined values")
+    func predefinedValues() {
+        #expect(FormTarget.`self`.rawValue == "_self")
+        #expect(FormTarget.blank.rawValue == "_blank")
+        #expect(FormTarget.parent.rawValue == "_parent")
+        #expect(FormTarget.top.rawValue == "_top")
+        #expect(FormTarget.unfencedTop.rawValue == "_unfencedTop")
+    }
 }

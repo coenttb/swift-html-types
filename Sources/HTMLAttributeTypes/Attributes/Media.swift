@@ -23,14 +23,14 @@
 /// ```
 @dynamicMemberLookup
 public struct Media: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "media" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "media" }
 
-  /// The attribute value
-  public let rawValue: String
+    /// The attribute value
+    public let rawValue: String
 
-  /// Initialize with a value for the media attribute
-  public init(value: String) {
-    self.rawValue = value
-  }
+    /// Initialize with a value for the media attribute
+    public init(value: String) {
+        self.rawValue = value
+    }
 }

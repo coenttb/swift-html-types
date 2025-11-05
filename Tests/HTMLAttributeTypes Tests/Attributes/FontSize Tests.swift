@@ -16,29 +16,29 @@ import Testing
 
 @Suite("FontSize Test")
 struct FontSizeTests {
-  @Test("FontSize attribute should be size")
-  func attribute() {
-    #expect(FontSize.attribute == "size")
-  }
+    @Test("FontSize attribute should be size")
+    func attribute() {
+        #expect(FontSize.attribute == "size")
+    }
 
-  @Test("FontSize should support numeric initialization")
-  func numericInitialization() {
-    let fontSize = FontSize(numericValue: 5)
-    #expect(fontSize.rawValue == "5")
-  }
+    @Test("FontSize should support numeric initialization")
+    func numericInitialization() {
+        let fontSize = FontSize(numericValue: 5)
+        #expect(fontSize.rawValue == "5")
+    }
 
-  @Test("FontSize should support relative initialization")
-  func relativeInitialization() {
-    let positiveRelative = FontSize(relativeValue: 2)
-    #expect(positiveRelative.rawValue == "+2")
+    @Test("FontSize should support relative initialization")
+    func relativeInitialization() {
+        let positiveRelative = FontSize(relativeValue: 2)
+        #expect(positiveRelative.rawValue == "+2")
 
-    let negativeRelative = FontSize(relativeValue: -1)
-    #expect(negativeRelative.rawValue == "-1")
-  }
+        let negativeRelative = FontSize(relativeValue: -1)
+        #expect(negativeRelative.rawValue == "-1")
+    }
 
-  @Test("FontSize should support integer literal")
-  func integerLiteral() {
-    let fontSize: FontSize = 3
-    #expect(fontSize.rawValue == "3")
-  }
+    @Test("FontSize should support integer literal")
+    func integerLiteral() {
+        let fontSize: FontSize = 3
+        #expect(fontSize.rawValue == "3")
+    }
 }

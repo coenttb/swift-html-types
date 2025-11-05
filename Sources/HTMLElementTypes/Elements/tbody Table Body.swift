@@ -56,14 +56,14 @@ import HTMLAttributeTypes
 /// - Remember that even if you don't explicitly use `<tbody>`, browsers will implicitly create one
 ///
 public struct TableBody: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "tbody" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "tbody" }
 
-  /// Creates a new TableBody element.
-  public init(
+    /// Creates a new TableBody element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

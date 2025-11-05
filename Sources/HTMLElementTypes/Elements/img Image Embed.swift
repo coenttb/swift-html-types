@@ -13,19 +13,19 @@
 import HTMLAttributeTypes
 
 public struct Image: HTMLElement {
-  @inlinable public static var tag: String { "img" }
+    @inlinable public static var tag: String { "img" }
 
-  public var src: Src?
-  public var alt: Alt?
-  public var loading: Loading?
+    public var src: Src?
+    public var alt: Alt?
+    public var loading: Loading?
 
-  public init(
-    src: Src? = nil,
-    alt: Alt? = nil,
-    loading: Loading? = nil
-  ) {
-    self.src = src
-    self.alt = alt
-    self.loading = loading
-  }
+    public init(
+        src: Src? = nil,
+        alt: Alt? = nil,
+        loading: Loading? = nil
+    ) {
+        self.src = src
+        self.alt = alt
+        self.loading = loading
+    }
 }

@@ -78,24 +78,24 @@
 /// ```
 @dynamicMemberLookup
 public struct Title: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "title" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "title" }
 
-  /// The title text
-  public let rawValue: String
+    /// The title text
+    public let rawValue: String
 
-  public init(value: String) {
-    self.rawValue = value
-  }
+    public init(value: String) {
+        self.rawValue = value
+    }
 }
 
 extension Title: ExpressibleByArrayLiteral {
-  public init(arrayLiteral elements: String...) {
-    self = .init(value: elements.joined(separator: "\n"))
-  }
+    public init(arrayLiteral elements: String...) {
+        self = .init(value: elements.joined(separator: "\n"))
+    }
 }
 
 extension Title {
-  /// Creates an empty title to prevent inheriting from ancestors
-  @inlinable public static var empty: Self { "" }
+    /// Creates an empty title to prevent inheriting from ancestors
+    @inlinable public static var empty: Self { "" }
 }

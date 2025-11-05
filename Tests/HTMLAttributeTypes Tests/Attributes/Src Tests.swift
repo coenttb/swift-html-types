@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Src Test")
 struct SrcTests {
-  @Test("Src attribute should be src")
-  func attribute() {
-    #expect(Src.attribute == "src")
-  }
+    @Test("Src attribute should be src")
+    func attribute() {
+        #expect(Src.attribute == "src")
+    }
 }

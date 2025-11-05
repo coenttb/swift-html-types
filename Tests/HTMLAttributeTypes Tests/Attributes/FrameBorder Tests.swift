@@ -16,14 +16,14 @@ import Testing
 
 @Suite("FrameBorder Test")
 struct FrameBorderTests {
-  @Test("FrameBorder attribute should be frameborder")
-  func attribute() {
-    #expect(FrameBorder.attribute == "frameborder")
-  }
+    @Test("FrameBorder attribute should be frameborder")
+    func attribute() {
+        #expect(FrameBorder.attribute == "frameborder")
+    }
 
-  @Test("FrameBorder should support integer literal")
-  func integerLiteral() {
-    let frameBorder: FrameBorder = 1
-    #expect(frameBorder.rawValue == "1")
-  }
+    @Test("FrameBorder should support integer literal")
+    func integerLiteral() {
+        let frameBorder: FrameBorder = 1
+        #expect(frameBorder.rawValue == "1")
+    }
 }

@@ -39,14 +39,14 @@ import HTMLAttributeTypes
 /// - The element has an implicit ARIA role of "emphasis"
 ///
 public struct Emphasis: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "em" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "em" }
 
-  /// Creates a new Emphasis element.
-  public init(
+    /// Creates a new Emphasis element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

@@ -14,37 +14,37 @@ import HTMLAttributeTypes
 import Testing
 
 #if canImport(FoundationEssentials)
-  import FoundationEssentials
+    import FoundationEssentials
 #elseif canImport(Foundation)
-  import Foundation
+    import Foundation
 #endif
 
 @Suite("Part Test")
 struct PartTests {
-  @Test("Part attribute should be part")
-  func attribute() {
-    #expect(Part.attribute == "part")
-  }
+    @Test("Part attribute should be part")
+    func attribute() {
+        #expect(Part.attribute == "part")
+    }
 
-  @Test("Part description should reflect the initialized values")
-  func description() {
-    let singlePart = Part("header")
-    #expect(singlePart.description == "header")
+    @Test("Part description should reflect the initialized values")
+    func description() {
+        let singlePart = Part("header")
+        #expect(singlePart.description == "header")
 
-    let multipleParts: Part = ["header", "title"]
-    #expect(multipleParts.description == "header title")
+        let multipleParts: Part = ["header", "title"]
+        #expect(multipleParts.description == "header title")
 
-    let emptyPart = Part("")
-    #expect(emptyPart.description == "")
-  }
+        let emptyPart = Part("")
+        #expect(emptyPart.description == "")
+    }
 
-  @Test("Part can be initialized with single string or array of strings")
-  func initialization() {
-    let singlePart: Part = "header"
-    let arrayPart: Part = "header"
-    #expect(singlePart.description == arrayPart.description)
+    @Test("Part can be initialized with single string or array of strings")
+    func initialization() {
+        let singlePart: Part = "header"
+        let arrayPart: Part = "header"
+        #expect(singlePart.description == arrayPart.description)
 
-    let multipleParts: Part = ["header", "title"]
-    #expect(multipleParts.description == "header title")
-  }
+        let multipleParts: Part = ["header", "title"]
+        #expect(multipleParts.description == "header title")
+    }
 }

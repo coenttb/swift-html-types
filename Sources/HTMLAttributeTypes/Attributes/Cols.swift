@@ -12,19 +12,19 @@
 
 @dynamicMemberLookup
 public struct Cols: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "cols" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "cols" }
 
-  /// The attribute value
-  public let rawValue: String
+    /// The attribute value
+    public let rawValue: String
 
-  public init(value: String) {
-    self.rawValue = value
-  }
+    public init(value: String) {
+        self.rawValue = value
+    }
 }
 
 extension Cols: ExpressibleByIntegerLiteral {
-  public init(integerLiteral value: Int) {
-    self = .init(value: value.description)
-  }
+    public init(integerLiteral value: Int) {
+        self = .init(value: value.description)
+    }
 }

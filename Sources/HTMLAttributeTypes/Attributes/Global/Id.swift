@@ -64,13 +64,13 @@
 /// ```
 @dynamicMemberLookup
 public struct Id: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "id" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "id" }
 
-  /// The ID value
-  public let rawValue: String
+    /// The ID value
+    public let rawValue: String
 
-  public init(value: String) {
-    self.rawValue = value
-  }
+    public init(value: String) {
+        self.rawValue = value
+    }
 }

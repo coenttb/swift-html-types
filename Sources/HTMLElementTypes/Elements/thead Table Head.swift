@@ -50,14 +50,14 @@ import HTMLAttributeTypes
 /// - For complex tables, consider using multiple header rows within a single `<thead>` element
 ///
 public struct TableHead: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "thead" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "thead" }
 
-  /// Creates a new TableHead element.
-  public init(
+    /// Creates a new TableHead element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

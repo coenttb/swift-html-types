@@ -37,14 +37,14 @@ import HTMLAttributeTypes
 /// - Screen readers may use this element to determine whether to omit the initial rendering of navigation-only content
 ///
 public struct NavigationSection: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "nav" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "nav" }
 
-  /// Creates a new NavigationSection element.
-  public init(
+    /// Creates a new NavigationSection element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

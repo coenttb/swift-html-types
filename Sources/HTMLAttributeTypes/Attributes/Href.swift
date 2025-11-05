@@ -63,74 +63,74 @@
 /// ```
 @dynamicMemberLookup
 public struct Href: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "href" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "href" }
 
-  /// The attribute value
-  public let rawValue: String
+    /// The attribute value
+    public let rawValue: String
 
-  /// Initialize with a value for the href attribute
-  public init(value: String) {
-    self.rawValue = value
-  }
+    /// Initialize with a value for the href attribute
+    public init(value: String) {
+        self.rawValue = value
+    }
 }
 
 extension Href {
-  /// Create an Href for a telephone number
-  /// - Parameter phoneNumber: The phone number (can include country code, dashes, spaces, etc.)
-  /// - Returns: An Href with a tel: scheme
-  public static func tel(_ phoneNumber: String) -> Href {
-    return Href(value: "tel:\(phoneNumber)")
-  }
+    /// Create an Href for a telephone number
+    /// - Parameter phoneNumber: The phone number (can include country code, dashes, spaces, etc.)
+    /// - Returns: An Href with a tel: scheme
+    public static func tel(_ phoneNumber: String) -> Href {
+        return Href(value: "tel:\(phoneNumber)")
+    }
 
-  /// Create an Href for an email address
-  /// - Parameter email: The email address
-  /// - Returns: An Href with a mailto: scheme
-  public static func mailto(_ email: String) -> Href {
-    return Href(value: "mailto:\(email)")
-  }
+    /// Create an Href for an email address
+    /// - Parameter email: The email address
+    /// - Returns: An Href with a mailto: scheme
+    public static func mailto(_ email: String) -> Href {
+        return Href(value: "mailto:\(email)")
+    }
 
-  /// Create an Href for SMS
-  /// - Parameter phoneNumber: The phone number to send SMS to
-  /// - Returns: An Href with an sms: scheme
-  public static func sms(_ phoneNumber: String) -> Href {
-    return Href(value: "sms:\(phoneNumber)")
-  }
+    /// Create an Href for SMS
+    /// - Parameter phoneNumber: The phone number to send SMS to
+    /// - Returns: An Href with an sms: scheme
+    public static func sms(_ phoneNumber: String) -> Href {
+        return Href(value: "sms:\(phoneNumber)")
+    }
 
-  /// Create an Href for a file URL
-  /// - Parameter path: The file path
-  /// - Returns: An Href with a file: scheme
-  public static func file(_ path: String) -> Href {
-    return Href(value: "file://\(path)")
-  }
+    /// Create an Href for a file URL
+    /// - Parameter path: The file path
+    /// - Returns: An Href with a file: scheme
+    public static func file(_ path: String) -> Href {
+        return Href(value: "file://\(path)")
+    }
 
-  /// Create an Href for a fragment (anchor) within the current page
-  /// - Parameter fragment: The fragment identifier (without the # symbol)
-  /// - Returns: An Href with just the fragment
-  public static func fragment(_ fragment: String) -> Href {
-    return Href(value: "#\(fragment)")
-  }
+    /// Create an Href for a fragment (anchor) within the current page
+    /// - Parameter fragment: The fragment identifier (without the # symbol)
+    /// - Returns: An Href with just the fragment
+    public static func fragment(_ fragment: String) -> Href {
+        return Href(value: "#\(fragment)")
+    }
 
-  /// Create an Href for WhatsApp
-  /// - Parameter phoneNumber: The phone number (with country code)
-  /// - Returns: An Href with a WhatsApp URL scheme
-  public static func whatsapp(_ phoneNumber: String) -> Href {
-    return Href(value: "https://wa.me/\(phoneNumber)")
-  }
+    /// Create an Href for WhatsApp
+    /// - Parameter phoneNumber: The phone number (with country code)
+    /// - Returns: An Href with a WhatsApp URL scheme
+    public static func whatsapp(_ phoneNumber: String) -> Href {
+        return Href(value: "https://wa.me/\(phoneNumber)")
+    }
 
-  /// Create an Href for FaceTime
-  /// - Parameter contact: Phone number or email address
-  /// - Returns: An Href with a facetime: scheme
-  public static func facetime(_ contact: String) -> Href {
-    return Href(value: "facetime:\(contact)")
-  }
+    /// Create an Href for FaceTime
+    /// - Parameter contact: Phone number or email address
+    /// - Returns: An Href with a facetime: scheme
+    public static func facetime(_ contact: String) -> Href {
+        return Href(value: "facetime:\(contact)")
+    }
 
-  /// Create an Href for FaceTime video call
-  /// - Parameter contact: Phone number or email address
-  /// - Returns: An Href with a facetime-video: scheme
-  public static func facetimeVideo(_ contact: String) -> Href {
-    return Href(value: "facetime-video:\(contact)")
-  }
+    /// Create an Href for FaceTime video call
+    /// - Parameter contact: Phone number or email address
+    /// - Returns: An Href with a facetime-video: scheme
+    public static func facetimeVideo(_ contact: String) -> Href {
+        return Href(value: "facetime-video:\(contact)")
+    }
 }
 
 // MARK: - Usage Examples

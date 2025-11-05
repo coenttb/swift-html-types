@@ -40,32 +40,32 @@ import HTMLAttributeTypes
 /// - Consider using declarative shadow DOM by specifying `shadowrootmode` attribute when appropriate
 ///
 public struct ContentTemplate: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "template" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "template" }
 
-  /// Creates a shadow root for the parent element in "open" or "closed" mode
-  public var shadowrootmode: HTMLAttributeTypes.ShadowRootMode?
+    /// Creates a shadow root for the parent element in "open" or "closed" mode
+    public var shadowrootmode: HTMLAttributeTypes.ShadowRootMode?
 
-  /// When true, cloning the shadow host will include a shadow root in the copy
-  public var shadowrootclonable: HTMLAttributeTypes.ShadowRootClonable?
+    /// When true, cloning the shadow host will include a shadow root in the copy
+    public var shadowrootclonable: HTMLAttributeTypes.ShadowRootClonable?
 
-  /// When true, focus is delegated to the first focusable element in the shadow tree
-  public var shadowrootdelegatesfocus: HTMLAttributeTypes.ShadowRootDelegatesFocus?
+    /// When true, focus is delegated to the first focusable element in the shadow tree
+    public var shadowrootdelegatesfocus: HTMLAttributeTypes.ShadowRootDelegatesFocus?
 
-  /// Creates a new ContentTemplate element with the specified attributes.
-  ///
-  /// - Parameters:
-  ///   - shadowrootmode: Specifies "open" or "closed" mode for declarative shadow DOM
-  ///   - shadowrootclonable: Whether shadow roots are cloned with their hosts
-  ///   - shadowrootdelegatesfocus: Whether focus should be delegated in the shadow tree
-  public init(
-    shadowrootmode: HTMLAttributeTypes.ShadowRootMode? = nil,
-    shadowrootclonable: HTMLAttributeTypes.ShadowRootClonable? = nil,
-    shadowrootdelegatesfocus: HTMLAttributeTypes.ShadowRootDelegatesFocus? = nil
-  ) {
-    self.shadowrootmode = shadowrootmode
-    self.shadowrootclonable = shadowrootclonable
-    self.shadowrootdelegatesfocus = shadowrootdelegatesfocus
+    /// Creates a new ContentTemplate element with the specified attributes.
+    ///
+    /// - Parameters:
+    ///   - shadowrootmode: Specifies "open" or "closed" mode for declarative shadow DOM
+    ///   - shadowrootclonable: Whether shadow roots are cloned with their hosts
+    ///   - shadowrootdelegatesfocus: Whether focus should be delegated in the shadow tree
+    public init(
+        shadowrootmode: HTMLAttributeTypes.ShadowRootMode? = nil,
+        shadowrootclonable: HTMLAttributeTypes.ShadowRootClonable? = nil,
+        shadowrootdelegatesfocus: HTMLAttributeTypes.ShadowRootDelegatesFocus? = nil
+    ) {
+        self.shadowrootmode = shadowrootmode
+        self.shadowrootclonable = shadowrootclonable
+        self.shadowrootdelegatesfocus = shadowrootdelegatesfocus
 
-  }
+    }
 }

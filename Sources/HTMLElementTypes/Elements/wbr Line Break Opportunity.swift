@@ -57,14 +57,14 @@
 /// The browser will only break at the `<wbr>` position if it would otherwise overflow its container.
 ///
 public struct LineBreakOpportunity: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "wbr" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "wbr" }
 
-  /// Creates a new LineBreakOpportunity element.
-  public init(
+    /// Creates a new LineBreakOpportunity element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

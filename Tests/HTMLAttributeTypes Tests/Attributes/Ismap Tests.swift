@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Ismap Test")
 struct IsmapTests {
-  @Test("Ismap attribute should be ismap")
-  func attribute() {
-    #expect(Ismap.attribute == "ismap")
-  }
+    @Test("Ismap attribute should be ismap")
+    func attribute() {
+        #expect(Ismap.attribute == "ismap")
+    }
 }

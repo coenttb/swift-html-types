@@ -16,17 +16,17 @@ import Testing
 
 @Suite("Target Test")
 struct TargetTests {
-  @Test("Target attribute should be target")
-  func attribute() {
-    #expect(Target.attribute == "target")
-  }
+    @Test("Target attribute should be target")
+    func attribute() {
+        #expect(Target.attribute == "target")
+    }
 
-  @Test("Target convenience properties")
-  func convenienceProperties() {
-    #expect(Target.`self`.rawValue == "_self")
-    #expect(Target.blank.rawValue == "_blank")
-    #expect(Target.parent.rawValue == "_parent")
-    #expect(Target.top.rawValue == "_top")
-    #expect(Target.unfencedTop.rawValue == "_unfencedTop")
-  }
+    @Test("Target convenience properties")
+    func convenienceProperties() {
+        #expect(Target.`self`.rawValue == "_self")
+        #expect(Target.blank.rawValue == "_blank")
+        #expect(Target.parent.rawValue == "_parent")
+        #expect(Target.top.rawValue == "_top")
+        #expect(Target.unfencedTop.rawValue == "_unfencedTop")
+    }
 }

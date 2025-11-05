@@ -47,14 +47,14 @@ import HTMLAttributeTypes
 /// - Only use within a `<ruby>` element
 ///
 public struct RubyTextContainer: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "rtc" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "rtc" }
 
-  /// Creates a new RubyTextContainer element with the specified attributes.
-  public init(
+    /// Creates a new RubyTextContainer element with the specified attributes.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

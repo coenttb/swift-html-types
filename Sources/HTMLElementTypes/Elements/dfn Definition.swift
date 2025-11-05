@@ -51,21 +51,21 @@ import HTMLAttributeTypes
 /// using the `<dfn>` and `<abbr>` elements together.
 ///
 public struct Definition: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "dfn" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "dfn" }
 
-  /// Title attribute that has special meaning with the `<dfn>` element.
-  /// If present, its value is considered to be the term being defined.
-  public var title: HTMLAttributeTypes.Title?
+    /// Title attribute that has special meaning with the `<dfn>` element.
+    /// If present, its value is considered to be the term being defined.
+    public var title: HTMLAttributeTypes.Title?
 
-  /// Creates a new Definition element with the specified content.
-  ///
-  /// - Parameters:
-  ///   - title: If present, its value is considered to be the term being defined
-  public init(
-    title: HTMLAttributeTypes.Title? = nil
-  ) {
-    self.title = title
+    /// Creates a new Definition element with the specified content.
+    ///
+    /// - Parameters:
+    ///   - title: If present, its value is considered to be the term being defined
+    public init(
+        title: HTMLAttributeTypes.Title? = nil
+    ) {
+        self.title = title
 
-  }
+    }
 }

@@ -34,20 +34,20 @@ import HTMLAttributeTypes
 /// ```
 ///
 public struct NoBr: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "nobr" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "nobr" }
 
-  /// Creates a new NoBr element with the specified content.
-  @available(
-    *,
-    deprecated,
-    message:
-      "Although this element is widely supported, it was never standard HTML. Use CSS property `white-space: nowrap` instead."
-  )
-  public init(
-
+    /// Creates a new NoBr element with the specified content.
+    @available(
+        *,
+        deprecated,
+        message:
+            "Although this element is widely supported, it was never standard HTML. Use CSS property `white-space: nowrap` instead."
     )
-  {
+    public init(
 
-  }
+        )
+    {
+
+    }
 }

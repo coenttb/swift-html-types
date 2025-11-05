@@ -27,20 +27,20 @@
 /// ```
 @dynamicMemberLookup
 public struct RowSpan: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "rowspan" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "rowspan" }
 
-  /// The attribute value
-  public var rawValue: String
+    /// The attribute value
+    public var rawValue: String
 
-  /// Initialize with a string value
-  public init(value: String) {
-    self.rawValue = value
-  }
+    /// Initialize with a string value
+    public init(value: String) {
+        self.rawValue = value
+    }
 }
 
 extension RowSpan: ExpressibleByIntegerLiteral {
-  public init(integerLiteral value: IntegerLiteralType) {
-    self.init(value: String(value))
-  }
+    public init(integerLiteral value: IntegerLiteralType) {
+        self.init(value: String(value))
+    }
 }

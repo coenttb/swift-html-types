@@ -43,31 +43,31 @@ import HTMLAttributeTypes
 /// - Ensure tables have a clear structure with `<thead>`, `<tbody>`, and `<tfoot>` when appropriate
 ///
 public struct TableDataCell: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "td" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "td" }
 
-  /// Number of columns this cell spans
-  public var colspan: ColSpan?
+    /// Number of columns this cell spans
+    public var colspan: ColSpan?
 
-  /// Space-separated list of IDs of header cells that provide headers for this cell
-  public var headers: Headers?
+    /// Space-separated list of IDs of header cells that provide headers for this cell
+    public var headers: Headers?
 
-  /// Number of rows this cell spans
-  public var rowspan: RowSpan?
+    /// Number of rows this cell spans
+    public var rowspan: RowSpan?
 
-  /// Creates a new TableDataCell element with the specified attributes.
-  ///
-  /// - Parameters:
-  ///   - colspan: Number of columns this cell spans (default is 1)
-  ///   - headers: IDs of related header cells for accessibility
-  ///   - rowspan: Number of rows this cell spans (default is 1)
-  public init(
-    colspan: ColSpan? = nil,
-    headers: Headers? = nil,
-    rowspan: RowSpan? = nil
-  ) {
-    self.colspan = colspan
-    self.headers = headers
-    self.rowspan = rowspan
-  }
+    /// Creates a new TableDataCell element with the specified attributes.
+    ///
+    /// - Parameters:
+    ///   - colspan: Number of columns this cell spans (default is 1)
+    ///   - headers: IDs of related header cells for accessibility
+    ///   - rowspan: Number of rows this cell spans (default is 1)
+    public init(
+        colspan: ColSpan? = nil,
+        headers: Headers? = nil,
+        rowspan: RowSpan? = nil
+    ) {
+        self.colspan = colspan
+        self.headers = headers
+        self.rowspan = rowspan
+    }
 }

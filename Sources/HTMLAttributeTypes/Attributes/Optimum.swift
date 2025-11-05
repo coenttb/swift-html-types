@@ -29,33 +29,33 @@
 /// <meter min="0" max="100" value="75" low="33" high="66" optimum="50">75%</meter>
 /// ```
 public struct Optimum: HTMLAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "optimum" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "optimum" }
 
-  /// The attribute value
-  public var value: Double
+    /// The attribute value
+    public var value: Double
 
-  /// Initialize with a value
-  public init(_ value: Double) {
-    self.value = value
-  }
+    /// Initialize with a value
+    public init(_ value: Double) {
+        self.value = value
+    }
 }
 
 extension Optimum: ExpressibleByFloatLiteral {
-  public init(floatLiteral value: FloatLiteralType) {
-    self.value = value
-  }
+    public init(floatLiteral value: FloatLiteralType) {
+        self.value = value
+    }
 }
 
 extension Optimum: ExpressibleByIntegerLiteral {
-  public init(integerLiteral value: IntegerLiteralType) {
-    self.value = Double(value)
-  }
+    public init(integerLiteral value: IntegerLiteralType) {
+        self.value = Double(value)
+    }
 }
 
 extension Optimum: CustomStringConvertible {
-  /// Returns the string representation of the attribute value
-  public var description: String {
-    return String(self.value)
-  }
+    /// Returns the string representation of the attribute value
+    public var description: String {
+        return String(self.value)
+    }
 }

@@ -16,15 +16,15 @@ import Testing
 
 @Suite("FormEncType Test")
 struct FormEncTypeTests {
-  @Test("FormEncType attribute should be formenctype")
-  func attribute() {
-    #expect(FormEncType.attribute == "formenctype")
-  }
+    @Test("FormEncType attribute should be formenctype")
+    func attribute() {
+        #expect(FormEncType.attribute == "formenctype")
+    }
 
-  @Test("FormEncType should have predefined values")
-  func predefinedValues() {
-    #expect(FormEncType.urlEncoded.rawValue == "application/x-www-form-urlencoded")
-    #expect(FormEncType.multipartFormData.rawValue == "multipart/form-data")
-    #expect(FormEncType.textPlain.rawValue == "text/plain")
-  }
+    @Test("FormEncType should have predefined values")
+    func predefinedValues() {
+        #expect(FormEncType.urlEncoded.rawValue == "application/x-www-form-urlencoded")
+        #expect(FormEncType.multipartFormData.rawValue == "multipart/form-data")
+        #expect(FormEncType.textPlain.rawValue == "text/plain")
+    }
 }

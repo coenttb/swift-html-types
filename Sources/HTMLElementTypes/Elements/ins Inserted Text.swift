@@ -37,26 +37,26 @@ import HTMLAttributeTypes
 /// - Only use this when it's important for users to know that content was inserted.
 ///
 public struct InsertedText: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "ins" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "ins" }
 
-  /// The URI of a resource that explains the change, such as a link to meeting minutes or a ticket.
-  public var cite: HTMLAttributeTypes.Cite?
+    /// The URI of a resource that explains the change, such as a link to meeting minutes or a ticket.
+    public var cite: HTMLAttributeTypes.Cite?
 
-  /// Indicates the time and date of the change.
-  public var datetime: HTMLAttributeTypes.DateTime?
+    /// Indicates the time and date of the change.
+    public var datetime: HTMLAttributeTypes.DateTime?
 
-  /// Creates a new InsertedText element with the specified attributes.
-  ///
-  /// - Parameters:
-  ///   - cite: The URI of a resource that explains the change.
-  ///   - datetime: The time and date of the change..
-  public init(
-    cite: HTMLAttributeTypes.Cite? = nil,
-    datetime: HTMLAttributeTypes.DateTime? = nil
-  ) {
-    self.cite = cite
-    self.datetime = datetime
+    /// Creates a new InsertedText element with the specified attributes.
+    ///
+    /// - Parameters:
+    ///   - cite: The URI of a resource that explains the change.
+    ///   - datetime: The time and date of the change..
+    public init(
+        cite: HTMLAttributeTypes.Cite? = nil,
+        datetime: HTMLAttributeTypes.DateTime? = nil
+    ) {
+        self.cite = cite
+        self.datetime = datetime
 
-  }
+    }
 }

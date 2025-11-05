@@ -70,22 +70,22 @@
 /// ```
 @dynamicMemberLookup
 public struct Part: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "part" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "part" }
 
-  /// The space-separated list of part names
-  /// The language tag value
-  public let rawValue: String
+    /// The space-separated list of part names
+    /// The language tag value
+    public let rawValue: String
 
-  public init(value: String) {
-    self.rawValue = value
-  }
+    public init(value: String) {
+        self.rawValue = value
+    }
 }
 
 extension Part: ExpressibleByArrayLiteral {
-  public typealias ArrayLiteralElement = String
+    public typealias ArrayLiteralElement = String
 
-  public init(arrayLiteral elements: String...) {
-    self = .init(value: elements.joined(separator: " "))
-  }
+    public init(arrayLiteral elements: String...) {
+        self = .init(value: elements.joined(separator: " "))
+    }
 }

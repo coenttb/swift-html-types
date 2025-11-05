@@ -36,25 +36,25 @@
 /// ```
 @dynamicMemberLookup
 public struct Start: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "start" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "start" }
 
-  /// The attribute value
-  public var rawValue: String
+    /// The attribute value
+    public var rawValue: String
 
-  /// Initialize with a string value
-  public init(value: String) {
-    self.rawValue = value
-  }
+    /// Initialize with a string value
+    public init(value: String) {
+        self.rawValue = value
+    }
 
-  /// Initialize with an integer value
-  public init(_ value: Int) {
-    self.init(value: String(value))
-  }
+    /// Initialize with an integer value
+    public init(_ value: Int) {
+        self.init(value: String(value))
+    }
 }
 
 extension Start: ExpressibleByIntegerLiteral {
-  public init(integerLiteral value: IntegerLiteralType) {
-    self.init(value)
-  }
+    public init(integerLiteral value: IntegerLiteralType) {
+        self.init(value)
+    }
 }

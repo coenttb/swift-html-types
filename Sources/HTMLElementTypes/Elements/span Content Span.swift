@@ -42,14 +42,14 @@ import HTMLAttributeTypes
 /// - Commonly used with CSS classes to apply styling to portions of text
 ///
 public struct ContentSpan: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "span" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "span" }
 
-  /// Creates a new span element with the specified attributes.
-  public init(
+    /// Creates a new span element with the specified attributes.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

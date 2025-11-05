@@ -16,14 +16,14 @@ import Testing
 
 @Suite("Crossorigin Test")
 struct CrossoriginTests {
-  @Test("Crossorigin attribute should be crossorigin")
-  func attribute() {
-    #expect(Crossorigin.attribute == "crossorigin")
-  }
+    @Test("Crossorigin attribute should be crossorigin")
+    func attribute() {
+        #expect(Crossorigin.attribute == "crossorigin")
+    }
 
-  @Test("Crossorigin convenience properties")
-  func convenienceProperties() {
-    #expect(Crossorigin.anonymous.rawValue == "anonymous")
-    #expect(Crossorigin.useCredentials.rawValue == "use-credentials")
-  }
+    @Test("Crossorigin convenience properties")
+    func convenienceProperties() {
+        #expect(Crossorigin.anonymous.rawValue == "anonymous")
+        #expect(Crossorigin.useCredentials.rawValue == "use-credentials")
+    }
 }

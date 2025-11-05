@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Defer Test")
 struct DeferTests {
-  @Test("Defer attribute should be defer")
-  func attribute() {
-    #expect(Defer.attribute == "defer")
-  }
+    @Test("Defer attribute should be defer")
+    func attribute() {
+        #expect(Defer.attribute == "defer")
+    }
 }

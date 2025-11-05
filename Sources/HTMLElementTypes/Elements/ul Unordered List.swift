@@ -66,14 +66,14 @@
 /// - `margin` and `padding`: Control list indentation and spacing
 ///
 public struct UnorderedList: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "ul" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "ul" }
 
-  /// Creates a new UnorderedList element.
-  public init(
+    /// Creates a new UnorderedList element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

@@ -32,9 +32,9 @@ import HTMLAttributeTypes
 /// - For purely decorative horizontal lines, consider using CSS on other elements instead
 ///
 public struct ThematicBreak: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "hr" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "hr" }
 
-  /// Creates a new ThematicBreak element.
-  public init() {}
+    /// Creates a new ThematicBreak element.
+    public init() {}
 }

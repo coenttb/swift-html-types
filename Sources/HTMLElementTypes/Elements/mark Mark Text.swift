@@ -37,10 +37,10 @@ import HTMLAttributeTypes
 /// Consider using CSS ::before and ::after pseudo-elements to make it more accessible if necessary.
 ///
 public struct Mark: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "mark" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "mark" }
 
-  /// Creates a new Mark element with the specified content.
-  public init() {
-  }
+    /// Creates a new Mark element with the specified content.
+    public init() {
+    }
 }

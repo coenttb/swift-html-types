@@ -32,14 +32,14 @@
 /// ```
 @dynamicMemberLookup
 public struct Src: HTMLStringAttribute, ExpressibleByStringInterpolation, CustomStringConvertible {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "src" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "src" }
 
-  /// The source URL
-  public var rawValue: String
+    /// The source URL
+    public var rawValue: String
 
-  /// Initialize with a string value
-  public init(value: String) {
-    self.rawValue = value
-  }
+    /// Initialize with a string value
+    public init(value: String) {
+        self.rawValue = value
+    }
 }

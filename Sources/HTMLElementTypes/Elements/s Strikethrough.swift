@@ -38,14 +38,14 @@ import HTMLAttributeTypes
 /// to make it announced by screen readers when necessary.
 ///
 public struct Strikethrough: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "s" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "s" }
 
-  /// Creates a new Strikethrough element.
-  public init(
+    /// Creates a new Strikethrough element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

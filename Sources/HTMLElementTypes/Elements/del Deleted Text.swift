@@ -42,25 +42,25 @@ import HTMLAttributeTypes
 /// For critical content, consider using CSS with `::before` and `::after` pseudo-elements to make deletions more apparent.
 ///
 public struct Del: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "del" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "del" }
 
-  /// A URI for a resource that explains the change (for example, meeting minutes).
-  public var cite: HTMLAttributeTypes.Cite?
+    /// A URI for a resource that explains the change (for example, meeting minutes).
+    public var cite: HTMLAttributeTypes.Cite?
 
-  /// The time and date of the change as a valid date string with an optional time.
-  public var datetime: HTMLAttributeTypes.DateTime?
+    /// The time and date of the change as a valid date string with an optional time.
+    public var datetime: HTMLAttributeTypes.DateTime?
 
-  /// Creates a new Del element to mark deleted text.
-  ///
-  /// - Parameters:
-  ///   - cite: A URI for a resource that explains the change
-  ///   - datetime: The time and date of the change
-  public init(
-    cite: HTMLAttributeTypes.Cite? = nil,
-    datetime: HTMLAttributeTypes.DateTime? = nil
-  ) {
-    self.cite = cite
-    self.datetime = datetime
-  }
+    /// Creates a new Del element to mark deleted text.
+    ///
+    /// - Parameters:
+    ///   - cite: A URI for a resource that explains the change
+    ///   - datetime: The time and date of the change
+    public init(
+        cite: HTMLAttributeTypes.Cite? = nil,
+        datetime: HTMLAttributeTypes.DateTime? = nil
+    ) {
+        self.cite = cite
+        self.datetime = datetime
+    }
 }

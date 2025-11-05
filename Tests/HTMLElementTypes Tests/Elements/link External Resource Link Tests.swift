@@ -15,7 +15,7 @@ import HTMLElementTypes
 import Testing
 
 #if canImport(FoundationEssentials)
-  import FoundationEssentials
+    import FoundationEssentials
 #elseif canImport(Foundation)
-  import Foundation
+    import Foundation
 #endif

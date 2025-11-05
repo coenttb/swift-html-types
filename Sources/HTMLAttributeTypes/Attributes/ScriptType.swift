@@ -44,32 +44,32 @@
 /// ```
 @dynamicMemberLookup
 public struct ScriptType: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "type" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "type" }
 
-  /// The script type value
-  public var rawValue: String
+    /// The script type value
+    public var rawValue: String
 
-  /// Initialize with a string value
-  public init(value: String) {
-    self.rawValue = value
-  }
+    /// Initialize with a string value
+    public init(value: String) {
+        self.rawValue = value
+    }
 }
 
 extension ScriptType {
 
-  /// JavaScript module
-  public static let module = ScriptType("module")
+    /// JavaScript module
+    public static let module = ScriptType("module")
 
-  /// Import map
-  public static let importmap = ScriptType("importmap")
+    /// Import map
+    public static let importmap = ScriptType("importmap")
 
-  /// Speculation rules
-  public static let speculationrules = ScriptType("speculationrules")
+    /// Speculation rules
+    public static let speculationrules = ScriptType("speculationrules")
 
-  /// JSON data
-  public static let json = ScriptType("application/json")
+    /// JSON data
+    public static let json = ScriptType("application/json")
 
-  /// Text data
-  public static let text = ScriptType("text/plain")
+    /// Text data
+    public static let text = ScriptType("text/plain")
 }

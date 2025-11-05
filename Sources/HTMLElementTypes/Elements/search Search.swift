@@ -47,11 +47,11 @@ import HTMLAttributeTypes
 /// - When multiple search elements exist on a page, consider using the `title` attribute to distinguish between them.
 ///
 public struct Search: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "search" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "search" }
 
-  /// Creates a new Search element.
-  public init() {
+    /// Creates a new Search element.
+    public init() {
 
-  }
+    }
 }

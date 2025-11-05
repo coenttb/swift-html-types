@@ -38,36 +38,36 @@ import HTMLAttributeTypes
 /// Without this label, users of screen readers would need to navigate into the fencedframe to understand its content.
 ///
 public struct FencedFrame: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "fencedframe" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "fencedframe" }
 
-  /// Specifies a Permissions Policy for the fencedframe
-  public var allow: HTMLAttributeTypes.Allow?
+    /// Specifies a Permissions Policy for the fencedframe
+    public var allow: HTMLAttributeTypes.Allow?
 
-  /// Height of the fencedframe in CSS pixels (default is 150)
-  public var height: HTMLAttributeTypes.Height?
+    /// Height of the fencedframe in CSS pixels (default is 150)
+    public var height: HTMLAttributeTypes.Height?
 
-  /// Width of the fencedframe in CSS pixels (default is 300)
-  public var width: HTMLAttributeTypes.Width?
+    /// Width of the fencedframe in CSS pixels (default is 300)
+    public var width: HTMLAttributeTypes.Width?
 
-  /// Creates a new FencedFrame element with the specified attributes.
-  ///
-  /// - Parameters:
-  ///   - allow: Permissions Policy for the fencedframe
-  ///   - height: Height in CSS pixels
-  ///   - width: Width in CSS pixels
-  public init(
-    allow: HTMLAttributeTypes.Allow? = nil,
-    height: HTMLAttributeTypes.Height? = nil,
-    width: HTMLAttributeTypes.Width? = nil
-  ) {
-    self.allow = allow
-    self.height = height
-    self.width = width
+    /// Creates a new FencedFrame element with the specified attributes.
+    ///
+    /// - Parameters:
+    ///   - allow: Permissions Policy for the fencedframe
+    ///   - height: Height in CSS pixels
+    ///   - width: Width in CSS pixels
+    public init(
+        allow: HTMLAttributeTypes.Allow? = nil,
+        height: HTMLAttributeTypes.Height? = nil,
+        width: HTMLAttributeTypes.Width? = nil
+    ) {
+        self.allow = allow
+        self.height = height
+        self.width = width
 
-  }
+    }
 }
 
 extension FencedFrame {
-  public typealias Allow = String
+    public typealias Allow = String
 }

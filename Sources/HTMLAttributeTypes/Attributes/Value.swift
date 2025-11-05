@@ -74,67 +74,67 @@
 /// </select>
 /// ```
 public struct Value<Element: Sendable & Hashable>: HTMLAttribute {
-  /// The name of the HTML attribute
-  public static var attribute: String { "value" }
+    /// The name of the HTML attribute
+    public static var attribute: String { "value" }
 
-  /// The value
-  public var value: Element
+    /// The value
+    public var value: Element
 
-  public init(_ value: Element) {
-    self.value = value
-  }
+    public init(_ value: Element) {
+        self.value = value
+    }
 }
 
 extension Value: LosslessStringConvertible where Element == String {
-  public init?(_ description: String) {
-    self = .init(description)
-  }
+    public init?(_ description: String) {
+        self = .init(description)
+    }
 }
 
 extension Value: ExpressibleByStringLiteral where Element: ExpressibleByStringLiteral {
-  public typealias StringLiteralType = Element.StringLiteralType
+    public typealias StringLiteralType = Element.StringLiteralType
 
-  public init(stringLiteral value: StringLiteralType) {
-    self.value = Element(stringLiteral: value)
-  }
+    public init(stringLiteral value: StringLiteralType) {
+        self.value = Element(stringLiteral: value)
+    }
 }
 
 extension Value: ExpressibleByExtendedGraphemeClusterLiteral
 where Element: ExpressibleByExtendedGraphemeClusterLiteral {
-  public typealias ExtendedGraphemeClusterLiteralType = Element.ExtendedGraphemeClusterLiteralType
+    public typealias ExtendedGraphemeClusterLiteralType = Element.ExtendedGraphemeClusterLiteralType
 
-  public init(extendedGraphemeClusterLiteral value: ExtendedGraphemeClusterLiteralType) {
-    self.value = Element(extendedGraphemeClusterLiteral: value)
-  }
+    public init(extendedGraphemeClusterLiteral value: ExtendedGraphemeClusterLiteralType) {
+        self.value = Element(extendedGraphemeClusterLiteral: value)
+    }
 }
 
 extension Value: ExpressibleByUnicodeScalarLiteral
 where Element: ExpressibleByUnicodeScalarLiteral {
-  public typealias UnicodeScalarLiteralType = Element.UnicodeScalarLiteralType
+    public typealias UnicodeScalarLiteralType = Element.UnicodeScalarLiteralType
 
-  public init(unicodeScalarLiteral value: UnicodeScalarLiteralType) {
-    self.value = Element(unicodeScalarLiteral: value)
-  }
+    public init(unicodeScalarLiteral value: UnicodeScalarLiteralType) {
+        self.value = Element(unicodeScalarLiteral: value)
+    }
 }
 
 extension Value: ExpressibleByIntegerLiteral where Element: ExpressibleByIntegerLiteral {
-  public typealias IntLiteralType = Element.IntegerLiteralType
+    public typealias IntLiteralType = Element.IntegerLiteralType
 
-  public init(integerLiteral value: IntLiteralType) {
-    self.value = Element(integerLiteral: value)
-  }
+    public init(integerLiteral value: IntLiteralType) {
+        self.value = Element(integerLiteral: value)
+    }
 }
 
 extension Value: ExpressibleByFloatLiteral where Element: ExpressibleByFloatLiteral {
-  public typealias FloatLiteralType = Element.FloatLiteralType
+    public typealias FloatLiteralType = Element.FloatLiteralType
 
-  public init(floatLiteral value: FloatLiteralType) {
-    self.value = Element(floatLiteral: value)
-  }
+    public init(floatLiteral value: FloatLiteralType) {
+        self.value = Element(floatLiteral: value)
+    }
 }
 
 extension Value: CustomStringConvertible where Element: CustomStringConvertible {
-  public var description: String {
-    value.description
-  }
+    public var description: String {
+        value.description
+    }
 }

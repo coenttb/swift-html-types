@@ -26,20 +26,20 @@
 /// ```
 @dynamicMemberLookup
 public struct Rows: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "rows" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "rows" }
 
-  /// The attribute value
-  public var rawValue: String
+    /// The attribute value
+    public var rawValue: String
 
-  /// Initialize with a string value
-  public init(value: String) {
-    self.rawValue = value
-  }
+    /// Initialize with a string value
+    public init(value: String) {
+        self.rawValue = value
+    }
 }
 
 extension Rows: ExpressibleByIntegerLiteral {
-  public init(integerLiteral value: IntegerLiteralType) {
-    self.init(value: String(value))
-  }
+    public init(integerLiteral value: IntegerLiteralType) {
+        self.init(value: String(value))
+    }
 }

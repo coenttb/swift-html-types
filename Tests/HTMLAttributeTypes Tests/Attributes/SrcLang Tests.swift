@@ -16,8 +16,8 @@ import Testing
 
 @Suite("SrcLang Test")
 struct SrcLangTests {
-  @Test("SrcLang attribute should be srclang")
-  func attribute() {
-    #expect(SrcLang.attribute == "srclang")
-  }
+    @Test("SrcLang attribute should be srclang")
+    func attribute() {
+        #expect(SrcLang.attribute == "srclang")
+    }
 }

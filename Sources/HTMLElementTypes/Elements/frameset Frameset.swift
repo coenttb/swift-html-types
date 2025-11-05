@@ -34,26 +34,26 @@ import HTMLAttributeTypes
 /// - A frameset document has a `<frameset>` element instead of a `<body>` element
 ///
 public struct Frameset: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "frameset" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "frameset" }
 
-  /// Specifies the number and size of horizontal spaces in a frameset
-  public var cols: Cols?
+    /// Specifies the number and size of horizontal spaces in a frameset
+    public var cols: Cols?
 
-  /// Specifies the number and size of vertical spaces in a frameset
-  public var rows: Rows?
+    /// Specifies the number and size of vertical spaces in a frameset
+    public var rows: Rows?
 
-  /// Creates a new Frameset element with the specified attributes.
-  ///
-  /// - Parameters:
-  ///   - cols: Specifies the number and size of horizontal spaces in a frameset
-  ///   - rows: Specifies the number and size of vertical spaces in a frameset (typically `<frame>` elements)
-  public init(
-    cols: Cols? = nil,
-    rows: Rows? = nil
-  ) {
-    self.cols = cols
-    self.rows = rows
+    /// Creates a new Frameset element with the specified attributes.
+    ///
+    /// - Parameters:
+    ///   - cols: Specifies the number and size of horizontal spaces in a frameset
+    ///   - rows: Specifies the number and size of vertical spaces in a frameset (typically `<frame>` elements)
+    public init(
+        cols: Cols? = nil,
+        rows: Rows? = nil
+    ) {
+        self.cols = cols
+        self.rows = rows
 
-  }
+    }
 }

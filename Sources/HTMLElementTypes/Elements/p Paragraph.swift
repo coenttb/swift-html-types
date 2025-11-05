@@ -42,14 +42,14 @@ import HTMLAttributeTypes
 /// - Use CSS properties like `margin` to create spacing between paragraphs
 ///
 public struct Paragraph: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "p" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "p" }
 
-  /// Creates a new paragraph element with the specified content.
-  public init(
+    /// Creates a new paragraph element with the specified content.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

@@ -42,14 +42,14 @@
 /// - Can be moved to another part of the document without affecting the main flow
 ///
 public struct Figure: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "figure" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "figure" }
 
-  /// Creates a new Figure element with the specified content.
-  public init(
+    /// Creates a new Figure element with the specified content.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

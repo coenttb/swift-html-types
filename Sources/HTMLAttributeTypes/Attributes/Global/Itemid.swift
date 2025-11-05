@@ -55,13 +55,13 @@
 /// ```
 @dynamicMemberLookup
 public struct Itemid: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "itemid" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "itemid" }
 
-  /// The global identifier value (URL or URN)
-  public let rawValue: String
+    /// The global identifier value (URL or URN)
+    public let rawValue: String
 
-  public init(value: String) {
-    self.rawValue = value
-  }
+    public init(value: String) {
+        self.rawValue = value
+    }
 }

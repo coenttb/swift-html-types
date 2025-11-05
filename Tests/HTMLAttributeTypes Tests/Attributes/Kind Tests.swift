@@ -16,16 +16,16 @@ import Testing
 
 @Suite("Kind Test")
 struct KindTests {
-  @Test("Kind attribute should be kind")
-  func attribute() {
-    #expect(Kind.attribute == "kind")
-  }
+    @Test("Kind attribute should be kind")
+    func attribute() {
+        #expect(Kind.attribute == "kind")
+    }
 
-  @Test("Kind convenience properties")
-  func convenienceProperties() {
-    #expect(Kind.subtitles.rawValue == "subtitles")
-    #expect(Kind.captions.rawValue == "captions")
-    #expect(Kind.chapters.rawValue == "chapters")
-    #expect(Kind.metadata.rawValue == "metadata")
-  }
+    @Test("Kind convenience properties")
+    func convenienceProperties() {
+        #expect(Kind.subtitles.rawValue == "subtitles")
+        #expect(Kind.captions.rawValue == "captions")
+        #expect(Kind.chapters.rawValue == "chapters")
+        #expect(Kind.metadata.rawValue == "metadata")
+    }
 }

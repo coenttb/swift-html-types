@@ -46,20 +46,20 @@
 /// ```
 @dynamicMemberLookup
 public struct Class: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "class" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "class" }
 
-  public let rawValue: String
+    public let rawValue: String
 
-  public init(value: String) {
-    self.rawValue = value
-  }
+    public init(value: String) {
+        self.rawValue = value
+    }
 }
 
 extension Class: ExpressibleByArrayLiteral {
-  public typealias ArrayLiteralElement = String
+    public typealias ArrayLiteralElement = String
 
-  public init(arrayLiteral elements: String...) {
-    self = .init(value: elements.joined(separator: " "))
-  }
+    public init(arrayLiteral elements: String...) {
+        self = .init(value: elements.joined(separator: " "))
+    }
 }

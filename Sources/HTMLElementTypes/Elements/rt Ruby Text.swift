@@ -40,18 +40,18 @@ import HTMLAttributeTypes
 /// - For complex text layout, consider using with `<rb>` and `<rtc>` elements
 ///
 public struct RubyText: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "rt" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "rt" }
 
-  /// Creates a new RubyText element with the specified attributes.
-  ///
-  /// - Parameters:
-  ///   - id: The unique identifier for this element
-  ///   - class: The CSS classes for this element, typically the pronunciation or meaning of the base text
-  public init(
+    /// Creates a new RubyText element with the specified attributes.
+    ///
+    /// - Parameters:
+    ///   - id: The unique identifier for this element
+    ///   - class: The CSS classes for this element, typically the pronunciation or meaning of the base text
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

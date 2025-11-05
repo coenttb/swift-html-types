@@ -16,15 +16,15 @@ import Testing
 
 @Suite("Preload Test")
 struct PreloadTests {
-  @Test("Preload attribute should be preload")
-  func attribute() {
-    #expect(Preload.attribute == "preload")
-  }
+    @Test("Preload attribute should be preload")
+    func attribute() {
+        #expect(Preload.attribute == "preload")
+    }
 
-  @Test("Preload convenience properties")
-  func convenienceProperties() {
-    #expect(Preload.none.rawValue == "none")
-    #expect(Preload.metadata.rawValue == "metadata")
-    #expect(Preload.auto.rawValue == "auto")
-  }
+    @Test("Preload convenience properties")
+    func convenienceProperties() {
+        #expect(Preload.none.rawValue == "none")
+        #expect(Preload.metadata.rawValue == "metadata")
+        #expect(Preload.auto.rawValue == "auto")
+    }
 }

@@ -50,12 +50,12 @@ import HTMLAttributeTypes
 ///
 /// - Note: The `<br>` element is a void element and does not have a closing tag.
 public struct BR: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "br" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "br" }
 
-  /// Creates a new BR element.
-  ///
-  /// Since the `<br>` element is a void element with no attributes beyond global ones,
-  /// this initializer takes no parameters.
-  public init() {}
+    /// Creates a new BR element.
+    ///
+    /// Since the `<br>` element is a void element with no attributes beyond global ones,
+    /// this initializer takes no parameters.
+    public init() {}
 }

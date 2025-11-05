@@ -51,25 +51,25 @@
 /// ```
 @dynamicMemberLookup
 public struct Width: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "width" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "width" }
 
-  /// The width value as a string
-  public var rawValue: String
+    /// The width value as a string
+    public var rawValue: String
 
-  /// Initialize with a string value
-  public init(value: String) {
-    self.rawValue = value
-  }
+    /// Initialize with a string value
+    public init(value: String) {
+        self.rawValue = value
+    }
 
-  /// Initialize with a width value in pixels
-  public init(_ value: Int) {
-    self.rawValue = String(value)
-  }
+    /// Initialize with a width value in pixels
+    public init(_ value: Int) {
+        self.rawValue = String(value)
+    }
 }
 
 extension Width: ExpressibleByIntegerLiteral {
-  public init(integerLiteral value: IntegerLiteralType) {
-    self.init(value)
-  }
+    public init(integerLiteral value: IntegerLiteralType) {
+        self.init(value)
+    }
 }

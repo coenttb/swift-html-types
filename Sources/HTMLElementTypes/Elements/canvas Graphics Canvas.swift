@@ -51,25 +51,25 @@ import HTMLAttributeTypes
 /// - Note: When rendered, this generates an HTML `<canvas>` element that can be used
 ///   for drawing graphics with JavaScript.
 public struct Canvas: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "canvas" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "canvas" }
 
-  /// The width of the canvas in CSS pixels (defaults to 300 if not specified)
-  public var width: HTMLAttributeTypes.Width?
+    /// The width of the canvas in CSS pixels (defaults to 300 if not specified)
+    public var width: HTMLAttributeTypes.Width?
 
-  /// The height of the canvas in CSS pixels (defaults to 150 if not specified)
-  public var height: HTMLAttributeTypes.Height?
+    /// The height of the canvas in CSS pixels (defaults to 150 if not specified)
+    public var height: HTMLAttributeTypes.Height?
 
-  /// Creates a new Canvas element with the specified dimensions and fallback content.
-  ///
-  /// - Parameters:
-  ///   - width: The width of the canvas in CSS pixels
-  ///   - height: The height of the canvas in CSS pixels
-  public init(
-    width: HTMLAttributeTypes.Width? = nil,
-    height: HTMLAttributeTypes.Height? = nil
-  ) {
-    self.width = width
-    self.height = height
-  }
+    /// Creates a new Canvas element with the specified dimensions and fallback content.
+    ///
+    /// - Parameters:
+    ///   - width: The width of the canvas in CSS pixels
+    ///   - height: The height of the canvas in CSS pixels
+    public init(
+        width: HTMLAttributeTypes.Width? = nil,
+        height: HTMLAttributeTypes.Height? = nil
+    ) {
+        self.width = width
+        self.height = height
+    }
 }

@@ -35,14 +35,14 @@ import HTMLAttributeTypes
 /// - Consider accessibility by using clear, descriptive text
 ///
 public struct Legend: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "legend" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "legend" }
 
-  /// Creates a new Legend element.
-  public init(
+    /// Creates a new Legend element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

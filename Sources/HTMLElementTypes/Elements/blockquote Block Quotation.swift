@@ -36,19 +36,19 @@ import HTMLAttributeTypes
 /// - The content is typically rendered visually by indentation
 ///
 public struct BlockQuote: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "blockquote" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "blockquote" }
 
-  /// A URL that designates a source document or message for the quoted information
-  public var cite: HTMLAttributeTypes.Cite?
+    /// A URL that designates a source document or message for the quoted information
+    public var cite: HTMLAttributeTypes.Cite?
 
-  /// Creates a new BlockQuote element with the specified citation source and content.
-  ///
-  /// - Parameters:
-  ///   - cite: A URL that designates the source document for the quotation
-  public init(
-    cite: HTMLAttributeTypes.Cite? = nil
-  ) {
-    self.cite = cite
-  }
+    /// Creates a new BlockQuote element with the specified citation source and content.
+    ///
+    /// - Parameters:
+    ///   - cite: A URL that designates the source document for the quotation
+    public init(
+        cite: HTMLAttributeTypes.Cite? = nil
+    ) {
+        self.cite = cite
+    }
 }

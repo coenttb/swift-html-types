@@ -52,14 +52,14 @@ import HTMLAttributeTypes
 /// - The `<cite>` element should only include the title of the work, not the author's name.
 ///
 public struct Cite: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "cite" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "cite" }
 
-  /// Creates a new Cite element.
-  public init(
+    /// Creates a new Cite element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

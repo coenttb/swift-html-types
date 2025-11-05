@@ -42,14 +42,14 @@ import HTMLAttributeTypes
 /// - Apply `object-position` and `object-fit` CSS properties on the child `<img>` element, not on the `<picture>` element.
 ///
 public struct Picture: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "picture" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "picture" }
 
-  /// Creates a new Picture element.
-  public init(
+    /// Creates a new Picture element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

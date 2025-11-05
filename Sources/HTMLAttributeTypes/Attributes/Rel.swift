@@ -66,67 +66,67 @@
 /// ```
 @dynamicMemberLookup
 public struct Rel: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "rel" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "rel" }
 
-  /// The link relation values as a space-separated string
-  public var rawValue: String
+    /// The link relation values as a space-separated string
+    public var rawValue: String
 
-  /// Initialize with a single link relation value
-  public init(value: String) {
-    self.rawValue = value
-  }
+    /// Initialize with a single link relation value
+    public init(value: String) {
+        self.rawValue = value
+    }
 }
 
 extension Rel: ExpressibleByArrayLiteral {
-  public typealias ArrayLiteralElement = String
+    public typealias ArrayLiteralElement = String
 
-  public init(arrayLiteral elements: String...) {
-    self.rawValue = elements.joined(separator: " ")
-  }
+    public init(arrayLiteral elements: String...) {
+        self.rawValue = elements.joined(separator: " ")
+    }
 }
 
 extension Rel {
-  /// Create a rel value for external links with recommended security attributes
-  public static let secureExternal: Self = .init([Rel.external, .noopener, .noreferrer])
+    /// Create a rel value for external links with recommended security attributes
+    public static let secureExternal: Self = .init([Rel.external, .noopener, .noreferrer])
 }
 
 extension Rel {
-  public init(_ rels: [Rel]) {
-    self = .init(rels.map(\.description).joined(separator: " "))
-  }
+    public init(_ rels: [Rel]) {
+        self = .init(rels.map(\.description).joined(separator: " "))
+    }
 }
 
 extension Rel {
-  @inlinable public static var alternate: Self { "alternate" }
-  @inlinable public static var author: Self { "author" }
-  @inlinable public static var help: Self { "help" }
-  @inlinable public static var license: Self { "license" }
-  @inlinable public static var next: Self { "next" }
-  @inlinable public static var prev: Self { "prev" }
-  @inlinable public static var search: Self { "search" }
+    @inlinable public static var alternate: Self { "alternate" }
+    @inlinable public static var author: Self { "author" }
+    @inlinable public static var help: Self { "help" }
+    @inlinable public static var license: Self { "license" }
+    @inlinable public static var next: Self { "next" }
+    @inlinable public static var prev: Self { "prev" }
+    @inlinable public static var search: Self { "search" }
 
-  // Link-specific types
-  @inlinable public static var canonical: Self { "canonical" }
-  @inlinable public static var stylesheet: Self { "stylesheet" }
-  @inlinable public static var icon: Self { "icon" }
-  @inlinable public static var manifest: Self { "manifest" }
-  @inlinable public static var modulepreload: Self { "modulepreload" }
-  @inlinable public static var preload: Self { "preload" }
-  @inlinable public static var prefetch: Self { "prefetch" }
-  @inlinable public static var preconnect: Self { "preconnect" }
-  @inlinable public static var dns_prefetch: Self { "dns-prefetch" }
+    // Link-specific types
+    @inlinable public static var canonical: Self { "canonical" }
+    @inlinable public static var stylesheet: Self { "stylesheet" }
+    @inlinable public static var icon: Self { "icon" }
+    @inlinable public static var manifest: Self { "manifest" }
+    @inlinable public static var modulepreload: Self { "modulepreload" }
+    @inlinable public static var preload: Self { "preload" }
+    @inlinable public static var prefetch: Self { "prefetch" }
+    @inlinable public static var preconnect: Self { "preconnect" }
+    @inlinable public static var dns_prefetch: Self { "dns-prefetch" }
 
-  // Anchor-specific types
-  @inlinable public static var bookmark: Self { "bookmark" }
-  @inlinable public static var external: Self { "external" }
-  @inlinable public static var nofollow: Self { "nofollow" }
-  @inlinable public static var noopener: Self { "noopener" }
-  @inlinable public static var noreferrer: Self { "noreferrer" }
-  @inlinable public static var tag: Self { "tag" }
-  @inlinable public static var me: Self { "me" }
+    // Anchor-specific types
+    @inlinable public static var bookmark: Self { "bookmark" }
+    @inlinable public static var external: Self { "external" }
+    @inlinable public static var nofollow: Self { "nofollow" }
+    @inlinable public static var noopener: Self { "noopener" }
+    @inlinable public static var noreferrer: Self { "noreferrer" }
+    @inlinable public static var tag: Self { "tag" }
+    @inlinable public static var me: Self { "me" }
 
-  // Security/privacy related types
-  @inlinable public static var privacy_policy: Self { "privacy-policy" }
-  @inlinable public static var terms_of_service: Self { "terms-of-service" }
+    // Security/privacy related types
+    @inlinable public static var privacy_policy: Self { "privacy-policy" }
+    @inlinable public static var terms_of_service: Self { "terms-of-service" }
 }

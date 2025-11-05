@@ -34,20 +34,20 @@ import HTMLAttributeTypes
 /// - Provide descriptive alternative content that explains what would be shown
 ///
 public struct EmbedFallback: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "noembed" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "noembed" }
 
-  /// Creates a new EmbedFallback element with the specified content.
-  @available(
-    *,
-    deprecated,
-    message:
-      "The <noembed> element is deprecated in HTML standards. Use <object> with fallback content instead."
-  )
-  public init(
-
+    /// Creates a new EmbedFallback element with the specified content.
+    @available(
+        *,
+        deprecated,
+        message:
+            "The <noembed> element is deprecated in HTML standards. Use <object> with fallback content instead."
     )
-  {
+    public init(
 
-  }
+        )
+    {
+
+    }
 }

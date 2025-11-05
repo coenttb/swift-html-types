@@ -63,69 +63,69 @@
 ///
 @dynamicMemberLookup
 public struct Autocapitalize: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "autocapitalize" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "autocapitalize" }
 
-  public let rawValue: String
+    public let rawValue: String
 
-  public init(value: String) {
-    self.rawValue = value
-  }
+    public init(value: String) {
+        self.rawValue = value
+    }
 }
 
 extension Autocapitalize {
-  /// Do not automatically capitalize any text
-  ///
-  /// Example:
-  /// ```html
-  /// <input type="text" autocapitalize="none" />
-  /// ```
-  @inlinable public static var none: Self { "none" }
+    /// Do not automatically capitalize any text
+    ///
+    /// Example:
+    /// ```html
+    /// <input type="text" autocapitalize="none" />
+    /// ```
+    @inlinable public static var none: Self { "none" }
 
-  /// Do not automatically capitalize any text (alias for `none`)
-  ///
-  /// Example:
-  /// ```html
-  /// <input type="text" autocapitalize="off" />
-  /// ```
-  @inlinable public static var off: Self { "off" }
+    /// Do not automatically capitalize any text (alias for `none`)
+    ///
+    /// Example:
+    /// ```html
+    /// <input type="text" autocapitalize="off" />
+    /// ```
+    @inlinable public static var off: Self { "off" }
 
-  /// Automatically capitalize the first character of each sentence
-  ///
-  /// Example:
-  /// ```html
-  /// <input type="text" autocapitalize="sentences" />
-  /// ```
-  @inlinable public static var sentences: Self { "sentences" }
+    /// Automatically capitalize the first character of each sentence
+    ///
+    /// Example:
+    /// ```html
+    /// <input type="text" autocapitalize="sentences" />
+    /// ```
+    @inlinable public static var sentences: Self { "sentences" }
 
-  /// Automatically capitalize the first character of each sentence (alias for `sentences`)
-  ///
-  /// Example:
-  /// ```html
-  /// <input type="text" autocapitalize="on" />
-  /// ```
-  @inlinable public static var on: Self { "on" }
+    /// Automatically capitalize the first character of each sentence (alias for `sentences`)
+    ///
+    /// Example:
+    /// ```html
+    /// <input type="text" autocapitalize="on" />
+    /// ```
+    @inlinable public static var on: Self { "on" }
 
-  /// Automatically capitalize the first character of each word
-  ///
-  /// Example:
-  /// ```html
-  /// <input type="text" autocapitalize="words" />
-  /// ```
-  @inlinable public static var words: Self { "words" }
+    /// Automatically capitalize the first character of each word
+    ///
+    /// Example:
+    /// ```html
+    /// <input type="text" autocapitalize="words" />
+    /// ```
+    @inlinable public static var words: Self { "words" }
 
-  /// Automatically capitalize every character
-  ///
-  /// Example:
-  /// ```html
-  /// <input type="text" autocapitalize="characters" />
-  /// <p contenteditable autocapitalize="characters">Editable content</p>
-  /// ```
-  @inlinable public static var characters: Self { "characters" }
+    /// Automatically capitalize every character
+    ///
+    /// Example:
+    /// ```html
+    /// <input type="text" autocapitalize="characters" />
+    /// <p contenteditable autocapitalize="characters">Editable content</p>
+    /// ```
+    @inlinable public static var characters: Self { "characters" }
 }
 
 extension Autocapitalize: CaseIterable {
-  @inlinable public static var allCases: [Autocapitalize] {
-    [.none, .off, .sentences, .on, .words, .characters]
-  }
+    @inlinable public static var allCases: [Autocapitalize] {
+        [.none, .off, .sentences, .on, .words, .characters]
+    }
 }

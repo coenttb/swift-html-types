@@ -40,16 +40,16 @@
 ///
 @dynamicMemberLookup
 public struct Poster: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "poster" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "poster" }
 
-  /// The URL of the poster image
-  public var rawValue: String
+    /// The URL of the poster image
+    public var rawValue: String
 
-  /// Initialize with a poster image URL
-  ///
-  /// - Parameter value: The URL pointing to the poster image
-  public init(value: String) {
-    self.rawValue = value
-  }
+    /// Initialize with a poster image URL
+    ///
+    /// - Parameter value: The URL pointing to the poster image
+    public init(value: String) {
+        self.rawValue = value
+    }
 }

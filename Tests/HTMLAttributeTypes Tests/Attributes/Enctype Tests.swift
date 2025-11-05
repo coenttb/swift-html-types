@@ -16,15 +16,15 @@ import Testing
 
 @Suite("EncType Test")
 struct EncTypeTests {
-  @Test("EncType attribute should be enctype")
-  func attribute() {
-    #expect(EncType.attribute == "enctype")
-  }
+    @Test("EncType attribute should be enctype")
+    func attribute() {
+        #expect(EncType.attribute == "enctype")
+    }
 
-  @Test("EncType convenience properties")
-  func convenienceProperties() {
-    #expect(EncType.urlEncoded.rawValue == "application/x-www-form-urlencoded")
-    #expect(EncType.multipartFormData.rawValue == "multipart/form-data")
-    #expect(EncType.textPlain.rawValue == "text/plain")
-  }
+    @Test("EncType convenience properties")
+    func convenienceProperties() {
+        #expect(EncType.urlEncoded.rawValue == "application/x-www-form-urlencoded")
+        #expect(EncType.multipartFormData.rawValue == "multipart/form-data")
+        #expect(EncType.textPlain.rawValue == "text/plain")
+    }
 }

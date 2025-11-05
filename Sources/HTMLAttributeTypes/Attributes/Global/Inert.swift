@@ -77,12 +77,12 @@
 /// ```
 @dynamicMemberLookup
 public struct Inert: HTMLBooleanAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "inert" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "inert" }
 
-  public var rawValue: Bool
+    public var rawValue: Bool
 
-  public init(value: Bool = true) {
-    self.rawValue = value
-  }
+    public init(value: Bool = true) {
+        self.rawValue = value
+    }
 }

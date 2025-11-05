@@ -57,37 +57,37 @@
 ///      data-y="85160" />
 /// ```
 public struct DataAttribute: HTMLAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "data" }
-  @inlinable public static var prefix: String { "data-" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "data" }
+    @inlinable public static var prefix: String { "data-" }
 
-  /// The data attribute name (without the "data-" prefix)
-  public var name: String
+    /// The data attribute name (without the "data-" prefix)
+    public var name: String
 
-  /// The value of the data attribute
-  public var value: String
+    /// The value of the data attribute
+    public var value: String
 
-  /// Initialize with a name and value
-  public init(name: String, value: String) {
-    self.name = name
-    self.value = value
-  }
+    /// Initialize with a name and value
+    public init(name: String, value: String) {
+        self.name = name
+        self.value = value
+    }
 
-  /// Initialize with a name and value
-  public init(name: some CustomStringConvertible, value: some CustomStringConvertible) {
-    self.name = name.description
-    self.value = value.description
-  }
+    /// Initialize with a name and value
+    public init(name: some CustomStringConvertible, value: some CustomStringConvertible) {
+        self.name = name.description
+        self.value = value.description
+    }
 
-  /// The full attribute name including the "data-" prefix
-  public var attributeName: String {
-    return "\(Self.prefix)\(name)"
-  }
+    /// The full attribute name including the "data-" prefix
+    public var attributeName: String {
+        return "\(Self.prefix)\(name)"
+    }
 }
 
 extension DataAttribute: CustomStringConvertible {
-  /// Returns the value of the data attribute
-  public var description: String {
-    return self.value
-  }
+    /// Returns the value of the data attribute
+    public var description: String {
+        return self.value
+    }
 }

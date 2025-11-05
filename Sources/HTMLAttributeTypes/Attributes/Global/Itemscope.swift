@@ -70,12 +70,12 @@
 /// ```
 @dynamicMemberLookup
 public struct Itemscope: HTMLBooleanAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "itemscope" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "itemscope" }
 
-  public var rawValue: Bool
+    public var rawValue: Bool
 
-  public init(value: Bool = true) {
-    self.rawValue = value
-  }
+    public init(value: Bool = true) {
+        self.rawValue = value
+    }
 }

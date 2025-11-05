@@ -37,14 +37,14 @@ import HTMLAttributeTypes
 /// - If you only need a styling wrapper, use `<div>` instead
 ///
 public struct Section: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "section" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "section" }
 
-  /// Creates a new Section element with the specified attributes.
-  public init(
+    /// Creates a new Section element with the specified attributes.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

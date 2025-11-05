@@ -57,13 +57,13 @@
 /// ```
 @dynamicMemberLookup
 public struct Alt: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "alt" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "alt" }
 
-  /// The alternative text value
-  public let rawValue: String
+    /// The alternative text value
+    public let rawValue: String
 
-  public init(value: String) {
-    self.rawValue = value
-  }
+    public init(value: String) {
+        self.rawValue = value
+    }
 }

@@ -25,25 +25,25 @@
 /// ```
 @dynamicMemberLookup
 public struct ColSpan: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "colspan" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "colspan" }
 
-  public let rawValue: String
+    public let rawValue: String
 
-  public init(value: String) {
-    self.rawValue = value
-  }
+    public init(value: String) {
+        self.rawValue = value
+    }
 }
 
 extension ColSpan: ExpressibleByIntegerLiteral {
-  public init(integerLiteral value: IntegerLiteralType) {
-    self.rawValue = String(value)
-  }
+    public init(integerLiteral value: IntegerLiteralType) {
+        self.rawValue = String(value)
+    }
 }
 
 extension ColSpan: CustomStringConvertible {
-  /// Returns the string representation of the attribute value
-  public var description: String {
-    return self.rawValue
-  }
+    /// Returns the string representation of the attribute value
+    public var description: String {
+        return self.rawValue
+    }
 }

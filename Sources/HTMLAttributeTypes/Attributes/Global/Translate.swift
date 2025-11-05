@@ -80,33 +80,33 @@
 /// ```
 @dynamicMemberLookup
 public struct Translate: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "translate" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "translate" }
 
-  public let rawValue: String
+    public let rawValue: String
 
-  public init(value: String) {
-    self.rawValue = value
-  }
+    public init(value: String) {
+        self.rawValue = value
+    }
 }
 
 extension Translate {
-  /// Content should be translated
-  @inlinable public static var yes: Self { "yes" }
+    /// Content should be translated
+    @inlinable public static var yes: Self { "yes" }
 
-  /// Content should not be translated
-  @inlinable public static var no: Self { "no" }
+    /// Content should not be translated
+    @inlinable public static var no: Self { "no" }
 }
 
 extension Translate: ExpressibleByBooleanLiteral {
-  public init(booleanLiteral value: BooleanLiteralType) {
-    switch value {
-    case true: self = .yes
-    case false: self = .no
+    public init(booleanLiteral value: BooleanLiteralType) {
+        switch value {
+        case true: self = .yes
+        case false: self = .no
+        }
     }
-  }
 }
 
 extension Translate: CaseIterable {
-  public static let allCases: [Translate] = [.yes, .no]
+    public static let allCases: [Translate] = [.yes, .no]
 }

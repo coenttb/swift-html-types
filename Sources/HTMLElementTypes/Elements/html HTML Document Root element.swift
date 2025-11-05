@@ -37,20 +37,20 @@ import HTMLAttributeTypes
 /// - The `<html>` element should be the root of your document, preceded only by the DOCTYPE declaration
 ///
 public struct HtmlRoot: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "html" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "html" }
 
-  /// The XML namespace of the document (required for XHTML)
-  public var xmlns: Xmlns?
+    /// The XML namespace of the document (required for XHTML)
+    public var xmlns: Xmlns?
 
-  /// Creates a new HTML root element with the specified attributes.
-  ///
-  /// - Parameters:
-  ///   - xmlns: The XML namespace (required for XHTML, optional for HTML), typically head and body elements
-  public init(
-    xmlns: Xmlns? = nil
-  ) {
-    self.xmlns = xmlns
+    /// Creates a new HTML root element with the specified attributes.
+    ///
+    /// - Parameters:
+    ///   - xmlns: The XML namespace (required for XHTML, optional for HTML), typically head and body elements
+    public init(
+        xmlns: Xmlns? = nil
+    ) {
+        self.xmlns = xmlns
 
-  }
+    }
 }

@@ -16,8 +16,8 @@ import Testing
 
 @Suite("ImageSrcSet Test")
 struct ImageSrcSetTests {
-  @Test("ImageSrcSet attribute should be imagesrcset")
-  func attribute() {
-    #expect(ImageSrcSet.attribute == "imagesrcset")
-  }
+    @Test("ImageSrcSet attribute should be imagesrcset")
+    func attribute() {
+        #expect(ImageSrcSet.attribute == "imagesrcset")
+    }
 }

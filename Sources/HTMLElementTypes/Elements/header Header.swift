@@ -41,14 +41,14 @@ import HTMLAttributeTypes
 /// - The `<header>` element should not contain another `<header>` or a `<footer>` element
 ///
 public struct Header: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "header" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "header" }
 
-  /// Creates a new Header element.
-  public init(
+    /// Creates a new Header element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

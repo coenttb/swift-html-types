@@ -16,21 +16,21 @@ import Testing
 
 @Suite("MetaName Test")
 struct MetaNameTests {
-  @Test("MetaName attribute should be name")
-  func attribute() {
-    #expect(MetaName.attribute == "name")
-  }
+    @Test("MetaName attribute should be name")
+    func attribute() {
+        #expect(MetaName.attribute == "name")
+    }
 
-  @Test("MetaName should have predefined values")
-  func predefinedValues() {
-    #expect(MetaName.application.rawValue == "application-name")
-    #expect(MetaName.author.rawValue == "author")
-    #expect(MetaName.description.rawValue == "description")
-    #expect(MetaName.generator.rawValue == "generator")
-    #expect(MetaName.keywords.rawValue == "keywords")
-    #expect(MetaName.referrer.rawValue == "referrer")
-    #expect(MetaName.themeColor.rawValue == "theme-color")
-    #expect(MetaName.robots.rawValue == "robots")
-    #expect(MetaName.viewport.rawValue == "viewport")
-  }
+    @Test("MetaName should have predefined values")
+    func predefinedValues() {
+        #expect(MetaName.application.rawValue == "application-name")
+        #expect(MetaName.author.rawValue == "author")
+        #expect(MetaName.description.rawValue == "description")
+        #expect(MetaName.generator.rawValue == "generator")
+        #expect(MetaName.keywords.rawValue == "keywords")
+        #expect(MetaName.referrer.rawValue == "referrer")
+        #expect(MetaName.themeColor.rawValue == "theme-color")
+        #expect(MetaName.robots.rawValue == "robots")
+        #expect(MetaName.viewport.rawValue == "viewport")
+    }
 }

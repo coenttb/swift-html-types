@@ -35,14 +35,14 @@ import HTMLAttributeTypes
 /// - Only include one `<figcaption>` per `<figure>` element
 ///
 public struct FigureCaption: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "figcaption" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "figcaption" }
 
-  /// Creates a new FigureCaption element.
-  public init(
+    /// Creates a new FigureCaption element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

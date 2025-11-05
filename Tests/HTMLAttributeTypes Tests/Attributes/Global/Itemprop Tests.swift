@@ -14,39 +14,39 @@ import HTMLAttributeTypes
 import Testing
 
 #if canImport(FoundationEssentials)
-  import FoundationEssentials
+    import FoundationEssentials
 #elseif canImport(Foundation)
-  import Foundation
+    import Foundation
 #endif
 
 @Suite("Itemprop Test")
 struct ItempropTests {
-  @Test("Itemprop attribute should be itemprop")
-  func attribute() {
-    #expect(Itemprop.attribute == "itemprop")
-  }
+    @Test("Itemprop attribute should be itemprop")
+    func attribute() {
+        #expect(Itemprop.attribute == "itemprop")
+    }
 
-  @Test("Itemprop should store and return its value")
-  func valueStorage() {
-    let itemprop = Itemprop("name")
-    #expect(itemprop.rawValue == "name")
-  }
+    @Test("Itemprop should store and return its value")
+    func valueStorage() {
+        let itemprop = Itemprop("name")
+        #expect(itemprop.rawValue == "name")
+    }
 
-  @Test("Itemprop description should return its value")
-  func description() {
-    let itemprop = Itemprop("director")
-    #expect(itemprop.description == "director")
-  }
+    @Test("Itemprop description should return its value")
+    func description() {
+        let itemprop = Itemprop("director")
+        #expect(itemprop.description == "director")
+    }
 
-  @Test("Itemprop should be initializable with string literal")
-  func stringLiteralInitialization() {
-    let itemprop: Itemprop = "author"
-    #expect(itemprop.rawValue == "author")
-  }
+    @Test("Itemprop should be initializable with string literal")
+    func stringLiteralInitialization() {
+        let itemprop: Itemprop = "author"
+        #expect(itemprop.rawValue == "author")
+    }
 
-  @Test("Itemprop should be initializable with array literal")
-  func arrayLiteralInitialization() {
-    let itemprop: Itemprop = ["favorite-color", "favorite-fruit"]
-    #expect(itemprop.rawValue == "favorite-color favorite-fruit")
-  }
+    @Test("Itemprop should be initializable with array literal")
+    func arrayLiteralInitialization() {
+        let itemprop: Itemprop = ["favorite-color", "favorite-fruit"]
+        #expect(itemprop.rawValue == "favorite-color favorite-fruit")
+    }
 }

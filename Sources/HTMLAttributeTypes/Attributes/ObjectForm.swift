@@ -36,14 +36,14 @@
 /// ```
 @dynamicMemberLookup
 public struct ObjectForm: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "form" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "form" }
 
-  /// The attribute value
-  public let rawValue: String
+    /// The attribute value
+    public let rawValue: String
 
-  /// Initialize with a value for the form attribute
-  public init(value: String) {
-    self.rawValue = value
-  }
+    /// Initialize with a value for the form attribute
+    public init(value: String) {
+        self.rawValue = value
+    }
 }

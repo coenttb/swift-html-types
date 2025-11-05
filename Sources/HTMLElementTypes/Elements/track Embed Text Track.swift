@@ -40,43 +40,43 @@ import HTMLAttributeTypes
 /// - A media element cannot have more than one track with the same `kind`, `srclang`, and `label`
 ///
 public struct Track: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "track" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "track" }
 
-  /// Indicates that the track should be enabled by default unless the user's preferences indicate otherwise
-  public var `default`: HTMLAttributeTypes.Default?
+    /// Indicates that the track should be enabled by default unless the user's preferences indicate otherwise
+    public var `default`: HTMLAttributeTypes.Default?
 
-  /// How the text track is meant to be used (subtitles, captions, chapters, or metadata)
-  public var kind: HTMLAttributeTypes.Kind?
+    /// How the text track is meant to be used (subtitles, captions, chapters, or metadata)
+    public var kind: HTMLAttributeTypes.Kind?
 
-  /// A user-readable title of the text track which is used by the browser when listing available text tracks
-  public var label: HTMLAttributeTypes.Label?
+    /// A user-readable title of the text track which is used by the browser when listing available text tracks
+    public var label: HTMLAttributeTypes.Label?
 
-  /// Address of the track (.vtt file)
-  public var src: HTMLAttributeTypes.Src
+    /// Address of the track (.vtt file)
+    public var src: HTMLAttributeTypes.Src
 
-  /// Language of the track text data (BCP 47 language tag)
-  public var srclang: HTMLAttributeTypes.SrcLang?
+    /// Language of the track text data (BCP 47 language tag)
+    public var srclang: HTMLAttributeTypes.SrcLang?
 
-  /// Creates a new Track element.
-  ///
-  /// - Parameters:
-  ///   - kind: How the text track is meant to be used
-  ///   - src: Address of the WebVTT (.vtt) file
-  ///   - srclang: Language of the track text data
-  ///   - label: User-readable title of the text track
-  ///   - defaultTrack: Whether this track should be enabled by default
-  public init(
-    default: HTMLAttributeTypes.Default? = nil,
-    kind: HTMLAttributeTypes.Kind? = nil,
-    src: HTMLAttributeTypes.Src,
-    srclang: HTMLAttributeTypes.SrcLang? = nil,
-    label: HTMLAttributeTypes.Label? = nil
-  ) {
-    self.default = `default`
-    self.kind = kind
-    self.src = src
-    self.srclang = srclang
-    self.label = label
-  }
+    /// Creates a new Track element.
+    ///
+    /// - Parameters:
+    ///   - kind: How the text track is meant to be used
+    ///   - src: Address of the WebVTT (.vtt) file
+    ///   - srclang: Language of the track text data
+    ///   - label: User-readable title of the text track
+    ///   - defaultTrack: Whether this track should be enabled by default
+    public init(
+        default: HTMLAttributeTypes.Default? = nil,
+        kind: HTMLAttributeTypes.Kind? = nil,
+        src: HTMLAttributeTypes.Src,
+        srclang: HTMLAttributeTypes.SrcLang? = nil,
+        label: HTMLAttributeTypes.Label? = nil
+    ) {
+        self.default = `default`
+        self.kind = kind
+        self.src = src
+        self.srclang = srclang
+        self.label = label
+    }
 }

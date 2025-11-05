@@ -16,14 +16,14 @@ import Testing
 
 @Suite("Height Test")
 struct HeightTests {
-  @Test("Height attribute should be height")
-  func attribute() {
-    #expect(Height.attribute == "height")
-  }
+    @Test("Height attribute should be height")
+    func attribute() {
+        #expect(Height.attribute == "height")
+    }
 
-  @Test("Height should support integer literal")
-  func integerLiteral() {
-    let height: Height = 300
-    #expect(height.rawValue == "300")
-  }
+    @Test("Height should support integer literal")
+    func integerLiteral() {
+        let height: Height = 300
+        #expect(height.rawValue == "300")
+    }
 }

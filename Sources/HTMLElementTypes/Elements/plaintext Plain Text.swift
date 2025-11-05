@@ -41,24 +41,24 @@ import HTMLAttributeTypes
 /// - Apply monospaced fonts via CSS using `font-family: monospace` where needed.
 ///
 @available(
-  *,
-  deprecated,
-  message: "The <plaintext> element is deprecated. Use <pre> or <code> instead."
-)
-public struct PlainText: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "plaintext" }
-
-  /// Creates a new plaintext element.
-  @available(
     *,
     deprecated,
     message: "The <plaintext> element is deprecated. Use <pre> or <code> instead."
-  )
-  public init(
+)
+public struct PlainText: HTMLElement {
+    /// The HTML tag name
+    @inlinable public static var tag: String { "plaintext" }
 
+    /// Creates a new plaintext element.
+    @available(
+        *,
+        deprecated,
+        message: "The <plaintext> element is deprecated. Use <pre> or <code> instead."
     )
-  {
+    public init(
 
-  }
+        )
+    {
+
+    }
 }

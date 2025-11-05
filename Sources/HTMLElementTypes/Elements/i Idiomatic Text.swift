@@ -48,14 +48,14 @@ import HTMLAttributeTypes
 ///   - Use `<cite>` for names of works
 ///   - Use `<dfn>` for defining terms
 public struct IdiomaticText: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "i" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "i" }
 
-  /// Creates a new IdiomaticText element with the specified content.
-  public init(
+    /// Creates a new IdiomaticText element with the specified content.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

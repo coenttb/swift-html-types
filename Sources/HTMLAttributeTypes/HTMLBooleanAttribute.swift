@@ -11,37 +11,37 @@
 // ===----------------------------------------------------------------------===//
 
 public protocol HTMLBooleanAttribute: HTMLAttribute, CustomStringConvertible,
-  ExpressibleByBooleanLiteral, CaseIterable, RawRepresentable
+    ExpressibleByBooleanLiteral, CaseIterable, RawRepresentable
 {
-  var rawValue: Bool { get }
+    var rawValue: Bool { get }
 
-  init(value: Bool)
+    init(value: Bool)
 }
 
 extension HTMLBooleanAttribute {
-  public init?(rawValue value: Bool) {
-    self = .init(value: value)
-  }
+    public init?(rawValue value: Bool) {
+        self = .init(value: value)
+    }
 }
 
 extension HTMLBooleanAttribute {
-  public init(booleanLiteral value: Bool) {
-    self = .init(value: value)
-  }
+    public init(booleanLiteral value: Bool) {
+        self = .init(value: value)
+    }
 }
 
 extension HTMLBooleanAttribute {
-  public var description: String {
-    rawValue ? "true" : "false"
-  }
+    public var description: String {
+        rawValue ? "true" : "false"
+    }
 }
 
 extension HTMLBooleanAttribute {
-  @inlinable public static var allCases: [Self] { [true, false] }
+    @inlinable public static var allCases: [Self] { [true, false] }
 }
 
 extension HTMLBooleanAttribute {
-  public subscript<T>(dynamicMember keyPath: KeyPath<Bool, T>) -> T {
-    self.rawValue[keyPath: keyPath]
-  }
+    public subscript<T>(dynamicMember keyPath: KeyPath<Bool, T>) -> T {
+        self.rawValue[keyPath: keyPath]
+    }
 }

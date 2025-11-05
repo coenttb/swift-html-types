@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Label Test")
 struct LabelTests {
-  @Test("Label attribute should be label")
-  func attribute() {
-    #expect(Label.attribute == "label")
-  }
+    @Test("Label attribute should be label")
+    func attribute() {
+        #expect(Label.attribute == "label")
+    }
 }

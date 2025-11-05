@@ -61,80 +61,80 @@
 /// - Note: This attribute is still experimental as of 2025 and may not be supported
 ///   in all browsers.
 public struct AttributionSrc: HTMLAttribute, CustomStringConvertible {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "attributionsrc" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "attributionsrc" }
 
-  /// The type of attribute value
-  public enum Value: Sendable, Hashable {
-    /// Boolean form (presence/absence of the attribute)
-    case boolean(Bool)
+    /// The type of attribute value
+    public enum Value: Sendable, Hashable {
+        /// Boolean form (presence/absence of the attribute)
+        case boolean(Bool)
 
-    /// URL value (one or more URLs where the header should be sent)
-    case urls(String)
-  }
-
-  /// The internal value representation
-  public var value: Value
-
-  /// Create a boolean attributionsrc attribute
-  public init() {
-    self.value = .boolean(true)
-  }
-
-  /// Create an attributionsrc attribute with a specific boolean value
-  ///
-  /// - Parameter include: Whether to include the attribute
-  public init(_ include: Bool) {
-    self.value = .boolean(include)
-  }
-
-  /// Create an attributionsrc attribute with one or more URLs
-  ///
-  /// - Parameter urls: A single URL or space-separated list of URLs where
-  ///   the Attribution-Reporting-Eligible header should be sent
-  public init(_ urls: String) {
-    self.value = .urls(urls)
-  }
-
-  /// String representation of the attributionsrc attribute
-  public var description: String {
-    switch value {
-    case .boolean:
-      return ""  // Empty string for boolean attribute
-    case .urls(let urls):
-      return urls
+        /// URL value (one or more URLs where the header should be sent)
+        case urls(String)
     }
-  }
 
-  /// Whether the attribute should be included in HTML rendering
-  public var shouldInclude: Bool {
-    switch value {
-    case .boolean(let include):
-      return include
-    case .urls:
-      return true
+    /// The internal value representation
+    public var value: Value
+
+    /// Create a boolean attributionsrc attribute
+    public init() {
+        self.value = .boolean(true)
     }
-  }
+
+    /// Create an attributionsrc attribute with a specific boolean value
+    ///
+    /// - Parameter include: Whether to include the attribute
+    public init(_ include: Bool) {
+        self.value = .boolean(include)
+    }
+
+    /// Create an attributionsrc attribute with one or more URLs
+    ///
+    /// - Parameter urls: A single URL or space-separated list of URLs where
+    ///   the Attribution-Reporting-Eligible header should be sent
+    public init(_ urls: String) {
+        self.value = .urls(urls)
+    }
+
+    /// String representation of the attributionsrc attribute
+    public var description: String {
+        switch value {
+        case .boolean:
+            return ""  // Empty string for boolean attribute
+        case .urls(let urls):
+            return urls
+        }
+    }
+
+    /// Whether the attribute should be included in HTML rendering
+    public var shouldInclude: Bool {
+        switch value {
+        case .boolean(let include):
+            return include
+        case .urls:
+            return true
+        }
+    }
 }
 
 /// Extension to allow creating an AttributionSrc attribute with a boolean literal
 extension AttributionSrc: ExpressibleByBooleanLiteral {
-  /// Initialize with a boolean literal
-  ///
-  /// - Parameter value: When true, creates a boolean attributionsrc attribute
-  ///   When false, the attribute will not be included
-  public init(booleanLiteral value: BooleanLiteralType) {
-    self.init(value)
-  }
+    /// Initialize with a boolean literal
+    ///
+    /// - Parameter value: When true, creates a boolean attributionsrc attribute
+    ///   When false, the attribute will not be included
+    public init(booleanLiteral value: BooleanLiteralType) {
+        self.init(value)
+    }
 }
 
 /// Extension to allow creating an AttributionSrc attribute with a string literal
 extension AttributionSrc: ExpressibleByStringLiteral {
-  /// Initialize with a string literal
-  ///
-  /// - Parameter value: URL or space-separated list of URLs where the
-  ///   Attribution-Reporting-Eligible header should be sent
-  public init(stringLiteral value: StringLiteralType) {
-    self.init(value)
-  }
+    /// Initialize with a string literal
+    ///
+    /// - Parameter value: URL or space-separated list of URLs where the
+    ///   Attribution-Reporting-Eligible header should be sent
+    public init(stringLiteral value: StringLiteralType) {
+        self.init(value)
+    }
 }

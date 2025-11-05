@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Playsinline Test")
 struct PlaysinlineTests {
-  @Test("Playsinline attribute should be playsinline")
-  func attribute() {
-    #expect(Playsinline.attribute == "playsinline")
-  }
+    @Test("Playsinline attribute should be playsinline")
+    func attribute() {
+        #expect(Playsinline.attribute == "playsinline")
+    }
 }

@@ -62,25 +62,25 @@ import HTMLAttributeTypes
 ///
 /// - Note: When rendered, this generates an HTML `<colgroup>` element containing column definitions.
 public struct TableColumnGroup: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "colgroup" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "colgroup" }
 
-  /// The number of consecutive columns this column group spans
-  /// Note: Cannot be used if the column group contains col elements
-  public var span: HTMLAttributeTypes.Span?
+    /// The number of consecutive columns this column group spans
+    /// Note: Cannot be used if the column group contains col elements
+    public var span: HTMLAttributeTypes.Span?
 
-  /// Creates a new TableColumnGroup element with an optional span attribute and content.
-  ///
-  /// - Parameters:
-  ///   - span: The number of consecutive columns this column group spans
-  ///
-  /// - Note: Either use the span attribute OR include col elements as content, not both.
-  ///   According to the HTML specification, if the span attribute is present,
-  ///   the colgroup element cannot contain any col elements.
-  public init(
-    span: HTMLAttributeTypes.Span? = nil
-  ) {
-    self.span = span
+    /// Creates a new TableColumnGroup element with an optional span attribute and content.
+    ///
+    /// - Parameters:
+    ///   - span: The number of consecutive columns this column group spans
+    ///
+    /// - Note: Either use the span attribute OR include col elements as content, not both.
+    ///   According to the HTML specification, if the span attribute is present,
+    ///   the colgroup element cannot contain any col elements.
+    public init(
+        span: HTMLAttributeTypes.Span? = nil
+    ) {
+        self.span = span
 
-  }
+    }
 }

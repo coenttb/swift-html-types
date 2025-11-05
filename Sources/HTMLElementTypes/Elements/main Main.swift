@@ -49,14 +49,14 @@ import HTMLAttributeTypes
 ///   content into a specialized reader view.
 ///
 public struct Main: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "main" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "main" }
 
-  /// Creates a new Main element.
-  public init(
+    /// Creates a new Main element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

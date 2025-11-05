@@ -16,34 +16,34 @@ import Testing
 
 @Suite("Elementtiming Test")
 struct ElementtimingTests {
-  @Test("Elementtiming attribute should be elementtiming")
-  func attribute() {
-    #expect(Elementtiming.attribute == "elementtiming")
-  }
+    @Test("Elementtiming attribute should be elementtiming")
+    func attribute() {
+        #expect(Elementtiming.attribute == "elementtiming")
+    }
 
-  @Test("Elementtiming should support category-based initialization")
-  func categoryBasedInitialization() {
-    let timing = Elementtiming(category: "hero", name: "image")
-    #expect(timing.rawValue == "hero-image")
+    @Test("Elementtiming should support category-based initialization")
+    func categoryBasedInitialization() {
+        let timing = Elementtiming(category: "hero", name: "image")
+        #expect(timing.rawValue == "hero-image")
 
-    let customSeparator = Elementtiming(category: "main", name: "content", separator: "_")
-    #expect(customSeparator.rawValue == "main_content")
-  }
+        let customSeparator = Elementtiming(category: "main", name: "content", separator: "_")
+        #expect(customSeparator.rawValue == "main_content")
+    }
 
-  @Test("Elementtiming should have predefined categories")
-  func predefinedCategories() {
-    #expect(Elementtiming.Category.hero.value == "hero")
-    #expect(Elementtiming.Category.main.value == "main")
-    #expect(Elementtiming.Category.header.value == "header")
-    #expect(Elementtiming.Category.image.value == "image")
-  }
+    @Test("Elementtiming should have predefined categories")
+    func predefinedCategories() {
+        #expect(Elementtiming.Category.hero.value == "hero")
+        #expect(Elementtiming.Category.main.value == "main")
+        #expect(Elementtiming.Category.header.value == "header")
+        #expect(Elementtiming.Category.image.value == "image")
+    }
 
-  @Test("Elementtiming should support Category-based initialization")
-  func categoryStructInitialization() {
-    let timing = Elementtiming(category: .hero, name: "banner")
-    #expect(timing.rawValue == "hero-banner")
+    @Test("Elementtiming should support Category-based initialization")
+    func categoryStructInitialization() {
+        let timing = Elementtiming(category: .hero, name: "banner")
+        #expect(timing.rawValue == "hero-banner")
 
-    let customTiming = Elementtiming(category: .custom, name: "special")
-    #expect(customTiming.rawValue == "special")
-  }
+        let customTiming = Elementtiming(category: .custom, name: "special")
+        #expect(customTiming.rawValue == "special")
+    }
 }

@@ -48,21 +48,21 @@
 /// ```
 @dynamicMemberLookup
 public struct Span: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "span" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "span" }
 
-  /// The span value
-  public var rawValue: String
+    /// The span value
+    public var rawValue: String
 
-  /// Initialize with a string value
-  public init(value: String) {
-    self.rawValue = value
-  }
+    /// Initialize with a string value
+    public init(value: String) {
+        self.rawValue = value
+    }
 }
 
 extension Span: ExpressibleByIntegerLiteral {
-  public init(integerLiteral value: IntegerLiteralType) {
-    precondition(value > 0, "Span value must be a positive integer")
-    self.init(value: String(value))
-  }
+    public init(integerLiteral value: IntegerLiteralType) {
+        precondition(value > 0, "Span value must be a positive integer")
+        self.init(value: String(value))
+    }
 }

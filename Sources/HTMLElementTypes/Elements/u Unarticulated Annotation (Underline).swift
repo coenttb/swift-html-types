@@ -41,14 +41,14 @@ import HTMLAttributeTypes
 /// - For non-semantic underlining, use CSS `text-decoration: underline` with a `<span>` element instead
 ///
 public struct UnarticulatedAnnotation: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "u" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "u" }
 
-  /// Creates a new UnarticulatedAnnotation element.
-  public init(
+    /// Creates a new UnarticulatedAnnotation element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

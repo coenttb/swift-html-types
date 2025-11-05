@@ -45,31 +45,31 @@
 /// ```
 @dynamicMemberLookup
 public struct Usemap: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "usemap" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "usemap" }
 
-  /// The map name value (with or without '#')
-  public var rawValue: String
+    /// The map name value (with or without '#')
+    public var rawValue: String
 
-  /// Initialize with a string value
-  public init(value: String) {
-    // Ensure the value starts with '#'
-    if value.hasPrefix("#") {
-      self.rawValue = value
-    } else {
-      self.rawValue = "#" + value
+    /// Initialize with a string value
+    public init(value: String) {
+        // Ensure the value starts with '#'
+        if value.hasPrefix("#") {
+            self.rawValue = value
+        } else {
+            self.rawValue = "#" + value
+        }
     }
-  }
 
-  /// Initialize with a map name
-  /// - Parameter value: The map name (with or without '#')
-  public init(_ value: String) {
-    self.init(value: value)
-  }
+    /// Initialize with a map name
+    /// - Parameter value: The map name (with or without '#')
+    public init(_ value: String) {
+        self.init(value: value)
+    }
 }
 
 extension Usemap: ExpressibleByStringLiteral {
-  public init(stringLiteral value: StringLiteralType) {
-    self.init(value)
-  }
+    public init(stringLiteral value: StringLiteralType) {
+        self.init(value)
+    }
 }

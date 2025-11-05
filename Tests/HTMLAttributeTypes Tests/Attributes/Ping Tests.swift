@@ -16,14 +16,14 @@ import Testing
 
 @Suite("Ping Test")
 struct PingTests {
-  @Test("Ping attribute should be ping")
-  func attribute() {
-    #expect(Ping.attribute == "ping")
-  }
+    @Test("Ping attribute should be ping")
+    func attribute() {
+        #expect(Ping.attribute == "ping")
+    }
 
-  @Test("Ping array literal support")
-  func arrayLiteral() {
-    let ping: Ping = ["https://example.com/ping", "https://analytics.example.com/track"]
-    #expect(ping.rawValue == "https://example.com/ping https://analytics.example.com/track")
-  }
+    @Test("Ping array literal support")
+    func arrayLiteral() {
+        let ping: Ping = ["https://example.com/ping", "https://analytics.example.com/track"]
+        #expect(ping.rawValue == "https://example.com/ping https://analytics.example.com/track")
+    }
 }

@@ -11,13 +11,13 @@
 // ===----------------------------------------------------------------------===//
 
 public protocol HTMLElement: Sendable, Hashable {
-  static var tag: String { get }
+    static var tag: String { get }
 }
 
 extension HTMLElement {
-  @inlinable public static var isVoid: Bool {
-    Self.self is HTMLVoidElement.Type
-  }
+    @inlinable public static var isVoid: Bool {
+        Self.self is HTMLVoidElement.Type
+    }
 }
 
 public protocol HTMLVoidElement {}

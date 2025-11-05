@@ -64,14 +64,14 @@ import HTMLAttributeTypes
 /// - Consider accessibility by using `<th>` elements with appropriate `scope` attributes for footer headers
 ///
 public struct TableFoot: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "tfoot" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "tfoot" }
 
-  /// Creates a new TableFoot element.
-  public init(
+    /// Creates a new TableFoot element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

@@ -39,14 +39,14 @@ import HTMLAttributeTypes
 /// - The `<hgroup>` has an implicit ARIA role of "group"
 ///
 public struct HeadingGroup: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "hgroup" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "hgroup" }
 
-  /// Creates a new HeadingGroup element.
-  public init(
+    /// Creates a new HeadingGroup element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

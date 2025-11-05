@@ -16,8 +16,8 @@ import Testing
 
 @Suite("DisableRemotePlayback Test")
 struct DisableRemotePlaybackTests {
-  @Test("DisableRemotePlayback attribute should be disableremoteplayback")
-  func attribute() {
-    #expect(DisableRemotePlayback.attribute == "disableremoteplayback")
-  }
+    @Test("DisableRemotePlayback attribute should be disableremoteplayback")
+    func attribute() {
+        #expect(DisableRemotePlayback.attribute == "disableremoteplayback")
+    }
 }

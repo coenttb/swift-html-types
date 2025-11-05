@@ -37,14 +37,14 @@ import HTMLAttributeTypes
 ///   `<dd>` element, a `<dt>` element, or if there is no more content in the parent element
 ///
 public struct DescriptionDetails: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "dd" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "dd" }
 
-  /// Creates a new DescriptionDetails element.
-  public init(
+    /// Creates a new DescriptionDetails element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

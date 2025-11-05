@@ -27,14 +27,14 @@
 /// ```
 @dynamicMemberLookup
 public struct NoResize: HTMLBooleanAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "noresize" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "noresize" }
 
-  /// The attribute value
-  public var rawValue: Bool
+    /// The attribute value
+    public var rawValue: Bool
 
-  /// Creates a new NoResize attribute.
-  public init(value: Bool = true) {
-    self.rawValue = value
-  }
+    /// Creates a new NoResize attribute.
+    public init(value: Bool = true) {
+        self.rawValue = value
+    }
 }

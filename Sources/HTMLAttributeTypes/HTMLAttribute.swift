@@ -11,5 +11,5 @@
 // ===----------------------------------------------------------------------===//
 
 public protocol HTMLAttribute: Sendable, Hashable {
-  static var attribute: String { get }
+    static var attribute: String { get }
 }

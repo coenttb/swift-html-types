@@ -52,14 +52,14 @@ import HTMLAttributeTypes
 /// - Note: When rendered, this generates the HTML `<title>` element, which must be
 ///   placed within the `<head>` element of an HTML document.
 public struct Title: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "title" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "title" }
 
-  /// Creates a new Title element with the specified text content.
-  public init(
+    /// Creates a new Title element with the specified text content.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

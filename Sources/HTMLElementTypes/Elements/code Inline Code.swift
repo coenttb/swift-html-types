@@ -37,14 +37,14 @@ import HTMLAttributeTypes
 /// - The element can be styled with CSS to enhance readability (background color, padding, etc.).
 ///
 public struct Code: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "code" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "code" }
 
-  /// Creates a new Code element.
-  public init(
+    /// Creates a new Code element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

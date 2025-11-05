@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Readonly Test")
 struct ReadonlyTests {
-  @Test("Readonly attribute should be readonly")
-  func attribute() {
-    #expect(Readonly.attribute == "readonly")
-  }
+    @Test("Readonly attribute should be readonly")
+    func attribute() {
+        #expect(Readonly.attribute == "readonly")
+    }
 }

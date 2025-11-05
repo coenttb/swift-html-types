@@ -44,12 +44,12 @@
 /// ```
 @dynamicMemberLookup
 public struct Checked: HTMLBooleanAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "checked" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "checked" }
 
-  public var rawValue: Bool
+    public var rawValue: Bool
 
-  public init(value: Bool = true) {
-    self.rawValue = value
-  }
+    public init(value: Bool = true) {
+        self.rawValue = value
+    }
 }

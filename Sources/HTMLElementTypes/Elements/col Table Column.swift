@@ -55,28 +55,28 @@ import HTMLAttributeTypes
 ///
 /// - Note: When rendered, this generates an HTML `<col>` element with no closing tag.
 public struct TableColumn: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "col" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "col" }
 
-  /// The number of consecutive columns this column element spans
-  public var span: HTMLAttributeTypes.Span?
+    /// The number of consecutive columns this column element spans
+    public var span: HTMLAttributeTypes.Span?
 
-  /// The width for the column
-  public var width: HTMLAttributeTypes.Width?
+    /// The width for the column
+    public var width: HTMLAttributeTypes.Width?
 
-  /// Creates a new TableColumn element with optional span and width attributes.
-  ///
-  /// The TableColumn element is a void element (has no content) that defines styling
-  /// and behavior for one or more columns in a table.
-  ///
-  /// - Parameters:
-  ///   - span: The number of consecutive columns this `<col>` element spans
-  ///   - width: The width for the column(s)
-  public init(
-    span: HTMLAttributeTypes.Span? = nil,
-    width: HTMLAttributeTypes.Width? = nil
-  ) {
-    self.span = span
-    self.width = width
-  }
+    /// Creates a new TableColumn element with optional span and width attributes.
+    ///
+    /// The TableColumn element is a void element (has no content) that defines styling
+    /// and behavior for one or more columns in a table.
+    ///
+    /// - Parameters:
+    ///   - span: The number of consecutive columns this `<col>` element spans
+    ///   - width: The width for the column(s)
+    public init(
+        span: HTMLAttributeTypes.Span? = nil,
+        width: HTMLAttributeTypes.Width? = nil
+    ) {
+        self.span = span
+        self.width = width
+    }
 }

@@ -16,8 +16,8 @@ import Testing
 
 @Suite("ImageSizes Test")
 struct ImageSizesTests {
-  @Test("ImageSizes attribute should be imagesizes")
-  func attribute() {
-    #expect(ImageSizes.attribute == "imagesizes")
-  }
+    @Test("ImageSizes attribute should be imagesizes")
+    func attribute() {
+        #expect(ImageSizes.attribute == "imagesizes")
+    }
 }

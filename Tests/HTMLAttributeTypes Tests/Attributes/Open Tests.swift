@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Open Test")
 struct OpenTests {
-  @Test("Open attribute should be open")
-  func attribute() {
-    #expect(Open.attribute == "open")
-  }
+    @Test("Open attribute should be open")
+    func attribute() {
+        #expect(Open.attribute == "open")
+    }
 }

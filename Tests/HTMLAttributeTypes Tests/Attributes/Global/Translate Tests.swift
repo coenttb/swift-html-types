@@ -14,30 +14,30 @@ import HTMLAttributeTypes
 import Testing
 
 #if canImport(FoundationEssentials)
-  import FoundationEssentials
+    import FoundationEssentials
 #elseif canImport(Foundation)
-  import Foundation
+    import Foundation
 #endif
 
 @Suite("Translate Test")
 struct TranslateTests {
-  @Test("Translate attribute should be translate")
-  func attribute() {
-    #expect(Translate.attribute == "translate")
-  }
+    @Test("Translate attribute should be translate")
+    func attribute() {
+        #expect(Translate.attribute == "translate")
+    }
 
-  @Test("Translate description should match the spec")
-  func description() {
-    #expect(Translate.yes.description == "yes")
-    #expect(Translate.no.description == "no")
-  }
+    @Test("Translate description should match the spec")
+    func description() {
+        #expect(Translate.yes.description == "yes")
+        #expect(Translate.no.description == "no")
+    }
 
-  @Test("Translate should be initializable with boolean literals")
-  func booleanLiteralInitialization() {
-    let yesTranslate: Translate = true
-    let noTranslate: Translate = false
+    @Test("Translate should be initializable with boolean literals")
+    func booleanLiteralInitialization() {
+        let yesTranslate: Translate = true
+        let noTranslate: Translate = false
 
-    #expect(yesTranslate == .yes)
-    #expect(noTranslate == .no)
-  }
+        #expect(yesTranslate == .yes)
+        #expect(noTranslate == .no)
+    }
 }

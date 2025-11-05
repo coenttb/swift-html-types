@@ -57,33 +57,33 @@
 /// ```
 @dynamicMemberLookup
 public struct Action: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "action" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "action" }
 
-  /// The URL for form submission
-  public let rawValue: String
+    /// The URL for form submission
+    public let rawValue: String
 
-  public init(value: String) {
-    self.rawValue = value
-  }
+    public init(value: String) {
+        self.rawValue = value
+    }
 }
 
 extension Action {
-  /// Creates a relative URL action within the same domain
-  public static func relative(_ path: String) -> Action {
-    // Make sure the path starts with a slash if it's not already
-    let formattedPath = path.hasPrefix("/") ? path : "/\(path)"
-    return Action(formattedPath)
-  }
+    /// Creates a relative URL action within the same domain
+    public static func relative(_ path: String) -> Action {
+        // Make sure the path starts with a slash if it's not already
+        let formattedPath = path.hasPrefix("/") ? path : "/\(path)"
+        return Action(formattedPath)
+    }
 
-  /// Creates an absolute URL action to an external service
-  public static func absolute(_ url: String) -> Action {
-    return Action(url)
-  }
+    /// Creates an absolute URL action to an external service
+    public static func absolute(_ url: String) -> Action {
+        return Action(url)
+    }
 
-  /// Creates an action pointing to the current page
-  public static let current: Action = Action(".")
+    /// Creates an action pointing to the current page
+    public static let current: Action = Action(".")
 
-  /// Creates an action for client-side handling (no server submission)
-  public static let clientSide: Action = Action("#")
+    /// Creates an action for client-side handling (no server submission)
+    public static let clientSide: Action = Action("#")
 }

@@ -14,21 +14,21 @@ import HTMLAttributeTypes
 import Testing
 
 #if canImport(FoundationEssentials)
-  import FoundationEssentials
+    import FoundationEssentials
 #elseif canImport(Foundation)
-  import Foundation
+    import Foundation
 #endif
 
 @Suite("Writingsuggestions Test")
 struct WritingsuggestionsTests {
-  @Test("Writingsuggestions attribute should be writingsuggestions")
-  func attribute() {
-    #expect(Writingsuggestions.attribute == "writingsuggestions")
-  }
+    @Test("Writingsuggestions attribute should be writingsuggestions")
+    func attribute() {
+        #expect(Writingsuggestions.attribute == "writingsuggestions")
+    }
 
-  @Test("Writingsuggestions description should match the spec")
-  func description() {
-    #expect(Writingsuggestions.true.description == "true")
-    #expect(Writingsuggestions.false.description == "false")
-  }
+    @Test("Writingsuggestions description should match the spec")
+    func description() {
+        #expect(Writingsuggestions.true.description == "true")
+        #expect(Writingsuggestions.false.description == "false")
+    }
 }

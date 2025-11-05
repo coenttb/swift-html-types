@@ -46,8 +46,8 @@ import HTMLAttributeTypes
 /// - Note: When rendered, this generates an HTML `<article>` element with the appropriate
 ///   attributes based on the configuration.
 public struct Article: HTMLElement {
-  @inlinable public static var tag: String { "article" }
+    @inlinable public static var tag: String { "article" }
 
-  /// Creates a new Article element with the specified content.
-  public init() {}
+    /// Creates a new Article element with the specified content.
+    public init() {}
 }

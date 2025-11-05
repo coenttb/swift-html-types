@@ -52,51 +52,51 @@
 /// ```
 @dynamicMemberLookup
 public struct Dir: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "dir" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "dir" }
 
-  public let rawValue: String
+    public let rawValue: String
 
-  public init(value: String) {
-    self.rawValue = value
-  }
+    public init(value: String) {
+        self.rawValue = value
+    }
 }
 
 extension Dir {
-  /// Left-to-right text direction (default)
-  ///
-  /// Used for languages that are written from left to right, such as English, French, and most
-  /// European languages.
-  ///
-  /// Example:
-  /// ```html
-  /// <p dir="ltr">This is English text</p>
-  /// ```
-  @inlinable public static var ltr: Self { "ltr" }
+    /// Left-to-right text direction (default)
+    ///
+    /// Used for languages that are written from left to right, such as English, French, and most
+    /// European languages.
+    ///
+    /// Example:
+    /// ```html
+    /// <p dir="ltr">This is English text</p>
+    /// ```
+    @inlinable public static var ltr: Self { "ltr" }
 
-  /// Right-to-left text direction
-  ///
-  /// Used for languages that are written from right to left, such as Arabic, Hebrew, and Persian.
-  ///
-  /// Example:
-  /// ```html
-  /// <p dir="rtl">هذه الفقرة باللغة العربية</p>
-  /// ```
-  @inlinable public static var rtl: Self { "rtl" }
+    /// Right-to-left text direction
+    ///
+    /// Used for languages that are written from right to left, such as Arabic, Hebrew, and Persian.
+    ///
+    /// Example:
+    /// ```html
+    /// <p dir="rtl">هذه الفقرة باللغة العربية</p>
+    /// ```
+    @inlinable public static var rtl: Self { "rtl" }
 
-  /// Let the user agent determine direction based on content
-  ///
-  /// The browser parses characters inside the element until it finds a character with strong
-  /// directionality, then applies that directionality to the whole element. This is best used
-  /// for content with unknown directionality, such as user input or external data.
-  ///
-  /// Example:
-  /// ```html
-  /// <p dir="auto">Content determines direction</p>
-  /// ```
-  @inlinable public static var auto: Self { "auto" }
+    /// Let the user agent determine direction based on content
+    ///
+    /// The browser parses characters inside the element until it finds a character with strong
+    /// directionality, then applies that directionality to the whole element. This is best used
+    /// for content with unknown directionality, such as user input or external data.
+    ///
+    /// Example:
+    /// ```html
+    /// <p dir="auto">Content determines direction</p>
+    /// ```
+    @inlinable public static var auto: Self { "auto" }
 }
 
 extension Dir: CaseIterable {
-  public static let allCases: [Dir] = [ltr, rtl, auto]
+    public static let allCases: [Dir] = [ltr, rtl, auto]
 }

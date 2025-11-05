@@ -16,14 +16,14 @@ import Testing
 
 @Suite("Headers Test")
 struct HeadersTests {
-  @Test("Headers attribute should be headers")
-  func attribute() {
-    #expect(Headers.attribute == "headers")
-  }
+    @Test("Headers attribute should be headers")
+    func attribute() {
+        #expect(Headers.attribute == "headers")
+    }
 
-  @Test("Headers array literal support")
-  func arrayLiteral() {
-    let headers: Headers = ["header1", "header2", "header3"]
-    #expect(headers.rawValue == "header1 header2 header3")
-  }
+    @Test("Headers array literal support")
+    func arrayLiteral() {
+        let headers: Headers = ["header1", "header2", "header3"]
+        #expect(headers.rawValue == "header1 header2 header3")
+    }
 }

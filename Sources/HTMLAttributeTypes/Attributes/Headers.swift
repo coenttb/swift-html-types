@@ -32,20 +32,20 @@
 /// ```
 @dynamicMemberLookup
 public struct Headers: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "headers" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "headers" }
 
-  /// Contains a list of space-separated strings, each corresponding to the id attribute of the <th> elements that provide headings for this table cell.
-  public let rawValue: String
+    /// Contains a list of space-separated strings, each corresponding to the id attribute of the <th> elements that provide headings for this table cell.
+    public let rawValue: String
 
-  /// Initialize with a value for the headers attribute
-  public init(value: String) {
-    self.rawValue = value
-  }
+    /// Initialize with a value for the headers attribute
+    public init(value: String) {
+        self.rawValue = value
+    }
 }
 
 extension Headers: ExpressibleByArrayLiteral {
-  public init(arrayLiteral elements: String...) {
-    self = .init(value: elements.joined(separator: " "))
-  }
+    public init(arrayLiteral elements: String...) {
+        self = .init(value: elements.joined(separator: " "))
+    }
 }

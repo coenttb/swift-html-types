@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Selected Test")
 struct SelectedTests {
-  @Test("Selected attribute should be selected")
-  func attribute() {
-    #expect(Selected.attribute == "selected")
-  }
+    @Test("Selected attribute should be selected")
+    func attribute() {
+        #expect(Selected.attribute == "selected")
+    }
 }

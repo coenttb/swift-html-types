@@ -12,13 +12,13 @@
 
 @dynamicMemberLookup
 public struct Abbr: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "abbr" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "abbr" }
 
-  /// The URL for form submission
-  public let rawValue: String
+    /// The URL for form submission
+    public let rawValue: String
 
-  public init(value: String) {
-    self.rawValue = value
-  }
+    public init(value: String) {
+        self.rawValue = value
+    }
 }

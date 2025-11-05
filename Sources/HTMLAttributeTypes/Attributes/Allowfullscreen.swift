@@ -12,12 +12,12 @@
 
 @dynamicMemberLookup
 public struct Allowfullscreen: HTMLBooleanAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "allowfullscreen" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "allowfullscreen" }
 
-  public var rawValue: Bool
+    public var rawValue: Bool
 
-  public init(value: Bool = true) {
-    self.rawValue = value
-  }
+    public init(value: Bool = true) {
+        self.rawValue = value
+    }
 }

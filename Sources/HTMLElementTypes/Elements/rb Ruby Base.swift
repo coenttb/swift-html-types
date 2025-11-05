@@ -39,16 +39,16 @@ import HTMLAttributeTypes
 /// - Only use within a `<ruby>` element
 ///
 public struct RubyBase: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "rb" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "rb" }
 
-  /// Creates a new RubyBase element with the specified attributes.
-  ///
-  /// - Parameters:, typically the base text to be annotated
-  public init(
+    /// Creates a new RubyBase element with the specified attributes.
+    ///
+    /// - Parameters:, typically the base text to be annotated
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

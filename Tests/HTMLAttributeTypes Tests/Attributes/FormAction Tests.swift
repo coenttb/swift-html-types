@@ -16,8 +16,8 @@ import Testing
 
 @Suite("FormAction Test")
 struct FormActionTests {
-  @Test("FormAction attribute should be formaction")
-  func attribute() {
-    #expect(FormAction.attribute == "formaction")
-  }
+    @Test("FormAction attribute should be formaction")
+    func attribute() {
+        #expect(FormAction.attribute == "formaction")
+    }
 }

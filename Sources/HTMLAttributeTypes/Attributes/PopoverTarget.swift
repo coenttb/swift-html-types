@@ -29,14 +29,14 @@
 /// ```
 @dynamicMemberLookup
 public struct PopoverTarget: HTMLStringAttribute {
-  /// The name of the HTML attribute
-  @inlinable public static var attribute: String { "popovertarget" }
+    /// The name of the HTML attribute
+    @inlinable public static var attribute: String { "popovertarget" }
 
-  /// The ID of the popover element to control
-  public var rawValue: String
+    /// The ID of the popover element to control
+    public var rawValue: String
 
-  /// Initialize with a popover element ID
-  public init(value: String) {
-    self.rawValue = value
-  }
+    /// Initialize with a popover element ID
+    public init(value: String) {
+        self.rawValue = value
+    }
 }

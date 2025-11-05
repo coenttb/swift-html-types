@@ -16,17 +16,17 @@ import Testing
 
 @Suite("Placeholder Test")
 struct PlaceholderTests {
-  @Test("Placeholder attribute should be placeholder")
-  func attribute() {
-    #expect(Placeholder.attribute == "placeholder")
-  }
+    @Test("Placeholder attribute should be placeholder")
+    func attribute() {
+        #expect(Placeholder.attribute == "placeholder")
+    }
 
-  @Test("Placeholder convenience properties")
-  func convenienceProperties() {
-    #expect(Placeholder.email.rawValue == "email")
-    #expect(Placeholder.phone.rawValue == "phone")
-    #expect(Placeholder.name.rawValue == "name")
-    #expect(Placeholder.search.rawValue == "search")
-    #expect(Placeholder.url.rawValue == "url")
-  }
+    @Test("Placeholder convenience properties")
+    func convenienceProperties() {
+        #expect(Placeholder.email.rawValue == "email")
+        #expect(Placeholder.phone.rawValue == "phone")
+        #expect(Placeholder.name.rawValue == "name")
+        #expect(Placeholder.search.rawValue == "search")
+        #expect(Placeholder.url.rawValue == "url")
+    }
 }

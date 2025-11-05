@@ -23,41 +23,41 @@ import HTMLAttributeTypes
 ///
 /// Hidden inputs don't participate in constraint validation; they have no real value to be constrained.
 extension HTMLElementTypes.Input {
-  public struct Hidden: Sendable, Hashable {
-    /// The value attribute holds a string that contains the hidden data you want to include when
-    /// the form is submitted to the server. This specifically can't be edited or seen by the user
-    /// via the user interface, although it could be edited via browser developer tools.
-    public var value: Value<String>?
+    public struct Hidden: Sendable, Hashable {
+        /// The value attribute holds a string that contains the hidden data you want to include when
+        /// the form is submitted to the server. This specifically can't be edited or seen by the user
+        /// via the user interface, although it could be edited via browser developer tools.
+        public var value: Value<String>?
 
-    /// Creates a new hidden input configuration
-    public init(
-      value: Value<String>? = nil
-    ) {
-      self.value = value
+        /// Creates a new hidden input configuration
+        public init(
+            value: Value<String>? = nil
+        ) {
+            self.value = value
+        }
     }
-  }
 }
 
 extension HTMLElementTypes.Input {
-  /// Creates a new hidden input element
-  public static let hidden: Self = .hidden()
+    /// Creates a new hidden input element
+    public static let hidden: Self = .hidden()
 
-  /// Creates a new hidden input element
-  public static func hidden(
-    name: Name? = nil,
-    value: Value<String>? = nil,
-    disabled: Disabled? = nil,
-    form: HTMLAttributeTypes.Form.ID? = nil
-  ) -> Self {
-    .init(
-      name: name,
-      disabled: disabled,
-      form: form,
-      type: .hidden(
+    /// Creates a new hidden input element
+    public static func hidden(
+        name: Name? = nil,
+        value: Value<String>? = nil,
+        disabled: Disabled? = nil,
+        form: HTMLAttributeTypes.Form.ID? = nil
+    ) -> Self {
         .init(
-          value: value
+            name: name,
+            disabled: disabled,
+            form: form,
+            type: .hidden(
+                .init(
+                    value: value
+                )
+            )
         )
-      )
-    )
-  }
+    }
 }

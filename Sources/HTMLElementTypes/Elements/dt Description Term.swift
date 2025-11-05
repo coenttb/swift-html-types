@@ -47,14 +47,14 @@ import HTMLAttributeTypes
 /// - Multiple `<dt>` elements in a row indicate multiple terms defined by the next `<dd>` element.
 ///
 public struct DescriptionTerm: HTMLElement {
-  /// The HTML tag name
-  @inlinable public static var tag: String { "dt" }
+    /// The HTML tag name
+    @inlinable public static var tag: String { "dt" }
 
-  /// Creates a new DescriptionTerm element.
-  public init(
+    /// Creates a new DescriptionTerm element.
+    public init(
 
-    )
-  {
+        )
+    {
 
-  }
+    }
 }

@@ -16,14 +16,14 @@ import Testing
 
 @Suite("MarginWidth Test")
 struct MarginWidthTests {
-  @Test("MarginWidth attribute should be marginwidth")
-  func attribute() {
-    #expect(MarginWidth.attribute == "marginwidth")
-  }
+    @Test("MarginWidth attribute should be marginwidth")
+    func attribute() {
+        #expect(MarginWidth.attribute == "marginwidth")
+    }
 
-  @Test("MarginWidth should support integer literal")
-  func integerLiteral() {
-    let marginWidth: MarginWidth = 20
-    #expect(marginWidth.rawValue == "20")
-  }
+    @Test("MarginWidth should support integer literal")
+    func integerLiteral() {
+        let marginWidth: MarginWidth = 20
+        #expect(marginWidth.rawValue == "20")
+    }
 }

@@ -16,8 +16,8 @@ import Testing
 
 @Suite("Face Test")
 struct FaceTests {
-  @Test("Face attribute should be face")
-  func attribute() {
-    #expect(Face.attribute == "face")
-  }
+    @Test("Face attribute should be face")
+    func attribute() {
+        #expect(Face.attribute == "face")
+    }
 }
