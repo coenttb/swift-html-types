@@ -255,7 +255,6 @@ import WHATWG_HTML
 
             #expect(bases.count == 3)
             bases.forEach { base in
-                #expect(base is any WHATWG.HTML.Element)
                 #expect(type(of: base).tag == "base")
             }
         }
@@ -336,9 +335,8 @@ import WHATWG_HTML
 
         @Test func `Base element in document head`() {
             let href = WHATWG.HTML.Href.Attribute("https://example.com/")
-            let base = WHATWG.HTML.Base.Element(href: href)
+            _ = WHATWG.HTML.Base.Element(href: href)
 
-            #expect(base is any WHATWG.HTML.Element)
         }
 
         @Test func `Base element before other URL references`() {

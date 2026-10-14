@@ -9,7 +9,7 @@ import WHATWG_HTML
 @Suite struct `Abbreviation Tests` {
 
     @Test func `Basic abbreviation creation`() {
-        let abbreviation = WHATWG.HTML.Abbreviation.Element()
+        _ = WHATWG.HTML.Abbreviation.Element()
         #expect(WHATWG.HTML.Abbreviation.Element.tag == "abbr")
     }
 

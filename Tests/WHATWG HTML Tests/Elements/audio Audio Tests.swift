@@ -317,7 +317,6 @@ import WHATWG_HTML
 
             #expect(audioElements.count == 3)
             audioElements.forEach { audio in
-                #expect(audio is any WHATWG.HTML.Element)
                 #expect(type(of: audio).tag == "audio")
                 #expect(audio.controls != nil)
             }

@@ -61,19 +61,19 @@ import WHATWG_HTML
         }
 
         @Test func `Multi-paragraph quotations`() {
-            let blockquote = WHATWG.HTML.BlockQuote.Element()
+            _ = WHATWG.HTML.BlockQuote.Element()
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
         @Test func `Poetry and verse quotations`() {
             let cite = WHATWG.HTML.Cite.Attribute(value: "https://example.com/poem")
-            let blockquote = WHATWG.HTML.BlockQuote.Element(cite: cite)
+            _ = WHATWG.HTML.BlockQuote.Element(cite: cite)
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
         @Test func `Academic paper excerpts`() {
             let cite = WHATWG.HTML.Cite.Attribute(value: "https://journal.example.com/paper")
-            let blockquote = WHATWG.HTML.BlockQuote.Element(cite: cite)
+            _ = WHATWG.HTML.BlockQuote.Element(cite: cite)
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
     }
@@ -82,37 +82,37 @@ import WHATWG_HTML
 
         @Test func `Literary quotations`() {
             let cite = WHATWG.HTML.Cite.Attribute(value: "https://example.com/book")
-            let blockquote = WHATWG.HTML.BlockQuote.Element(cite: cite)
+            _ = WHATWG.HTML.BlockQuote.Element(cite: cite)
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
         @Test func `News article excerpts`() {
             let cite = WHATWG.HTML.Cite.Attribute(value: "https://news.example.com/article")
-            let blockquote = WHATWG.HTML.BlockQuote.Element(cite: cite)
+            _ = WHATWG.HTML.BlockQuote.Element(cite: cite)
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
         @Test func `Speech transcriptions`() {
             let cite = WHATWG.HTML.Cite.Attribute(value: "https://example.com/speech")
-            let blockquote = WHATWG.HTML.BlockQuote.Element(cite: cite)
+            _ = WHATWG.HTML.BlockQuote.Element(cite: cite)
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
         @Test func `Interview excerpts`() {
             let cite = WHATWG.HTML.Cite.Attribute(value: "https://example.com/interview")
-            let blockquote = WHATWG.HTML.BlockQuote.Element(cite: cite)
+            _ = WHATWG.HTML.BlockQuote.Element(cite: cite)
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
         @Test func `Research paper citations`() {
             let cite = WHATWG.HTML.Cite.Attribute(value: "https://example.com/research")
-            let blockquote = WHATWG.HTML.BlockQuote.Element(cite: cite)
+            _ = WHATWG.HTML.BlockQuote.Element(cite: cite)
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
         @Test func `Blog post excerpts`() {
             let cite = WHATWG.HTML.Cite.Attribute(value: "https://blog.example.com/post")
-            let blockquote = WHATWG.HTML.BlockQuote.Element(cite: cite)
+            _ = WHATWG.HTML.BlockQuote.Element(cite: cite)
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
     }
@@ -127,7 +127,7 @@ import WHATWG_HTML
 
         @Test func `Author attribution separation`() {
 
-            let blockquote = WHATWG.HTML.BlockQuote.Element(
+            _ = WHATWG.HTML.BlockQuote.Element(
                 cite: WHATWG.HTML.Cite.Attribute(value: "https://example.com/source")
             )
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
@@ -149,23 +149,23 @@ import WHATWG_HTML
     @Suite struct `Semantic Usage` {
 
         @Test func `Extended quotation indication`() {
-            let blockquote = WHATWG.HTML.BlockQuote.Element()
+            _ = WHATWG.HTML.BlockQuote.Element()
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
         @Test func `Block-level quotation context`() {
-            let blockquote = WHATWG.HTML.BlockQuote.Element()
+            _ = WHATWG.HTML.BlockQuote.Element()
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
         @Test func `Quotation vs inline quote distinction`() {
 
-            let blockquote = WHATWG.HTML.BlockQuote.Element()
+            _ = WHATWG.HTML.BlockQuote.Element()
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
         @Test func `Sectioning content within quotations`() {
-            let blockquote = WHATWG.HTML.BlockQuote.Element()
+            _ = WHATWG.HTML.BlockQuote.Element()
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
     }
@@ -173,22 +173,22 @@ import WHATWG_HTML
     @Suite struct `Visual Presentation` {
 
         @Test func `Indented quotation rendering`() {
-            let blockquote = WHATWG.HTML.BlockQuote.Element()
+            _ = WHATWG.HTML.BlockQuote.Element()
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
         @Test func `Quotation mark styling considerations`() {
-            let blockquote = WHATWG.HTML.BlockQuote.Element()
+            _ = WHATWG.HTML.BlockQuote.Element()
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
         @Test func `Typography and spacing`() {
-            let blockquote = WHATWG.HTML.BlockQuote.Element()
+            _ = WHATWG.HTML.BlockQuote.Element()
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
         @Test func `Responsive quotation layout`() {
-            let blockquote = WHATWG.HTML.BlockQuote.Element()
+            _ = WHATWG.HTML.BlockQuote.Element()
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
     }
@@ -222,7 +222,7 @@ import WHATWG_HTML
         }
 
         @Test func `Nested content within BlockQuote`() {
-            let blockquote = WHATWG.HTML.BlockQuote.Element()
+            _ = WHATWG.HTML.BlockQuote.Element()
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
@@ -241,23 +241,23 @@ import WHATWG_HTML
     @Suite struct `Accessibility Considerations` {
 
         @Test func `Screen reader quotation announcement`() {
-            let blockquote = WHATWG.HTML.BlockQuote.Element()
+            _ = WHATWG.HTML.BlockQuote.Element()
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
         @Test func `Citation accessibility`() {
             let cite = WHATWG.HTML.Cite.Attribute(value: "https://example.com/source")
-            let blockquote = WHATWG.HTML.BlockQuote.Element(cite: cite)
+            _ = WHATWG.HTML.BlockQuote.Element(cite: cite)
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
         @Test func `Quotation context clarity`() {
-            let blockquote = WHATWG.HTML.BlockQuote.Element()
+            _ = WHATWG.HTML.BlockQuote.Element()
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
         @Test func `Navigation landmark support`() {
-            let blockquote = WHATWG.HTML.BlockQuote.Element()
+            _ = WHATWG.HTML.BlockQuote.Element()
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
     }
@@ -266,7 +266,7 @@ import WHATWG_HTML
 
         @Test func `External attribution placement`() {
 
-            let blockquote = WHATWG.HTML.BlockQuote.Element(
+            _ = WHATWG.HTML.BlockQuote.Element(
                 cite: WHATWG.HTML.Cite.Attribute(value: "https://example.com/source")
             )
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
@@ -274,7 +274,7 @@ import WHATWG_HTML
 
         @Test func `Appropriate use over q element`() {
 
-            let blockquote = WHATWG.HTML.BlockQuote.Element()
+            _ = WHATWG.HTML.BlockQuote.Element()
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
@@ -285,7 +285,7 @@ import WHATWG_HTML
         }
 
         @Test func `Content structure within quotations`() {
-            let blockquote = WHATWG.HTML.BlockQuote.Element()
+            _ = WHATWG.HTML.BlockQuote.Element()
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
     }
@@ -294,31 +294,31 @@ import WHATWG_HTML
 
         @Test func `Academic writing quotations`() {
             let cite = WHATWG.HTML.Cite.Attribute(value: "https://journal.example.com/article")
-            let blockquote = WHATWG.HTML.BlockQuote.Element(cite: cite)
+            _ = WHATWG.HTML.BlockQuote.Element(cite: cite)
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
         @Test func `News and journalism quotes`() {
             let cite = WHATWG.HTML.Cite.Attribute(value: "https://news.example.com/interview")
-            let blockquote = WHATWG.HTML.BlockQuote.Element(cite: cite)
+            _ = WHATWG.HTML.BlockQuote.Element(cite: cite)
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
         @Test func `Documentation and technical writing`() {
             let cite = WHATWG.HTML.Cite.Attribute(value: "https://docs.example.com/specification")
-            let blockquote = WHATWG.HTML.BlockQuote.Element(cite: cite)
+            _ = WHATWG.HTML.BlockQuote.Element(cite: cite)
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
         @Test func `Content aggregation platforms`() {
             let cite = WHATWG.HTML.Cite.Attribute(value: "https://original.example.com/post")
-            let blockquote = WHATWG.HTML.BlockQuote.Element(cite: cite)
+            _ = WHATWG.HTML.BlockQuote.Element(cite: cite)
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
 
         @Test func `Educational content and courseware`() {
             let cite = WHATWG.HTML.Cite.Attribute(value: "https://textbook.example.com/chapter-5")
-            let blockquote = WHATWG.HTML.BlockQuote.Element(cite: cite)
+            _ = WHATWG.HTML.BlockQuote.Element(cite: cite)
             #expect(WHATWG.HTML.BlockQuote.Element.tag == "blockquote")
         }
     }

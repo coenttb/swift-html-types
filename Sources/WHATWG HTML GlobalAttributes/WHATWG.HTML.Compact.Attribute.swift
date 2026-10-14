@@ -10,6 +10,7 @@ extension WHATWG.HTML.Compact {
     }
 }
 
+@available(*, deprecated)
 extension WHATWG.HTML.Compact.Attribute {
 
     @inlinable public static var attribute: String { "compact" }

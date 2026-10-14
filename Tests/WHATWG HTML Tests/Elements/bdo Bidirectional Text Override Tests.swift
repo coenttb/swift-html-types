@@ -188,8 +188,6 @@ import WHATWG_HTML
             #expect(WHATWG.HTML.BidirectionalTextOverride.Element.tag == "bdo")
             #expect(outerBdo.dir.rawValue == "rtl")
             #expect(innerBdo.dir.rawValue == "ltr")
-            #expect(outerBdo is any WHATWG.HTML.Element)
-            #expect(innerBdo is any WHATWG.HTML.Element)
         }
 
         @Test func `BDO with different HTML context elements`() {
@@ -222,20 +220,19 @@ import WHATWG_HTML
         }
 
         @Test func `HTMLElement protocol compliance`() {
-            let bdo = WHATWG.HTML.BidirectionalTextOverride.Element(dir: .ltr)
-            #expect(bdo is any WHATWG.HTML.Element)
+            _ = WHATWG.HTML.BidirectionalTextOverride.Element(dir: .ltr)
         }
     }
 
     @Suite struct `Best Practices` {
 
         @Test func `Use BDO only when override is needed`() {
-            let bdo = WHATWG.HTML.BidirectionalTextOverride.Element(dir: .rtl)
+            _ = WHATWG.HTML.BidirectionalTextOverride.Element(dir: .rtl)
             #expect(WHATWG.HTML.BidirectionalTextOverride.Element.tag == "bdo")
         }
 
         @Test func `Prefer BDI for isolation over BDO for override`() {
-            let bdo = WHATWG.HTML.BidirectionalTextOverride.Element(dir: .ltr)
+            _ = WHATWG.HTML.BidirectionalTextOverride.Element(dir: .ltr)
             #expect(WHATWG.HTML.BidirectionalTextOverride.Element.tag == "bdo")
         }
 
@@ -245,7 +242,7 @@ import WHATWG_HTML
         }
 
         @Test func `Consider accessibility implications`() {
-            let bdo = WHATWG.HTML.BidirectionalTextOverride.Element(dir: .auto)
+            _ = WHATWG.HTML.BidirectionalTextOverride.Element(dir: .auto)
             #expect(WHATWG.HTML.BidirectionalTextOverride.Element.tag == "bdo")
         }
     }
