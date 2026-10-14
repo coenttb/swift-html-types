@@ -71,7 +71,7 @@ extension WHATWG.HTML.Form.Data.Entry.List {
     }
 }
 
-extension WHATWG.HTML.Form.Data.Entry.List: Swift.Collection {
+extension WHATWG.HTML.Form.Data.Entry.List: Swift::Collection {
     public typealias Index = Array<WHATWG.HTML.Form.Data.Entry>.Index
     public typealias Element = WHATWG.HTML.Form.Data.Entry
 
@@ -86,7 +86,7 @@ extension WHATWG.HTML.Form.Data.Entry.List: Swift.Collection {
     @inlinable public func index(after i: Index) -> Index { entries.index(after: i) }
 }
 
-extension WHATWG.HTML.Form.Data.Entry.List: Swift.Sequence {
+extension WHATWG.HTML.Form.Data.Entry.List: Swift::Sequence {
     @inlinable public func makeIterator() -> Array<WHATWG.HTML.Form.Data.Entry>.Iterator {
         entries.makeIterator()
     }

@@ -14,7 +14,7 @@ extension WHATWG.HTML.Span {
                 scalars = scalars.dropFirst()
             }
             let digits = scalars.prefix { ("0"..."9").contains($0) }
-            let parsed = digits.reduce(0) { Swift.min($0 * 10 + Int($1.value &- 0x30), 1001) }
+            let parsed = digits.reduce(0) { Swift::min($0 * 10 + Int($1.value &- 0x30), 1001) }
             self.width = !negative && !digits.isEmpty && (1...1000).contains(parsed) ? parsed : 1
         }
 
